@@ -1,0 +1,678 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans cmbr
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Supervivencia de Redes Ópticas
+\end_layout
+
+\begin_layout Standard
+La supervivencia de una red se refiere a la capacidad de la misma para proporcio
+nar un servicio continuo en presencia de fallas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2000survivability"
+
+\end_inset
+
+.
+ Existen numerosos tipos de fallas en una red óptica siendo las más estudiadas:
+ (1) fallas de enlaces y (2) fallas de nodos.
+ En la literatura, existen abundantes trabajos de investigación en el área
+ de fallas de enlace simple y conjunto de riesgo compartido 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast,singhal2005shared,SINGHAL2003,singhal2003provisioning,khalil2005pre,zhang2004multicast"
+
+\end_inset
+
+.
+ Aunque, la probabilidad de falla en un nodo es menor a la probabilidad
+ de falla de un enlace, su ocurrencia podría ocasionar una severa pérdida
+ de los datos en comparación a las fallas de enlace 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que la protección de nodos es más compleja que la protección
+ de enlaces y puede ser tratada indirectamente también como un problema
+ de enlaces de riesgo compartido.
+ Cuando un nodo falla existe un riesgo compartido con los enlaces conectados
+ al nodo fallido.
+ Ésta falla ocasionara la pérdida de los datos de las conexiones que pasan
+ a través del nodo fallido.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Red-óptica-de-supervivencia"
+
+\end_inset
+
+ se puede observar una red óptica que consta de 6 nodos y 8 enlaces bi-direccion
+ales con un fallo en el nodo 2.
+ La ocurrencia de este fallo ocasiona la pérdida de los datos que pasan
+ a través de los enlaces (E1, E2 y E3) conectados al mismo.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figuras/supervivencia.png
+	scale 80
+	rotateOrigin leftTop
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Red óptica de 6 nodos y 8 enlaces bi-direccionales con una falla en el nodo
+ 2 que ocasiona pérdidas de datos de los enlaces E1, E2 y E3.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Red-óptica-de-supervivencia"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Importancia de Proteger
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2000survivability"
+
+\end_inset
+
+, científicos de los laboratorios Bell han demostrado con éxito la transmisión
+ de 100 longitudes de onda, cada longitud de onda modulada a 10 
+\begin_inset Formula $Gb/s$
+\end_inset
+
+, para proporcionar un rendimiento de 1 
+\begin_inset Formula $Tb/s$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Supongamos una red óptica con un orden de magnitud de fibra a full = 1 
+\begin_inset Formula $Tbps$
+\end_inset
+
+, de 10 longitudes de ondas cada fibra, 10 
+\begin_inset Formula $Gbps$
+\end_inset
+
+ por cada longitud de onda y suponiendo que el tiempo de cálculo de rutas
+ de resguardo más la configuración de cada OXC es de 1 segundo.
+ Entonces, cuando se produce una falla en la red, un nodo de red realiza
+ los cálculos y las re-configuraciones necesarias en los OXC para dar continuida
+d a los servicios en el orden de 1 segundo.
+ Por lo tanto, el tamaño de 
+\emph on
+buffer
+\emph default
+ que se necesita para guardar la información por cada fibra de entrada en
+ un OXC mientras se re-encaminan los datos seria de 1 
+\begin_inset Formula $Tbit$
+\end_inset
+
+ = 1000 
+\begin_inset Formula $Gbit$
+\end_inset
+
+ = 125 
+\begin_inset Formula $Gbyte$
+\end_inset
+
+.
+ Este costo es muy elevado.
+ Es claro que la ausencia de una solución para la contingencia generaría
+ pérdidas catastróficas.
+ En ese sentido, la supervivencia basada en esquemas de protección es un
+ factor clave para la inmediata recuperación de una red con mínimas pérdidas
+ de datos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2000survivability"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Esquema-de-Manejo"
+
+\end_inset
+
+Esquema de Manejo de Fallas 
+\end_layout
+
+\begin_layout Standard
+Las fallas de la red se pueden tratar mediante los métodos de 
+\emph on
+protección
+\emph default
+ y 
+\emph on
+restauración
+\emph default
+.
+ En la protección se pre-configuran rutas de resguardo antes que ocurra
+ una falla, de tal manera que en su ocurrencia la red se encuentre preparada
+ para soportarla y ser re-configurada al instante.
+ Por su parte, en la restauración se calculan las rutas de resguardo luego
+ de ocurrir una falla.
+ En este último contexto, existe un retardo debido al proceso cálculo de
+ solución y configuración de la red para el re-enrutamiento.
+ Además, dependiendo del estado de la red los recursos podrían no estar
+ disponibles.
+ En ese sentido, la supervivencia basada en esquemas de protección es un
+ factor clave para la pronta recuperación de una red con mínimas pérdidas
+ de datos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2000survivability"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Los esquemas de protección pueden clasificarse en:
+\end_layout
+
+\begin_layout Enumerate
+Esquema 
+\series bold
+1:1
+\series default
+: En este esquema, solamente los caminos principales transmiten la información
+ por lo que los caminos de backup están en modo 
+\emph on
+standby
+\emph default
+ (espera).
+ Esto quiere decir que los caminos de backup se activan cuando en el camino
+ principal ocurre un fallo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ramamurthy2003survivable"
+
+\end_inset
+
+.
+ Este esquema puede generalizarse a esquemas M:N, donde M indica el número
+ de caminos primarios que comparten N caminos secundarios.
+\end_layout
+
+\begin_layout Enumerate
+Esquema 
+\series bold
+1+1:
+\series default
+ En este esquema los dos caminos, tanto el camino principal como el camino
+ de backup, transmiten información simultáneamente, y en el link destino
+ se utiliza la señal del camino principal o la del camino de backup que
+ llega con mayor intensidad 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ramamurthy2003survivable"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En este trabajo se utiliza el esquema de protección básico
+\series bold
+ 1:1
+\series default
+.
+\end_layout
+
+\begin_layout Section
+Métodos de Supervivencia 
+\end_layout
+
+\begin_layout Standard
+Para dar continuidad a la red en presencia de fallos se deben contar con
+ métodos de supervivencia y, consecuentemente, se diseñan algoritmos para
+ cada método.
+\end_layout
+
+\begin_layout Standard
+Como ya se había mencionado anteriormente, existen dos esquemas de manejo
+ de fallas las cuales pueden a su vez utilizar los siguientes métodos de
+ supervivencia:
+\end_layout
+
+\begin_layout Subsection
+Métodos de Supervivencia
+\end_layout
+
+\begin_layout Enumerate
+Orientada a camino: Si algún enlace o nodo intermedio en el camino falla,
+ se cuenta con un camino alternativo de resguardo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "somani2006survivability"
+
+\end_inset
+
+, ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Protección-oriendata-a-camino"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Orientada a porciones de camino o segmento: Si algún  enlace o nodo intermedio
+ de la porción del camino falla, se cuenta con una porción de camino alternativo.
+ Primeramente, se calculan las porciones de camino a proteger, es decir,
+ se dividen los caminos en segmentos, luego se diseñan los caminos alternativos
+ a esas porciones de camino 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "somani2006survivability"
+
+\end_inset
+
+, ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Protección-orientada-porciones"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Orientada a enlace: Si algún enlace de la red falla, se cuenta con un camino
+ alternativo para dicha falla 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ramamurthy2003survivable"
+
+\end_inset
+
+, ver Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Método-orientado-a-enlace"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Los esquemas anteriores también pueden ser generalizados a árboles:
+\end_layout
+
+\begin_layout Enumerate
+Árbol - Orientada a camino: Si algún enlace o nodo intermedio del árbol
+ falla, se cuenta con un árbol completo alternativo a dicha falla.
+\end_layout
+
+\begin_layout Enumerate
+Árbol - Orientada a porciones de camino: Cuando un enlace o nodo de la porción
+ del árbol falla, se cuenta con un sub-árbol alternativo para la porción
+ del árbol fallido.
+\end_layout
+
+\begin_layout Enumerate
+Árbol - Orientado a enlace: Si algún enlace de un árbol falla, se cuenta
+ con un camino alternativo de dicho enlace.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figuras/orientadaAcamino.png
+	scale 85
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Método orientado a camino.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Protección-oriendata-a-camino"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figuras/porcionDEcamino.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Método orientado a porciones de camino.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Protección-orientada-porciones"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figuras/orientadaAenlace.png
+	scale 85
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Método orientado a enlaces.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Método-orientado-a-enlace"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Administración de Fallas
+\end_layout
+
+\begin_layout Standard
+Existen dos métodos de administración de fallas en la red óptica y se detallan
+ a continuación:
+\end_layout
+
+\begin_layout Enumerate
+Centralizado: En este método, un nodo de la red es el encargado de la toma
+ de decisión de qué hacer cuando un evento ocurre en la red óptica y tiene
+ conocimiento pleno del estado de la red.
+ Para llevar a cabo su trabajo, existe un elemento de la red (como puede
+ ser un nodo) que monitorea el estado actual de la misma y comunica al nodo
+ central los eventos que van ocurriendo.
+\end_layout
+
+\begin_layout Enumerate
+Distribuido: Para este método, la red se puede dividir en regiones y contar
+ con un administrador central de cada región.
+ Una alternativa también es que cada nodo de la red tenga su propia toma
+ de decisión, como se realizan en las redes IP, y estas son las IP/WDM.
+\end_layout
+
+\begin_layout Standard
+En nuestro trabajo utilizamos el método de protección árbol-orientada-a-camino
+ debido a que en la ocurrencia de un fallo, simple de nodo, intermedio del
+ árbol primario se cuenta con un árbol alternativo para dicha falla.
+\end_layout
+
+\begin_layout Section
+Resumen
+\end_layout
+
+\begin_layout Standard
+En este capítulo se han desarrollado los conceptos básicos de la supervivencia
+ en una red óptica y como también la importancia de que la misma esté protegida.
+ Se introdujeron conceptos de esquemas de manejo de fallas, métodos de supervive
+ncia y administración de las fallas.
+ Los esquemas de protección se resumen en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Clasificación-de-los-esquemas"
+
+\end_inset
+
+ que fueron sacados de 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ramamurthy2003survivable"
+
+\end_inset
+
+ y en este trabajo lo hemos extendido para supervivencia multicast.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename figuras/Clasificacion.png
+	scale 85
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Clasificación de los métodos de supervivencia.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Clasificación-de-los-esquemas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

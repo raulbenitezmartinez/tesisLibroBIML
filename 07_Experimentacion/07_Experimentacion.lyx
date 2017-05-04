@@ -1,0 +1,2360 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage[lined,boxed,commentsnumbered]{algorithm2e}
+\SetKwRepeat{Repeat}{repeat}{while}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Colonia de Hormigas 
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Colonia-de-Hormigas"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este capítulo se da una introducción a la meta-heurística Colonia de
+ Hormigas, presentando los enfoques clásicos y multi-objetivos.
+ Luego, se presentarán los algoritmos utilizados en el presente trabajo
+ con las explicaciones de los enfoques de protección utilizados.
+\end_layout
+
+\begin_layout Section
+Colonia de Hormigas
+\end_layout
+
+\begin_layout Standard
+Optimización por Colonia de Hormigas ACO (
+\shape italic
+Ant Colony Optimization
+\shape default
+) es una meta-heuristica inspirada por el comportamiento de colonia de hormigas
+ reales 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dorigo1999ant"
+
+\end_inset
+
+.
+ ACO ha sido aplicado exitosamente en varios campos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gambardella1999macs"
+
+\end_inset
+
+.
+ Existen varias variantes de ACO que pueden ser considerados como enfoques
+ estándares 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "dorigo1999ant"
+
+\end_inset
+
+.
+ ACO es especialmente atractivo cuando es necesario un enfoque constructivo
+ en el cálculo de la solución, por lo tanto es interesante proponer su aplicació
+n al problema propuesto en este trabajo.
+\end_layout
+
+\begin_layout Section
+Algoritmo de Hormiga Simple Estándar
+\end_layout
+
+\begin_layout Standard
+ACO utiliza simples agentes llamados hormigas artificiales y una matriz
+ de feromonas 
+\begin_inset Formula $\tau=\left\{ \tau_{i,j}\right\} _{(i,j)\in E}$
+\end_inset
+
+ para construir iterativamente soluciones candidatas.
+ El valor inicial es 
+\begin_inset Formula $\tau_{i,j}=\tau_{0}\left(\forall(i,j)\in E\right)$
+\end_inset
+
+ donde 
+\begin_inset Formula $\tau_{0}>0$
+\end_inset
+
+.
+ Además, toma ventaja de la información heurística utilizando un parámetro
+ 
+\begin_inset Formula $\eta_{i,j}=\frac{1}{d_{i,j}}$
+\end_inset
+
+ llamado visibilidad.
+ La influencia relativa entre la información heurística y los niveles de
+ feromonas son definidos por parámetros 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ y 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Mientras una hormiga está visitando el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ representa el conjunto de nodos vecinos que pueden ser visitados.
+ En ese contexto, la probabilidad de elegir un nodo 
+\begin_inset Formula $j$
+\end_inset
+
+ mientras está en el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+, es definido en la ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{i,j}=\left\{ \begin{array}{ll}
+\frac{\tau_{i,j}^{\alpha}\cdot\eta_{i,j}^{\beta}}{\sum_{\forall g\in N_{i}}\tau_{i,g}^{\alpha}\cdot\eta_{i,g}^{\beta}} & \mbox{si \ensuremath{j\in N_{i}},}\\
+0 & \mbox{otro caso}
+\end{array}\right.\label{eq:prob}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En cada generación del algoritmo, cada hormiga de la colonia construye una
+ solución completa 
+\begin_inset Formula $x$
+\end_inset
+
+ utilizando la Ecuación (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:prob"
+
+\end_inset
+
+) para la toma de decisión.
+ Cada hormiga inicia en un nodo fuente 
+\begin_inset Formula $s\in V$
+\end_inset
+
+ e iterativamente va moviéndose sobre 
+\begin_inset Formula $\tau_{i,j}$
+\end_inset
+
+.
+ La evaporación de feromonas es aplicado para todo 
+\begin_inset Formula $(i,j)\in E$
+\end_inset
+
+ acorde a 
+\begin_inset Formula $\tau_{i,j}=(1-\rho)\cdot\tau_{i,j}$
+\end_inset
+
+, donde el parámetro 
+\begin_inset Formula $\rho\in(0,1]$
+\end_inset
+
+ determina la tasa de evaporación.
+ La evaporación es fundamental para evitar convergencias a óptimos locales.
+ Considerando una estrategia elitista, la mejor solución hallada hasta aquí
+ 
+\begin_inset Formula $x_{best}$
+\end_inset
+
+ actualiza 
+\begin_inset Formula $\rho$
+\end_inset
+
+ acorde a 
+\begin_inset Formula $\tau_{i,j}=\tau_{i,j}+\delta_{i,j}$
+\end_inset
+
+, donde 
+\begin_inset Formula $\delta_{i,j}=\frac{1}{f(x_{best})}$
+\end_inset
+
+ si 
+\begin_inset Formula $(i,j)\in x_{best}$
+\end_inset
+
+ y 
+\begin_inset Formula $\delta_{i,j}=0$
+\end_inset
+
+ si 
+\begin_inset Formula $(i,j)\neq x_{best}$
+\end_inset
+
+.
+ Típicamente 
+\begin_inset Formula $f\left(x_{best}\right)$
+\end_inset
+
+ es la función de costo de la mejor solución.
+ Note que el enfoque estándar optimiza una simple función objetivo.
+ 
+\end_layout
+
+\begin_layout Standard
+En la siguiente sección se presenta el enfoque MOACO utilizado en este trabajo.
+\end_layout
+
+\begin_layout Section
+Algoritmo de Hormiga Multi-objetivo
+\end_layout
+
+\begin_layout Standard
+Varios enfoques para problemas MOP han sido propuestos en la literatura
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "arteta2007routing,arevalos2009MRWA"
+
+\end_inset
+
+.
+ En este trabajo fue adoptado el MOACS (
+\shape italic
+Multiobjetive Ant Colony Optimization
+\shape default
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SB03"
+
+\end_inset
+
+ el cual utiliza una colonia de 
+\begin_inset Formula $H$
+\end_inset
+
+ hormigas y una matriz de feromonas 
+\begin_inset Formula $\tau$
+\end_inset
+
+ para construir en cada generación 
+\begin_inset Formula $w$
+\end_inset
+
+ soluciones 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+.
+ MOACS es una extensión del propuesto en 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gambardella1999macs"
+
+\end_inset
+
+ para problemas MOP.
+ MOACS también toma ventaja de la información heurística del problema.
+ En particular MOACS utiliza tantas informaciones heurísticas como funciones
+ objetivos a optimizar.
+ Los parámetros 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ y 
+\begin_inset Formula $\beta$
+\end_inset
+
+ definen la influencia relativa entre la información heurística y los niveles
+ de feromonas.
+ MOACS propone que 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ y 
+\begin_inset Formula $\beta=1-\alpha$
+\end_inset
+
+ varíen en el tiempo de acuerdo a algún criterio.
+ En este trabajo se adopta que 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ sea distinto para cada hormiga.
+ La 
+\begin_inset Formula $h$
+\end_inset
+
+-ésima hormiga tendrá 
+\begin_inset Formula $\alpha=\frac{h}{H}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A diferencia del enfoque estándar, MOACS selecciona un nodo a ser visitado
+ de acuerdo a una regla pseudo-aleatoria.
+ Básicamente, dado un parámetro 
+\begin_inset Formula $q\in(0,1)$
+\end_inset
+
+ y el valor de 
+\begin_inset Formula $p\in(0,1)$
+\end_inset
+
+ seleccionado aleatoriamente con distribución uniforme, si 
+\begin_inset Formula $p<q$
+\end_inset
+
+ se toma un nodo 
+\begin_inset Formula $j\in N_{i}$
+\end_inset
+
+ utilizando el método aleatorio; en otro caso, se toma un nodo 
+\begin_inset Formula $j\in N_{i}$
+\end_inset
+
+ cuya probabilidad 
+\begin_inset Formula $p_{i,j}$
+\end_inset
+
+ sea la mayor.
+\end_layout
+
+\begin_layout Standard
+En Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:MOACS"
+
+\end_inset
+
+ se presenta el pseudo-código del MOACS-PNF adaptado para el problema de
+ diseño de red.
+ Al principio se inicializa el contador de iteraciones 
+\begin_inset Formula $it$
+\end_inset
+
+, la matriz de feromonas 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y el conjunto de Pareto 
+\begin_inset Formula $\Gamma_{known}^{it}$
+\end_inset
+
+ (lineas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:MOACS:it0"
+
+\end_inset
+
+ a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:MOACS:Yknow"
+
+\end_inset
+
+).
+ Luego, mientras algún criterio de parada no se cumpla se construyen 
+\begin_inset Formula $H$
+\end_inset
+
+ soluciones 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ en cada iteración (línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:MOACS:buildtree"
+
+\end_inset
+
+); la dominancia Pareto para calcular 
+\begin_inset Formula $\Gamma_{known}^{it}$
+\end_inset
+
+ se verifica (línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:MOACS:update"
+
+\end_inset
+
+).
+ La matriz 
+\begin_inset Formula $\tau$
+\end_inset
+
+ es actualizada con 
+\begin_inset Formula $\Gamma_{know}^{it}$
+\end_inset
+
+.
+ Si 
+\begin_inset Formula $\Gamma_{known}^{it}$
+\end_inset
+
+ fue modificado con respecto a la anterior iteración entonces 
+\begin_inset Formula $\tau$
+\end_inset
+
+ se inicializa (línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:MOACS:tau-int"
+
+\end_inset
+
+), en otro caso se procede a evaporar 
+\begin_inset Formula $\tau$
+\end_inset
+
+ (línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:MOACS:tau-evap"
+
+\end_inset
+
+).
+ Finalmente, el mejor conjunto de soluciones no dominadas 
+\begin_inset Formula $\Gamma_{known}^{it}$
+\end_inset
+
+ es retornado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+IncMargin{1em} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+PrintSemicolon 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+LinesNumbered 
+\backslash
+SetAlgoLined 
+\backslash
+KwIn{
+\backslash
+
+\backslash
+ 	
+\backslash
+qquad $H$ número de hormigas, $q$ parámetro heurístico 	} 
+\backslash
+KwOut{
+\backslash
+
+\backslash
+ 	
+\backslash
+qquad $
+\backslash
+Gamma_{know}$ conjunto Pareto       } 	 $it 
+\backslash
+leftarrow 0$
+\backslash
+;                           
+\backslash
+label{alg:MOACS:it0}	  	 $
+\backslash
+tau 
+\backslash
+leftarrow 
+\backslash
+tau_{0}$
+\backslash
+;                  
+\backslash
+label{alg:MOACS:tau0}   	 $
+\backslash
+Gamma^{it}_{know} 
+\backslash
+leftarrow 
+\backslash
+emptyset$ 
+\backslash
+;       
+\backslash
+label{alg:MOACS:Yknow}  	 
+\backslash
+While{algún criterio de parada no se cumpla}{
+\backslash
+label{alg:MOACS:while-init} 	 	
+\backslash
+For{$h=1$ 
+\backslash
+KwTo $H$}{                     
+\backslash
+label{alg:MOACS:for-init} 	 		$
+\backslash
+Gamma 
+\backslash
+leftarrow$ Construir-Árboles()
+\backslash
+;          
+\backslash
+label{alg:MOACS:buildtree} 	 		Actualizar($
+\backslash
+Gamma^{it}_{know}$,$
+\backslash
+Gamma$)
+\backslash
+;              
+\backslash
+label{alg:MOACS:update} 	 	}                                          
+\backslash
+label{alg:MOACS:for-end}        	 	
+\backslash
+eIf{$
+\backslash
+Gamma^{it}_{know} 
+\backslash
+neq 
+\backslash
+Gamma^{it-1}_{know}$}{
+\backslash
+label{alg:MOACS:if-init} 	 		$
+\backslash
+tau_{i,j} 
+\backslash
+leftarrow 
+\backslash
+tau_{0}; 
+\backslash
+, 
+\backslash
+forall (i,j) 
+\backslash
+in E$
+\backslash
+;
+\backslash
+label{alg:MOACS:tau-int} 	 	}{ 	 		$
+\backslash
+tau_{i,j} 
+\backslash
+leftarrow (1-
+\backslash
+rho) 
+\backslash
+cdot 
+\backslash
+tau_{i,j} + 
+\backslash
+rho 
+\backslash
+cdot 
+\backslash
+delta_{i,j}; 
+\backslash
+, 
+\backslash
+forall (i,j) 
+\backslash
+in E$
+\backslash
+;                                                
+\backslash
+label{alg:MOACS:tau-evap} 	 	}											
+\backslash
+label{alg:MOACS:if-end} 	 }												
+\backslash
+label{alg:MOACS:while-end}  	 	 	
+\backslash
+Return{$
+\backslash
+Gamma^{it}_{know}$} 
+\backslash
+caption[MOACS-PNF]{MOACS-PNF.}  
+\backslash
+label{alg:MOACS} 
+\backslash
+end{algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cada solución 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ del problema está conformado por un árbol de luz primario y 
+\begin_inset Formula $|V|$
+\end_inset
+
+ árbol de luz secundarios/protección.
+ Para cada solicitud multicast los árboles de luz de protección en 
+\begin_inset Formula $T_{s}^{i}$
+\end_inset
+
+ se activarán cuando el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+ falle, simultáneamente, los árbol de luz primario en 
+\begin_inset Formula $T_{p}$
+\end_inset
+
+ se desactivarán acorde a la política utilizada.
+ En ese contexto, el Construir-Árboles tiene dos partes: (1) construcción
+ del árbol de luz primario, y (2) construcción de los árboles de luz secundarios.
+ El Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree"
+
+\end_inset
+
+ presenta el pseudo-código de Construir-Árboles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+PrintSemicolon   
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+LinesNumbered 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+SetAlgoLined 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+KwIn{
+\backslash
+
+\backslash
+ 	
+\backslash
+qquad $h$ número de hormigas, $G$ grafo de red, $K$ número máximo de fibras
+ por enlace, $M$ conjunto de solicitudes multicast, $
+\backslash
+tau$ matriz de feromonas.
+ 	} 
+\backslash
+KwOut{
+\backslash
+
+\backslash
+ 	
+\backslash
+qquad  $
+\backslash
+Gamma$ solución       }       	$A_{i} 
+\backslash
+leftarrow {0}
+\backslash
+ 
+\backslash
+forall i 
+\backslash
+in V$
+\backslash
+;       	$B_{i} 
+\backslash
+leftarrow {0}
+\backslash
+ 
+\backslash
+forall i 
+\backslash
+in V$
+\backslash
+;       	$F_{i,j} 
+\backslash
+leftarrow {1}
+\backslash
+ 
+\backslash
+forall (i,j)
+\backslash
+in E$
+\backslash
+;       	$T_{p} 
+\backslash
+leftarrow 
+\backslash
+emptyset$
+\backslash
+;
+\backslash
+label{alg:build-tree-tp}       	
+\backslash
+For {$m 
+\backslash
+in M$}{ 	  		$t_{p_{m}} 
+\backslash
+leftarrow$ Construir-Primario($m$,$A$,$B$,$F$,$G$,$T_{p}$)
+\backslash
+; 
+\backslash
+label{alg:build-tree-tp} 	  		$T_{p} 
+\backslash
+leftarrow T_{p} 
+\backslash
+cup t_{p_{m}}$
+\backslash
+;
+\backslash
+label{alg:build-tree-Tpm} 	  	} 		
+\backslash
+For{$i 
+\backslash
+in V$}{ 			$T^{i}_{s} 
+\backslash
+leftarrow 
+\backslash
+emptyset$
+\backslash
+;   			$G(i) 
+\backslash
+leftarrow G 
+\backslash
+setminus 
+\backslash
+{i
+\backslash
+}$
+\backslash
+;
+\backslash
+label{alg:build-tree-g}   			$M(i)
+\backslash
+leftarrow $ Sesiones-a-Proteger($M$,$G(i)$)
+\backslash
+;
+\backslash
+label{alg:build-tree-m}   			Liberar-Recursos($M(i)$)
+\backslash
+;
+\backslash
+label{alg:build-tree-r}   			
+\backslash
+For{$m 
+\backslash
+in M(i)$}{   				$t^{i}_{s_{m}} 
+\backslash
+leftarrow$ Contruir-Secuendario($m$,$A$,$B$,$F$,$G(i)$,$T_{p}$)
+\backslash
+; 
+\backslash
+label{alg:build-tree-ts} 	  			$T^{i}_{s} 
+\backslash
+leftarrow T^{i}_{s} 
+\backslash
+cup t_{s_{m}}$
+\backslash
+;
+\backslash
+label{alg:build-tree-Tis}   			}   		} 	
+\backslash
+Return{$
+\backslash
+Gamma=
+\backslash
+left
+\backslash
+{A,B,F,T_{p};T^{1}_{s},T^{2}_{s},
+\backslash
+ldots,T^{|V|}_{s}
+\backslash
+right
+\backslash
+}$} 
+\backslash
+caption[Construir-Árboles]{Construir-Árboles.}  
+\backslash
+label{alg:build-tree} 
+\backslash
+end{algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inicialmente los vectores de diseño de red 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+ y 
+\begin_inset Formula $F$
+\end_inset
+
+ son inicializados respectivamente.
+ Note que al inicio no se tiene instalado ningún divisor ni amplificador,
+ mientras que los enlaces cuentan con al menos una fibra óptica instalada.
+ En la línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-tp"
+
+\end_inset
+
+ del Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree"
+
+\end_inset
+
+ se construye un árbol de luz primario 
+\begin_inset Formula $t_{p_{m}}$
+\end_inset
+
+ para la solicitud multicast 
+\begin_inset Formula $m$
+\end_inset
+
+.
+ Para cada nodo 
+\begin_inset Formula $i\in V$
+\end_inset
+
+ se calcula un grafo 
+\begin_inset Formula $G(i)\subset G$
+\end_inset
+
+ y un conjunto de solicitudes multicast 
+\begin_inset Formula $M(i)\subset M$
+\end_inset
+
+ que serán re-configuradas (líneas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-g"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-m"
+
+\end_inset
+
+).
+ En la línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-r"
+
+\end_inset
+
+ se liberan los recursos de 
+\begin_inset Formula $M(i)$
+\end_inset
+
+ para su posterior re-configuración.
+ Para cada solicitud 
+\begin_inset Formula $m\in M(i)$
+\end_inset
+
+ se construye un árbol de luz de protección 
+\begin_inset Formula $t_{s_{m}}^{i}$
+\end_inset
+
+ en la línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-ts"
+
+\end_inset
+
+.
+ Para la construcción del árbol de luz la hormiga mantiene actualizado los
+ vectores 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $B$
+\end_inset
+
+, y 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ y 
+\begin_inset Formula $B$
+\end_inset
+
+ tienen valores nulos en todas sus entradas el inicio, esto es, no se tienen
+ instalados amplificadores ni divisores.
+ Por otra parte, cada enlace 
+\begin_inset Formula $(i,j)\in E$
+\end_inset
+
+ tiene inicialmente una fibra óptica.
+\end_layout
+
+\begin_layout Standard
+Básicamente, en la línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-tp"
+
+\end_inset
+
+ del Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree"
+
+\end_inset
+
+ la hormiga construirá progresivamente un árbol de luz desde el nodo fuente
+ 
+\begin_inset Formula $s$
+\end_inset
+
+ hasta alcanzar todos los nodos destinos 
+\begin_inset Formula $d\in D$
+\end_inset
+
+ utilizando como medio de decisión la matriz de feromonas 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y las visibilidades 
+\begin_inset Formula $\eta$
+\end_inset
+
+.
+ Durante el proceso la hormiga agrega enlace de luz a 
+\begin_inset Formula $t_{m}$
+\end_inset
+
+ mientras que verifica si se necesita agregar divisores, amplificadores
+ y fibras ópticas.
+ Una vez alcanzado todos los destinos se procede a eliminar aquellos enlaces
+ de luz que no conectan a ningún destino.
+ El Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree"
+
+\end_inset
+
+ presenta en pseudo-código Construir-Árbol que construye un árbol de luz.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+PrintSemicolon 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+LinesNumbered 
+\backslash
+SetAlgoLined 
+\backslash
+KwIn{
+\backslash
+
+\backslash
+ 	
+\backslash
+qquad $G$ grafo de red, $K$ número máximo de fibras por enlace, $
+\backslash
+Lambda$ número de longitudes de onda, $m=(s,D)$ solicitud multicast, $
+\backslash
+tau$ matriz de feromonas, $
+\backslash
+eta$ visibilidades, $A$ vector de amplificadores, $B$ vector de divisores
+ de luz, $F$ vector de fibras ópticas, $T_{p}$ conjunto de árbol de luz
+ ya construidos.
+ 	} 
+\backslash
+KwOut{
+\backslash
+
+\backslash
+ 	
+\backslash
+qquad  $t_{m}$ árboles primarios       }       $V^{'} 
+\backslash
+leftarrow {s}$
+\backslash
+;
+\backslash
+label{alg:ant-tree:1}       $R 
+\backslash
+leftarrow V^{'}$
+\backslash
+;
+\backslash
+label{alg:ant-tree:2}       $
+\backslash
+ell 
+\backslash
+leftarrow 
+\backslash
+emptyset$
+\backslash
+;
+\backslash
+label{alg:ant-tree:3}       $
+\backslash
+lambda 
+\backslash
+leftarrow $ Selección-de-Nodo($
+\backslash
+lambda_{1},
+\backslash
+lambda_{2},
+\backslash
+ldots,
+\backslash
+lambda_{
+\backslash
+Lambda}$)
+\backslash
+;
+\backslash
+label{alg:ant-tree:4} 	  
+\backslash
+Repeat{$R 
+\backslash
+neq 
+\backslash
+emptyset$ o $D 
+\backslash
+nsubseteq V^{'}$}{
+\backslash
+label{alg:ant-tree:5} 		
+\end_layout
+
+\begin_layout Plain Layout
+
+$i 
+\backslash
+leftarrow$ Seleccion-Aleatoria-Nodo($R$)
+\backslash
+;	
+\backslash
+label{alg:ant-tree:6}  	       	$N_{i} 
+\backslash
+leftarrow$ Obtener-nodos-adyacentes($i$)
+\backslash
+;
+\backslash
+label{alg:ant-tree:7}       	
+\backslash
+eIf{$N_{i}=
+\backslash
+emptyset$}{
+\backslash
+label{alg:ant-tree:8}       		$R 
+\backslash
+leftarrow R - i$
+\backslash
+;
+\backslash
+label{alg:ant-tree:9}       	}{
+\backslash
+label{alg:ant-tree:10}       		$p_{i,j} 
+\backslash
+leftarrow$ Calcular($
+\backslash
+tau$,$
+\backslash
+eta$), $
+\backslash
+forall j 
+\backslash
+in N_{i}$
+\backslash
+;
+\backslash
+label{alg:ant-tree:11}       		$j^{'} 
+\backslash
+leftarrow$Regla-Pseudo-aleatoria($N_{i}$)
+\backslash
+;
+\backslash
+label{alg:ant-tree:12}       		$V^{'} 
+\backslash
+leftarrow V^{'} 
+\backslash
+cup j^{'}$
+\backslash
+;
+\backslash
+label{alg:ant-tree:13} 			$R 
+\backslash
+leftarrow R 
+\backslash
+cup j^{'}$
+\backslash
+;
+\backslash
+label{alg:ant-tree:14} 			$k 
+\backslash
+leftarrow$Seleccion-de-Fibra($(i,j^{'})$, $F$,$T_{p}$)
+\backslash
+;
+\backslash
+label{alg:ant-tree:15} 			$
+\backslash
+ell 
+\backslash
+leftarrow 
+\backslash
+ell 
+\backslash
+cup 
+\backslash
+ell^{k,
+\backslash
+lambda}_{i,j^{'}}$
+\backslash
+;
+\backslash
+label{alg:ant-tree:16} 			$B_{i} 
+\backslash
+leftarrow$Asignar-Divisor($t_{m}$,$B$)
+\backslash
+;
+\backslash
+label{alg:ant-tree:17} 			$S^{k,
+\backslash
+lambda}_{i,j^{'}} 
+\backslash
+leftarrow$ Calcular-Potencia($t_{m}$,$B$)
+\backslash
+;
+\backslash
+label{alg:ant-tree:18} 			
+\backslash
+If{$S^{k,
+\backslash
+lambda}_{i,j^{'}} 
+\backslash
+leq S_{min}$ y $A^{k}_{i,j^{'}}=0$}{
+\backslash
+label{alg:ant-tree:19} 				$A^{k}_{i,j^{'}}=1$
+\backslash
+;
+\backslash
+label{alg:ant-tree:20} 			}   
+\backslash
+label{alg:ant-tree:21}  		       	}   
+\backslash
+label{alg:ant-tree:22}         
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\backslash
+label{alg:ant-tree:23} 	         	
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Return{$t_{m}=
+\backslash
+left
+\backslash
+{V^{'},
+\backslash
+ell 
+\backslash
+right
+\backslash
+}$}
+\backslash
+label{alg:ant-tree:24} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption[Construir-Árbol]{Construir-Árbol.
+\end_layout
+
+\begin_layout Plain Layout
+
+}  
+\backslash
+label{alg:ant-tree} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La construcción del árbol de luz primario consiste en que la hormiga inicia
+ en un nodo fuente 
+\begin_inset Formula $s$
+\end_inset
+
+ el cual se agrega a 
+\begin_inset Formula $V^{'}$
+\end_inset
+
+ y a 
+\begin_inset Formula $R$
+\end_inset
+
+ (Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree"
+
+\end_inset
+
+, líneas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:1"
+
+\end_inset
+
+ a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:2"
+
+\end_inset
+
+); en este punto inicial 
+\begin_inset Formula $V^{'}={s}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $R$
+\end_inset
+
+ es una lista dinámica de nodos auxiliar para verificar que nodos ya fue
+ procesado.
+ En un segundo paso la hormiga selecciona una longitud de onda 
+\begin_inset Formula $\lambda\in\left\{ \lambda_{1},\lambda_{2},\ldots,\lambda_{\Lambda}\right\} $
+\end_inset
+
+ de forma aleatoria (linea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:4"
+
+\end_inset
+
+).
+ La hormiga selecciona aleatoriamente un nodo 
+\begin_inset Formula $i$
+\end_inset
+
+ del conjunto 
+\begin_inset Formula $R$
+\end_inset
+
+ (linea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:6"
+
+\end_inset
+
+).
+ Luego se construye el conjunto de nodos 
+\begin_inset Formula $N_{i}$
+\end_inset
+
+ vecinos al nodo 
+\begin_inset Formula $i$
+\end_inset
+
+ (linea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:7"
+
+\end_inset
+
+).
+ Si el nodo seleccionado 
+\begin_inset Formula $i$
+\end_inset
+
+ no posee vecinos factibles (
+\begin_inset Formula $N_{i}=\emptyset$
+\end_inset
+
+) entonces 
+\begin_inset Formula $i$
+\end_inset
+
+ se elimina de 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ En otro caso, para cada par 
+\begin_inset Formula $(i,j^{'})$
+\end_inset
+
+ donde 
+\begin_inset Formula $j^{'}\in N_{i}$
+\end_inset
+
+ se calcula una probabilidad de selección en función a la matriz de feromonas
+ 
+\begin_inset Formula $\tau$
+\end_inset
+
+ y la matriz de visibilidad 
+\begin_inset Formula $\eta$
+\end_inset
+
+ (linea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:11"
+
+\end_inset
+
+).
+ Por medio del algoritmo pseudo-aleatorio se selecciona un nodo 
+\begin_inset Formula $j^{'}$
+\end_inset
+
+ utilizando las probabilidades 
+\begin_inset Formula $p_{i,j^{'}}$
+\end_inset
+
+ asignadas (linea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:12"
+
+\end_inset
+
+).
+ El nodo 
+\begin_inset Formula $j^{'}$
+\end_inset
+
+ se agrega a los conjuntos de nodos 
+\begin_inset Formula $V^{'}$
+\end_inset
+
+ y 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En este punto es importante destacar que la visibilidad 
+\begin_inset Formula $\eta$
+\end_inset
+
+ utilizada está conformada por la visibilidad de distancia 
+\begin_inset Formula $\eta^{d}=\left[\eta_{i,j}^{d}\right]$
+\end_inset
+
+ y la visibilidad por fibra óptica 
+\begin_inset Formula $\eta^{\lambda}=\left[\eta_{i,j}^{\lambda}\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\eta_{i,j}^{d}$
+\end_inset
+
+ es la inversa a la distancia promedio desde el nodo 
+\begin_inset Formula $j\in N_{i}$
+\end_inset
+
+ a todos los nodos destinos 
+\begin_inset Formula $D$
+\end_inset
+
+ aún no visitados.
+ Por su parte, 
+\begin_inset Formula $\eta_{i,j}^{\lambda}=\frac{1}{\lambda_{i,j}^{free}}$
+\end_inset
+
+ donde 
+\begin_inset Formula $\lambda_{i,j}^{free}$
+\end_inset
+
+ es el número de fibras ópticas en 
+\begin_inset Formula $(i,j)\in E$
+\end_inset
+
+ cuya longitud de onda 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ se encuentran disponibles.
+ Es claro que dicha longitud de onda está asignada al árbol de luz en construcci
+ón.
+ 
+\begin_inset Formula $\eta_{i,j}^{d}$
+\end_inset
+
+ es una parámetro de entrada mientras que 
+\begin_inset Formula $\eta_{i,j}^{\lambda}$
+\end_inset
+
+ es calculado durante el proceso.
+\end_layout
+
+\begin_layout Standard
+Suponga que el enlace formado por 
+\begin_inset Formula $(i,j^{'})$
+\end_inset
+
+ tiene 
+\begin_inset Formula $F_{i,j^{'}}<K$
+\end_inset
+
+ fibras ópticas instaladas.
+ La hormiga seleccionará aleatoriamente aquella fibra óptica 
+\begin_inset Formula $k\in\left\{ f_{i,j^{'}}^{1},f_{i,j^{'}}^{2},\ldots,f_{i,j^{'}}^{F_{i,j^{'}}}\right\} $
+\end_inset
+
+ que tenga la longitud de onda 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ libre.
+ Entonces, el enlace de luz 
+\begin_inset Formula $\ell_{i,j^{'}}^{k,\lambda}$
+\end_inset
+
+ se agrega al conjunto 
+\begin_inset Formula $\ell\in t_{m}$
+\end_inset
+
+.
+ Por otra parte, si 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ se encuentra ocupada en las 
+\begin_inset Formula $F_{i,j^{'}}$
+\end_inset
+
+ fibras ópticas entonces se agrega una nueva fibra óptica al enlace 
+\begin_inset Formula $(i,j^{'})\in E$
+\end_inset
+
+ y se asigna el enlace de luz 
+\begin_inset Formula $\ell_{i,j^{'}}^{1+F_{i,j^{'}},\lambda}$
+\end_inset
+
+ al conjunto 
+\begin_inset Formula $\ell\in t_{m}$
+\end_inset
+
+.
+ El procedimiento anterior se realiza en las lineas (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:15"
+
+\end_inset
+
+) y (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:16"
+
+\end_inset
+
+).
+ Al agregar un 
+\begin_inset Formula $\ell_{i,j^{'}}^{k,\lambda}$
+\end_inset
+
+ puede generar una nueva bifurcación al árbol de luz.
+ Esta bifurcación se encuentra sujeta el número máximo de ramas salientes
+ de un divisor de luz.
+ En este contexto, se tienen dos casos: (a) el árbol de luz tiene una única
+ rama saliente del nodo 
+\begin_inset Formula $i$
+\end_inset
+
+, entonces no se necesita ningún divisor de luz; y (b) el árbol de luz tiene
+ más de una rama saliente del nodo 
+\begin_inset Formula $i$
+\end_inset
+
+, entonces se necesita un divisor de luz en el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+ para el árbol de luz 
+\begin_inset Formula $t_{m}$
+\end_inset
+
+ en construcción (línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:17"
+
+\end_inset
+
+).
+ Por otra parte también se verificará los niveles de potencia mínima de
+ luz.
+ Si 
+\begin_inset Formula $S_{i,j}^{k,\lambda}<S_{min}$
+\end_inset
+
+ y 
+\begin_inset Formula $A_{i,j}^{k}=0$
+\end_inset
+
+ entonces se agrega un amplificador a la fibra 
+\begin_inset Formula $f_{i,j}^{k}$
+\end_inset
+
+, esto es, 
+\begin_inset Formula $A_{i,j}^{k}=1$
+\end_inset
+
+ (lineas 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:19"
+
+\end_inset
+
+ a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree:21"
+
+\end_inset
+
+).
+ Este último paso es fundamental para las restricciones de potencia mínima
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:splitting"
+
+\end_inset
+
+).
+ 
+\begin_inset Newline newline
+\end_inset
+
+En este trabajo también se realiza la construcción de la solución a las
+ solicitudes multicast sin realizar la protección a la falla de nodo simple,
+ el algoritmo es denominado MOACS-ANT-MRWA que es lo mismo que el Algoritmo
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:MOACS"
+
+\end_inset
+
+ con la diferencia que en la linea 6 del mismo llama al Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree"
+
+\end_inset
+
+ para la contrucción de los caminos primarios únicamente.
+ Utilizamos este enfoque para realizar las comparaciones de contar con un
+ enfoque sin protección optimizando los mismos objetivos del trabajo que
+ son (1) Retardo máximo y (2) Costo de la red óptica.
+\end_layout
+
+\begin_layout Section
+Enfoques de Protección 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Enfoques-de-Protección"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez construido un árbol de luz primario 
+\begin_inset Formula $t_{p_{m}}$
+\end_inset
+
+ (Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree"
+
+\end_inset
+
+, línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-tp"
+
+\end_inset
+
+) se debe construir los árboles de luz secundarios para cada nodo la red
+ (Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree"
+
+\end_inset
+
+, línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-ts"
+
+\end_inset
+
+).
+ En este trabajo se adopta un enfoque similar al propuesto en 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+ para la construcción de los árboles de luz secundarios.
+ Básicamente, los siguientes esquemas de protección son utilizados: 
+\end_layout
+
+\begin_layout Itemize
+Re-configuración Total (RT) 
+\end_layout
+
+\begin_layout Itemize
+Re-configuración Parcial (RP) 
+\end_layout
+
+\begin_layout Standard
+Con un ejemplo simple se dan las descripciones de los métodos de protección
+ utilizados en el presente trabajo y los ejemplos con gráficos demostrativos
+ de su funcionamiento.
+ Para ello contaremos con una red óptica que consta de seis nodos y once
+ enlaces, dos sesiones multicast 
+\begin_inset Formula $m_{1}=\left(s=1,D=\{2,6\}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $m_{2}=\left(s=5,D=\{1,7\}\right)$
+\end_inset
+
+ y un fallo en el nodo 3, ver la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Re-configuración Total
+\end_layout
+
+\begin_layout Standard
+Al producirse un fallo de un nodo de la red se liberan todas las conexiones
+ existentes, y se reconfiguran las solicitudes multicast.
+ En las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo1"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo2"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo3"
+
+\end_inset
+
+ se presentan el ejemplo del funcionamiento del método de protección RT
+ para fallo del nodo 3.
+\end_layout
+
+\begin_layout Standard
+El fallo del nodo 3 como se muestra en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo1"
+
+\end_inset
+
+ hace que todos los enlaces que estén conectados al mismo desaparezcan virtualme
+nte de la red.
+ Posteriormente para este esquema de protección, se liberan todas las sesiones
+ multicast (
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ y 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+) de la red como se puede apreciar en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo2"
+
+\end_inset
+
+.
+ Luego, la re-configuración total de la red se realiza.
+ Finalmente, la red continua, a pesar del fallo de nodo, proporcionando
+ servicio continuo como se muestra en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo3"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement tp
+wide true
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../Google Code/07_colonia_de_hormigas/imagenes/redwdm_ET_uno.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ejemplo1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../Google Code/07_colonia_de_hormigas/imagenes/redwdm_ET_dos.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ejemplo2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../Google Code/07_colonia_de_hormigas/imagenes/redwdm_ET_tres.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ejemplo3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../Google Code/07_colonia_de_hormigas/imagenes/redwdm_GT_dos.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ejemplo5"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../Google Code/07_colonia_de_hormigas/imagenes/redwdm_GT_tres.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ejemplo6"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../../Google Code/07_colonia_de_hormigas/imagenes/ConfEjemploProteccion.png
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:configEjemplPruebaa"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Red WDM con dos sesiones multicast 
+\begin_inset Formula $m_{1}=\left(s=1,D=\{2,6\}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $m_{2}=\left(s=5,D=\{1,7\}\right)$
+\end_inset
+
+.
+ (a) fallo del nodo 3, (b) red totalmente liberada, (c) red totalmente re-config
+urada, (d) red parcialmente liberada, y (e) red parcialmente re-configurada.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ejemplo-total-reconfiguracion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este trabajo la re-configuración total RT se realiza para cada nodo 
+\begin_inset Formula $i\in V$
+\end_inset
+
+ de red fallido (Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree"
+
+\end_inset
+
+, línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-ts"
+
+\end_inset
+
+).
+ En este contexto, para el nodo 
+\begin_inset Formula $i\in V$
+\end_inset
+
+ fallado el conjunto de sesiones 
+\begin_inset Formula $M(i)$
+\end_inset
+
+ a ser re-configurado es 
+\begin_inset Formula $M(i)=M$
+\end_inset
+
+.
+ La construcción de los secundarios 
+\begin_inset Formula $t_{s_{m}}^{i}$
+\end_inset
+
+ es realizada con el mismo Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree"
+
+\end_inset
+
+, es decir, con Construir-Árbol.
+ Este enfoque de solución es denominado MOACS-PNF-RT.
+\end_layout
+
+\begin_layout Subsection
+Re-configuración Parcial
+\end_layout
+
+\begin_layout Standard
+Al producirse un fallo de nodo en cualquier nodo de la red se liberan solo
+ las sesiones que atraviesan el nodo fallido y dichas sesiones son re-configurad
+as.
+ El segundo ejemplo del funcionamiento del método de protección RP para
+ fallo de nodo se presenta en los gráficos de las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo5"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo6"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El fallo del nodo 3 como se muestra en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo1"
+
+\end_inset
+
+ hace que todos los enlaces que estén conectados al mismo desaparezcan virtualme
+nte de la red.
+ Posteriormente, para este esquema de protección RP, se liberan solo las
+ sesiones multicast (
+\begin_inset Formula $m_{2}$
+\end_inset
+
+ únicamente en el ejemplo) que atraviesan el nodo fallido 3 como se muestra
+ en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo5"
+
+\end_inset
+
+.
+ Luego, la re-configuración parcial se realiza sobre 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+.
+ Finalmente, la red continua, a pesar del fallo simple de nodo, proporcionando
+ servicio continuo como se muestra en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo6"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En este trabajo el enfoque de re-configuración parcial RP es desarrollado
+ de dos formas: (a) basado en colonia de hormigas, y (b) basado en caminos
+ más cortos.
+ En ambos métodos, el conjunto de sesiones multicast 
+\begin_inset Formula $M(i)$
+\end_inset
+
+ a proteger son las que pasan por el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+ de estudio.
+ 
+\begin_inset Formula $M(i)$
+\end_inset
+
+ es calculado mediante el Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree"
+
+\end_inset
+
+ en la línea 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:build-tree-m"
+
+\end_inset
+
+.
+ Para el método (a), los árbol de luz de protección son calculados de forma
+ heurística utilizando el Algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:ant-tree"
+
+\end_inset
+
+.
+ Este enfoque se denomina MOACS-PNF-RP1.
+ Por otra parte, en el método (b) los árbol de luz de protección son calculados
+ de forma determinística mediante el Algoritmo de Dijkstra 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "arteta2007routing"
+
+\end_inset
+
+.
+ En este enfoque para cada par de nodos fuente 
+\begin_inset Formula $s$
+\end_inset
+
+ y destino 
+\begin_inset Formula $d\in D$
+\end_inset
+
+ se calcula el camino más corto.
+ Este enfoque es denominado MOACS-PNF-RP2.
+\end_layout
+
+\begin_layout Standard
+En los ejemplos anteriores se pudo visualizar los esquemas de protección
+ que proporcionan continuidad de servicios a pesar de fallas en los nodos.
+ En las Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo3"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ejemplo6"
+
+\end_inset
+
+ respectivamente se pueden notar las diferencias de estados finales a que
+ llegan cada método en la protección.
+ La protección RT re-configura todas las sesiones existentes en la red,
+ sin embargo, la protección RP solo re-configura las sesiones que atraviesan
+ el nodo fallido.
+ Las bondades y limitaciones de las propuestas MOACS-PNF-RT, MOACS-PNF-RP1
+ y MOACS-PNF-RP2 serán discutidas  en la sección de experimentos.
+\end_layout
+
+\end_body
+\end_document

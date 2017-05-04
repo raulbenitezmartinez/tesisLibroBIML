@@ -1,0 +1,689 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Lista de Símbolos
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $|.|$
+\end_inset
+
+ Cardinalidad de un conjunto.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V$
+\end_inset
+
+ Conjunto de nodos de la red.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $E$
+\end_inset
+
+ Conjunto de enlaces de la red.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left(i,j\right)\in E$
+\end_inset
+
+ Enlace desde el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+ al nodo 
+\begin_inset Formula $j;$
+\end_inset
+
+ donde 
+\begin_inset Formula $i,j\in V$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $G=(V,E)$
+\end_inset
+
+ Grafo de red conformado por 
+\begin_inset Formula $V$
+\end_inset
+
+ y 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $V(i)\subset V$
+\end_inset
+
+ Sub-conjunto de nodos; 
+\begin_inset Formula $V(i)=V\setminus\left\{ i\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $E(i)\subset E$
+\end_inset
+
+ Sub-conjunto de enlaces; 
+\begin_inset Formula $E(i)=E\setminus\left\{ (i,j),(j,i):\forall j\in V\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $G(i)\subset G$
+\end_inset
+
+ Sub-grafo de red; 
+\begin_inset Formula $G(i)=(V(i),E(i))$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $s\in V$
+\end_inset
+
+ Nodo origen de una solicitud multicast.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $d\in V$
+\end_inset
+
+ Nodo destino de una solicitud multicast.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $D$
+\end_inset
+
+ Conjunto de nodos destinos multicast.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $m=\left(s,D\right)$
+\end_inset
+
+ Solicitud multicast.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $f_{i,j}^{k}$
+\end_inset
+
+ k-esima fibra óptica en el enlace 
+\begin_inset Formula $(i,j)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $M$
+\end_inset
+
+ Conjunto de solicitudes multicast.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\ell_{i,j}^{k,\lambda}$
+\end_inset
+
+ Light-link conformado por 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-esima longitud de onda en la la 
+\begin_inset Formula $k$
+\end_inset
+
+-esima fibra óptica y enlace 
+\begin_inset Formula $(i,j)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $t_{m}$
+\end_inset
+
+ Light-tree para una solicitud 
+\begin_inset Formula $m$
+\end_inset
+
+; 
+\begin_inset Formula $t_{m}=(V^{'},\ell)$
+\end_inset
+
+ con 
+\begin_inset Formula $V^{'}\subseteq V$
+\end_inset
+
+ y 
+\begin_inset Formula $\ell=\left\{ \ell_{i_{1},i_{2}}^{k,\lambda},\ell_{i_{3},i_{4}}^{k,\lambda},\ldots,\ell_{i_{n-1},i_{n}}^{k,\lambda}\right\} $
+\end_inset
+
+ con 
+\begin_inset Formula $V^{'}=\left\{ i_{1},i_{2},\ldots,i_{n}\right\} $
+\end_inset
+
+ y 
+\begin_inset Formula $s\in V^{'}$
+\end_inset
+
+, 
+\begin_inset Formula $D\subseteq V^{'}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $p_{m}^{s,d}\subset t_{m}$
+\end_inset
+
+ Light-path entre el nodo fuente 
+\begin_inset Formula $s$
+\end_inset
+
+ y un nodo destino 
+\begin_inset Formula $d$
+\end_inset
+
+ de 
+\begin_inset Formula $t_{m}$
+\end_inset
+
+; 
+\begin_inset Formula $p_{d}^{s}=(V^{'},\ell)$
+\end_inset
+
+ donde 
+\begin_inset Formula $V^{'}\subseteq V$
+\end_inset
+
+ y 
+\begin_inset Formula $\ell=\left\{ \ell_{i_{1},i_{2}}^{k,\lambda},\ell_{i_{3},i_{4}}^{k,\lambda},\ldots,\ell_{i_{n-1},i_{n}}^{k,\lambda}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $V^{'}=\left\{ i_{1},i_{2},\ldots,i_{n}\right\} $
+\end_inset
+
+ con 
+\begin_inset Formula $i_{1}=s$
+\end_inset
+
+ y 
+\begin_inset Formula $i_{n}=d$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\lambda_{i,j}^{m}$
+\end_inset
+
+ Longitud de onda asignada a 
+\begin_inset Formula $t_{m}$
+\end_inset
+
+ en el enlace 
+\begin_inset Formula $(i,j)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $T$
+\end_inset
+
+ Conjunto de light-tree para el conjunto 
+\begin_inset Formula $M$
+\end_inset
+
+; 
+\begin_inset Formula $T=\left\{ t_{1},t_{2},\ldots,t_{|M|}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $T_{p}$
+\end_inset
+
+ Conjunto light-tree primario para el conjunto 
+\begin_inset Formula $M$
+\end_inset
+
+ en el grafo 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $T_{s}^{i}$
+\end_inset
+
+ Conjunto light-tree secundario para el conjunto 
+\begin_inset Formula $M$
+\end_inset
+
+ en el sub-grafo 
+\begin_inset Formula $G(i)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $X_{i,j}^{m,s,d}$
+\end_inset
+
+ Variable indicadora, si 
+\begin_inset Formula $\ell_{i,j}^{k,\lambda}\in p_{m}^{s,d}$
+\end_inset
+
+ entonces 
+\begin_inset Formula $X_{i,j}^{m,s,d}$
+\end_inset
+
+=1, en otro caso 
+\begin_inset Formula $X_{i,j}^{m,s,d}$
+\end_inset
+
+=0.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R_{i,j}$
+\end_inset
+
+ Distancia entre el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+ y el nodo 
+\begin_inset Formula $j$
+\end_inset
+
+ en kilómetros.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $R=\left[R_{i,j}\right]$
+\end_inset
+
+ Matriz de distancia entre nodos.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $K\in\mathbb{N}$
+\end_inset
+
+ Número máximo de fibras ópticas por enlace.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F_{i,j}\leqslant K$
+\end_inset
+
+ Número de fibras ópticas asignado al enlace 
+\begin_inset Formula $(i,j)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F_{i,j}^{k}$
+\end_inset
+
+ Variable indicadores, si el enlace 
+\begin_inset Formula $(i,j)$
+\end_inset
+
+ tiene asignado la k-esima fibra óptica entonces 
+\begin_inset Formula $F_{i,j}^{k}=1$
+\end_inset
+
+, en otro caso 
+\begin_inset Formula $F_{i,j}^{k}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $F=\left[f_{i,j}^{k}\right]$
+\end_inset
+
+ Vector de decisión para ubicación de fibra óptica.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A_{i,j}^{k}$
+\end_inset
+
+ Variable indicadora, si la k-esima fibra optica en el enlace 
+\begin_inset Formula $(i,j)$
+\end_inset
+
+ tiene asignado un amplicador de luz entonces 
+\begin_inset Formula $A_{i,j}^{k}=1$
+\end_inset
+
+, en otro caso 
+\begin_inset Formula $A_{i,j}^{k}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A=\left[A_{i,j}^{k}\right]$
+\end_inset
+
+ Vector de ubicación de amplificadores de luz.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $B_{i,b}$
+\end_inset
+
+ Número de divisores
+\series bold
+ 
+\begin_inset Formula $b$
+\end_inset
+
+
+\series default
+ ubicado en el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $B=\left[B_{i,b}\right]$
+\end_inset
+
+ Vector de decisión para ubicación de divisor de luz.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ Solución al problema MRWA-PNF; 
+\begin_inset Formula $\Gamma=\left\{ A;B;F;T_{p};T_{s}^{1},T_{s}^{2},\ldots,T_{s}^{|V|}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ Número máximo de longitudes de onda que soporta una fibra óptica.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $C_{i,j}$
+\end_inset
+
+ Costo del enlace 
+\begin_inset Formula $(i,j)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ Costo del nodo 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $c_{f}$
+\end_inset
+
+ Costo de la fibra óptica por kilómetros.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $c_{a}$
+\end_inset
+
+ Costo de amplificadores por kilómetro.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $c_{b}$
+\end_inset
+
+ Costo unitario de splitter.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $c_{w}$
+\end_inset
+
+ Costo de un sistema WDM (MUX, DEMUX).
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $c_{w}^{p}$
+\end_inset
+
+ Costo de un puerto WDM.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $c_{o}^{p}$
+\end_inset
+
+ Costo por puerto en los OXC.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $S_{k,\lambda}^{i,j}$
+\end_inset
+
+ Potencia de la señal del light-link 
+\begin_inset Formula $\ell_{i,j}^{k,\lambda}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $N_{w}(i)$
+\end_inset
+
+ Número de multiplexores/demultiplexores en el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $N_{w}^{p}(i)$
+\end_inset
+
+ Número de puertos de multiplexor en el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $N_{o}^{p}(i)$
+\end_inset
+
+ Número de puertos de conmutador en el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $N_{b}(i)$
+\end_inset
+
+ Número de divisores de luz en el nodo 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $O_{s}$
+\end_inset
+
+ Número máximo de puertos de salida de un divisor de luz.
+\end_layout
+
+\end_body
+\end_document

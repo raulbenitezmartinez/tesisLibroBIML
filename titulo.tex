@@ -1,0 +1,32 @@
+\newcommand{\submittedtext}{{Proyecto de Trabajo de Grado presentado en conformidad a los requisitos para obtener el grado de}}
+
+\renewcommand{\maketitle}{%
+  \renewcommand{\footnotesize}{\small}
+  \renewcommand{\footnoterule}{\relax}
+  \thispagestyle{empty}
+ 
+  \begin{minipage}{16cm}
+       \begin{flushright}
+         {\LARGE \textbf {\sffamily {UNIVERSIDAD NACIONAL DE ASUNCION}} }\par
+         {\Large {FACULTAD POLIT{\'E}CNICA}} \par
+		 {\Large { INGENIER{\'I}A EN INFORM{\'A}TICA}}
+       \end{flushright}
+	  \end{minipage}
+     \begin{center}
+     \vspace*{10mm}
+    { \huge {\bfseries {\@title}} \par}
+    \vspace*{5ex}
+    {\Large \@author} \par
+    \vspace*{5ex}
+    {\Large {\bfseries Asesores:}{ }  \par}
+	{\Large  {\bfseries }		 {D.Sc. Diego Pinto }  \par}
+	{\Large  {\bfseries }		 {M.Sc. Enrique D{\'a}valos }  \par}
+    {\large 
+      \vspace*{10mm}
+      \parbox[c]{140mm}{{\submittedtext} {Ingeniero en Inform{\'a}tica.}} \par
+      \vspace*{15mm}
+      {San Lorenzo, \@date}
+    }
+  \end{center}
+  \null\vfill
+}

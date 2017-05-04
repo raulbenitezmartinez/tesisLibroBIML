@@ -1,0 +1,1 @@
+Consiste en encontrar un conjunto de caminos de luz (light-tree) de tal manera que en la mayoria de los k nodos destinos esten designados para recibir los datos en cada paso de luz (light-tree) y en todos los destinos asignados a una liongi

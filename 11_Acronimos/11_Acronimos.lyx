@@ -1,0 +1,607 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter*
+Lista de Siglas y Abreviaturas
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+ACO
+\series default
+ 
+\emph on
+Ant Colony Optimization
+\emph default
+ - Optimización por Colonia de Hormigas.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+dB
+\series default
+ Decibeles.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+DMUX
+\series default
+ 
+\emph on
+De-multiplexer
+\emph default
+ - De-multiplexores.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+FF
+\series default
+ 
+\emph on
+First-Fit
+\emph default
+ - Primer Ajuste.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Gbps
+\series default
+ 
+\emph on
+Giga bits per second
+\emph default
+ - Gigabits por segundo.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Gbyte
+\series default
+ 
+\emph on
+Gigabyte
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+HDTV
+\series default
+ 
+\emph on
+High Definition Television
+\emph default
+ - Televisión de Alta Definición.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+ILP
+\series default
+ 
+\emph on
+Integer Linear Programing
+\emph default
+ - Programación Lineal Entera.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+LF
+\series default
+ 
+\emph on
+Longest-First
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+LT
+\series default
+ 
+\emph on
+Light-Tree
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+LU
+\series default
+ 
+\emph on
+Least-Used.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MC
+\series default
+\emph on
+ Multicast-Capable - 
+\emph default
+Capacidad de Multidifusión.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MC-OXC
+\series default
+ 
+\emph on
+Multicast-Capable Optical Cross Connect
+\emph default
+ - Matriz de Conmutación Óptica con Capacidad para Multidifusión.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MOACO
+\series default
+ 
+\emph on
+Multi-Objective Ant Colony Optimization
+\emph default
+ - Optimización de Colonia por Hormigas Multiobjetivo.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MOACS
+\series default
+ 
+\emph on
+Multiobjetive Ant Colony Optimization
+\emph default
+ 
+\emph on
+System-
+\emph default
+ Sistema de Optimización de Colonia de Hormigas Multiobjetivo.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MOACS-PNF-RP1
+\series default
+ 
+\emph on
+Multiobjetive Ant Colony Optimization-Protection against Node Failures-Parcial
+ Reconfiguration 1 - 
+\emph default
+Sistema de Optimización por Colonia de Hormigas Multiobjetivo
+\emph on
+ - 
+\emph default
+con Protección contra Falla de Nodo - Reconfiguración Parcial 1
+\emph on
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MOACS-PNF-RP2
+\series default
+ 
+\emph on
+Multiobjetive Ant Colony Optimization-Protection against Node Failures-Parcial
+ Reconfiguration 2 
+\emph default
+Sistema de Optimización por Colonia de Hormigas Multiobjetivo
+\emph on
+ - 
+\emph default
+con Protección contra Falla de Nodo - Reconfiguración Parcial 
+\emph on
+2.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MOACS-PNF-RT
+\series default
+ 
+\emph on
+Multiobjetive Ant Colony Optimization-Protection against Node Failures-Total
+ Reconfiguration - 
+\emph default
+Sistema de Optimización por Colonia de Hormigas Multiobjetivo
+\emph on
+ - 
+\emph default
+con Protección contra Falla de Nodo - Reconfiguración
+\emph on
+ 
+\emph default
+Total
+\emph on
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MOP
+\series default
+ 
+\emph on
+Multiobjective Optimization Problem
+\emph default
+ - Problema de Optimización Multiobjetivo.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+RWA
+\series default
+ 
+\emph on
+Routing and Wavelength Assignment
+\emph default
+ - Enrutamiento y Asignación de Longitud de Onda.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MRWA
+\series default
+ 
+\emph on
+Multicast Routing and Wavelength Assigment
+\emph default
+ - Enruteamiento de Multidifusión y Asignación de Longitud de Onda.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MU
+\series default
+ 
+\emph on
+Most-Used.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+MUX
+\series default
+ 
+\emph on
+Multiplexer
+\emph default
+ - Multiplexores.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+NSF
+\series default
+ 
+\emph on
+National Science Foundation.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+OXC
+\series default
+ 
+\emph on
+Optical Cross Connects
+\emph default
+ - Matriz de Conmutación Óptica.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+OADM
+\series default
+ 
+\emph on
+Optical Add-Drop Multiplexer
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+OLT
+\series default
+ 
+\emph on
+Optical Line Terminal.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+O-SAN
+\series default
+ 
+\emph on
+Optical Storage Area Networks.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+RP
+\series default
+ 
+\emph on
+Parcial Reconfiguration
+\emph default
+ - Reconguración Parcial.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+RR
+\series default
+ 
+\emph on
+Random
+\emph default
+ - Aleatorio.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+SDM
+\series default
+ 
+\emph on
+Space Division Multiplexing
+\emph default
+ - Multiplexación por División de Espacio.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+SO
+\series default
+ Sistema Operativo.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Tb/s
+\series default
+ Terabit por segundo.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+TDM
+\series default
+ 
+\emph on
+Time Division Multiplexing
+\emph default
+ - Multiplexación por División de Tiempo.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+THz
+\series default
+ 
+\emph on
+Tera Hertz.
+
+\emph default
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+USNet
+\series default
+ 
+\emph on
+Network US.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+VLT
+\series default
+ 
+\emph on
+Virtual Light-Tree.
+ 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+VOD
+\series default
+ 
+\emph on
+Video On Demand
+\emph default
+ - Vídeo Bajo Demanda.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+WDM
+\series default
+ 
+\emph on
+Wavelength Division Multiplexing - 
+\emph default
+Multiplexación por División de Longitud de Onda.
+\end_layout
+
+\end_body
+\end_document
