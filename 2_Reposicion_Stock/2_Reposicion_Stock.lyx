@@ -1,0 +1,400 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Administración de las compras
+\end_layout
+
+\begin_layout Subsection
+Introducción a las compras
+\end_layout
+
+\begin_layout Standard
+Los términos compras, adquisiciones, administración de materiales, logística,
+ abastecimiento, administración del suministro y administración de la cadena
+ de suministro se utilizan de manera indistinta ya que no existe un concenso
+ general sobre la terminología.
+ El proceso de adquisición es el eje central de la actividad empresarial
+ de administración de compras y del suministro.
+ Cualquier organización requiere de proveedores por lo que es muy importante
+ acoplarlos con efectividad al entorno organizacional, y que las decisiones
+ de compras no contradigan las estrategias de la empresa.
+\end_layout
+
+\begin_layout Standard
+Las empresas centran sus esfuerzos en aumentar sus ingresos, desminuir sus
+ costos, o una combinación de ambos a fin de obtener ganacias de la forma
+ más eficiente posible.
+ Este trabajo intenta contribuir lograr decisiones eficientes de compras
+ basadas en estimaciones eficientes de ventas.
+ Se considera que es una decisión importantísima estimar o predecir eficientemen
+te la cantidad o volumen de productos a comprar para reposición de stock
+ y que sirvan para el periodo de ventas que está por llegar.
+\end_layout
+
+\begin_layout Standard
+El stock o existencia de una empresa es el conjunto de materiales y artículos
+ que se almacenan, tanto aquellos que son necesarios para el proceso productivo
+ como los destinados a la venta.
+ La función que desempeña el stock o existencia en una empresa son 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AdminCyA"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Evitar la escasez, ante la incertidumbre de la demanda o ante un posible
+ retraso en la reposición o suministro de los pedidos.
+\end_layout
+
+\begin_layout Itemize
+Aprovechar la disminución de los costes a medida que aumenta el volumen
+ de compras o de fabricación.
+\end_layout
+
+\begin_layout Itemize
+Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
+ competitividad.
+\end_layout
+
+\begin_layout Standard
+En el proceso de compras el caso ideal por supuesto sería poder adivinar
+ la cantidad que se va a vender en el siguiente periodo de venta (puede
+ ser para el siguiente período semanal, quincenal, mensual, trimestral o
+ semestral, etc.), y esto por cada producto que disponibilizamos para la
+ venta.
+ En este caso al término de cada periodo de venta se dispondría de stock
+ cero, con lo cual se llega a una máxima eficiencia en compras.
+ Adivinar es imposible, pero lo que si se puede hacer es estimar eficientemente
+ la cantidad o volumen a vender.
+\end_layout
+
+\begin_layout Standard
+Del por qué la importancia de estimar de forma correcta esta cantidad o
+ volumen, los expertos en negocios explican que los productos parados en
+ stock mientras no se vendan es dinero en estantería, además que generan
+ sobrecostos de mantenimiento como seguros, personal encargado, fecha de
+ vencimiento de los productos, etc.
+ Otro hecho no deseado es la ruptura de stock, es decir el no disponer de
+ un producto en stock cuando haya clientes interesados en comprarlo, lo
+ cual también es considerado pérdida para la empresa.
+ Lo que se desea es mantener un nivel de stock óptimo, es decir, por una
+ parte tener suficiente cantidad para satisfacer la demanda sin caer en
+ roturas de stock y, por otra, evitar que haya un exceso inútil del mismo.
+ Si bien el presente trabajo no está enfocado en medir los costos, lo que
+ sí se busca es comprar de forma eficiente utilizando las herramientas de
+ business intelligence y machine learning que ayudan a estimar lo que se
+ va a vender en el siguiente periodo.
+\end_layout
+
+\begin_layout Standard
+Una administración efectiva de las compras y del suministro contribuye de
+ manera significativa al éxito organizacional.
+ La función del suministro evoluciona a medida que la tecnología y el ambiente
+ competitivo mundial requieren enfoques innovadores 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AdminCyA"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Cantidad de la orden de compra
+\end_layout
+
+\begin_layout Standard
+El proceso de compra se trata mas bien de un conjunto de etapas: a) Detectar
+ la necesidad, b) Traducir la necesidad en una especificación comercial,
+ c) Buscar potenciales proveedores, d) Seleccionar el proveedor adecuado,
+ e) Detallar la orden de compra y pactar el suministro, f) Recibir los productos
+, g) Pagar a los proveedores.
+ En el detalle de la orden se ven reflejadas las estimaciones de las cantidades
+ a comprar de los productos.
+\end_layout
+
+\begin_layout Standard
+Antes de realizar una compra surgen las siguientes preguntas:
+\end_layout
+
+\begin_layout Itemize
+¿Cuándo debemos realizar un pedido?
+\end_layout
+
+\begin_layout Itemize
+¿Qué cantidad debemos solicitar en cada pedido?
+\end_layout
+
+\begin_layout Itemize
+¿Cuántas unidades de cada artículo debemos mantener en stock?
+\end_layout
+
+\begin_layout Standard
+Para responder a estas preguntas actualmente se tienen las técnicas de pronóstic
+os de demanda entre las que se destacan los Modelos de Pronóstico Cualitativo
+ y los Modelos de Pronóstico Cuantitativo.
+\end_layout
+
+\begin_layout Subsubsection
+Modelos de pronóstico cualitativo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Jurado de opinión ejecutiva: Esta técnica se basa en la estimación por consenso
+ entre un grupo de personas de alto mando en la empresa.
+ Se apela a la experiencia y a los conocimientos técnicos de estos ejecutivos.
+ Este método es utilizado cuando se requiere decidir con rapidez ante eventos
+ inesperados, por ejemplo: lanzamiento de un nuevo producto.
+\end_layout
+
+\begin_layout Itemize
+Consulta a la fuerza de ventas: Esta técnica se basa en la experiencia del
+ personal más cercano al cliente que son los vendedores de la empresa.
+ Cada vendedor realiza una estimación de la demanda en su zona de su influencia.
+\end_layout
+
+\begin_layout Itemize
+Encuesta del mercado de consumo: Se encuesta a los clientes acerca de sus
+ planes de compras o sus interes por determinados productos.
+ La estimación se extrae de los resultados de las encuestas.
+\end_layout
+
+\begin_layout Itemize
+Método Delphi: Esta técnica se basa en identificar un panel de expertos
+ que pueden ser gerentes, empleados comunes, o expertos del sector.
+ A cada uno de ellos se les solicita individualmente su estimación de la
+ demanda.
+ Se realiza un proceso iterativo hasta que los expertos alcancen un consenso.
+\end_layout
+
+\begin_layout Itemize
+Analogía de productos similares: Esta técnica de predicción de la demanda
+ se basa en el comportamiento de las ventas de un producto similar o modelo.
+ Se puede realizar comparando con un producto sustituto o complementario.
+\end_layout
+
+\begin_layout Subsubsection
+Modelos de pronóstico cuantitativo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los modelos cuantitativos a su vez se pueden clasificar en modelos de series
+ de tiempo y en modelos causales.
+\end_layout
+
+\begin_layout Subsubsection
+Modelos de series de tiempo
+\end_layout
+
+\begin_layout Standard
+En el modelo de series de tiempo el pronóstico se basa solamente en datos
+ anteriores y asume que los factores que influencian las ventas pasadas,
+ presentes y futuras de sus productos continuarán.
+\end_layout
+
+\begin_layout Itemize
+Promedio simplista: Se asume que la demanda del siguiente período será igual
+ a la demanda del período inmediatamente anterior.
+ 
+\end_layout
+
+\begin_layout Itemize
+Promedio móvil simple: Se aplica promedio sobre los datos históricos de
+ ventas de una secuencia fija de períodos.
+ Es útil cuando la demanda no presenta estacionalidad o tendencia.
+\begin_inset Formula 
+\begin{equation}
+PMS=\frac{\sum Demanda\_en\_n\_períodos\_previos}{n}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Promedio móvil ponderado: Ajusta el método de promedio simple asignando
+ mayor peso a los datos más recientes.
+ Sirve para reflejar el nivel de importancia de unos datos sobre otros como
+ resultado de las fluctuaciones.
+\begin_inset Formula 
+\begin{equation}
+PMP=\frac{\sum\left(Peso\_período\_n\right)\left(Demanda\_período\_n\right)}{\sum Pesos}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Suavización exponencial simple: Para calcular se requiere del pronóstico
+ anterior, la demanda real del periodo de pronóstico y una constante de
+ suavizamiento.
+ Es útil cuando se cuenta con pocos datos históricos.
+\begin_inset Formula 
+\begin{equation}
+F_{t}=F_{t-1}+\alpha\left(A_{t-1}-F_{t-1}\right)
+\end{equation}
+
+\end_inset
+
+Donde 
+\begin_inset Formula $F_{t}=$
+\end_inset
+
+ pronóstico nuevo, 
+\begin_inset Formula $F_{t-1}=$
+\end_inset
+
+ el pronóstico anterior, 
+\begin_inset Formula $0\leq\alpha\leq1=$
+\end_inset
+
+ constante de suavización, 
+\begin_inset Formula $A_{t-1}=$
+\end_inset
+
+ demanda real del período anterior.
+\end_layout
+
+\begin_layout Itemize
+Suavización exponencial doble: Esta técnica es una modificación del suavizamient
+o exponencial simple.
+ Agrega una constante de suavización delta (DELTA), cuya función es reducir
+ el error que ocurre entre la demanda real y el pronóstico.
+\end_layout
+
+\begin_layout Subsubsection
+Modelo causal
+\end_layout
+
+\begin_layout Standard
+Utiliza una técnica matemática conocida como análisis de regresión, que
+ relaciona una variable dependiente (por ejemplo, la demanda) con una variable
+ independiente (por ejemplo, el precio, publicidad, etc.) en la forma de
+ ecuación lineal.
+\end_layout
+
+\begin_layout Itemize
+Regresión Lineal: Esta técnica permite obtener un estimado analizando el
+ impacto de los factores causales con relación a la demanda del producto
+ o servicio.
+\begin_inset Formula 
+\begin{equation}
+y=a+bx
+\end{equation}
+
+\end_inset
+
+Donde 
+\begin_inset Formula $y=$
+\end_inset
+
+ valor de la variable dependiente en este caso ventas, 
+\begin_inset Formula $a=$
+\end_inset
+
+ intersección en el eje y, 
+\begin_inset Formula $b=$
+\end_inset
+
+ pendiente de la línea de regresión, 
+\begin_inset Formula $x=$
+\end_inset
+
+ la variable independiente.
+\end_layout
+
+\end_body
+\end_document

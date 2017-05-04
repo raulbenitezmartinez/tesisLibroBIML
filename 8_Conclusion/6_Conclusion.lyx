@@ -1,0 +1,127 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\begin_preamble
+% Bibliografia en español
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{spanish}
+
+% Bibliografia
+\usepackage[authoryear,square,sort]{natbib}
+\bibliographystyle{plainnat}
+\bibpunct{[}{]}{,}{a}{}{;}
+\renewcommand\cite{\citep}
+\end_preamble
+\options journal
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+Este trabajo se enfocó principalmente en elaborar una nueva técnica de estimació
+n de compras de productos para la reposición de stock en las empresas retail.
+ Como ya se había mencionado en el capítulo 2 la gestión de compras es uno
+ de los ejes centrales de la actividad empresarial y las decisiones de compras
+ son uno de los principales problemas con los que se enfrentan las empresas
+ al momento de la reposición del stock.
+ Partiendo de la premisa de la problemática y analizando las técnicas utilizadas
+ en la actualidad basadas en pronósticos y con el creciente incremento en
+ la incorporación de tecnologías de Business Intelligence dentro de las
+ empresas para hacer uso de los datos almacenados, se vió la oportunidad
+ de aprovechar esa información histórica.
+ Con esta nueva técnica se utiliza los Indicadores Claves de Rendimiento
+ y apoyados en la experiencia y el conocimiento de un experto en compras
+ (gerente o encargado de compras) se realiza el modelado utilizando algoritmos
+ clasificadores de Machine Learning.
+\end_layout
+
+\begin_layout Standard
+De acuerdo a los resultados experimentales se obtuvieron altas tasas de
+ acierto, haciendo pruebas exhaustivas con todos los algoritmos de clasificación
+ posibles y evaluando a la vez con dos métodos.
+ Apoyados en estos resultados se puede creer en la fiabilidad de este nuevo
+ modelo.
+\end_layout
+
+\begin_layout Standard
+Con esta técnica de estimación planteada se pretende que el modelo se convierta
+ en una herramienta de apoyo en la toma de decisiones al gerente encargado
+ de realizar las compras en la reposición de stock.
+\end_layout
+
+\end_body
+\end_document

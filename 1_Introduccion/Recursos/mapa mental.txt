@@ -1,0 +1,25 @@
+Gestionar la información en las empresas es, hoy en día, una herramienta clave para poder sobrevivir en un mercado cambiante, dinámico y global. Aprender a competir con esta información es fundamental para la toma de decisiones, el crecimiento y la gestión de nuestra empresa. La disciplina denominada como Business Intelligence nos acerca a los sistemas de información que nos ayudan a la toma de decisiones en nuestra organización[#BICCI07].
+
+ALBERTO: esto dejo como lineamientos generales del paper, como una secuencia de conceptos a seguir. Podes agregar o modificar. Dejá nomas como un timeline para todo el paper.
+
+Retail: minoristas
+
+Stock: ventas normales, stock ciclico, variedad de productos
+
+Compras: reposición de stock, abastecimiento
+
+Gestión de compras: estimación de la cantidad a comprar, MÉTODOS CONVENCIONALES DE ESTIMACIÓN O PRONÓSTICO
+
+#Errores en la estimación por métodos convencionales: sobreestimación y subestimación. Costos de almacenamiento y Ruptura de stock
+
+Business Intelligence: Etapas: ETL, Datawarehouse, OLAP, Balanced Scorecard
+
+KPI: medir un proceso de negocio. Medir el proceso venta. Medir el impacto de cada producto a traves de KPIs. KPIs por producto.
+
+Salida de Business Intelligence + Etiquetado = Entrada de Machine Learning Supervisado
+
+Machine Learning: Problemas de clasificación. Etapas: Entrenamiento, Evaluación, Métricas de evaluación, Análisis de las métricas de evaluación
+
+Clasificación: decisión del volumen a comprar como un problema de clasificación en machine learning. NUEVO MÉTODO DE ESTIMACIÓN O PRONÓSTICO
+
+Resultados y Conclusiones del modelo de clasificación por machine learning. FIN :)

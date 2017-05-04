@@ -1,0 +1,1844 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Business Intelligence
+\end_layout
+
+\begin_layout Subsection
+Concepto
+\end_layout
+
+\begin_layout Standard
+Business Intelligence abarca un conjunto de conceptos, técnicas y herramientas
+ que se utilizan para la transformación de simples datos en información
+ útil y significativa para el análisis de negocios, ayudando a las organizacione
+s a mejorar la competitividad facilitando la toma de decisiones
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La definición
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EH05"
+
+\end_inset
+
+ que propone The Datawarehouse Institute es:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Business Intelligence es un término paraguas que abarca los procesos, las
+ herramientas y las tecnologías para convertir datos en información, información
+ en conocimiento y planes para conducir de forma eficaz las actividades
+ de los negocios.
+ Business Intelligence abarca las tecnologías de datawarehousing, los procesos
+ en el 'back end'
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+Los términos “back end” y “front end” comúnmente usados en Sistemas de Informaci
+ón significan, respectivamente, la parte más cercana al área tecnológica
+ y la más cercana a los usuarios.
+ Si hiciéramos un paralelismo con una tienda, serían la “trastienda” y el
+ “mostrador
+\end_layout
+
+\end_inset
+
+, consultas, informes, análisis y las herramientas para mostrar información
+ (herramientas de Business Intelligence) y los procesos en el 'front end'
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Según lo expuesto en la definición del término Business Intelligence podemos
+ decir que tiene los siguientes objetivos principales
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Convertir datos en información, información en conocimiento y conocimiento
+ en planes operativos o estratégicos.
+\end_layout
+
+\begin_layout Itemize
+Facilitar la disponibilidad de información a los usuarios de negocios, que
+ les ayude a tomar decisiones más rápidamente.
+\end_layout
+
+\begin_layout Itemize
+Permitir a las organizaciones dirigir de mejor forma, decidir, medir, gestionar
+ y optimizar el alcance de la eficiencia y los resultados financieros.
+\end_layout
+
+\begin_layout Itemize
+Disminuir sustancialmente la incertidumbre que existe ante la toma de decisiones
+ respecto a un plan estratégico.
+\end_layout
+
+\begin_layout Subsection
+Componentes de Business Intelligence
+\end_layout
+
+\begin_layout Standard
+En el siguiente gráfico vemos los componentes que forman parte del Business
+ Intelligence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/fuentes_informacion.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Componentes de Business Intelligence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los componentes son
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Fuentes de información, de los cuales se obtienen los datos que se almacenan
+ en el datawarehouse.
+\end_layout
+
+\begin_layout Itemize
+Proceso de Extracción, Transformación y Carga, de los datos en el datawarehouse.
+ Antes de almacenar los datos en el datawarehouse, estos deben ser transformados
+, limpiados, filtrados y redefinidos.
+\end_layout
+
+\begin_layout Itemize
+El Datawarehouse, donde se almacenan los datos de manera a maximizar la
+ flexibilidad, facilidad de acceso y administración.
+\end_layout
+
+\begin_layout Itemize
+El motor OLAP, que nos provee capacidad de cálculo, consultas, pronósticos,
+ análisis de escenarios en grandes volúmenes de datos.
+\end_layout
+
+\begin_layout Itemize
+La herramientas de visualización, que nos permiten el análisis y la navegación
+ a través de los mismos.
+\end_layout
+
+\begin_layout Subsection
+Indicadores Clave de Rendimiento
+\end_layout
+
+\begin_layout Standard
+Los KPI
+\emph on
+ (Key Performance Indicators)
+\emph default
+ o Indicadores Clave de Rendimiento se tratan de indicadores que son decisivos
+ para analizar de forma rápida la situación del negocio y que también facilitan
+ la toma de decisiones.
+ Todos los KPI son indicadores, pero no todos los indicadores son KPI
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMR13"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Un cuadro de gestión o de mando no debe excederse en la cantidad de KPI,
+ porque puede darse el problema de 
+\begin_inset Quotes eld
+\end_inset
+
+la parálisis por el análisis
+\begin_inset Quotes erd
+\end_inset
+
+ que ocurre cuando se pasa de no tener ninguna información a contar con
+ decenas de indicadores y una de las caracteristicas del entorno competitivo
+ actual es que se deben tomar decisiones de forma rápida y antes de que
+ lo hagan los demás competidores
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Modelado del problema mediante la utilización de KPI
+\end_layout
+
+\begin_layout Standard
+Esta sección se enfoca y analiza uno de los principales problemas con los
+ que se enfrentan las empresas retail
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Una empresa retail es cualquier comercio que vende sus productos al consumidor
+ final, desde un supermercado a una tienda de barrio, desde un negocio de
+ electrodomésticos a una franquicia textil, ya sea con cientos de puntos
+ de venta o con un solo establecimiento.
+\end_layout
+
+\end_inset
+
+, la cual trata acerca de la reposición de stock
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Stock o existencia es la cantidad de un determinado producto almacenado
+ o disponible para la venta.
+ 
+\end_layout
+
+\end_inset
+
+, es decir, determinar la cantidad de productos que se deben comprar para
+ satisfacer la demanda de los clientes.
+ Utilizando conceptos y herramientas de Bussines Intelligence, se define
+ y se diseña el datawarehouse donde son almacenados los datos históricos
+ que servirán para el análisis, posteriormente se definen los indicadores
+ claves de rendimiento como métricas que sirven como datos de entrada de
+ las herramientas de aprendizaje automático para crear un modelo de predicción
+ de la cantidad a comprar para la reposición del stock.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Base de datos
+\end_layout
+
+\begin_layout Standard
+Para el presente trabajo, contamos con una base de datos real con los registros
+ de productos, proveedores, movimientos de compras, ventas y registro de
+ stock realizados por una empresa retail.
+ Los datos corresponden a movimientos realizados entre el año 2013 al 2016,
+ el cual será el punto de partida para diseñar el datawarehouse.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de Productos
+\series default
+: Lista articulos registrados disponibles para la venta.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla Proveedores
+\series default
+: Lista de proveedores.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de Ventas Cabecera
+\series default
+: La tabla de ventas cabecera es una de las tablas principales donde se
+ registran los movimientos de ventas de la empresa retail.
+ Contiene datos de la fecha, número de factura, cliente, montos totales
+ entre otros datos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de Ventas Detalle
+\series default
+: La tabla de ventas detalle contiene los registros de los productos que
+ fueron comercializados, cada detalle esta relacionado a un registro cabecera.
+ Contiene datos de la fecha, el producto, precio de costo, precio de venta,
+ cantidad y otros datos.
+\end_layout
+
+\begin_layout Subsubsection
+Datawarehouse
+\end_layout
+
+\begin_layout Standard
+El datawarehouse para el modelado se diseña a partir de la definición de
+ las tablas de hechos y dimensiones utilizando el esquema en estrella.
+\end_layout
+
+\begin_layout Subsubsection*
+Tablas de hechos
+\end_layout
+
+\begin_layout Standard
+De las tablas transaccionales definimos 3 tablas de hechos que nos servirá
+ para definir los KPI que utilizaremos para el análisis.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de hechos Cabecera:
+\series default
+ almacena los datos históricos de las ventas, cada registro guarda datos
+ de: fecha, cliente, caja, número de factura y montos totales.
+ Las métricas de la tabla de hechos son monto total, monto exento, monto
+ gravado, monto gravado 5% y monto gravado 10%.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de hechos Detalles:
+\series default
+ almacena los datos históricos del detalle, cada registro guarda información
+ del número de comprobante, fecha, proveedor, cliente, cantidad y precio.
+ Las métricas asociadas a la tabla de hechos son, cantidad, precio unitario,
+ precio unitario neto, impuesto, costo y el importe total.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de hechos Stock:
+\series default
+ almacena los datos históricos de cada movimiento de compra y de venta.
+ Las métricas utilizadas para la tabla de hechos son: cantidad, precio unitario
+ y costo unitario.
+\end_layout
+
+\begin_layout Subsubsection*
+Dimensiones
+\end_layout
+
+\begin_layout Standard
+Las tablas de dimensiones diseñadas para el modelado del datawarehouse son:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Fecha:
+\series default
+ La tabla de dimensión fecha esta ligada a todas las tablas de hechos, sirve
+ para limitar o agrupar los datos de las tablas de hechos al momento de
+ realizar consultas sobre estas en el tiempo.
+ Con la dimesión fecha se pueden establecer niveles jerárquicos en días,
+ semanas, meses, trimestres, semestres y años.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Productos:
+\series default
+ La tabla de dimensión producto esta relacionada a las tablas de hechos
+ Detalles y Stock, contiene los atributos o campos por la cual se pueden
+ filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Proveedores:
+\series default
+ La tabla de dimensión proveedores esta relacionada a la tabla de hechos
+ Detalles, contiene los atributos o campos por la cual se puede filtrar
+ o agrupar datos al realizar consultas sobre la tabla de hechos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Clientes:
+\series default
+ La tabla de dimensión Clientes esta relacionada a las tablas de hechos
+ Cabecera y Detalles, contiene los atributos o campos por la cual se pueden
+ filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Cajas:
+\series default
+ La tabla de dimensión Cajas esta relacionada a la tabla de hechos Cabecera,
+ contiene los atributos o campos por la cual se pueden filtrar o agrupar
+ datos al realizar consultas sobre la tabla de hechos.
+\end_layout
+
+\begin_layout Subsubsection
+Definición de los KPI
+\end_layout
+
+\begin_layout Standard
+En el marco de esta tesis, en esta sección se definirán los KPI que se utilizará
+n en el modelado para la 
+\lang spanish
+estimación de cantidades eficientes en las órdenes de compra de productos
+ para la reposición de stock
+\lang english
+ del siguiente periodo de tiempo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMR13"
+
+\end_inset
+
+ (Ej.: cantidad a comprar la satisfacer la demanda de la siguiente semana,
+ quincena, o mes).
+\end_layout
+
+\begin_layout Standard
+Cada KPI mide un valor obtenido de los datos históricos almacenados en el
+ datawarehouse.
+ El cálculo de cada valor se realiza para cada producto y en un periodo
+ de tiempo (semanal, quincenal o mensual), es decir, cada producto tendrá
+ un valor distinto para cada uno de los KPI citados a continuación.
+\end_layout
+
+\begin_layout Paragraph
+Ticket Medio.
+\end_layout
+
+\begin_layout Standard
+Es la cantidad media por cada transacción de compra que se realiza de un
+ determinado producto.
+ El indicador viene determinado por dos variables: La cantidad total vendida
+ del producto y el total de tickets en las que fue vendido el producto.
+ Aplicando la siguiente fórmula obtenemos el valor de la cantidad media
+ de venta para cada producto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\frac{\sum\left(Cantidad\right)}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Cifra de Ventas
+\end_layout
+
+\begin_layout Standard
+La cifra de ventas es un KPI que sirve para explicar el importe total de
+ ventas que se ha obtenido para un producto.
+ Se obtiene de la siguiente fórmula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\sum\left(Precio*Cantidad\right)\label{eq: Cifra de Ventas}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Margen Comercial
+\end_layout
+
+\begin_layout Standard
+Es la razón entre el precio de venta y precio de costo del producto, es
+ un indicador que permite conocer el porcentaje de rentabilidad del producto.
+ Se obtiene de la siguiente fórmula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\frac{\sum\left(\left(Precio-Costo\right)*Cantidad\right)}{\sum\left(Precio*Cantidad\right)}*100\label{eq:Margen Comercial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Rotación de Stock
+\end_layout
+
+\begin_layout Standard
+Este indicador mide la cantidad de veces que el stock del producto se renueva
+ durante un determinado ciclo comercial, es decir, la cantidad de veces
+ que se recupera la inversión.
+ Se obtiene de la siguiente fórmula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\frac{\sum\left(Total\,Ventas\,Periodo\right)}{\left(\frac{Stock\,Inicial\,-Stock\,Final}{2}\right)}\label{eq:Rotación Stock}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Coeficiente de Rentabilidad
+\end_layout
+
+\begin_layout Standard
+El indicador mide la rentabilidad obtenida por la empresa basada en el margen
+ y la rotación, el objetivo de toda empresa retail es aumentar los niveles
+ de rotación.
+ El coeficiente se obtiene de la siguiente fórmula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X=\left(\sum\left(Precio-Costo\right)*Cantidad\right)*Rotacion\,Stock\label{eq:Coeficiente Rentabilidad}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Cobertura de Stock
+\end_layout
+
+\begin_layout Standard
+Este indicador muestra el periodo de tiempo (habitualmente se expresa en
+ días o semanas) que el negocio puede continuar vendiendo con el stock de
+ que dispone en el momento, sin incorporar nuevas cantidades de ese producto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\frac{Stock\,Actual}{Promedio\,Cantidad\,Venta\,Ultimos\,3\,Periodos}\label{eq:Cobertura Stock}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Cálculo de valores para los Indicadores Clave de Desempeño.
+\end_layout
+
+\begin_layout Standard
+Definidos los KPI a ser utilizados, obtenemos los valores de cada KPI para
+ cada producto y periodo de los datos almacenados en el datawarehouse, para
+ ello codificamos a sentencias SQL las fórmulas detalladas en la sección
+ anterior y almacenamos la información de los resultados en la base de datos.
+ Además de los valores de los KPI, en cada registro adicionalmente se guarda
+ la información de la cantidad, fecha, año, mes, quincena y semana.
+\end_layout
+
+\begin_layout Standard
+Agrupamos el conjunto de los valores de los KPI de cada producto en 3 periodos
+ de tiempo: semanal, quincenal y mensual.
+\end_layout
+
+\begin_layout Subsubsection
+Asignación de etiquetas
+\end_layout
+
+\begin_layout Standard
+A cada tupla de valores KPI obtenidos para cada producto se le debe asignar
+ una etiqueta, el cual es uno de los valores importantes para el modelado
+ mediante el aprendizaje automático.
+ Esta asignación de las etiquetas esta basada en la opinión de un experto
+ (que habitualmente podría ser el gerente de compras).
+ La estrategia utilizada para el etiquedato es de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+Para cada KPI se definen un rango de valores y se asigna una letra (a, b,
+ c ,d, e, f, g, h, i, ..., u) de acuerdo al valor obtenido.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI TICKET MEDIO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(=) igual a 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 0 y < (menor) a 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 1 y <= (menor o igual) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-1"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI CIFRA VENTAS (%)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 0 y <= (menor o igual) a 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 20 y <= (menor o igual) a 50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+f
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 50 y <= (menor o igual) a 80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+g
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 80 y <= (menor o igual) a 100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+h
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-2"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI MARGEN COMERCIAL (%)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 0 y <= (menor o igual) a 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 20 y <= (menor o igual) a 50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+j
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 50 y <= (menor o igual) a 80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+k
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 80 y <= (menor o igual) a 100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+l
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-3"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI ROTACIÓN STOCK
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(=) igual a 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 0 y < (menor) a 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+n
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 1 y <= (menor o igual) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+o
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-4"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI COBERTURA STOCK
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(=) igual a 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+q
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 0 y < (menor) a 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+r
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 1 y <= (menor o igual) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 3 y <= (menor o igual) a 10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+t
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+u
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez asignado las letras 
+\begin_inset Quotes eld
+\end_inset
+
+a
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+b
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+c
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+d
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+e
+\begin_inset Quotes erd
+\end_inset
+
+ hasta 
+\begin_inset Quotes eld
+\end_inset
+
+u
+\begin_inset Quotes erd
+\end_inset
+
+ se busca la combinación de letras correspondientes en la tabla de etiquetado
+ realizado por el experto y se asigna el valor de la etiqueta correspondiente.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-4-1"
+
+\end_inset
+
+
+\series bold
+\lang english
+TABLA DE ETIQUETADO POR EL EXPERTO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeimq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejnq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejoq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeimr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejnr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejpq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeims
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejns
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+beknq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeimt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejnt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+beknr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeimu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejnu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bekns
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez finalizado el etiquetado de la totalidad de las tuplas de KPI por
+ cada producto y periodo, lo resultados son exportados a archivos con extensión
+ csv, para cada producto se crea 3 archivos, uno por cada periodo (semanal,
+ quincenal, mensual) que tiene como nombre el Identificador del producto
+ y que contiene los valores de los resultados para los KPI.
+ Estos archivos son los datos que sirven como entrada para crear el modelo
+ de estimación de compra eficiente para la reposicion de stock mediante
+ algoritmos de aprendizaje automático
+\end_layout
+
+\end_body
+\end_document

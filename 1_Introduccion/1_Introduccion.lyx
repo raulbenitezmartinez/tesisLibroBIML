@@ -1,0 +1,163 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+En las empresas retail o de ventas minoristas uno de los principales problemas
+ con que se enfrentan es el manejo eficiente del stock de manera a evitar
+ tener los productos en exceso en los depósitos que incurran en sobrecostos,
+ o en el otro extremo la falta de dichos productos o ruptura de stock lo
+ cual conlleva a pérdidas de oportunidades de ventas por no disponer del
+ producto que puede generar insatisfacción de los clientes y a su vez repercute
+ en las utilidades de la empresa.
+ Uno de los mayores desafíos de las empresas es la de estimar o predecir
+ la cantidad de ventas para el próximo periodo de tiempo.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Actualmente en el proceso de gestión de compras en empresas como las retail,
+ se utilizan algunas de las técnicas de pronósticos para determinar las
+ cantidades de las órdenes de compra, las cuales pueden estar basadas en
+ pronósticos cuantitativos o cualitativos.
+ Los modelos de cantidad fija y los modelos de periodo fijo son ampliamente
+ utilizados.
+ Independientemente de la técnica elegida, el problema real de los pronósticos
+ es su falta de confiabilidad, ya que por lo general no son precisos, entonces,
+ la interrogante que siempre surge es si serán superiores o inferiores a
+ la demanda real y en qué medida.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Con el presente trabajo se elabora un nuevo modelo de estimación de cantidades
+ eficientes en las órdenes de compra de productos para la reposición de
+ stock del siguiente periodo de venta.
+ En este nuevo modelo se integran técnicas de Business Intelligence y Machine
+ Learning.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+En la etapa de Business Intelligence el objetivo principal es calcular los
+ Indicadores Claves de Rendimiento (KPI - Key Performance Indicators) de
+ los productos en base a los datos históricos obtenidos de la base de datos
+ transaccional.
+ Luego cada serie de KPI obtenidos pasan por un proceso de etiquetado, donde
+ el experto en compras los analiza y determina qué nivel de compra conviene
+ para cada serie de KPI.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+En la etapa de Machine Learning se utiliza como entrada las series de KPI
+ obtenidos en la etapa de Business Intelligence y que constituyen las instancias
+ que alimentan los distintos algoritmos de clasificación de Machine Learning
+ supervisado.
+ Luego tienen lugar los procesos propios de esta etapa que son el entrenamiento
+ y testeo para finalmente evaluar los distintos desempeños a fin de determinar
+ los algoritmos más adecuados que serán utilizados para estimar las cantidades
+ de las ordenes de compra por cada producto.
+\end_layout
+
+\begin_layout Standard
+En cuanto a las limitaciones de este nuevo modelo se puede mencionar que
+ no toma en cuenta los costes relacionados al inventario: como costes de
+ mantenimiento, de personal, seguros, etc.
+ El modelo planteado se aplica a empresas retail dedicadas a las venta de
+ productos terminados.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+En la segunda sección se abordan los conceptos de Administración de Compras.
+ En la tercera sección se definen los conceptos de Business Intelligence
+ y su modelado del problema.
+ La cuarta sección aborda los conceptos de Machine Learning.
+ En la quinta sección se realiza el modelado con Machine Learning y se analizan
+ los resultados experimentales.
+ En la última sección se realiza la conclusión general.
+\end_layout
+
+\end_body
+\end_document
