@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \begin_preamble
 % Bibliografia en español
@@ -20,16 +22,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -40,15 +42,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
-\cite_engine natbib_authoryear
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -76,7 +87,7 @@
 \begin_body
 
 \begin_layout Chapter
-Redes Ópticas
+Pronóstico de la Demanda
 \end_layout
 
 \begin_layout Standard
@@ -91,335 +102,46 @@ Una red óptica es una red de telecomunicaciones que utiliza tecnologías
 \end_layout
 
 \begin_layout Section
-Fibra Óptica
+Introducción a los pronósticos
 \end_layout
 
 \begin_layout Standard
-Es una hebra muy fina compuesta de vidrio especial que tiene aproximadamente
- el mismo grosor que el cabello humano (125 
-\begin_inset Formula $\mu m$
-\end_inset
 
-).
- El centro de la hebra de vidrio es el núcleo basado en cristal de silicio.
- Algunas fibras de vidrio tienen un diámetro de núcleo de únicamente 50
- 
-\begin_inset Formula $\mu m$
-\end_inset
-
- y un índice de refracción de tipo gradual.
+\lang english
+Los términos compras, adquisiciones, administración de materiales, logística,
+ abastecimiento, administración del suministro y administración de la cadena
+ de suministro se utilizan de manera indistinta ya que no existe un concenso
+ general sobre la terminología.
+ El proceso de adquisición es el eje central de la actividad empresarial
+ de administración de compras y del suministro.
+ Cualquier organización requiere de proveedores por lo que es muy importante
+ acoplarlos con efectividad al entorno organizacional, y que las decisiones
+ de compras no contradigan las estrategias de la empresa.
 \end_layout
 
 \begin_layout Standard
-La estructura de la fibra óptica, como se observa en la Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Estructura-de-la-FO"
 
-\end_inset
+\lang english
+Las empresas centran sus esfuerzos en aumentar sus ingresos, desminuir sus
+ costos, o una combinación de ambos a fin de obtener ganacias de la forma
+ más eficiente posible.
+ Este trabajo intenta contribuir lograr decisiones eficientes de compras
+ basadas en estimaciones eficientes de ventas.
+ Se considera que es una decisión importantísima estimar o predecir eficientemen
+te la cantidad o volumen de productos a comprar para reposición de stock
+ y que sirvan para el periodo de ventas que está por llegar.
+\end_layout
 
-, está compuesta por el 
-\emph on
-núcleo
-\emph default
- por el cual se transmiten las ondas de luz, la 
-\emph on
-envoltura
-\emph default
- la cual al tener un menor índice de refracción que el núcleo, permite que
- las ondas se reflejen y confinen en este último y el 
-\emph on
-recubrimiento
-\emph default
- que tiene como fin proteger y dar más resistencia a la fibra 
+\begin_layout Standard
+
+\lang english
+El stock o existencia de una empresa es el conjunto de materiales y artículos
+ que se almacenan, tanto aquellos que son necesarios para el proceso productivo
+ como los destinados a la venta.
+ La función que desempeña el stock o existencia en una empresa son 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "IPWDMGUATE"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename figuras/Fibra_Optica.png
-	scale 75
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Estructura básica de la fibra óptica.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Estructura-de-la-FO"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Las fibras ópticas utilizadas se clasifican fundamentalmente en dos grupos
- según el modo de propagación: (i) fibras multimodo y (ii) fibras monomodo
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "arevalos2009MRWA"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Una fibra óptica multimodo es aquella en la que los haces de luz pueden
- circular por más de un modo o camino.
- En este tipo de fibra el diámetro del núcleo suele ser de 50 o 62.5 
-\begin_inset Formula $\mu m$
-\end_inset
-
- y el diámetro del revestimiento de 125 
-\begin_inset Formula $\mu m$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-En las fibras mono-modo solo se propaga un modo de luz, el diámetro del
- revestimiento es de 125 
-\begin_inset Formula $\mu m$
-\end_inset
-
-, igual que en las multimodo.
- Sin embargo, el diámetro del núcleo es mucho menor, de unas 9 
-\begin_inset Formula $\mu m$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-El funcionamiento de una transmisión por fibra óptica se realiza mediante
- un transmisor que transforma las ondas electromagnéticas en energía óptica
- o luminosa.
- Una vez transmitida la señal luminosa por las fibras, en el otro extremo
- de la fibra se encuentra el detector óptico o receptor, que se encarga
- de transformar la energía luminosa en energía electromagnética.
- 
-\end_layout
-
-\begin_layout Standard
-La ventaja de una fibra mono-modo frente a la multimodo es que cuenta mayor
- ancho de banda, ya que solo transmite en un único modo, y por lo tanto,
- no existe dispersión modal.
- Por otra parte, su desventaja es la dificultad de fabricación y por su
- diámetro mínimo se hace difícil el acoplamiento óptico.
-\end_layout
-
-\begin_layout Standard
-Una de las ventajas de las redes ópticas frente a las redes electrónicas
- es la gran distancia a la que puede recorrer la señal óptica sin ser reconstrui
-do a raíz de una perdida de intensidad, que mediante amplificadores ópticos
- se pueden solucionar, unos 70 
-\begin_inset Formula $Km$
-\end_inset
-
- frente a los 1,5 
-\begin_inset Formula $Km$
-\end_inset
-
- de las redes electrónicas 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "IPWDMGUATE"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Arquitectura de Redes Ópticas 
-\end_layout
-
-\begin_layout Standard
-Debido a la creciente demanda de servicios de alta velocidad, la tecnología
- de trasmisión por fibra óptica ha ido evolucionando en su arquitectura
- para dar frente a estos requerimientos principalmente gracias a las prestacione
-s brindadas por la tecnología WDM.
- Esta evolución ha dado paso a la definición de tres niveles en la escala
- evolutiva de las redes ópticas que son: redes de primera, segunda y tercera
- generación 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "POC"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Redes de primera generación se basan en enlaces WDM punto-a-punto en el
- cual todo el tráfico que proviene de un enlace se extrae en cada nodo y
- se convierte completamente del dominio óptico al dominio eléctrico para
- procesar la información de enrutamiento.
- Luego, al realizar todo el procesamiento para la salida del tráfico del
- nodo, los datos deben ser convertidos nuevamente al dominio óptico antes
- de ser enviado a través del puerto de salida.
- 
-\end_layout
-
-\begin_layout Standard
-Las redes ópticas de primera generación se caracterizan por utilizar la
- fibra óptica únicamente como medio de transmisión de alta capacidad 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "POC"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Las redes de segunda generación realizan los procesos de enrutamiento y
- conmutación de paquetes, además de ciertas funciones relacionadas con el
- control, gestión y protección de la red.
- Se introduce el concepto de capa óptica que lleva a cabo los trabajos anteriorm
-ente descritos.
- En este tipo de redes la comunicación se realiza por caminos ópticos que
- son conexiones punto-a-punto, donde la transmisión entre nodos intermedios
- se realiza utilizando una longitud de onda.
- Típicamente, todo el camino óptico utiliza una misma longitud de onda en
- todos los enlaces.
- Estas redes se basan en multiplexores de adición-extracción de longitud
- de onda completamente ópticos (
-\emph on
-Optical Add-Drop Multiplexer, 
-\emph default
-OADM), terminales ópticos de línea (
-\emph on
-Optical Line Terminal, 
-\emph default
-OLT) y matrices de conmutación óptica (
-\emph on
-Optical Cross Connect
-\emph default
-, OXC) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "MUK89"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-Las redes ópticas de tercera generación tienen el desafío de desarrollar
- arquitecturas de transporte que ofrezcan una rápida provisión de recursos
- de red y una operación adecuada bajo un tráfico a ráfagas con un buen ancho
- de banda requerido, ésto sustentado y demandando tecnologías completamente
- ópticas 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "leguizamon2008evolucion"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Section
-Técnicas de Multiplexación 
-\end_layout
-
-\begin_layout Standard
-El multiplexado consiste en transportar por un mismo soporte físico, en
- este caso la fibra óptica, las señales asociadas a diferentes conexiones.
- La conmutación es la operación de direccionamiento a nivel de red global
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "IPWDMGUATE"
-
-\end_inset
-
-.
- La Multiplexación es el proceso por el cual varios canales de información
- comparten un mismo medio de transmisión.
- La conmutación toma del medio de transmisión estos canales multiplexados
- de información y los re-ordena o direcciona.
-\end_layout
-
-\begin_layout Standard
-El ancho de banda en una fibra óptica es de aproximadamente 50 
-\begin_inset Formula $THz$
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "tanenbaum2003redes"
-
-\end_inset
-
-.
- Las tasas de transmisión por encima de los 10 
-\begin_inset Formula $Gbps$
-\end_inset
-
- no se pueden sustentar debido a alteraciones en las amplificaciones, dispersion
-es, efectos no-lineales de la fibra óptica, e interferencia y en especial
- a las limitaciones electrónicas en los nodos finales 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "somani2006survivability"
-
-\end_inset
-
-.
- Gracias a la tecnología de multiplexación se puede lograr una mayor utilización
- y provecho del ancho de banda al compartirlos con varios clientes o aplicacione
-s.
-\end_layout
-
-\begin_layout Standard
-Las redes basadas en multiplexación caen dentro de la categoría de redes
- ópticas conmutadas cuyas principales técnicas para compartir el ancho de
- banda son 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "maier2008optical"
+LatexCommand cite
+key "AdminCyA"
 
 \end_inset
 
@@ -427,578 +149,343 @@ key "maier2008optical"
 \end_layout
 
 \begin_layout Itemize
-Multiplexación por División de Tiempo (
-\emph on
-Time Division Multiplexing, TDM
-\emph default
-): En TDM los canales están contenidos en diferentes tiempos o 
-\emph on
-Time Slot
-\emph default
-, es decir, están continuamente en función del tiempo ocupando uno o múltiplos
- de 
-\emph on
-Time Slots
-\emph default
- de duración.
- Se encuentra limitada por la velocidad en la transmisión, recepción y procesami
-ento de los nodos.
- Esta limitación es conocida como cuello de botella electrónico-óptico 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "hamad2002survey"
 
-\end_inset
-
-.
- 
+\lang english
+Evitar la escasez, ante la incertidumbre de la demanda o ante un posible
+ retraso en la reposición o suministro de los pedidos.
 \end_layout
 
 \begin_layout Itemize
-Multiplexación por División de Espacio (
-\emph on
-Space Division Multiplexing, SDM
-\emph default
-): En SDM se puede utilizar para solucionar el problema de cuello de botella
- electrónico-óptico cuyo funcionamiento es la de transmitir longitudes de
- ondas a través de múltiples fibras operando en paralelo, cada una con una
- velocidad independiente.
- Es robusto para conexiones de corta distancia, mientras que para distancias
- más largas se vuelve menos prácticas y más costosas en la operación e instalaci
-ón 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "somani2006survivability"
 
-\end_inset
-
-.
+\lang english
+Aprovechar la disminución de los costes a medida que aumenta el volumen
+ de compras o de fabricación.
 \end_layout
 
 \begin_layout Itemize
-Multiplexación por División de Longitud de Onda (
-\emph on
-Wavelength Division Multiplexing, WDM
-\emph default
-): En WDM se incrementa la capacidad de transmisión en el medio físico enviando
- a través de la fibra óptica diferentes frecuencias de luz (longitudes de
- onda) dentro de una banda de frecuencia.
- Básicamente, WDM divide el ancho de banda de la fibra óptica en múltiples
- bandas de longitudes de onda no solapadas, con lo que se pueden conseguir
- anchos de bandas del orden de 50 
-\begin_inset Formula $THz$
-\end_inset
 
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "davalosreconfiguracion"
-
-\end_inset
-
-.
- Las longitudes de ondas que son enviadas a través de la fibra óptica son
- de-multiplexadas en el receptor donde cada señal de entrada es independiente.
- Cada canal de transmisión tiene su propio ancho de banda dedicado y con
- ellos se logra que todas las señales lleguen al mismo tiempo en el receptor.
- 
+\lang english
+Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
+ competitividad.
 \end_layout
 
 \begin_layout Standard
-Un ejemplo básico de la implementación de un sistema WDM se puede observar
- en la Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Laseres-y-fotodiodos"
 
-\end_inset
-
-.
- Note el esquema de arquitectura WDM con los siguientes componentes: equipo
- terminal, transmisor láser, multiplexor WDM (MUX), fibra óptica, amplificador,
- de-multiplexor WDM (DMUX), y filtro óptico.
+\lang english
+En el proceso de compras el caso ideal por supuesto sería poder adivinar
+ la cantidad que se va a vender en el siguiente periodo de venta (puede
+ ser para el siguiente período semanal, quincenal, mensual, trimestral o
+ semestral, etc.), y esto por cada producto que disponibilizamos para la
+ venta.
+ En este caso al término de cada periodo de venta se dispondría de stock
+ cero, con lo cual se llega a una máxima eficiencia en compras.
+ Adivinar es imposible, pero lo que si se puede hacer es estimar eficientemente
+ la cantidad o volumen a vender.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
 
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figuras/wdm_arquitectura_pinto.png
-	scale 80
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Sistema básico de transmisión WDM con W canales 
-\begin_inset Formula $\lambda$
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Laseres-y-fotodiodos"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Conmutador Óptico - OXC
+\lang english
+Del por qué la importancia de estimar de forma correcta esta cantidad o
+ volumen, los expertos en negocios explican que los productos parados en
+ stock mientras no se vendan es dinero en estantería, además que generan
+ sobrecostos de mantenimiento como seguros, personal encargado, fecha de
+ vencimiento de los productos, etc.
+ Otro hecho no deseado es la ruptura de stock, es decir el no disponer de
+ un producto en stock cuando haya clientes interesados en comprarlo, lo
+ cual también es considerado pérdida para la empresa.
+ Lo que se desea es mantener un nivel de stock óptimo, es decir, por una
+ parte tener suficiente cantidad para satisfacer la demanda sin caer en
+ roturas de stock y, por otra, evitar que haya un exceso inútil del mismo.
+ Si bien el presente trabajo no está enfocado en medir los costos, lo que
+ sí se busca es comprar de forma eficiente utilizando las herramientas de
+ business intelligence y machine learning que ayudan a estimar lo que se
+ va a vender en el siguiente periodo.
 \end_layout
 
 \begin_layout Standard
-Un dispositivo OXC (
-\emph on
-Optical Cross-Connec
-\emph default
-t) es un conmutador de señales de fibras ópticas con capacidad MxN en el
- cual se cuenta con un número de M fibras de entrada las cuales serán conmutadas
- a N fibras de salida.
- Este procedimiento se realiza sin la necesidad de ingresar al dominio electróni
-co sino netamente en el dominio óptico.
-\end_layout
 
-\begin_layout Standard
-La función más clara del dispositivo OXC es la conmutación de longitudes
- de onda de fibra a fibra dependiendo de las necesidades de tráfico.
- Su utilización cumple un papel muy importante en la interconexión de redes
- anillos WDM o para el diseño de redes más complejas.
- 
-\end_layout
-
-\begin_layout Standard
-Un OXC permite el diseño de una red en el cual el camino óptico de un requerimie
-nto pueda ser transportado por una ruta óptima calculada por ejemplo por
- rutas más cortas, o caminos cuyas rutas tengan más longitudes de ondas
- libres.
-\end_layout
-
-\begin_layout Standard
-Para lograr un camino óptico, la longitud de onda por el cual una señal
- viaja puede ser convertida a otra longitud de onda mediante un conversor
- de longitud de onda.
- En este trabajo consideramos la restricción de continuidad de longitud
- de onda, es decir, con un OXC sin capacidad de conversión, a este tipo
- de redes se los denomina redes de enrutado de longitudes de onda (
-\emph on
-wavelength-routed
-\emph default
-).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figuras/OXC.png
-	scale 85
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Conmutador OXC 
+\lang english
+Una administración efectiva de las compras y del suministro contribuye de
+ manera significativa al éxito organizacional.
+ La función del suministro evoluciona a medida que la tecnología y el ambiente
+ competitivo mundial requieren enfoques innovadores 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "IPWDMGUATE"
+key "AdminCyA"
 
 \end_inset
 
 .
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Conmutador-OXC."
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En la Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Conmutador-OXC."
-
-\end_inset
-
- se presenta un ejemplo de un OXC donde se puede apreciar que existen tres
- fibras ópticas de entrada y tres de salida en las cuales se visualiza varias
- longitudes de onda por fibra.
- Las longitudes de onda se desmultiplexan mediante un DMUX y con ellos las
- longitudes de ondas ingresan a los diferentes puertos del OXC, y dependiendo
- de la posición del conmutador, la señal con una longitud de onda especifica
- en una fibra puede conectarse a la misma longitud de onda a una fibra de
- salida diferente.
- Al final se multiplexan a la salida mediante un MUX.
 \end_layout
 
 \begin_layout Section
-Redes Multifibras
+Cantidad de la orden de compra
 \end_layout
 
 \begin_layout Standard
-El costo de utilizar los convertidores ópticos obligo a los investigadores
- a buscar alternativas a la utilización de conversión para longitud de onda
- como también un complemento.
- Las redes multifibraspueden ser una alternativa al uso de la conversión
- de longitud de onda.
- Una red multifibrases una red en la cual en cada enlace puede haber más
- de una fibra óptica operando en paralelo 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "somani2006survivability"
 
-\end_inset
-
-.
- Las redes multifibrasemplean más de una fibra óptica por enlace entre dos
- nodos.
- Por lo tanto, todos los enlaces de la red multifibrasconstan de múltiples
- fibras donde cada uno transporta múltiples longitudes de onda.
- 
+\lang english
+El proceso de compra se trata mas bien de un conjunto de etapas: a) Detectar
+ la necesidad, b) Traducir la necesidad en una especificación comercial,
+ c) Buscar potenciales proveedores, d) Seleccionar el proveedor adecuado,
+ e) Detallar la orden de compra y pactar el suministro, f) Recibir los productos
+, g) Pagar a los proveedores.
+ En el detalle de la orden se ven reflejadas las estimaciones de las cantidades
+ a comprar de los productos.
 \end_layout
 
 \begin_layout Standard
-Una de las ventajas de contar con múltiples fibras es que, la longitud de
- onda de entrada a un nodo por un enlace, puede conmutar a cualquier fibra
- en el enlace de salida con la misma longitud de onda de entrada, otra ventaja
- es que al utilizar mayor número de fibras, se puede contar con más longitudes
- de ondas disponibles en los enlaces y eso hace que la probabilidad de bloqueo
- se vea disminuida por la falta de conversión de longitud de onda 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "somani2006survivability"
 
-\end_inset
+\lang english
+Antes de realizar una compra surgen las siguientes preguntas:
+\end_layout
 
-.
+\begin_layout Itemize
+
+\lang english
+¿Cuándo debemos realizar un pedido?
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+¿Qué cantidad debemos solicitar en cada pedido?
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+¿Cuántas unidades de cada artículo debemos mantener en stock?
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
 
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename figuras/RedMultifibra.png
-	scale 75
-
-\end_inset
-
-
-\begin_inset Caption
-
-\begin_layout Plain Layout
-Red multifibrascon dos longitudes de onda por fibra y tres fibras por enlace.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Red-Multifibra"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-En la Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Red-Multifibra"
-
-\end_inset
-
- se puede apreciar un esquema de red multi-fibras, en la misma se pretende
- demostrar el funcionamiento y ventaja de contar con una red de este tipo.
- La característica más representativa de éste tipo de redes es la de poder
- transmitir varias señales llevando una misma longitud de onda en un mismo
- enlace mediante diferentes fibras.
-\end_layout
-
-\begin_layout Section
-Problemas relacionados a las Redes Ópticas
-\end_layout
-
-\begin_layout Standard
-En esta sección nos centraremos en los problemas típicos de las redes ópticas.
-\end_layout
-
-\begin_layout Standard
-Los problemas asociados a las redes ópticas pueden verse desde dos puntos
- de vista: el plano de diseño, control y supervivencia, las cuales dependen
- de la arquitectura de la red óptica.
- 
-\end_layout
-
-\begin_layout Standard
-Los problemas afrontados en este trabajo abarcan problemas del plano de
- diseño, del plano de control y supervivencia
-\series bold
-.
+\lang english
+Para responder a estas preguntas actualmente se tienen las técnicas de pronóstic
+os de demanda entre las que se destacan los Modelos de Pronóstico Cualitativo
+ y los Modelos de Pronóstico Cuantitativo.
 \end_layout
 
 \begin_layout Subsection
-Enrutamiento Multicast
+
+\lang english
+Modelos de pronóstico cualitativo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Jurado de opinión ejecutiva: Esta técnica se basa en la estimación por consenso
+ entre un grupo de personas de alto mando en la empresa.
+ Se apela a la experiencia y a los conocimientos técnicos de estos ejecutivos.
+ Este método es utilizado cuando se requiere decidir con rapidez ante eventos
+ inesperados, por ejemplo: lanzamiento de un nuevo producto.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Consulta a la fuerza de ventas: Esta técnica se basa en la experiencia del
+ personal más cercano al cliente que son los vendedores de la empresa.
+ Cada vendedor realiza una estimación de la demanda en su zona de su influencia.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Encuesta del mercado de consumo: Se encuesta a los clientes acerca de sus
+ planes de compras o sus interes por determinados productos.
+ La estimación se extrae de los resultados de las encuestas.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Método Delphi: Esta técnica se basa en identificar un panel de expertos
+ que pueden ser gerentes, empleados comunes, o expertos del sector.
+ A cada uno de ellos se les solicita individualmente su estimación de la
+ demanda.
+ Se realiza un proceso iterativo hasta que los expertos alcancen un consenso.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Analogía de productos similares: Esta técnica de predicción de la demanda
+ se basa en el comportamiento de las ventas de un producto similar o modelo.
+ Se puede realizar comparando con un producto sustituto o complementario.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Modelos de pronóstico cuantitativo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-El problema de enrutamiento multicast en redes ópticas se conoce como MR
- (
-\emph on
-Multicast Routing
-\emph default
-).
+
+\lang english
+Los modelos cuantitativos a su vez se pueden clasificar en modelos de series
+ de tiempo y en modelos causales.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Modelos de series de tiempo
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el modelo de series de tiempo el pronóstico se basa solamente en datos
+ anteriores y asume que los factores que influencian las ventas pasadas,
+ presentes y futuras de sus productos continuarán.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Promedio simplista: Se asume que la demanda del siguiente período será igual
+ a la demanda del período inmediatamente anterior.
  
 \end_layout
 
-\begin_layout Standard
-Dada una red óptica y un conjunto de solicitudes, el problema consiste en
- encontrar las rutas óptimas del conjunto de solicitudes de origen a los
- diferentes destinos.
- Este problema es de mayor complejidad y general que el problema enrutamiento
- R (
-\emph on
-Routing
-\emph default
-) que consiste en hallar una ruta desde el nodo origen a un único nodo destino,
- dado un conjunto de solicitudes.
-\end_layout
+\begin_layout Itemize
 
-\begin_layout Subsection
-Asignación de Longitud de Onda 
-\end_layout
-
-\begin_layout Standard
-El problema de asignación de longitud de onda trata sobre la forma óptima
- de asignar caminos de luz en los enlaces.
- Este problema está asociado y depende si la red cuenta con conversores
- de longitud de onda como también del enfoque de enrutamiento.
- Existen númerosos métodos de asignación de longitud de onda, de los cuales
- podemos citar Random (RR), First-Fit (FF), Longest-First (LF), Most-Used
- (MU), Least-Used (LU) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "chlamtac1989purely,barry1997max,birman1995routing,jeong1996comparison"
+\lang english
+Promedio móvil simple: Se aplica promedio sobre los datos históricos de
+ ventas de una secuencia fija de períodos.
+ Es útil cuando la demanda no presenta estacionalidad o tendencia.
+\begin_inset Formula 
+\begin{equation}
+PMS=\frac{\sum Demanda\_en\_n\_períodos\_previos}{n}
+\end{equation}
 
 \end_inset
 
-.
- Cabe destacar que en el presente trabajo se utiliza la técnica RR.
+
 \end_layout
 
-\begin_layout Standard
-En el esquema 
-\series bold
-RR
-\series default
- se busca primeramente todas las longitudes de onda disponibles y posteriormente
- se elige una de forma aleatoria.
- En la asignaciónde onda 
-\series bold
-FF
-\series default
- todas las longitudes de ondas son enumeradas y cuando se desea elegir una
- se selecciona aquella con el número mayor de orden.
- Por su parte, 
-\series bold
-LF
-\series default
- se selecciona la longitud de onda con el número menor de orden.
- En 
-\series bold
-MU 
-\series default
-se selecciona la longitud de onda más utilizada en la red, mientras que
- en 
-\series bold
-LU
-\series default
- se selecciona aquella menos usado en la red, con ello se intenta equilibrar
- la carga entre todas las longitudes de onda.
-\end_layout
+\begin_layout Itemize
 
-\begin_layout Subsection
-Ubicación de Divisores de Luz
-\end_layout
+\lang english
+Promedio móvil ponderado: Ajusta el método de promedio simple asignando
+ mayor peso a los datos más recientes.
+ Sirve para reflejar el nivel de importancia de unos datos sobre otros como
+ resultado de las fluctuaciones.
+\begin_inset Formula 
+\begin{equation}
+PMP=\frac{\sum\left(Peso\_período\_n\right)\left(Demanda\_período\_n\right)}{\sum Pesos}
+\end{equation}
 
-\begin_layout Standard
-Un divisor de luz es un dispositivo utilizado para implementar multicast
- óptico mediante la división de la señal óptica en dos o más señales ópticas.
- La razón de división es el porcentaje de la potencia que viaja por cada
- una de las salidas de los divisores.
- Para un divisor de dos puertos, la razón de división más común es 
-\begin_inset Formula $50:50$
-\end_inset
-
-, aunque pueden ser fabricados divisores de cualquier razón.
- La utilización del divisor acarrea el problema de la perdidas de las señales
- ópticas y costos adicionales de uso.
- En este contexto, el problema consiste en determinar la ubicación de los
- divisores de manera a optimizar su uso en la red con el fin de minimizar
- el costo y la perdida de las señales ópticas 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhou2005optical"
-
-\end_inset
-
-.
- 
-\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection
-Ubicación de Amplificadores
-\end_layout
+\begin_layout Itemize
 
-\begin_layout Standard
-Un amplificador óptico 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "agrawal2010fiber"
-
-\end_inset
-
- es un dispositivo que solo eleva la potencia de la señal sin reconstruir
- su forma temporal.
- En ese sentido, el amplificador óptico es independiente al formato de la
- modulación de la señal ya que supone una total transparencia de los datos.
- La desventaja de esto es que se amplifica el ruido además de la señal,
- degradándose la relación señal a ruido en el receptor.
-\end_layout
-
-\begin_layout Standard
-Cada nodo de una red óptica cuenta con receptores de señales que provienen
- de las fibras ópticas de entrada, éstos dispositivos ópticos necesitan
- una potencia mínima de señal para que puedan ser percibidos.
- Es importante que la señal de entrada cuente con la señal minima detectable,
- dado que el rango del nivel de entrada está limitado por el fotodetector.
- Los amplificadores ópticos ayudan a mejorar las transmisiones de señales,
- donde la misma se ve afectada por algún problema de transmisión como puede
- ser la división de la misma mediante el divisor de luz como la longitud
- de la fibra.
- A su vez, la utilización de amplificadores ópticos acarrea un costo adicional
- en el diseño de la red.
-\end_layout
-
-\begin_layout Standard
-Por lo tanto, el problema de ubicación de amplificadores consiste en minimizar
- el número de amplificadores ópticos en la red de manera que el costo sea
- el mínimo posible y las señales lleguen con al menos la potencia mínima
- a todos los nodos de la red 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhou2005optical"
+\lang english
+Suavización exponencial simple: Para calcular se requiere del pronóstico
+ anterior, la demanda real del periodo de pronóstico y una constante de
+ suavizamiento.
+ Es útil cuando se cuenta con pocos datos históricos.
+\begin_inset Formula 
+\begin{equation}
+F_{t}=F_{t-1}+\alpha\left(A_{t-1}-F_{t-1}\right)
+\end{equation}
 
 \end_inset
 
-.
+Donde 
+\begin_inset Formula $F_{t}=$
+\end_inset
+
+ pronóstico nuevo, 
+\begin_inset Formula $F_{t-1}=$
+\end_inset
+
+ el pronóstico anterior, 
+\begin_inset Formula $0\leq\alpha\leq1=$
+\end_inset
+
+ constante de suavización, 
+\begin_inset Formula $A_{t-1}=$
+\end_inset
+
+ demanda real del período anterior.
 \end_layout
 
-\begin_layout Subsection
-Ubicación de Fibras Ópticas
+\begin_layout Itemize
+
+\lang english
+Suavización exponencial doble: Esta técnica es una modificación del suavizamient
+o exponencial simple.
+ Agrega una constante de suavización delta (DELTA), cuya función es reducir
+ el error que ocurre entre la demanda real y el pronóstico.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Modelo causal
 \end_layout
 
 \begin_layout Standard
-En las redes ópticas existen arquitecturas donde se requieren múltiples
- fibras por enlace, en este trabajo consideramos una arquitectura multifibrasdon
-de cada enlace puede contar con una o varias fibras ópticas.
- El problema consiste en minimizar el número de fibras ópticas en la red
- teniendo en cuenta las restricciones físicas del sistema 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "somani2006survivability"
+
+\lang english
+Utiliza una técnica matemática conocida como análisis de regresión, que
+ relaciona una variable dependiente (por ejemplo, la demanda) con una variable
+ independiente (por ejemplo, el precio, publicidad, etc.) en la forma de
+ ecuación lineal.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Regresión Lineal: Esta técnica permite obtener un estimado analizando el
+ impacto de los factores causales con relación a la demanda del producto
+ o servicio.
+\begin_inset Formula 
+\begin{equation}
+y=a+bx
+\end{equation}
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Subsection
-Protección Contra Falla Simple de Nodo 
-\end_layout
-
-\begin_layout Standard
-Como se ha mencionado las redes ópticas pueden sufrir una falla en cualquiera
- de sus nodos, y ello acarrear una perdida crítica de los datos que pasan
- a través del nodo fallido.
- En ese sentido, el problema consiste en determinar caminos alternativos
- o secundarios para dar supervivencia a la red previendo cada falla de nodo
- de toda la red 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "luekijna2007multicast"
-
+Donde 
+\begin_inset Formula $y=$
 \end_inset
 
-.
+ valor de la variable dependiente en este caso ventas, 
+\begin_inset Formula $a=$
+\end_inset
+
+ intersección en el eje y, 
+\begin_inset Formula $b=$
+\end_inset
+
+ pendiente de la línea de regresión, 
+\begin_inset Formula $x=$
+\end_inset
+
+ la variable independiente.
 \end_layout
 
 \begin_layout Section

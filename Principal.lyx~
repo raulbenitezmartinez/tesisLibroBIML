@@ -151,7 +151,7 @@ filename "01_Introduccion/01_Introduccion.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "Bibliografia,BibliografiaLibro"
+bibfiles "bibliografia,BibliografiaLibro,Bibliografia"
 options "bibtotoc,alpha"
 
 \end_inset
