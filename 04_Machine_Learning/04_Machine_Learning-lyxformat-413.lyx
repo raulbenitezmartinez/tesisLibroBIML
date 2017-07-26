@@ -1,0 +1,1629 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\renewcommand{\listtablename}{Indice de tablas}
+\renewcommand{\tablename}{Tabla} 
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Enrutamiento Multicast
+\end_layout
+
+\begin_layout Section
+Multicast
+\end_layout
+
+\begin_layout Standard
+El 
+\emph on
+multicast
+\emph default
+ proporciona un medio de comunicación punto-a-multipunto, en el que el un
+ origen envía mensajes a varios destinos.
+ Para realizar la comunicación desde un nodo a varios nodos la forma más
+ sencilla es transmitir la señal desde el nodo que desea transmitir a cada
+ uno de los nodos destinos de forma separada e independiente, es lo que
+ se llama múltiples unicast cuyo funcionamiento se puede apreciar en la
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Multiples-unicast"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2005optical"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A diferencia de varios unicast, multicast es la forma más eficiente de implement
+ar la comunicación uno-a-muchos haciendo mejor uso de los recursos de la
+ red.
+ Como se puede apreciar en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Multicast"
+
+\end_inset
+
+ la señal viaja por un solo canal y se puede replicar para llegar a los
+ nodos destinos, mediante el uso de dispositivos electro-ópticos u ópticos.
+\end_layout
+
+\begin_layout Standard
+Multicast es considerada como la tecnología clave para apoyar y soportar
+ las demandas de las aplicaciones de uso intensivo de ancho de banda de
+ punto-a-multipunto, tales como televisión de alta definición (HDTV), videoconfe
+rencia, video demanda (VOD), distribución de documentos multimedia, aprendizaje
+ interactivo a distancia, subastas en vivo, juegos distribuidos, óptica
+ storage área networks (O-SAN), computación distribuida, replicación de
+ base de datos, entre otros 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2005optical"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En el problema de enrutamiento multicast se puede dar dos tipos de tráficos:
+ (i) Establecimiento estático: en donde los requerimientos de demandas se
+ conocen a priori, es decir, el problema de diseño de la red se resuelve
+ 
+\emph on
+offline
+\emph default
+ y (ii) Establecimiento Dinámico: en la que los requerimientos de demandas
+ surgen de acuerdo a las necesidades.
+ En este tipo de establecimiento uno de los objetivos principales es la
+ de 
+\emph on
+minimizar los bloqueos
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/multicasVariosUnicast.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Múltiples unicast.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Multiples-unicast"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagenes/multicasUnCanal.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Multicast.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Multicast"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Múltiples unicast versus multicast.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Multiples-unicast-versus"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la literatura, multicast óptico se refiere a la realización de la multidifusi
+ón directamente en la capa óptica de red.
+ Para realizar multidifusión en las redes WDM se pueden utilizar dos mecanismos
+ de construcción de red: a) Multidifusión a través de redes 
+\emph on
+Broadcast-and-select 
+\emph default
+y b) Multidifusión a través de redes 
+\emph on
+wavelength-routed
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2005optical"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En una red 
+\emph on
+broadcast-and-select 
+\emph default
+cada nodo transmite datos de multidifusión utilizando una simple longitud
+ de onda.
+ Los nodos destinos seleccionan la información que necesitan, sintonizando
+ algunas de las longitudes de onda.
+ Este tipo de redes se presenta generalmente en una topología del tipo estrella
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "diegopinto2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Una red 
+\emph on
+wavelength-routed
+\emph default
+ puede adoptar una topología malla y cada nodo de la red está equipado con
+ un conmutador fotónico configurable, es decir, con un OXC.
+\end_layout
+
+\begin_layout Section
+Divisor de Luz 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Divisor-de-Luz"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un divisor de luz
+\emph on
+ (splitter)
+\emph default
+ es un dispositivo óptico pasivo que tiene la capacidad de dividir una señal
+ de luz de entrada en varias señales de salida.
+ En Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Splitting-que-divide"
+
+\end_inset
+
+ se puede apreciar que la división de la señal que atraviesa un divisor
+ disminuye su potencia, generalmente a la mitad, esto es uno de los problemas
+ tratados en este trabajo ya que la potencia de la señal debe tener un nivel
+ mínimo para ser reconocida por los receptores ópticos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2005optical"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/Splitter1.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Splitting que divide la señal que proviene del nodo 1 a los destinos 3 y
+ 4.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Splitting-que-divide"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La multidifusión en la capa óptica puede alcanzar alta velocidad de procesamient
+o al eliminar el cuello de botella de procesamiento electrónico las cuales
+ se realizan en las redes ópacas (Ópticas-Eléctrica-Ópticas) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhu2002traffic"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Arquitectura MC-OXC
+\end_layout
+
+\begin_layout Standard
+Una arquitectura típica MC-OXC fue propuesto en 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hu1998multicasting"
+
+\end_inset
+
+, se basa en conmutadores 
+\emph on
+splitter-and-delivery
+\emph default
+ (SAD).
+ Como se puede ver en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SAD-based-MC-OXC."
+
+\end_inset
+
+ en cada puerto de entrada de un SAD la señal de luz se divide primeramente
+ en N salidas, cada uno de los cuales es direccionado a un puerto fijo de
+ salida o descartado por el conmutador óptico.
+ En la arquitectura MC-OXC basada en SAD, cada señal de luz de entrada se
+ puede conectar a un sub-conjunto de salidas o a todos los puertos de salida
+ o ninguna.
+ Por lo tanto, la arquitectura SAD es estrictamente sin bloqueo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/NxN-MC-OXC_PP_1.png
+	scale 85
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+MC-OXC con N 
+\begin_inset Formula $×$
+\end_inset
+
+ N puertos y w SAD.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Un-MC-OXC-N"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename imagenes/NxN-SADswitchPP.png
+	scale 85
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+SAD con N 
+\begin_inset Formula $×$
+\end_inset
+
+ N puertos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Un-switch-SAD"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+MC-OXC basado en SAD.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SAD-based-MC-OXC."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si todos los nodos de la red tienen capacidad de multidifusión se lo conoce
+ como una red 
+\emph on
+full-light splitting
+\emph default
+, si en una red algunos nodos cuentan con capacidad de multidifusión y otros
+ no, se dice que es una red es 
+\emph on
+spare-light splittin
+\emph default
+g.
+ Cabe destacar, que uno de los temas centrales de este trabajo es el diseño
+ de una red 
+\emph on
+spare-light splitting 
+\emph default
+cuyos casos particulares son el 
+\emph on
+full-light splitting 
+\emph default
+y el
+\emph on
+ non-light splitting.
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Camino de luz y Árbol de luz 
+\end_layout
+
+\begin_layout Standard
+Una conexión punto-a-punto se realiza a través de un camino de luz (
+\emph on
+light-path
+\emph default
+) el cual es el camino basado en longitud de onda.
+ Mientras que para una solicitud de multidifusión, el concepto de camino
+ de luz se extiende a árbol de luz (light-tree)
+\series bold
+, 
+\series default
+en
+\series bold
+ 
+\series default
+donde un árbol basado en longitud de onda es utilizado para la multidifusión
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2005optical"
+
+\end_inset
+
+.
+ En el cálculo de un árbol de luz se distinguen el problema de enrutamiento
+ multicast y el problema de asignación de longitud de onda.
+ En este contexto, el cálculo del árbol de luz se conoce como el problema
+ de enrutamiento multicast y asignación de longitud de onda (
+\emph on
+Multicast Routing and Wavelength Assigment
+\emph default
+, MRWA).
+\end_layout
+
+\begin_layout Standard
+Basado en las definiciones anteriores el problema MRWA puede ser modelado
+ acorde a la arquitectura de red, al número de solicitudes multicast (simple
+ o múltiple) y al tipo de tráfico (estático o dinámico).
+ Note que, la arquitectura de red está sujeta a las capacidades de división
+ de luz, de conversión de longitud de onda, amplificación de la señal de
+ luz, al número de fibras óptica por enlace como también al número de longitudes
+ de onda por fibra óptica.
+ 
+\end_layout
+
+\begin_layout Section
+Problemas de Multicast Óptico
+\end_layout
+
+\begin_layout Standard
+Los problemas asociados al multicast óptico se pueden clasificar en dos
+ grandes categorías: plano de datos y plano de control.
+ Estos problemas se resumen en la Tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Clasificacion-de-problemas"
+
+\end_inset
+
+ que fueron obtenido de 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2005optical"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Clasificación de los problemas en multicast óptico en redes WDM.
+ 
+\lang english
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Clasificacion-de-problemas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="13" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="3cm">
+<column alignment="left" valignment="middle" width="2.5cm">
+<column alignment="center" valignment="middle" width="2cm">
+<column alignment="center" valignment="top" width="2.5cm">
+<column alignment="center" valignment="middle" width="5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Bloques de construcción
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none" width="5cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Principales problemas
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Principales limitaciones
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plano de Datos
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Diseño eficiente de potencia
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none" width="3cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Pérdida de potencia debido a los divisores de luz
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Pérdida de potencia de la señal debido al splitting
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Diseño con costo efectivo
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none" width="5cm">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Número de amplificadores ópticos, convertidores de longitud de onda y número
+ de fibras ópticas.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Número de amplificadores ópticos y convertidores de longitud de onda
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Plano de Control
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+MRWA
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Solicitud simple
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Modelo light-tree 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Número de longitudes de onda y arquitectura de red sin capacidad de conversión.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Modelo multi-drop
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Capacidad de dividir la luz y sin capacidad de conversión.
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Modelo multi
+\begin_inset Formula $\lambda$
+\end_inset
+
+-light-tree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Capacidad de conversión de longitud de onda
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Modelo light-forest
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Consideración de energía
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Múltiples solicitudes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Tráfico estático
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Rendimiendo por bloqueo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Tráfico Dinámico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Evaluación del desempeño de multicast
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Límites de longitud de onda, modelo de bloqueo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Protección de tráfico multicast
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Fallo de enlace y nodo.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Tráfico multicast grooming
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Solicitud de conexión de baja velocidad.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Tráfico multicast jerárquico
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="middle" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Solicitud multicast de velocidad superior al de un canal de longitud de
+ onda.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el 
+\series bold
+plano de datos,
+\series default
+ el problema fundamental es el estudio de la arquitectura MC-OXC cuyo diseño
+ está basado en los problemas de ubicación óptima de divisores, de ubicación
+ óptima de amplificadores y de ubicación óptima de conversores 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "XR04,zhou2005optical"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En el 
+\series bold
+plano de control
+\series default
+, uno de los problemas es el MRWA.
+ El estrecho acoplamiento entre el enrutamiento y la asignación de longitud
+ de onda surge con el fin de establecer una conexión óptica.
+ En este plano también se detectan problemas asociados a la evaluación del
+ desempeño de una solución multicast, la protección multicast y tráfico
+ multicast de baja y alta velocidad.
+\end_layout
+
+\begin_layout Standard
+A continuación se dará una breve descripción de cada problema presentado
+ en la Tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Clasificacion-de-problemas"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Diseño Eficiente de Potencia
+\emph on
+ 
+\end_layout
+
+\begin_layout Standard
+Esto se refiere al diseño de una red en la cual se requiera un mínimo número
+ de divisores en el MC-OXC con mínimos efectos en el rendimiento de una
+ red.
+ El rendimiento se mide en bloqueos debido a las pérdidas de potencia por
+ división de luz, ver Sección 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Divisor-de-Luz"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Diseño con Costo Efectivo
+\emph on
+ 
+\end_layout
+
+\begin_layout Standard
+Esto se refiere al diseño una red de manera a minimizar el costo, considerando
+ el uso de conversores de longitudes de onda para evitar bloqueos y amplificador
+es ópticos para solucionar los problemas que acarrea el uso de los divisores.
+\end_layout
+
+\begin_layout Standard
+La complejidad de fabricación de los amplificadores ópticos pueden ser muy
+ altos y como consecuencia, el costo-rendimiento debe ser cuidadosamente
+ considerado en la construcción de la MC-OXC.
+\end_layout
+
+\begin_layout Subsection
+Solicitud Multicast Simple - MRWA 
+\end_layout
+
+\begin_layout Standard
+En ésta categoría se reportan cuatro modelos:
+\end_layout
+
+\begin_layout Itemize
+Modelo light-tree: Dada una solicitud multicast simple se diseña el árbol
+ de luz en una red 
+\emph on
+full-light splitting y non-wavelenght conversion.
+\end_layout
+
+\begin_layout Itemize
+Modelo multi-drop: En este modelo se presenta el problema de minimizar el
+ costo del diseño de árbol de luz el cual puede estar conformado por sub-árboles
+ con diferentes longitudes de onda.
+ En este modelo se considera una red con 
+\emph on
+limited-light splitting y non-wavelenght conversion.
+\end_layout
+
+\begin_layout Itemize
+Modelo multicast simple - multi
+\begin_inset Formula $\lambda$
+\end_inset
+
+-light-tree: Se diseña el árbol luz considerando una red 
+\emph on
+full-light splitting
+\emph default
+ y 
+\emph on
+limited-wavelenght conversion
+\emph default
+.
+ Básicamente, se busca minimizar el costo de la conversión de la longitud
+ de onda.
+\end_layout
+
+\begin_layout Itemize
+Modelo multicast simple - modelo light-forest: El diseño del árbol de luz
+ en una red con algunos nodos con capacidad de splitting y otros nodos sin
+ capacidad de splitting.
+ Es decir, en una red sparse splitting.
+ La red no tiene capacidad de conversion de longitud de onda.
+\end_layout
+
+\begin_layout Subsection
+Solicitud Multicast Múltiple  - MRWA
+\end_layout
+
+\begin_layout Standard
+En ésta categoría se reportan tres modelos:
+\end_layout
+
+\begin_layout Itemize
+Multicast múltiple: Diseñar los árboles de luz para satisfacer múltiples
+ solicitudes multicast.
+\end_layout
+
+\begin_layout Itemize
+Multicast múltiple - tráfico estático: Diseñar los árboles de luz para un
+ conjunto de solicitudes estáticas que permanecen en un periodo de tiempo
+ largo, por lo tanto el tráfico debe calcularse fuera de línea.
+\end_layout
+
+\begin_layout Itemize
+Multicast múltiple - tráfico dinámico: Diseñar los árboles de luz para solicitud
+es que llegan al sistema uno a uno de forma aleatoria.
+ 
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que en este trabajo el problema en cuestión  cae en la categoría
+ Multicast múltiple - tráfico estático.
+\end_layout
+
+\begin_layout Subsection
+Evaluación del Desempeño de Multicast
+\end_layout
+
+\begin_layout Standard
+Para evaluar el desempeño de una red multicast óptica sujeta a la restricción
+ de continuidad de luz existen dos indicadores principales que son: el número
+ de longitudes de onda utilizadas y el rendimiento por bloqueo.
+ En redes
+\emph on
+ wavelight conversion
+\emph default
+ son también cuantificados los números de conversiones de longitudes de
+ ondas.
+ En general, es importante evaluar el desempeño de una red multicast para
+ poder visualizar los problemas y buscar soluciones con el fin de optimizar
+ los recursos utilizados.
+\end_layout
+
+\begin_layout Subsection
+Protección de Tráfico Multicast
+\end_layout
+
+\begin_layout Standard
+Los problemas de protección y restauración se han estudiado de manera amplia
+ en un escenario de solicitudes punto-a-punto.
+ Sin embargo, el estudio del mismo para solicitudes punto-a-multipunto no
+ se ha estudiado de la misma manera para redes de malla.
+ Diseñar la red multicast previendo fallas con el fin de dar continuidad
+ al servicio es un área fundamental que requiere estudios más complejos
+ y jerárquicos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhou2005optical"
+
+\end_inset
+
+.
+ La protección multicast desarrollada en este trabajo será desarrollada
+ en el Capítulo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Colonia-de-Hormigas"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Tráfico Multicast Grooming y Jerárquicos
+\end_layout
+
+\begin_layout Standard
+Cuando el requerimiento de ancho de banda es inferior o superior a la capacidad
+ del canal estamos en un contexto de diseño de red grooming o jerárquico,
+ respectivamente 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhu2002traffic"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

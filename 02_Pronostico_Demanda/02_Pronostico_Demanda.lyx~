@@ -1,0 +1,1275 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+% Bibliografia en español
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{spanish}
+
+% Bibliografia
+\usepackage[authoryear,square,sort]{natbib}
+\bibliographystyle{plainnat}
+\bibpunct{[}{]}{,}{a}{}{;}
+\renewcommand\cite{\citep}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style 
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Pronóstico de la Demanda
+\end_layout
+
+\begin_layout Standard
+En este capítulo se discute las definiciones de las redes ópticas así como
+ sus componentes, arquitecturas y problemas asociados.
+\end_layout
+
+\begin_layout Standard
+Una red óptica es una red de telecomunicaciones que utiliza tecnologías
+ ópticas para la transmisión de datos en donde el elemento fundamental es
+ la fibra óptica.
+\end_layout
+
+\begin_layout Section
+Introducción a los pronósticos
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los términos compras, adquisiciones, administración de materiales, logística,
+ abastecimiento, administración del suministro y administración de la cadena
+ de suministro se utilizan de manera indistinta ya que no existe un concenso
+ general sobre la terminología.
+ El proceso de adquisición es el eje central de la actividad empresarial
+ de administración de compras y del suministro.
+ Cualquier organización requiere de proveedores por lo que es muy importante
+ acoplarlos con efectividad al entorno organizacional, y que las decisiones
+ de compras no contradigan las estrategias de la empresa.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Las empresas centran sus esfuerzos en aumentar sus ingresos, desminuir sus
+ costos, o una combinación de ambos a fin de obtener ganacias de la forma
+ más eficiente posible.
+ Este trabajo intenta contribuir lograr decisiones eficientes de compras
+ basadas en estimaciones eficientes de ventas.
+ Se considera que es una decisión importantísima estimar o predecir eficientemen
+te la cantidad o volumen de productos a comprar para reposición de stock
+ y que sirvan para el periodo de ventas que está por llegar.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El stock o existencia de una empresa es el conjunto de materiales y artículos
+ que se almacenan, tanto aquellos que son necesarios para el proceso productivo
+ como los destinados a la venta.
+ La función que desempeña el stock o existencia en una empresa son 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AdminCyA"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Evitar la escasez, ante la incertidumbre de la demanda o ante un posible
+ retraso en la reposición o suministro de los pedidos.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Aprovechar la disminución de los costes a medida que aumenta el volumen
+ de compras o de fabricación.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
+ competitividad.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En el proceso de compras el caso ideal por supuesto sería poder adivinar
+ la cantidad que se va a vender en el siguiente periodo de venta (puede
+ ser para el siguiente período semanal, quincenal, mensual, trimestral o
+ semestral, etc.), y esto por cada producto que disponibilizamos para la
+ venta.
+ En este caso al término de cada periodo de venta se dispondría de stock
+ cero, con lo cual se llega a una máxima eficiencia en compras.
+ Adivinar es imposible, pero lo que si se puede hacer es estimar eficientemente
+ la cantidad o volumen a vender.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Del por qué la importancia de estimar de forma correcta esta cantidad o
+ volumen, los expertos en negocios explican que los productos parados en
+ stock mientras no se vendan es dinero en estantería, además que generan
+ sobrecostos de mantenimiento como seguros, personal encargado, fecha de
+ vencimiento de los productos, etc.
+ Otro hecho no deseado es la ruptura de stock, es decir el no disponer de
+ un producto en stock cuando haya clientes interesados en comprarlo, lo
+ cual también es considerado pérdida para la empresa.
+ Lo que se desea es mantener un nivel de stock óptimo, es decir, por una
+ parte tener suficiente cantidad para satisfacer la demanda sin caer en
+ roturas de stock y, por otra, evitar que haya un exceso inútil del mismo.
+ Si bien el presente trabajo no está enfocado en medir los costos, lo que
+ sí se busca es comprar de forma eficiente utilizando las herramientas de
+ business intelligence y machine learning que ayudan a estimar lo que se
+ va a vender en el siguiente periodo.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Una administración efectiva de las compras y del suministro contribuye de
+ manera significativa al éxito organizacional.
+ La función del suministro evoluciona a medida que la tecnología y el ambiente
+ competitivo mundial requieren enfoques innovadores 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AdminCyA"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Cantidad de la orden de compra
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El proceso de compra se trata mas bien de un conjunto de etapas: a) Detectar
+ la necesidad, b) Traducir la necesidad en una especificación comercial,
+ c) Buscar potenciales proveedores, d) Seleccionar el proveedor adecuado,
+ e) Detallar la orden de compra y pactar el suministro, f) Recibir los productos
+, g) Pagar a los proveedores.
+ En el detalle de la orden se ven reflejadas las estimaciones de las cantidades
+ a comprar de los productos.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Antes de realizar una compra surgen las siguientes preguntas:
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+¿Cuándo debemos realizar un pedido?
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+¿Qué cantidad debemos solicitar en cada pedido?
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+¿Cuántas unidades de cada artículo debemos mantener en stock?
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Para responder a estas preguntas actualmente se tienen las técnicas de pronóstic
+os de demanda entre las que se destacan los Modelos de Pronóstico Cualitativo
+ y los Modelos de Pronóstico Cuantitativo.
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Métodos de pronóstico cualitativo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los métodos de pronóstico estadístico basan su pronóstico en datos históricos.
+ Sin embargo, estos métodos no se pueden usar si no hay datos disponibles,
+ o si los datos no son representativos de las condiciones actuales.
+ En estos casos, se pueden usar en su lugar los métodos de pronóstico basados
+ en juicio 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Opinión del gerente: Éste es el más informal de los métodos, porque significa
+ simplemente que un solo gerente usa su mejor opinión para hacer el pronóstico.
+ En algunos casos, puede haber algunos datos disponibles que los ayuden
+ en esta decisión.
+ En otros, el gerente puede estar apoyándose sólo en su experiencia y en
+ un conocimiento íntimo de las condiciones actuales que impulsan la cantidad
+ proyectada.
+\end_layout
+
+\begin_layout Itemize
+Junta de opinión ejecutiva: Este método es similar al primero, excepto que
+ ahora se requiere que un pequeño grupo de administradores de alto nivel
+ se integre y presente sus mejores juicios para hacer colectivamente el
+ pronóstico.
+ Este método se puede usar para proyecciones más críticas, en las que varios
+ ejecutivos comparten la responsabilidad y pueden aportar diferentes tipos
+ de pericia.
+\end_layout
+
+\begin_layout Itemize
+Comité de ventas: Este método se usa a menudo para pronosticar las ventas,
+ cuando una compañía emplea su cuerpo de vendedores para que ayude a generar
+ ventas.
+ Éste es un enfoque del fondo hacia arriba, por el cual cada vendedor aporta
+ una estimación de lo que serán las ventas en su región.
+ Estas estimaciones se envían luego hacia arriba por la cadena de mando
+ corporativa, con una revisión en cada nivel, para agregarse al final en
+ un pronóstico corporativo de ventas.
+\end_layout
+
+\begin_layout Itemize
+Encuesta en el mercado de consumo: Este método va todavía más allá que el
+ anterior al adoptar un enfoque a partir de la base hacia arriba en el pronóstic
+o de ventas.
+ Significa encuestar a los consumidores cautivos y consumidores potenciales
+ respecto a sus futuros planes de compra y a la forma en que responderían
+ a diversas nuevas características de los productos.
+ Esta información es particularmente valiosa para diseñar nuevos productos
+ y luego preparar los pronósticos iniciales de ventas.
+ También sirve para planear una campaña de marketing.
+\end_layout
+
+\begin_layout Itemize
+Método Delphi: Este método emplea un panel de expertos en diferentes sitios
+ que llenan independientemente una serie de cuestionarios.
+ Sin embargo, los resultados de cada cuestionario se integran con el siguiente,
+ así que cada experto puede entonces evaluar esta información del grupo
+ para ajustar sus respuestas la siguiente vez.
+ La meta es alcanzar una conclusión relativamente estrecha de la mayoría
+ de los expertos.
+ Los que toman las decisiones evalúan luego esta información del panel de
+ expertos para formular el pronóstico.
+ Este proceso se usa normalmente sólo en los niveles más altos de una corporació
+n o gobierno para preparar pronósticos de largo plazo de tendencias amplias.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Jurado de opinión ejecutiva: Esta técnica se basa en la estimación por consenso
+ entre un grupo de personas de alto mando en la empresa.
+ Se apela a la experiencia y a los conocimientos técnicos de estos ejecutivos.
+ Este método es utilizado cuando se requiere decidir con rapidez ante eventos
+ inesperados, por ejemplo: lanzamiento de un nuevo producto.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Consulta a la fuerza de ventas: Esta técnica se basa en la experiencia del
+ personal más cercano al cliente que son los vendedores de la empresa.
+ Cada vendedor realiza una estimación de la demanda en su zona de su influencia.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Encuesta del mercado de consumo: Se encuesta a los clientes acerca de sus
+ planes de compras o sus interes por determinados productos.
+ La estimación se extrae de los resultados de las encuestas.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Método Delphi: Esta técnica se basa en identificar un panel de expertos
+ que pueden ser gerentes, empleados comunes, o expertos del sector.
+ A cada uno de ellos se les solicita individualmente su estimación de la
+ demanda.
+ Se realiza un proceso iterativo hasta que los expertos alcancen un consenso.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Analogía de productos similares: Esta técnica de predicción de la demanda
+ se basa en el comportamiento de las ventas de un producto similar o modelo.
+ Se puede realizar comparando con un producto sustituto o complementario.
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Métodos de pronóstico cuantitativo
+\end_layout
+
+\begin_layout Standard
+Para qué sirven? Ventajas y desventajas? Cómo se clasifican?
+\end_layout
+
+\begin_layout Standard
+Partiendo del significado mismo de los términos, podemos expresar que estos
+ modelos tratan de predecir una cantidad futura a partir de ciertos indicios.
+ Estos indicios son en general información histórica de ventas.
+ En contraste con los modelos cualitativos, los pronósticos cuantitativos
+ no se basan en el juicio de expertos por lo que dependen de la información
+ almacenada a lo largo del tiempo.
+\end_layout
+
+\begin_layout Standard
+Estos modelos se basan en métodos de pronóstico estadísticos que a partir
+ de los datos históricos de ventas y suponiendo que las tendencias históricas
+ continuarán, son capaces de anticipar la demanda futura 
+\lang english
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+
+\lang spanish
+.
+ En general, para modelar cuantitativamente se debe disponer de información
+ sobre la variable a pronosticar, la información debe ser cuantificable
+ y el patrón histórico de cierto modo se debe repetir en el futuro 
+\lang english
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCN2011"
+
+\end_inset
+
+
+\lang spanish
+.
+ Se puede decir que la efectividad dependerá del nivel de estabilidad alcanzado
+ en la organización 
+\lang english
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MTPD20017"
+
+\end_inset
+
+
+\lang spanish
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Sirven para pronosticar a corto y mediano plazo.
+ En general, los métodos cuantitativos se clasifican en métodos de series
+ de tiempo y pronósticos causales.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El pronóstico de la demanda de productos es sólo una aplicación importante
+ de estos métodos.
+ En otros casos, los pronósticos se podrían utilizar para evaluar los requerimie
+ntos de cantidades tan diversas como las partes de repuesto, el rendimiento
+ de la producción y las necesidades de personal.
+ Las técnicas de pronóstico se usan también frecuentemente para anticipar
+ las tendencias económicas a nivel regional, nacional o incluso internacional
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Métodos de series de tiempo
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Qué son los modelos de series de tiempo?
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Características.
+\end_layout
+
+\begin_layout Standard
+Una serie de tiempo es un conjunto de observaciones de la variable a pronosticar
+, medidas en puntos o períodos sucesivos del tiempo pasado 
+\lang english
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+
+\lang spanish
+.
+ El histórico de ventas de un producto, donde se observan los valores de
+ las cantidades vendidas mensualmente, constituye un ejemplo de serie de
+ tiempo.
+ Los datos históricos de la variable a predecir están limitados a sus valores
+ pasados.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El objetivo del modelo es obtener una buena predicción del valor futuro
+ de la variable a pronosticar, enmarcado por supuesto en la serie de tiempo.
+ Para lograr el objetivo, el modelo debe descubrir el patrón dentro de la
+ serie y luego ser capaz de extrapolarlo hacia el futuro 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCN2011"
+
+\end_inset
+
+.
+ De cierta manera, hay una suposición intrínseca al modelo de que los factores
+ que influyen en las ventas pasadas y presentes continuarán a futuro.
+\end_layout
+
+\begin_layout Standard
+Es un error hablar de pronosticar el valor de la siguiente observación en
+ una serie de tiempo (como el volumen de ventas del próximo mes).
+ Es imposible predecir exactamente ese valor, porque el siguiente valor
+ puede resultar cualquiera en cierto ámbito.
+ Su valor depende de circunstancias futuras que están más allá de nuestro
+ control.
+ el siguiente valor que ocurre en una serie de tiempo es una variable al
+ azar.
+ Tiene alguna distribución de probabilidades.
+ Si es posible, nos gustaría que este número fuera la media de la distribución.
+ Por desgracia, en realidad no sabemos cuál es esta distribución de probabilidad
+es, y mucho menos su media.
+ Lo mejor que podemos hacer es usar todos los datos disponibles (valores
+ previos de la serie de tiempo) para estimar la media tan cerca como sea
+ posible.
+ La meta de los métodos de pronóstico de series de tiempo es estimar la
+ media de la distribución subyacente de probabilidades del siguiente valor
+ de la serie de tiempo tan cercanamente como sea posible.
+ Dadas algunas observaciones al azar de una sola distribución de probabilidades,
+ la mejor estimación de su media es el promedio de la muestra (el promedio
+ de todas estas observaciones).
+ Por lo tanto, si una serie de tiempo tiene exactamente la misma distribución
+ para todos y cada uno de los periodos, entonces el método de pronóstico
+ de promedios proporciona la mejor estimación de la media.
+ Sin embargo, en general se usan otros métodos de pronósticos en su lugar
+ porque la distribución puede cambiar al paso del tiempo.
+ Se dice que una serie de tiempo es estable si su distribución de probabilidad
+ asociada sigue siendo la misma al siguiente periodo.
+ (Cualquier cambio que pueda ocurrir en la distribución es tanto raro como
+ pequeño.) Una serie de tiempo es inestable si hay cambios frecuentes y de
+ buen tamaño en la distribución 
+\lang english
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+
+\lang spanish
+.
+ Corregir.....................
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si bien el volumen de ventas es un buen indicador de la historia de la demanda,
+ no toma en cuenta muchos aspectos del proceso entero de ventas.
+ como pueden ser la ruptura de stock, plazos de reposición de stock, precio
+ del producto, la incidencia del marketing u otros.
+ De igual modo se pueden descubrir tendencias, estacionalidad, ciclos, etc
+ en la historia de la demanda para luego extrapolarlo a un tiempo futuro.
+ También hay que destacar que el intervalo del muestreo tiene mucha influencia
+ en el pronóstico y por ende en los resultados obtenidos 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MTPD20017"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si a lo largo del tiempo la demanda sigue una patrón repetitivo, entonces
+ el rol del analista es capturar los componentes de dicho patrón y luego
+ traducirlo a un valor de pronóstico.
+ Para Johnson este patrón tiene seis componentes básicos: valor constante
+ (la flctuación de los datos alrededor de una media constante), tendencia
+ (el incremento o decremento sistemático de la media a lo largo del tiempo),
+ variaciones estacionales, cíclicas, aleatorias y puntos críticos 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "AdminCyA"
+
+\end_inset
+
+.
+ Para Anderson el patrón de los datos en una serie de tiempo tienen cuatro
+ componentes separados: tendencia, cíclico, estacional e irregular, y que
+ luego se combinan para generar los valores de la serie de tiempo.
+ Se analizan estos cuatro componente 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCN2011"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Componente de tendencia: La serie de tiempo puede ir manifestando un cambio
+ gradual en sus valores durante un período prolongado.
+ Este cambio gradual puede tratarse de un incremento o decremento.
+ Aunque no se niega que en general los datos de la serie tienen fluctuaciones
+ aleatorias, el componente de tendencia se presenta cuando el cambio es
+ gradual y hacia valores mayores o menores en un período prolongado.
+ a) muestra una tendencia no lineal; en este caso la serie de tiempo indica
+ poco crecimiento inicial, luego un periodo de rápido crecimiento y por
+ último una estabilización.
+ Este patrón de tendencia podría ser una buena aproximación de las ventas
+ para un producto desde su introducción, pasando por un periodo de crecimiento
+ y llegando a un periodo de saturación del mercado.
+ La tendencia lineal decreciente de la gráfica b) es útil para las series
+ de tiempo que muestran una declinación constante en el tiempo.
+ La línea horizontal en la gráfica c) representa una serie de tiempo que
+ no tiene un aumento o disminución constante en el tiempo, y por tanto no
+ muestra tendencia.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Recursos/tendencia.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplos del componente tendencia en las series de tiempo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Componente cíclico: es habitual que los puntos de la serie de tiempo se
+ encuentren por encima o por debajo de la linea de tendencia.
+ Cuando el patrón de puntos está por encima o por debajo de la linea de
+ tendencia durante períodos alternos mayor a un año, entonces estamos ante
+ presencia del componente cíclico de la serie de tiempo.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Graphics
+	filename Recursos/ciclico.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo del componente cíclico y de tendencia en las series de tiempo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Componente estacional: Cuando el patrón de puntos está por encima o por
+ debajo de la linea de tendencia durante períodos alternos menores a un
+ año, entonces estamos ante presencia del componente estacional de la serie
+ de tiempo.
+ Las altas cantidades de ventas de abrigos durante el invierno es un patrón
+ que se repite debido a la influencia estacional.
+ En ciertos tipos de productos, las ventas que se anticipan en un mes particular
+ están influidas por la temporada del año.
+ Por ejemplo, un producto que es popular en Navidad, podría tener ventas
+ en diciembre que son dos veces mayores que las ventas de enero 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Componente irregular: Se refiere a la presencia de la aleatoriedad en el
+ conjunto de puntos de la serie de tiempo, en cuanto a la variación.
+ Como este componente es impredecible no se puede cuantificar su impacto
+ en la serie de tiempo.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A continuación se presentan tres métodos distintos de series de tiempo.
+ El método de suavización, que a su vez está compuesto por los métodos de
+ promedios móviles, promedios móviles ponderados y suavización exponencial.
+ El método de proyección de tendencias.
+ Y el tercer método que es el de proyección de tendencias ajustada por influenci
+a estacional.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+El método de pronóstico del último valor
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se conoce algunas veces como el método ingenuo, porque los estadísticos
+ consideran ingenuo usar sólo una muestra del tamaño de uno cuando hay disponibl
+es datos importantes adicionales.
+ Sin embargo, cuando las condiciones cambian con rapidez, puede ser que
+ el último valor sea el único dato pertinente para pronosticar el siguiente
+ valor en la situación actual.
+ Por lo tanto, los administradores, que son cualquier cosa excepto ingenuos,
+ en ocasiones usan este método en estas circunstancias.
+ Aconsejable para una serie de tiempo que es tan inestable que no considera
+ importante el penúltimo valor para proyectar el valor siguiente 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El método de pronóstico del último valor ignora todos los datos de una serie
+ de tiempo, excepto el último.
+ Posteriormente utiliza este último valor como proyección de lo que será
+ el siguiente dato, así que la fórmula es simplemente.
+ Pronóstico = último valor 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+El método de pronóstico por promedios
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En lugar de utilizar sólo un tamaño de muestra de uno, este método usa todos
+ los datos en la serie de tiempo y simplemente los promedia.
+ Así, el pronóstico de lo que será el siguiente dato resulta ser: Pronóstico
+ = Promedio de todos los datos hasta la fecha.
+ Conveniente para una serie de tiempo muy estable, en que incluso sus primeros
+ pocos valores se consideran importantes para proyectar el siguiente valor
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+El método de pronóstico de promedio móvil
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Así, el método de promedio móvil es algo más lento para responder a cambios
+ en las condiciones.
+ Una razón es que asigna el mismo peso a cada uno de los últimos n valores
+ de la serie de tiempo, aun cuando los valores más viejos puedan ser menos
+ representativos de las condiciones actuales que el último valor observado.
+ El siguiente método corrige este método de ponderación.
+ Pronóstico = promedio de los últimos n valores, n = número de periodos
+ más recientes considerados particularmente importantes para la proyección
+ del siguiente periodo.
+ Conveniente para una serie de tiempo moderadamente estable en que los últimos
+ valores se consideran importantes para proyectar el siguiente valor.
+ El número de valores incluidos en el promedio móvil refleja el grado anticipado
+ de estabilidad en la serie de tiempo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+El método de pronóstico por suavizamiento exponencial
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El método de pronóstico por suavizamiento exponencial modifica el método
+ de promedio móvil, asignando el mayor peso al último valor en la serie
+ de tiempo y luego progresivamente pesos más pequeños a los valores más
+ antiguos.
+ Sin embargo, en lugar de tener que calcular un promedio ponderado cada
+ vez, usa una fórmula más simple para obtener el mismo resultado.
+ Esta fórmula para proyectar el siguiente valor en la serie de tiempo combina
+ el último valor y el último pronóstico (el que se usó un periodo atrás
+ para proyectar este último valor) como sigue: Pronóstico = α (último valor)
+ + (1 – α) (último pronóstico), donde α (la letra griega alfa) es una constante
+ entre 0 y 1 llamada la constante de suavizamiento.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Un pequeño valor (digamos, α = 0.1) es adecuado si las condiciones siguen
+ relativamente estables.
+ Sin embargo, se necesita un valor mayor (digamos, α = 0.3) si ocurren cambios
+ significativos en las condiciones con relativa frecuencia.
+ Los valores seleccionados para la mayoría de las aplicaciones se encuentran
+ entre 0.1 y 0.3.
+ Cuando hay cambios frecuentes en esta serie, se necesita asignar un gran
+ peso al valor más reciente, con pesos rápidamente decrecientes en los valores
+ anteriores.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Sin embargo, con una serie de tiempo relativamente estable, es deseable
+ asignar un peso significativo a muchos valores para tener un gran tamaño
+ de muestra.
+ los pronósticos de suavizamiento exponencial están bastante retrasados
+ respecto de la tendencia, porque le dan un peso significativo a los valores
+ que se encuentran cerca del principio de la tendencia.
+ Aunque un gran valor de α = 0.5 es de ayuda, el suavizamiento exponencial
+ tiende a retrasarse tras esta tendencia más que los pronósticos de último
+ valor.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Conveniente para una serie de tiempo en el dominio de algo inestable a algo
+ estable, en donde el valor de la constante de suavizamiento necesita ajustarse
+ para que se ajuste al grado anticipado de estabilidad.
+ Mejora el método de promedio móvil asignando el mayor peso a los valores
+ más recientes, pero no es comprendido tan fácilmente por los gerentes como
+ el método de promedio móvil 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+El método de suavizamiento exponencial con tendencia
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El suavizamiento exponencial con tendencia usa los valores recientes en
+ la serie de tiempo para estimar cualquier tendencia ascendente o descendente
+ en estos valores.
+ La línea de tendencia muestra la tendencia básica que sigue la serie de
+ tiempo, pero con fluctuaciones en ambos lados de la línea.
+ Al estimar la pendiente actual de esta línea de tendencia y luego ajustar
+ el pronóstico para considerar esta pendiente, se deben obtener pronósticos
+ considerablemente más precisos.
+ Pronóstico = α(último valor) + (1 – α) (último pronóstico) + tendencia
+ estimada.
+ Tendencia = Cambio promedio del siguiente valor en una serie de tiempo,
+ si continua el comportamiento actual.
+ Tendencia estimada = β (tendencia más reciente) (1 – β) (última estimación
+ de tendencia).
+ Donde β (la letra griega beta) es la constante de suavizamiento de tendencia
+ que, como α, debe estar entre 0 y 1.
+ Un valor grande de β (digamos β = 0.3) responde más a los cambios recientes
+ en la tendencia, mientras que un valor relativamente pequeño (digamos β
+ = 0.1) usa más datos en una forma significativa para estimar la tendencia.
+ Aconsejable en una serie de tiempo en que la media de la distribución tiende
+ a seguir una tendencia hacia arriba o hacia abajo, siempre que los cambios
+ en la tendencia ocurran sólo de manera ocasional y gradual 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+El método ARIMA, que son las letras iniciales de AutoRegressive Integrated
+ Moving Average
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Se conoce también algunas veces como el método Box-Jenkings en honor de
+ sus creadores.
+ ARIMA Acrónimo para designar al método AutoRegresivo/Integrado/de Promedio
+ Móvil (del inglés Auto-Regresive Integrated Moving Average), que es un
+ método avanzado de pronóstico de series de tiempo, conocido generalmente
+ como método BoxJenkins 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Errores de pronostico
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Después de determinar el error de pronóstico en cada uno de los meses por
+ cualquiera de los métodos, una medida común de la precisión del método
+ es el promedio de los errores de pronóstico (la diferencia entre las ventas
+ reales y las ventas pronosticadas).
+ Después de haber determinado el error de pronóstico en cada número de meses
+ para cualquier método de pronóstico, una medida común de la exactitud de
+ ese método es el promedio de estos errores de pronóstico.
+ (Este promedio se conoce como la desviación absoluta media, que se abrevia
+ MAD.) Debido a que los errores grandes de pronóstico son más graves que
+ los pequeños, otra medida popular para evaluar la precisión de un método
+ de pronóstico es el promedio de los cuadrados de los errores.
+ (Esta medida se conoce como el error cuadrático promedio, que se abrevia
+ MSE.).
+ MSE proporciona un complemento útil a MAD al aportar información adicional
+ sobre la consistencia de un método de pronóstico para evitar errores grandes,
+ que son serios.
+ Sin embargo, la desventaja de MSE en comparación con MAD es que es más
+ difícil interpretar el significado de su valor para un método individual
+ de pronóstico.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+ (el método Auto-Regresivo/Integrado/ de Promedio Móvil* de Box y Jenkins)
+ * Del inglés ARIMA (Autoregresive Integrated Movement Average)
+\end_layout
+
+\begin_layout Subsection
+
+\lang english
+Pronósticos causales
+\end_layout
+
+\begin_layout Standard
+El pronóstico causal obtiene una proyección de la cantidad de interés (la
+ variable dependiente) relacionándola directamente con una o más cantidades
+ (las variables independientes) que impulsan la cantidad de interés 
+\lang english
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+
+\lang spanish
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Los métodos de elaboración de pronósticos causal se basan en el supuesto
+ de que la variable que tratamos de pronosticar exhibe una relación de causa
+ y efecto con una o más variables.
+ En este capítulo se estudia el uso del análisis de regresión como un método
+ de elaboración de pronósticos causal.
+ Por ejemplo, los gastos de publicidad infl uyen en el volumen de ventas
+ de muchos productos, de manera que el análisis de regresión puede utilizarse
+ para desarrollar una ecuación que muestre cómo se relacionan estas dos
+ variables.
+ Luego, una vez establecido el presupuesto de publicidad para el periodo
+ siguiente, podríamos sustituir este valor en la ecuación con el fin de
+ hacer una predicción o pronóstico del volumen de ventas para ese periodo.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Observe que si se utilizó un método de series de tiempo para elaborar el
+ pronóstico, ni siquiera se han considerado los gastos de publicidad; es
+ decir, un método de serie de tiempo habría basado el pronóstico sólo en
+ las ventas pasadas.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Una clase de técnicas cuantitativas de pronóstico, los modelos causales,
+ intenta identifiar los indicadores clave, a partir de los cuales se desarrollan
+ modelos de regresión lineales o múltiples.
+ Un productor de alfombras podría usar los permisos de construcción emitidos,
+ las tasas de las hipotecas, de los departamentos disponibles, etc., para
+ predecir las ventas de alfombras.
+ Se usan programas de cómputo estándares para desarrollar y probar tales
+ modelos; por lo general, se considera que los indicadores elegidos ocasionan
+ cambios en las ventas, aún cuando incluso los modelos muy buenos no demuestren
+ una relación de causa y efecto.
+ Se debe disponer de sufiientes cifras de indicadores futuros para proporcionar
+ un pronóstico que permita un tiempo adecuado para tomar las decisiones
+ administrativas que correspondan.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "AdminCyA"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Pronósticos causales con regresión lineal
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Cuando se hacen pronósticos causales con una sola variable independiente,
+ la regresión lineal significa aproximarse a la relación entre la variable
+ dependiente (volumen de llamadas de CCW) y la variable independiente (las
+ ventas de CCW) en una línea recta.
+ Esta línea de regresión lineal se dibuja en una gráfica con la variable
+ independiente en el eje horizontal y la variable dependiente en el eje
+ vertical.
+ Esta línea se construye después de graficar un número de puntos que muestran
+ cada valor observado de la variable independiente y el valor correspondiente
+ de la variable dependiente.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+En general, la ecuación para la línea de regresión lineal tiene la forma
+ siguiente: y = a + bx, donde y = valor estimado de la variable dependiente,
+ según lo indica la línea de regresión lineal; a = intersección de la línea
+ de regresión lineal con el eje de las y; b = pendiente de la línea de regresión
+ lineal; x = valor de la variable dependiente.
+ Si hubiera más de una variable independiente, entonces esta ecuación de
+ regresión tiene un término, una constante multiplicada por la variable,
+ que se agrega al lado derecho para cada una de estas variables.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+El procedimiento usado para obtener a y b se conoce como método de mínimos
+ cuadrados.
+ Este método elige los valores de a y b que minimizan la suma del cuadrado
+ de los errores de estimación.
+ Algunas aplicaciones de pronósticos causales con regresión lineal requieren
+ múltiples variables independientes que juntas impulsan la variable dependiente.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Si hay, digamos, dos variables independientes, la ecuación de regresión
+ lineal tendría la forma y = a + b1x1 + b2x2, donde x1 y x2 son las variables
+ independientes, con b1 y b2 como sus respectivos coeficientes.
+ La correspondiente regresión lineal ahora estaría en una gráfica de tres
+ dimensiones con y (variable dependiente) como eje vertical y tanto x1 como
+ x2 como ejes horizontales en las otras dos dimensiones.
+ Al margen del número de variables independientes, el método de mínimos
+ cuadrados todavía se puede usar para elegir el valor de a, b1, b2, etc.,
+ que minimice la suma del cuadrado de los errores de estimación cuando se
+ comparan los valores de la variable dependiente en los diversos puntos
+ de datos con las estimaciones correspondientes dadas por la ecuación de
+ regresión 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Análisis de regresión
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Utiliza una técnica matemática conocida como análisis de regresión, que
+ relaciona una variable dependiente (por ejemplo, la demanda) con una variable
+ independiente (por ejemplo, el precio, publicidad, etc.) en la forma de
+ ecuación lineal.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+Regresión Lineal: Esta técnica permite obtener un estimado analizando el
+ impacto de los factores causales con relación a la demanda del producto
+ o servicio.
+\begin_inset Formula 
+\begin{equation}
+y=a+bx
+\end{equation}
+
+\end_inset
+
+Donde 
+\begin_inset Formula $y=$
+\end_inset
+
+ valor de la variable dependiente en este caso ventas, 
+\begin_inset Formula $a=$
+\end_inset
+
+ intersección en el eje y, 
+\begin_inset Formula $b=$
+\end_inset
+
+ pendiente de la línea de regresión, 
+\begin_inset Formula $x=$
+\end_inset
+
+ la variable independiente.
+\end_layout
+
+\begin_layout Section
+Resumen
+\end_layout
+
+\begin_layout Standard
+Básicamente, en este capítulo se presentó los componentes de las redes WDM
+ como también los problemas asociados al diseño y administración.
+\end_layout
+
+\begin_layout Standard
+Todos los problemas que hemos descripto están íntimamente relacionados para
+ un diseño y funcionamiento óptimo de una red óptica.
+ Por lo tanto, todos los problemas deberían de ser tratados simultáneamente.
+ 
+\end_layout
+
+\end_body
+\end_document

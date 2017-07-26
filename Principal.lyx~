@@ -142,6 +142,16 @@ filename "01_Introduccion/01_Introduccion.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "02_Pronostico_Demanda/02_Pronostico_Demanda.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage clearpage
 \end_inset
 
@@ -151,8 +161,8 @@ filename "01_Introduccion/01_Introduccion.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "bibliografia,BibliografiaLibro,Bibliografia"
-options "bibtotoc,alpha"
+bibfiles "BibliografiaLibro"
+options "alpha"
 
 \end_inset
 

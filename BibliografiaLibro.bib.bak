@@ -1,0 +1,158 @@
+% Encoding: UTF-8
+
+@Book{CMR13,
+  title     = {Cuadro de Mando Retail},
+  publisher = {Profit},
+  year      = {2013},
+  author    = {Marcos Alvarez},
+}
+
+@Book{BICCI07,
+  title     = {Busines Intelligence: Competir con información},
+  publisher = {ESADE, Banesto, Banesto Pyme},
+  year      = {2007},
+  author    = {Josep Lluís Cano},
+}
+
+@Misc{GART06,
+  author = {Gartner},
+  title  = {Glosario de Gartner, www.gartner.com, enero 2006. Gartner es una consultora internacional especializada en Tecnologías de Información y Comunicación},
+  month  = {01},
+  year   = {2006},
+  url    = {http://www.gartner.com/it-glossary},
+}
+
+@Article{EH05,
+  author = {Wayne W. Eckerson and Cindi Howson},
+  title  = {Enterprise Business Intelligence: Strategies and Technologies for Deploying BI on an Enterprise Scale TDWI Report Series},
+  year   = {2005},
+}
+
+@Article{Arthur1959,
+  author  = {Arthur Samuel},
+  title   = {Some Studies in Machine Learning Using the Game of Checker},
+  journal = {IBM Journal 3, 211-229},
+  year    = {1959},
+}
+
+@Book{IntroML2008,
+  title     = {Introduction to Machine Learning},
+  publisher = {The Press Syndicate of The University of Cambridge},
+  year      = {2008},
+  author    = {Alex Smola and S.V.N. Vishwanathan},
+}
+
+@Misc{Jean2016,
+  author = {Jean Francois Puget},
+  title  = {What Is Machine Learning?},
+  month  = may,
+  year   = {2016},
+  url    = {https://www.ibm.com/developerworks/community/blogs/jfp/entry/What_Is_Machine_Learning?lang=en},
+}
+
+@Book{DM2011,
+  title     = {Data Mining - Practical Machine Learning Tools and Techniques - Third Edition},
+  publisher = {Copyright © 2017 Elsevier Inc. All rights reserved},
+  year      = {2011},
+  author    = {Ian H. Witten and Eibe Frank and Mark A. Hall},
+  edition   = {Tercera},
+}
+
+@Misc{Weka3,
+  author = {Machine Learning Group},
+  title  = {Weka 3: Data Mining Software in Java},
+  url    = {http://www.cs.waikato.ac.nz/ml/weka/},
+}
+
+@Misc{WekaCla,
+  author = {http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html},
+  title  = {Interface Classifier},
+  url    = {http://weka.sourceforge.net/doc.dev/weka/classifiers/Classifier.html},
+}
+@TechReport{EW03,
+  author      = {Wayne Eckerson, Colin White},
+  title       = {Evaluating ETL and Data Integration Platforms},
+  institution = {TDWI Report Series},
+  year        = {2003},
+}
+
+@Article{WJ06,
+  author = {Hugh James Watson},
+  title  = {Recent Developments in datawarehousing: A Tutorial},
+  year   = {2006},
+  url    = {http://www.terry.uga.edu/~hwatson/dw_tutorial.ppt},
+}
+
+@Book{INMON92,
+  title     = {Building the datawarehouse},
+  publisher = {QED Press},
+  year      = {1992},
+  author    = {W.H. Inmon},
+  editor    = {Robert Elliott},
+}
+
+@Book{KIM92,
+  title     = {The datawarehouse Toolkit},
+  publisher = {John Wiley \& Sons, Inc},
+  year      = {1992},
+  author    = {Ralph Kimball},
+}
+
+@Book{INMON96,
+  title     = {Building the datawarehouse},
+  publisher = {Willey},
+  year      = {1996},
+  author    = {W.H. Inmon},
+}
+
+@Book{CJ20,
+  title     = {Introducción al Busines Intelligence},
+  publisher = {Editorial UOC},
+  year      = {2010},
+  author    = {Josep Curto, Jordi Conesa},
+}
+
+@Book{AdminCyA,
+  title     = {Administración de compras y abastecimientos},
+  publisher = {McGRAW-HILL / INTERAMERICANA EDITORES, S.A. DE C.V},
+  year      = {2012},
+  author    = {P. Fraser Johnson and Michiel R. Leenders and Anna E. Flynn},
+}
+
+@Book{DM2016,
+  title   = {Data Mining - Practical Machine Learning Tools and Techniques - Fourth Edition},
+  year    = {2016},
+  author  = {Ian H. Witten and Eibe Frank and Mark A. Hall and Christopher J. Pal},
+  edition = {Cuarta},
+}
+
+@Book{GPO2011,
+  title  = {Gestión de la Producción y Operaciones},
+  year   = {2011},
+  author = {Naim Caba Villalobos and Oswaldo Chamorro Altahona and Tomás José Fontalvo Herrera},
+}
+
+@Book{MCN2011,
+  title     = {Métodos cuantitativos para los negocios},
+  publisher = {© D.R. 2011 por Cengage Learning Editores, S.A. de C.V., una compañía de Cengage Learning, Inc},
+  year      = {2011},
+  author    = {David R. Anderson and Dennis J. Sweeney and Thomas A. Williams and Jeffrey D. Camm and Kipp Martin},
+  edition   = {11},
+}
+
+@Article{MTPD20017,
+  author  = {Arley Pérez and Alberto Medina and Pavel Alonso and Nguyen Ramírez},
+  title   = {Métodos y técnicas para la previsión de la demanda},
+  journal = {Universidad de Matanzas Camilo Cienfuegos - Facultad Industrial-Economía},
+  year    = {2007},
+}
+
+@Book{MCA2008,
+  title   = {Métodos cuantitativos para administración},
+  year    = {2008},
+  author  = {Frederick S. Hillier and Mark S. Hillier},
+  editor  = {Copyright © MMVIII by The McGraw-Hill Companies, Inc.},
+  edition = {Tercera},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
