@@ -163,29 +163,6 @@ La oportunidad que surge es poder implementar una técnica de pronóstico
  Esta técnica permitiría paliar las debilidades de los modelos actuales,
  y a su vez que integraría las características esenciales de las técnicas
  cualitativas y cuantitativas existentes.
-\end_layout
-
-\begin_layout Standard
-Actualmente, en el proceso de gestión de compras para la reposición de stock
- se utilizan técnicas de pronósticos para determinar las cantidades de las
- órdenes de compra.
- Estas técnicas pueden estar basadas en pronósticos cuantitativos o cualitativos.
- Independientemente de la técnica elegida el problema real con los pronósticos
- es su falta de confiabilidad, ya que por lo general no son precisos.
- La interrogante que siempre surge en estos modelos es si sus resultados
- serán superiores o inferiores a la demanda real y en qué medida.
-\end_layout
-
-\begin_layout Standard
-En este contexto, este trabajo apuesta a desarrollar una solución que automatice
- la toma de decisión de la reposición de stock utilizando técnicas basadas
- en Business Intelligence y Machine Learning en dos fases.
- En la primera fase, a partir del histórico del movimiento del stock y detalle
- de ventas el módulo Business Intelligence obtiene los KPI asociado al producto
- y periodo.
- En la segunda fase, estos datos son utilizados como entrada al módulo de
- Machine Learning para determinar el volumen de compra para el siguiente
- periodo de ventas.
  
 \end_layout
 

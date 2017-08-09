@@ -1,0 +1,17 @@
+Previsión-Estimacion-Pronostico-Prediccion de la demanda - Demand forecasting
+Administración de la cadena de suministro - Supply chain management, SCM
+Logistica - Logistics
+Administración-Gestion-Planificacion de compras - Purchasing management
+Administración de compras y abastecimientos-suministros - Purchasing and supply management
+Sistema de gestión de almacenes - Warehouse management system
+
+Automatización de la función de pronóstico basado en un modelo de Business Intelligence y Machine Learning.
+Automatización del pronóstico de la demanda basado en un modelo de Business Intelligence y Machine Learning.
+Pronóstico de la demanda basado en un modelo de Business Intelligence y Machine Learning.
+Técnica de pronóstico de la demanda basado en un modelo de Business Intelligence y Machine Learning.
+
+Aumentar la precisión de la demanda.
+
+Tecnica de reposicion de stock basado en Business Intelligence y Machine Learning
+Tecnica de prevision de la demanda basado en Business Intelligence y Machine Learning
+Tecnica de pronostico de la demanda basado en Business Intelligence y Machine Learning

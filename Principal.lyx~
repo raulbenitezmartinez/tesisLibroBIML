@@ -162,7 +162,7 @@ filename "02_Pronostico_Demanda/02_Pronostico_Demanda.lyx"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "BibliografiaLibro"
-options "alpha"
+options "bibtotoc,alpha"
 
 \end_inset
 

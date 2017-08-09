@@ -135,58 +135,154 @@ En la etapa de Machine Learning se utilizan como entrada las series de KPI
 \end_layout
 
 \begin_layout Section
-Motivación
+Motivación y Antecedentes
 \end_layout
 
 \begin_layout Standard
 \align block
-El problema en general de cualquier técnica actual de pronóstico de la demanda,
- es que por ejemplo en los pronósticos de demanda cuantitativos se depende
- en gran medida de la variable cantidad de ventas.
- En los pronósticos de demanda cualitativos se depende en gran medida de
- la opinión y experiencia del experto, que si bien pueden ser válidos se
- utilizan principalmente en casos donde la proyección es a largo plazo o
- ante carencia de datos históricos.
-\end_layout
+En los últimos años se ha experimentado, en el área de las redes de comunicacion
+es, un gran crecimiento y evolución en la demanda de información, es decir,
+ en el tráfico del mismo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "MUR02"
 
-\begin_layout Standard
-También podemos mencionar otra debilidad de las técnicas de pronósticos
- actuales, y es que no son adaptativas, en el sentido de que como se tratan
- de fórmulas genéricas los resultados son uniformes y no tienen en cuenta
- la evolución del mercado ni aspectos particulares como el tipo de producto,
- tipo de empresa, ubicación geográfica, etc.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-La oportunidad que surge es poder implementar una técnica de pronóstico
- de demanda automática o con una mínima intervención manual.
- Esta técnica permitiría paliar las debilidades de los modelos actuales,
- y a su vez que integraría las características esenciales de las técnicas
- cualitativas y cuantitativas existentes.
-\end_layout
+.
+ Los servicios con gran demanda de la última década de Internet son los
+ servicios multimedia, aprendizaje interactivo a distancia, 
+\emph on
+e-business
+\emph default
+, tele-conferencia, video-conferencia, subastas en vivo, demandas de video
+ y juegos en línea.
+ Para hacer frente a estos requerimientos se utilizan redes basadas principalmen
+te en la tecnología de la fibra óptica.
+ Las redes ópticas han evolucionado de manera sustancial en su arquitectura,
+ principalmente por (1) la tecnología WDM (
+\shape italic
+Wavelength Division Multiplexing
+\shape default
+) que ha expandido la capacidad de la fibra óptica y (2) los dispositivos
+ OXC (
+\shape italic
+Optical Cross Connects
+\shape default
+) con los cuales se logra la escalabilidad de las redes ópticas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "MUR02,MUK89"
 
-\begin_layout Standard
-Actualmente, en el proceso de gestión de compras para la reposición de stock
- se utilizan técnicas de pronósticos para determinar las cantidades de las
- órdenes de compra.
- Estas técnicas pueden estar basadas en pronósticos cuantitativos o cualitativos.
- Independientemente de la técnica elegida el problema real con los pronósticos
- es su falta de confiabilidad, ya que por lo general no son precisos.
- La interrogante que siempre surge en estos modelos es si sus resultados
- serán superiores o inferiores a la demanda real y en qué medida.
-\end_layout
+\end_inset
 
-\begin_layout Standard
-En este contexto, este trabajo apuesta a desarrollar una solución que automatice
- la toma de decisión de la reposición de stock utilizando técnicas basadas
- en Business Intelligence y Machine Learning en dos fases.
- En la primera fase, a partir del histórico del movimiento del stock y detalle
- de ventas el módulo Business Intelligence obtiene los KPI asociado al producto
- y periodo.
- En la segunda fase, estos datos son utilizados como entrada al módulo de
- Machine Learning para determinar el volumen de compra para el siguiente
- periodo de ventas.
+.
  
+\end_layout
+
+\begin_layout Standard
+\align block
+La tecnología de fibra óptica es el medio de transporte dominante en el
+ sistema de telecomunicaciones por su gran ventaja en capacidad, confiabilidad,
+ costo y escalabilidad.
+ La característica más atractiva de la transmisión de datos por fibra óptica
+ es su gran potencial a niveles de Tb/s 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "MUK89"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align block
+La comunicación que existe en las redes ópticas típicamente son
+\emph on
+: punto-a-punto o unicast;
+\emph default
+ que es la comunicación que existe entre un solo emisor de la información
+ y un solo receptor, y 
+\emph on
+punto-a-multi-punto o multicas
+\emph default
+t; que es la transmisión de datos de una fuente origen a múltiples destinos.
+ Las transmisiones 
+\emph on
+multicast
+\emph default
+ se encaminan en la red a través de árboles de luz (light-tree) cuyo cálculo
+ se conoce como el problema de enrutamiento y asignación de longitud de
+ onda MRWA (
+\emph on
+Multicast Routing and Wavelength Assigment
+\emph default
+).
+ El MRWA es un problema de la clase NP-completo y es tema central de las
+ comunicaciones ópticas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "XR04"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align block
+Con la incorporación de la tecnología WDM, que brinda una gran capacidad
+ de transmisión, los problemas de supervivencia se vuelven criticos.
+ Al producirse un fallo en una red óptica éste fallo podría causar una severa
+ pérdida al servicio debido al gran volumen de información transportada
+ por esta tecnología 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+.
+ Básicamente, la supervivencia se consigue mediante la protección o la restaurac
+ión.
+ La 
+\emph on
+protección
+\emph default
+ es una técnica que cuenta con la capacidad de pre-cálculo para garantizar
+ la supervivencia del servicio, y la 
+\emph on
+restauración
+\emph default
+ es una técnica que redirige el tráfico afectado después de la ocurrencia
+ de un fallo.
+ Éste último esquema no cuenta con una información pre-calculada para redirigir
+ el tráfico.
+\end_layout
+
+\begin_layout Standard
+\align block
+La supervivencia ante fallas de enlaces y nodos en redes ópticas es fundamental
+ para el éxito de las mismas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+.
+ En particular en este trabajo nos centramos en fallas de nodo debido a
+ que su ocurrencia podría ser mucho más grave que una falla de enlace 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "BOW03"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -232,7 +328,7 @@ El aporte principal y objetivo general del presente trabajo es el siguiente:
 
 \begin_layout Itemize
 Modelar una nueva técnica de pronóstico de la demanda integrando herramientas
- y conceptos de Business Intelligence y Machine Learning.
+ y conceptos de Business Intelligence y de Machine Learning.
 \end_layout
 
 \begin_layout Subsection

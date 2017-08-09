@@ -1,0 +1,336 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 8.5in
+\paperheight 11in
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Introducción 
+\end_layout
+
+\begin_layout Standard
+En este capítulo se pretende dar una introducción general del trabajo propuesto,
+ y para lograrlo se citan brevemente: los servicios con mayor demanda de
+ las redes ópticas, tipos de transmisiones en fibra óptica, supervivencia
+ de redes ópticas, el problema tratado y la solución propuesta.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Motivación y Antecedentes
+\end_layout
+
+\begin_layout Standard
+\align block
+En los últimos años se ha experimentado, en el área de las redes de comunicacion
+es, un gran crecimiento y evolución en la demanda de información, es decir,
+ en el tráfico del mismo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "MUR02"
+
+\end_inset
+
+.
+ Los servicios con gran demanda de la última década de Internet son los
+ servicios multimedia, aprendizaje interactivo a distancia, 
+\emph on
+e-business
+\emph default
+, tele-conferencia, video-conferencia, subastas en vivo, demandas de video
+ y juegos en línea.
+ Para hacer frente a estos requerimientos se utilizan redes basadas principalmen
+te en la tecnología de la fibra óptica.
+ Las redes ópticas han evolucionado de manera sustancial en su arquitectura,
+ principalmente por (1) la tecnología WDM (
+\shape italic
+Wavelength Division Multiplexing
+\shape default
+) que ha expandido la capacidad de la fibra óptica y (2) los dispositivos
+ OXC (
+\shape italic
+Optical Cross Connects
+\shape default
+) con los cuales se logra la escalabilidad de las redes ópticas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "MUR02,MUK89"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align block
+La tecnología de fibra óptica es el medio de transporte dominante en el
+ sistema de telecomunicaciones por su gran ventaja en capacidad, confiabilidad,
+ costo y escalabilidad.
+ La característica más atractiva de la transmisión de datos por fibra óptica
+ es su gran potencial a niveles de Tb/s 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "MUK89"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align block
+La comunicación que existe en las redes ópticas típicamente son
+\emph on
+: punto-a-punto o unicast;
+\emph default
+ que es la comunicación que existe entre un solo emisor de la información
+ y un solo receptor, y 
+\emph on
+punto-a-multi-punto o multicas
+\emph default
+t; que es la transmisión de datos de una fuente origen a múltiples destinos.
+ Las transmisiones 
+\emph on
+multicast
+\emph default
+ se encaminan en la red a través de árboles de luz (light-tree) cuyo cálculo
+ se conoce como el problema de enrutamiento y asignación de longitud de
+ onda MRWA (
+\emph on
+Multicast Routing and Wavelength Assigment
+\emph default
+).
+ El MRWA es un problema de la clase NP-completo y es tema central de las
+ comunicaciones ópticas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "XR04"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align block
+Con la incorporación de la tecnología WDM, que brinda una gran capacidad
+ de transmisión, los problemas de supervivencia se vuelven criticos.
+ Al producirse un fallo en una red óptica éste fallo podría causar una severa
+ pérdida al servicio debido al gran volumen de información transportada
+ por esta tecnología 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+.
+ Básicamente, la supervivencia se consigue mediante la protección o la restaurac
+ión.
+ La 
+\emph on
+protección
+\emph default
+ es una técnica que cuenta con la capacidad de pre-cálculo para garantizar
+ la supervivencia del servicio, y la 
+\emph on
+restauración
+\emph default
+ es una técnica que redirige el tráfico afectado después de la ocurrencia
+ de un fallo.
+ Éste último esquema no cuenta con una información pre-calculada para redirigir
+ el tráfico.
+\end_layout
+
+\begin_layout Standard
+\align block
+La supervivencia ante fallas de enlaces y nodos en redes ópticas es fundamental
+ para el éxito de las mismas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+.
+ En particular en este trabajo nos centramos en fallas de nodo debido a
+ que su ocurrencia podría ser mucho más grave que una falla de enlace 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "BOW03"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Planteamiento del Problema
+\end_layout
+
+\begin_layout Standard
+Dado un conjunto de solicitudes multicast y una topología de red, en este
+ trabajo se trata el problema de diseño de red óptica y su protección contra
+ falla simple de nodo considerando tráfico multicast estático en una arquitectur
+a de red multi-fibras y sin capacidad de conversión de longitud de onda.
+ Básicamente, se busca calcular para cada enlace el número de fibras ópticas
+ y el número de amplificadores de luz; mientras que a cada nodo el número
+ de divisores de luz con éstos parametros se construye la arquitectura de
+ enlaces y nodos para una red óptica.
+ Simultaneamente, se busca calcular el enruteamiento multicast y la asignación
+ de longitud de onda, tanto para el camino primario como para el camino
+ de resguardo.
+ Para lograr lo anterior hemos desarrollado un algoritmo multi-objetivo
+ basado en colonias de hormigas MOACO (
+\emph on
+Multi-Objective Ant Colony Optimization
+\emph default
+) que busca calcular la solución minimizando el costo y el retardo máximo.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Standard
+A continuación se darán los objetivos a los que se pretende llegar con este
+ trabajo.
+\end_layout
+
+\begin_layout Subsection
+Objetivos Generales
+\end_layout
+
+\begin_layout Standard
+Proponer enfoques de diseño óptimo de arquitectura de red óptica, de cálculo
+ de caminos primarios y de resguardos para tráfico multicast considerando
+ fallas de nodos en un contexto multi-objetivo.
+\end_layout
+
+\begin_layout Subsection
+Objetivos Específicos
+\end_layout
+
+\begin_layout Standard
+Para alcanzar el objetivo general los siguientes objetivos específicos son
+ propuestos:
+\end_layout
+
+\begin_layout Itemize
+Estudiar los trabajos relacionados al problema de falla simple de nodos.
+\end_layout
+
+\begin_layout Itemize
+Estudiar los componentes de las redes ópticas.
+\end_layout
+
+\begin_layout Itemize
+Estudiar las tecnologías de redes ópticas para tráfico multicast.
+\end_layout
+
+\begin_layout Itemize
+Estudiar los problemas de diseño de las redes ópticas.
+\end_layout
+
+\begin_layout Itemize
+Estudiar esquemas de supervivencia en redes ópticas.
+\end_layout
+
+\begin_layout Itemize
+Proponer un modelo matemático en un contexto multi-objetivo para el diseño
+ de red óptica.
+\end_layout
+
+\begin_layout Itemize
+Proponer esquemas de protección de tráfico multicast contra falla simple
+ de nodo.
+\end_layout
+
+\begin_layout Itemize
+Proponer algoritmos heurísticos para el diseño de red, el cálculo de los
+ caminos primarios y de resguardos.
+\end_layout
+
+\begin_layout Itemize
+Estudiar el desempeño del algoritmo y enfoques propuestos.
+\end_layout
+
+\begin_layout Itemize
+Proveer futuras líneas de trabajo.
+ 
+\end_layout
+
+\end_body
+\end_document
