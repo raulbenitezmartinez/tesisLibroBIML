@@ -79,7 +79,7 @@
 \begin_body
 
 \begin_layout Chapter
-Introducción 
+Introducción
 \end_layout
 
 \begin_layout Standard
@@ -194,23 +194,31 @@ Planteamiento del Problema
 \end_layout
 
 \begin_layout Standard
-Dado un conjunto de solicitudes multicast y una topología de red, en este
- trabajo se trata el problema de diseño de red óptica y su protección contra
- falla simple de nodo considerando tráfico multicast estático en una arquitectur
-a de red multi-fibras y sin capacidad de conversión de longitud de onda.
- Básicamente, se busca calcular para cada enlace el número de fibras ópticas
- y el número de amplificadores de luz; mientras que a cada nodo el número
- de divisores de luz con éstos parametros se construye la arquitectura de
- enlaces y nodos para una red óptica.
- Simultaneamente, se busca calcular el enruteamiento multicast y la asignación
- de longitud de onda, tanto para el camino primario como para el camino
- de resguardo.
- Para lograr lo anterior hemos desarrollado un algoritmo multi-objetivo
- basado en colonias de hormigas MOACO (
-\emph on
-Multi-Objective Ant Colony Optimization
-\emph default
-) que busca calcular la solución minimizando el costo y el retardo máximo.
+Dado un conjunto de productos que una empresa retail ofrece para la venta,
+ este trabajo trata el problema del pronóstico de la demanda para la reposición
+ de stock.
+ Se considera que la empresa retail opera un stock cíclico, con períodos
+ de reposición regulares y se analizan los productos que no son estacionales.
+\end_layout
+
+\begin_layout Standard
+Se apuesta a desarrollar una solución que automatice la toma de decisiones
+ de reposición de stock.
+ Para lograrlo se ha modelado una técnica de pronóstico de la demanda basada
+ en Business Intelligence y Machine Learning; que busca a través de Key
+ Performance Indicators, de la opinión de un experto en compras y de algorimos
+ de clasificación prever volúmenes eficientes de productos para la reposición
+ de stock.
+\end_layout
+
+\begin_layout Standard
+Se puede decir que se trata de una técnica de dos fases.
+ En la primera fase, a partir del histórico de movimientos de stock y de
+ los detalles de ventas, el módulo de Business Intelligence obtiene los
+ KPI asociados al producto y período.
+ En la segunda fase, estos datos son utilizados como entradas al módulo
+ de Machine Learning para determinar los volúmenes de compras para el siguiente
+ periodo de ventas.
 \end_layout
 
 \begin_layout Section
@@ -281,6 +289,49 @@ Proponer enfoques complementarios al modelo propuesto.
 
 \begin_layout Section
 Organización del libro
+\end_layout
+
+\begin_layout Standard
+El libro se estructura de la siguiente manera:
+\end_layout
+
+\begin_layout Itemize
+El Capítulo 2 presenta el concepto de Pronóstico de la Demanda y los principales
+ modelos de pronóstico que son implementados en la actualidad.
+\end_layout
+
+\begin_layout Itemize
+El Capítulo 3 presenta los conceptos que envuelven a Business Intelligence.
+\end_layout
+
+\begin_layout Itemize
+El Capítulo 4 presenta los conceptos que envuelven a Machine Learning.
+\end_layout
+
+\begin_layout Itemize
+En el Capítulo 5 se sigue el proceso de Business Intelligence sobre datos
+ de fuentes reales de una empresa retail.
+\end_layout
+
+\begin_layout Itemize
+En el Capítulo 6 por medio del proceso de Machine Learning se recibe la
+ salida de Business Intelligence y se modela como un problema de clasificación
+ multiclase.
+\end_layout
+
+\begin_layout Itemize
+En el Capítulo 7 tienen lugar los procesos de entrenamiento y evaluación.
+ Se muestran los resultados experimentales y se analiza el desempeño de
+ los algoritmos.
+ 
+\end_layout
+
+\begin_layout Itemize
+En el Capítulo 8 se extraen las conclusiones generales del trabajo, contrastando
+ los objetivos propuestos inicialmente y los resultados obtenidos.
+ También se describen las propuestas de trabajos futuros que complementarían
+ la técnica propuesta.
+ 
 \end_layout
 
 \end_body
