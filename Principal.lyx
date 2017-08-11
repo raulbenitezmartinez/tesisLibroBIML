@@ -10,6 +10,15 @@
 \usepackage{amsmath}
 \usepackage{subfig}
 \usepackage{cleveref}
+
+% Bibliografia en español
+%\usepackage[fixlanguage]{babelbib}
+%\selectbiblanguage{spanish}
+
+%\usepackage[utf8]{inputenc}
+%\DeclareUnicodeCharacter{2010}{-}% support older LaTeX versions
+
+
 \crefname{figure}{figure}{figures}
 \newcommand{\Nat}{{\mathbb N}}
 \newcommand{\Real}{{\mathbb R}}
@@ -36,7 +45,7 @@
 \maintain_unincluded_children true
 \language spanish
 \language_package default
-\inputencoding utf8
+\inputencoding auto
 \fontencoding global
 \font_roman "default" "default"
 \font_sans "cmbr" "default"
@@ -122,8 +131,6 @@
 
 \end_inset
 
-
-\lang english
 Técnica de pronóstico de la demanda basada en Business Intelligence y Machine
  Learning
 \end_layout

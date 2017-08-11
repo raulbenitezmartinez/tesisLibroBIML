@@ -1,4 +1,4 @@
-% Encoding: UTF-8
+% Encoding: windows-1252
 
 @Book{CMR13,
   title     = {Cuadro de Mando Retail},
@@ -8,15 +8,15 @@
 }
 
 @Book{BICCI07,
-  title     = {Busines Intelligence: Competir con informaciÃ³n},
+  title     = {Busines Intelligence: Competir con información},
   publisher = {ESADE, Banesto, Banesto Pyme},
   year      = {2007},
-  author    = {Josep LluÃ­s Cano},
+  author    = {Josep Lluís Cano},
 }
 
 @Misc{GART06,
   author = {Gartner},
-  title  = {Glosario de Gartner, www.gartner.com, enero 2006. Gartner es una consultora internacional especializada en TecnologÃ­as de InformaciÃ³n y ComunicaciÃ³n},
+  title  = {Glosario de Gartner, www.gartner.com, enero 2006. Gartner es una consultora internacional especializada en Tecnologías de Información y Comunicación},
   month  = {01},
   year   = {2006},
   url    = {http://www.gartner.com/it-glossary},
@@ -52,7 +52,7 @@
 
 @Book{DM2011,
   title     = {Data Mining - Practical Machine Learning Tools and Techniques - Third Edition},
-  publisher = {Copyright Â© 2017 Elsevier Inc. All rights reserved},
+  publisher = {Copyright © 2017 Elsevier Inc. All rights reserved},
   year      = {2011},
   author    = {Ian H. Witten and Eibe Frank and Mark A. Hall},
   edition   = {Tercera},
@@ -106,14 +106,14 @@
 }
 
 @Book{CJ20,
-  title     = {IntroducciÃ³n al Busines Intelligence},
+  title     = {Introducción al Busines Intelligence},
   publisher = {Editorial UOC},
   year      = {2010},
   author    = {Josep Curto, Jordi Conesa},
 }
 
 @Book{AdminCyA,
-  title     = {AdministraciÃ³n de compras y abastecimientos},
+  title     = {Administración de compras y abastecimientos},
   publisher = {McGRAW-HILL / INTERAMERICANA EDITORES, S.A. DE C.V},
   year      = {2012},
   author    = {P. Fraser Johnson and Michiel R. Leenders and Anna E. Flynn},
@@ -127,31 +127,31 @@
 }
 
 @Book{GPO2011,
-  title  = {GestiÃ³n de la ProducciÃ³n y Operaciones},
+  title  = {Gestión de la Producción y Operaciones},
   year   = {2011},
-  author = {Naim Caba Villalobos and Oswaldo Chamorro Altahona and TomÃ¡s JosÃ© Fontalvo Herrera},
+  author = {Naim Caba Villalobos and Oswaldo Chamorro Altahona and Tomás José Fontalvo Herrera},
 }
 
 @Book{MCN2011,
-  title     = {MÃ©todos cuantitativos para los negocios},
-  publisher = {Â© D.R. 2011 por Cengage Learning Editores, S.A. de C.V., una compaÃ±Ã­a de Cengage Learning, Inc},
+  title     = {Métodos cuantitativos para los negocios},
+  publisher = {© D.R. 2011 por Cengage Learning Editores, S.A. de C.V., una compañía de Cengage Learning, Inc},
   year      = {2011},
   author    = {David R. Anderson and Dennis J. Sweeney and Thomas A. Williams and Jeffrey D. Camm and Kipp Martin},
   edition   = {11},
 }
 
 @Article{MTPD20017,
-  author  = {Arley PÃ©rez and Alberto Medina and Pavel Alonso and Nguyen RamÃ­rez},
-  title   = {MÃ©todos y tÃ©cnicas para la previsiÃ³n de la demanda},
-  journal = {Universidad de Matanzas Camilo Cienfuegos - Facultad Industrial-EconomÃ­a},
+  author  = {Arley Pérez and Alberto Medina and Pavel Alonso and Nguyen Ramírez},
+  title   = {Métodos y técnicas para la previsión de la demanda},
+  journal = {Universidad de Matanzas Camilo Cienfuegos - Facultad Industrial-Economía},
   year    = {2007},
 }
 
 @Book{MCA2008,
-  title   = {MÃ©todos cuantitativos para administraciÃ³n},
+  title   = {Métodos cuantitativos para administración},
   year    = {2008},
   author  = {Frederick S. Hillier and Mark S. Hillier},
-  editor  = {Copyright Â© MMVIII by The McGraw-Hill Companies, Inc.},
+  editor  = {Copyright © MMVIII by The McGraw-Hill Companies, Inc.},
   edition = {Tercera},
 }
 

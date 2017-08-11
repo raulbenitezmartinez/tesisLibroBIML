@@ -1166,9 +1166,6 @@ En general, la ecuación para la línea de regresión lineal tiene la forma
  según lo indica la línea de regresión lineal; a = intersección de la línea
  de regresión lineal con el eje de las y; b = pendiente de la línea de regresión
  lineal; x = valor de la variable dependiente.
- Si hubiera más de una variable independiente, entonces esta ecuación de
- regresión tiene un término, una constante multiplicada por la variable,
- que se agrega al lado derecho para cada una de estas variables.
  
 \end_layout
 
@@ -1181,7 +1178,9 @@ El procedimiento usado para obtener a y b se conoce como método de mínimos
  de los errores de estimación.
  Algunas aplicaciones de pronósticos causales con regresión lineal requieren
  múltiples variables independientes que juntas impulsan la variable dependiente.
- 
+ Si hubiera más de una variable independiente, entonces esta ecuación de
+ regresión tiene un término, una constante multiplicada por la variable,
+ que se agrega al lado derecho para cada una de estas variables.
 \end_layout
 
 \begin_layout Standard
