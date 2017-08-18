@@ -17,7 +17,7 @@
 @Misc{GART06,
   author = {Gartner},
   title  = {Glosario de Gartner, www.gartner.com, enero 2006. Gartner es una consultora internacional especializada en Tecnologías de Información y Comunicación},
-  month  = {01},
+  month  = jan,
   year   = {2006},
   url    = {http://www.gartner.com/it-glossary},
 }
@@ -106,13 +106,13 @@
 }
 
 @Book{CJ20,
-  title     = {Introducción al Busines Intelligence},
+  title     = {Introducción al Business Intelligence},
   publisher = {Editorial UOC},
   year      = {2010},
   author    = {Josep Curto, Jordi Conesa},
 }
 
-@Book{AdminCyA,
+@Book{ADMINCA,
   title     = {Administración de compras y abastecimientos},
   publisher = {McGRAW-HILL / INTERAMERICANA EDITORES, S.A. DE C.V},
   year      = {2012},

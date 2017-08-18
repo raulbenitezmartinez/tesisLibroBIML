@@ -445,12 +445,13 @@ ades como su media.
  Lo mejor que se puede realizar es una estimación de la media tan cerca
  como sea posible, utilizando todos los datos que se dispone.
  La meta de los métodos de pronóstico de series de tiempo es estimar la
- media de la distribución de probabilidades subyacente del siguiente valor
- de la serie de tiempo tan cerca como sea posible.
- Para una serie de tiempo que tiene exactamente la misma distribución para
- todos y cada uno de los periodos, el método de pronóstico de promedios
- proporciona la mejor estimación de la media, pero en general se usan otros
- métodos de pronósticos porque la distribución cambia con el paso del tiempo.
+ media de la distribución subyacente de probabilidades del siguiente valor
+ de la serie de tiempo tan cercanamente como sea posible.
+ Si una serie de tiempo tiene exactamente la misma distribución para todos
+ y cada uno de los periodos, entonces el método de pronóstico de promedios
+ proporciona la mejor estimación de la media.
+ Sin embargo, en general se usan otros métodos de pronósticos en su lugar
+ porque la distribución puede cambiar al paso del tiempo.
  Se dice que una serie de tiempo es estable si su distribución de probabilidad
  asociada sigue siendo la misma al siguiente periodo.
  (Cualquier cambio que pueda ocurrir en la distribución es tanto raro como
