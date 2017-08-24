@@ -242,8 +242,8 @@ Cuántas unidades de cada artículo debemos mantener en stock?
 \end_layout
 
 \begin_layout Standard
-Para responder a estas preguntas actualmente se tienen las técnicas de pronóstic
-os de demanda entre las que se destacan los 
+Para responder estas preguntas una de las herramientas que ayudan son las
+ técnicas de pronósticos de demanda, entre las que se destacan los 
 \emph on
 Métodos de Pronósticos Cualitativos
 \emph default
@@ -429,10 +429,6 @@ key "MTPD20017"
 \end_layout
 
 \begin_layout Standard
-***
-\end_layout
-
-\begin_layout Standard
 En el sentido estricto de la interpretación es erróneo hablar de pronosticar
  el siguiente valor de la observación en una serie de tiempo.
  Como este valor puede ser cualquiera y dependerá de circunstancias futuras
@@ -440,23 +436,22 @@ En el sentido estricto de la interpretación es erróneo hablar de pronosticar
  El siguiente valor de una serie de tiempo es una variable al azar y tiene
  alguna distribución de probabilidades.
  Si ese siguiente valor es la media de la distribución de probabilidades
- solucionaría el problema, pero se desconoce tanto la distribución de probabilid
-ades como su media.
+ acortaría el problema, pero se desconoce su distribución de probabilidades
+ así como también su media.
  Lo mejor que se puede realizar es una estimación de la media tan cerca
- como sea posible, utilizando todos los datos que se dispone.
+ como sea posible, utilizando todos los datos disponibles.
  La meta de los métodos de pronóstico de series de tiempo es estimar la
  media de la distribución de probabilidades subyacente del siguiente valor
  de la serie de tiempo tan cerca como sea posible.
- Si una serie de tiempo tiene exactamente la misma distribución para todos
- y cada uno de los periodos, entonces el método de pronóstico de promedios
- proporciona la mejor estimación de la media.
- Sin embargo, en general se usan otros métodos de pronósticos en su lugar
- porque la distribución puede cambiar al paso del tiempo.
- Se dice que una serie de tiempo es estable si su distribución de probabilidad
- asociada sigue siendo la misma al siguiente periodo.
- (Cualquier cambio que pueda ocurrir en la distribución es tanto raro como
- pequeño.) Una serie de tiempo es inestable si hay cambios frecuentes y de
- buen tamaño en la distribución 
+ Para una serie de tiempo que tiene exactamente la misma distribución para
+ todos y cada uno de los periodos, el método de pronóstico de promedios
+ proporciona la mejor estimación de la media, pero en general se usan otros
+ métodos de pronósticos porque la distribución cambia con el paso del tiempo.
+ Si la distribución de probabilidad de una serie sigue siendo la misma en
+ el siguiente periodo entonces se dice que es estable (puede haber cambios
+ en la distribución pero deben ser pequeños).
+ Si la distribución de probabilidad presenta cambios grandes y frecuentes
+ entonces se dice que es inestable 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -467,39 +462,139 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Standard
-***
-\end_layout
-
-\begin_layout Standard
-Si a lo largo del tiempo la demanda sigue una patrón repetitivo, entonces
- el rol del analista es capturar los componentes de dicho patrón y luego
- traducirlo a un valor de pronóstico.
- Para Johnson este patrón tiene seis componentes básicos: valor constante
- (la flctuación de los datos alrededor de una media constante), tendencia
- (el incremento o decremento sistemático de la media a lo largo del tiempo),
- variaciones estacionales, cíclicas, aleatorias y puntos críticos 
+El rol del analista es capturar los componentes del patrón de la demanda
+ y luego traducirlo a un valor de pronóstico.
+ Para Johnson 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ADMINCA"
 
 \end_inset
 
-.
- Para Anderson el patrón de los datos en una serie de tiempo tienen cuatro
- componentes separados: tendencia, cíclico, estacional e irregular, y que
- luego se combinan para generar los valores de la serie de tiempo.
- Se analizan estos cuatro componente 
+ este patrón tiene seis componentes básicos: valor constante (la flctuación
+ de los datos alrededor de una media constante), tendencia (el incremento
+ o decremento sistemático de la media a lo largo del tiempo), variaciones
+ estacionales, cíclicas, aleatorias y puntos críticos.
+ Para Anderson 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCN2011"
 
 \end_inset
 
-:
+ el patrón de los datos en una serie de tiempo tienen cuatro componentes
+ separados: tendencia, cíclico, estacional e irregular, y que luego se combinan
+ para generar los valores de la serie de tiempo.
+ Se analizan estos cuatro componente:
 \end_layout
 
-\begin_layout Standard
-******
+\begin_layout Enumerate
+Componente de tendencia: Los valores de la serie de tiempo pueden ir cambiando
+ gradualmente, tendiendo hacia valores que incrementan o que disminuyen.
+ Cuando estos incrementos o disminuciones se dan por periodos de tiempo
+ prolongados se dice que la serie tiene un componente de tendencia.
+ a) muestra una tendencia no lineal; en este caso la serie de tiempo indica
+ poco crecimiento inicial, luego un periodo de rápido crecimiento y por
+ último una estabilización.
+ b) La tendencia lineal decreciente de la gráfica es útil para las series
+ de tiempo que muestran una declinación constante en el tiempo.
+ c) La línea horizontal en la gráfica representa una serie de tiempo que
+ no tiene un aumento o disminución constante en el tiempo, y por tanto no
+ muestra tendencia.
+ Generalmente el componente tendencia se debe a factores a largo plazo.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Recursos/tendencia.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplos del componente tendencia en las series de tiempo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Componente cíclico: es habitual que los puntos de la serie de tiempo se
+ encuentren por encima o por debajo de la linea de tendencia.
+ Cuando el patrón de puntos está de forma alterna por encima y por debajo
+ de la linea de tendencia durante períodos mayor a un año, entonces estamos
+ ante presencia del componente cíclico de la serie de tiempo.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Recursos/ciclico.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ejemplo del componente cíclico y de tendencia en las series de tiempo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Componente estacional: Cuando el patrón de puntos está por encima o por
+ debajo de la linea de tendencia durante períodos alternos menores o igual
+ a un año, entonces estamos ante presencia del componente estacional de
+ la serie de tiempo.
+ Las altas cantidades de ventas de abrigos durante el otoño e invierno son
+ patrones que se repite debido a la influencia estacional.
+ En ciertos tipos de productos, las ventas que se anticipan en un mes particular
+ están influidas por la temporada del año.
+ Por ejemplo, un producto que es popular en Navidad, podría tener ventas
+ en diciembre que son dos veces mayores que las ventas de enero 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Componente irregular: Se refiere a la presencia de variabilidad aleatoria
+ en la serie de tiempo.
+ Corresponde a aquellos puntos que aparecieron desviados en relación a lo
+ esperado de los efectos del componente de tendencia, cíclico y estacional.
+ Como este componente es impredecible no se puede cuantificar el impacto
+ que tiene en la serie de tiempo.
+ Generalmente es debido a factores a corto plazo o a circunstancias casuales.
 \end_layout
 
 \begin_layout Standard
@@ -550,7 +645,7 @@ El método de pronóstico por promedios: En este caso se utilizan todos los
 
 \begin_inset Formula 
 \begin{equation}
-Pronóstico=promedio\;de\;todos\;los\;datos\;hasta\;la\;fecha
+Pronóstico=promedio\;de\;todos\;los\;valores\;hasta\;la\;fecha
 \end{equation}
 
 \end_inset
@@ -571,7 +666,7 @@ El método de pronóstico de promedio móvil: Consiste en considerar solamente
 \begin_inset Formula $n$
 \end_inset
 
- valores que tienen el mismo peso y que son considerados relevantes.
+ valores que tienen el mismo peso y que son considerados importantes.
 \shape italic
 \size small
 
@@ -598,8 +693,8 @@ El método de pronóstico por suavizamiento exponencial: Con este método se
  El último período es el de mayor peso y así paulatinamente se van asignando
  pesos cada vez menores a los valores mas antiguos de la serie.
  Este resultado se puede obtener de forma simple y sintética mediante una
- combinación del último valor de la serie y del valor pronosticado para
- este mencionado último valor.
+ combinación del último valor de la serie y del último pronóstico correspondient
+e a dicho último valor.
 \shape italic
 \size small
 
@@ -650,7 +745,16 @@ constante de suavizamiento
 \paragraph_spacing single
 \noindent
 \align left
-El método de suavizamiento exponencial con tendencia:
+El método de suavizamiento exponencial con tendencia: El inconveniente del
+ método de pronóstico por suavizamiento exponencial sin tendencia es que
+ justamente se retrasa suficiente respecto de la tendencia ya que no lo
+ toma en cuenta.
+ Al considerar la tendencia se obtienen pronósticos más precisos.
+ Se calcula la pendiente actual de la linea de tendencia para luego ajustar
+ el nuevo pronóstico a la pendiente obtenida.
+ Los valores más recientes de la serie de tiempo se utilizan para obtener
+ la linea de tendencia actual y puede tener dirección ascendente, descendente
+ u horizontal.
 \end_layout
 
 \begin_layout Standard
@@ -661,7 +765,7 @@ El método de suavizamiento exponencial con tendencia:
 \size small
 \begin_inset Formula 
 \begin{equation}
-P=\alpha\left(UV\right)+\left(1\text{-}\alpha\right)\left(UP\right)+T
+Pronóstico=\alpha\left(último\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico\right)+tendencia\;estimada
 \end{equation}
 
 \end_inset
@@ -669,7 +773,7 @@ P=\alpha\left(UV\right)+\left(1\text{-}\alpha\right)\left(UP\right)+T
 
 \begin_inset Formula 
 \begin{equation}
-T=\beta\left(UT\right)\left(1\text{-}\beta\right)\left(EA\right)
+tendencia\;estimada=\beta\left(última\;tendencia\right)\left(1\text{-}\beta\right)\left(estimación\;anterior\right)
 \end{equation}
 
 \end_inset
@@ -677,7 +781,7 @@ T=\beta\left(UT\right)\left(1\text{-}\beta\right)\left(EA\right)
 
 \begin_inset Formula 
 \begin{equation}
-UT=\alpha\left(UV-PV\right)+\left(1\text{-}\alpha\right)\left(UP-PP\right)
+última\;tendencia=\alpha\left(último\;valor-penúltimo\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico-penúltimo\;pronóstico\right)
 \end{equation}
 
 \end_inset
@@ -689,46 +793,6 @@ UT=\alpha\left(UV-PV\right)+\left(1\text{-}\alpha\right)\left(UP-PP\right)
 \noindent
 \align left
 donde 
-\shape italic
-\size small
-
-\begin_inset Formula $P=pronóstico$
-\end_inset
-
-, 
-\begin_inset Formula $UV=último\;valor$
-\end_inset
-
-, 
-\begin_inset Formula $UP=último\;pronóstico$
-\end_inset
-
-, 
-\begin_inset Formula $T=tendencia\;estimada$
-\end_inset
-
-, 
-\begin_inset Formula $UT=última\;tendencia$
-\end_inset
-
-, 
-\begin_inset Formula $EA=estimación\;anterior$
-\end_inset
-
-, 
-\begin_inset Formula $PV=penúltimo\;valor$
-\end_inset
-
-, 
-\begin_inset Formula $PP=penúltimo\;pronóstico$
-\end_inset
-
-,
-\size scriptsize
- 
-\shape default
-\size default
-
 \begin_inset Formula $\beta$
 \end_inset
 
