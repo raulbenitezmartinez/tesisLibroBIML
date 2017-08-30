@@ -512,6 +512,7 @@ status open
 \begin_inset Graphics
 	filename Recursos/tendencia.png
 	scale 70
+	rotateOrigin center
 
 \end_inset
 
@@ -547,6 +548,7 @@ status open
 \begin_inset Graphics
 	filename Recursos/ciclico.png
 	scale 70
+	rotateOrigin center
 
 \end_inset
 
@@ -835,7 +837,8 @@ El pronóstico causal obtiene una proyección de la cantidad de interés (la
  (las variables independientes) que impulsan la cantidad de interés.
  Por ejemplo, las promociones sobre uno o varios productos pueden ser la
  causa de una mayor cantidad de ventas en dichos artículos, como tal tenemos
- una relación causa (promociones)-efecto (mayores ventas).
+ una relación causa (promociones)-efecto (mayores ventas), es decir las
+ promociones provocan cambios en los niveles de ventas.
 \end_layout
 
 \begin_layout Standard
@@ -846,8 +849,9 @@ regresión lineal
 \emph default
 .
  El objetivo de este método es encontrar la linea recta que más se aproxime
- a la relación entre la variable dependiente e independiente.
- La forma de la ecuación es la de la recta:
+ a la relación entre la variable dependiente y la/s variables independiente/s.
+ Cuando hay una sola variable independiente la forma de la ecuación es la
+ de la recta:
 \end_layout
 
 \begin_layout Standard
@@ -948,8 +952,8 @@ Precisión de los métodos cuantitativos
 \end_layout
 
 \begin_layout Standard
-Para medir la desviación que hay entre el pronóstico y el valor real posterior
- se utiliza normalmente el valor de 
+Para medir la desviación que hay entre el pronóstico y el valor real se
+ utiliza normalmente el valor del 
 \emph on
 error promedio del pronóstico
 \emph default
@@ -997,8 +1001,8 @@ MSE=\frac{suma\;de\;los\;cuadrados\;de\;los\;errores\;de\;pronóstico}{número\;
 \end_layout
 
 \begin_layout Standard
-El resultado de esta fórmula pone de relieve los errores grandes de pronóstico,
- así como también destaca si el método de pronóstico es preciso.
+El resultado de esta última fórmula pone de relieve los errores grandes
+ de pronóstico, así como también destaca si el método de pronóstico es preciso.
  Se utiliza como complemento informativo a MAD.
 \end_layout
 
@@ -1007,7 +1011,7 @@ Relación con el problema de estudio
 \end_layout
 
 \begin_layout Standard
-Esta sección pretendió dar a conocer las técnicas de pronósticos de demanda
+Este capítulo pretendió dar a conocer las técnicas de pronósticos de demanda
  ampliamente conocidas y estudiadas en los diferentes textos consultados
  
 \begin_inset CommandInset citation
@@ -1047,10 +1051,10 @@ o como lo hacen las técnicas de esta sección, debe quedar claro que la soluci�
 \end_layout
 
 \begin_layout Standard
-En las secciones tres y cuatro se combinan los conceptos, herramientas y
+En los capítulos tres y cuatro se combinan los conceptos, herramientas y
  tecnologías que modelan la solución de esta nueva técnica de pronóstico.
- En la sección quinta se realizan las experimentaciones en base al caso
- de estudio y se evaluan los resultados obtenidos.
+ En quinto capítulo se realizan las experimentaciones en base al caso de
+ estudio y se evaluan los resultados obtenidos.
 \end_layout
 
 \end_body
