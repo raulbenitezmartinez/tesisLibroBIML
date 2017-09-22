@@ -386,7 +386,7 @@ key "IntroML2008"
 \end_layout
 
 \begin_layout Section
-Esquema de machine learning 
+Esquema común de aprendizaje automático 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
@@ -397,8 +397,25 @@ key "DM2011"
 \end_layout
 
 \begin_layout Standard
-Para desarrollar un modelo o esquema de machine learning es necesario conocer
- los componentes esenciales que la forman.
+La entrada de un esquema de aprendizaje automático es un conjunto de instancias
+ o ejemplos (examples).
+ Estas instancias son las cosas que deben ser clasificadas, asociadas o
+ agrupadas.
+ Las instancias son caracterizadas mediante los valores de un conjunto predeterm
+inado de atributos (features).
+ Para el problema de estudio el proceso de Business Intelligence es quien
+ provee las instancias.
+ 
+\end_layout
+
+\begin_layout Standard
+El grupo de ejemplos o instancias utilizados en el proceso de entrenamiento
+ de los algoritmos de aprendizaje automático constituyen el conjunto de
+ entrenamiento (training set).
+ Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
+ evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
+ papel en la formación del clasificador, este conjunto de datos independiente
+ se denomina conjunto de prueba (test set).
 \end_layout
 
 \begin_layout Subsection
@@ -411,8 +428,6 @@ La entrada de un esquema de aprendizaje automático es un conjunto de instancias
  agrupadas.
  En el escenario estándar, cada instancia es un ejemplo individual e independien
 te del concepto que se debe aprender.
- Para el problema de estudio el proceso de Business Intelligence es quien
- provee las instancias.
 \end_layout
 
 \begin_layout Subsection
@@ -422,8 +437,8 @@ Características o atributos
 \begin_layout Standard
 Las instancias son caracterizadas mediante los valores de un conjunto predetermi
 nado de atributos.
- Cada instancia proporciona una entrada al aprendizaje automático y es caracteri
-zado por los valores de un conjunto fijo y predefinido de características
+ Cada instancia proporciona una entrada al aprendizaje automático es caracteriza
+do por los valores en un conjunto fijo y predefinido de características
  o atributos.
 \end_layout
 
@@ -443,8 +458,8 @@ Conjunto de entrenamiento
 \end_layout
 
 \begin_layout Standard
-El grupo de ejemplos utilizados en el proceso de entrenamiento de los algoritmos
- de aprendizaje automático constituyen el conjunto de entrenamiento.
+Son los ejemplos o instancias utilizadas en el proceso de entrenamiento
+ del algoritmo de aprendizaje automático.
 \end_layout
 
 \begin_layout Subsection
@@ -511,7 +526,7 @@ reference "tab:algoritmosWekaVsReales"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -997,225 +1012,6 @@ Fast decision tree learner.
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-Los algoritmos de clasificación de Weka que se utilizarán es el siguiente
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "WekaCla"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Subsection
-BayesNet
-\end_layout
-
-\begin_layout Standard
-Bayes Network learning using various search algorithms and quality measures.
- Base class for a Bayes Network classifier.
- Provides datastructures (network structure, conditional probability distributio
-ns, etc.) and facilities common to Bayes Network learning algorithms like
- K2 and B.
-\end_layout
-
-\begin_layout Subsection
-NaiveBayes
-\end_layout
-
-\begin_layout Standard
-Class for a Naive Bayes classifier using estimator classes.
- Numeric estimator precision values are chosen based on analysis of the
- training data.
- For this reason, the classifier is not an UpdateableClassifier (which in
- typical usage are initialized with zero training instances).
-\end_layout
-
-\begin_layout Subsection
-NaiveBayesUpdateable
-\end_layout
-
-\begin_layout Standard
-Class for a Naive Bayes classifier using estimator classes.
- This is the updateable version of NaiveBayes.
- This classifier will use a default precision of 0.1 for numeric attributes
- when buildClassifier is called with zero training instances.
-\end_layout
-
-\begin_layout Subsection
-Logistic
-\end_layout
-
-\begin_layout Standard
-Class for building and using a multinomial logistic regression model with
- a ridge estimator.
- If there are k classes for n instances with m attributes, the parameter
- matrix B to be calculated will be an m*(k-1) matrix.
-\end_layout
-
-\begin_layout Subsection
-MultilayerPerceptron
-\end_layout
-
-\begin_layout Standard
-A Classifier that uses backpropagation to classify instances.
- This network can be built by hand, created by an algorithm or both.
- The network can also be monitored and modified during training time.
- The nodes in this network are all sigmoid (except for when the class is
- numeric in which case the the output nodes become unthresholded linear
- units).
-\end_layout
-
-\begin_layout Subsection
-SimpleLogistic
-\end_layout
-
-\begin_layout Standard
-Classifier for building linear logistic regression models.
- LogitBoost with simple regression functions as base learners is used for
- fitting the logistic models.
- The optimal number of LogitBoost iterations to perform is cross-validated,
- which leads to automatic attribute selection.
-\end_layout
-
-\begin_layout Subsection
-SMO
-\end_layout
-
-\begin_layout Standard
-Implements John Platt's sequential minimal optimization algorithm for training
- a support vector classifier.
- This implementation globally replaces all missing values and transforms
- nominal attributes into binary ones.
- It also normalizes all attributes by default.
- (In that case the coefficients in the output are based on the normalized
- data, not the original data --- this is important for interpreting the
- classifier).
- Multi-class problems are solved using pairwise classification (aka 1-vs-1).
- To obtain proper probability estimates, use the option that fits calibration
- models to the outputs of the support vector machine.
- In the multi-class case, the predicted probabilities are coupled using
- Hastie and Tibshirani's pairwise coupling method.
- 
-\end_layout
-
-\begin_layout Subsection
-OneR
-\end_layout
-
-\begin_layout Standard
-Class for building and using a 1R classifier; in other words, uses the minimum-e
-rror attribute for prediction, discretizing numeric attributes.
-\end_layout
-
-\begin_layout Subsection
-DecisionTable
-\end_layout
-
-\begin_layout Standard
-Class for building and using a simple decision table majority classifier.
-\end_layout
-
-\begin_layout Subsubsection
-JRip
-\end_layout
-
-\begin_layout Standard
-This class implements a propositional rule learner, Repeated Incremental
- Pruning to Produce Error Reduction (RIPPER), which was proposed by William
- W.
- Cohen as an optimized version of IREP.
- 
-\end_layout
-
-\begin_layout Subsubsection
-PART
-\end_layout
-
-\begin_layout Standard
-Class for generating a PART decision list.
- Uses separate-and-conquer.
- Builds a partial C4.5 decision tree in each iteration and makes the "best"
- leaf into a rule.
-\end_layout
-
-\begin_layout Subsubsection
-ZeroR
-\end_layout
-
-\begin_layout Standard
-Class for building and using a 0-R classifier.
- Predicts the mean (for a numeric class) or the mode (for a nominal class).
-\end_layout
-
-\begin_layout Subsubsection
-DecisionStump
-\end_layout
-
-\begin_layout Standard
-Class for building and using a decision stump.
- Usually used in conjunction with a boosting algorithm.
- Does regression (based on mean-squared error) or classification (based
- on entropy).
- Missing is treated as a separate value.
-\end_layout
-
-\begin_layout Subsubsection
-J48
-\end_layout
-
-\begin_layout Standard
-Class for generating a pruned or unpruned C4.5 decision tree.
-\end_layout
-
-\begin_layout Subsubsection
-LMT
-\end_layout
-
-\begin_layout Standard
-Classifier for building 'logistic model trees', which are classification
- trees with logistic regression functions at the leaves.
- The algorithm can deal with binary and multi-class target variables, numeric
- and nominal attributes and missing values.
-\end_layout
-
-\begin_layout Subsubsection
-RandomForest
-\end_layout
-
-\begin_layout Standard
-Class for constructing a forest of random trees.
-\end_layout
-
-\begin_layout Subsubsection
-RandomTree
-\end_layout
-
-\begin_layout Standard
-Class for constructing a tree that considers K randomly chosen attributes
- at each node.
- Performs no pruning.
- Also has an option to allow estimation of class probabilities (or target
- mean in the regression case) based on a hold-out set (backfitting).
- 
-\end_layout
-
-\begin_layout Subsubsection
-REPTree
-\end_layout
-
-\begin_layout Standard
-Fast decision tree learner.
- Builds a decision/regression tree using information gain/variance and prunes
- it using reduced-error pruning (with backfitting).
- Only sorts values for numeric attributes once.
- Missing values are dealt with by splitting the corresponding instances
- into pieces (i.e.
- as in C4.5).
 \end_layout
 
 \begin_layout Section

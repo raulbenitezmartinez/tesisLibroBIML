@@ -1184,20 +1184,12 @@ Classifier for building 'logistic model trees', which are classification
 \end_layout
 
 \begin_layout Subsubsection
-RandomForest
-\end_layout
-
-\begin_layout Standard
-Class for constructing a forest of random trees.
+RandomForest: Class for constructing a forest of random trees.
 \end_layout
 
 \begin_layout Subsubsection
-RandomTree
-\end_layout
-
-\begin_layout Standard
-Class for constructing a tree that considers K randomly chosen attributes
- at each node.
+RandomTree: Class for constructing a tree that considers K randomly chosen
+ attributes at each node.
  Performs no pruning.
  Also has an option to allow estimation of class probabilities (or target
  mean in the regression case) based on a hold-out set (backfitting).
@@ -1205,11 +1197,7 @@ Class for constructing a tree that considers K randomly chosen attributes
 \end_layout
 
 \begin_layout Subsubsection
-REPTree
-\end_layout
-
-\begin_layout Standard
-Fast decision tree learner.
+REPTree: Fast decision tree learner.
  Builds a decision/regression tree using information gain/variance and prunes
  it using reduced-error pruning (with backfitting).
  Only sorts values for numeric attributes once.
