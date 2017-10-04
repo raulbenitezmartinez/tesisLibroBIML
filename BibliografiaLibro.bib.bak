@@ -427,4 +427,34 @@
   year   = {2016},
 }
 
-@Comment{jabref-meta: databaseType:bibtex;}
+@Book{IAEModerno2,
+  title     = {Inteligencia Artificial. Un Enfoque Moderno. Segunda Edición},
+  publisher = {PEARSON EDUCACIÓN, S.A.},
+  year      = {2004},
+  author    = {Stuart Russell and Peter Norvig},
+}
+
+
+@Book{Moss2003,
+  title         = {Business Intelligence Roadmap: The Complete Project Lifecycle for Decision-support Applications},
+  publisher     = {Addison-Wesley},
+  year          = {2003},
+  author        = {Moss, L.T. and Atre, S.},
+  series        = {Addison-Wesley information technology series},
+  __markedentry = {[alberto:]},
+  isbn          = {9780201784206},
+  lccn          = {2002026196},
+  url           = {https://books.google.com.py/books?id=HSeE7rOXKsUC},
+}
+
+@Book{Wrembel2006,
+  title         = {Data Warehouses and OLAP: Concepts, Architectures and Solutions: Concepts, Architectures and Solutions},
+  publisher     = {IRM Press},
+  year          = {2006},
+  author        = {Wrembel, R.},
+  series        = {Gale virtual reference library},
+  __markedentry = {[alberto:6]},
+  isbn          = {9781599043661},
+  lccn          = {2006027721},
+  url           = {https://books.google.com.py/books?id=8HSSrj-3dRYC},
+}

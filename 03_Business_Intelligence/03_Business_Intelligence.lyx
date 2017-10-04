@@ -1000,29 +1000,80 @@ HOLAP (Hybrid OLAP): es una combinación de las dos anteriores, permite almacena
 \end_layout
 
 \begin_layout Subsection
-HERRAMIENTAS
+HERRAMIENTAS DE BI
+\end_layout
+
+\begin_layout Paragraph*
+Las principales herramientas de Business Intelligence son 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EH05"
+
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Itemize
-*** ****Proceso de Extracción, Transformación y Carga, de los datos en el
- datawarehouse.
- Antes de almacenar los datos en el datawarehouse, estos deben ser transformados
-, limpiados, filtrados y redefinidos.
+
+\shape italic
+Generadores de informes
+\shape default
+: Utilizadas por desarrolladores profesionales para crear informes estándar
+ para grupos, departamentos o la organización.
 \end_layout
 
 \begin_layout Itemize
-*** ****El Datawarehouse, donde se almacenan los datos de manera a maximizar
- la flexibilidad, facilidad de acceso y administración.
+
+\shape italic
+Herramientas de usuario final de consultas e informes
+\shape default
+: Empleadas por usuarios finales para crear informes para ellos mismos o
+ para otros; no requieren programación.
 \end_layout
 
 \begin_layout Itemize
-*** ****El motor OLAP, que nos provee capacidad de cálculo, consultas, pronóstic
-os, análisis de escenarios en grandes volúmenes de datos.
+
+\shape italic
+Herramientas OLAP
+\shape default
+: Permiten a los usuarios finales tratar la información de forma multidimensiona
+l para explorarla desde distintas perspectivas y periodos de tiempo.
 \end_layout
 
 \begin_layout Itemize
-*** ****Las herramientas de visualización, que nos permiten el análisis
- y la navegación a través de los mismos.
+
+\shape italic
+Herramientas de Dashboard y Scorecard
+\shape default
+: Permiten a los usuarios finales ver información crítica para el rendimiento
+ con un simple vistazo utilizando iconos gráficos y con la posibilidad de
+ ver más detalle para analizar información detallada e informes, si lo desean.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Herramientas de planificación, modelización y consolidación
+\shape default
+: Permite a los analistas y a los usuarios finales crear planes de negocio
+ y simulaciones con la información de Business Intelligence.
+ Pueden ser para elaborar la planificación, los presupuestos, las previsiones.
+ Estas herramientas proveen a los dashboards y los scorecards con los objetivos
+ y los umbrales de las métricas.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Herramientas datamining
+\shape default
+: Permiten a estadísticos o analistas de negocio crear modelos estadísticos
+ de las actividades de los negocios.
+ Datamining es el proceso para descubrir e interpretar patrones desconocidos
+ en la información mediante los cuales resolver problemas de negocio.
+ Los usos más habituales del datamining son: segmentación, venta cruzada,
+ sendas de consumo, clasificación, previsiones, optimizaciones, etc.
 \end_layout
 
 \begin_layout Section
@@ -1083,22 +1134,355 @@ Aplicaciones de BI
 \end_layout
 
 \begin_layout Standard
-EN ESTA SECCION CITAR LAS DIFERENTES AREAS DE IMPLEMENTACION DE BUSINESS
- INTELLIGENCE, AREAS DE APLICACION, EDUCACION, GOBIERNO, SALUD, COMERCIOS,
- Y DISTINTAS OTRAS AREAS.
+Los sistemas de Business Intelligence abarcan un grupo cada vez mayor de
+ usuarios, desde especialistas en tareas de control, información financiera,
+ personal de ventas, directivos y gerentes
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rasmussen2002"
+
+\end_inset
+
+.
+ Entre los sectores que utilizan sistemas de Business Intelligence se encuentran
+ compañias comerciales, compañias de seguros, entidades financieras, telecomunic
+aciones y empresas de manufactura.
 \end_layout
 
 \begin_layout Standard
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- - - - - - - - - - - - - - - - – - - - – - - - - - - - - - - - - - - - -
- - – – - - - – – – – – – – – – – – – – – – – – – – – – – – – – – – – – –
- – — – – — - - — – - - - - - - - - - - -
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Áreas de aplicación de BI
 \end_layout
 
-\begin_layout Standard
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
- - - - - - - - - - - - - - - ESTA SECCION DEBERIA DE IR EN EL CAPITULO DE
- MODELADO DEL PROBLEMA.
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="20cm">
+<row>
+<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Áreas de aplicación de BI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Casos de uso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Empresas Retail
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Proporcionar un análisis de las transacciones de los clientes.
+ Determinar los productos más vendidos, promociones, hábitos de compras.
+\end_layout
+
+\begin_layout Itemize
+Pronóstico.
+ Uso de datos de escaneado para pronosticar la demanda y basarse en el pronóstic
+o, para definir los requisitos de inventario con mayor precisión
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inventario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Planificación de Inventarios.
+ Ayudar a identificar el nivel de inventario necesario para garantizar la
+ demanda de los clientes.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gestión de Pedidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Pedido y reposición.
+ Uso de la información para tomar decisiones más rapidas sobre los artículos
+ a pedir y determinar cantidades óptimas.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Contabilidad
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+El uso de datos contables permite una mejor oportunidad de administración
+ del riesgo, agilizar las operaciones, identificar ahorros de costos y oportunid
+ades estratégicas de ingresos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bancos, Financieras y Valores.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Análisis de rentabilidad del cliente: Analizar la rentabilidad global del
+ cliente, a corto y largo plazo, proporcionar la base para las ventas de
+ alta rentabilidad y la banca de relación, maximizar las ventas a clientes
+ de alto valor, reducir los costos para los clientes de bajo valor, maximizar
+ la rentabilidad de nuevos productos y servicios.
+\end_layout
+
+\begin_layout Itemize
+Gestión de créditos: Establecer patrones de progresión de problemas de crédito
+ por clase y tipo de clientes, alertar a los clientes para evitar problemas
+ de crédito, gestionar límites de crédito, evaluar la cartera crediticia
+ del banco, reducir pérdidas crediticias.
+\end_layout
+
+\begin_layout Itemize
+Atención en sucursales: Mejorar el servicio y la atención al cliente, aperturas
+ de nuevas cuentas, fortalecer la lealtad del cliente.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Telecomunicaciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Perfil y segmentación de clientes.
+ Determinar perfiles de productos de alto beneficio y segmentos de clientes,
+ proporcionar perfiles de clientes detallados e integrados, desarrollar
+ programas individualizados de llamadas frecuentes, determinar futuras necesidad
+es de los clientes.
+\end_layout
+
+\begin_layout Itemize
+Previsión de la demanda del cliente.
+ Prever las necesidades futuras del producto o actividad de servicio, proporcion
+ar una base para el análisis y control de la rotación para mejorar la retención
+ de clientes.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transporte
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Educación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Salud
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Analizar los resultados, identificar tendencias, detectar patrones y predecir
+ los resultados para mejorar el desempeño clínico y operacional.
+\end_layout
+
+\begin_layout Itemize
+Monitorear iniciativas de calidad y programas de atención.
+\end_layout
+
+\begin_layout Itemize
+Seguimiento y monitoreo de ingresos, márgenes y rendimiento operacional.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Comercio Electrónico
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Seguros
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Itemize
+Análisis de clientes.
+ Analizar las necesidades de los clientes y los patrones de uso del producto,
+ desarrollar programas de mercadeo en las características del cliente, realizar
+ análisis de riesgo, mejorar el servicio al cliente.
+\end_layout
+
+\begin_layout Itemize
+Análisis de riesgo.
+ Identificar segmentos de mercado de alto riesgo y oportunidades en segmentos
+ específicos, relacionar segmentos de mercado, reducir la frecuencia de
+ reclamos
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
