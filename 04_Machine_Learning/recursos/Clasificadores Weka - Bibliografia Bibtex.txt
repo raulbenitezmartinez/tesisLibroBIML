@@ -1,0 +1,303 @@
+@inproceedings{John1995,
+    address = {San Mateo},
+    author = {George H. John and Pat Langley},
+    booktitle = {Eleventh Conference on Uncertainty in Artificial Intelligence},
+    pages = {338-345},
+    publisher = {Morgan Kaufmann},
+    title = {Estimating Continuous Distributions in Bayesian Classifiers},
+    year = {1995}
+}
+
+@inproceedings{Mccallum1998,
+    author = {Andrew Mccallum and Kamal Nigam},
+    booktitle = {AAAI-98 Workshop on 'Learning for Text Categorization'},
+    title = {A Comparison of Event Models for Naive Bayes Text Classification},
+    year = {1998}
+}
+ 
+
+@inproceedings{Mccallum1998,
+    author = {Andrew Mccallum and Kamal Nigam},
+    booktitle = {AAAI-98 Workshop on 'Learning for Text Categorization'},
+    title = {A Comparison of Event Models for Naive Bayes Text Classification},
+    year = {1998}
+}
+ 
+
+@inproceedings{John1995,
+    address = {San Mateo},
+    author = {George H. John and Pat Langley},
+    booktitle = {Eleventh Conference on Uncertainty in Artificial Intelligence},
+    pages = {338-345},
+    publisher = {Morgan Kaufmann},
+    title = {Estimating Continuous Distributions in Bayesian Classifiers},
+    year = {1995}
+}
+ 
+
+@article{leCessie1992,
+    author = {le Cessie, S. and van Houwelingen, J.C.},
+    journal = {Applied Statistics},
+    number = {1},
+    pages = {191-201},
+    title = {Ridge Estimators in Logistic Regression},
+    volume = {41},
+    year = {1992}
+}
+ 
+
+@article{Landwehr2005,
+    author = {Niels Landwehr and Mark Hall and Eibe Frank},
+    booktitle = {Machine Learning},
+    number = {1-2},
+    pages = {161-205},
+    title = {Logistic Model Trees},
+    volume = {95},
+    year = {2005}
+}
+ 
+@inproceedings{Sumner2005,
+    author = {Marc Sumner and Eibe Frank and Mark Hall},
+    booktitle = {9th European Conference on Principles and Practice of Knowledge Discovery in Databases},
+    pages = {675-683},
+    publisher = {Springer},
+    title = {Speeding up Logistic Model Tree Induction},
+    year = {2005}
+}
+ 
+@incollection{Platt1998,
+    author = {J. Platt},
+    booktitle = {Advances in Kernel Methods - Support Vector Learning},
+    editor = {B. Schoelkopf and C. Burges and A. Smola},
+    publisher = {MIT Press},
+    title = {Fast Training of Support Vector Machines using Sequential Minimal Optimization},
+    year = {1998},
+    URL = {http://research.microsoft.com/\~jplatt/smo.html},
+    PS = {http://research.microsoft.com/\~jplatt/smo-book.ps.gz},
+    PDF = {http://research.microsoft.com/\~jplatt/smo-book.pdf}
+}
+ 
+@article{Keerthi2001,
+    author = {S.S. Keerthi and S.K. Shevade and C. Bhattacharyya and K.R.K. Murthy},
+    journal = {Neural Computation},
+    number = {3},
+    pages = {637-649},
+    title = {Improvements to Platt's SMO Algorithm for SVM Classifier Design},
+    volume = {13},
+    year = {2001},
+    PS = {http://guppy.mpe.nus.edu.sg/\~mpessk/svm/smo_mod_nc.ps.gz}
+}
+ 
+@inproceedings{Hastie1998,
+    author = {Trevor Hastie and Robert Tibshirani},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {Michael I. Jordan and Michael J. Kearns and Sara A. Solla},
+    publisher = {MIT Press},
+    title = {Classification by Pairwise Coupling},
+    volume = {10},
+    year = {1998},
+    PS = {http://www-stat.stanford.edu/\~hastie/Papers/2class.ps}
+}
+ 
+@article{Aha1991,
+    author = {D. Aha and D. Kibler},
+    journal = {Machine Learning},
+    pages = {37-66},
+    title = {Instance-based learning algorithms},
+    volume = {6},
+    year = {1991}
+}
+ 
+@inproceedings{Cleary1995,
+    author = {John G. Cleary and Leonard E. Trigg},
+    booktitle = {12th International Conference on Machine Learning},
+    pages = {108-114},
+    title = {K*: An Instance-based Learner Using an Entropic Distance Measure},
+    year = {1995}
+}
+
+@inproceedings{Frank2003,
+    author = {Eibe Frank and Mark Hall and Bernhard Pfahringer},
+    booktitle = {19th Conference in Uncertainty in Artificial Intelligence},
+    pages = {249-256},
+    publisher = {Morgan Kaufmann},
+    title = {Locally Weighted Naive Bayes},
+    year = {2003}
+}
+ 
+@article{Atkeson1996,
+    author = {C. Atkeson and A. Moore and S. Schaal},
+    journal = {AI Review},
+    title = {Locally weighted learning},
+    year = {1996}
+}
+
+
+@inproceedings{Freund1996,
+    address = {San Francisco},
+    author = {Yoav Freund and Robert E. Schapire},
+    booktitle = {Thirteenth International Conference on Machine Learning},
+    pages = {148-156},
+    publisher = {Morgan Kaufmann},
+    title = {Experiments with a new boosting algorithm},
+    year = {1996}
+}
+ 
+@article{Breiman1996,
+    author = {Leo Breiman},
+    journal = {Machine Learning},
+    number = {2},
+    pages = {123-140},
+    title = {Bagging predictors},
+    volume = {24},
+    year = {1996}
+}
+ 
+@article{Frank1998,
+    author = {E. Frank and Y. Wang and S. Inglis and G. Holmes and I.H. Witten},
+    journal = {Machine Learning},
+    number = {1},
+    pages = {63-76},
+    title = {Using model trees for classification},
+    volume = {32},
+    year = {1998}
+}
+ 
+@phdthesis{Kohavi1995,
+    address = {Department of Computer Science, Stanford University},
+    author = {R. Kohavi},
+    school = {Stanford University},
+    title = {Wrappers for Performance Enhancement and Oblivious Decision Graphs},
+    year = {1995}
+}
+ 
+@techreport{Friedman1998,
+    address = {Stanford University},
+    author = {J. Friedman and T. Hastie and R. Tibshirani},
+    title = {Additive Logistic Regression: a Statistical View of Boosting},
+    year = {1998},
+    PS = {http://www-stat.stanford.edu/\~jhf/ftp/boost.ps}
+}
+
+@article{Ho1998,
+    author = {Tin Kam Ho},
+    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    number = {8},
+    pages = {832-844},
+    title = {The Random Subspace Method for Constructing Decision Forests},
+    volume = {20},
+    year = {1998},
+    ISSN = {0162-8828},
+    URL = {http://citeseer.ist.psu.edu/ho98random.html}
+}
+ 
+@article{Wolpert1992,
+    author = {David H. Wolpert},
+    journal = {Neural Networks},
+    pages = {241-259},
+    publisher = {Pergamon Press},
+    title = {Stacked generalization},
+    volume = {5},
+    year = {1992}
+}
+ 
+@book{Kuncheva2004,
+    author = {Ludmila I. Kuncheva},
+    publisher = {John Wiley and Sons, Inc.},
+    title = {Combining Pattern Classifiers: Methods and Algorithms},
+    year = {2004}
+}
+ 
+@article{Kittler1998,
+    author = {J. Kittler and M. Hatef and Robert P.W. Duin and J. Matas},
+    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    number = {3},
+    pages = {226-239},
+    title = {On combining classifiers},
+    volume = {20},
+    year = {1998}
+}
+ 
+@inproceedings{Kohavi1995,
+    author = {Ron Kohavi},
+    booktitle = {8th European Conference on Machine Learning},
+    pages = {174-189},
+    publisher = {Springer},
+    title = {The Power of Decision Tables},
+    year = {1995}
+}
+ 
+@inproceedings{Cohen1995,
+    author = {William W. Cohen},
+    booktitle = {Twelfth International Conference on Machine Learning},
+    pages = {115-123},
+    publisher = {Morgan Kaufmann},
+    title = {Fast Effective Rule Induction},
+    year = {1995}
+}
+ 
+@article{Holte1993,
+    author = {R.C. Holte},
+    journal = {Machine Learning},
+    pages = {63-91},
+    title = {Very simple classification rules perform well on most commonly used datasets},
+    volume = {11},
+    year = {1993}
+}
+ 
+@inproceedings{Frank1998,
+    author = {Eibe Frank and Ian H. Witten},
+    booktitle = {Fifteenth International Conference on Machine Learning},
+    editor = {J. Shavlik},
+    pages = {144-151},
+    publisher = {Morgan Kaufmann},
+    title = {Generating Accurate Rule Sets Without Global Optimization},
+    year = {1998},
+    PS = {http://www.cs.waikato.ac.nz/\~eibe/pubs/ML98-57.ps.gz}
+}
+ 
+@inproceedings{Hulten2001,
+    author = {Geoff Hulten and Laurie Spencer and Pedro Domingos},
+    booktitle = {ACM SIGKDD Intl. Conf. on Knowledge Discovery and Data Mining},
+    pages = {97-106},
+    publisher = {ACM Press},
+    title = {Mining time-changing data streams},
+    year = {2001}
+}
+ 
+@book{Quinlan1993,
+    address = {San Mateo, CA},
+    author = {Ross Quinlan},
+    publisher = {Morgan Kaufmann Publishers},
+    title = {C4.5: Programs for Machine Learning},
+    year = {1993}
+}
+ 
+@article{Landwehr2005,
+    author = {Niels Landwehr and Mark Hall and Eibe Frank},
+    journal = {Machine Learning},
+    number = {1-2},
+    pages = {161-205},
+    title = {Logistic Model Trees},
+    volume = {95},
+    year = {2005}
+}
+ 
+@inproceedings{Sumner2005,
+    author = {Marc Sumner and Eibe Frank and Mark Hall},
+    booktitle = {9th European Conference on Principles and Practice of Knowledge Discovery in Databases},
+    pages = {675-683},
+    publisher = {Springer},
+    title = {Speeding up Logistic Model Tree Induction},
+    year = {2005}
+}
+ 
+@article{Breiman2001,
+    author = {Leo Breiman},
+    journal = {Machine Learning},
+    number = {1},
+    pages = {5-32},
+    title = {Random Forests},
+    volume = {45},
+    year = {2001}
+}

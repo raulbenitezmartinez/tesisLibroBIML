@@ -386,7 +386,7 @@ key "IntroML2008"
 \end_layout
 
 \begin_layout Section
-Esquema común de aprendizaje automático 
+Esquema de machine learning 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
@@ -397,25 +397,8 @@ key "DM2011"
 \end_layout
 
 \begin_layout Standard
-La entrada de un esquema de aprendizaje automático es un conjunto de instancias
- o ejemplos (examples).
- Estas instancias son las cosas que deben ser clasificadas, asociadas o
- agrupadas.
- Las instancias son caracterizadas mediante los valores de un conjunto predeterm
-inado de atributos (features).
- Para el problema de estudio el proceso de Business Intelligence es quien
- provee las instancias.
- 
-\end_layout
-
-\begin_layout Standard
-El grupo de ejemplos o instancias utilizados en el proceso de entrenamiento
- de los algoritmos de aprendizaje automático constituyen el conjunto de
- entrenamiento (training set).
- Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
- evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
- papel en la formación del clasificador, este conjunto de datos independiente
- se denomina conjunto de prueba (test set).
+Para desarrollar un modelo o esquema de machine learning es necesario conocer
+ los componentes esenciales que la forman.
 \end_layout
 
 \begin_layout Subsection
@@ -428,6 +411,8 @@ La entrada de un esquema de aprendizaje automático es un conjunto de instancias
  agrupadas.
  En el escenario estándar, cada instancia es un ejemplo individual e independien
 te del concepto que se debe aprender.
+ Para el problema de estudio el proceso de Business Intelligence es quien
+ provee las instancias.
 \end_layout
 
 \begin_layout Subsection
@@ -437,8 +422,8 @@ Características o atributos
 \begin_layout Standard
 Las instancias son caracterizadas mediante los valores de un conjunto predetermi
 nado de atributos.
- Cada instancia proporciona una entrada al aprendizaje automático es caracteriza
-do por los valores en un conjunto fijo y predefinido de características
+ Cada instancia proporciona una entrada al aprendizaje automático y es caracteri
+zado por los valores de un conjunto fijo y predefinido de características
  o atributos.
 \end_layout
 
@@ -458,8 +443,8 @@ Conjunto de entrenamiento
 \end_layout
 
 \begin_layout Standard
-Son los ejemplos o instancias utilizadas en el proceso de entrenamiento
- del algoritmo de aprendizaje automático.
+El grupo de ejemplos utilizados en el proceso de entrenamiento de los algoritmos
+ de aprendizaje automático constituyen el conjunto de entrenamiento.
 \end_layout
 
 \begin_layout Subsection
@@ -522,496 +507,875 @@ reference "tab:algoritmosWekaVsReales"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\noindent
-\align left
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:algoritmosWekaVsReales"
-
-\end_inset
-
-Clasificadores Weka 
+Los algoritmos de clasificación de Weka que se utilizarán es el siguiente
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "WekaCla"
 
 \end_inset
 
-
+:
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+Bayesianos
 \end_layout
 
-\begin_layout Plain Layout
-
-\size small
-\begin_inset Tabular
-<lyxtabular version="3" rows="18" columns="2">
-<features booktabs="true" tabularvalignment="middle">
-<column alignment="left" valignment="top" width="4cm">
-<column alignment="left" valignment="top" width="10cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Clasificadores Weka
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Algoritmo que implementa
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 BayesNet
 \end_layout
 
+\begin_layout Standard
+BayesNet constituye la clase Java base para un clasificador Bayes Network
+ (Red Bayesiana).
+ Aprende utilizando diversos algoritmos de búsqueda y medidas de calidad.
+ Proporciona estructuras de datos (estructura de red, distribuciones de
+ probabilidad condicional, etc.) y facilidades comunes a los algoritmos de
+ aprendizaje Bayes Network tales como K2 y B 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "WekaMan3-8-0"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\size small
-Bayes Network learning algorithms.
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 NaiveBayes
 \end_layout
 
+\begin_layout Standard
+NaiveBayes constituye la clase Java base para un clasificador Naive Bayes
+ usando estimadores de clases.
+ Los valores de precisión del estimador numérico se eligen basándose en
+ el análisis de los datos de entrenamiento.
+ Por esta razón, el clasificador no es un UpdateableClassifier (que en el
+ uso típico se inicializan con cero las instancias de entrenamiento) 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "John1995"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\size small
-Naive Bayes classifier.
+.
 \end_layout
 
+\begin_layout Subsubsection
+NaiveBayesMultinomial
+\end_layout
+
+\begin_layout Standard
+NaiveBayesMultinomial constituye la clase Java para construir y utilizar
+ un clasificador Naive Bayes multinomial.
+ La ecuación central para este clasificador: 
+\shape italic
+
+\begin_inset Formula $P\left[C_{i}|D\right]=\left(P\left[D|C_{i}\right]xP\left[C_{i}\right]\right)/P\left[D\right]$
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
 
-\size small
+\shape default
+ (regla de Bayes), donde 
+\shape italic
+
+\begin_inset Formula $C_{i}$
+\end_inset
+
+
+\shape default
+ es la clase 
+\shape italic
+
+\begin_inset Formula $i$
+\end_inset
+
+
+\shape default
+ y 
+\shape italic
+
+\begin_inset Formula $D$
+\end_inset
+
+
+\shape default
+ es un documento 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mccallum1998"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+NaiveBayesMultinomialUpdateable
+\end_layout
+
+\begin_layout Standard
+NaiveBayesMultinomial constituye la clase Java para construir y utilizar
+ un clasificador Naive Bayes multinomial.
+ La ecuación central para este clasificador: 
+\shape italic
+
+\begin_inset Formula $P\left[C_{i}|D\right]=\left(P\left[D|C_{i}\right]xP\left[C_{i}\right]\right)/P\left[D\right]$
+\end_inset
+
+
+\shape default
+ (regla de Bayes), donde 
+\shape italic
+
+\begin_inset Formula $C_{i}$
+\end_inset
+
+
+\shape default
+ es la clase 
+\shape italic
+
+\begin_inset Formula $i$
+\end_inset
+
+
+\shape default
+ y 
+\shape italic
+
+\begin_inset Formula $D$
+\end_inset
+
+
+\shape default
+ es un documento.
+ Es la versión incremental del algoritmo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mccallum1998"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
 NaiveBayesUpdateable
 \end_layout
 
+\begin_layout Standard
+NaiveBayesUpdateable constituye la clase Java para un clasificador Naive
+ Bayes utilizando estimadores de clases.
+ Esta es la versión actualizable de NaiveBayes.
+ Este clasificador utiliza una precisión predeterminada de 0.1 para atributos
+ numéricos cuando se invoca 
+\shape italic
+buildClassifier
+\shape default
+ con cero instancias de entrenamiento 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "John1995"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\size small
-Updateable version of NaiveBayes.
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
+\begin_layout Subsection
+Funciones
+\end_layout
 
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 Logistic
 \end_layout
 
+\begin_layout Standard
+Logistic constituye la clase Java para construir y utilizar un modelo multinomia
+l de regresión logística con un estimador de cresta.
+ Si hay 
+\shape italic
+
+\begin_inset Formula $k$
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
 
-\size small
-Using multinomial logistic regression model.
+\shape default
+ clases para 
+\shape italic
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\shape default
+ instancias con 
+\shape italic
+
+\begin_inset Formula $m$
+\end_inset
+
+
+\shape default
+ atributos, la matriz de parámetros 
+\shape italic
+
+\begin_inset Formula $B$
+\end_inset
+
+
+\shape default
+ a calcular será una matriz 
+\shape italic
+
+\begin_inset Formula $m*\left(k-1\right)$
+\end_inset
+
+
+\shape default
+.
+ Aunque la Regresión Logística original no se ocupa de los pesos de las
+ instancias, se modifica el algoritmo para manejar los pesos de las instancias
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "leCessie1992"
+
+\end_inset
+
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 MultilayerPerceptron
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Uses backpropagation to classify instances.
+\begin_layout Standard
+MultilayerPerceptron es un clasificador que utiliza 
+\shape italic
+backpropagation
+\shape default
+ para clasificar instancias.
+ Esta red puede ser monitorizada y modificada durante el tiempo de entrenamiento.
+ Los nodos de esta red son todos 
+\shape italic
+sigmoides
+\shape default
+ (excepto cuando la clase es numérica, en cuyo caso los nodos de salida
+ se convierten en unidades lineales sin umbrales).
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 SimpleLogistic
 \end_layout
 
+\begin_layout Standard
+SimpleLogistic constituye un clasificador para la construcción de modelos
+ de regresión logística lineal.
+ LogitBoost con funciones de regresión simples como base de aprendizaje
+ se utiliza para ajustar los modelos logísticos.
+ El número óptimo de iteraciones LogitBoost a realizar es validación cruzada,
+ lo que conduce a la selección automática de atributos 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Landwehr2005"
+
 \end_inset
-</cell>
-<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Sumner2005"
 
-\size small
-LogitBoost with simple regression.
+\end_inset
+
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 SMO
 \end_layout
 
+\begin_layout Standard
+Constituye el algoritmo Sequential Minimal Optimization para el entrenamiento
+ de un clasificador Support Vector.
+ Implementa el algoritmo de optimización mínima secuencial de John Platt.
+ Esta implementación reemplaza globalmente todos los valores perdidos y
+ transforma los atributos nominales en binarios.
+ También normaliza todos los atributos por defecto.
+ (En ese caso, los coeficientes de la salida se basan en datos normalizados
+ y no en los datos originales).
+ Los problemas multiclase se resuelven utilizando la clasificación Pairwise
+ (aka 1-vs-1).
+ En el caso multiclase, las probabilidades predichas se acoplan utilizando
+ el método de acoplamiento Pairwise de Hastie y Tibshirani 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Platt1998"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Keerthi2001"
 
-\size small
-Sequential Minimal Optimization algorithm for training a support vector
- classifier.
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hastie1998"
+
+\end_inset
+
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-OneR
+\begin_layout Subsection
+Lazy
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Using a 1R classifier.
+\begin_layout Subsubsection
+IBk
 \end_layout
 
+\begin_layout Standard
+Clasificador K-nearest neighbours (K vecinos más cercanos).
+ Puede seleccionar el valor apropiado de K basado en la validación cruzada.
+ También se puede hacer ponderación de distancias 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Aha1991"
+
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+.
+\end_layout
 
-\size small
+\begin_layout Subsubsection
+KStar
+\end_layout
+
+\begin_layout Standard
+K* es un clasificador basado en instancias, es decir, la clase de una instancia
+ de prueba se basa en la clase de aquellas instancias de entrenamiento similares
+ a ella, según lo determinado por alguna función de similitud.
+ Se diferencia de otros esquemas de aprendizaje basados en instancia en
+ que utiliza una función de distancia basada en entropía 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Cleary1995"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+LWL
+\end_layout
+
+\begin_layout Standard
+Locally Weighted Learning (Aprendizaje ponderado localmente) utiliza un
+ algoritmo basado en instancias para asignar pesos de instancias que luego
+ son utilizados por un especificado 
+\shape italic
+WeightedInstancesHandler
+\shape default
+.
+ Puede hacer clasificación (por ejemplo, usando Naive Bayes) o regresión
+ (por ejemplo, usando Linear Regression) 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frank2003"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Atkeson1996"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Meta
+\end_layout
+
+\begin_layout Subsubsection
+AdaBoostM1
+\end_layout
+
+\begin_layout Standard
+AdaBoostM1 constituye una clase para impulsar un clasificador de clase nominal
+ utilizando el método Adaboost M1.
+ Sólo se pueden abordar problemas de clase nominal.
+ A menudo mejora dramáticamente el rendimiento, pero a veces sobreajusta
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Freund1996"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+AttributeSelectedClassifier
+\end_layout
+
+\begin_layout Standard
+La dimensionalidad de los datos de entrenamiento y de prueba se reduce mediante
+ la selección de los atributos antes de pasarlos a un clasificador.
+\end_layout
+
+\begin_layout Subsubsection
+Bagging
+\end_layout
+
+\begin_layout Standard
+Bagging constituye una clase para capturar un clasificador que reduce la
+ varianza.
+ Puede hacer clasificación y regresión dependiendo de la base del aprendizaje
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Breiman1996"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+ClassificationViaRegression
+\end_layout
+
+\begin_layout Standard
+ClassificationViaRegression constituye una clase para hacer la clasificación
+ utilizando métodos de regresión.
+ La clase es binarizada y se construye un modelo de regresión por cada valor
+ de clase 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frank1998"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+CVParameterSelection
+\end_layout
+
+\begin_layout Standard
+CVParameterSelection constituye una clase para realizar la selección de
+ parámetros mediante validación cruzada para cualquier clasificador 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kohavi1995"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+FilteredClassifier
+\end_layout
+
+\begin_layout Standard
+FilteredClassifier constituye una clase para ejecutar un clasificador arbitrario
+ en datos que se han pasado a través de un filtro arbitrario.
+ Al igual que el clasificador, la estructura del filtro se basa exclusivamente
+ en los datos de entrenamiento, y las instancias de prueba serán procesadas
+ por el filtro sin cambiar su estructura.
+\end_layout
+
+\begin_layout Subsubsection
+IterativeClassifierOptimizer
+\end_layout
+
+\begin_layout Standard
+IterativeClassifierOptimizer elige el mejor número de iteraciones para un
+ IterativeClassifier tal como LogitBoost, utilizando validación cruzada.
+ Optimiza el número de iteraciones del clasificador iterativo utilizando
+ la validación cruzada.
+\end_layout
+
+\begin_layout Subsubsection
+LogitBoost
+\end_layout
+
+\begin_layout Standard
+LogitBoost constituye la clase para realizar una regresión logística aditiva.
+ Esta clase realiza la clasificación utilizando un esquema de regresión
+ como base del aprendizaje, y puede manejar problemas multiclase 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Friedman1998"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+MultiClassClassifier
+\end_layout
+
+\begin_layout Standard
+MultiClassClassifier constituye un metaclasificador para manejar conjuntos
+ de datos multiclase con clasificadores de 2 clases.
+ Este clasificador también es capaz de aplicar códigos de salida de corrección
+ de errores para aumentar la precisión.
+\end_layout
+
+\begin_layout Subsubsection
+MultiClassClassifierUpdateable
+\end_layout
+
+\begin_layout Standard
+MultiClassClassifierUpdateable constituye un metaclasificador para manejar
+ conjuntos de datos multiclase con clasificadores de 2 clases.
+ Este clasificador también es capaz de aplicar códigos de salida de corrección
+ de errores para aumentar la precisión.
+ El clasificador base debe ser un clasificador actualizable.
+\end_layout
+
+\begin_layout Subsubsection
+MultiScheme
+\end_layout
+
+\begin_layout Standard
+MultiScheme constituye una clase para seleccionar un clasificador entre
+ varios, utilizando validación cruzada en los datos de entrenamiento o el
+ rendimiento en los datos de entrenamiento.
+ El rendimiento se mide en función del porcentaje de aciertos (clasificación)
+ o del error medio cuadrático (regresión).
+\end_layout
+
+\begin_layout Subsubsection
+RandomCommittee
+\end_layout
+
+\begin_layout Standard
+RandomCommittee constituye una clase para construir un conjunto aleatorizado
+ de clasificadores base.
+ Cada clasificadores base se construyen utilizando una semilla de número
+ aleatorio diferente (pero basado en los mismos datos).
+ La predicción final es un promedio directo de las predicciones generadas
+ por los clasificadores base individuales.
+\end_layout
+
+\begin_layout Subsubsection
+RandomizableFilteredClassifier
+\end_layout
+
+\begin_layout Standard
+RandomizableFilteredClassifier constituye una clase para ejecutar un clasificado
+r arbitrario en datos que se han pasado a través de un filtro arbitrario.
+ Al igual que el clasificador, la estructura del filtro se basa exclusivamente
+ en los datos de entrenamiento, y las instancias de prueba serán procesadas
+ por el filtro sin cambiar su estructura.
+\end_layout
+
+\begin_layout Subsubsection
+RandomSubSpace
+\end_layout
+
+\begin_layout Standard
+Este método construye un clasificador basado en árbol de decisión que mantiene
+ la mayor precisión en los datos de entrenamiento y mejora la precisión
+ de generalización a medida que crece en complejidad.
+ El clasificador consta de múltiples árboles construidos sistemáticamente
+ mediante selección pseudoaleatoria de subconjuntos de componentes del vector
+ de características, es decir, árboles construidos en subespacios elegidos
+ aleatoriamente 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ho1998"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Stacking
+\end_layout
+
+\begin_layout Standard
+Stacking combina varios clasificadores utilizando el método de apilamiento.
+ Puede hacer clasificación o regresión 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wolpert1992"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Vote
+\end_layout
+
+\begin_layout Standard
+Vote constituye una clase para combinar clasificadores.
+ Se dispone de diferentes combinaciones de estimaciones de probabilidad
+ para la clasificación 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kuncheva2004"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kittler1998"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+WeightedInstancesHandlerWrapper
+\end_layout
+
+\begin_layout Standard
+Envoltorio genérico alrededor de cualquier clasificador para permitir soporte
+ de instancias ponderadas (weighted instances).
+ Utiliza el remuestreo con pesos si el clasificador base no implementa la
+ interfaz weka.core.WeightedInstancesHandler y hay otros pesos de instancias
+ 1.0 presentes.
+ De forma predeterminada, los datos de entrenamiento se pasan al clasificador
+ base si puede manejar pesos de instancia.
+ Sin embargo, es posible forzar el uso del remuestreo con pesos también.
+\end_layout
+
+\begin_layout Subsection
+Rules
+\end_layout
+
+\begin_layout Subsubsection
 DecisionTable
 \end_layout
 
+\begin_layout Standard
+Constituye la clase para la construcción y uso de un clasificador de mayoría
+ de una tabla de decisión simple 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kohavi1995a"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\size small
-Using a simple decision table majority classifier.
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 JRip
 \end_layout
 
+\begin_layout Standard
+Implementa el aprendizaje de reglas proposicionales Repeated Incremental
+ Pruning to Produce Error Reduction (RIPPER) o la poda incremental repetida
+ para producir reducción de errores, que fue propuesto por William W.
+ Cohen como una versión optimizada de IREP 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Cohen1995"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\size small
-Implements a propositional rule learner, Repeated Incremental Pruning to
- Produce Error Reduction (RIPPER).
+.
 \end_layout
 
+\begin_layout Subsubsection
+OneR
+\end_layout
+
+\begin_layout Standard
+Constituye la clase para construir y usar un clasificador 1R; en otras palabras,
+ utiliza el atributo de error mínimo para la predicción, discretizando los
+ atributos numéricos 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Holte1993"
+
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+.
+\end_layout
 
-\size small
+\begin_layout Subsubsection
 PART
 \end_layout
 
+\begin_layout Standard
+Utiliza dividir y conquistar.
+ Construye un árbol de decisión C4.5 parcial.
+ Constituye la clase para generar una lista de decisiones PART.
+ Crea un árbol de decisión C4.5 parcial en cada iteración y convierte la
+ "mejor" hoja en una regla 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frank1998a"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\size small
-PART decision list.
- Uses separate-and-conquer.
- Builds a partial C4.5 decision tree.
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 ZeroR
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Using a 0-R classifier.
+\begin_layout Standard
+Constituye la clase para construir y usar un clasificador 0-R.
+ Predice la media (para una clase numérica) o la moda (para una clase nominal).
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
+\begin_layout Subsection
+Trees
+\end_layout
 
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 DecisionStump
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Using a decision stump.
- Usually used in conjunction with a boosting algorithm.
+\begin_layout Standard
+Constituye la clase para construir y usar un tocón de decisión.
+ Generalmente se utiliza en conjunción con un algoritmo de boosting.
+ Realiza regresión (basada en el error cuadrático medio) o clasificación
+ (basada en la entropía).
 \end_layout
 
+\begin_layout Subsubsection
+HoeffdingTree
+\end_layout
+
+\begin_layout Standard
+"Un árbol Hoeffding (VFDT) es un algoritmo de inducción de árbol de decisión
+ incremental que es capaz de aprender de flujos de datos masivos, suponiendo
+ que la distribución de la generación de los ejemplos no cambian con el
+ tiempo.
+ Los árboles Hoeffding explotan el hecho de que una pequeña muestra puede
+ a menudo ser suficiente para elegir un atributo de división óptimo.
+ Esta idea está apoyada matemáticamente por el límite de Hoeffding, que
+ cuantifica el número de observaciones (en nuestro caso, ejemplos) necesarios
+ para estimar algunas estadísticas dentro de una precisión prescrita (en
+ nuestro caso, la bondad de un atributo).
+ Una característica teóricamente atractiva de Hoeffding Trees no compartida
+ por otros aprendizajes por árboles de decisión incremental es que tiene
+ garantías sólidas de rendimiento.
+ Utilizando el límite de Hoeffding se puede demostrar que su salida es asintótic
+amente casi idéntica a la de un aprendizaje no incremental usando infinidad
+ de ejemplos 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hulten2001"
+
 \end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+."
+\end_layout
 
-\size small
+\begin_layout Subsubsection
 J48
 \end_layout
 
+\begin_layout Standard
+Constituye la clase para generar un árbol de decisión C4.5 podado o no podado
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Quinlan1993"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\size small
-Pruned or unpruned C4.5 decision tree.
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 LMT
 \end_layout
 
+\begin_layout Standard
+Árboles de modelos logísticos o Logistic model trees (LMT).
+ Clasificador para la construcción de 'árboles de modelos logísticos', que
+ son árboles de clasificación con funciones de regresión logística en las
+ hojas.
+ El algoritmo puede manejar variables binarias y multiclases, atributos
+ numéricos y nominales y valores faltantes 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Landwehr2005"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Sumner2005"
 
-\size small
-Logistic model trees.
- Classification trees with logistic regression.
+\end_inset
+
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
+\begin_layout Subsubsection
 RandomForest
 \end_layout
 
+\begin_layout Standard
+Constituye la clase para construir un bosque de árboles aleatorios o Forest
+ of Random trees 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Breiman2001"
+
 \end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
-
-\size small
-Forest of random trees.
+.
 \end_layout
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
+\begin_layout Subsubsection
+RandomTree
+\end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
+Clase para construir un árbol que considera K atributos elegidos al azar
+ en cada nodo.
+ No realiza poda.
+ También tiene una opción que permite la estimación de probabilidades de
+ clase (o media objetivo en el caso de regresión) basado en un conjunto
+ de retención (backfitting).
+\end_layout
 
-\size small
+\begin_layout Subsubsection
 REPTree
 \end_layout
 
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size small
-Fast decision tree learner.
- Builds a decision/regression tree.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Standard
+Aprendizaje rápido con árboles de decisión.
+ Construye un árbol de decisión/regresión utilizando la información de ganancia/
+varianza y la elimina utilizando poda de reducción de errores (con backfitting-a
+juste posterior).
+ Sólo ordena valores para atributos numéricos.
+ Los valores faltantes se tratan dividiendo las instancias correspondientes
+ en fragmentos (es decir, como en C4.5).
 \end_layout
 
 \begin_layout Section

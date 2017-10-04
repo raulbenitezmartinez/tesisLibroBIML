@@ -1,0 +1,23 @@
+Ranking para mensual con cross:
+
+* Logistic (Functions - Con  bibliografia)
+* BayesNet (Bayes - Con  bibliografia)
+* IBk (Lazy - Con  bibliografia)
+
+* AdaBoostM1 (Meta - Con  bibliografia)
+* AttributeSelectedClassifier (Meta - Made in Weka)
+* Bagging (Meta - Con  bibliografia)
+* FilteredClassifier (Meta - Made in Weka)
+* IterativeClassifierOptimizer (Meta - Made in Weka)
+* DecisionTable (Rules - Con  bibliografia)
+* JRip (Rules - Con  bibliografia)
+* MultilayerPerceptron (Functions - Made in Weka)
+* SimpleLogistic (Functions - Con  bibliografia)
+* NaiveBayes (Bayes - Con  bibliografia)
+* RandomForest (Trees - Con  bibliografia)
+* KStar (Lazy - Con  bibliografia)
+
+15 Algoritmos
+11 Con bibliografia
+4 Made in Weka
+ 

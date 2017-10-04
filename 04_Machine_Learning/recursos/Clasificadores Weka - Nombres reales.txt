@@ -1,0 +1,53 @@
+1. Bayesianos
+
+BayesNet: Bayesian, Bayesian Network (BN). BN: K2 y B.
+NaiveBayes: Bayesian, Naive Bayes.
+NaiveBayesMultinomial: Bayesian, Naive Bayes multinomial.
+NaiveBayesMultinomialUpdateable: Bayesian, Naive Bayes multinomial updateable.
+NaiveBayesUpdateable: Bayesian, Naive Bayes updateable.
+
+2. Funciones
+Logistic: Regression. Logistic Regression.
+MultilayerPerceptron: Utiliza Back-Propagation (Neural Networks)
+SimpleLogistic: Regression. Logistic Regression.
+SMO:
+
+3. Lazy (Instance Based)
+IBk: Instance Based. K-Nearest Neighbour (kNN).
+KStar:
+LWL: Instance Based. Locally Weighted Learning.
+
+4. Meta (Ensemble)
+AdaBoostM1: Ensemble. AdaBoost.
+AttributeSelectedClassifier:
+Bagging: Ensemble. Bootstrapped Aggregation (Bagging).
+ClassificationViaRegression:
+CVParameterSelection:
+FilteredClassifier:
+IterativeClassifierOptimizer:
+LogitBoost:
+MultiClassClassifier:
+MultiClassClassifierUpdateable:
+MultiScheme:
+RandomCommittee:
+RandomizableFilteredClassifier:
+RandomSubSpace:
+Stacking:
+Vote:
+WeightedInstancesHandlerWrapper:
+
+5. Rules (Rule System)
+DecisionTable:
+JRip: Rule System. Repeated Incremental Pruning to Produce Error Reduction (RIPPER).
+OneR: Rule System. One Rule.
+PART: Contruye un arbol C4.5 (Decision Tree). Genera una lista de decisiones PART.
+ZeroR: Rule System. Zero Rule. 
+
+6. Trees (Decision Tree)
+DecisionStump: Decision Tree. Decision Stump.
+HoeffdingTree:
+J48: Decision Tree. C4.5
+LMT:
+RandomForest Trees: utiliza Random Forest (Ensemble).
+RandomTree:
+REPTree:
