@@ -184,6 +184,28 @@ filename "04_Machine_Learning/04_Machine_Learning.lyx"
 \end_layout
 
 \begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand input
+filename "05_Modelado_BI_ML/05_Modelado_BI_ML.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand input
+filename "06_Experimentacion/06_Experimentacion.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \use_default_options true
 \maintain_unincluded_children false
@@ -9,16 +11,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,15 +31,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
-\cite_engine natbib_authoryear
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -65,445 +76,1654 @@
 \begin_body
 
 \begin_layout Chapter
-Trabajos relacionados
+Modelado del problema
+\end_layout
+
+\begin_layout Section
+Planteamiento del problema
 \end_layout
 
 \begin_layout Standard
-Existen numerosos trabajos de investigación sobre protección de fallas de
- enlace 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "singhal2005shared,SINGHAL2003,singhal2003provisioning,khalil2005pre,zhang2004multicast"
-
-\end_inset
-
- y la poca ocasión de investigaciones para el problema de falla simple de
- nodo 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "luekijna2007multicast"
-
-\end_inset
-
-.
- Las fallas de enlaces han recibido mayor atención debido a que son más
- probables que las fallas de nodos.
- Sin embargo, la falla de un nodo simple puede ocasionar severas pérdidas
- de datos por lo que su estudio es un tema de gran importancia relativa.
- 
-\end_layout
-
-\begin_layout Standard
-La protección multicast ha sido atacado con enfoques basados en árboles
- disjuntos 
+Esta sección se centra en los tres primeros componentes de Business Intelligence
+ siguiendo el proceso de modelado dimensional
 \begin_inset CommandInset citation
 LatexCommand cite
-key "fei2001dual"
-
-\end_inset
-
-, enlaces directos disjuntos 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "SINGHAL2003"
-
-\end_inset
-
-, protección de segmentos 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "singhal2003provisioning"
-
-\end_inset
-
-, protección multicast en sistemas multifibrass 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "boworntummarat2004light"
-
-\end_inset
-
-, protección compartida de diferentes sesiones multicast 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "singhal2005shared"
-
-\end_inset
-
- y basado en sub-grafo 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhang2004multicast"
+key "KIM92"
 
 \end_inset
 
 .
- Recientemente se extendió el trabajo de 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhang2004multicast"
+ Uno de los principales problemas con los que se enfrentan las empresas
+ retail
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Una empresa retail es cualquier comercio que vende sus productos al consumidor
+ final, desde un supermercado a una tienda de barrio, desde un negocio de
+ electrodomésticos a una franquicia textil, ya sea con cientos de puntos
+ de venta o con un solo establecimiento.
+\end_layout
 
 \end_inset
 
-en un enfoque multi-objetivo 
+, trata acerca de pronosticar la demanda, es decir, determinar la cantidad
+ de productos que se deben disponer para satisfacer la demanda de los clientes
+ para el siguiente periodo.
+ Utilizando los conceptos y herramientas de Business Intelligence, se parte
+ con el análisis de una fuente de información auténtica obtenida de una
+ empresa retail; se diseña el datawarehouse que será poblado con información
+ de las transacciones operacionales diarias del negocio; posteriormente
+ se definen los indicadores claves de rendimiento como métricas, se calculan
+ los valores de los indicadores con los datos históricos almacenados en
+ el datawarehuose para cada periodo de tiempo establecido y se asigna una
+ etiqueta a cada tupla de valores KPI que finalmente servirán como parámetros
+ de entrada de las herramientas de aprendizaje automático para diseñar una
+ solución que pronostique la demanda.
+\end_layout
+
+\begin_layout Subsection
+Fuente de Información
+\end_layout
+
+\begin_layout Standard
+Para el presente trabajo, se cuenta con una base de datos relacional Oracle
+ 10g con las operaciones transaccionales de una empresa retail dedicada
+ a la venta de productos alimenticios y artículos de limpieza, algunas de
+ las líneas de productos con que cuenta la empresa son: aceites corporales,
+ acondicionadores, aromatizantes, cuidado corporal, desodorantes, limpiadores,
+ salud e higiene, salud y belleza, aguas, gaseosas, cervezas, vinos, chocolates,
+ galletitas, enlatados, lácteos, yerbas y varias líneas de productos más.
+ La base de datos almacena datos de la operaciones comprendidas en el periodo
+ de noviembre del 2013 a octubre de 2016.
+ A continuación una reseña de las principales tablas tenidas en cuenta para
+ el diseño del datawarehouse.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de Productos
+\series default
+: almacena información como descripción, costo, precio de venta, categoría
+ de los artículos disponibles para la venta, cuenta con 13.200 artículos
+ registrados.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla Proveedores
+\series default
+: almacena información como descripción, dirección, ruc de los proveedores
+ de la empresa, cuenta con 1.623 proveedores registrados.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de Ventas Cabecera
+\series default
+: es una de las tablas principales donde se registran los movimientos de
+ ventas de la empresa.
+ Contiene información como número de factura, fecha, cliente, montos totales,
+ cuenta con 301.316 registros de ventas
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de Ventas Detalle
+\series default
+: contiene los registros de los productos que fueron comercializados, cada
+ detalle está relacionado a un registro de venta cabecera.
+ Contiene datos de la fecha, el producto, precio de costo, precio de venta,
+ cantidad y otros datos, cuenta con 981.402 registros.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de Movimientos de Stock:
+\series default
+ contiene los registros de movimientos de stock de ventas y compras detallado.
+ Contiene datos de fecha, producto, cantidad, tipo de movimiento, costo,
+ cuenta con 1.062.440 registros.
+\end_layout
+
+\begin_layout Subsection
+Proceso ETL.
+\end_layout
+
+\begin_layout Standard
+Durante el proceso ETL se realizó la limpieza y transformación de los datos
+ de origen, en la tabla de Productos se detectaron artículos con datos de
+ proveedor nulo al cual se asignó un proveedor por defecto de la tabla dimension
+al de proveedores, artículos que tenían costo cero, en tal caso dichos valores
+ eran asignados con un costo promedio tomados de la tabla de Ventas Detalle
+ en caso de ocurrencia, de igual manera en la tabla de Ventas Detalle se
+ detectaron registros donde los valores de costo eran iguales a cero, los
+ cuales eran modificados por el costo promedio del producto.
+\end_layout
+
+\begin_layout Subsection
+Datawarehouse
+\end_layout
+
+\begin_layout Standard
+El datawarehouse se diseña a partir de la definición de las tablas de hechos
+ y dimensiones utilizando el modelo de esquema en estrella 
 \begin_inset CommandInset citation
-LatexCommand citep
-key "pinto2010multicast"
+LatexCommand cite
+key "KIM92"
 
 \end_inset
 
 .
- Estos enfoques consideran protección contra fallas de enlaces.
+\end_layout
+
+\begin_layout Subsection*
+Tablas de hechos
+\end_layout
+
+\begin_layout Standard
+De las tablas transaccionales definimos 3 tablas de hechos que nos servirá
+ para definir los KPI que utilizaremos para el análisis.
  
 \end_layout
 
-\begin_layout Section
-Protección Multicast Contra Falla Simple de Enlace
-\end_layout
-
-\begin_layout Standard
-La supervivencia en una red depende en gran medida del soporte y diseño
- eficiente para dar continuidad a los servicios.
- En ese sentido, la falla de un enlace en una red óptica ocasiona una drástica
- perdida de los datos que pasan a través del tráfico.
- Las fallas en los enlaces ocurren de manera muy frecuente en las redes
- ópticas y los motivos más comunes son: cortes de la fibra por excavaciones
- y robos de cables.
- Un dato importante sobre cortes de fibra óptica fue sacado de 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "to1994unavailability"
-
-\end_inset
-
- y nos indica que los cortes ocurren de la siguiente forma: 4,39 cortes/año/1000
- kilómetros.
-\end_layout
-
-\begin_layout Standard
-Algunos trabajos de investigación en el área de falla simple de enlace son:
-\end_layout
-
-\begin_layout Enumerate
-Protecting Multicast Sessions in WDM Optical Mesh Networks 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "singhal2003protecting"
-
-\end_inset
-
-: En este trabajo se propuso diseñar los árboles primarios y de resguardos
- con protección contra falla simple de enlace.
- Los objetivos fueron minimizar el costo total de todas las sesiones multicast
- y costo total de la red.
- Con las restricciones de número total de divisores y longitudes de onda
- por enlace.
- Se propusieron formulaciones matemáticas para el enrutamiento eficiente
- y asignación de longitud de onda de varias sesiones de multidifusión para
- redes opacas.
- En este trabajo se propuso diseñar los árboles primarios y de resguardos
- con protección contra falla simple de enlace.
- Los objetivos fueron minimizar el costo total de todas las sesiones multicast
- y costo total de la red.
- Con las restricciones de número total de divisores y longitudes de onda
- por enlace.
- Se propusieron formulaciones matemáticas para el enrutamiento eficiente
- y asignación de longitud de onda de varias sesiones de multidifusión para
- redes opacas.
-\end_layout
-
-\begin_layout Enumerate
-
-\emph on
-Light-Tree Based Protection Strategies for Multicast Traffic in Transport
- WDM Mesh Networks with Multi-Fiber Systems
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "boworntummarat2004light"
-
-\end_inset
-
-: El trabajo consistio en tratar fallas en redes multicast WDM en un entorno
- de red multifibra y se concrentra en falla simple de enlace.
- Los enfoques de protección propuestos fueron: a) Light-Tree reconfiguration
- Protection Strategy (LR), b) Light-Tree-Interrupted reconfiguration Protection
- Strategy (LIR), c) Optical Branch Protection Strategy (OB) y d) Optical-Branch-
-Fixed Protection Strategy (OBF).
- Las estrategias fueron desarrolladas en formulaciones matemática utilizando
- ILP.
- El objetivo del trabajo fue evaluar el desempeño de sistemas de protección
- presentados de multidifusión con la métrica del número total de fibras
- y número de longitudes de onda por fibra.
-\end_layout
-
-\begin_layout Enumerate
-
-\emph on
-Multicast Automatic Protection Switching in Arbitrary Redundant Graphs 
-\emph default
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "gallager1998multicast"
-
-\end_inset
-
-: Básicamente, se propuso un algoritmo para recuperar la red con nodos APS
- (Automatic Protection Switching).
- En el mismo se protege el árbol de luz primario con falla simple de enlace:
- Cuando ocurre un fallo simple de enlace se cuenta con un árbol de resguardo,
- creado con los grafos con nodos redundantes seleccionados por el algoritmo
- propuesto y con eso se logra la supervivencia en la red óptica.
-\end_layout
-
-\begin_layout Enumerate
-
-\emph on
-Provisioning of survivable multicasts sessions against single link failures
- in Optical WDM Mesh Networks
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "singhal2003provisioning"
-
-\end_inset
-
-: Los objetivos del trabajo fueron minimizar el costo total del establecimiento
- de rutas y la protección de las sesiones de multidifusión.
- En el trabajo se propusieron dos esquemas de protección : 1) protección
- de los segmentos de árbol primario y 2) la protección de cada camino desde
- la fuente hasta el nodos destino ( protecting segments of primary tree
- y protecting each path from the source to the destination nodes).
-\end_layout
-
-\begin_layout Enumerate
-
-\emph on
-Survivable WDM Mesh Networks 
-\emph default
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "ramamurthy2003survivable"
-
-\end_inset
-
-: El objetivo de este trabajo es minimizar el número de longitud de onda
- por enlase (para el camino primario y secundario).
- Se han propuesto tres enfoques, protección dedicada de path, protección
- compartida de path, protección compartida de enlace.
-\end_layout
-
-\begin_layout Standard
-En general, existen números trabajos de investigación que tratan el problema
- de falla simple de enlace, ya sean en ambientes multi-objetivos como en
- ambientes no escalables.
- En ese sentido, en el presente trabajo nos centramos en la fallas de nodo
- ya que uno de los motivos de la elección de dicha área es su poca investigación
- y la importancia de su estudio.
-\end_layout
-
-\begin_layout Section
-Protección Multicast Contra Falla Simple de Nodo
-\end_layout
-
-\begin_layout Standard
-Luekijna y Saivichit en 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "luekijna2007multicast"
-
-\end_inset
-
- han planteado el problema de la protección multicast contra falla simple
- de nodo.
- En dicho trabajo se propone tres enfoques de protección:
-\end_layout
-
 \begin_layout Itemize
-Re-configuración de toda la red (ET): Reconfigurar todas las sesiones de
- la red cuando ocurre un fallo en cualquier nodo incluido en una sesión.
-\end_layout
 
-\begin_layout Itemize
-Re-configuración del tráfico que pasa a través del nodo que ha fallado (GT)
- : Reconfigurar solo aquellas sesiones que pasan a través del nodo fallido.
-\end_layout
-
-\begin_layout Itemize
-Re-configuración del tráfico adyacente al nodo que ha fallado (AD): Además
- de reconfigurar todas las sesiones que pasan a través del nodo fallido,
- se deben reconfigurar las sesiones adyacentes al nodo fallido.
-\end_layout
-
-\begin_layout Standard
-En el trabajo de Luekijna y Saivichit 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "luekijna2007multicast"
-
-\end_inset
-
- se trató el problema MRWA en dos escenarios: con capacidad de conversión
- y sin capacidad de conversión en redes WDM multifibras.
- En el primer caso los árboles son denominados árboles de luz virtuales
- (Virtual Light Tree - VLT).
- En el segundo caso los árboles son denominados simplemente árboles de luz
- (Light Tree - LT).
- El en trabajo se propone la formulación para el problema MRWA que soporte
- tráfico multicast sujeta a falla simple de nodo con el fin de minimizar
- el número de fibras ópticas utilizadas para la soportar el tráfico multicast
- de la red.
- Para los caminos primarios y de respaldo se utilizaron un enfoque de árboles
- disjuntos para garantizar que la falla de un nodo no afecte a la ruta primaria
- y la de respaldo al mismo tiempo.
- El nodo origen o un destino falla no se pueden recuperar.
- El requisito de utilizar nodos disjuntos es para asegurar que los caminos
- primarios y de respaldo no utilicen un mismo enlace, por lo tanto, también
- puede proteger contra un fallo de enlace.
- Para la solución del problema han propuesto una formulación matemática
- y la misma han sido implementada mediante la Programación Lineal Entera
- (ILP).
- Han presentado las formulaciones del diseño de la red de trabajo donde
- se define el problema MRWA.
- Formulación del diseño de protección de red: Se presenta estrategias multicast
- para proteger la sesión de multidifusión contra falla simple de nodo en
- una red WDM.
- Los experimentos realizados han indicado que en el enfoque ET todas las
- sesiones multicast son liberadas y restablecidas usando el menor número
- de fibras óptica que en los enfoques GT y AD.
- Por su parte el método AD, distribuye el tráfico fuera del nodo fallado,
- esto implica que re-configura más sesiones que GT, por esta razón AD requiere
- más fibras óptica que el método GT.
-\end_layout
-
-\begin_layout Section
-ILP Vs Enfoques Heurísticos
-\end_layout
-
-\begin_layout Standard
-Una cuestión fundamental es que los enfoques basados en modelos de Programación
- Lineal no son escalables cuando el número de variables aumenta 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "singhal2001architectures"
-
-\end_inset
-
-.
- En ese sentido, los problemas RWA y MRWA han sido tratados con enfoques
- basados en meta-heurísticas mono y multi-objetivas inspiradas en las Colonia
- de Hormigas 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "arteta2007routing,arevalos2009MRWA"
-
-\end_inset
-
- y los Algoritmos Evolutivos 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "qin2002routing,rubio-largo2012comparative"
-
-\end_inset
-
-.
- Sin embargo, ninguno de los enfoques heurísticos ha considerado la protección
- contra falla de nodo.
- En ese sentido, el desarrollo de técnicas heurísticas para tratar el problema
- en cuestión considerando redes de gran envergadura contra falla simple
- de nodo queda plenamente justificado y es un tema central en el presente
- trabajo.
-\end_layout
-
-\begin_layout Section
-Consideraciones Generales 
-\end_layout
-
-\begin_layout Standard
-Considerando los antecedentes del estado del arte, este trabajo propone
- tratar el problema diseño de red óptica y su protección contra falla simple
- de nodo considerando un enfoque de optimización multi-objetivo dado que
- en 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "luekijna2007multicast"
-
-\end_inset
-
- se ha reportado funciones objetivos contradictorias.
- Básicamente, se propone un enfoque basado en Optimización por Colonia de
- Hormigas Multi-Objetivas (
-\emph on
-Multi-objective Ant Colony Optimization
-\emph default
- - MOACO) 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "arevalos2009MRWA"
-
-\end_inset
-
- en la que se busca minimizar simultáneamente el costo de la red óptica
- y la calidad de servicio para múltiples solicitudes multicast estáticas.
- El costo de la red óptica está basado en los costos de equipamiento de
- enlaces y nodos ópticos.
- En los enlaces se considera el número de fibras ópticas y amplificadores
- mientras que en los nodos se considera el número dispositivos como divisores,
- multiplexores WDM, demultiplexores WDM, puertos WDM y puertos en los OXC.
- En este trabajo se considera una arquitectura de red óptica sin capacidad
- de conversión, tráfico no 
-\emph on
-grooming 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "zhu2002traffic"
-
-\end_inset
-
-
-\emph default
-, y divisores con número de divisiones.
- En ese contexto, la solución se encuentra sujeta a restricciones de capa
- óptica como son la restricción de continuidad y asignación de longitud
- de onda, de número de divisiones y potencia mínima de señal en los enlaces.
- Por otra parte, la calidad de servicio está dada por el retardo máximo
- entre fuente y destino.
- Note que, en el problema considerado son simultáneamente tratados el problema
- de:
-\end_layout
-
-\begin_layout Itemize
-Enrutamiento multicast.
-\end_layout
-
-\begin_layout Itemize
-El problema de asignación de longitudes de onda.
-\end_layout
-
-\begin_layout Itemize
-El problema de la ubicación de fibras ópticas.
-\end_layout
-
-\begin_layout Itemize
-El problema de ubicación de divisores ópticos.
-\end_layout
-
-\begin_layout Itemize
-El problema de ubicación de amplificadores ópticos.
-\end_layout
-
-\begin_layout Itemize
-El problema de protección multicast para falla simple de nodo.
+\series bold
+Tabla de hechos Cabecera:
+\series default
+ almacena los datos históricos de las ventas, cada registro guarda datos
+ de: fecha, cliente, caja, número de factura y montos totales.
+ Las métricas de la tabla de hechos son monto total, monto exento, monto
+ gravado IVA.
  
 \end_layout
 
+\begin_layout Itemize
+
+\series bold
+Tabla de hechos Detalles:
+\series default
+ almacena los datos históricos del detalle, cada registro guarda información
+ del número de comprobante, fecha, proveedor, cliente, cantidad y precio.
+ Las métricas asociadas a la tabla de hechos son, cantidad, precio unitario,
+ precio unitario neto, impuesto, costo y el importe total.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de hechos Stock:
+\series default
+ almacena los datos históricos de cada movimiento de compra y de venta.
+ Las métricas utilizadas para la tabla de hechos son: cantidad, precio unitario
+ y costo unitario.
+\end_layout
+
+\begin_layout Subsection*
+Dimensiones
+\end_layout
+
 \begin_layout Standard
-En el mejor de nuestro conocimiento el enfoque dado en este trabajo no ha
- sido propuesto aún en la literatura.
+Las tablas de dimensiones diseñadas para el modelado del datawarehouse son:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Fecha:
+\series default
+ La tabla de dimensión fecha está ligada a todas las tablas de hechos, sirve
+ para limitar o agrupar los datos de las tablas de hechos al momento de
+ realizar consultas sobre estas en el tiempo.
+ Con la dimensión fecha se pueden establecer niveles jerárquicos en días,
+ semanas, meses, trimestres, semestres y años.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Productos:
+\series default
+ La tabla de dimensión producto está relacionada a las tablas de hechos
+ Detalles y Stock, contiene los atributos o campos por la cual se pueden
+ filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Proveedores:
+\series default
+ La tabla de dimensión proveedores está relacionada a la tabla de hechos
+ Detalles, contiene los atributos o campos por la cual se puede filtrar
+ o agrupar datos al realizar consultas sobre la tabla de hechos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Clientes:
+\series default
+ La tabla de dimensión Clientes está relacionada a las tablas de hechos
+ Cabecera y Detalles, contiene los atributos o campos por la cual se pueden
+ filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dimensión Cajas:
+\series default
+ La tabla de dimensión Cajas está relacionada a la tabla de hechos Cabecera,
+ contiene los atributos o campos por la cual se pueden filtrar o agrupar
+ datos al realizar consultas sobre la tabla de hechos.
+\end_layout
+
+\begin_layout Standard
+En la siguiente figura observamos un ejemplo del modelo en esquema estrella
+ de la tabla de hechos Detalles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../03_Business_Intelligence/figuras/DER_BI_DW_FACT_DETALLES.png
+	scale 35
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Tabla de hechos Detalles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Definición de los KPI
+\end_layout
+
+\begin_layout Standard
+En el marco de esta tesis, en esta sección se definirán los KPI que se utilizará
+n como datos de entrada en las herramientas de aprendizaje automático para
+ el modelado de una solución para pronosticar la demanda y como consecuencia
+ la reposición de stock del siguiente periodo de tiempo
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMR13"
+
+\end_inset
+
+ (Ej.: cantidad a comprar para satisfacer la demanda de la siguiente semana,
+ quincena, o mes), estos KPI fueron adaptados a la solución planteada debido
+ a que en los textos los KPI definidos engloban a todas las áreas de la
+ organización como compras, ventas, marketing, recursos humanos.
+ Cada KPI mide un valor obtenido de los datos históricos almacenados en
+ el datawarehouse.
+ El cálculo de cada valor se realiza para cada producto y en un periodo
+ de tiempo (semanal, quincenal o mensual), es decir, cada producto tendrá
+ un valor distinto para cada uno de los KPI citados a continuación.
+\end_layout
+
+\begin_layout Paragraph
+Ticket Medio.
+\end_layout
+
+\begin_layout Standard
+Es la cantidad media por cada transacción de compra que se realiza de un
+ determinado producto.
+ El indicador viene determinado por dos variables: La cantidad total vendida
+ del producto y el total de tickets en las que fue vendido el producto.
+ Aplicando la siguiente fórmula obtenemos el valor de la cantidad media
+ de venta para cada producto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\frac{\sum\left(Cantidad\right)}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Cifra de Ventas
+\end_layout
+
+\begin_layout Standard
+La cifra de ventas es un KPI que sirve para explicar el importe total de
+ ventas que se ha obtenido para un producto.
+ Se obtiene de la siguiente fórmula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\sum\left(Precio*Cantidad\right)\label{eq: Cifra de Ventas}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Margen Comercial
+\end_layout
+
+\begin_layout Standard
+Es la razón entre el precio de venta y precio de costo del producto, es
+ un indicador que permite conocer el porcentaje de rentabilidad del producto.
+ Se obtiene de la siguiente fórmula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\frac{\sum\left(\left(Precio-Costo\right)*Cantidad\right)}{\sum\left(Precio*Cantidad\right)}*100\label{eq:Margen Comercial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Rotación de Stock
+\end_layout
+
+\begin_layout Standard
+Este indicador mide la cantidad de veces que el stock del producto se renueva
+ durante un determinado ciclo comercial, es decir, la cantidad de veces
+ que se recupera la inversión.
+ Se obtiene de la siguiente fórmula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\frac{\sum\left(Total\,Ventas\,Periodo\right)}{\left(\frac{Stock\,Inicial\,-Stock\,Final}{2}\right)}\label{eq:Rotación Stock}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Coeficiente de Rentabilidad
+\end_layout
+
+\begin_layout Standard
+El indicador mide la rentabilidad obtenida por la empresa basada en el margen
+ y la rotación, el objetivo de toda empresa retail es aumentar los niveles
+ de rotación.
+ El coeficiente se obtiene de la siguiente fórmula.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X=\left(\sum\left(Precio-Costo\right)*Cantidad\right)*Rotacion\,Stock\label{eq:Coeficiente Rentabilidad}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Cobertura de Stock
+\end_layout
+
+\begin_layout Standard
+Este indicador muestra el periodo de tiempo (habitualmente se expresa en
+ días o semanas) que el negocio puede continuar vendiendo con el stock de
+ que dispone en el momento, sin incorporar nuevas cantidades de ese producto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X\,=\frac{Stock\,Actual}{Promedio\,Cantidad\,Venta\,Ultimos\,3\,Periodos}\label{eq:Cobertura Stock}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cálculo de valores para los Indicadores Clave de Desempeño.
+\end_layout
+
+\begin_layout Standard
+Definidos los KPI a ser utilizados, obtenemos los valores de cada KPI para
+ cada producto y periodo de los datos almacenados en el datawarehouse, para
+ ello codificamos a sentencias SQL las fórmulas detalladas en la sección
+ anterior y almacenamos la información de los resultados en la base de datos.
+ Además de los valores de los KPI, en cada registro adicionalmente se guarda
+ la información de la cantidad, fecha, año, mes, quincena y semana.
+ Para el cálculo de los valores de los KPI se establecieron restricciones,
+ que si un producto no fuese vendido por una cantidad consecutiva de periodos
+ esta era descartada, ya que los valores de los cálculos para cada KPI daban
+ cero el cual no tiene relevancia para el modelado.
+\end_layout
+
+\begin_layout Standard
+Agrupamos el conjunto de los valores de los KPI de cada producto en 3 periodos
+ de tiempo: semanal, quincenal y mensual.
+\end_layout
+
+\begin_layout Subsection
+Asignación de etiquetas
+\end_layout
+
+\begin_layout Standard
+A cada tupla de valores KPI obtenidos para cada producto se le debe asignar
+ una etiqueta, el cual es uno de los puntos focales más importantes para
+ el modelado mediante el aprendizaje automático.
+ Para una mayor fiabilidad esta asignación de etiquetas debe ser realizada
+ y revisada por el experto del área de compras (que podría ser el gerente
+ de administración de compras u otra persona a cargo de la reposición de
+ stock), sin embargo para el presente trabajo el etiquetado fue realizado
+ en forma empírica, sin la intervención de un experto por la dificultad
+ de contar con una persona especializada en el área.
+ La estrategia utilizada para el etiquetado es de la siguiente manera:
+\end_layout
+
+\begin_layout Standard
+Para cada KPI se definen un rango de valores y se asigna una letra (a, b,
+ c ,d, e, f, g, h, i, ..., u) de acuerdo al valor obtenido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI TICKET MEDIO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(=) igual a 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 0 y < (menor) a 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 1 y <= (menor o igual) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+d
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-1"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI CIFRA VENTAS (%)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 0 y <= (menor o igual) a 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+e
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 20 y <= (menor o igual) a 50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+f
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 50 y <= (menor o igual) a 80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+g
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 80 y <= (menor o igual) a 100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+h
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-2"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI MARGEN COMERCIAL (%)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 0 y <= (menor o igual) a 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 20 y <= (menor o igual) a 50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+j
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 50 y <= (menor o igual) a 80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+k
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 80 y <= (menor o igual) a 100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+l
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-3"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI ROTACIÓN STOCK
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(=) igual a 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+m
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 0 y < (menor) a 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+n
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 1 y <= (menor o igual) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+o
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-4"
+
+\end_inset
+
+
+\series bold
+\lang english
+RANGO KPI COBERTURA STOCK
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(=) igual a 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+q
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 0 y < (menor) a 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+r
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= (mayor o igual) a 1 y <= (menor o igual) a 3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+s
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 3 y <= (menor o igual) a 10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+t
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> (mayor) a 10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+u
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez asignado las letras 
+\begin_inset Quotes eld
+\end_inset
+
+a
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+b
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+c
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+d
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+e
+\begin_inset Quotes erd
+\end_inset
+
+ hasta 
+\begin_inset Quotes eld
+\end_inset
+
+u
+\begin_inset Quotes erd
+\end_inset
+
+ se busca la combinación de letras correspondientes en la tabla de etiquetado
+ realizado por el experto y se asigna el valor de la etiqueta correspondiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:un cuadro flotante-4-1"
+
+\end_inset
+
+
+\series bold
+\lang english
+TABLA DE ETIQUETADO POR EL EXPERTO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeimq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejnq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejoq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeimr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejnr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejpq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Medio
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeims
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejns
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+beknq
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeimt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejnt
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+beknr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Poco
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+aeimu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bejnu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+bekns
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nada
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez finalizado el etiquetado de la totalidad de las tuplas de KPI por
+ cada producto y periodo, lo resultados son exportados a archivos con extensión
+ csv, para cada producto se crea 3 archivos, uno por cada periodo (semanal,
+ quincenal, mensual) que tiene como nombre el Identificador del producto
+ y que contiene los valores de los resultados para los KPI.
+ Estos archivos son los datos que sirven como entrada para crear el modelo
+ de pronóstico para la reposición de stock mediante algoritmos de aprendizaje
+ automático.
+\end_layout
+
+\begin_layout Standard
+En la figura a continuación un ejemplo del etiquetado para los valores de
+ los KPI correspondientes al periodo semanal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../03_Business_Intelligence/figuras/5_semanal.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang english
+Etiquetado de KPI del periodo semanal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Resumen de la sección
+\end_layout
+
+\begin_layout Standard
+Hemos visto como los componentes de Business Intelligence ayudaron a obtener
+ el conjunto de valores para los KPI a partir de los datos históricos almacenado
+s en el dataware y el etiquetado a cada tupla de valores KPI, estos datos
+ serán utilizados como un conjunto de entrenamiento por los algoritmos de
+ aprendizaje automático del cual se obtendrá un modelo de solución al problema
+ de estudio planteado de pronóstico de la demanda.
 \end_layout
 
 \end_body

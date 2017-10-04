@@ -1,0 +1,664 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Modelado del problema
+\end_layout
+
+\begin_layout Section
+Experimentación
+\end_layout
+
+\begin_layout Standard
+Se describirá cómo es la implementación del proceso de aprendizaje automático
+ para este caso de estudio.
+ Se mostrará primeramente cómo está constituida la salida del proceso de
+ Business Intelligence, que en esencia proveen las instancias necesarias
+ para la entrada del proceso de aprendizaje automático.
+ También se verá qué clasificadores fueron utilizados, cómo se realizó el
+ proceso de entrenamiento y de evaluación, y cuáles son las métricas de
+ evaluación consideradas para medir el rendimiento de los clasificadores.
+\end_layout
+
+\begin_layout Standard
+Para resumir la técnica propuesta, en la siguiente figura se ilustra el
+ mapa mental general.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
+	scale 35
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa mental general 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Datos proveídos por Business Intelligence
+\end_layout
+
+\begin_layout Standard
+La salida de Business Intelligence provee tres conjuntos de datos independientes
+ que se corresponden con los períodos de análisis: Mensuales, Quincenales
+ y Semanales.
+\end_layout
+
+\begin_layout Itemize
+Períodos Mensuales: Se analizaron 309 productos diferentes y por cada producto
+ se tiene un máximo de 34 instancias.
+ Cada instancia tiene los siguientes atributos: Ticket Medio, Cifra de Ventas,
+ Margen Comercial, Rotación de Stock, Coeficiente de Rentabilidad, Cobertura
+ de Stock, Cantidad, Año, Mes.
+ La clase de cada instancia está definido por 
+\begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Períodos Quincenales: Se analizaron 228 productos diferentes y por cada
+ producto se tiene un máximo de 68 instancias.
+ Cada instancia tiene los siguientes atributos: Ticket Medio, Cifra de Ventas,
+ Margen Comercial, Rotación de Stock, Coeficiente de Rentabilidad, Cobertura
+ de Stock, Cantidad, Año, Quincena.
+ La clase de cada instancia está definido por 
+\begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Períodos Semanales: Se analizaron 127 productos diferentes y por cada producto
+ se tiene un máximo de 151 instancias.
+ Cada instancia tiene los siguientes atributos: Ticket Medio, Cifra de Ventas,
+ Margen Comercial, Rotación de Stock, Coeficiente de Rentabilidad, Cobertura
+ de Stock, Cantidad, Año, Semana.
+ La clase de cada instancia está definido por 
+\begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Esquema general de procesamiento
+\end_layout
+
+\begin_layout Standard
+Se implementa el siguiente esquema de procesamiento con el dataset:
+\end_layout
+
+\begin_layout Itemize
+Instancias de Períodos Mensuales: Por cada producto, se realiza el entrenamiento
+ y testeo de sus instancias con todos los algoritmos de clasificación posibles,
+ luego se analizan las métricas de desempeño arrojadas por cada algoritmo
+ y finalmente se elige el mejor clasificador que será utilizado para la
+ predicción de la demanda en períodos mensuales futuros.
+\end_layout
+
+\begin_layout Itemize
+Instancias de Períodos Quincenales: Por cada producto, se realiza el entrenamien
+to y testeo de sus instancias con todos los algoritmos de clasificación
+ posibles, luego se analizan las métricas de desempeño arrojadas por cada
+ algoritmo y finalmente se elige el mejor clasificador que será utilizado
+ para la predicción de la demanda en períodos quincenales futuros.
+\end_layout
+
+\begin_layout Itemize
+Instancias de Períodos Semanales: Por cada producto, se realiza el entrenamiento
+ y testeo de sus instancias con todos los algoritmos de clasificación posibles,
+ luego se analizan las métricas de desempeño arrojadas por cada algoritmo
+ y finalmente se elige el mejor clasificador que será utilizado para la
+ predicción de la demanda en períodos semanales futuros.
+\end_layout
+
+\begin_layout Subsection
+Entrenamiento y evaluación
+\end_layout
+
+\begin_layout Standard
+Como se mencionó en el esquema general de procesamiento, el entrenamiento
+ y testeo se realiza con todos los algoritmos de clasificación posibles,
+ para ello se utiliza la herramienta WEKA y los algoritmos de clasificación
+ que implementa según la tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:algoritmosWekaVsReales"
+
+\end_inset
+
+.
+ Otra forma de categorizar los clasificadores incluidos en WEKA es como
+ sigue:
+\end_layout
+
+\begin_layout Itemize
+Bayesianos: BayesNet, NaiveBayes, NaiveBayesUpdateable.
+\end_layout
+
+\begin_layout Itemize
+Basados en funciones: Logistic, MultilayerPerceptron, SimpleLogistic, SMO.
+\end_layout
+
+\begin_layout Itemize
+Basados en reglas: OneR, DecisionTable, JRip, PART, ZeroR.
+\end_layout
+
+\begin_layout Itemize
+Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
+\end_layout
+
+\begin_layout Standard
+En el siguiente pseudocódigo se presenta la estrategia de aprendizaje y
+ selección de los clasificadores.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size tiny
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada período de análisis {mensual,quincenal,semanal}:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada producto con sus instancias:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+establecer conjunto de entrenamiento;
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+establecer conjunto de testeo;
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada algoritmo de clasificación:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+construir clasificador (conjunto de entrenamiento);
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+evaluar clasificador (conjunto de testeo);
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+obtener métricas de evaluación;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+criterios de línea de base (ZeroR, criterios del experto u otro);
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+seleccionar mejor clasificador (max(Kappa));
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+guardar clasificador;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\begin_layout Plain Layout
+
+\size tiny
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pseudocódigo para el proceso de clasificación.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La evaluación se hace por el método Stratified k-fold Cross Validation para
+ un valor de k igual a 10 y las métricas de desempeño consideradas son el
+ 
+\shape italic
+Porcentaje de Aciertos
+\shape default
+ y la 
+\shape italic
+Estadística Kappa
+\shape default
+.
+ El criterio de línea de base utilizado fue el clasificador ZeroR, el cual
+ es uno de los criterios de línea de base más representativos para problemas
+ de clasificación.
+ Se considera que también puede resultar conveniente que el experto en compras
+ establezca su propio criterio de línea de base, como puede ser un umbral
+ mínimo de porcentaje de aciertos aceptado.
+\end_layout
+
+\begin_layout Standard
+Por cada producto y período de análisis se elige como clasificador aquel
+ que haya alcanzado el mayor valor de 
+\shape italic
+Kappa
+\shape default
+.
+ En la siguiente figura se muestra como quedó la distribución de clasificadores
+ para períodos mensuales.
+ Por ejemplo, el clasificador 
+\shape italic
+Logistic
+\shape default
+ resultó una mejor solución para 149 productos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/cross_kappa_mensual.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conteo de clasificadores para período mensual.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede observar en la siguiente gráfica de barras que la técnica propuesta
+ alcanza altos porcentajes de aciertos en promedio, tanto para periodos
+ mensuales, quincenales como semanales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/aciertos_cross.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Promedio de porcentaje de aciertos para los tres períodos de análisis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se trata de una prueba exhaustiva, por cada producto se intenta con
+ todos los algoritmos de clasificación posible y se evalúa con el método
+ Stratified 10-fold Cross Validation.
+ Estas métricas de desempeño preliminares dan indicio de que la técnica
+ propuesta en este trabajo puede alcanzar altos grados de confiabilidad.
+ Obtener buenos resultados depende en gran medida de que los valores de
+ 
+\shape italic
+KPI
+\shape default
+ hayan sido obtenidos correctamente y también que el etiquetado haya sido
+ realizado por un experto en compras.
+\end_layout
+
+\begin_layout Subsection
+Cómo hacer las predicciones
+\end_layout
+
+\begin_layout Standard
+En el siguiente pseudocódigo se muestra el mecanismo para obtener el pronóstico
+ de la demanda en un ambiente de producción.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size tiny
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada próximo período a pronosticar {mensual,quincenal,semanal}:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada producto:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+obtener KPIs del período actual finalizado;
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+ejecutar su mejor clasificador (KPIs);
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+obtener etiqueta {nada,poco,medio,mucho}
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+extrapolar a valores continuos(criterio experto);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\begin_layout Plain Layout
+
+\size tiny
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pseudocódigo para el proceso de pronóstico de la demanda.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como se mencionó anteriormente, el modelo propuesto arroja como resultado
+ un valor discreto 
+\begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
+\end_inset
+
+.
+ Luego en función de la etiqueta resultante, del tipo de producto y del
+ período seleccionado, el experto extrapola a un valor continuo que representa
+ la cantidad en la orden de compra.
+ El significado de las etiquetas varía 
+\end_layout
+
+\begin_layout Section
+Discusión
+\end_layout
+
+\begin_layout Subsection
+Impacto del período de análisis
+\end_layout
+
+\begin_layout Standard
+Una de las decisiones que se debe tomar es acerca del tiempo asignado al
+ período de análisis.
+ En este trabajo se analizaron tres períodos distintos: mensuales, quincenales
+ y semanales con propósitos experimentales y por ser los más comunes en
+ el ámbito comercial.
+ En la práctica, la elección del período es una decisión estratégica a nivel
+ gerencial que depende en gran medida del sector y tamaño de la empresa,
+ tipos de productos, etc.
+\end_layout
+
+\begin_layout Standard
+En el presente trabajo, por tratarse de períodos de tiempo muy cercanos
+ (1, 2 y 4 semanas) no se observan diferencias significativas en el porcentaje
+ de aciertos.
+ Otro factor a tener en cuenta es que para períodos de tiempo muy extensos
+ (6, 12 meses) existe mayor incertidumbre en el pronóstico.
+\end_layout
+
+\begin_layout Subsection
+Impacto del etiquetado
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La técnica propuesta se trata de un sistema parametrizado, donde las variables
+ principales son el período comercial y las etiquetas seleccionadas para
+ la clasificación.
+ Por cuestiones de practicidad y generalidad se eligió para este trabajo
+ un enfoque de problema de clasificación.
+ El etiquetado proporciona mayor flexibilidad al sistema y un entorno más
+ controlable, en comparación a un sistema de asignación de valores continuos.
+ La flexibilidad del sistema permitió emular la opinión del experto en compras
+ y encontrar una cantidad eficiente de etiquetas.
+\end_layout
+
+\end_body
+\end_document
