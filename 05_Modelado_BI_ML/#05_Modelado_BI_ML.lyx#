@@ -203,9 +203,8 @@ Proceso ETL.
 \end_layout
 
 \begin_layout Standard
-En el proceso ETL posterior a la extracción y previa a la carga de los datos
- al datawarehouse fueron realizadas algunas transformaciones y limpieza
- a los datos de origen.
+Durante el proceso ETL fueron realizadas algunas transformaciones y limpieza
+ de los datos de origen.
  
 \end_layout
 
@@ -249,8 +248,7 @@ Artículos cuyo precio de venta unitario era nulo, en los cuales los datos
 Tabla de Ventas Cabecera
 \series default
 : se encontraron registros donde los datos del cliente eran nulos, en dichos
- casos fueron asignados un cliente por defecto tomados de la tabla dimensional
- de clientes.
+ casos se 
 \end_layout
 
 \begin_layout Itemize
@@ -264,14 +262,13 @@ Tabla de Ventas Detalle
 \begin_deeper
 \begin_layout Itemize
 Registros de detalles donde los valores de costo eran iguales a cero, los
- cuales eran modificados por el costo promedio de la tabla dimensional de
- productos.
+ cuales eran modificados por el costo promedio de la tabla de productos.
 \end_layout
 
 \begin_layout Itemize
 Registros de detalle donde el costo unitario eran mayores al precio de venta
  unitario, las cuales fueron corregidas con el costo promedio, tomados de
- la tabla dimensional de productos.
+ la tabla de productos.
 \end_layout
 
 \end_deeper
@@ -310,6 +307,7 @@ Tabla de hechos Cabecera:
  de: fecha, cliente, caja, número de factura y montos totales.
  Las métricas de la tabla de hechos son monto total, monto exento, monto
  gravado IVA.
+ 
 \end_layout
 
 \begin_layout Itemize
