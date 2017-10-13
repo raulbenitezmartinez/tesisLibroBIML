@@ -239,8 +239,9 @@ El aporte principal y objetivo general del presente trabajo es el siguiente:
 \end_layout
 
 \begin_layout Itemize
-Modelar una nueva técnica de pronóstico de la demanda integrando herramientas
- y conceptos de Business Intelligence y Machine Learning.
+Modelar una nueva técnica de pronóstico de la demanda para la toma de decisión
+ en la reposición de stock integrando herramientas y conceptos de Business
+ Intelligence y Machine Learning.
 \end_layout
 
 \begin_layout Subsection

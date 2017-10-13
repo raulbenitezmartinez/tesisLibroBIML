@@ -1289,16 +1289,7 @@ key "Hastie1998"
 \end_layout
 
 \begin_layout Subsection
-Clasificadores perezosos (basado en instancias)
-\end_layout
-
-\begin_layout Standard
-Los aprendices perezosos almacenan las instancias de entrenamiento y no
- realizan ningún trabajo real hasta el momento de la clasificación.
- El estudiante perezoso más simple es el clasificador k-nearest-neighbor,
- que implementa IBk.
- Se puede usar una variedad de algoritmos de búsqueda diferentes para acelerar
- la tarea de encontrar los vecinos más cercanos.
+Basado en instancias
 \end_layout
 
 \begin_layout Subsubsection
@@ -1375,8 +1366,8 @@ Meta algoritmos
 Los algoritmos de Metalearning toman clasificadores y los convierten en
  aprendices más poderosos.
  Un parámetro especifica el o los clasificadores base; otros especifican
- el número de iteraciones para esquemas iterativos tales como bagging y
- boosting y una inicial semilla para el generador de números aleatorios.
+ el número de iteraciones para esquemas iterativos tales como empaquetamiento
+ y refuerzo y una inicial para el generador de números aleatorios.
 \end_layout
 
 \begin_layout Subsubsection

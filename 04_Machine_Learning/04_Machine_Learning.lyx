@@ -84,10 +84,30 @@ Machine Learning
 \end_layout
 
 \begin_layout Standard
-En esta sección se realiza un breve repaso sobre conceptos básicos que envuelven
- a Machine Learning.
+En este capítulo se realiza un breve repaso sobre conceptos básicos que
+ envuelven a Machine Learning.
  El objetivo es visualizar qué aspectos de Machine Learning fueron tomados
  como componentes de solución al problema de estudio.
+\end_layout
+
+\begin_layout Standard
+En las últimas dos décadas, Machine Learning se ha convertido en uno de
+ los pilares de la tecnología de la información y, con eso, una parte bastante
+ central de nuestra vida.
+ Debido a que cada vez hay más datos disponibles disponibles, existen buenas
+ razones para creer que el análisis inteligente de datos será aún más importante
+ como un ingrediente necesario para el progreso tecnológico.
+ El aprendizaje automático puede aplicarse en muchos aspectos.
+ Ahora discutimos una serie de aplicaciones, los tipos de datos con los
+ que se ocupan y, finalmente, formalizamos los problemas de una manera algo
+ más estilizada.
+ Lo último es clave si queremos evitar reinventar la rueda para cada nueva
+ aplicación.
+ En cambio, gran parte del arte del aprendizaje automático es reducir una
+ gama de problemas bastante dispares a un conjunto de prototipos bastante
+ reducido.
+ Gran parte de la ciencia del aprendizaje automático es entonces resolver
+ esos problemas y proporcionar buenas garantías para las soluciones.
 \end_layout
 
 \begin_layout Section
@@ -258,17 +278,14 @@ key "IAEModerno2"
 \end_layout
 
 \begin_layout Standard
-Los algoritmos de aprendizaje automático se pueden categorizar según la
- forma en que se realiza el aprendizaje, pero teniendo en cuenta que todos
- reciben un conjunto de ejemplos del que aprender.
-\end_layout
-
-\begin_layout Standard
-El tipo de realimentación disponible para el aprendizaje normalmente es
- el factor más importante a la hora de determinar la naturaleza del problema
- de aprendizaje que tiene que afrontar el agente.
- Se distinguen tres distintos tipos de aprendizaje: supervisado, no supervisado
- y por refuerzo.
+Los algoritmos de aprendizaje automático se pueden agrupar según la forma
+ en que se realiza el aprendizaje, pero teniendo en cuenta que todos reciben
+ un conjunto de ejemplos del cuál aprender.
+ Uno de los componentes más importantes al momento de diagnosticar la naturaleza
+ del problema de aprendizaje es el tipo de retroalimentación disponible
+ para el aprendizaje.
+ Hay tres tipos distintos de aprendizaje: supervisado, no supervisado y
+ por refuerzo.
 \end_layout
 
 \begin_layout Subsection
@@ -276,31 +293,24 @@ Aprendizaje supervisado
 \end_layout
 
 \begin_layout Standard
-El algoritmo recibe datos de entrenamiento que contienen la respuesta correcta
- para cada ejemplo.
- El problema de estudio utiliza algoritmos de aprendizaje supervisado, donde
- el experto en compras da la respuesta correcta a cada ejemplo.
+En los problemas de apredizaje supervisado los algoritmos reciben como entrada
+ datos de entrenamiento que ya tienen resultados conocidos o etiquetas.
+ En el caso más general un instructor provee el valor correcto de la salida
+ de cada ejemplo.
+ Como resultado se aprende una función a partir de las entradas y salidas
+ de los ejemplos.
+ Como ejemplo de aplicación están los vehículos autoconducidos que deben
+ aprender a diferenciar una calle de la que no es (salida booleana es calle
+ o no es calle), también debe aprender a frenar (salida booleana frenar
+ o no frenar), etc.
+ Example problems are classification and regression para Supervised Learning.
+ Example algorithms include Logistic Regression and the Back Propagation
+ Neural Network.
 \end_layout
 
 \begin_layout Standard
-El problema de aprendizaje supervisado consiste en aprender una función
- a partir de ejemplos de sus entradas y sus salidas.
- Los casos (1), (2) y (3) son ejemplos de problemas de aprendizaje supervisado.
- En el caso (1), el agente aprende la regla condiciónacción para frenar,
- esto es, una función que a partir del estado genera una salida booleana
- (frenar o no frenar).
- En el caso (2), el agente aprende una función que a partir de una imagen
- genera una salida booleana (si la imagen contiene o no un autobús).
- En el caso (3), aprende una función que a partir del estado y las acciones
- para frenar, genera la distancia de parada expresada en pies.
- Nótese que tanto en los casos (1) y (2), un profesor suministra el valor
- correcto de la salida de cada ejemplo; en el tercero, el valor de la salida
- proviene de lo que el agente percibe.
- En entornos totalmente observables, el agente siempre puede observar los
- efectos de sus acciones, y por lo tanto, puede utilizar métodos de aprendizaje
- supervisado para aprender a predecirlos.
- En entornos que son parcialmente observables, el problema es más difícil,
- ya que los efectos más inmediatos pueden ser invisibles.
+El problema de estudio utiliza algoritmos de aprendizaje supervisado, donde
+ el experto en compras da la respuesta correcta a cada ejemplo.
 \end_layout
 
 \begin_layout Subsection
@@ -308,22 +318,19 @@ Aprendizaje no supervisado
 \end_layout
 
 \begin_layout Standard
-El algoritmo busca estructuras en los datos de entrenamiento, como encontrar
- qué ejemplos son similares entre sí, y agruparlos en clusters.
-\end_layout
-
-\begin_layout Standard
-El problema de aprendizaje no supervisado consiste en aprender a partir
- de patrones de entradas para los que no se especifican los valores de sus
- salidas.
- Por ejemplo, un agente taxista debería desarrollar gradualmente los conceptos
- de «días de tráfico bueno» y de «días de tráfico malo», sin que le hayan
- sido dados ejemplos etiquetados de ello.
- Un agente de aprendizaje supervisado puro no puede aprender qué hacer,
- porque no tiene información de lo que es una acción correcta o un estado
- deseable.
- Principalmente se estudiará aprendizaje no supervisado en el contexto de
- los sistemas de razonamiento probabilístico (Capítulo 20).
+En los problemas de apredizaje no supervisado los algoritmos reciben como
+ entrada datos de entrenamiento que no tienen resultados conocidos o etiquetas.
+ Se buscan estructuras presentes y como resultado se pueden extraer reglas
+ generales, o reducir sistemáticamente la redundancia, o se pueden organizar
+ los datos por similitud.
+ Se aprende a partir de patrones de entrada de los que no se dispone de
+ sus valores de salida, es decir a priori no hay etiquetas o respuesta correcta
+ en los ejemplos.
+ Como ejemplo de aplicación está el caso de la computadora que aprendió
+ sola el concepto de un animal gato.
+ Example problems are clustering, dimensionality reduction and association
+ rule learning para Unsupervised Learning.
+ Example algorithms include: the Apriori algorithm and k-Means.
 \end_layout
 
 \begin_layout Subsection
@@ -331,117 +338,307 @@ Aprendizaje por refuerzo
 \end_layout
 
 \begin_layout Standard
-El problema del aprendizaje por refuerzo, que se describe en el Capítulo
- 21, es el más general de las tres categorías.
- En vez de que un profesor indique al agente qué hacer, el agente de aprendizaje
- por refuerzo debe aprender a partir del refuerzo1.
+El problema del aprendizaje por refuerzo es el más general de las tres categoría
+s.
+ En vez de que un instructor indique al agente qué hacer, el agente de aprendiza
+je por refuerzo debe aprender a partir del refuerzo o recompensa.
  Por ejemplo, la falta de propina al final del viaje (o una gran factura
  por golpear la parte trasera del coche de delante) da al agente algunas
  indicaciones de que su comportamiento no es el deseable.
  El aprendizaje por refuerzo típicamente incluye el subproblema de aprender
  cómo se comporta el entorno.
- 
-\end_layout
-
-\begin_layout Standard
-La forma de representar la información aprendida, también representa un
- papel importante para determinar el algoritmo de aprendizaje.
- Cualquiera de los componentes de un agente puede ser representado usando
- cualquiera de los esquemas de representación mostrados en este libro.
- Se han mostrado varios ejemplos: polinomios lineales con peso para representar
- funciones de utilidad en programas de teoría de juegos; sentencias en lógica
- proposicional y de primer orden para todas las componentes de un agente
- lógico; y descripciones probabilísticas, como Redes Bayesianas, para las
- componentes de inferencia de un agente basado en la teoría de la decisión.
- Se han ideado algoritmos eficaces de aprendizaje para todos ellos.
- En este capítulo se mostrarán métodos para lógica proposicional, en el
- Capítulo 19 se describen métodos para lógica de primer orden, y en el Capítulo
- 20 se tratan métodos para Redes Bayesianas y para redes de neuronas (que
- incluyen polinomios lineales como un caso especial).
- 
-\end_layout
-
-\begin_layout Standard
-El factor más importante en el diseño de sistemas de aprendizaje es la disponibi
-lidad de conocimiento a priori.
- La mayoría de los investigadores de aprendizaje en IA, ingeniería informática
- y psicología han estudiado el caso en el que el agente comienza sin información
- sobre lo que está intentando aprender.
- Sólo tiene acceso a los ejemplos de sus experiencias.
- Aunque es un caso importante, no es por término medio el caso más general.
- La mayoría del aprendizaje humano tiene lugar en un contexto con bastante
- conocimiento de base.
- Algunos psicólogos y lingüistas reivindican que incluso los niños recién
- nacidos poseen conocimiento del mundo.
- Verdad o no, no hay duda de que el conocimiento previo puede ayudar en
- gran medida en el aprendizaje.
- Un fí- sico examinando una pila de fotografías de una cámara de burbujas
- (bubble-chamber), podría ser capaz de inferir una teoría que afirmara la
- existencia de una nueva partícula con una cierta masa y una cierta carga;
- sin embargo un crítico de arte que examina la misma pila podría aprender
- únicamente que el «artista» debe pertenecer a alguna clase de impresionismo
- abstracto.
- El Capítulo 19 muestra varios casos en los que se facilita el aprendizaje
- gracias a la existencia de conocimiento; también se muestra cómo el conocimient
-o puede ser recopilado para acelerar el proceso de toma de decisiones.
- El Capítulo 20 muestra cómo el conocimiento previo ayuda en el aprendizaje
- de teorías probabilísticas.
 \end_layout
 
 \begin_layout Section
-Tipos de problemas resueltos por ML
+Algoritmos de Machine Learning
 \end_layout
 
 \begin_layout Standard
-Teniendo en cuenta las clases de problemas que los algoritmos de aprendizaje
- pueden resolver, los tipos de problemas se pueden agrupar como sigue.
+El Dr.
+ Jason Brownlee es un especialista en aprendizaje automático, desarrollador,
+ escritor y empresario.
+ Ha trabajado en sistemas de aprendizaje automático para la defensa, startups
+ y pronósticos meteorológicos.
+ Tiene una comunidad en https://machinelearningmastery.com/, la cual empezó
+ porque le apasiona ayudar a los desarrolladores profesionales a comenzar
+ y aplicar con confianza el machine learning que les permita resolver problemas
+ complejos.
+ Los algoritmos de aprendizaje automático se pueden agrupar según la similaridad
+ en términos de su forma o función, como por ejemplo los métodos basados
+ en árboles y los métodos inspirados en redes neuronales.
+ Se muestra en la siguiente figura lo propuesto por el Dr.
+ Jason:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename recursos/MachineLearningAlgorithms.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Algoritmos de machine learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No hay un consenso general de cómo agrupar los algoritmos de machine learning
+ en términos de su función o de cómo trabajan.
+ La figura mostró un método útil de agrupación, que no es perfecto y ni
+ exhaustivo en los grupos y algoritmos.
+ Hay algoritmos que pueden encajar en varias categorías como Learning Vector
+ Quantization que es a la vez un método inspirado en una red neuronal y
+ un método basado en instancia.
+ También hay categorías que tienen el mismo nombre que describen el problema
+ y la clase de algoritmo como Regression y Clustering.
+ Se podría manejar estos casos listando los algoritmos dos veces o insertando
+ en el grupo al que subjetivamente se ajusta mejor.
+ Se utiliza este último enfoque de no duplicar algoritmos.
 \end_layout
 
 \begin_layout Subsection
-Regresión
+Algoritmos de regresión
 \end_layout
 
 \begin_layout Standard
-Un problema de aprendizaje supervisado donde la respuesta a aprender es
- un valor continuo.
+La regresión modela la relación que existe entre variables, se mejora iterativam
+ente utilizando una medida de error en las predicciones hechas por el modelo.
+ Los métodos de regresión son herramientas de las estadísticas que se han
+ adoptado en el aprendizaje de la máquina.
+ Podemos utilizar el término regresión para referirnos a la clase de problema
+ y también a la clase de algoritmo.
+ Para ser más exactos, la regresión es realmente un proceso.
 \end_layout
 
 \begin_layout Subsection
-Clasificación
+Algoritmos basados en instancia
 \end_layout
 
 \begin_layout Standard
-Un problema de aprendizaje supervisado donde la respuesta a aprender es
- un valor de un conjunto finito de posibles valores discretos.
- El problema de estudio se encara como un problema de clasificación, donde
- hay cuatro posibles valores discretos.
+El modelo de aprendizaje basado en instancia es un problema de decisión
+ con instancias o ejemplos de datos de entrenamiento que se consideran important
+es o requeridos para el modelo.
+ Estos métodos típicamente construyen una base de datos con ejemplos y los
+ compara con los nuevos datos utilizando una medida de similaridad para
+ así encontrar la mejor coincidencia y hacer la predicción.
+ Por esta razón, los métodos basados en la instancia también se llaman métodos
+ de aprendizaje basado en memoria.
+ El enfoque se pone en la representación de las instancias almacenadas y
+ las medidas de similaridad utilizadas entre instancias.
 \end_layout
 
 \begin_layout Subsection
-Segmentación
+Algoritmos de regularización
 \end_layout
 
 \begin_layout Standard
-Un problema de aprendizaje no supervisado donde la estructura a aprender
- es un conjunto de clusters donde cada cluster tiene similares ejemplos.
+Comprende una extensión hecha a otros métodos (típicamente a los métodos
+ de regresión).
+ Penaliza los modelos basándose en sus complejidades, favoreciendo modelos
+ más simples que también son mejores de generalizar.
+ Son populares, potentes y en general simples modificaciones de otros métodos.
 \end_layout
 
 \begin_layout Subsection
-Análisis de red
+Algoritmos de árboles de decisión
 \end_layout
 
 \begin_layout Standard
-Un problema de aprendizaje no supervisado donde la estructura a aprender
- es información acerca de la importancia y el rol de los nodos en una red.
+Los métodos de árboles de decisión construyen un modelo de decisiones hechas
+ en base a los valores de atributos en los datos.
+ Las decisiones se bifurcan en la estructura del árbol hasta que se tome
+ una decisión de predicción para un registro dado.
+ Los árboles de decisión son entrenados en los datos para problemas de clasifica
+ción y regresión.
+ Los árboles de decisión son a menudo rápidos y precisos y un gran favorito
+ en aprendizaje automático.
+\end_layout
+
+\begin_layout Subsection
+Algoritmos bayesianos
+\end_layout
+
+\begin_layout Standard
+Los métodos bayesianos son los que aplican explícitamente el teorema de
+ Bayes para problemas tales como la clasificación y la regresión.
+\end_layout
+
+\begin_layout Subsection
+Algoritmos de agrupación
+\end_layout
+
+\begin_layout Standard
+La agrupación así como también la regresión describen la clase de problema
+ y la clase de método.
+ Los métodos de agrupación suelen estar organizados según el enfoque del
+ modelado, tales como los basados en centroides y los jerárquicos.
+ Todos los métodos atañen a la utilización de las estructuras inherentes
+ en los datos, para organizar dichos datos de la mejor manera posible en
+ grupos de máxima uniformidad.
+\end_layout
+
+\begin_layout Subsection
+Algoritmos de aprendizaje de reglas de asociación
+\end_layout
+
+\begin_layout Standard
+Los métodos de aprendizaje de reglas de asociación extraen reglas que mejor
+ explican las relaciones observadas entre variables en los datos.
+ Estas reglas pueden descubrir asociaciones importantes y comercialmente
+ útiles, en grandes conjuntos de datos multidimensionales que pueden ser
+ explotados por una organización.
+\end_layout
+
+\begin_layout Subsection
+Algoritmos de redes neurales artificiales
+\end_layout
+
+\begin_layout Standard
+Las redes neuronales artificiales son modelos inspirados en la estructura
+ y/o función de las redes neuronales biológicas.
+ Son una clase de búsqueda de patrones que se utilizan comúnmente para problemas
+ de regresión y clasificación.
+ Es realmente un enorme subcampo compuesto de cientos de algoritmos y variacione
+s para todo tipo de tipos de problemas.
+ Se ha separado el aprendizaje profundo de las redes neuronales debido a
+ su enorme crecimiento y popularidad.
+\end_layout
+
+\begin_layout Subsection
+Algoritmos de aprendizaje profundo
+\end_layout
+
+\begin_layout Standard
+Los métodos de aprendizaje profundo son una moderna actualización de las
+ redes neuronales artificiales que explotan el abundante y barato poder
+ de computación.
+ Se ocupan en construir redes neuronales mucho más grandes y complejas y,
+ muchos métodos se refieren a problemas de aprendizaje semi-supervisados
+ donde grandes conjuntos de datos contienen muy pocos datos etiquetados.
+\end_layout
+
+\begin_layout Subsection
+Algoritmos de reducción de dimensionalidad
+\end_layout
+
+\begin_layout Standard
+Al igual que los métodos de agrupación, la reducción de la dimensionalidad
+ busca y explora la estructura inherente en los datos, pero en este caso
+ de una manera no supervisada o en orden a resumir o describir los datos
+ utilizando menos información.
+ Esto puede ser útil para visualizar datos dimensionales o para simplificar
+ datos que luego se pueden utilizar en un método de aprendizaje supervisado.
+ Muchos de estos métodos pueden ser adaptados para su uso en clasificación
+ y regresión.
+\end_layout
+
+\begin_layout Subsection
+Algoritmos ensamble
+\end_layout
+
+\begin_layout Standard
+Métodos de ensamble son modelos compuestos por múltiples modelos más débiles,
+ que son entrenados independientemente y cuyas predicciones son combinadas
+ de alguna manera para hacer la predicción general.
+ Mucho esfuerzo se pone en qué tipos de aprendices débiles combinar y las
+ formas en que hay que combinarlos.
+ Esta es una clase de técnica muy poderosa y como tal es muy popular.
+\end_layout
+
+\begin_layout Subsection
+Otros algoritmos
+\end_layout
+
+\begin_layout Standard
+Algoritmos no lineales como:
+\end_layout
+
+\begin_layout Itemize
+Support Vector Machines
+\end_layout
+
+\begin_layout Standard
+Algoritmos para tareas especiales en el proceso del aprendizaje automático:
+\end_layout
+
+\begin_layout Itemize
+Feature selection algorithms 
+\end_layout
+
+\begin_layout Itemize
+Algorithm accuracy evaluation 
+\end_layout
+
+\begin_layout Itemize
+Performance measures
+\end_layout
+
+\begin_layout Standard
+Algoritmos para subcampos de especialidad de aprendizaje automático:
+\end_layout
+
+\begin_layout Itemize
+Computational intelligence (evolutionary algorithms, etc.)
+\end_layout
+
+\begin_layout Itemize
+Computer Vision (CV)
+\end_layout
+
+\begin_layout Itemize
+Natural Language Processing (NLP)
+\end_layout
+
+\begin_layout Itemize
+Recommender Systems
+\end_layout
+
+\begin_layout Itemize
+Reinforcement Learning
+\end_layout
+
+\begin_layout Itemize
+Graphical Models
 \end_layout
 
 \begin_layout Section
-Problemas de clasificación con ML
+Problemas de clasificación y regresión
 \end_layout
 
 \begin_layout Standard
 En los problemas de clasificación el modelo creado debe predecir la clase,
  tipo o categoría de la salida.
+\end_layout
+
+\begin_layout Standard
+La gama de problemas de aprendizaje es claramente grande, como vimos al
+ discutir aplicaciones.
+ Dicho esto, los investigadores han identificado un número cada vez mayor
+ de plantillas que se pueden usar para abordar un gran conjunto de situaciones.
+ Son esas plantillas las que facilitan el despliegue del aprendizaje automático
+ en la práctica y nuestra discusión se centrará en gran medida en un conjunto
+ de elección de tales problemas.
+ Ahora ofrecemos una lista completa de plantillas.
 \end_layout
 
 \begin_layout Subsection
@@ -472,6 +669,27 @@ key "IntroML2008"
 .
 \end_layout
 
+\begin_layout Standard
+La clasificación binaria es probablemente el problema más estudiado en el
+ aprendizaje automático y ha dado lugar a una gran cantidad de desarrollos
+ algorítmicos y teóricos importantes durante el siglo pasado.
+ En su forma más simple, se reduce a la pregunta: dado un patrón x extraído
+ de un dominio X, estimar qué valor asumirá una variable aleatoria binaria
+ asociada y ∈ {± 1}.
+\end_layout
+
+\begin_layout Standard
+Por ejemplo, si se muestran imágenes de manzanas y naranjas, podemos indicar
+ si el objeto en cuestión es una manzana o una naranja.
+ Igualmente bien, podríamos querer predecir si un propietario de vivienda
+ podría incumplir su préstamo dado sus datos de ingresos y su historial
+ de crédito, o si un correo electrónico determinado es spam o jamón.
+ La capacidad de resolver este problema básico ya nos permite abordar una
+ gran variedad de configuraciones prácticas.
+ Existen muchas variantes con respecto al protocolo en el que estamos obligados
+ a hacer nuestra estimación:
+\end_layout
+
 \begin_layout Subsection
 Clasificación multiclase
 \end_layout
@@ -497,8 +715,110 @@ key "IntroML2008"
 
 \end_layout
 
+\begin_layout Standard
+La clasificación multiclase es la extensión lógica de la clasificación binaria.
+ La principal diferencia es que ahora y ∈ {1, ....
+ , n} puede asumir un rango de valores diferentes.
+ Por ejemplo, es posible que deseemos clasificar un documento de acuerdo
+ con el idioma en que fue escrito (inglés, francés, alemán, español, hindi,
+ japonés, chino, ...).
+ La principal diferencia con anterioridad es que el costo del error puede
+ depender en gran medida del tipo de error que cometamos.
+ Por ejemplo, en el problema de evaluar el riesgo de cáncer, hace una diferencia
+ significativa si clasificamos erróneamente una etapa temprana del cáncer
+ como saludable (en cuyo caso es probable que el paciente muera) o como
+ una etapa avanzada de cáncer (en en qué caso es probable que el paciente
+ sufra molestias por un tratamiento excesivamente agresivo).
+\end_layout
+
+\begin_layout Subsection
+Regression
+\end_layout
+
+\begin_layout Standard
+Es otra aplicación prototípica.
+ Aquí el objetivo es estimar una variable de valor real y ∈ R dado un patrón
+ x (ver, por ejemplo, la Figura 1.7).
+ Por ejemplo, podríamos querer estimar el valor de un stock al día siguiente,
+ el rendimiento de un fabuloso semiconductor dado el proceso actual, el
+ contenido de hierro de las mediciones de espectroscopia de masas dadas
+ por el mineral o la frecuencia cardíaca de un atleta, dada la información
+ del acelerómetro.
+ Una de las cuestiones clave en las que los problemas de regresión difieren
+ entre sí es la elección de una pérdida.
+ Por ejemplo, al estimar los valores de stock, nuestra pérdida para una
+ opción de venta será decididamente unilateral.
+ Por otro lado, a un deportista aficionado solo le importaría que nuestra
+ estimación de la frecuencia cardíaca coincida con la media real.
+\end_layout
+
 \begin_layout Section
-Esquema de machine learning 
+Machine Learning y Demand Forecasting
+\end_layout
+
+\begin_layout Standard
+Publicaciones que comprenden los últimos años, presentan trabajos muy interesant
+es en el ámbito de Machine Learning asociado al Demand Forecasting (Pronóstico
+ de la Demanda).
+ Se citan a continuación algunos de los problemas afrontados en publicaciones,
+ que dan una idea del estado del arte en la unión de estos temas:
+\end_layout
+
+\begin_layout Itemize
+Mejorar la precisión de la previsión de demanda de agua urbana para la ciudad
+ de Montreal – Canadá (2017).
+\end_layout
+
+\begin_layout Itemize
+Proponer un método de control inteligente para sistemas de calefacción y
+ refrigeración.
+ (2017).
+\end_layout
+
+\begin_layout Itemize
+Proponer un modelo predictivo probabilístico de consumo de energía, basado
+ en datos, para la predicción del consumo en edificios residenciales (2017).
+\end_layout
+
+\begin_layout Itemize
+Revisión de diferentes modelos de predicción de la carga eléctrica con un
+ enfoque particular en modelos de regresión (2017).
+\end_layout
+
+\begin_layout Itemize
+Aplicación de Machine Learning en la nube para encontrar conversaciones
+ de los consumidores que influyen en las decisiones de compras (2016).
+\end_layout
+
+\begin_layout Itemize
+Modelar la demanda turística de España (2016).
+\end_layout
+
+\begin_layout Itemize
+Predicción del Mercado de Valores (2016).
+\end_layout
+
+\begin_layout Itemize
+Análisis para un minorista en línea: Previsión de la demanda y optimización
+ de precios (2016).
+\end_layout
+
+\begin_layout Itemize
+Demanda de calefacción residencial basado en el consumo total mensual de
+ gas natural (2015).
+\end_layout
+
+\begin_layout Itemize
+Predicción de la demanda de importación de crudo en Taiwán (2014).
+\end_layout
+
+\begin_layout Itemize
+Predicción del desempeño de las estrategias de pronóstico para la demanda
+ de repuestos navales (2012).
+\end_layout
+
+\begin_layout Section
+Modelado de clasificación multiclase 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
@@ -509,8 +829,9 @@ key "DM2011"
 \end_layout
 
 \begin_layout Standard
-Para desarrollar un modelo o esquema de machine learning es necesario conocer
- los componentes esenciales que la forman.
+Para desarrollar un modelo o esquema de machine learning para resolver problemas
+ de clasificación multiclase, es necesario conocer los componentes esenciales
+ que la forman.
 \end_layout
 
 \begin_layout Subsection
@@ -560,11 +881,21 @@ El grupo de ejemplos utilizados en el proceso de entrenamiento de los algoritmos
 \end_layout
 
 \begin_layout Subsection
-Algoritmos de machine learning
+Algoritmos de clasificación multiclase
+\end_layout
+
+\begin_layout Standard
+Constituye el conjunto de algoritmos de machine que soportan problemas de
+ clasificación multiclase.
 \end_layout
 
 \begin_layout Standard
 Hipótesis, Parámetros, Función de costo, Objetivo.
+\end_layout
+
+\begin_layout Standard
+Funcion Objetivo (f), Variables de entrada (X), Variable de salida (Y).
+ Y = f(X)
 \end_layout
 
 \begin_layout Subsection
@@ -576,14 +907,6 @@ Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
  evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
  papel en la formación del clasificador.
  Este conjunto de datos independiente se denomina conjunto de prueba.
-\end_layout
-
-\begin_layout Section
-Panorama general de los algoritmos de Machine Learning
-\end_layout
-
-\begin_layout Standard
-Grafico de una clasificación general.
 \end_layout
 
 \begin_layout Section
@@ -627,7 +950,15 @@ key "WekaCla"
 \end_layout
 
 \begin_layout Subsection
-Bayesianos
+Clasificadores bayesianos
+\end_layout
+
+\begin_layout Standard
+NaiveBayes implementa el clasificador probabilístico Naive Bayes.
+ NaiveBayesSimple usa la distribución normal para modelar atributos numéricos.
+ NaiveBayes puede usar estimadores de densidad del núcleo, que mejoran el
+ rendimiento si la suposición de normalidad es groseramente incorrecta;
+ También puede manejar atributos numéricos mediante discretización supervisada.
 \end_layout
 
 \begin_layout Subsubsection
@@ -796,6 +1127,14 @@ key "John1995"
 Basado en funciones
 \end_layout
 
+\begin_layout Standard
+Los algoritmos incluidos en la categoría de funciones incluyen un grupo
+ variado de clasificadores que se pueden escribir como ecuaciones matemáticas
+ de una manera razonablemente natural.
+ Otros métodos, como los árboles de decisión y las reglas, no pueden (hay
+ excepciones: Naive Bayes tiene una formulación matemática simple).
+\end_layout
+
 \begin_layout Subsubsection
 Logistic
 \end_layout
@@ -863,7 +1202,7 @@ MultilayerPerceptron
 \begin_layout Standard
 MultilayerPerceptron es un clasificador que utiliza 
 \shape italic
-backpropagation
+back propagation
 \shape default
  para clasificar instancias.
  Esta red puede ser monitorizada y modificada durante el tiempo de entrenamiento.
@@ -873,6 +1212,13 @@ sigmoides
 \shape default
  (excepto cuando la clase es numérica, en cuyo caso los nodos de salida
  se convierten en unidades lineales sin umbrales).
+\end_layout
+
+\begin_layout Standard
+MultilayerPerceptron es una red neuronal que se entrena usando propagación
+ posterior.
+ Aunque se menciona en las funciones, difiere de los otros esquemas porque
+ tiene su propia interfaz de usuario.
 \end_layout
 
 \begin_layout Subsubsection
@@ -943,7 +1289,16 @@ key "Hastie1998"
 \end_layout
 
 \begin_layout Subsection
-Basado en instancias
+Clasificadores perezosos (basados en instancia)
+\end_layout
+
+\begin_layout Standard
+Los aprendices perezosos almacenan las instancias de entrenamiento y no
+ realizan ningún trabajo real hasta el momento de la clasificación.
+ El estudiante perezoso más simple es el clasificador k-nearest-neighbor,
+ que implementa IBk.
+ Se puede usar una variedad de algoritmos de búsqueda diferentes para acelerar
+ la tarea de encontrar los vecinos más cercanos.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1014,6 +1369,14 @@ key "Atkeson1996"
 
 \begin_layout Subsection
 Meta algoritmos
+\end_layout
+
+\begin_layout Standard
+Los algoritmos de Metalearning toman clasificadores y los convierten en
+ aprendices más poderosos.
+ Un parámetro especifica el o los clasificadores base; otros especifican
+ el número de iteraciones para esquemas iterativos tales como bagging y
+ boosting y una inicial semilla para el generador de números aleatorios.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1296,6 +1659,16 @@ key "Kohavi1995a"
 .
 \end_layout
 
+\begin_layout Standard
+DecisionTable crea un clasificador de tablas de decisiones.
+ Evalúa los subconjuntos de características utilizando la mejor búsqueda
+ primero y puede usar la validación cruzada para la evaluación (Kohavi 1995b).
+ Una opción es utilizar el método del vecino más cercano para determinar
+ la clase para cada instancia que no está cubierta por una entrada de tabla
+ de decisión, en lugar de la mayoría global de la tabla, basado en el mismo
+ conjunto de características.
+\end_layout
+
 \begin_layout Subsubsection
 JRip
 \end_layout
@@ -1376,6 +1749,11 @@ Constituye la clase Java para construir y usar un clasificador 0-R.
 
 \begin_layout Subsection
 Árboles de decisión
+\end_layout
+
+\begin_layout Standard
+De los clasificadores de árboles en WEKA, el J4.8 reimplementa C4.5.
+ Puede construir un árbol binario en lugar de uno con varias ramas.
 \end_layout
 
 \begin_layout Subsubsection
