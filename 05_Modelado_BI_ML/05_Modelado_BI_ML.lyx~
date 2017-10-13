@@ -310,6 +310,7 @@ Tabla de hechos Cabecera:
  de: fecha, cliente, caja, número de factura y montos totales.
  Las métricas de la tabla de hechos son monto total, monto exento, monto
  gravado IVA.
+ 
 \end_layout
 
 \begin_layout Itemize

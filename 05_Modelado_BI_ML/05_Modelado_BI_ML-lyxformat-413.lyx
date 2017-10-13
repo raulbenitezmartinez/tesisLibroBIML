@@ -1,0 +1,510 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Trabajos relacionados
+\end_layout
+
+\begin_layout Standard
+Existen numerosos trabajos de investigación sobre protección de fallas de
+ enlace 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "singhal2005shared,SINGHAL2003,singhal2003provisioning,khalil2005pre,zhang2004multicast"
+
+\end_inset
+
+ y la poca ocasión de investigaciones para el problema de falla simple de
+ nodo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+.
+ Las fallas de enlaces han recibido mayor atención debido a que son más
+ probables que las fallas de nodos.
+ Sin embargo, la falla de un nodo simple puede ocasionar severas pérdidas
+ de datos por lo que su estudio es un tema de gran importancia relativa.
+ 
+\end_layout
+
+\begin_layout Standard
+La protección multicast ha sido atacado con enfoques basados en árboles
+ disjuntos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fei2001dual"
+
+\end_inset
+
+, enlaces directos disjuntos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SINGHAL2003"
+
+\end_inset
+
+, protección de segmentos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "singhal2003provisioning"
+
+\end_inset
+
+, protección multicast en sistemas multifibrass 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "boworntummarat2004light"
+
+\end_inset
+
+, protección compartida de diferentes sesiones multicast 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "singhal2005shared"
+
+\end_inset
+
+ y basado en sub-grafo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhang2004multicast"
+
+\end_inset
+
+.
+ Recientemente se extendió el trabajo de 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhang2004multicast"
+
+\end_inset
+
+en un enfoque multi-objetivo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pinto2010multicast"
+
+\end_inset
+
+.
+ Estos enfoques consideran protección contra fallas de enlaces.
+ 
+\end_layout
+
+\begin_layout Section
+Protección Multicast Contra Falla Simple de Enlace
+\end_layout
+
+\begin_layout Standard
+La supervivencia en una red depende en gran medida del soporte y diseño
+ eficiente para dar continuidad a los servicios.
+ En ese sentido, la falla de un enlace en una red óptica ocasiona una drástica
+ perdida de los datos que pasan a través del tráfico.
+ Las fallas en los enlaces ocurren de manera muy frecuente en las redes
+ ópticas y los motivos más comunes son: cortes de la fibra por excavaciones
+ y robos de cables.
+ Un dato importante sobre cortes de fibra óptica fue sacado de 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "to1994unavailability"
+
+\end_inset
+
+ y nos indica que los cortes ocurren de la siguiente forma: 4,39 cortes/año/1000
+ kilómetros.
+\end_layout
+
+\begin_layout Standard
+Algunos trabajos de investigación en el área de falla simple de enlace son:
+\end_layout
+
+\begin_layout Enumerate
+Protecting Multicast Sessions in WDM Optical Mesh Networks 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "singhal2003protecting"
+
+\end_inset
+
+: En este trabajo se propuso diseñar los árboles primarios y de resguardos
+ con protección contra falla simple de enlace.
+ Los objetivos fueron minimizar el costo total de todas las sesiones multicast
+ y costo total de la red.
+ Con las restricciones de número total de divisores y longitudes de onda
+ por enlace.
+ Se propusieron formulaciones matemáticas para el enrutamiento eficiente
+ y asignación de longitud de onda de varias sesiones de multidifusión para
+ redes opacas.
+ En este trabajo se propuso diseñar los árboles primarios y de resguardos
+ con protección contra falla simple de enlace.
+ Los objetivos fueron minimizar el costo total de todas las sesiones multicast
+ y costo total de la red.
+ Con las restricciones de número total de divisores y longitudes de onda
+ por enlace.
+ Se propusieron formulaciones matemáticas para el enrutamiento eficiente
+ y asignación de longitud de onda de varias sesiones de multidifusión para
+ redes opacas.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Light-Tree Based Protection Strategies for Multicast Traffic in Transport
+ WDM Mesh Networks with Multi-Fiber Systems
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "boworntummarat2004light"
+
+\end_inset
+
+: El trabajo consistio en tratar fallas en redes multicast WDM en un entorno
+ de red multifibra y se concrentra en falla simple de enlace.
+ Los enfoques de protección propuestos fueron: a) Light-Tree reconfiguration
+ Protection Strategy (LR), b) Light-Tree-Interrupted reconfiguration Protection
+ Strategy (LIR), c) Optical Branch Protection Strategy (OB) y d) Optical-Branch-
+Fixed Protection Strategy (OBF).
+ Las estrategias fueron desarrolladas en formulaciones matemática utilizando
+ ILP.
+ El objetivo del trabajo fue evaluar el desempeño de sistemas de protección
+ presentados de multidifusión con la métrica del número total de fibras
+ y número de longitudes de onda por fibra.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Multicast Automatic Protection Switching in Arbitrary Redundant Graphs 
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gallager1998multicast"
+
+\end_inset
+
+: Básicamente, se propuso un algoritmo para recuperar la red con nodos APS
+ (Automatic Protection Switching).
+ En el mismo se protege el árbol de luz primario con falla simple de enlace:
+ Cuando ocurre un fallo simple de enlace se cuenta con un árbol de resguardo,
+ creado con los grafos con nodos redundantes seleccionados por el algoritmo
+ propuesto y con eso se logra la supervivencia en la red óptica.
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Provisioning of survivable multicasts sessions against single link failures
+ in Optical WDM Mesh Networks
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "singhal2003provisioning"
+
+\end_inset
+
+: Los objetivos del trabajo fueron minimizar el costo total del establecimiento
+ de rutas y la protección de las sesiones de multidifusión.
+ En el trabajo se propusieron dos esquemas de protección : 1) protección
+ de los segmentos de árbol primario y 2) la protección de cada camino desde
+ la fuente hasta el nodos destino ( protecting segments of primary tree
+ y protecting each path from the source to the destination nodes).
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+Survivable WDM Mesh Networks 
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ramamurthy2003survivable"
+
+\end_inset
+
+: El objetivo de este trabajo es minimizar el número de longitud de onda
+ por enlase (para el camino primario y secundario).
+ Se han propuesto tres enfoques, protección dedicada de path, protección
+ compartida de path, protección compartida de enlace.
+\end_layout
+
+\begin_layout Standard
+En general, existen números trabajos de investigación que tratan el problema
+ de falla simple de enlace, ya sean en ambientes multi-objetivos como en
+ ambientes no escalables.
+ En ese sentido, en el presente trabajo nos centramos en la fallas de nodo
+ ya que uno de los motivos de la elección de dicha área es su poca investigación
+ y la importancia de su estudio.
+\end_layout
+
+\begin_layout Section
+Protección Multicast Contra Falla Simple de Nodo
+\end_layout
+
+\begin_layout Standard
+Luekijna y Saivichit en 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+ han planteado el problema de la protección multicast contra falla simple
+ de nodo.
+ En dicho trabajo se propone tres enfoques de protección:
+\end_layout
+
+\begin_layout Itemize
+Re-configuración de toda la red (ET): Reconfigurar todas las sesiones de
+ la red cuando ocurre un fallo en cualquier nodo incluido en una sesión.
+\end_layout
+
+\begin_layout Itemize
+Re-configuración del tráfico que pasa a través del nodo que ha fallado (GT)
+ : Reconfigurar solo aquellas sesiones que pasan a través del nodo fallido.
+\end_layout
+
+\begin_layout Itemize
+Re-configuración del tráfico adyacente al nodo que ha fallado (AD): Además
+ de reconfigurar todas las sesiones que pasan a través del nodo fallido,
+ se deben reconfigurar las sesiones adyacentes al nodo fallido.
+\end_layout
+
+\begin_layout Standard
+En el trabajo de Luekijna y Saivichit 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+ se trató el problema MRWA en dos escenarios: con capacidad de conversión
+ y sin capacidad de conversión en redes WDM multifibras.
+ En el primer caso los árboles son denominados árboles de luz virtuales
+ (Virtual Light Tree - VLT).
+ En el segundo caso los árboles son denominados simplemente árboles de luz
+ (Light Tree - LT).
+ El en trabajo se propone la formulación para el problema MRWA que soporte
+ tráfico multicast sujeta a falla simple de nodo con el fin de minimizar
+ el número de fibras ópticas utilizadas para la soportar el tráfico multicast
+ de la red.
+ Para los caminos primarios y de respaldo se utilizaron un enfoque de árboles
+ disjuntos para garantizar que la falla de un nodo no afecte a la ruta primaria
+ y la de respaldo al mismo tiempo.
+ El nodo origen o un destino falla no se pueden recuperar.
+ El requisito de utilizar nodos disjuntos es para asegurar que los caminos
+ primarios y de respaldo no utilicen un mismo enlace, por lo tanto, también
+ puede proteger contra un fallo de enlace.
+ Para la solución del problema han propuesto una formulación matemática
+ y la misma han sido implementada mediante la Programación Lineal Entera
+ (ILP).
+ Han presentado las formulaciones del diseño de la red de trabajo donde
+ se define el problema MRWA.
+ Formulación del diseño de protección de red: Se presenta estrategias multicast
+ para proteger la sesión de multidifusión contra falla simple de nodo en
+ una red WDM.
+ Los experimentos realizados han indicado que en el enfoque ET todas las
+ sesiones multicast son liberadas y restablecidas usando el menor número
+ de fibras óptica que en los enfoques GT y AD.
+ Por su parte el método AD, distribuye el tráfico fuera del nodo fallado,
+ esto implica que re-configura más sesiones que GT, por esta razón AD requiere
+ más fibras óptica que el método GT.
+\end_layout
+
+\begin_layout Section
+ILP Vs Enfoques Heurísticos
+\end_layout
+
+\begin_layout Standard
+Una cuestión fundamental es que los enfoques basados en modelos de Programación
+ Lineal no son escalables cuando el número de variables aumenta 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "singhal2001architectures"
+
+\end_inset
+
+.
+ En ese sentido, los problemas RWA y MRWA han sido tratados con enfoques
+ basados en meta-heurísticas mono y multi-objetivas inspiradas en las Colonia
+ de Hormigas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "arteta2007routing,arevalos2009MRWA"
+
+\end_inset
+
+ y los Algoritmos Evolutivos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2002routing,rubio-largo2012comparative"
+
+\end_inset
+
+.
+ Sin embargo, ninguno de los enfoques heurísticos ha considerado la protección
+ contra falla de nodo.
+ En ese sentido, el desarrollo de técnicas heurísticas para tratar el problema
+ en cuestión considerando redes de gran envergadura contra falla simple
+ de nodo queda plenamente justificado y es un tema central en el presente
+ trabajo.
+\end_layout
+
+\begin_layout Section
+Consideraciones Generales 
+\end_layout
+
+\begin_layout Standard
+Considerando los antecedentes del estado del arte, este trabajo propone
+ tratar el problema diseño de red óptica y su protección contra falla simple
+ de nodo considerando un enfoque de optimización multi-objetivo dado que
+ en 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luekijna2007multicast"
+
+\end_inset
+
+ se ha reportado funciones objetivos contradictorias.
+ Básicamente, se propone un enfoque basado en Optimización por Colonia de
+ Hormigas Multi-Objetivas (
+\emph on
+Multi-objective Ant Colony Optimization
+\emph default
+ - MOACO) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "arevalos2009MRWA"
+
+\end_inset
+
+ en la que se busca minimizar simultáneamente el costo de la red óptica
+ y la calidad de servicio para múltiples solicitudes multicast estáticas.
+ El costo de la red óptica está basado en los costos de equipamiento de
+ enlaces y nodos ópticos.
+ En los enlaces se considera el número de fibras ópticas y amplificadores
+ mientras que en los nodos se considera el número dispositivos como divisores,
+ multiplexores WDM, demultiplexores WDM, puertos WDM y puertos en los OXC.
+ En este trabajo se considera una arquitectura de red óptica sin capacidad
+ de conversión, tráfico no 
+\emph on
+grooming 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhu2002traffic"
+
+\end_inset
+
+
+\emph default
+, y divisores con número de divisiones.
+ En ese contexto, la solución se encuentra sujeta a restricciones de capa
+ óptica como son la restricción de continuidad y asignación de longitud
+ de onda, de número de divisiones y potencia mínima de señal en los enlaces.
+ Por otra parte, la calidad de servicio está dada por el retardo máximo
+ entre fuente y destino.
+ Note que, en el problema considerado son simultáneamente tratados el problema
+ de:
+\end_layout
+
+\begin_layout Itemize
+Enrutamiento multicast.
+\end_layout
+
+\begin_layout Itemize
+El problema de asignación de longitudes de onda.
+\end_layout
+
+\begin_layout Itemize
+El problema de la ubicación de fibras ópticas.
+\end_layout
+
+\begin_layout Itemize
+El problema de ubicación de divisores ópticos.
+\end_layout
+
+\begin_layout Itemize
+El problema de ubicación de amplificadores ópticos.
+\end_layout
+
+\begin_layout Itemize
+El problema de protección multicast para falla simple de nodo.
+ 
+\end_layout
+
+\begin_layout Standard
+En el mejor de nuestro conocimiento el enfoque dado en este trabajo no ha
+ sido propuesto aún en la literatura.
+\end_layout
+
+\end_body
+\end_document
