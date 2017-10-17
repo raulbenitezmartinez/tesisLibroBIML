@@ -146,7 +146,7 @@ Para el presente trabajo, se cuenta con una base de datos relacional Oracle
 Tabla de Productos
 \series default
 : almacena datos como descripción, unidad de medida, categoría, tipo de
- impuesto, línea del producto, marca, codigo de barras, proveedor, costo,
+ impuesto, línea del producto, marca, código de barras, proveedor, costo,
  precio de venta, fecha de registro, etc., de los productos disponibles para
  la venta, la tabla cuenta con 13.200 artículos registrados.
 \end_layout
@@ -157,7 +157,7 @@ Tabla de Productos
 Tabla Proveedores
 \series default
 : almacena datos como denominación, dirección, teléfono, ruc, email, página
- web, ciudad, pais, propietario, etc., de los proveedores de la empresa,
+ web, ciudad, país, propietario, etc., de los proveedores de la empresa,
  la tabla cuenta con 1.623 proveedores registrados.
 \end_layout
 
@@ -203,8 +203,9 @@ Proceso ETL.
 \end_layout
 
 \begin_layout Standard
-Durante el proceso ETL fueron realizadas algunas transformaciones y limpieza
- de los datos de origen.
+En el proceso ETL posterior a la extracción y previa a la carga de los datos
+ al datawarehouse fueron realizadas algunas transformaciones y limpieza
+ sobre los datos de origen.
  
 \end_layout
 
@@ -248,7 +249,8 @@ Artículos cuyo precio de venta unitario era nulo, en los cuales los datos
 Tabla de Ventas Cabecera
 \series default
 : se encontraron registros donde los datos del cliente eran nulos, en dichos
- casos se 
+ casos fueron asignados un cliente por defecto tomados de la tabla dimensional
+ de clientes.
 \end_layout
 
 \begin_layout Itemize
@@ -262,13 +264,14 @@ Tabla de Ventas Detalle
 \begin_deeper
 \begin_layout Itemize
 Registros de detalles donde los valores de costo eran iguales a cero, los
- cuales eran modificados por el costo promedio de la tabla de productos.
+ cuales eran modificados por el costo promedio de la tabla dimensional de
+ productos.
 \end_layout
 
 \begin_layout Itemize
 Registros de detalle donde el costo unitario eran mayores al precio de venta
  unitario, las cuales fueron corregidas con el costo promedio, tomados de
- la tabla de productos.
+ la tabla dimensional de productos.
 \end_layout
 
 \end_deeper
@@ -277,8 +280,8 @@ Datawarehouse
 \end_layout
 
 \begin_layout Standard
-El datawarehouse se diseña a partir de la definición de las tablas de hechos
- y dimensiones utilizando el modelo de esquema en estrella 
+El datawarehouse se diseña partiendo de la definición de las tablas de hechos
+ y dimensiones utilizando el modelo en esquema estrella 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "KIM92"
@@ -293,8 +296,9 @@ Tablas de hechos
 \end_layout
 
 \begin_layout Standard
-De las tablas transaccionales definimos 3 tablas de hechos que nos servirá
- para definir los KPI que utilizaremos para el análisis.
+De las tablas transaccionales se definen 3 tablas de hechos a partir de
+ las cuales se definen y obtienen los valores de los KPI que luego se utilizarán
+ para el modelado de la solución propuesta.
  
 \end_layout
 
@@ -303,11 +307,11 @@ De las tablas transaccionales definimos 3 tablas de hechos que nos servirá
 \series bold
 Tabla de hechos Cabecera:
 \series default
- almacena los datos históricos de las ventas, cada registro guarda datos
- de: fecha, cliente, caja, número de factura y montos totales.
- Las métricas de la tabla de hechos son monto total, monto exento, monto
- gravado IVA.
- 
+ almacena los datos históricos de las ventas, cada registro de la tabla
+ de hechos guarda datos de: fecha, cliente, caja, número de factura y monto
+ total, monto exento, monto gravado IVA.
+ Las métricas definidas para la tabla de hechos son: monto total, monto
+ exento, monto gravado IVA.
 \end_layout
 
 \begin_layout Itemize
@@ -315,10 +319,12 @@ Tabla de hechos Cabecera:
 \series bold
 Tabla de hechos Detalles:
 \series default
- almacena los datos históricos del detalle, cada registro guarda información
- del número de comprobante, fecha, proveedor, cliente, cantidad y precio.
- Las métricas asociadas a la tabla de hechos son, cantidad, precio unitario,
- precio unitario neto, impuesto, costo y el importe total.
+ almacena los datos históricos en detalle por cada producto vendido, cada
+ registro guarda información del número de comprobante, fecha, producto,
+ proveedor, cliente, cantidad, costo unitario, precio unitario, impuesto
+ e importe total.
+ Las métricas asociadas a la tabla de hechos son: cantidad, precio unitario,
+ impuesto, costo unitario y el importe total.
 \end_layout
 
 \begin_layout Itemize
@@ -326,8 +332,10 @@ Tabla de hechos Detalles:
 \series bold
 Tabla de hechos Stock:
 \series default
- almacena los datos históricos de cada movimiento de compra y de venta.
- Las métricas utilizadas para la tabla de hechos son: cantidad, precio unitario
+ almacena los datos históricos de cada movimiento ya sea compra o de venta
+ realizada, cada registro contiene información como fecha, producto, tipo
+ de movimiento, cantidad, precio unitario y costo unitario.
+ Las métricas definidas para la tabla de hechos son: cantidad, precio unitario
  y costo unitario.
 \end_layout
 
