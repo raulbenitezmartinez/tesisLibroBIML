@@ -29,7 +29,7 @@
 \paperfontsize 12
 \spacing double
 \use_hyperref false
-\papersize default
+\papersize a4paper
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -41,8 +41,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine natbib
-\cite_engine_type authoryear
+\cite_engine basic
+\cite_engine_type default
 \biblio_style plainnat
 \use_bibtopic false
 \use_indices false
@@ -146,7 +146,7 @@ Para el presente trabajo, se cuenta con una base de datos relacional Oracle
 Tabla de Productos
 \series default
 : almacena datos como descripción, unidad de medida, categoría, tipo de
- impuesto, línea del producto, marca, codigo de barras, proveedor, costo,
+ impuesto, línea del producto, marca, código de barras, proveedor, costo,
  precio de venta, fecha de registro, etc., de los productos disponibles para
  la venta, la tabla cuenta con 13.200 artículos registrados.
 \end_layout
@@ -157,7 +157,7 @@ Tabla de Productos
 Tabla Proveedores
 \series default
 : almacena datos como denominación, dirección, teléfono, ruc, email, página
- web, ciudad, pais, propietario, etc., de los proveedores de la empresa,
+ web, ciudad, país, propietario, etc., de los proveedores de la empresa,
  la tabla cuenta con 1.623 proveedores registrados.
 \end_layout
 
@@ -205,7 +205,7 @@ Proceso ETL.
 \begin_layout Standard
 En el proceso ETL posterior a la extracción y previa a la carga de los datos
  al datawarehouse fueron realizadas algunas transformaciones y limpieza
- a los datos de origen.
+ sobre los datos de origen.
  
 \end_layout
 
@@ -232,7 +232,7 @@ Artículos con datos de costo nulo, en tales casos los valores eran asignados
 
 \begin_layout Itemize
 Artículos con datos donde el costo eran mayores al precio de venta unitario,
- en dichos casos los datos fueron completaos con el costo promedio tomados
+ en dichos casos los datos fueron completados con el costo promedio tomados
  de la tabla de Ventas Detalle.
 \end_layout
 
@@ -280,8 +280,8 @@ Datawarehouse
 \end_layout
 
 \begin_layout Standard
-El datawarehouse se diseña a partir de la definición de las tablas de hechos
- y dimensiones utilizando el modelo de esquema en estrella 
+El datawarehouse se diseña partiendo de la definición de las tablas de hechos
+ y dimensiones utilizando el modelo en esquema estrella 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "KIM92"
@@ -296,8 +296,9 @@ Tablas de hechos
 \end_layout
 
 \begin_layout Standard
-De las tablas transaccionales definimos 3 tablas de hechos que nos servirá
- para definir los KPI que utilizaremos para el análisis.
+De las tablas transaccionales se definen 3 tablas de hechos a partir de
+ las cuales se definen y obtienen los valores de los KPI que luego se utilizarán
+ para el modelado de la solución propuesta.
  
 \end_layout
 
@@ -306,10 +307,11 @@ De las tablas transaccionales definimos 3 tablas de hechos que nos servirá
 \series bold
 Tabla de hechos Cabecera:
 \series default
- almacena los datos históricos de las ventas, cada registro guarda datos
- de: fecha, cliente, caja, número de factura y montos totales.
- Las métricas de la tabla de hechos son monto total, monto exento, monto
- gravado IVA.
+ almacena los datos históricos de las ventas, cada registro de la tabla
+ de hechos guarda datos de: fecha, cliente, caja, número de factura y monto
+ total, monto exento, monto gravado IVA.
+ Las métricas definidas para la tabla de hechos son: monto total, monto
+ exento, monto gravado IVA.
 \end_layout
 
 \begin_layout Itemize
@@ -317,10 +319,12 @@ Tabla de hechos Cabecera:
 \series bold
 Tabla de hechos Detalles:
 \series default
- almacena los datos históricos del detalle, cada registro guarda información
- del número de comprobante, fecha, proveedor, cliente, cantidad y precio.
- Las métricas asociadas a la tabla de hechos son, cantidad, precio unitario,
- precio unitario neto, impuesto, costo y el importe total.
+ almacena los datos históricos en detalle por cada producto vendido, cada
+ registro guarda información del número de comprobante, fecha, producto,
+ proveedor, cliente, cantidad, costo unitario, precio unitario, impuesto
+ e importe total.
+ Las métricas asociadas a la tabla de hechos son: cantidad, precio unitario,
+ impuesto, costo unitario y el importe total.
 \end_layout
 
 \begin_layout Itemize
@@ -328,8 +332,10 @@ Tabla de hechos Detalles:
 \series bold
 Tabla de hechos Stock:
 \series default
- almacena los datos históricos de cada movimiento de compra y de venta.
- Las métricas utilizadas para la tabla de hechos son: cantidad, precio unitario
+ almacena los datos históricos de cada movimiento ya sea compra o de venta
+ realizada, cada registro contiene información como fecha, producto, tipo
+ de movimiento, cantidad, precio unitario y costo unitario.
+ Las métricas definidas para la tabla de hechos son: cantidad, precio unitario
  y costo unitario.
 \end_layout
 
@@ -338,7 +344,8 @@ Dimensiones
 \end_layout
 
 \begin_layout Standard
-Las tablas de dimensiones diseñadas para el modelado del datawarehouse son:
+Las tablas de dimensiones diseñadas para el modelado del datawarehouse y
+ que se encuentran relacionadas a las tablas de hechos son:
 \end_layout
 
 \begin_layout Itemize
@@ -359,8 +366,9 @@ Dimensión Fecha:
 Dimensión Productos:
 \series default
  La tabla de dimensión producto está relacionada a las tablas de hechos
- Detalles y Stock, contiene los atributos o campos por la cual se pueden
- filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+ Detalles y Stock, contiene los atributos o campos (ej.: nombre del producto)
+ por la cual se pueden filtrar o agrupar datos al realizar consultas sobre
+ la tabla de hechos.
 \end_layout
 
 \begin_layout Itemize
@@ -369,8 +377,9 @@ Dimensión Productos:
 Dimensión Proveedores:
 \series default
  La tabla de dimensión proveedores está relacionada a la tabla de hechos
- Detalles, contiene los atributos o campos por la cual se puede filtrar
- o agrupar datos al realizar consultas sobre la tabla de hechos.
+ Detalles, contiene los atributos o campos (ej.: nombre del proveedor) por
+ la cual se puede filtrar o agrupar datos al realizar consultas sobre la
+ tabla de hechos.
 \end_layout
 
 \begin_layout Itemize
@@ -379,8 +388,9 @@ Dimensión Proveedores:
 Dimensión Clientes:
 \series default
  La tabla de dimensión Clientes está relacionada a las tablas de hechos
- Cabecera y Detalles, contiene los atributos o campos por la cual se pueden
- filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+ Cabecera y Detalles, contiene los atributos o campos (ej.: nombre del cliente)
+ por la cual se pueden filtrar o agrupar datos al realizar consultas sobre
+ la tabla de hechos.
 \end_layout
 
 \begin_layout Itemize
@@ -389,8 +399,8 @@ Dimensión Clientes:
 Dimensión Cajas:
 \series default
  La tabla de dimensión Cajas está relacionada a la tabla de hechos Cabecera,
- contiene los atributos o campos por la cual se pueden filtrar o agrupar
- datos al realizar consultas sobre la tabla de hechos.
+ contiene los atributos o campos (ej.: número de caja) por la cual se pueden
+ filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
 \end_layout
 
 \begin_layout Standard
@@ -405,6 +415,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/DER_BI_DW_FACT_DETALLES.png
 	scale 35
@@ -435,14 +446,15 @@ Tabla de hechos Detalles
 \end_layout
 
 \begin_layout Subsection
-Definición de los KPI
+Definición de los Indicadores Claves de Rendimiento (KPI)
 \end_layout
 
 \begin_layout Standard
-En el marco de esta tesis, en esta sección se definirán los KPI que se utilizará
-n como datos de entrada en las herramientas de aprendizaje automático para
- el modelado de una solución para pronosticar la demanda y como consecuencia
- la reposición de stock del siguiente periodo de tiempo
+En el marco de este trabajo, en esta sección se definen los KPIs y se obtienen
+ los valores que serán utilizados como datos de entrada en las herramientas
+ de aprendizaje automático para el modelado de una solución para pronosticar
+ la demanda y que servirá de apoyo en la toma de decisiones para la reposición
+ de stock del siguiente periodo
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMR13"
@@ -450,9 +462,10 @@ key "CMR13"
 \end_inset
 
  (Ej.: cantidad a comprar para satisfacer la demanda de la siguiente semana,
- quincena, o mes), estos KPI fueron adaptados a la solución planteada debido
- a que en los textos los KPI definidos engloban a todas las áreas de la
- organización como compras, ventas, marketing, recursos humanos.
+ quincena, o mes), los KPIs definidos mas adelante fueron adaptados a la
+ solución planteada debido a que en los textos consultados los KPI engloban
+ a toda la organización en áreas como compras, ventas, marketing, recursos
+ humanos y otros.
  Cada KPI mide un valor obtenido de los datos históricos almacenados en
  el datawarehouse.
  El cálculo de cada valor se realiza para cada producto y en un periodo
@@ -465,7 +478,7 @@ Ticket Medio.
 \end_layout
 
 \begin_layout Standard
-Es la cantidad media por cada transacción de compra que se realiza de un
+Es la cantidad media por cada transacción de venta que se realiza de un
  determinado producto.
  El indicador viene determinado por dos variables: La cantidad total vendida
  del producto y el total de tickets en las que fue vendido el producto.
@@ -596,21 +609,212 @@ Cálculo de valores para los Indicadores Clave de Desempeño.
 \end_layout
 
 \begin_layout Standard
-Definidos los KPI a ser utilizados, obtenemos los valores de cada KPI para
- cada producto y periodo de los datos almacenados en el datawarehouse, para
- ello codificamos a sentencias SQL las fórmulas detalladas en la sección
- anterior y almacenamos la información de los resultados en la base de datos.
+Definidos los KPI a ser utilizados, se procede a obtener los valores de
+ cada KPI para cada producto y periodo de los datos almacenados en las tablas
+ de hechos del datawarehouse, para ello las fórmulas descritas en la sección
+ anterior se codifican a sentencias SQL y los resultados obtenidos de la
+ ejecución fueron almacenamos en una tabla.
  Además de los valores de los KPI, en cada registro adicionalmente se guarda
  la información de la cantidad, fecha, año, mes, quincena y semana.
- Para el cálculo de los valores de los KPI se establecieron restricciones,
- que si un producto no fuese vendido por una cantidad consecutiva de periodos
- esta era descartada, ya que los valores de los cálculos para cada KPI daban
- cero el cual no tiene relevancia para el modelado.
+ Durante el cálculo de los valores de los KPI se establecieron ciertas restricci
+ones, si un producto no fue vendido durante un número consecutivo de periodos
+ esta era descartada, ya que los cálculos para cada KPI daban como resultado
+ un valor cero, el cual no tiene relevancia para el modelado.
+\end_layout
+
+\begin_layout Subsubsection*
+PERIODOS DE TIEMPO
 \end_layout
 
 \begin_layout Standard
 Agrupamos el conjunto de los valores de los KPI de cada producto en 3 periodos
  de tiempo: semanal, quincenal y mensual.
+\end_layout
+
+\begin_layout Paragraph*
+SEMANAL
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:5-2"
+
+\end_inset
+
+se puede observar un extracto de los valores obtenidos para un producto
+ por el rango de tiempo semanal.
+\end_layout
+
+\begin_layout Standard
+El campo SEMANA se completa de acuerdo al periodo calculado, en el campo
+ PERIODO, se guarda el valor S para semanal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/KPI_VALUES_SEMANAL.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5-2"
+
+\end_inset
+
+Tabla de Valores KPI Semanal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+QUINCENAL
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:5-3"
+
+\end_inset
+
+ se puede observar un extracto de los valores obtenidos para un producto
+ por el rango de tiempo quincenal.
+\end_layout
+
+\begin_layout Standard
+El campo QUINCENA se completa de acuerdo al periodo calculado, en el campo
+ PERIODO, se guarda el valor Q para quincenal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/KPI_VALUES_QUINCENAL.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5-3"
+
+\end_inset
+
+Tabla de Valores KPI Quincenal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+MENSUAL
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:5-4"
+
+\end_inset
+
+ se puede observar un extracto de los valores obtenidos para un producto
+ por el rango de tiempo mensual.
+\end_layout
+
+\begin_layout Standard
+El campo MES se completa para todos los casos del periodo calculado, en
+ el campo PERIODO, se guarda el valor M para mensual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/KPI_VALUES_MENSUAL.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5-4"
+
+\end_inset
+
+Tabla de Valores KPI Mensual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1753,6 +1957,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/5_semanal.png
 	scale 50

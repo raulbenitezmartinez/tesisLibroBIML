@@ -78,7 +78,7 @@
 \pdf_pdfborder true
 \pdf_colorlinks false
 \pdf_backref page
-\pdf_pdfusetitle true
+\pdf_pdfusetitle false
 \papersize a4paper
 \use_geometry true
 \use_package amsmath 1
@@ -91,8 +91,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine natbib
-\cite_engine_type authoryear
+\cite_engine basic
+\cite_engine_type default
 \biblio_style plainnat
 \use_bibtopic false
 \use_indices false
@@ -115,7 +115,7 @@
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle fancy
+\paperpagestyle headings
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -137,6 +137,17 @@ Técnica de pronóstico de la demanda basada en Business Intelligence y Machine
 
 \begin_layout Author
 Aditardo Vazquez Rojas
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand input
+filename "Titulo.lyx"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -199,6 +210,17 @@ filename "05_Modelado_BI_ML/05_Modelado_BI_ML.lyx"
 \begin_inset CommandInset include
 LatexCommand input
 filename "06_Experimentacion/06_Experimentacion.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand input
+filename "07_Conclusiones/07_Conclusiones.lyx"
 
 \end_inset
 
