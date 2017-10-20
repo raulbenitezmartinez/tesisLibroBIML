@@ -41,8 +41,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine natbib
-\cite_engine_type authoryear
+\cite_engine basic
+\cite_engine_type default
 \biblio_style plainnat
 \use_bibtopic false
 \use_indices false
@@ -415,6 +415,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/DER_BI_DW_FACT_DETALLES.png
 	scale 35
@@ -463,8 +464,8 @@ key "CMR13"
  (Ej.: cantidad a comprar para satisfacer la demanda de la siguiente semana,
  quincena, o mes), los KPIs definidos mas adelante fueron adaptados a la
  solución planteada debido a que en los textos consultados los KPI engloban
- a todas las áreas de la organización como compras, ventas, marketing, recursos
- humanos.
+ a toda la organización en áreas como compras, ventas, marketing, recursos
+ humanos y otros.
  Cada KPI mide un valor obtenido de los datos históricos almacenados en
  el datawarehouse.
  El cálculo de cada valor se realiza para cada producto y en un periodo
@@ -608,21 +609,212 @@ Cálculo de valores para los Indicadores Clave de Desempeño.
 \end_layout
 
 \begin_layout Standard
-Definidos los KPI a ser utilizados, obtenemos los valores de cada KPI para
- cada producto y periodo de los datos almacenados en el datawarehouse, para
- ello codificamos a sentencias SQL las fórmulas detalladas en la sección
- anterior y almacenamos la información de los resultados en la base de datos.
+Definidos los KPI a ser utilizados, se procede a obtener los valores de
+ cada KPI para cada producto y periodo de los datos almacenados en las tablas
+ de hechos del datawarehouse, para ello las fórmulas descritas en la sección
+ anterior se codifican a sentencias SQL y los resultados obtenidos de la
+ ejecución fueron almacenamos en una tabla.
  Además de los valores de los KPI, en cada registro adicionalmente se guarda
  la información de la cantidad, fecha, año, mes, quincena y semana.
- Para el cálculo de los valores de los KPI se establecieron restricciones,
- que si un producto no fuese vendido por una cantidad consecutiva de periodos
- esta era descartada, ya que los valores de los cálculos para cada KPI daban
- cero el cual no tiene relevancia para el modelado.
+ Durante el cálculo de los valores de los KPI se establecieron ciertas restricci
+ones, si un producto no fue vendido durante un número consecutivo de periodos
+ esta era descartada, ya que los cálculos para cada KPI daban como resultado
+ un valor cero, el cual no tiene relevancia para el modelado.
+\end_layout
+
+\begin_layout Subsubsection*
+PERIODOS DE TIEMPO
 \end_layout
 
 \begin_layout Standard
 Agrupamos el conjunto de los valores de los KPI de cada producto en 3 periodos
  de tiempo: semanal, quincenal y mensual.
+\end_layout
+
+\begin_layout Paragraph*
+SEMANAL
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:5-2"
+
+\end_inset
+
+se puede observar un extracto de los valores obtenidos para un producto
+ por el rango de tiempo semanal.
+\end_layout
+
+\begin_layout Standard
+El campo SEMANA se completa de acuerdo al periodo calculado, en el campo
+ PERIODO, se guarda el valor S para semanal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/KPI_VALUES_SEMANAL.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5-2"
+
+\end_inset
+
+Tabla de Valores KPI Semanal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+QUINCENAL
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:5-3"
+
+\end_inset
+
+ se puede observar un extracto de los valores obtenidos para un producto
+ por el rango de tiempo quincenal.
+\end_layout
+
+\begin_layout Standard
+El campo QUINCENA se completa de acuerdo al periodo calculado, en el campo
+ PERIODO, se guarda el valor Q para quincenal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/KPI_VALUES_QUINCENAL.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5-3"
+
+\end_inset
+
+Tabla de Valores KPI Quincenal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+MENSUAL
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:5-4"
+
+\end_inset
+
+ se puede observar un extracto de los valores obtenidos para un producto
+ por el rango de tiempo mensual.
+\end_layout
+
+\begin_layout Standard
+El campo MES se completa para todos los casos del periodo calculado, en
+ el campo PERIODO, se guarda el valor M para mensual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagenes/KPI_VALUES_MENSUAL.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5-4"
+
+\end_inset
+
+Tabla de Valores KPI Mensual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1765,6 +1957,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/5_semanal.png
 	scale 50

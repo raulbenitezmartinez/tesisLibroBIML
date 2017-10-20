@@ -1,7 +1,9 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \use_default_options false
 \maintain_unincluded_children false
@@ -9,16 +11,16 @@
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,15 +31,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 0
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Índice
 \shortcut idx
@@ -87,6 +98,10 @@ vskip
 \end_inset
 
 2.5cm 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -165,7 +180,7 @@ status collapsed
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename figuras/logo_pol.jpg
+	filename Figuras/logo_pol.jpg
 
 \end_inset
 
@@ -186,35 +201,7 @@ vskip
 \end_inset
 
 1cm
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size larger
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\series bold
- Multicast Óptico con Protección contra Falla Simple de Nodo
-\series default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -236,7 +223,8 @@ status collapsed
 
 
 \series bold
-UN ENFOQUE BASADO EN MOACO
+Técnica de pronóstico de la demanda basada en Business Intelligence y Machine
+ Learning
 \series default
 
 \begin_inset ERT
@@ -249,7 +237,7 @@ status collapsed
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -268,6 +256,12 @@ vskip
 \end_inset
 
 1cm
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -275,10 +269,10 @@ vskip
 
 \size larger
 \begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
+<lyxtabular version="3" rows="2" columns="2">
 <features tabularvalignment="middle">
-<column alignment="right" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
 <row>
 <cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
@@ -298,7 +292,7 @@ status collapsed
 
 
 \series bold
-Postulante:
+Postulantes:
 \series default
 
 \begin_inset ERT
@@ -332,7 +326,50 @@ status open
 
 \end_inset
 
-Aditardo Vazquez
+Raúl Benítez
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+Alberto Garcete
 \begin_inset ERT
 status collapsed
 
@@ -390,8 +427,8 @@ vskip
 \begin_inset Tabular
 <lyxtabular version="3" rows="2" columns="2">
 <features tabularvalignment="middle">
-<column alignment="right" valignment="top" width="0">
-<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
 <row>
 <cell alignment="right" valignment="top" usebox="none">
 \begin_inset Text
@@ -490,8 +527,8 @@ status collapsed
 
 \end_inset
 
-M.Sc.
- Enrique Dávalos
+Ing.
+ Aditardo Vázquez
 \begin_inset ERT
 status collapsed
 
@@ -531,6 +568,12 @@ vskip
 \end_inset
 
 1cm
+\size default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -538,7 +581,7 @@ vskip
 
 \series bold
 \size larger
-2013
+2017
 \series default
  
 \end_layout
