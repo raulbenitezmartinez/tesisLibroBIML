@@ -1,0 +1,202 @@
+* Using extreme learning machines for short­term urban water demand forecasting.
+Mejoramiento en la precisión de la previsión de demanda de agua urbana para la ciudad de Montreal – Canadá (2017).
+Article
+Urban Water Journal. Jul201 7, Vol. 1 4 Issue 6, p630­638. 9p.
+Soukayna Mouatadid y Jan Adamowski
+http://www.tandfonline.com/doi/abs/10.1080/1573062X.2016.1236133
+Journal
+Urban Water Journal 
+Volume 14, 2017 - Issue 6
+
+* Machine learning approaches to predict thermal demands using skin temperatures: Steady­state conditions.
+Proposición de un método de control inteligente para sistemas de calefacción y refrigeración. (2017).
+Article
+Building & Environment. Mar201 7, Vol. 11 4, p1 ­1 0. 1 0p.
+Changzhi Dai y Hui Zhang y Edward Arens y Zhiwei Lian 
+http://www.sciencedirect.com/science/article/pii/S036013231630484X
+Received 7 September 2016, Revised 20 November 2016, Accepted 5 December 2016, Available online 8 December 2016.
+Shanghai Jiao Tong University, 800 Dongchuan Road, Minhang District, Shanghai, 200240, China. © 2016 Elsevier Ltd. All rights reserved.
+
+* Multiscale stochastic prediction of electricity demand in smart grids using Bayesian networks.
+Proposición de un modelo predictivo probabilístico de consumo de energía, basado en datos, para la predicción del consumo en edificios residenciales (2017).
+Article
+Applied Energy. May201 7, Vol. 1 93, p369­380. 1 2p.
+Nastaran Bassamzadeh
+Roger Ghanem
+https://doi.org/10.1016/j.apenergy.2017.01.017
+Received 29 August 2016, Revised 3 January 2017, Accepted 11 January 2017, Available online 2 March 2017.
+
+* A review and analysis of regression and machine learning models on commercial building electricity load forecasting.
+Revisión de diferentes modelos de predicción de la carga eléctrica con un enfoque particular en modelos de regresión (2017).
+Article
+Renewable & Sustainable Energy Reviews. Jun201 7, Vol. 73, p11 04­11 22. 1 9p.
+B. Yildiz
+J.I. Bilbao
+A.B. Sproul
+https://doi.org/10.1016/j.rser.2017.02.023
+Received 29 March 2016, Revised 2 December 2016, Accepted 4 February 2017, Available online 11 February 2017.
+
+* Quantifind Launches On­Demand Machine Learning Solution That Helps Marketers Find Consumer Conversations That Influence Purchase Decisions.
+Aplicación de Machine Learning en la nube para encontrar conversaciones de los consumidores que influyen en las decisiones de compras (2016).
+Article
+Business Wire (English). 06/08/201 6.
+Quantifind
+Quantifind today announced general availability of SIGNUM Analysis, a cloudbased, self­service analytics application that gives marketers a new and innovative way to identify consumer data that drives business performance.
+http://www.businesswire.com/news/home/20160608005446/en/Quantifind-Launches-On-Demand-Machine-Learning-Solution-Helps
+https://www.quantifind.com/
+
+* MODELLING TOURISM DEMAND TO SPAIN WITH MACHINE LEARNING TECHNIQUES. THE IMPACT OF FORECAST HORIZON ON MODEL SELECTION.
+Modelado de la demanda turística de España (2016).
+Article
+OSCAR CLAVERIA
+SALVADOR TORRA
+University of Barcelona (UB)
+https://www.researchgate.net/publication/311921711_Modelling_tourism_demand_to_Spain_with_machine_learning_techniques_The_impact_of_forecast_horizon_on_model_selection
+Revista de Economía Aplicada Número 72 (vol. XXIV), 2016, págs. 109 a 132
+
+* MACHINE LEARNING TECHNIQUES FOR STOCK MARKET PREDICTION.ACASE STUDY OF OMV PETROM.
+Predicción del Mercado de Valores (2016).
+Article
+Economic Computation and Economic Cybernetics Studies and Research, Issue 3/2016, Vol. 50
+Professor Catalina Cocianu, PhD
+Hakob Grigoryan, PhD Student
+https://www.researchgate.net/publication/308719462_MACHINE_LEARNING_TECHNIQUES_FOR_STOCK_MARKET_PREDICTIONACASE_STUDY_OF_OMV_PETROM
+Article · September 2016 with 93 Reads
+
+* Analytics for an Online Retailer: Demand Forecasting and Price Optimization.
+Análisis para un minorista en línea: Previsión de la demanda y optimización de precios (2016).
+Article
+Manufacturing & Service Operations Management. Winter201 6, Vol. 1 8 Issue 1, p69­88. 20p.
+Kris Johnson - Ferreira 
+Bin Hong Alex - Lee 
+David - Simchi­Levi
+https://www.econbiz.de/Record/analytics-for-an-online-retailer-demand-forecasting-and-price-optimization-johnson-ferreira-kris/10011437928
+Manufacturing & service operations management : M & SOM. - Catonsville, MD: INFORMS, ISSN 1523-4614, ZDB-ID 2021015-2. - Vol. 18.2016, 1, p. 69-88
+
+* Intelligent forecasting of residential heating demand for the District Heating System based on the monthly overall natural gas consumption.
+Demanda de calefacción residencial basado en el consumo total mensual de gas natural (2015).
+Article
+Energy & Buildings. Oct201 5, Vol. 1 04, p208­21 4. 7p.
+Izadyar, Nima
+Ong, Hwai Chyuan
+Shamshirband, Shahaboddin
+Ghadamian, Hossein
+Tong, Chong Wen
+https://doi.org/10.1016/j.enbuild.2015.07.006
+Received 15 May 2015, Revised 30 June 2015, Accepted 3 July 2015, Available online 6 July 2015.
+
+* Hybrid Soft Computing Schemes for the Prediction of Import Demand of Crude Oil in Taiwan.
+Predicción de la demanda de importación de crudo en Taiwán (2014).
+Article
+Mathematical Problems in Engineering
+Volume 2014 (2014), Article ID 257947, 11 pages
+Yuehjen E. Shao
+Chi-Jie Lu
+Chia-Ding Hou
+http://dx.doi.org/10.1155/2014/257947
+Received 18 February 2014; Accepted 7 April 2014; Published 28 April 2014
+
+* Predicting the Performance of Forecasting Strategies for Naval Spare Parts Demand: A Machine Learning Approach.
+Predicción del desempeño de las estrategias de pronóstico para la demanda de repuestos navales (2012).
+Article
+Management Science and Financial Engineering
+Vol 19, No 1, May 2013, pp.1-10
+ISSN 2287-2043 EISSN 2287-2361
+Seongmin Moon
+Integrated Logistics Support Technology Team, Defense Acquisition Program Administration
+https://www.researchgate.net/publication/264177207_Predicting_the_Performance_of_Forecasting_Strategies_for_Naval_Spare_Parts_Demand_A_Machine_Learning_Approach
+Received: May 27, 2012 / Revised: June 1,2012 / Accepted: June 3, 2012
+
+---
+
+Buenas noches Dr Jason!
+
+
+Te saluda Raul Benitez, soy de la ciudad de Asunción del país Paraguay, aquí en Sudamérica.
+
+Me encuentro junto a un compañero elaborando la tesis de grado universitario, 
+que trata sobre la manera de elaborar un modelo de pronóstico de la demanda,
+a partir de métricas de negocios de empresas retail que luego pasan por un proceso de aprendizaje automático.
+
+Se afronta como un problema de clasificación donde el objetivo del modelo es predecir si la demanda
+futura de un determinado producto será nada, poca, medianamente o mucha. 
+
+Los períodos de análisis son mensuales y conseguimos datos reales de una emepresa retail. Utilizamos la API Weka para hacer un programa Java que automatice el proceso de aprendizaje automático. Para las pruebas utilizamos K-fold cross-validation.
+
+Ya terminamos el modelado y las pruebas con los datos reales.
+De todas formas aún me quedan algunas interrogantes y no encuentro respuesta exacta:
+
+* Como saber la cantidad óptima de etiquetas? Encontramos, solo probando, que con 4 etiquetas (nada, poco, medio, mucho) alcanza altas tasas de acierto.
+* Como saber la cantidad óptima de atributos? Tenemos 9 atributos, 7 son métricas de negocios y 2 son métricas de tiempo (mes, año).
+* Como saber la cantidad minima necesaria de instancias que den resultados fiables?. En nuestro caso tenemos 34 instancias o ejemplos por cada producto.
+* Es una buena aproximacion probar todos los clasificadores Weka y elegir el mejor en base a Kappa?
+* Como calcular el bias-variance tradeoff de los clasificadores Weka? Es relevante hacer este análisis o es suficiente elegir
+los algoritmos que alcancen mayor tasa de acierto?
+* Puedo confiar en cross-validation? Como saber que no está sesgado el resultado?
+
+Disculpame que sea muy largo, pero necesito que me ayudes en estos temas, hace 2 años venimos trabajando por la tesis
+y ya estamos en la recta final.
+
+En tu libro "Machine Learning Mastery Super Bundle" se profundizan estos temas?
+
+
+Cordiales Saludos! 
+
+----
+
+Good evening Dr Jason!
+
+
+Greets you Raul Benitez, I am from the city of Asuncion of Paraguay country, here in South America.
+
+I am together with a colleague preparing the thesis of university degree,
+which deals with how to develop a demand forecast model,
+from business metrics of retail companies which then go through an machine learning process.
+
+It is addressed as a classification problem where the purpose of the model is to predict 
+whether the future demand for a given product will be anything, little, medium or a lot of.
+
+The periods of analysis are monthly and we get real data from a retail business. We use the Weka API to make a Java program that automates the machine learning process. For the tests we used k-fold cross-validation.
+
+We have finished modeling and testing with the actual data. Anyway I still have some questions and I do not find an exact answer:
+
+* How to know the optimal quantity of labels? We found, just trying, that with 4 tags (nothing, little, medium, a lot) reaches high success rates.
+* How to know the optimal amount of attributes? We have 9 attributes, 7 are business metrics and 2 are time metrics (month, year).
+* How to know the minimum amount of instances that give reliable results ?. In our case we have 34 instances or examples per product.
+* Is it a good approximation, for each product and its instances, to test all Weka classifiers and choose the best one based on Kappa?. It's how we do it.
+* How to calculate the bias-variance tradeoff of Weka classifiers? Is it relevant to do this analysis or is it sufficient to choose the algorithms that achieve the highest success rate?
+* Can I rely on cross-validation? How to know that the result is not biased?
+
+Sorry for the long time, but I need you to help me on these issues, 2 years ago we have been working on the thesis and we are already in the final stretch.
+
+In your book "Machine Learning Mastery Super Bundle" these topics are deepened?
+
+
+Best regards!
+Raul Benitez
+
+---
+
+
+(Again it is too difficult to give a general rule on how much training data is enough; among other things, this depends on the signal-to-noise ratio of the underlying function, and the complexity of the models being fit to the data.)
+
+
+Bias and variance add to produce the prediction error curves, with minima at about k = 5 
+
+Err(x0) = Irreducible Error + Bias2 + Variance. (7.9)
+The first term is the variance of the target around its true mean f(x0), and
+cannot be avoided no matter how well we estimate f(x0), unless σε2 = 0.
+The second term is the squared bias, the amount by which the average of
+our estimate differs from the true mean; the last term is the variance; the
+expected squared deviation of fˆ(x0) around its mean. Typically the more
+complex we make the model fˆ, the lower the (squared) bias but the higher
+the variance. Pag 223
+
+
+
+
+
+
+
+
+

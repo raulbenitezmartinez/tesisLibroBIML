@@ -765,19 +765,20 @@ es en el ámbito de Machine Learning asociado al Demand Forecasting (Pronóstico
 \end_layout
 
 \begin_layout Itemize
-Mejorar la precisión de la previsión de demanda de agua urbana para la ciudad
- de Montreal – Canadá (2017).
+Mejoramiento en la precisión de la previsión de demanda de agua urbana para
+ la ciudad de Montreal – Canadá (2017).
 \end_layout
 
 \begin_layout Itemize
-Proponer un método de control inteligente para sistemas de calefacción y
- refrigeración.
+Proposición de un método de control inteligente para sistemas de calefacción
+ y refrigeración.
  (2017).
 \end_layout
 
 \begin_layout Itemize
-Proponer un modelo predictivo probabilístico de consumo de energía, basado
- en datos, para la predicción del consumo en edificios residenciales (2017).
+Proposición de un modelo predictivo probabilístico de consumo de energía,
+ basado en datos, para la predicción del consumo en edificios residenciales
+ (2017).
 \end_layout
 
 \begin_layout Itemize
@@ -791,7 +792,7 @@ Aplicación de Machine Learning en la nube para encontrar conversaciones
 \end_layout
 
 \begin_layout Itemize
-Modelar la demanda turística de España (2016).
+Modelado de la demanda turística de España (2016).
 \end_layout
 
 \begin_layout Itemize
@@ -1289,7 +1290,7 @@ key "Hastie1998"
 \end_layout
 
 \begin_layout Subsection
-Clasificadores perezosos (basado en instancias)
+Clasificadores perezosos (basados en instancia)
 \end_layout
 
 \begin_layout Standard
