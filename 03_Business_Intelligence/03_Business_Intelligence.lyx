@@ -87,7 +87,21 @@ En la actualidad Business Intelligence está siendo cada vez más adoptado
  por las organizaciones debido a la necesidad de los mandos superiores de
  contar con información rápida y precisa necesaria para la toma de decisiones
  y su importancia a nivel estratégico y operativo, en este capítulo se presenta
- los conceptos y una introducción al Business Intelligence.
+ los conceptos y una introducción al Business Intelligence 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Scheps2008"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CJ20"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -118,23 +132,22 @@ key "Moss2003,CJ20,BICCI07"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
 El primero que acuñó el término fue Howard Dresner, quién fue consultor
- de Gartner Group lo utilizó para describir un conjunto de conceptos y métodos
+ de Gartner Group.
+ Dresner utilizó el término para describir un conjunto de conceptos y métodos
  que mejoran la toma de decisiones, partiendo de la información disponible
  acerca de los hechos.
- Entonces, partiendo de la definición del glosario de términos de Gartner
- 
+ Del glosario de términos de Gartner se extrae la siguiente definición 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "GART06"
 
 \end_inset
 
-: 
+:
 \begin_inset Newline newline
 \end_inset
 
@@ -160,7 +173,7 @@ tos y efectuar los cambios
 \end_layout
 
 \begin_layout Standard
-Una definición más formal que propone The Datawarehouse Institute es
+The Datawarehouse Institute propone una definición mas formal 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "EH05"
@@ -213,8 +226,8 @@ Objetivos
 \end_layout
 
 \begin_layout Standard
-Según lo expuesto en la definición de Business Intelligence, tiene los siguiente
-s objetivos principales
+Según lo expuesto en la definición, Business Intelligence tiene los siguientes
+ objetivos principales 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BICCI07"
@@ -264,15 +277,22 @@ Componentes de Business Intelligence
 Implementar un proyecto de Business Intelligence en una organización es
  un proceso que sigue una serie de pasos, cada paso puede verse como un
  componente.
- En la siguiente gráfica observamos los distintos componentes que forman
- parte de Business Intelligence.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3.1"
+
+\end_inset
+
+ observamos los distintos componentes que forman parte de Business Intelligence
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BICCI07"
 
 \end_inset
 
-
+:
 \end_layout
 
 \begin_layout Standard
@@ -297,7 +317,20 @@ status open
 \begin_layout Plain Layout
 
 \lang english
-Componentes de Business Intelligence
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.1"
+
+\end_inset
+
+Componentes de Business Intelligence 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -345,14 +378,14 @@ Fuentes de información externa, en algunos casos comprada a terceros.
 
 \begin_layout Standard
 También las fuentes de información son usualmente heterogéneas, pueden contener
- tipos de datos: 
+ los siguientes tipos de datos 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "CJ20"
 
 \end_inset
 
-
+:
 \end_layout
 
 \begin_layout Itemize
@@ -367,8 +400,8 @@ Semi estructurados: son formatos entendibles por los computadores como Html
 
 \begin_layout Itemize
 No estructurados: son formatos no legibles para computadoras como Word,
- Html no tabulado, PDF, etc que pueden obtenerse mediante técnicas avanzadas
- de extracción de datos.
+ Html no tabulado, PDF, etc.
+ que pueden obtenerse mediante técnicas avanzadas de extracción de datos.
 \end_layout
 
 \begin_layout Subsection
@@ -391,7 +424,7 @@ Extract, Transform and Load
 
 ) es un tipo de integración de datos que consiste en todo el proceso que
  se realiza entre las fuentes de información y el área de presentación de
- los datos
+ los datos 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "KIM92"
@@ -406,7 +439,7 @@ key "KIM92"
 \end_layout
 
 \begin_layout Standard
-El proceso ETL se divide en 5 subprocesos
+El proceso ETL se divide en 5 subprocesos 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "BICCI07"
@@ -617,9 +650,16 @@ DATAWAREHOUSE
 \end_layout
 
 \begin_layout Standard
-El datawarehouse o almacén de datos son colecciones de datos acerca de los
- procesos de negocios de una organización, proporciona una visión global,
- común e integrada de los datos.
+El datawarehouse o 
+\begin_inset Quotes eld
+\end_inset
+
+almacén de datos
+\begin_inset Quotes erd
+\end_inset
+
+ son colecciones de datos acerca de los procesos de negocios de una organización
+, proporciona una visión global, común e integrada de los datos.
  Hoy en día se piensa que son las principales tecnologías que apoyan el
  entorno heterogéneo de toma de decisiones, el datawarehouse tiene las siguiente
 s propiedades: no volátil, coherente, fiable y con información histórica
@@ -722,7 +762,7 @@ ing.
 
 \begin_layout Standard
 Se debe tener en cuenta que existen otros elementos en el contexto de un
- datawarehouse
+ datawarehouse 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CJ20"
@@ -790,25 +830,40 @@ Metadatos: datos estructurados y codificados que describen características
 
 \begin_layout Subsubsection*
 Elementos de una datawarehouse
+\end_layout
+
+\begin_layout Standard
+El diseño de una base de datos operacional con una estructura relacional
+ sigue las 
+\begin_inset Quotes eld
+\end_inset
+
+formas normales
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kroenke2003"
+
+\end_inset
+
+.
+ Un datawarehouse no debe seguir ese patrón de diseño.
+ La idea principal es que en el datawarehouse la información esté almacenada
+ con una estructura desnormalizada, para optimizar las consultas.
+ Para ello se debe identificar, en la organización, los procesos de negocio,
+ las vistas para el proceso de negocio y las medidas cuantificables asociadas
+ a los mismos.
+ Los elementos de un datawarehouse son 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "CJ20"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-La estructura relacional de una base de datos operacional sigue las formas
- normales en su diseño.
- Un datawarehouse no debe seguir ese patrón de diseño.
- La idea principal es que la información sea presentada desnormalizada para
- optimizar las consultas.
- Para ello se debe identificar, en la organización, los procesos de negocio,
- las vistas para el proceso de negocio y las medidas cuantificables asociadas
- a los mismos.
- Los elementos de un datawarehouse son:
+:
 \end_layout
 
 \begin_layout Itemize
@@ -903,7 +958,7 @@ key "Wrembel2006,BICCI07,CJ20"
 \end_layout
 
 \begin_layout Standard
-Una definición formal de OLAP seria
+Una definición formal de OLAP sería 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CJ20"
@@ -919,7 +974,7 @@ key "CJ20"
 
 
 \shape italic
-Se entiende por OLAP o proceso analítico en linea, al método ágil y flexible
+Se entiende por OLAP o proceso analítico en línea, al método ágil y flexible
  para organilizar datos, especialmente metadatos, sobre un objeto o jerarquía
  de objetos como en un sistema u organización multidimensional, y cuyo objetivo
  es recuperar y manipular datos y combinaciones de los mismos a través de
@@ -933,11 +988,49 @@ Se entiende por OLAP o proceso analítico en linea, al método ágil y flexible
 \end_layout
 
 \begin_layout Standard
-Una representación gráfica del OLAP son los que se conocen como cubos.
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3.2"
+
+\end_inset
+
+ se observa una representación gráfica del OLAP también conocida como cubo.
+ En el ejemplo el cubo cuenta con 3 dimensiones (Tiempo, Producto y Región)
+ sobre las cuales se pueden realizar consultas, ej.: Monto total de venta
+ del producto 
+\begin_inset Quotes eld
+\end_inset
+
+X
+\begin_inset Quotes erd
+\end_inset
+
+ en el año 
+\begin_inset Quotes eld
+\end_inset
+
+Y
+\begin_inset Quotes erd
+\end_inset
+
+ en la region 
+\begin_inset Quotes eld
+\end_inset
+
+Z
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Los cubos OLAP también permiten representar jerarquías, en el caso de la
+ dimensión Tiempo la jerarquía podría estar compuesta por año, semestre,
+ mes, semana y día.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -946,7 +1039,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figuras/OLAP.png
-	scale 50
+	scale 80
 
 \end_inset
 
@@ -957,6 +1050,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.2"
+
+\end_inset
+
 Cubo OLAP
 \end_layout
 

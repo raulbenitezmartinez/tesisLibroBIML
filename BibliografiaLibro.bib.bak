@@ -434,27 +434,55 @@
   author    = {Stuart Russell and Peter Norvig},
 }
 
-
 @Book{Moss2003,
-  title         = {Business Intelligence Roadmap: The Complete Project Lifecycle for Decision-support Applications},
-  publisher     = {Addison-Wesley},
-  year          = {2003},
-  author        = {Moss, L.T. and Atre, S.},
-  series        = {Addison-Wesley information technology series},
-  __markedentry = {[alberto:]},
-  isbn          = {9780201784206},
-  lccn          = {2002026196},
-  url           = {https://books.google.com.py/books?id=HSeE7rOXKsUC},
+  title     = {Business Intelligence Roadmap: The Complete Project Lifecycle for Decision-support Applications},
+  publisher = {Addison-Wesley},
+  year      = {2003},
+  author    = {Moss, L.T. and Atre, S.},
+  series    = {Addison-Wesley information technology series},
+  isbn      = {9780201784206},
+  lccn      = {2002026196},
+  url       = {https://books.google.com.py/books?id=HSeE7rOXKsUC},
 }
 
 @Book{Wrembel2006,
-  title         = {Data Warehouses and OLAP: Concepts, Architectures and Solutions: Concepts, Architectures and Solutions},
-  publisher     = {IRM Press},
-  year          = {2006},
-  author        = {Wrembel, R.},
-  series        = {Gale virtual reference library},
-  __markedentry = {[alberto:6]},
-  isbn          = {9781599043661},
-  lccn          = {2006027721},
-  url           = {https://books.google.com.py/books?id=8HSSrj-3dRYC},
+  title     = {Data Warehouses and OLAP: Concepts, Architectures and Solutions: Concepts, Architectures and Solutions},
+  publisher = {IRM Press},
+  year      = {2006},
+  author    = {Wrembel, R.},
+  series    = {Gale virtual reference library},
+  isbn      = {9781599043661},
+  lccn      = {2006027721},
+  url       = {https://books.google.com.py/books?id=8HSSrj-3dRYC},
 }
+
+@Book{Rasmussen2002,
+  title     = {Financial Business Intelligence: Trends, Technology, Software Selection, and Implementation},
+  publisher = {Wiley},
+  year      = {2002},
+  author    = {Rasmussen, N.H. and Goldy, P.S. and Solli, P.O.},
+  isbn      = {9780471267850},
+  url       = {https://books.google.com.py/books?id=wYjUsO-i4DUC},
+}
+
+@Book{Scheps2008,
+  title         = {Business Intelligence For Dummies},
+  publisher     = {For Dummies},
+  year          = {2008},
+  author        = {Swain Scheps},
+  isbn          = {0470127236},
+  __markedentry = {[alberto:]},
+  url           = {https://www.amazon.com/Business-Intelligence-Dummies-Swain-Scheps/dp/0470127236?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0470127236},
+}
+
+@Book{Kroenke2003,
+  title         = {Procesamiento de bases de datos: fundamentos, dise{\~n}o e implementaci{\'o}n},
+  publisher     = {Pearson Educaci{\'o}n},
+  year          = {2003},
+  author        = {Kroenke, D.M. and Hern{\'a}ndez, A.E.G.},
+  isbn          = {9789702603252},
+  __markedentry = {[alberto:6]},
+  url           = {https://books.google.com.py/books?id=7ORUWItwcNEC},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
