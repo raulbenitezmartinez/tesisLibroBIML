@@ -223,8 +223,7 @@ status collapsed
 
 
 \series bold
-Técnica de pronóstico de la demanda basada en Business Intelligence y Machine
- Learning
+Pronóstico de la demanda en empresas retail
 \series default
 
 \begin_inset ERT
@@ -238,6 +237,38 @@ status collapsed
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\series bold
+Técnica basada en Business Intelligence y Machine Learning
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
