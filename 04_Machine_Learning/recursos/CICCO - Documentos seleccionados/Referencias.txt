@@ -192,11 +192,450 @@ expected squared deviation of fˆ(x0) around its mean. Typically the more
 complex we make the model fˆ, the lower the (squared) bias but the higher
 the variance. Pag 223
 
+Smola Pag. 15
+The elements Pag. 37
+
+-----
+
+lógica, computación y probabilidad
+
+inteligencia y un artefacto
+
+lenguaje, visión y planificación,
+
+La IA desde el primer momento abarcó la idea de duplicar facultades humanas como la creatividad, la auto-mejora y el uso del lenguaje
+La IA es el único de estos campos que es claramente una rama de la informática
+La IA es el único campo que persigue la construcción de máquinas que funcionen automáticamente en medios complejos y cambiantes
+
+A comienzos 1952, Arthur Samuel
+escribió una serie de programas para el juego de las damas que eventualmente aprendieron a jugar hasta alcanzar un nivel equivalente al de un amateur. De paso, echó por tierra la idea de que los computadores sólo pueden hacer lo que se les dice: su programa pronto aprendió a jugar mejor que su creador.
+
+en 1958, McCarthy publicó un artículo titulado Programs with Common Sense, en el que describía el Generador de Consejos
+
+competente en áreas nuevas, sin necesidad de reprogramación
+
+representación del conocimiento y el razonamiento
+
+En 1963 McCarthy creó el Laboratorio de IA en Stanford
+
+J. A. Robinson del método de resolución
+
+total integración del razonamiento lógico y la actividad física
+
+micromundos
+
+traducción automática
+
+problemas que se estaban intentando resolver mediante la IA eran intratable
+
+Los primeros experimentos en el campo de la evolución automática (ahora llamados algoritmos genéticos)
+
+La incapacidad para manejar la «explosión combinatoria»
+
+limitaciones inherentes a las estructuras básicas
+
+Sistemas basados en el conocimiento
+
+Podría afirmarse que para resolver un problema en la práctica, es necesario saber de antemano la correspondiente respuesta
+
+la nítida separación del conocimiento (en forma de reglas) de la parte correspondiente al razonamiento
+
+Feigenbaum junto con otros investigadores de Stanford
+dieron comienzo al Proyecto de Programación Heurística, PPH, dedicado a determinar
+el grado con el que la nueva metodología de los sistemas expertos podía aplicarse a otras
+áreas de la actividad humana.
+
+factores de certeza
+
+comprensión del lenguaje natural
+
+Roger Schank reforzó lo anterior al afirmar: «No existe eso que llaman sintaxis»
+
+representación de situaciones estereotipo
+
+descripción de la organización de la memoria humana
+
+comprensión de planes y objetivos
+
+lenguajes de representación y razonamiento diferentes
+
+el lenguaje Prolog
+
+la familia del PLANNER
+
+El primer sistema experto comercial que tuvo éxito, R1, inició su actividad en Digital Equipment Corporation (McDermott, 1982)
+
+En 1981 los japoneses anunciaron el proyecto «Quinta Generación»
+
+Estados Unidos constituyó la Microelectronics and Computer Technology Corporation (MCC)
+
+la industria de la IA creció rápidamente, pasando de unos pocos millones de dólares en 1980 a billones de dólares en 1988
+
+modelos de inteligencia artificial llamados conexionistas
+
+modelos simbólicos propuestos por Newell y Simon como de la aproximación lógica de McCarthy 
+
+las aproximaciones conexionistas y simbólicas son complementarias y no competidoras
+
+La IA se fundó en parte en el marco de una rebelión en contra de las limitaciones de los campos existentes como la teoría de control o la estadística
+
+En la actualidad
+se está abandonando este aislamiento. Existe la creencia de que el aprendizaje automá-
+tico no se debe separar de la teoría de la información, que el razonamiento incierto no se
+debe separar de los modelos estocásticos, de que la búsqueda no se debe aislar de la optimización clásica y el control, y de que el razonamiento automático no se debe separar
+de los métodos formales y del análisis estático.
+
+el campo del reconocimiento del habla
+
+los modelos de Markov ocultos o MMO
+
+rigurosa teoría matemática
+
+un proceso de aprendizaje en grandes corpus de datos de lenguaje reales
+
+La tecnología del habla y el campo relacionado del reconocimiento de caracteres manuscritos
+
+las redes neuronales se puedan comparar con otras técnicas similares de campos como la estadística, el reconocimiento de patrones y el aprendizaje automático
+
+Como resultado de estos desarrollos, la tecnología denominada minería de datos
+ha generado una nueva y vigorosa industria
+
+El formalismo
+de las redes de Bayes
+
+ahora domina la investigación de la IA en el razonamiento incierto y los sistemas expertos
+
+Esta aproximación facilita el aprendizaje a
+partir de la experiencia, y combina lo mejor de la IA clásica y las redes neuronales.
+
+sistemas expertos normativos: es decir, los que actúan racionalmente de acuerdo con las leyes de la teoría de la decisión, sin que intenten imitar las etapas de razonamiento de los expertos
+humanos. 
+
+robótica, visión por computador, y
+aprendizaje automático
+
+áreas como la visión y la robótica están cada vez más aislados de la «rama central» de la IA
+
+el problema del «agente total»
+
+agentes inmersos en entornos reales, que disponen de sensores de entradas continuas
+ 
+motores de búsqueda, sistemas de
+recomendación, y los sistemas para la construcción de portales Web 
+
+los sistemas sensoriales (visión, sónar, reconocimiento del habla, etc.) no pueden generar información totalmente fidedigna del medio en el que habitan
+
+la IA se ha ido acercando
+a otros campos, como la teoría de control y la economía, que también tratan con agentes
 
 
+aprender una función de valores discretos se denomina clasificación; aprender una
+función continua se denomina regresión. 
 
 
+Hay que tener cuidado de no utilizar el grado de libertad que aparece cuando hay un
+conjunto grande de hipótesis posibles, para encontrar «regularidades» poco significativas en los datos. Este problema se denomina sobreajuste. El sobreajuste es un fenómeno
+muy generalizado que ocurre cuando la función principal no es del todo aleatoria. Afecta a todos los tipos de algoritmos de aprendizaje, no sólo a los árboles de decisión.
+
+Cuando los datos contienen mucho ruido, los árboles que se construyen
+con poda funcionan significativamente mejor que los que se construyen sin poda. Por lo
+general, los árboles podados son más pequeños y por lo tanto más sencillos de entender.
+
+Cuando los datos contienen mucho ruido, los árboles que se construyen
+con poda funcionan significativamente mejor que los que se construyen sin poda. Por lo
+general, los árboles podados son más pequeños y por lo tanto más sencillos de entender.
+
+La validación cruzada (cross-validation) es otra técnica que reduce el sobreajuste.
+Puede ser aplicada a cualquier algoritmo de aprendizaje, no sólo a los árboles de decisión. La idea básica es estimar la calidad de cada hipótesis en la predicción de datos no
+observados. Esto se hace separando una parte de datos conocidos y utilizándola para medir la calidad de la predicción de una hipótesis inducida a partir de los datos restantes.
+La validación cruzada de K pasadas (K-fold cross-validation) consiste en realizar k experimentos, dejando a un lado cada vez 1/k de los datos para test y promediando los resultados. Los valores típicos de k son 5 y 10. El extremo es k = n, también conocido como
+validación cruzada omitiendo uno (leave-one-out-cross-validation). La validación cruzada se puede utilizar en conjunción con cualquier método de construcción del árbol (incluyendo poda) para seleccionar un árbol con una calidad de predicción buena. Para evitar
+el problema de peeking, debemos medir esta calidad con un nuevo conjunto de test.
+
+El método de conjuntos de hipótesis más comúnmente utilizado es el denominado
+boosting (propulsión). Para entender cómo funciona, es necesario explicar primero la
+idea de conjunto de entrenamiento con pesos (weighted training set).
+
+ADABOOST tiene una propiedad
+muy importante: si el algoritmo de aprendizaje de entrada L es un algoritmo de aprendizaje débil, lo que significa que L siempre devuelve una hipótesis con un error sobre el
+conjunto de entrenamiento que es ligeramente mejor que una suposición aleatoria (es decir, 50 por ciento para clasificación booleana), el ADABOOST devolverá una hipótesis que
+clasifica los datos de entrenamiento perfectamente para M suficientemente grande. Así,
+el algoritmo aumenta la precisión sobre los datos de entrenamiento del algoritmo original.
+
+La navaja de Ockham indica que es mejor no hacer hipótesis más complejas de lo necesario, sin embargo, la gráfica indica que la predicción mejora a medida que el conjunto de hipótesis se
+hace más complejo. Se han propuesto algunas explicaciones de esto. Una explicación
+es que el boosting aproxima el aprendizaje Bayesiano (véase Capítulo 20), del que se
+puede demostrar que es un algoritmo de aprendizaje óptimo, y la aproximación mejora
+a medida que se añaden más hipótesis. Otra explicación posible es que la adición de más
+hipótesis permite que el conjunto de hipótesis discrimine más claramente entre ejemplos
+positivos y negativos, lo cual ayuda a la hora de clasificar nuevos ejemplos.
+
+* En términos formales, ¿cómo sabremos que la hipótesis h está cercana a la
+función objetivo fsi no conocemos f? Estas preguntas han sido meditadas durante siglos.
+Hasta que se encuentre respuesta para ellas, el aprendizaje automático estará preguntándose por sus propios éxitos.
+
+** El enfoque tomado en esta sección se basa en la teoría computacional del aprendizaje, un campo entre la IA, la estadística y la informática teórica. El principio fundamental es el siguiente: cualquier hipótesis que sea muy errónea será descubierta con
+una probabilidad alta después de un número pequeño de ejemplos, ya que realizará una
+predicción incorrecta. Por ello, es improbable que cualquier hipótesis que es consistente
+con un conjunto suficientemente grande de ejemplos de entrenamiento, sea muy erró-
+nea: es decir, debe ser una aproximación correcta probable (PAC). Cualquier algoritmo de aprendizaje que devuelve hipótesis que sean una aproximación correcta probable
+se denomina algoritmo de PAC-aprendizaje (PAC-learning.
+
+** La suposición clave es que los conjuntos de ejemplos de entrenamiento y de test son elegidos de forma fortuita e independiente a partir del mismo
+conjunto de ejemplos que siguen una misma distribución de probabilidad. Esto se denomina suposición estacionaria. Sin la suposición estacionaria, la teoría no podría hacer ninguna predicción acerca del futuro, porque no existiría la conexión necesaria entre el futuro
+y el pasado. 
+
+* Inicialmente, asumiremos que la función verdadera fpertenece a H. Ahora, podemos definir el error de una hipótesis h con respecto a la función verdadera f, dada una distribución D sobre los ejemplos, como la probabilidad que h sea diferente de fcon respecto
+a un ejemplo:... Esta es la misma cantidad medida experimentalmente por las curvas de aprendizaje que
+se mostraron anteriormente.
+Una hipótesis h se denomina aproximadamente correcta si error(h) … e, donde e
+es una constante pequeña.
+
+* Se puede pensar que una hipótesis aproximadamente correcta estará «cerca» de la 
+función verdadera en el espacio de hipótesis: caerá dentro de lo que se denomina la
+e-bola alrededor de la función verdadera f. 
+
+** Dado que 1 - e … e-e, podemos conseguirlo si entrenamos el algoritmo con el siguiente número de ejemplos:
+
+.....
+
+por ello, si un algoritmo de aprendizaje devuelve una hipótesis que es consistente con
+bastantes ejemplos, con probabilidad de al menos 1 - d, comete como máximo un error
+e. En otras palabras, es una aproximación correcta probable. El número de ejemplos que
+se requieren, en función de e y d, se denomina complejidad de la muestra del espacio
+de hipótesis.
+
+* Si la realimentación disponible, tanto de un profesor como del entorno, proporciona el valor correcto para los ejemplos, el problema de aprendizaje se denomina aprendizaje supervisado. La tarea, también llamada aprendizaje inductivo,
+consiste en aprender una función a partir de ejemplos de sus entradas y salidas. El aprendizaje de una función de valores discretos se denomina clasificación; el
+aprendizaje de una función continua se denomina regresión.
+
+* El aprendizaje inductivo consiste en encontrar una hipótesis consistente que verifique los ejemplos. La navaja de Ockham sugiere elegir la hipótesis consistente más sencilla. La dificultad de esta tarea depende de la representación elegida.
+
+* El rendimiento de un algoritmo de aprendizaje se mide a través de la curva de
+aprendizaje, que muestra la precisión de predicción en el conjunto de ejemplos
+de test como una función del tamaño del conjunto de ejemplos de entrenamiento.
+• Los métodos de conjuntos de hipótesis, como el boosting, a menudo se comportan mejor que los métodos individuales.
+• La teoría computacional del aprendizaje analiza la complejidad de la muestra
+y la complejidad computacional del aprendizaje inductivo. Existe un compromiso entre la expresividad del lenguaje de la hipótesis y de la facilidad del aprendizaje.
+
+............
+
+IA
+
+• Agentes reactivos simples.
+• Agentes reactivos basados en modelos.
+• Agentes basados en objetivos.
+• Agentes basados en utilidad.
+Después se explica, en términos generales, cómo convertir todos ellos en agentes que aprendan.
+
+............
+
+APRENDIZAJE AUTOMATICO
+
+El aprendizaje en el campo de los agentes inteligentes puede definirse como el proceso de modificación de cada componente del
+agente, lo cual permite a cada componente comportarse más en consonancia con la información que se recibe, lo que por tanto permite mejorar el nivel medio de actuación
+del agente.
+
+............
+
+APRENDIZAJE NO SUPERVISADO
+
+1) Bayes simples (Naive Bayes)
+
+la versión potenciada (boosted)
+
+2) Métodos de aprendizaje paramétrico
+
+Modelo de mezcla de gaussianas
+
+Aprendizaje de redes bayesianas
+
+Aprendizaje de modelos de Markov
+
+3) Aprendizaje basado en instancias
+
+* Aprendizaje basado en instancias (o aprendizaje basado en memoria) no paramétricos
+	- Modelos de vecinos más cercanos. Obs: verificar si se puede hacer aprendizaje no supervisado.
+* Modelo núcleo (kernel model)
+	- La función núcleo más popular es (por supuesto) la gaussiana
+4) Redes neuronales
+
+Conexionismo, procesamiento distribuido paralelo, y computación neuronal.
+
+Campo moderno de la neurociencia computacional
+
+Una red neuronal se puede usar para clasificación o para regresión.
+
+* Redes neuronales de una sola capa con alimentación hacia delante (perceptrones).
+* Redes neuronales multicapa con alimentación hacia delante.
+* El algoritmo «Tiling», se parece al aprendizaje de listas de decisión.
+
+Objetivo: conseguir la convergencia a algo cercano al óptimo global del espacio de pesos.
+Las redes neuronales son sujeto de sobreajuste cuando hay demasiados parámetros en el modelo.
+Las redes de una única capa tienen un algoritmo de aprendizaje más simple y eficiente, pero tienen un poder de expresividad muy limitado. Sólo pueden aprender fronteras lineales de decisión en el espacio de entradas.
+Las redes multicapa son más expresivas (pueden representar funciones no lineales generales) pero son muy difíciles de entrenar debido a la abundancia de mínimos locales y la gran dimensión del espacio de pesos.
+
+5) Máquinas de vectores soporte (SVMs), o más generalmente, máquinas núcleo
+
+Los separadores lineales óptimos se pueden encontrar eficientemente en espacios de características con billones (o, en algunos casos, infinitamente más) de dimensiones.
+
+Se pueden aplicar no sólo con algoritmos de aprendizaje que encuentran separadores lineales óptimos, sino también con cualquier otro algoritmo que pueda reformularse para trabajar sólo con productos de pares de puntos de los datos.
+
+Los denominados vectores soporte. (Se denominan así porque «soportan» al plano separador.)
+
+Función núcleo es una función que se puede aplicar a pares de datos de entrada para evaluar los productos en el espacio de características correspondiente. 
+
+Los métodos núcleo se pueden aplicar no sólo con algoritmos de aprendizaje que encuentran separadores lineales óptimos, sino también con cualquier otro algoritmo que pueda reformularse para trabajar sólo con productos de pares de puntos de los datos. Una vez que esto se hace, el producto se reemplaza por una función núcleo y tenemos una versión del algoritmo con núcleos. Esto se puede hacer fácilmente para el aprendizaje del k-vecinos-más-cercanos y para el aprendizaje del perceptrón, entre otros.
 
 
+6) Reconocimiento de digitos
+
+* clasificador de 3 vecinos más cercanos
+* Un algoritmo basado en memoria
+* Una red neuronal con una única capa oculta
+* Una serie de redes neuronales especializadas denominadas LeNet
+* Una red neuronal potenciada (boosted), combina tres copias de la arquitectura de LeNet
+* Una máquina de vectores soporte
+* Una máquina virtual de vectores soporte
+* El encaje de formas (shape matching)
+
+........
+
+APRENDIZAJE POR REFUERZO
+
+El agente tiene un modelo completo del entorno y conoce la función de recompensa, aquí no asumimos ningún conocimiento a priori. Imagine jugar a un nuevo juego cuyas reglas desconoce; después de cientos de movimientos más o menos, su oponente dice, «Perdiste». En resumen,
+esto es aprendizaje por refuerzo.
+
+1) Aprendizaje por refuerzo pasivo
+
+Un agente de aprendizaje pasivo tiene una política fija que determina su comportamiento.
+
+* Programación dinámica adaptativa o ADP (Adaptative Dynamic Programming).
+* Aprendizaje de diferencia temporal o TD.
+
+2) Aprendizaje por refuerzo activo
+
+Un agente activo debe decidir qué acciones tomar.
+
+2.1) Exploracion
+
+* Exploración: agente voraz, 
+
+Los experimentos repetidos muestran que el agente voraz rara vez converge a la política óptima para este entorno y algunas veces converge a políticas
+realmente horrorosas.
+
+Un agente debe tener un compromiso entre la explotación para maximizar su recompensa (según refleja su estimación actual de la utilidad) y la exploración para maximizar su buen comportamiento a largo plazo. 
+
+Con un buen entendimiento, se necesita menos exploración
+
+* Problemas del bandido.
+ 
+Técnicamente, cualquier esquema necesita ser voraz en el límite de infinitas exploraciones, o GLIE. 
+
+* función exploración. Determina el compromiso entre la voracidad (preferencia por valores altos de u) y la curiosidad (preferencia por valores bajos de n: acciones que no se intentan a menudo).
+
+2.2) Aprendizaje de una Función Acción-Valor
+
+* Aprendizaje-Q
+
+Existe un método TD alternativo denominado aprendizaje-Q que aprende una representación acción-valor en vez de aprender utilidades.
+
+Un agente TD que aprende una función-Q no necesita un modelo ni para el aprendizaje ni para la selección de acciones. Por esta razón, el aprendizaje-Q se denomina método libre de modelo (model-free).
+
+El agente de aprendizaje-Q aprende la política óptima para el mundo 4 * 3, pero lo
+hace más lentamente que el agente ADP. Esto es porque TD no obliga a que se cumpla
+la consistencia entre los valores a través del modelo. 
+
+¿es mejor aprender un modelo y una función de utilidad que aprender una función acción-valor sin modelo?
+
+Una de las características claves de la historia de la
+mayoría de la investigación en IA es su adherencia al enfoque basado en el conocimiento.
+Esto equivale a la asunción de que la mejor forma de representar la función del agente
+es construir una representación de algunos aspectos del entorno en el cual el agente está
+ubicado.
+
+Cuando el entorno se convierte en más complejo, las ventajas de un enfoque basado en el conocimiento se manifiestan más. Esto ocurre incluso en juegos como el ajedrez, las damas, y el backgammon (véase la siguiente sección), donde los esfuerzos para aprender
+una función de evaluación mediante un modelo han tenido más éxito que los métodos
+de aprendizaje-Q.
+
+3) Generalización en aprendizaje por refuerzo
+
+Hasta ahora, hemos asumido que las funciones de utilidad y las funciones-Q aprendidas
+por los agentes se representan en forma tabular, con un valor de salida para cada tupla
+de entrada
+
+* Aproximación de funciones
+
+Consiste en representar la función de forma distinta a una tabla.
+
+	- Función de evaluación: para el ajedrez que se representa como una función lineal ponderada de un conjunto de características (o funciones base) 
+
+Aunque nadie conoce la verdadera función de utilidad para el ajedrez
+
+La compresión que se consigue con un aproximador de una función permite al agente de aprendizaje generalizar a partir de estados que ha visitado a estados que no ha visitado. Permite hacer generalización inductiva sobre los espacios de entrada.
+
+Está el problema de que pudiera no haber una función en el espacio de hipótesis elegido que aproximara suficientemente bien la función de utilidad verdadera.
+
+Como en todo aprendizaje inductivo, hay un compromiso entre el tamaño del espacio de hipótesis y el tiempo que se toma para aprender la función.
+
+Un espacio de hipótesis grande incrementa la probabilidad de que se encuentre una buena aproximación, pero también supone que la convergencia se retrase
+
+	- Regla de Widrow-Hoff, o regla delta: para mínimos cuadrados en línea.
+
+Para el aprendizaje por refuerzo, tiene más sentido utilizar un algoritmo de aprendizaje en línea que actualice los parámetros después de cada prueba.
+
+Se puede demostrar que estas reglas de actualización convergen a la aproximación más cercana posible5 a la función verdadera, cuando la función es lineal en los parámetros. Desafortunadamente no se puede decir lo mismo cuando se utilizan funciones no lineales, como redes neuronales. 
+
+La aproximación de funciones puede ser también muy útil para aprender un modelo del entorno.
+
+"Recuerde que aprender un modelo de un entorno observable es un problema de aprendizaje supervisado, porque la siguiente percepción proporciona el estado resultado Se puede utilizar cualquiera de los métodos de aprendizaje supervisado del Capítulo 18, con los ajustes adecuados para tener en cuenta el hecho de que necesitamos predecir una descripción completa del estado en vez de una clasificación booleana o un valor real simple. Por ejemplo, si el estado se define mediante n variables booleanas, necesitaremos aprender n funciones booleanas para predecir todas las variables. ". 
+
+"Para un entorno parcialmente observable, el problema del aprendizaje es mucho más difícil. Si sabemos cuántas variables ocultas hay, y cómo se relacionan de forma causal con otras variables observables, podemos fijar la estructura de una red Bayesiana dinámica y utilizar el algoritmo EM para aprender los parámetros, como describimos en el Capítulo 20."
+
+La invención de las variables ocultas y el aprendizaje de la estructura del modelo aún son problemas abiertos.
+
+* Aplicaciones a juegos
+
+En los casos en que se utiliza una función de utilidad (y por lo tanto un modelo), normalmente el modelo se toma como dado. Por ejemplo, en el aprendizaje de una función de evaluación para el backgammon, normalmente se asume que son conocidos sus movimientos legales y sus efectos.
 
 
+* Aplicación a control de robots
+
+
+4) Búsqueda de la política
+
+Observe que si la política se representa mediante funciones-Q, la búsqueda de la política es un proceso que aprende funciones-Q. ¡Este proceso no es el mismo que el aprendizaje-Q!
+
+Un problema con las representaciones de la política como las de la Ecuación (21.13) es que la política es una función discontinua de los parámetros cuando las acciones son discretas.
+
+* Función softmax:
+
+Los métodos de búsqueda de la política normalmente utilizan una representación estocástica de la política.
+
+Ahora, veamos los métodos para mejorar la política.
+
+* REINFORCE
+
+El algoritmo PEGASUS ha sido utilizado para desarrollar políticas efectivas en varios dominios, incluyendo vuelo autónomo de helicópteros.
+
+La búsqueda de la política se lleva a cabo evaluando cada política
+candidata haciendo uso del mismo conjunto de secuencias aleatorias para determinar
+los resultados de las acciones. Se puede demostrar que el número de secuencias aleatorias que se requieren para asegurar que el valor de cada política está bien estimado,
+depende únicamente de la complejidad del espacio de políticas, y no de la complejidad
+del dominio subyacente. 
+
+RESUMEN DE APRENDIZAJE POR REFUERZO
+
+El diseño global del agente dicta el tipo de información que debe ser aprendida.
+Los tres principales diseños que hemos cubierto son diseños basados en el modelo, utilizando un modelo T y una función de utilidad U; un diseño de modelo libre que utiliza una función Q acción-valor; y el diseño reactivo que utiliza una
+política p.
+
+Principales algoritmos:
+
+The true answer, of course, is that we don’t know, and that it probably hasn’t been invented yet. Each algorithm has strengths and weaknesses, and the current favorite changes every few years. 
+
+In the 1980s actor-critic methods were very popular, but in the 1990s they were largely superceded by value-function methods such as Q-learning and Sarsa. 
+
+Q-learning is probably still the most widely used, but its instability with function approximation, discovered in 1995, probably rules it out for the long run. 
+
+Recently policy-based methods such as actor-critic and value-function-less methods, including some of those from the 1980s, have become popular again.  So, it seems we must keep our minds and options open as RL moves forward.
