@@ -195,22 +195,219 @@ the variance. Pag 223
 Smola Pag. 15
 The elements Pag. 37
 
------
+#------------------------------------------
+
+IA - CONCEPTOS INICIALES:
+
+La IA es una de las ciencias más recientes. El trabajo comenzó poco después de la Segunda Guerra Mundial, y el nombre se acuñó en 1956.
+Quizá lo último que surgió del taller fue el consenso en adoptar el nuevo nombre propuesto por McCarthy para este campo: Inteligencia Artificial. Quizá «racionalidad computacional» hubiese sido más adecuado, pero «IA» se ha mantenido.
+La IA abarca en la actualidad una gran variedad de subcampos, que van desde áreas de propósito general, como el aprendizaje y la percepción, a otras más específicas como el ajedrez, la demostración de teoremas matemáticos, la escritura de poesía y el diagnóstico de enfermedades. 
+
+La IA sintetiza y automatiza tareas intelectuales y es, por lo tanto, potencialmente relevante para cualquier ámbito de la actividad intelectual humana. En este sentido, es un campo genuinamente universal.
+
+Hay un número de trabajos iniciales que se pueden caracterizar como de IA, pero fue Alan Turing quien articuló primero una visión de la IA en su artículo Computing Machinery and Intelligence, en 1950. Ahí, introdujo la prueba de Turing, el aprendizaje automático, los algoritmos genéricos y el aprendizaje por refuerzo.
+
+La Prueba de Turing, propuesta por Alan Turing (1950), se diseñó para proporcionar una definición operacional y satisfactoria de inteligencia. Sugirió una prueba basada en la incapacidad de diferenciar entre entidades inteligentes indiscutibles y seres humanos. El computador supera la prueba si un evaluador humano no es capaz de distinguir si las respuestas, a una serie de preguntas planteadas, son de una persona o no. 
+
+Hoy por hoy, podemos decir que programar un computador para que supere la prueba requiere un trabajo considerable. El computador debería poseer las siguientes capacidades:
+
+• Procesamiento de lenguaje natural que le permita comunicarse satisfactoriamente
+en inglés.
+• Representación del conocimiento para almacenar lo que se conoce o siente.
+• Razonamiento automático para utilizar la información almacenada para responder a preguntas y extraer nuevas conclusiones.
+• Aprendizaje automático para adaptarse a nuevas circunstancias y para detectar
+y extrapolar patrones.
+• Visión computacional para percibir objetos.
+• Robótica para manipular y mover objetos
+
+Estas seis disciplinas abarcan la mayor parte de la IA, 
+
+La IA desde el primer momento abarcó la idea de duplicar facultades humanas como la creatividad, la auto-mejora y el uso del lenguaje
+La IA es el único de estos campos que es claramente una rama de la informática
+La IA es el único campo que persigue la construcción de máquinas que funcionen automáticamente en medios complejos y cambiantes
+
+A comienzos 1952, Arthur Samuel escribió una serie de programas para el juego de las damas que eventualmente aprendieron a jugar hasta alcanzar un nivel equivalente al de un amateur. De paso, echó por tierra la idea de que los computadores sólo pueden hacer lo que se les dice: su programa pronto aprendió a jugar mejor que su creador.
+
+John McCarthy se trasladó de Darmouth al MIT, donde realizó tres contribuciones cruciales en un año histórico: 1958. En el Laboratorio de IA del MIT Memo Número 1, McCarthy definió el lenguaje de alto nivel Lisp, que se convertiría en el lenguaje de programación dominante en la IA. Lisp es el segundo lenguaje de programación más antiguo que se utiliza en la actualidad, ya que apareció un año después de FORTRAN. Con Lisp,
+McCarthy tenía la herramienta que necesitaba, pero el acceso a los escasos y costosos recursos de cómputo aún era un problema serio. Para solucionarlo, él, junto a otros miembros del MIT, inventaron el tiempo compartido. También, en 1958, McCarthy publicó un artículo titulado Programs with Common Sense, en el que describía el Generador de Consejos, un programa hipotético que podría considerarse como el primer sistema de IA completo.
+
+IA y los agentes inteligentes.
+
+las de la derecha toman como referencia un concepto ideal de inteligencia, que llamaremos racionalidad. Un sistema es racional si hace «lo correcto», en función de su conocimiento.
+El concepto de agente racional como central en la perspectiva de la inteligencia artificial.
+Un agente racional es aquel que hace lo correcto; en términos conceptuales, cada elemento de la tabla que define la función del agente se tendría que rellenar correctamente.
+Se puede decir que lo correcto es aquello que permite al agente obtener un resultado mejor. Por tanto, se necesita determinar una forma de
+medir el éxito.
+Las medidas de rendimiento incluyen los criterios que determinan el éxito en el comportamiento del agente.
+
+Definición de agente racional:
+En cada posible secuencia de percepciones, un agente racional deberá emprender aquella acción que supuestamente maximice su medida de rendimiento, basándose en las evidencias aportadas por la secuencia de percepciones y en el conocimiento que el agente
+mantiene almacenado
+
+• Agentes reactivos simples.
+• Agentes reactivos basados en modelos.
+• Agentes basados en objetivos.
+• Agentes basados en utilidad.
+
+Después se explica, en términos generales, cómo convertir todos ellos en agentes que aprendan.
+	
+John McCarthy: McCarthy se transladó al Dartmouth College, que se erigiría en el lugar del nacimiento oficial de este campo. McCarthy convenció a Minsky, Claude Shannon y Nathaniel Rochester para que le ayudaran a aumentar el interés de los investigadores americanos en la teoría de autómatas, las redes neuronales y el estudio de la inteligencia. Organizaron un taller con una duración de dos meses en Darmouth en el verano de 1956. Hubo diez asistentes en total, entre los que se incluían Trenchard More de Princeton, Arthur Samuel de IBM. Quizá lo último que surgió del taller fue el consenso en adoptar el nuevo nombre propuesto por McCarthy para este campo: Inteligencia Artificial. The Proposal states of "Dartmouth Summer Research Project on Artificial Intelligence" is: "We propose that a 2 month, 10 man study of artificial intelligence be carried out during the summer of 1956 at Dartmouth College in Hanover, New Hampshire. The study is to proceed on the basis of the conjecture that every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it. An attempt will be made to find how to make machines use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves. We think that a significant advance can be made in one or more of these problems if a carefully selected group of scientists work on it together for a summer." John McCarthy se trasladó de Darmouth al MIT, donde realizó tres contribuciones cruciales en un año histórico: 1958. En el Laboratorio de IA del MIT Memo Número 1, McCarthy definió el lenguaje de alto nivel Lisp, que se convertiría en el lenguaje de programación dominante en la IA. Con Lisp, McCarthy tenía la herramienta que necesitaba, pero el acceso a los escasos y costosos recursos de cómputo aún era un problema serio. Para solucionarlo, él, junto a otros miembros del MIT, inventaron el tiempo compartido. También, en 1958, McCarthy publicó un artículo titulado Programs with Common Sense, en el que describía el Generador de Consejos, un programa hipotético que podría considerarse como el primer sistema de IA completo. diseñó su programa para buscar la solución a problemas utilizando el conocimiento. Pero, a diferencia de los otros, manejaba el conocimiento general del mundo. Por ejemplo, mostró cómo algunos axiomas sencillos permitían a un programa generar un plan para conducirnos hasta el aeropuerto y tomar un avión. El programa se diseñó para que aceptase nuevos axiomas durante el curso normal de operación, permitiéndole así ser competente en áreas nuevas, sin necesidad de reprogramación. El Generador de Consejos incorporaba así los principios centrales de la representación del conocimiento y el razonamiento: es útil contar con una representación formal y explícita del mundo y de la forma en que la acción de un agente afecta al mundo, así como, ser capaces de manipular estas representaciones con procesos deductivos. Es sorprendente constatar cómo mucho de lo propuesto en el artículo escrito en 1958 permanece vigente incluso en la actualidad. La ponencia «Programas con Sentido Común» de John McCarthy (McCarthy, 1958, 1968) promulgaba la noción de agentes que utilizan el razonamiento lógico para mediar entre sus percepciones y sus acciones. McCarthy (1958) fue el principal responsable de la introducción de la lógica de primer orden como una herramienta para construir sistemas de IA. Aunque McCarthy (1958) había sugerido el uso de la lógica de primer orden para la representación y el razonamiento en la IA. El cálculo de situaciones de John McCarthy (1963), fue el primer tratamiento del tiempo y la acción en IA. El problema del marco fue reconocido por primera vez por McCarthy y Hayes (1969). Muchos investigadores consideraron el problema irresoluble utilizando lógica de primer orden, y esto estimuló un gran trabajo de investigación en lógica no monotó- nica. Los tres formalismos principales para tratar con la inferencia no monotónica (circunscripción (McCarthy, 1980), lógica por defecto (Reiter, 1980) y lógica no monotó- nica modal (McDermott y Doyle, 1980)), fueron introducidos en un volumen especial de la revista de IA.
+
+Marvin Minsky: Dos estudiantes graduados en el Departamento de Matemáticas de Princeton, Marvin Minsky y Dean Edmonds, construyeron el primer computador a partir de una red neuronal en 1951. El SNARC, como se llamó, utilizaba 3.000 válvulas de vacío y un mecanismo de piloto automático obtenido de los desechos de un avión bombardero B-24 para simular una red con 40 neuronas. Minsky supervisó el trabajo de una serie de estudiantes que eligieron un número de problemas limitados cuya solución pareció requerir inteligencia. Estos dominios limitados se conocen como micromundos. en 1969, en el libro de Minsky y Papert, Perceptrons, se demostró que si bien era posible lograr que los perceptrones (una red neuronal simple) aprendieran cualquier cosa que pudiesen representar, su capacidad de representación era muy limitada. Los primeros trabajos en el campo de la IA se citan en Computers and Thought (1963), de Feigenbaum y Feldman, en Semantic Information Processing de Minsky, y en la serie Machine Intelligence, editada por Donald Michie. Webber y Nilsson (1981) y Luger (1995) han recogido una nutrida cantidad de artículos influyentes. Los primeros artículos sobre redes neuronales están reunidos en Neurocomputing (Anderson y Rosenfeld, 1988). La Encyclopedia of AI (Shapiro, 1992) contiene artículos de investigación sobre prácticamente todos los temas de IA. Estos artículos son muy útiles para iniciarse en las diversas áreas presentes en la literatura científica. Un artículo influyente de Marvin Minsky (1975) presentó una versión de las redes semánticas denominadas marcos. Un marco era una representación de un objeto o categoría, con atributos y relaciones con otros objetos o categorías. Norbert Wiener, un pionero en la cibernética y en la teoría de control (Wiener, 1948), trabajó con McCulloch y Pitts e influyó en un número de jóvenes investigadores incluyendo a Marvin Minsky, quien pudiera haber sido el primero en desarrollar una red neuronal en hardware en 1951. La desaparición de los primeros esfuerzos en investigación del perceptrón se aceleró a causa el libro Perceptrons (Minsky y Papert, 1969), que lamenta su falta de rigor matemático. El libro señalaba que los perceptrones de una única capa podían representar sólo conceptos linealmente separables y apuntaba la falta de algoritmos de aprendizaje efectivos para redes multicapa.
+
+Allen Newell y Herbert Simon: En Estados Unidos el desarrollo del modelo computacional llevo a la creación del campo de la ciencia cognitiva. Se puede decir que este campo comenzó en un simposio celebrado en el MIT, en septiembre de 1956 (como se verá a continuación este evento tuvo lugar sólo dos meses después de la conferencia en la que «nació» la IA). En este simposio, George Miller presentó The Magic Number Seven, Noam Chomsky presentó Three Models of Language, y Allen Newell y Herbert Simon presentaron The Logic Theory Machine. Estos tres artículos influyentes mostraron cómo se podían utilizar los modelos informáticos para modelar la psicología de la memoria, el lenguaje y el pensamiento lógico, respectivamente. 
+Los psicólogos comparten en la actualidad el punto de vista común de que «la teoría cognitiva debe ser como un programa de computador» (Anderson, 1980), o dicho de otra forma, debe describir un mecanismo de procesamiento de información detallado, lo cual lleva consigo la implementación de algunas funciones cognitivas.
+Newell y Simon, ensamblarán el primer programa transdisciplinario de investigación en las ciencias cognitivas: «La hipótesis del sistema de símbolos físicos»,​ que permite la modelación funcionalista de la mente y su emulación en plataformas de computación electrónica. Allen Newell y Herbert Simon presentaron en un simposio en el MIT, en 1956, con el título «La máquina de la teoría lógica»,​ la primera demostración completa de un teorema realizado por una computadora. En el mismo simposio, Noam Chomsky esbozó «Tres modelos de lenguaje», donde presentaba su modelo transformacional de la gramática, y el psicólogo George Miller explicó su trabajo seminal sobre representaciones mentales, fragmentos de información que son codificadas y descodificadas en la mente.
+Allen Newell y Herbert Simon, que desarrollaron el «Sistema de Resolución General de Problemas» (SRGP) (Newell y Simon, 1961), no les bastó con que su programa resolviera correctamente los problemas propuestos. Lo que les interesaba era seguir la pista de las etapas del proceso de razonamiento y compararlas con las seguidas por humanos a los que se les enfrentó a los mismos problemas. En el campo interdisciplinario de la ciencia cognitiva convergen modelos computacionales de IA y técnicas experimentales de psicología intentando elaborar teorías precisas y verificables sobre el funcionamiento de la mente humana. El algoritmo de Aristóteles se implementó 2.300 años más tarde por Newell y Simon con la ayuda de su programa SRGP. El cual se conoce como sistema de planificación regresivo (véase el Capítulo 11).
+Dos investigadores del Carnegie Tech (Actualmente Universidad Carnegie Mellon (UCM)), Allen Newell y Herbert Simon, acapararon la atención. Si bien los demás también tenían algunas ideas y, en algunos casos, programas para aplicaciones determinadas como el juego de damas, Newell y Simon contaban ya con un programa de razonamiento, el Teórico Lógico (TL), del que Simon afirmaba: «Hemos inventado un programa de computación capaz de pensar de manera no numérica, con lo que ha quedado resuelto el venerable problema de la dualidad mente-cuerpo». Poco después del término del taller, el programa ya era capaz de demostrar gran parte de los teoremas del Capítulo 2 de Principia Matemática de Russell y Whitehead. Se dice que Russell se manifestó complacido cuando Simon le mostró que la demostración de un teorema que el programa había generado era más corta que la que aparecía en Principia. Los editores de la revista Journal of Symbolic Logic resultaron menos impresionados y rechazaron un artículo cuyos autores eran Newell, Simon y el Teórico Lógico (TL).
+Al temprano éxito de Newell y Simon siguió el del sistema de resolución general de problemas, o SRGP. A diferencia del Teórico Lógico, desde un principio este programa se diseñó para que imitara protocolos de resolución de problemas de los seres humanos. Dentro del limitado número de puzles que podía manejar, resultó que la secuencia en la que el programa consideraba que los subobjetivos y las posibles acciones eran semejantes a la manera en que los seres humanos abordaban los mismos problemas. Es decir, el SRGP posiblemente fue el primer programa que incorporó el enfoque de «pensar como un ser humano». El éxito del SRGP y de los programas que le siguieron, como los modelos de cognición, llevaron a Newell y Simon (1976) a formular la famosa hipótesis del sistema de símbolos físicos, que afirma que «un sistema de símbolos físicos tiene los medios suficientes y necesarios para generar una acción inteligente». Lo que ellos querían decir es que cualquier sistema (humano o máquina) que exhibiese inteligencia debería operar manipulando estructuras de datos compuestas por símbolos. Posteriormente se verá que esta hipótesis se ha modificado atendiendo a distintos puntos de vista.
+Aquellos modelos de inteligencia artificial llamados conexionistas fueron vistos por algunos como competidores tanto de los modelos simbólicos propuestos por Newell y Simon como de la aproximación lógica de McCarthy entre otros (Smolensky, 1988). Puede parecer obvio que los humanos manipulan símbolos hasta cierto nivel, de hecho, el libro The Symbolic Species (1997) de Terrence Deacon sugiere que esta es la característica que define a los humanos, pero los conexionistas más ardientes se preguntan si la manipulación de los símbolos desempeña algún papel justificable en determinados modelos de cognición. Este interrogante no ha sido aún clarificado, pero la tendencia actual es que las aproximaciones conexionistas y simbólicas son complementarias y no competidoras.
+La perspectiva orientada a objetivos también predomina en la psicología cognitiva tradicional, concretamente en el área de la resolución de problemas, como se muestra tanto en el influyente Human Problem Solving (Newell y Simon, 1972) como en los últimos trabajos de Newell (1990).
+El problema de los misioneros y caníbales, utilizado en el ejercicio 3.9, fue analizado con detalle por Amarel (1968). Antes fue considerado en IA por Simon y Newel (1961), y en Investigación Operativa por Bellman y Dreyfus (1962). Estudios como estos y el trabajo de Newell y Simon sobre el Lógico Teórico (1957) y GPS (1961) provocaron el establecimiento de los algoritmos de búsqueda como las armas principales de los investigadores de IA en 1960 y el establecimiento de la resolución de problemas como la tarea principal de la IA. Desafortunadamente, muy pocos trabajos se han hecho para automatizar los pasos para la formulación de los problemas. Un tratamiento más reciente de la representación y abstracción del problema, incluyendo programas de IA que los llevan a cabo (en parte), está descrito en Knoblock (1990).
+El uso de información heurística en la resolución de problemas aparece en un artículo de Simon y Newell (1958), pero la frase «búsqueda heurística» y el uso de las funciones heurísticas que estiman la distancia al objetivo llegaron algo más tarde (Newell y Ernst, 1965; Lin, 1965). Doran y Michie (1966) dirigieron muchos estudios experimentales de búsqueda heurística aplicados a varios problemas, especialmente al 8-puzle y 15-puzle.
+John McCarthy concibió la idea de la búsqueda alfa-beta en 1956, aunque él no lo publicara. El programa NSS de ajedrez (Newell et al., 1958) usó una versión simplificada de alfa-beta; y fue el primer programa de ajedrez en hacerlo así. Según Nilsson (1971), el programa de damas de Arthur Samuel (Samuel, 1959, 1967) también usó alfabeta, aunque Samuel no lo mencionara en los informes publicados sobre el sistema. El artículo «El Nivel de Conocimiento» de Allen Newell (1982) propone que los agentes racionales se pueden describir y analizar a un nivel abstracto definido a partir del conocimiento que el agente posee más que a partir de los programas que ejecuta.
+El primer programa de computador para la inferencia lógica publicado fue el Teórico Lógico de Newell, Shaw y Simon (1957). Este programa tenía la intención de modelar los procesos del pensamiento humano. De hecho, Martin Davis (1957) había diseñado un programa similar que había presentado en una demostración en 1954, pero los resultados del Teórico Lógico fueron publicados un poco antes. Tanto el programa de 1954 de Davis como el Teórico Lógico estaban basados en algunos métodos ad hoc que no influyeron fuertemente más tarde en la deducción automática.
+La cuestión semántica surgió muy perspicazmente en relación con las redes semánticas de Quillian (y todos aquellos que siguieron su aproximación), con su omnipresente y muy vago «enlace ES-UN», así como otros formalismos de representación del conocimiento anteriores como el de MERLIN (Moore y Newell, 1973), con sus misterio sas operaciones «flat» y «cover».
+La planificación en IA emerge de la investigación en áreas, como búsquedas en el espacio de estados, demostración de teoremas y teoría de control, y desde las necesidades prácticas en robótica, organización y otros dominios. STRIPS (Fikes y Nilsson, 1971), el primero de los grandes sistemas de planificación, ilustra la interacción de dichas influencias. STRIPS fue diseñado como un componente para la planificación software del robot Shakey proyectado en el SRI. Su estructura de control total fue modelada en GPS General Problem Solver (Newell y Simon, 1961), un sistema de búsqueda en el espacio de estados que utilizaba un mecanismo de análisis de fines/medios.
+
+	- Inicio de la Ciencia cognitiva, simposio en el MIT año 1956.
+	- Campo de la ciencia cognitiva (Se denomina ciencia cognitiva al estudio interdisciplinario de cómo la información es representada y transformada en la mente/cerebro.)
+	- Toma en cuenta los procesos mentales.
+	- Contribuyeron al nacimiento de la ciencia cognitiva: lingüística, neurociencia, inteligencia artificial, filosofía, antropología y psicología.
+	- George Miller presentó The Magic Number Seven, Noam Chomsky presentó Three Models of Language, y Allen Newell y Herbert Simon presentaron The Logic Theory Machine
+	- Allen Newell y Herbert Simon: la computadora podia demostrar un teorema
+	- Noam Chomsky: el lenguaje humano es como un sistema matemático
+	- Modelar la psicología de la memoria, el lenguaje y el pensamiento lógico
+	- La teoría cognitiva debe ser como un programa de computador
+	- "The logic theory machine", programa de computador capaz de hacer la demostración de un teorema
+	- Desarrollaron el «Sistema de Resolución General de Problemas» (SRGP) en 1961
+	- Resolución de problemas como la tarea principal de la IA
+	- Pensar como un ser humano
+	- Protocolos de resolución de problemas de los seres humanos
+	- Etapas del proceso de razonamiento y compararlas con las seguidas por humanos
+	- Funcionamiento de la mente humana
+	- Programa de razonamiento, el Teórico Lógico (TL) en 1957
+	- Primer programa de computador para la inferencia lógica
+	- Modelar los procesos del pensamiento humano
+	- Pensar de manera no numérica
+	- Acción inteligente
+	- Sistema (humano o máquina) que exhibiese inteligencia debería operar manipulando estructuras de datos compuestas por símbolos
+	- Las aproximaciones conexionistas y simbólicas son complementarias y no competidoras
+	- Human Problem Solving (Newell y Simon, 1972)
+	- Perspectiva orientada a objetivos
+	- Información heurística, Simon y Newell (1958)
+	- Búsqueda heurística, (Newell y Ernst, 1965; Lin, 1965)
+	- Artículo «El Nivel de Conocimiento» de Allen Newell (1982)
+	- Los agentes racionales se pueden describir y analizar a un nivel abstracto
+	- El conocimiento que el agente posee más que a partir de los programas que ejecuta
+	- Analogías entre la computadora y la mente. Hardware/Software, Cerebro/Mente.
+	- Retroalimentación, planificación
+	- El computador y el funcionamiento cognitivo humano están definidos por leyes exclusivamente sintácticas
+	- Tanto el ser humano como el computador están concebidos como sistemas lógicos o matemáticos de procesamiento de información, constituidos exclusivamente por procedimientos formales
+	- Paradoja cognitiva computacional: La paradoja radica en que la computadora comenzó siendo un modelo de similitud con el pensamiento humano y sólo gracias a la adhesión escrupulosa a esta analogía, se pudieron dar cuenta de cuánto difiere esto el pensamiento computacoinal del humano.
+	
+
+Arthur Samuel: A comienzos 1952, Arthur Samuel escribió una serie de programas para el juego de las damas que eventualmente aprendieron a jugar hasta alcanzar un nivel equivalente al de un amateur. Programas que aprendían a jugar al ajedrez de Arthur Samuel (1959, 1967). Damas: en 1952, Arthur Samuel de IBM, trabajando en sus ratos libres, desarrolló un programa de damas que aprendió su propia función de evaluación jugando con él mismo miles de veces.
+
+Resumen:
+
+* Que es IA.
+	- Facultades humanas
+	- Ciencias
+	- 1956
+	- Racionalidad
+	- Computación
+	- Aprendizaje
+	- Sistemas basados en el conocimiento
+	- Ajedrez
+	- Damas
+	- Diagnóstico
+	- Lenguaje natural
+	- Cerebro humano
+	- Memoria del cerebro
+	- Decisiones humanas
+	- Visión
+	- Robótica
+	- Sistemas expertos
+	- Hacer lo correcto
+	- Situaciones de incertidumbre
+	- Reconocimiento de patrones
+	- Automatización
+	- Tareas intelectuales
+	- Alan Turing 1950 ("Computing Machinery and Intelligence")
+	- Prueba de Turing
+	- Arthur Samuel
+	- John McCarthy
+	- Sub campos
+	
+* Sub campos de IA:
+
+	- Procesamiento de lenguaje natural que le permita comunicarse satisfactoriamente en inglés.
+	- Representación del conocimiento para almacenar lo que se conoce o siente.
+	- Razonamiento automático para utilizar la información almacenada para responder a preguntas y extraer nuevas conclusiones.
+	- Aprendizaje automático para adaptarse a nuevas circunstancias y para detectar y extrapolar patrones.
+	- Visión computacional para percibir objetos.
+	- Robótica para manipular y mover objetos.
+	
+* Precursores de Machine Learning. Primeros trabajos.
+	- Arthur Samuel
+	- John McCarthy
+	
+* John McCarthy:
+
+	- Dartmouth College, 1956
+	- IA como término
+	- Teoría de autómatas, las redes neuronales y el estudio de la inteligencia
+	- Arthur Samuel de IBM
+	- De Darmouth al MIT
+	- En 1958: definió el lenguaje de alto nivel Lisp
+	- En 1958: Tiempo compartido
+	- En 1958: Programs with Common Sense y el Generador de Consejos
+	- Problemas utilizando el conocimiento
+	- Agentes que utilizan el razonamiento lógico
+	
+* Marvin Minsky:
+
+	- SNARC, primer computador a partir de una red neuronal, en 1951 
+	- Trabajos cuya solución requerían inteligencia
+	- Libro Perceptrons, en 1969, junto a Seymour Papert
+	- Una versión de las redes semánticas denominadas marcos, en 1975
+	
+* Allen Newell y Herbert Simon
+
+	- Inicio del campo de la Ciencia cognitiva, simposio en el MIT año 1956.
+	- 1956: MIT Symposium on Information Theory (Miller, Chomsky, Simon, Newell)
+	- Se denomina ciencia cognitiva al estudio interdisciplinario de cómo la información es representada y transformada en la mente/cerebro.
+	- En el simposio de 1956 George Miller presentó "The magical number seven, plus or minus two", Noam Chomsky presentó Three Models of Language, y Allen Newell y Herbert Simon presentaron The Logic Theory Machine.
+	- «La máquina de la teoría lógica», la primera demostración completa de un teorema realizado por una computadora.
+	- "The logic theory machine" (La máquina de la teoría lógica), programa de computador capaz de hacer la demostración de un teorema.
+	- Noam Chomsky esbozó «Tres modelos de lenguaje»
+	- George Miller, "The Magical Number Seven, Plus or Minus Two: Some Limits on our Capacity for Processing Information".
+	- Programa de razonamiento, el Teórico Lógico (TL) en 1957.
+	- «Sistema de Resolución General de Problemas» (SRGP) en 1961.
+	- Human Problem Solving (Newell y Simon, 1972)
+	- 1972: Simon & Newell, Human Problem Solving
+	- «El Nivel de Conocimiento» de Allen Newell (1982)
+	
+* Arthur Samuel:
+
+	- IBM
+	- Programas que aprendían a jugar Damas, 1952
+	- Aprendió su propia función de evaluación en Damas
+	- Programas que aprendían a jugar Ajedrez, 1959
+	
+(Stochastic Neural Analog Reinforcement Calculator)
+
+Perceptrons: An Introduction to Computational Geometry, Expanded Edition (English) Tapa blanda – diciembre 28, 1987
+de Marvin Minsky  (Author),‎ Seymour A. Papert (Author)
+
+#------------------------------------------
 
 lógica, computación y probabilidad
 
 inteligencia y un artefacto
 
 lenguaje, visión y planificación,
-
-La IA desde el primer momento abarcó la idea de duplicar facultades humanas como la creatividad, la auto-mejora y el uso del lenguaje
-La IA es el único de estos campos que es claramente una rama de la informática
-La IA es el único campo que persigue la construcción de máquinas que funcionen automáticamente en medios complejos y cambiantes
-
-A comienzos 1952, Arthur Samuel
-escribió una serie de programas para el juego de las damas que eventualmente aprendieron a jugar hasta alcanzar un nivel equivalente al de un amateur. De paso, echó por tierra la idea de que los computadores sólo pueden hacer lo que se les dice: su programa pronto aprendió a jugar mejor que su creador.
-
-en 1958, McCarthy publicó un artículo titulado Programs with Common Sense, en el que describía el Generador de Consejos
 
 competente en áreas nuevas, sin necesidad de reprogramación
 
@@ -333,11 +530,9 @@ aprender una función de valores discretos se denomina clasificación; aprender 
 función continua se denomina regresión. 
 
 
-Hay que tener cuidado de no utilizar el grado de libertad que aparece cuando hay un
-conjunto grande de hipótesis posibles, para encontrar «regularidades» poco significativas en los datos. Este problema se denomina sobreajuste. El sobreajuste es un fenómeno
-muy generalizado que ocurre cuando la función principal no es del todo aleatoria. Afecta a todos los tipos de algoritmos de aprendizaje, no sólo a los árboles de decisión.
+*** Hay que tener cuidado de no utilizar el grado de libertad que aparece cuando hay un conjunto grande de hipótesis posibles, para encontrar «regularidades» poco significativas en los datos. Este problema se denomina sobreajuste. El sobreajuste es un fenómeno muy generalizado que ocurre cuando la función principal no es del todo aleatoria. Afecta a todos los tipos de algoritmos de aprendizaje, no sólo a los árboles de decisión.
 
-Cuando los datos contienen mucho ruido, los árboles que se construyen
+*** Cuando los datos contienen mucho ruido, los árboles que se construyen
 con poda funcionan significativamente mejor que los que se construyen sin poda. Por lo
 general, los árboles podados son más pequeños y por lo tanto más sencillos de entender.
 
@@ -418,27 +613,230 @@ de test como una función del tamaño del conjunto de ejemplos de entrenamiento.
 • La teoría computacional del aprendizaje analiza la complejidad de la muestra
 y la complejidad computacional del aprendizaje inductivo. Existe un compromiso entre la expresividad del lenguaje de la hipótesis y de la facilidad del aprendizaje.
 
-............
-
-IA
-
-• Agentes reactivos simples.
-• Agentes reactivos basados en modelos.
-• Agentes basados en objetivos.
-• Agentes basados en utilidad.
-Después se explica, en términos generales, cómo convertir todos ellos en agentes que aprendan.
-
-............
+#------------------------------------------
 
 APRENDIZAJE AUTOMATICO
 
-El aprendizaje en el campo de los agentes inteligentes puede definirse como el proceso de modificación de cada componente del
-agente, lo cual permite a cada componente comportarse más en consonancia con la información que se recibe, lo que por tanto permite mejorar el nivel medio de actuación
-del agente.
+El aprendizaje en el campo de los agentes inteligentes puede definirse como el proceso de modificación de cada componente del agente, lo cual permite a cada componente comportarse más en consonancia con la información que se recibe, lo que por tanto permite mejorar el nivel medio de actuación del agente.
 
-............
+En el Capítulo 2, vimos que un agente de aprendizaje puede ser diseñado con un elemento de acción, que decide qué acciones llevar a cabo y con un elemento de aprendizaje, que modifica el elemento de acción para poder tomar mejores decisiones.
+
+Los investigadores en el campo del aprendizaje han creado una gran variedad de elementos de aprendizaje. Para comprenderlos, se mostrará cómo su diseño se ve afectado por el contexto en el que operan. El diseño de un elemento de aprendizaje
+se ve afectado mayoritariamente por tres aspectos:
+
+* Qué componentes del elemento de acción tienen que aprenderse.
+* Qué realimentación está disponible para aprender dichos componentes.
+* Qué tipo de representación se usa para los componentes.
+
+A continuación se van a analizar cada uno de estos aspectos. Como se ha mostrado, existen muchas formas de construir el elemento de acción de un agente. En el Capítulo 2 se describen varios diseños de agentes (Figuras 2.9, 2.11, 2.13 y 2.14). Los componentes de estos agentes incluyen lo siguiente:
+
+1. Una proyección directa de las condiciones del estado actual a las acciones.
+2. Un método para inferir las propiedades relevantes del mundo a partir de una secuencia de percepciones.
+3. Información sobre cómo evoluciona el mundo y sobre los resultados de las posibles acciones que el agente puede llevar a cabo.
+4. Información de utilidad, que indica lo deseables que son los estados.
+5. Información acción-valor, que indica lo deseables que son las acciones.
+6. Metas que describen las clases de estados que maximizan la utilidad del agente.
+
+El tipo de realimentación disponible para el aprendizaje normalmente es el factor más importante a la hora de determinar la naturaleza del problema de aprendizaje que tiene que afrontar el agente. Se distinguen tres distintos tipos de aprendizaje: supervisado, no supervisado y por refuerzo.
+
+
+APRENDIZAJE SUPERVISADO
+
+El problema de aprendizaje supervisado consiste en aprender una función a partir de ejemplos de sus entradas y sus salidas. Los casos (1), (2) y (3) son ejemplos de problemas de aprendizaje supervisado. En el caso (1), el agente aprende la regla condición-acción para frenar, esto es, una función que a partir del estado genera una salida booleana (frenar o no frenar). En el caso (2), el agente aprende una función que a partir de una imagen genera una salida booleana (si la imagen contiene o no un autobús). En el caso (3), aprende una función que a partir del estado y las acciones para frenar, genera la distancia de parada expresada en pies. Nótese que tanto en los casos (1) y (2), un profesor suministra el valor correcto de la salida de cada ejemplo; en el tercero, el valor de la salida proviene de lo que el agente percibe. En entornos totalmente observables, el agente siempre puede observar los efectos de sus acciones, y por lo tanto, puede utilizar métodos de aprendizaje supervisado para aprender a predecirlos. En entornos que son parcialmente observables, el problema es más difícil, ya que los efectos más inmediatos pueden ser invisibles.
+
+1) Aprendizaje inductivo
+
+* Un algoritmo para aprendizaje supervisado determinístico recibe como entrada el valor
+correcto para determinados valores de una función desconocida y debe averiguar cuál
+es la función o aproximarla. Siendo más formales, se dice que un ejemplo es un par (x,
+f(x)), donde x es la entrada, y f(x) es la salida de la función faplicada a x. La tarea de la
+inferencia inductiva pura (o inducción) es la siguiente:
+
+Dada una colección de ejemplos de f, devolver una función h que aproxime a f
+
+La función h se denomina hipótesis. La razón por la cual el aprendizaje es difícil, desde un punto de vista conceptual, es que no es fácil determinar si una función h es una buena aproximación de f. Una buena hipótesis estará bien generalizada si puede predecir ejemplos que no se conocen. Éste es el problema de inducción fundamental, que ha sido estudiado durante siglo
+
+Un ejemplo típico: ajustar una función de una única variable a una serie de puntos dados. Los ejemplos son pares (x, f(x)), donde tanto x como
+f(x) son números reales. Se elige el espacio de hipótesis H (el conjunto de hipótesis que
+se van a considerar) como el conjunto de polinomios de grado inferior o igual a k, 
+
+La línea se denomina hipótesis consistente ya que verifica todos los datos. 
+
+¿Cómo elegir entre múltiples hipótesis consistentes? Una respuesta la proporciona la navaja de Ockham2: es preferible la hipótesis consistente con los datos que sea más sencilla. 
+
+* Para funciones no deterministas, existe un inevitable compromiso entre la complejidad de la hipótesis y el grado de adecuación de los datos.
+Se debe tener en mente que la posibilidad o la imposibilidad de encontrar una hipótesis consistente y sencilla depende en gran medida del espacio de hipótesis elegido. 
+
+*** Se dice que un problema de aprendizaje es realizable si el espacio de hipótesis contiene a la función verdadera; en otro caso, se dice que es irrealizable. Una forma de evitar este problema es usar conocimiento a priori para elegir un espacio de hipótesis en el que sepamos que se encuentra la función verdadera. Otro enfoque es utilizar un espacio de hipótesis tan grande como sea posible. Por ejemplo, ¿por qué no permitir que H sea el conjunto de todas las máquinas de Turing?
+
+* Después de todo, toda función computable puede ser representada por una máquina de Turing. 
+
+* El problema de este enfoque es que no tiene en cuenta la complejidad computacional del aprendizaje. Existe un compromiso entre la expresividad del espacio de hipótesis y la complejidad de encontrar hipótesis sencillas y consistentes dentro de este espacio. Por ejemplo, ajustar líneas rectas a los datos es muy sencillo; ajustar polinomios de grado alto es más complicado; y ajustar máquinas de Turing es muy complicado, ya que dada una máquina de Turing, determinar si es consistente con los datos no es un problema, en general, decidible. Por estas razones, la mayoría de los trabajos en aprendizaje se han enfocado hacia representaciones relativamente simples.
+
+Problemas de decisión
+Cálculo Lambda
+Teoría de la complejidad computacional
+
+	- Análisis de algoritmos y la teoría de la computabilidad. 
+
+	- Complejidad de los problemas y de los algoritmos que lo resuelven
+	- Complejiidad de un problema != complejidad en la forma de resolverlo
+	- NP: conjunto de problemas en los que podemos comprobar una solución (que se resuelven facilmente) en un tiempo razonable (polinomial), es decir si una respuesta al problema es correcta o no (comprobar si algo es una solución o no). Obs: hay muchos problemas en NP que no podemos resolver en un tiempo razonable. Están en P?
+	- P: conjunto de problemas en los que podemos encontrar una solución (que se resuelven facilmente) en un tiempo razonable (algoritmo polinomial). Sin importar el tamaño de la entrada, la cantidad de operaciones necesarias va a ser polinomial. Los problemas de complejidad llamada "P" son aquellos para los que existe un algoritmo que encuentra su solución en tiempo polinómico. Por lo tanto es evidente que P es un subconjunto de NP y el gran problema es determinar si P = NP.
+	- Todos los problemas que están en P están también en NP.
+	- Un problema que está en NP estará también en P? No se sabe. P = NP? No se sabe. Para resolver este problema, bastaría con encontrar un algoritmo polinómico para cualquiera (basta uno) de los problemas de otra subclase de NP (los llamados problemas NP-completos).
+	- NP Completos: los más difíciles de resolver en NP. Ej: buscaminas, tetris, algunos problemas NP a día de hoy requieren mucho tiempo como la programación logística y de predicción de estructura de proteínas. Del mismo modo, muchos sistemas de encriptación de datos basan su seguridad en la suposición de que no pueden ser resueltos en un tiempo polinómico. Cualquier problema NP se puede reducir a un problema NP Completo.
+	- El “problema del viajante". Este es uno de los problemas de complejidad llamada "NP", para los que se puede comprobar si una solución es válida en tiempo polinómico en función del tamaño de la entrada (en este caso del número n de ciudades que el viajante debe recorrer).
+	- NP Duro: El Travelling Sales Problem no es NP-completo (pertenece a otra clase llamada NP-duro), pero si se puede resolver en tiempo polinomial, entonces existe una versión equivalente entre los problemas NP-completos que se puede resolver en tiempo polinomial y por tanto P=NP
+
+Turing: On computable numbers, with an aplication to the decision problem
+Problema de decision = Problema de la parada
+
+1931 - Godel:
+1936 - Church - Turing: Demostraron que no existe algoritmo general capaz de decidir si una fórmula es un Teorema.
+1936 - Turing: Dada una máquina de Turing y un input, en general es imposible saber si la máquina se parará.
+1936 - Turing: Padre de la Toería de la Computabilidad.
+
+2) Aprender árboles de decisión
+
+* Un árbol de decisión toma como entrada un objeto o una situación descrita a través de
+un conjunto de atributos y devuelve una «decisión»: el valor previsto de la salida dada
+la entrada.
+
+* Los atributos de entrada pueden ser discretos o continuos. A partir de ahora,
+asumiremos entradas discretas. El valor de la salida puede ser a su vez discreto o continuo; aprender una función de valores discretos se denomina clasificación; aprender una función continua se denomina regresión.
+
+* Un árbol de decisión desarrolla una secuencia de test para poder alcanzar una decisión. Cada nodo interno del árbol corresponde con un test sobre el valor de una de las
+propiedades, y las ramas que salen del nodo están etiquetadas con los posibles valores
+de dicha propiedad. Cada nodo hoja del árbol representa el valor que ha de ser devuelto si dicho nodo hoja es alcanzado. La representación en forma de árboles de decisión
+es muy natural para los humanos; en realidad muchos manuales que explican cómo hacer determinadas tareas (por ejemplo, reparar un coche) están escritos en su totalidad
+como un único árbol de decisión abarcando cientos de páginas.
+
+* Los árboles de decisión pueden expresar exactamente lo mismo que los lenguajes
+de tipo proposicional; esto es, cualquier función Booleana puede ser escrita como un árbol de decisión. Esto se puede hacer de forma trivial, haciendo corresponder cada fila
+de la tabla de verdad con la función correspondiente a cada camino del árbol. Esto llevaría a un árbol de decisión con un crecimiento exponencial, ya que las filas de la tabla
+de verdad crecen de forma exponencial a medida que se introducen nuevos atributos. 
+
+Expresividad de los árboles de decisión
+
+* si la función es la función de paridad, que devuelve 1 si y sólo si un número
+par de entradas es igual a 1, se necesitará un árbol de decisión de crecimiento exponencial. También trae dificultades el uso de un árbol de decisión para representar la función
+mayoría, que devuelve 1 si más de la mitad de las entradas son 1.
+En otras palabras, los árboles de decisión son buenos para algunos tipos de funciones y malos para otros.
+
+***¿Existe algún tipo de representación que sea eficiente para todos los tipos de funciones? Desafortunadamente, la respuesta es no. Mostraremos esto
+de una forma general. Considere el conjunto de todas las funciones Booleanas sobre n
+atributos. ¿Cuántas funciones diferentes hay en este conjunto? Es exactamente el número
+de tablas de verdad diferentes que podemos escribir, porque una función se define por
+su tabla de verdad. La tabla de verdad tiene 2n filas, ya que cada caso de entrada viene
+descrito por n atributos. Podemos considerar la columna «respuesta» de la tabla como
+un número de 2n bits que define la función.
+Si se toman 2n bits para definir la función, hay 22n funciones diferentes sobre n atributos. Es un número espantoso. Por ejemplo, con seis atributos Booleanos, hay 226 = 18,466, 744, 073, 709, 551, 616 funciones diferentes para elegir. 
+
+* Inducir árboles de decisión a partir de ejemplos
+El conjunto de ejemplos completo se denomina conjunto de entrenamiento.
+Se considera como «atributo más importante» aquel que discrimina más claramente los ejemplos.
+De esta forma, esperamos obtener la clasificación correcta con un número de test pequeño,
+es decir, que todos los caminos en el árbol sean cortos y así el árbol completo será pequeño.
+El algoritmo de aprendizaje recibe los ejemplos, no la función correcta, y de hecho, su hipótesis (véase Figura 18.6) no sólo es consistente con todos los ejemplos, sino que además es considerablemente más sencilla que el árbol original. 
+
+* Elección de los atributos de test
+En aprendizaje de árboles de decisión, el esquema que se utiliza para seleccionar atributos está diseñado para minimizar la profundidad del árbol final. La idea es elegir el
+atributo que proporcione una clasificación lo más exacta posible de los ejemplos.
+Todo lo que necesitamos, por lo tanto, es una medida formal de «bastante adecuado» e «inadecuado», y podremos implementar la función ELEGIR-ATRIBUTO
+Una medida adecuada es la cantidad esperada de información proporcionada por el atributo.
+La cantidad de información que contiene la respuesta depende del conocimiento que se tenga a priori, cuanto menos se sepa, más información
+proporcionará la respuesta. La teoría de la información mide el contenido de información en bits. Un bit de información es suficiente para responder una pregunta de tipo sí/no
+sobre la que no se sabe nada
+En el aprendizaje de árboles de decisión, nos preguntaremos cuál es la clasificación
+correcta de un ejemplo dado. Un árbol de decisión correcto podrá responder a esta pregunta. Las proporciones de ejemplos positivos y negativos del conjunto de entrenamiento
+proporcionan una estimación de las probabilidades de las posibles respuestas antes de
+que ningún atributo haya sido elegido para test.
+La ganancia de información del atributo de test es la diferencia entre la necesidad de información original y la nueva necesidad de información:
+
+** Valoración de la calidad del algoritmo de aprendizaje
+Un algoritmo de aprendizaje es bueno si produce hipótesis que hacen un buen trabajo al
+predecir clasificaciones de ejemplos que no han sido observados.
+Obviamente, una predicción es buena si resulta cierta, por lo tanto, se puede calcular la calidad de una hipótesis contrastando sus predicciones con la clasificación correcta,
+una vez se conoce ésta. Esto se hace con un conjunto de ejemplos denominado conjunto
+de test.
+
+** Obviamente, al algoritmo de aprendizaje no se le debe permitir «ver» los datos de test
+hasta que se utilizan para contrastar una hipótesis aprendida. Desafortunadamente, es muy
+fácil caer en la trampa de «ojear» (peeking) los datos de test.
+La moraleja de todo esto es que cualquier
+proceso que suponga comparar la calidad de una hipótesis frente a un conjunto de test,
+debe utilizar un nuevo conjunto de test para medir la calidad de la hipótesis que finalmente
+se haya seleccionado.
+
+** El sobreajuste es un fenómeno
+muy generalizado que ocurre cuando la función principal no es del todo aleatoria. Afecta a todos los tipos de algoritmos de aprendizaje, no sólo a los árboles de decisión.
+El tratamiento matemático completo del sobreajuste está fuera del ámbito de este libro. Aquí presentamos para afrontar el problema una técnica sencilla denominada poda
+del árbol de decisión. 
+
+*** La validación cruzada (cross-validation) es otra técnica que reduce el sobreajuste.
+Puede ser aplicada a cualquier algoritmo de aprendizaje, no sólo a los árboles de decisión. La idea básica es estimar la calidad de cada hipótesis en la predicción de datos no
+observados. Esto se hace separando una parte de datos conocidos y utilizándola para medir la calidad de la predicción de una hipótesis inducida a partir de los datos restantes.
+La validación cruzada de K pasadas (K-fold cross-validation) consiste en realizar k experimentos, dejando a un lado cada vez 1/k de los datos para test y promediando los resultados. Los valores típicos de k son 5 y 10. El extremo es k = n, también conocido como
+validación cruzada omitiendo uno (leave-one-out-cross-validation). La validación cruzada se puede utilizar en conjunción con cualquier método de construcción del árbol (incluyendo poda) para seleccionar un árbol con una calidad de predicción buena. Para evitar
+el problema de peeking, debemos medir esta calidad con un nuevo conjunto de test.
+ 
+3) Aprendizaje de conjuntos de hipótesis
+
+* Hasta ahora hemos estudiado métodos de aprendizaje en los que para hacer predicciones se utiliza una única hipótesis, elegida de un espacio de hipótesis. La idea de los mé-
+todos de aprendizaje de conjuntos de hipótesis (ensemble learning) es seleccionar una
+colección, o conjunto, del espacio de hipótesis y combinar sus predicciones.
+
+** El método de conjuntos de hipótesis más comúnmente utilizado es el denominado
+boosting (propulsión). Para entender cómo funciona, es necesario explicar primero la
+idea de conjunto de entrenamiento con pesos (weighted training set).
+ADABOOST tiene una propiedad
+muy importante: si el algoritmo de aprendizaje de entrada L es un algoritmo de aprendizaje débil, lo que significa que L siempre devuelve una hipótesis con un error sobre el
+conjunto de entrenamiento que es ligeramente mejor que una suposición aleatoria (es decir, 50 por ciento para clasificación booleana), el ADABOOST devolverá una hipótesis que
+clasifica los datos de entrenamiento perfectamente para M suficientemente grande. Así,
+el algoritmo aumenta la precisión sobre los datos de entrenamiento del algoritmo original. Este resultado se mantiene siempre, sin verse afectado por la inexpresividad del espacio de hipótesis original ni por la complejidad de la función que esté siendo aprendida.
+
+* Veamos cómo funciona el boosting sobre los datos del restaurante. Elegiremos como
+espacio de hipótesis original el conjunto de los árboles de decisión con exactamente un
+test en la raíz (decision stumps). La curva que aparece por debajo en la Figura 18.11(a)
+muestra que sin utilizar boosting, estos árboles no son muy efectivos para este conjunto
+de datos, alcanzándose un acierto de la predicción de sólo el 81 por ciento de 100 ejemplos de entrenamiento. Cuando se aplica boosting (con M = 5), la proporción de aciertos mejora, llegando al 93 por ciento después de 100 ejemplos.
+Si se añaden más decision
+stumps al conjunto, el error permanece en cero. Este hallazgo, que es bastante robusto a través de conjuntos de datos y espacios de
+hipótesis, fue muy sorprendente cuando se observó por primera vez. 
+
+4) ¿Por qué funciona el aprendizaje?: teoría computacional del aprendizaje
+
+*** El enfoque tomado en esta sección se basa en la teoría computacional del aprendizaje, un campo entre la IA, la estadística y la informática teórica. El principio fundamental es el siguiente: cualquier hipótesis que sea muy errónea será descubierta con una probabilidad alta después de un número pequeño de ejemplos, ya que realizará una predicción incorrecta. Por ello, es improbable que cualquier hipótesis que es consistente
+con un conjunto suficientemente grande de ejemplos de entrenamiento, sea muy errónea: es decir, debe ser una aproximación correcta probable (PAC). Cualquier algoritmo de aprendizaje que devuelve hipótesis que sean una aproximación correcta probable se denomina algoritmo de PAC-aprendizaje (PAC-learning).
+
+*** La suposición clave es que los conjuntos de ejemplos de entrenamiento y de test son elegidos de forma fortuita e independiente a partir del mismo
+conjunto de ejemplos que siguen una misma distribución de probabilidad. Esto se denomina suposición estacionaria. Sin la suposición estacionaria, la teoría no podría hacer ninguna predicción acerca del futuro, porque no existiría la conexión necesaria entre el futuro
+y el pasado. La suposición estacionaria equivale a suponer que el proceso de selección de
+ejemplos no es malévolo.
+
+*** ¿Cuántos ejemplos se necesitan?
+"La línea se denomina hipótesis consistente ya que verifica todos los datos."
+asumiremos que la función verdadera fpertenece a H. Ahora, podemos definir el error de una hipótesis h con respecto a la función verdadera f, dada una distribución D sobre los ejemplos, como la probabilidad que h sea diferente de fcon respecto
+a un ejemplo:
+Una hipótesis h se denomina aproximadamente correcta si error(h) … e, donde e es una constante pequeña. Pretendemos mostrar que después de observar N ejemplos, con probabilidad alta, todas las hipótesis consistentes serán aproximadamente correctas. Se puede pensar que una hipótesis aproximadamente correcta estará «cerca» de la función verdadera en el espacio de hipótesis: caerá dentro de lo que se denomina la
+e-bola alrededor de la función verdadera f.
+si un algoritmo de aprendizaje devuelve una hipótesis que es consistente con
+bastantes ejemplos, con probabilidad de al menos 1 - d, comete como máximo un error
+e. En otras palabras, es una aproximación correcta probable. El número de ejemplos que
+se requieren, en función de e y d, se denomina complejidad de la muestra del espacio de hipótesis.
+
+***Esto demuestra que la cuestión clave es el tamaño del espacio de hipótesis.
+El dilema al que nos enfrentamos es que, a menos que restrinjamos el espacio de funciones que el algoritmo considera, éste no va a ser capaz de aprender; pero si restringimos el espacio, podríamos eliminar la función verdadera. Existen dos modos de
+«escaparnos» de este dilema. El primer modo es exigir que el algoritmo devuelva no sólo
+cualquier hipótesis consistente, sino preferiblemente la más sencilla (como se hacía en el
+aprendizaje de árboles de decisión). El segundo modo, que se muestra aquí,
+es centrarnos en el aprendizaje de subconjuntos del conjunto total de las funciones Booleanas. La idea es que en la mayoría de los casos no necesitamos el poder total de expresividad de las funciones Booleanas, y podemos trabajar con lenguajes más restrictivos.
+
 
 APRENDIZAJE NO SUPERVISADO
+
+El problema de aprendizaje no supervisado consiste en aprender a partir de patrones de entradas para los que no se especifican los valores de sus salidas. Por ejemplo, un agente taxista debería desarrollar gradualmente los conceptos de «días de tráfico bueno» y de «días de tráfico malo», sin que le hayan sido dados ejemplos etiquetados de ello. Un agente de aprendizaje supervisado puro no puede aprender qué hacer, porque no tiene información de lo que es una acción correcta o un estado deseable. Principalmente se estudiará aprendizaje no supervisado en el contexto de los sistemas de razonamiento probabilístico (Capítulo 20).
 
 1) Bayes simples (Naive Bayes)
 
@@ -487,7 +885,6 @@ Función núcleo es una función que se puede aplicar a pares de datos de entrad
 
 Los métodos núcleo se pueden aplicar no sólo con algoritmos de aprendizaje que encuentran separadores lineales óptimos, sino también con cualquier otro algoritmo que pueda reformularse para trabajar sólo con productos de pares de puntos de los datos. Una vez que esto se hace, el producto se reemplaza por una función núcleo y tenemos una versión del algoritmo con núcleos. Esto se puede hacer fácilmente para el aprendizaje del k-vecinos-más-cercanos y para el aprendizaje del perceptrón, entre otros.
 
-
 6) Reconocimiento de digitos
 
 * clasificador de 3 vecinos más cercanos
@@ -503,8 +900,13 @@ Los métodos núcleo se pueden aplicar no sólo con algoritmos de aprendizaje qu
 
 APRENDIZAJE POR REFUERZO
 
+El problema del aprendizaje por refuerzo, que se describe en el Capítulo 21, es el
+más general de las tres categorías. En vez de que un profesor indique al agente qué hacer, el agente de aprendizaje por refuerzo debe aprender a partir del refuerzo. Por ejemplo, la falta de propina al final del viaje (o una gran factura por golpear la parte trasera
+del coche de delante) da al agente algunas indicaciones de que su comportamiento no
+es el deseable. El aprendizaje por refuerzo típicamente incluye el subproblema de aprender cómo se comporta el entorno.
+
 El agente tiene un modelo completo del entorno y conoce la función de recompensa, aquí no asumimos ningún conocimiento a priori. Imagine jugar a un nuevo juego cuyas reglas desconoce; después de cientos de movimientos más o menos, su oponente dice, «Perdiste». En resumen,
-esto es aprendizaje por refuerzo.
+esto es aprendizaje por refuerzo.	
 
 1) Aprendizaje por refuerzo pasivo
 
@@ -629,6 +1031,88 @@ RESUMEN DE APRENDIZAJE POR REFUERZO
 El diseño global del agente dicta el tipo de información que debe ser aprendida.
 Los tres principales diseños que hemos cubierto son diseños basados en el modelo, utilizando un modelo T y una función de utilidad U; un diseño de modelo libre que utiliza una función Q acción-valor; y el diseño reactivo que utiliza una
 política p.
+
+
+Rusumen:
+
+* Machine Learning como sub campo de IA. Qué es Machine Learning.
+
+	Analisis Inteligente de datos:
+
+	- Tecnología de la información
+	- Datos disponibles
+	- Análisis inteligence de los datos
+	- Avances tecnológicos
+	- Muchas aplicaciones de la vida real
+	
+	Definiciones:
+
+	- Definición de Arthur Samuel
+	- Definición de John McCarthy
+	- Agentes inteligentes
+	- Elementos de accion
+	- Elemento de aprendizaje
+	- Mejores decisiones
+	- Tipo de realimentación
+	- Estado actual y acciones
+	- Propiedades del mundo y percepciones
+	- Evolución del mundo
+	- Información de utilidad y estados deseables
+	- Información acción-valor y acciones deseables
+	- Metas y estados que maximizan utilidad
+	
+* Aprendizaje supervisado
+
+	- Agente aprende
+	- Aprender una función
+	- Ejemplos, sus entradas y salidas
+	- Regla condición-acción (frenar o no frenar)
+	- Aprender función (contiene la imagen un autobús?)
+	- Aprender función, estado actual, acciones
+	- Aprendizaje inductivo
+	- Valores correctos, función desconocida
+	- Ejemplos de f, función verdadera
+	- Función h, hipótesis aproxima f
+	- Espacio de hipótesis
+	- Función computable, máquina de Turing
+	- Arboles de decisiones
+	- Compromiso expresividad espacio hipótesis-complejidad h sencillas y consistentes
+
+* Aprendizaje no supervisado
+
+	- Agente de aprendizaje no supervisado
+	- Aprender patrones de entradas
+	- Valores de salidas no especificados
+	- Ejemplo no etiquetados (dias tráfico bueno y malo)
+	- Estado deseable no desconocido a priori
+	- Acción correcta desconocida a priori
+	- Naive Bayes
+	- Métodos de aprendizaje paramétrico
+	- Aprendizaje basado en instancias
+	- Redes neuronales
+	- Máquinas de vectores soporte (SVMs) o máquinas núcleo
+	- Reconocimiento de dígitos
+
+* Aprendizaje por refuerzo
+
+	- Agentes que aprenden a partir refuerzo
+	- Aprender comportamiento del entorno
+	- Modelo del entorno (completo o no tan completo)
+	- Función de recompensa
+	- Ningún conocimiento a priori
+	- Juego nuevo, reglas desconocidas (al final del juego, perdiste o ganaste)
+	- Aprendizaje por refuerzo pasivo
+	- Aprendizaje por refuerzo activo (exploración, aprendizaje-q)
+	- Aproximacion de funciones
+	- Aplicaciones a juegos
+	- Aplicaciones a control de robots
+	- Búsqueda de la política
+	- Diseño global del agente
+	- Diseños basados en el modelo
+	- Diseños de modelo libre
+	- Diseños reactivos
+	
+#------------------------------------------
 
 Principales algoritmos:
 

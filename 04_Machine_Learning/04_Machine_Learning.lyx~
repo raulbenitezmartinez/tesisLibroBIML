@@ -84,34 +84,405 @@ Machine Learning
 \end_layout
 
 \begin_layout Standard
-En este capítulo se realiza un breve repaso sobre conceptos básicos que
- envuelven a Machine Learning.
- El objetivo es visualizar qué aspectos de Machine Learning fueron tomados
- como componentes de solución al problema de estudio.
+El objetivo de este capítulo es visualizar qué aspectos de Machine Learning
+ fueron tomados como componentes de solución al problema de estudio.
 \end_layout
 
 \begin_layout Standard
-En las últimas dos décadas, Machine Learning se ha convertido en uno de
- los pilares de la tecnología de la información y, con eso, una parte bastante
- central de nuestra vida.
- Debido a que cada vez hay más datos disponibles, existen buenas razones
- para creer que el análisis inteligente de datos será aún más importante
- como un ingrediente necesario para el progreso tecnológico.
- El aprendizaje automático puede aplicarse de muchas maneras y en muchas
- aplicaciones.
- Ahora discutimos una serie de aplicaciones, los tipos de datos con los
- que tratan y, finalmente, formalizamos los problemas de una manera algo
- más estilizada.
- Lo último es clave si queremos evitar reinventar la rueda para cada nueva
- aplicación.
- En cambio, gran parte del arte del aprendizaje automático es reducir una
- gama de problemas bastante dispares a un conjunto de prototipos bastante
- reducido.
- Gran parte de la ciencia del aprendizaje automático es resolver esos problemas
- y proporcionar buenas garantías para las soluciones 
+En lo que va de la Edad Contemporánea el hombre siente fuertemente la necesidad
+ de encontrar respuestas a ciertos aspectos de sus propias capacidades.
+ Respuestas de cómo funciona el cerebro humano, cómo se van originando e
+ hilando los pensamientos, cómo se va adquiriendo el conocimiento, cómo
+ la racionalidad está presente en las decisiones humanas, cuál es el mecanismo
+ de toma de decisiones de la mente humana, cómo utiliza su inteligencia
+ para resolver problemas e ideas abstractas, cuál es el proceso que sigue
+ la mente para poder aprender, interrogantes sobre la memoria del cerebro
+ y cómo los sentidos van alimentando de percepciones para tener una visión
+ única del universo.
+ La ciencias de la computación ha abierto la puerta a las respuestas.
+\end_layout
+
+\begin_layout Standard
+En 1950 Alan Turing dio uno de los saltos más importantes al proponer el
+ enfoque de su 
+\begin_inset Quotes eld
+\end_inset
+
+Prueba de Turing
+\begin_inset Quotes erd
+\end_inset
+
+, donde un computador es considerado como agente inteligente si un evaluador
+ humano, sin interactuar con el computador, realiza preguntas y no es capaz
+ de distinguir si las respuestas vienen de una persona o del computador.
+ En su artículo 
+\begin_inset Quotes eld
+\end_inset
+
+Computing Machinery and Intelligence
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMIAlan1950"
+
+\end_inset
+
+ expuso este y otros conceptos y como tal es considerado padre de la Inteligenci
+a Artificial.
+\end_layout
+
+\begin_layout Standard
+Aunque hoy en día aún es válida la Prueba de Turing, el desafío no está
+ en construir un agente inteligente total, sino mas bien buscar que un computado
+r tenga capacidades como 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IAEModerno2"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Procesamiento del lenguaje natural
+\end_layout
+
+\begin_layout Enumerate
+Representación del conocimiento
+\end_layout
+
+\begin_layout Enumerate
+Razonamiento automático
+\end_layout
+
+\begin_layout Enumerate
+Aprendizaje automático (Machine Learning)
+\end_layout
+
+\begin_layout Enumerate
+Visión computacional
+\end_layout
+
+\begin_layout Enumerate
+Robótica
+\end_layout
+
+\begin_layout Standard
+Entre los precursores de IA están John McCarthy, Marvin Minsky, Allen Newell
+ y Herbert Simon, todos ganadores del premio 
+\begin_inset Quotes eld
+\end_inset
+
+ACM A.M.
+ Turing Award
+\begin_inset Quotes erd
+\end_inset
+
+ por sus notables aportes en los inicios de IA.
+ McCarthy acuño el término Artificial Intelligence en el taller 
+\begin_inset Quotes eld
+\end_inset
+
+Dartmouth Summer Research Project on Artificial Intelligence
+\begin_inset Quotes erd
+\end_inset
+
+ que organizó y se desarrolló en junio del año 1956.
+ En palabras transcriptas, el taller perseguía el siguiente objetivo: 
+\shape italic
+
+\begin_inset Quotes eld
+\end_inset
+
+El estudio debe proceder sobre la base de la conjetura de que cada aspecto
+ del aprendizaje o cualquier otra característica de la inteligencia puede,
+ en principio, describirse tan precisamente que se puede hacer que una máquina
+ lo simule.
+ Se intentará encontrar cómo hacer que las máquinas usen el lenguaje, formen
+ abstracciones y conceptos, resuelvan tipos de problemas ahora reservados
+ para los humanos y se mejoren a sí mismos.
+ Creemos que se puede lograr un avance significativo en uno o más de estos
+ problemas si un grupo de científicos cuidadosamente seleccionados trabajan
+ juntos durante un verano
+\begin_inset Quotes erd
+\end_inset
+
+
+\shape default
+.
+ Entre los aportes mas destacado de McCarthy se pueden mencionar la definición
+ del lenguaje de alto nivel Lisp, la creación del tiempo compartido y el
+ artículo 
+\begin_inset Quotes eld
+\end_inset
+
+Programs with Common Sense
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PCSMc1959"
+
+\end_inset
+
+ donde define su Generador de Consejos, todos estos aportes desarrollados
+ en 1958.
+ Minsky diseñó SNARC (Stochastic Neural Analog Reinforcement Calculator)
+ la primera máquina a partir de una red neuronal, en el año 1951, junto
+ a Seymour Papert publicó el libro 
+\begin_inset Quotes eld
+\end_inset
+
+Perceptrons: an introduction to computational geometry
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PercepMinsPape1987"
+
+\end_inset
+
+ en el año 1969 y también creó un modelo de redes semánticas denominadas
+ 
+\begin_inset Quotes eld
+\end_inset
+
+marcos
+\begin_inset Quotes erd
+\end_inset
+
+ publicado en 
+\begin_inset Quotes eld
+\end_inset
+
+A framework for representing knowledge
+\begin_inset Quotes erd
+\end_inset
+
+ en el año 1974 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FrameMinsky1974"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En setiembre de 1956 en el 
+\begin_inset Quotes eld
+\end_inset
+
+MIT Symposium on Information Theory
+\begin_inset Quotes erd
+\end_inset
+
+ se mostraron trabajos muy importantes como el de George Miller que presentó
+ 
+\begin_inset Quotes eld
+\end_inset
+
+The Magical Number Seven, Plus or Minus Two: Some Limits on our Capacity
+ for Processing Information
+\begin_inset Quotes erd
+\end_inset
+
+, Noam Chomsky presentó 
+\begin_inset Quotes eld
+\end_inset
+
+Three Models for the Description of Language
+\begin_inset Quotes erd
+\end_inset
+
+, y Allen Newell y Herbert Simon presentaron 
+\begin_inset Quotes eld
+\end_inset
+
+The Logic Theory Machine
+\begin_inset Quotes erd
+\end_inset
+
+: programa de computador capaz de hacer la demostración de un teorema y
+ considerado el primer programa de IA.
+ El campo de la ciencia cognitiva echó sus raíces en este simposio evidenciando
+ que los modelos informáticos se pueden utilizar para modelar la psicología
+ de la memoria, el lenguaje y el pensamiento lógico.
+ En 1959 presentaron el 
+\begin_inset Quotes eld
+\end_inset
+
+General Problem Solving Program
+\begin_inset Quotes erd
+\end_inset
+
+, pretendía funcionar como una máquina universal para resolver problemas
+ y fue el primer programa de computador que separó su conocimiento de los
+ problemas (reglas representadas como datos de entrada) de su estrategia
+ de cómo resolver problemas (un motor de resolución genérico).
+\end_layout
+
+\begin_layout Standard
+Machine Learning como subcampo de IA está presente en muchas aplicaciones
+ de la vida real, especialmente en aquellas donde se requiere el procesamiento
+ de grandes cantidades de datos.
+ Por esta razón la tecnología de la información la toma como aliado esencial.
+ Muchos avances tecnológicos de última generación utilizan algoritmos de
+ Machine Learning para realizar un análisis inteligente de los datos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IntroML2008"
+
+\end_inset
+
+.
+ Entre algunas aplicaciones conocidas se destacan:
+\end_layout
+
+\begin_layout Itemize
+Reconocimiento de rostros de Facebook
+\end_layout
+
+\begin_layout Itemize
+Kinect para Xbox 360
+\end_layout
+
+\begin_layout Itemize
+Gafas de realidad virtual
+\end_layout
+
+\begin_layout Itemize
+Voice reconigtion en smartphones
+\end_layout
+
+\begin_layout Itemize
+La tecnología del habla y el campo relacionado del reconocimiento de caracteres
+ manuscritos
+\end_layout
+
+\begin_layout Itemize
+Motores de búsqueda, sistemas de recomendación, y los sistemas para la construcc
+ión de portales Web
+\end_layout
+
+\begin_layout Itemize
+STRIPS (Fikes y Nilsson, 1971), el primero de los grandes sistemas de planificac
+ión
+\end_layout
+
+\begin_layout Itemize
+Robot Shakey
+\end_layout
+
+\begin_layout Itemize
+Robot dogs con sistemas de reconocimiento de voz
+\end_layout
+
+\begin_layout Itemize
+Recomender system en plataformos como Amazon, Netflix, Facebook 
+\end_layout
+
+\begin_layout Itemize
+Reconocimiento automático de ciertas áreas en el mundo realizado por satélites
+\end_layout
+
+\begin_layout Standard
+Para recalcar el veloz crecimiento de los datos en el mundo, en un estudio
+ publicado por la International Data Corporation (IDC) y patrocinado por
+ DELL EMC que se denomina: 
+\begin_inset Quotes eld
+\end_inset
+
+The Digital Universe in 2020: Big Data, Bigger Digital Shadows, and Biggest
+ Growth in the Far East
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DUGrow2012"
+
+\end_inset
+
+ se analiza qué tan rápido crecen los datos cada año, una medida que incluyen
+ todos los datos digitales creados, replicados y consumidos en un solo año.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IDC-exabyes"
+
+\end_inset
+
+ se muestra una proyección del tamaño hasta el 2020.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename recursos/THE DIGITAL UNIVERSE IN 2020.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IDC-exabyes"
+
+\end_inset
+
+Del 2005 al 2020 el universo digital crecerá en un factor de 300, de 130
+ exabytes a 40,000 exabytes, es decir se duplicará cada dos años.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El universo digital analizado está compuesto por imágenes y videos en teléfonos
+ móviles cargados en YouTube, películas digitales, datos bancarios en cajeros
+ automáticos, imágenes de seguridad en aeropuertos y en eventos importantes
+ como los Juegos Olímpicos, colisiones subatómicos registradas por el Gran
+ Colisionador de Hadrones en el CERN, llamadas de voz a través de líneas
+ telefónicas digitales y los mensajes de texto.
+ Las mediciones indican que en el 2005 existían 130 exabytes en datos digitales,
+ en el 2010 llegó a 1200 exabytes, en el 2015 a unos 7900 exabytes y para
+ el 2020 se pronostica que llegará a los 40000 exabytes.
+ IDC estima que para 2020, hasta el 33% del universo digital contendrá informaci
+ón que podría ser valiosa si se analiza 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IDC-exabyes"
 
 \end_inset
 
@@ -147,6 +518,9 @@ key "Arthur1959"
  Este pionero ya presagiaba que los programas, a partir del aprendizaje
  sobre datos históricos (la experiencia), podrían efectuar tareas de toma
  de decisiones sin ser programadas explícitamente dichas decisiones.
+ Samuel desarrolló en el año 1952 programas que aprendían a jugar Damas
+ y los cuales aprendían su propia función de evaluación.
+ En el año 1959 desarrolló programas que aprendían a jugar Ajedrez.
 \end_layout
 
 \begin_layout Standard
@@ -185,6 +559,20 @@ e on T, as measured by P, improves with experience E
  a hablar a través de la experiencia de pronunciar las palabras y de su
  interacción con otras personas, entonces sucede que su capacidad de hablar
  se va perfeccionando o mejorando.
+\end_layout
+
+\begin_layout Standard
+* Machine Learning como sub campo de IA.
+ Qué es Machine Learning.
+\end_layout
+
+\begin_layout Standard
+- Definición de Arthur Samuel - Definición de John McCarthy - Agentes inteligent
+es - Elementos de accion - Elemento de aprendizaje - Mejores decisiones
+ - Tipo de realimentación - Estado actual y acciones - Propiedades del mundo
+ y percepciones - Evolución del mundo - Información de utilidad y estados
+ deseables - Información acción-valor y acciones deseables - Metas y estados
+ que maximizan utilidad
 \end_layout
 
 \begin_layout Standard
@@ -320,6 +708,20 @@ El problema de estudio en cuestión utiliza algoritmos de aprendizaje supervisad
 , donde el experto en compras da la respuesta correcta a cada ejemplo.
 \end_layout
 
+\begin_layout Standard
+* Aprendizaje supervisado
+\end_layout
+
+\begin_layout Standard
+- Agente aprende - Aprender una función - Ejemplos, sus entradas y salidas
+ - Regla condición-acción (frenar o no frenar) - Aprender función (contiene
+ la imagen un autobús?) - Aprender función, estado actual, acciones - Aprendizaj
+e inductivo - Valores correctos, función desconocida - Ejemplos de f, función
+ verdadera - Función h, hipótesis aproxima f - Espacio de hipótesis - Función
+ computable, máquina de Turing - Arboles de decisiones - Compromiso expresividad
+ espacio hipótesis-complejidad h sencillas y consistentes
+\end_layout
+
 \begin_layout Subsection
 Aprendizaje no supervisado
 \end_layout
@@ -343,6 +745,19 @@ a priori
  Example algorithms include: the Apriori algorithm and k-Means.
 \end_layout
 
+\begin_layout Standard
+* Aprendizaje no supervisado
+\end_layout
+
+\begin_layout Standard
+- Agente de aprendizaje no supervisado - Aprender patrones de entradas -
+ Valores de salidas no especificados - Ejemplo no etiquetados (dias tráfico
+ bueno y malo) - Estado deseable no desconocido a priori - Acción correcta
+ desconocida a priori - Naive Bayes - Métodos de aprendizaje paramétrico
+ - Aprendizaje basado en instancias - Redes neuronales - Máquinas de vectores
+ soporte (SVMs) o máquinas núcleo - Reconocimiento de dígitos
+\end_layout
+
 \begin_layout Subsection
 Aprendizaje por refuerzo
 \end_layout
@@ -357,6 +772,21 @@ je por refuerzo debe aprender a partir del refuerzo o recompensa.
  indicaciones de que su comportamiento no es el deseable.
  El aprendizaje por refuerzo típicamente incluye el subproblema de aprender
  cómo se comporta el entorno.
+\end_layout
+
+\begin_layout Standard
+* Aprendizaje por refuerzo
+\end_layout
+
+\begin_layout Standard
+- Agentes que aprenden a partir refuerzo - Aprender comportamiento del entorno
+ - Modelo del entorno (completo o no tan completo) - Función de recompensa
+ - Ningún conocimiento a priori - Juego nuevo, reglas desconocidas (al final
+ del juego, perdiste o ganaste) - Aprendizaje por refuerzo pasivo - Aprendizaje
+ por refuerzo activo (exploración, aprendizaje-q) - Aproximacion de funciones
+ - Aplicaciones a juegos - Aplicaciones a control de robots - Búsqueda de
+ la política - Diseño global del agente - Diseños basados en el modelo -
+ Diseños de modelo libre - Diseños reactivos
 \end_layout
 
 \begin_layout Section
@@ -877,7 +1307,7 @@ Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
 \end_layout
 
 \begin_layout Section
-Algoritmos de clasificación en WEKA
+Algoritmos de clasificación en Weka
 \end_layout
 
 \begin_layout Standard
@@ -920,32 +1350,81 @@ key "WekaCla"
 \begin_inset Tabular
 <lyxtabular version="3" rows="43" columns="3">
 <features islongtable="true" longtabularalignment="center">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top" width="0pt">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<column alignment="left" valignment="top" width="3.5cm">
+<column alignment="left" valignment="top" width="6.3cm">
+<column alignment="left" valignment="top" width="5.5cm">
+<row caption="true">
+<cell multicolumn="1" alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Clasificadores-Weka"
+
+\end_inset
+
+Clasificadores Weka
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 Categoría del clasificador
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Nombre del clasificador
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Modelo, técnica o algoritmo que implementa
 \end_layout
 
@@ -953,203 +1432,299 @@ Modelo, técnica o algoritmo que implementa
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificadores bayesianos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 BayesNet
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Bayes Network (Red Bayesiana)
+
+\size small
+Bayes Network (Red Bayesiana) 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "WekaMan3-8-0"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificadores bayesianos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 NaiveBayes
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Naive Bayes
+
+\size small
+Naive Bayes 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "John1995"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificadores bayesianos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 NaiveBayesMultinomial
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Naive Bayes multinomial
+
+\size small
+Naive Bayes multinomial 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mccallum1998"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificadores bayesianos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 NaiveBayesMultinomialUpdateable
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Naive Bayes multinomial actualizable
+
+\size small
+Naive Bayes multinomial actualizable 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mccallum1998"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificadores bayesianos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 NaiveBayesUpdateable
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Naive Bayes actualizable
+
+\size small
+Naive Bayes actualizable 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "John1995"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Basado en funciones
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Logistic
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Regresión Logística
+
+\size small
+Regresión Logística 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "leCessie1992"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Basado en funciones
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 MultilayerPerceptron
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
- Red Neuronal con 
+
+\size small
+Red Neuronal con 
 \shape italic
 back propagation
 \end_layout
@@ -1158,202 +1733,326 @@ back propagation
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Basado en funciones
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 SimpleLogistic
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Regresión Logística lineal con LogitBoost
+
+\size small
+Regresión Logística lineal con LogitBoost 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Landwehr2005"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Sumner2005"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Basado en funciones
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 SMO
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sequential Minimal Optimization con Support Vector
+
+\size small
+Sequential Minimal Optimization con Support Vector 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Platt1998"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Keerthi2001"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Hastie1998"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificadores perezosos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 IBk
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-K-nearest neighbours (K vecinos más cercanos)
+
+\size small
+K-nearest neighbours (K vecinos más cercanos) 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Aha1991"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificadores perezosos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 KStar
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-K* con función de distancia basada en entropía
+
+\size small
+K* con función de distancia basada en entropía 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Cleary1995"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificadores perezosos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 LWL
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Locally Weighted Learning (Aprendizaje Ponderado Localmente)
+
+\size small
+Locally Weighted Learning (Aprendizaje Ponderado Localmente) 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frank2003"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Atkeson1996"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 AdaBoostM1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Adaboost M1
+
+\size small
+Adaboost M1 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Freund1996"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 AttributeSelectedClassifier
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Selección de atributos
 \end_layout
 
@@ -1361,115 +2060,166 @@ Selección de atributos
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Bagging
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Bagging
+
+\size small
+Bagging 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Breiman1996"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 ClassificationViaRegression
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Métodos de regresión
+
+\size small
+Métodos de regresión 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frank1998"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 CVParameterSelection
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Selección de parámetros
+
+\size small
+Selección de parámetros 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kohavi1995"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 FilteredClassifier
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Filtro arbitrario
 \end_layout
 
@@ -1477,28 +2227,34 @@ Filtro arbitrario
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 IterativeClassifierOptimizer
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Optimización del número de iteraciones
 \end_layout
 
@@ -1506,57 +2262,78 @@ Optimización del número de iteraciones
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 LogitBoost
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
- Regresión Logística aditiva
+
+\size small
+Regresión Logística aditiva 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Friedman1998"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 MultiClassClassifier
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Metaclasificador
 \end_layout
 
@@ -1564,28 +2341,34 @@ Metaclasificador
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 MultiClassClassifierUpdateable
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Metaclasificador actualizable
 \end_layout
 
@@ -1593,28 +2376,34 @@ Metaclasificador actualizable
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 MultiScheme
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Selección del clasificador
 \end_layout
 
@@ -1622,28 +2411,34 @@ Selección del clasificador
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 RandomCommittee
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Conjunto aleatorizado de clasificadores base
 \end_layout
 
@@ -1651,28 +2446,34 @@ Conjunto aleatorizado de clasificadores base
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 RandomizableFilteredClassifier
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificador arbitrario con filtro arbitrario
 \end_layout
 
@@ -1680,115 +2481,173 @@ Clasificador arbitrario con filtro arbitrario
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 RandomSubSpace
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Árbol de decisión
+
+\size small
+Árbol de decisión 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ho1998"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Stacking
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Combinación de clasificadores utilizando apilamiento
+
+\size small
+Combinación de clasificadores utilizando apilamiento 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Wolpert1992"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Vote
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Combinación de clasificadores
+
+\size small
+Combinación de clasificadores 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kuncheva2004"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kittler1998"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Meta algoritmos
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 WeightedInstancesHandlerWrapper
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Soporte de instancias ponderadas
 \end_layout
 
@@ -1796,57 +2655,78 @@ Soporte de instancias ponderadas
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Sistema de reglas
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 DecisionTable
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Tabla de decisión simple
+
+\size small
+Tabla de decisión simple 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kohavi1995a"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Sistema de reglas
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 JRip
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 \begin_inset Quotes eld
 \end_inset
 
@@ -1854,93 +2734,138 @@ Repeated Incremental Pruning to Produce Error Reduction
 \begin_inset Quotes erd
 \end_inset
 
- (RIPPER)
+ (RIPPER) 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Cohen1995"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Sistema de reglas
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 OneR
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Clasificador 1R
+
+\size small
+Clasificador 1R 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Holte1993"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Sistema de reglas
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 PART
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Divide y vencerás para construir un árbol de decisión C4.5 parcial
+
+\size small
+Divide y vencerás para construir un árbol de decisión C4.5 parcial 
+\size default
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Frank1998a"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Sistema de reglas
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 ZeroR
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Clasificador 0-R
 \end_layout
 
@@ -1948,315 +2873,157 @@ Clasificador 0-R
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Árboles de decisión
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 DecisionStump
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size small
+Decision stump in conjunction with a boosting algorithm
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 Árboles de decisión
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size small
 HoeffdingTree
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
-\end_layout
+\size small
+Algoritmo de inducción incremental del árbol de decisión 
+\size default
 
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Árboles de decisión
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-J48
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Árboles de decisión
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-LMT
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Árboles de decisión
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RandomForest
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Árboles de decisión
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-RandomTree
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Árboles de decisión
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-REPTree
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Árboles de decisión
-\end_layout
-
-\begin_layout Standard
-De los clasificadores de árboles en WEKA, el J4.8 reimplementa C4.5.
- Puede construir un árbol binario en lugar de uno con varias ramas.
-\end_layout
-
-\begin_layout Subsubsection
-DecisionStump
-\end_layout
-
-\begin_layout Standard
-Constituye la clase Java para construir y utilizar un tocón de decisión.
- Generalmente se utiliza en conjunción con un algoritmo de boosting.
- Realiza regresión (basado en el error cuadrático medio) o clasificación
- (basado en la entropía).
-\end_layout
-
-\begin_layout Subsubsection
-HoeffdingTree
-\end_layout
-
-\begin_layout Standard
-Un árbol Hoeffding (VFDT) es un algoritmo de inducción de árbol de decisión
- incremental que es capaz de aprender de flujos de datos masivos, suponiendo
- que la distribución de la generación de los ejemplos no cambian con el
- tiempo.
- Los árboles Hoeffding explotan el hecho de que una pequeña muestra puede
- a menudo ser suficiente para elegir un atributo de división óptimo.
- Esta idea está apoyada matemáticamente por el límite de Hoeffding, que
- cuantifica el número de observaciones (en nuestro caso, ejemplos) necesarios
- para estimar algunas estadísticas dentro de una precisión prescrita (en
- nuestro caso, la bondad de un atributo).
- Una característica teóricamente atractiva de Hoeffding Trees no compartida
- por otros aprendizajes por árboles de decisión incremental es que tiene
- garantías sólidas de rendimiento.
- Utilizando el límite de Hoeffding se puede demostrar que su salida es asintótic
-amente casi idéntica a la de un aprendizaje no incremental usando infinidad
- de ejemplos 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Hulten2001"
 
 \end_inset
 
-.
+
 \end_layout
 
-\begin_layout Subsubsection
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Árboles de decisión
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 J48
 \end_layout
 
-\begin_layout Standard
-Constituye la clase Java para generar un árbol de decisión C4.5 podado o
- no podado 
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Árbol de decisión C4.5 podado o no podado 
+\size default
+
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Quinlan1993"
 
 \end_inset
 
-.
+
 \end_layout
 
-\begin_layout Subsubsection
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Árboles de decisión
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 LMT
 \end_layout
 
-\begin_layout Standard
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 \begin_inset Quotes eld
 \end_inset
 
@@ -2272,12 +3039,9 @@ Logistic Model Trees
 \begin_inset Quotes erd
 \end_inset
 
- (LMT).
- Clasificador para la construcción de árboles de modelos logísticos, que
- son árboles de clasificación con funciones de regresión logística en las
- hojas.
- El algoritmo puede manejar variables binarias y multiclases, atributos
- numéricos y nominales y valores faltantes 
+ (LMT) 
+\size default
+
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Landwehr2005"
@@ -2291,15 +3055,41 @@ key "Sumner2005"
 
 \end_inset
 
-.
+
 \end_layout
 
-\begin_layout Subsubsection
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Árboles de decisión
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 RandomForest
 \end_layout
 
-\begin_layout Standard
-Constituye la clase Java para construir un 
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 \begin_inset Quotes eld
 \end_inset
 
@@ -2316,40 +3106,97 @@ Forest of Random Trees
 \end_inset
 
  
+\size default
+
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Breiman2001"
 
 \end_inset
 
-.
+
 \end_layout
 
-\begin_layout Subsubsection
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Árboles de decisión
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 RandomTree
 \end_layout
 
-\begin_layout Standard
-Constituye la clase Java para construir un árbol que considera K atributos
- elegidos al azar en cada nodo.
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Considera K atributos elegidos al azar en cada nodo.
  No realiza poda.
- También tiene una opción que permite la estimación de probabilidades de
- clase (o media objetivo en el caso de regresión) basado en un conjunto
- de retención (backfitting).
 \end_layout
 
-\begin_layout Subsubsection
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Árboles de decisión
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
 REPTree
 \end_layout
 
-\begin_layout Standard
-Aprendizaje rápido con árboles de decisión.
- Construye un árbol de decisión/regresión utilizando la información de ganancia/
-varianza y la elimina utilizando poda de reducción de errores (con backfitting-a
-juste posterior).
- Sólo ordena valores para atributos numéricos.
- Los valores faltantes se tratan dividiendo las instancias correspondientes
- en fragmentos (es decir, como en C4.5).
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+Construye un árbol de decisión/regresión utilizando la información de ganancia/v
+arianza
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
