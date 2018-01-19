@@ -83,55 +83,93 @@ Introducción
 \end_layout
 
 \begin_layout Standard
-En las empresas retail o de ventas minoristas uno de los principales problemas
- con que se enfrentan es el manejo eficiente del stock de manera a evitar
- tener los productos en exceso en los depósitos que incurran en sobrecostos,
- o en el otro extremo la falta de dichos productos o ruptura de stock lo
- cual conlleva a pérdidas de oportunidades de ventas por no disponer del
- producto que puede generar insatisfacción de los clientes y a su vez repercute
+En las 
+\shape italic
+empresas retail
+\shape default
+ o de ventas minoristas uno de los principales problemas con que se enfrentan
+ es el manejo eficiente del stock de manera a evitar tener los productos
+ en exceso en los depósitos que incurran en sobrecostos.
+ En el otro extremo, la falta de dichos productos o ruptura de stock conlleva
+ a pérdidas de oportunidades de ventas por no disponer del producto que
+ puede generar insatisfacción de los clientes y a su vez ésto repercute
  en las utilidades de la empresa.
  Uno de los mayores desafíos en empresas de este sector es pronosticar las
- ventas para el próximo período comercial.
+ ventas para el próximo período comercial 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
 Actualmente en el proceso de gestión de compras se utilizan ciertas técnicas
  de pronósticos para determinar las cantidades de las órdenes de compra,
- dichas técnicas pueden ser cuantitativas o cualitativas.
+ dichas técnicas pueden ser cuantitativas o cualitativas 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
  Independientemente de la técnica elegida, el problema real de los pronósticos
  es su falta de confiabilidad, ya que por lo general no son precisos, entonces,
  la interrogante que siempre surge es si serán superiores o inferiores a
- la demanda real y en qué medida.
+ la demanda real y en qué medida 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ADMINCA"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-Con el presente trabajo se plantea una nueva técnica para estimar los volúmenes
- de ventas del siguiente período comercial, luego esta estimación servirá
- de apoyo en la toma de decisión de la cantidad establecida en las órdenes
- de compras para la reposición de stock.
- En este nuevo modelo se integran técnicas de Business Intelligence y Machine
+En consecuencia a lo anterior en el presente trabajo se plantea una nueva
+ técnica para estimar los volúmenes de ventas del siguiente período comercial.
+ Luego, esta estimación servirá de apoyo en la toma de decisión de la cantidad
+ establecida en las órdenes de compras para la reposición de stock.
+ En este nuevo enfoque se integran técnicas de Business Intelligence y Machine
  Learning.
 \end_layout
 
 \begin_layout Standard
 En la etapa de Business Intelligence el objetivo principal es calcular los
- Indicadores Claves de Rendimiento (KPI - Key Performance Indicators) de
- los productos en base a los datos históricos obtenidos de la base de datos
- transaccional.
- Luego cada serie de KPI obtenidos pasan por un proceso de etiquetado, donde
- el experto en compras los analiza y determina qué nivel de compra conviene
- para cada serie de KPI.
+ Indicadores Claves de Rendimiento abreviado por las siglas KPI (
+\shape italic
+del inglés 
+\begin_inset Quotes eld
+\end_inset
+
+Key Performance Indicators
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+) 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+ de los productos en base a los datos históricos obtenidos de las bases
+ de datos transaccionales.
+ Luego, cada serie de KPI obtenidos pasan por un proceso de etiquetado,
+ donde el experto en compras los analiza y determina qué nivel de compra
+ conviene para cada serie de KPI, para el proceso de aprendizaje.
 \end_layout
 
 \begin_layout Standard
 En la etapa de Machine Learning se utilizan como entrada las series de KPI
- obtenidas en la etapa anterior de Business Intelligence y constituyen las
- instancias que alimentan los distintos algoritmos de clasificación del
- aprendizaje supervisado implementado.
- Luego tienen lugar los procesos propios de esta etapa que son el entrenamiento
- y testeo para finalmente evaluar los distintos desempeños a fin de determinar
- los algoritmos más adecuados que serán utilizados para pronosticar las
- ventas futuras.
+ con sus etiquetas obtenidas en la etapa anterior y constituyen las instancias
+ que alimentan los distintos algoritmos de clasificación.
+ Nótese que el enfoque corresponde a un proceso de aprendizaje supervisado.
+ Posteriormente tienen lugar los procesos de entrenamiento y testeo para
+ finalmente evaluar los distintos desempeños.
 \end_layout
 
 \begin_layout Section
@@ -140,21 +178,34 @@ Motivación
 
 \begin_layout Standard
 \align block
-El problema en general de cualquier técnica actual de pronóstico de la demanda,
- es que por ejemplo en los pronósticos de demanda cuantitativos se depende
- en gran medida de la variable cantidad de ventas.
- En los pronósticos de demanda cualitativos se depende en gran medida de
- la opinión y experiencia del experto, que si bien pueden ser válidos se
- utilizan principalmente en casos donde la proyección es a largo plazo o
- ante carencia de datos históricos.
+En general las técnicas de pronóstico de la demanda cuantitativas dependen
+ en gran medida de la variable: 
+\shape italic
+cantidad de ventas
+\shape default
+.
+ Mientras que los pronósticos de demanda cualitativos dependen en gran medida
+ de la opinión y experiencia del experto; que si bien pueden ser válidos
+ se utilizan principalmente en casos donde la proyección es a largo plazo
+ o ante carencia de datos históricos 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
-También podemos mencionar otra debilidad de las técnicas de pronósticos
- actuales, y es que no son adaptativas, en el sentido de que como se tratan
- de fórmulas genéricas los resultados son uniformes y no tienen en cuenta
- la evolución del mercado ni aspectos particulares como el tipo de producto,
- tipo de empresa, ubicación geográfica, etc.
+Otra debilidad de los pronósticos es que no se adaptan, es decir, las herramient
+as de pronósticos existentes en su mayoría utilizan algoritmos genéricos
+ con la suposición de que la demanda puede predecirse de igual forma para
+ todas las empresas, todas las industrias, todos los productos y ubicación
+ geográfica.
+ Este enfoque de algoritmos genéricos obtiene pronósticos que no reflejan
+ el impacto de los diferentes factores que afectan a la demanda; de la misma
+ forma no se adapta a la evolución del mercado y el comportamiento de los
+ consumidores.
 \end_layout
 
 \begin_layout Standard
@@ -166,26 +217,37 @@ La oportunidad que surge es poder implementar una técnica de pronóstico
 \end_layout
 
 \begin_layout Standard
-Actualmente, en el proceso de gestión de compras para la reposición de stock
- se utilizan técnicas de pronósticos para determinar las cantidades de las
- órdenes de compra.
- Estas técnicas pueden estar basadas en pronósticos cuantitativos o cualitativos.
- Independientemente de la técnica elegida el problema real con los pronósticos
- es su falta de confiabilidad, ya que por lo general no son precisos.
- La interrogante que siempre surge en estos modelos es si sus resultados
- serán superiores o inferiores a la demanda real y en qué medida.
+Como ya se mencionó independientemente de la técnica elegida el problema
+ real con los pronósticos es su falta de confiabilidad, ya que por lo general
+ no son precisos.
+ En consecuencia la interrogante que surge reiteradamente con estos modelos
+ es si los resultados serán superiores o inferiores a la demanda real y
+ en qué medida 
+\series bold
+\color blue
+[CITAR EJEMPLOS DE CASOS REALES PEDIDOS POR PINTO]
+\series default
+\color inherit
+ 
+\series bold
+\color blue
+{ACA SE ME OCURRE QUE PUEDO PONER LAS CONSECUENCIAS DE UN PRONOSTICO SUPERIOR
+ Y CONSECUENCIA DE UN PRONOSTICO INFERIOR}.
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
 En este contexto, este trabajo apuesta a desarrollar una solución que automatice
  la toma de decisión de la reposición de stock utilizando técnicas basadas
- en Business Intelligence y Machine Learning en dos fases.
+ en Business Intelligence y Machine Learning aplicadas en forma secuencial.
  En la primera fase, a partir del histórico del movimiento del stock y detalle
- de ventas el módulo Business Intelligence obtiene los KPI asociado al producto
- y periodo.
- En la segunda fase, estos datos son utilizados como entrada al módulo de
- Machine Learning para determinar el volumen de compra para el siguiente
- periodo de ventas.
+ de ventas, el módulo Business Intelligence obtiene los KPI asociados por
+ producto y periodo.
+ En la segunda fase, los datos obtenidos son utilizados como entrada al
+ módulo de clasificación para determinar el volumen de compra para el siguiente
+ periodo de venta.
  
 \end_layout
 
@@ -194,20 +256,20 @@ Planteamiento del Problema
 \end_layout
 
 \begin_layout Standard
-Dado un conjunto de productos que una empresa retail ofrece para la venta,
- este trabajo trata el problema del pronóstico de la demanda para la reposición
+Dado un conjunto de productos que una empresa retail ofrece en venta, este
+ trabajo aborda el problema del pronóstico de la demanda para la reposición
  de stock.
  Se considera que la empresa retail opera un stock cíclico, con períodos
  de reposición regulares y se analizan los productos que no son estacionales.
 \end_layout
 
 \begin_layout Standard
-Se apuesta a desarrollar una solución que automatice la toma de decisiones
- de reposición de stock.
- Para lograrlo se ha modelado una técnica de pronóstico de la demanda basada
- en Business Intelligence y Machine Learning; que busca a través de Key
- Performance Indicators, de la opinión de un experto en compras y de algorimos
- de clasificación prever volúmenes eficientes de productos para la reposición
+Se apuesta por una solución que automatice la toma de decisiones de reposición
+ de stock.
+ Para lograrlo se ha desarrollado una técnica de pronóstico de la demanda
+ basada en Business Intelligence y Machine Learning; que busca a través
+ de los KPI, la opinión de un experto en compras y de los algoritmos de
+ clasificación prever volúmenes eficientes de productos para la reposición
  de stock.
 \end_layout
 
@@ -218,7 +280,13 @@ Se puede decir que se trata de una técnica de dos fases.
  KPI asociados al producto y período.
  En la segunda fase, estos datos son utilizados como entradas al módulo
  de Machine Learning para determinar los volúmenes de compras para el siguiente
- periodo de ventas.
+ periodo de ventas 
+\series bold
+\color blue
+[SE REPITE IGUALITO QUE EL ULTIMO PARRAFO DE MOTIVACION]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Section
@@ -231,7 +299,7 @@ A continuación se dan a conocer los objetivos generales y específicos que
 \end_layout
 
 \begin_layout Subsection
-Objetivos Generales
+Objetivo General
 \end_layout
 
 \begin_layout Standard
@@ -239,9 +307,9 @@ El aporte principal y objetivo general del presente trabajo es el siguiente:
 \end_layout
 
 \begin_layout Itemize
-Modelar una nueva técnica de pronóstico de la demanda para la toma de decisión
- en la reposición de stock integrando herramientas y conceptos de Business
- Intelligence y Machine Learning.
+Desarrollar una herramienta de pronóstico de la demanda para la toma de
+ decisión en la reposición de stock integrando tecnologías y conceptos de
+ Business Intelligence y Machine Learning.
 \end_layout
 
 \begin_layout Subsection
