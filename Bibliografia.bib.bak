@@ -1,0 +1,569 @@
+% Encoding: windows-1252
+
+@INPROCEEDINGS{ali2001allocation,
+  author = {Ali, Maher and Deogun, Jitender},
+  title = {Allocation of multicast nodes in wavelength-routed networks},
+  booktitle = {Communications, 2001. ICC 2001. IEEE International Conference on},
+  year = {2001},
+  volume = {2},
+  pages = {614--618},
+  organization = {IEEE}
+}
+
+@INPROCEEDINGS{arevalos2009MRWA,
+  author = {Arevalos, Sara and Pinto-Roa, Diego},
+  title = {MRWA bajo restricciones de Capa {\'O}ptica. Un enfoque Multi-objetivo
+	basado en MOACO},
+  booktitle = {CLEI 2008},
+  year = {2008},
+  organization = {CLEI}
+}
+
+@INPROCEEDINGS{arteta2007routing,
+  author = {Arteta, Adolfo and Bar{\'a}n, Benjam{\'\i}n and Pinto, Diego},
+  title = {Routing and wavelength assignment over {WDM} optical networks: a
+	comparison between MOACOs and classical approaches},
+  booktitle = {Proceedings of the 4th international IFIP/ACM Latin American conference
+	on Networking},
+  year = {2007},
+  pages = {53--63},
+  organization = {ACM}
+}
+
+@PHDTHESIS{BOW03,
+  author = {C. Boworntummarat},
+  title = {Wavelength Routing and Optical Layer Network Protection Approaches
+	Against Single Link Failures for Multicast Traffic on {WDM} Networks},
+  school = {Electrical Engineering Department of Electrical Engineering Faculty
+	of Engineering Chulalongkorn University},
+  year = {2003}
+}
+
+@INPROCEEDINGS{boworntummarat2004light,
+  author = {BoworntummaraT, Charoenchai and Wuttisittikulkij, Lunchakorn AND
+	Segkhoonthod, Sak},
+  title = {Light-tree based protection strategies for multicast traffic in transport
+	{WDM} mesh networks with multifiber systems},
+  booktitle = {Communications, 2004 IEEE International Conference on},
+  year = {2004},
+  volume = {3},
+  pages = {1791--1795},
+  organization = {IEEE}
+}
+
+@BOOK{coello2007evolutionary,
+  title = {Evolutionary algorithms for solving multi-objective problems},
+  publisher = {Springer},
+  year = {2007},
+  author = {Coello, Carlos A Coello and Lamont, Gary B and Veldhuizen, David
+	A Van}
+}
+
+@INPROCEEDINGS{dorigo1999ant,
+  author = {Dorigo, Marco and Di Caro, Gianni},
+  title = {Ant colony optimization: a new meta-heuristic},
+  booktitle = {Evolutionary Computation, 1999. CEC 99. Proceedings of the 1999 Congress
+	on},
+  year = {1999},
+  volume = {2},
+  organization = {IEEE}
+}
+
+@INPROCEEDINGS{fei2001dual,
+  author = {Fei, Aiguo and Cui, Junhong and Gerla, Mario and Cavendish, Dirceu},
+  title = {A dual-tree scheme for fault-tolerant multicast},
+  booktitle = {Communications, 2001. ICC 2001. IEEE International Conference on},
+  year = {2001},
+  volume = {3},
+  pages = {690--694},
+  organization = {IEEE}
+}
+
+@INPROCEEDINGS{gallager1998multicast,
+  author = {Gallager, RG and M{\'e}dard, Muriel and BARRY, Richard A and Finn,
+	Steven G},
+  title = {Multicast automatic protection switching in arbitrary redundant graphs},
+  booktitle = {Communications, 1998. ICC 98. Conference Record. 1998 IEEE International
+	Conference on},
+  year = {1998},
+  volume = {1},
+  pages = {640--644},
+  organization = {IEEE}
+}
+
+@INPROCEEDINGS{gambardella1999macs,
+  author = {Gambardella, Luca Maria and Taillard, {\'E}ric and Agazzi, Giovanni},
+  title = {Macs-vrptw: A multiple colony system for vehicle routing problems
+	with time windows},
+  booktitle = {New ideas in optimization},
+  year = {1999},
+  organization = {Citeseer}
+}
+
+@ARTICLE{khalil2006dynamic,
+  author = {Khalil, Ahmad and Hadjiantonis, Antonis and Assi, Chadi M and Shami,
+	Abdallah and Ellinas, George and Ali, Mohamed A},
+  title = {Dynamic provisioning of low-speed unicast/multicast traffic demands
+	in mesh-based {WDM} optical networks},
+  journal = {Journal of Lightwave Technology},
+  year = {2006},
+  volume = {24},
+  pages = {681},
+  number = {2},
+  publisher = {IEEE}
+}
+
+@INPROCEEDINGS{khalil2005pre,
+  author = {Khalil, A and Hadjiantonis, A and Ellinas, G and Ali, MA},
+  title = {Pre-planned multicast protection approaches in {WDM} mesh networks},
+  booktitle = {Optical Communication, 2005. ECOC 2005. 31st European Conference
+	on},
+  year = {2005},
+  pages = {25--26},
+  organization = {IET}
+}
+
+@ARTICLE{kompella1993multicast,
+  author = {Kompella, Vachaspathi P and Pasquale, Joseph C and Polyzos, George
+	C},
+  title = {Multicast routing for multimedia communication},
+  journal = {IEEE/ACM Transactions on Networking (TON)},
+  year = {1993},
+  volume = {1},
+  pages = {286--292},
+  number = {3},
+  publisher = {IEEE Press}
+}
+
+@BOOK{POC,
+  title = {Evoluci{\'o}n de las redes de datos: Hacia una plataforma de comunicaciones
+	completamente {\'o}ptica. Instituto de Telecomunicaciones y Aplicaciones
+	Multimedia},
+  publisher = {Instituto de Telecomunicaciones y Aplicaciones Multimedia. Universidad
+	Politecnica Valencia},
+  author = {Gustavo Puerto Leguizamon and Beatriz Ortega and Jos{\'e} Capmany
+	and Karen Cardona Urrego and Carlos Su{\'a}rez Fajardo},
+	 year = {2009},
+}
+
+@INPROCEEDINGS{luekijna2007multicast,
+  author = {Luekijna, Kunanan and Saivichit, Chaiyachet},
+  title = {Multicast traffic reconfiguration in {WDM} network for single node
+	failure design},
+  booktitle = {Advanced Communication Technology, The 9th International Conference
+	on},
+  year = {2007},
+  volume = {3},
+  pages = {1833--1838},
+  organization = {IEEE}
+}
+
+@ARTICLE{MUK89,
+  author = {B. Mukherjee},
+  title = {{WDM} optical communication network: Progress and challenges},
+  journal = {IEEE J. Select. Areas Commun.},
+  year = {1989},
+  optmonth = {Sept.},
+  optpages = {1810-1824},
+  optvolume = {18}
+}
+
+@ARTICLE{mukherjee1996some,
+  author = {Mukherjee, Biswanath and Banerjee, Dhritiman and Ramamurthy, Sav
+	and Mukherjee, Amarnath},
+  title = {Some principles for designing a wide-area {WDM} optical network},
+  journal = {Networking, IEEE/ACM Transactions on},
+  year = {1996},
+  volume = {4},
+  pages = {684--696},
+  number = {5},
+  publisher = {IEEE}
+}
+
+@BOOK{MUR02,
+  title = {{WDM} optical networks: Concepts, design, and algorithms},
+  year = {2002},
+  author = {C. Siva Ram Murthy},
+  alteditor = {Prentice Hall PTR},
+  optaddress = {New Jersey}
+}
+
+@BOOK{IPWDMGUATE,
+  title = {IP sobre WDM},
+  year = {2009},
+  author = {Jose Darwin Tabora Padilla},
+  timestamp = {2013.05.21}
+}
+
+@INPROCEEDINGS{pinto2010multicast,
+  author = {Pinto Roa, Diego and Bar{\'a}n, Benjam{\'\i}n and Lugo, Rodrigo},
+  title = {Optical Multicast Protection with Multi-objective Evolutionary Algorithm
+	approach},
+  booktitle = {ALIO-INFORMS Joint International Meeting},
+  optorganization = {Association of Latin-Iberoamerican Operational Research Societies},
+  year = {2010}
+}
+
+@PHDTHESIS{diegopinto2011,
+  author = {Diego P. Pinto-Roa},
+  title = {Dise{\~n}o multi-objetivo de redes {\'o}pticas {WDM}},
+  school = {Facultad Polit{\'e}cnica UNA},
+  year = {2011},
+  optaddress = {San Lorenzo - Paraguay},
+  optmonth = {Diciembre}
+}
+
+@ARTICLE{qin2002routing,
+  author = {Hao Qin and Zengji Liu and Shi Zhang and Aijun Wen},
+  title = {Routing and wavelength assignment based on genetic algorithm},
+  journal = {Communications Letters, IEEE},
+  year = {2002},
+  volume = {6},
+  pages = {455-457},
+  number = {10},
+  doi = {10.1109/LCOMM.2002.804249},
+  issn = {1089-7798},
+  keywords = {genetic algorithms; RWA}
+}
+
+@OTHER{RAM02,
+  author = {R. Ramaswami, K. Sivarajan},
+  publisher = {Morgan Kaufmann},
+  title = {Optical Networks: A practical perspective},
+  year = {2002}
+}
+
+@ARTICLE{rubio-largo2012comparative,
+  author = {Rubio-Largo, A. and Vega-Rodriguez, M.A. and Gomez-Pulido, J.A. and
+	Sanchez-Pérez, J.M.},
+  title = {A Comparative Study on Multiobjective Swarm Intelligence for the
+	Routing and Wavelength Assignment Problem},
+  journal = {Systems, Man, and Cybernetics, Part C: Applications and Reviews,
+	IEEE Transactions on},
+  year = {2012},
+  volume = {42},
+  pages = {1644-1655},
+  number = {6},
+  doi = {10.1109/TSMCC.2012.2212704},
+  issn = {1094-6977},
+  keywords = {evolutionary computation;{WDM} networks;RWA}
+}
+
+@INPROCEEDINGS{SB03,
+  author = {M. Schaerer and B. Baran},
+  title = {A multiobjective Ant Colony System for Vehicle Routing Problems with
+	Time Windows},
+  booktitle = {Proc. Twenty first IASTED International Conference on Applied Informatics},
+  optaddress = {Insbruck, Austria},
+  optpages = {97-102},
+  optyear = {2003}
+}
+
+@ARTICLE{SINGHAL2003,
+  author = {Singhal, Narendra K and Mukherjee, Biswanath},
+  title = {Protecting multicast sessions in {WDM} optical mesh networks},
+  journal = {Journal of lightwave technology},
+  year = {2003},
+  volume = {21},
+  pages = {884},
+  number = {4},
+  publisher = {IEEE}
+}
+
+@INPROCEEDINGS{singhal2001architectures,
+  author = {Singhal, Narendra K and Mukherjee, Biswanath},
+  title = {Architectures and algorithm for multicasting in {WDM} optical mesh
+	networks using opaque and transparent optical cross-connects},
+  booktitle = {Optical Fiber Communication Conference and Exhibit, 2001. OFC 2001},
+  year = {2001},
+  volume = {2},
+  pages = {TuG8--TuG8},
+  organization = {IEEE}
+}
+
+@INPROCEEDINGS{singhal2005shared,
+  author = {Singhal, Narendra K and OU, Canhui Sam and Mukherjee, Biswanath},
+  title = {Shared protection for multicast sessions in mesh networks},
+  booktitle = {Optical Fiber Communication Conference},
+  year = {2005},
+  organization = {Optical Society of America}
+}
+
+@INPROCEEDINGS{singhal2003protecting,
+  author = {Singhal, Narendra K and Sahasrabuddhe, Laxman H and Mukherjee, Biswanath},
+  title = {Protecting a multicast session against single link failures in a
+	mesh network},
+  booktitle = {Communications, 2003. ICC'03. IEEE International Conference on},
+  year = {2003},
+  volume = {2},
+  pages = {1504--1508},
+  organization = {IEEE}
+}
+
+@ARTICLE{singhal2003provisioning,
+  author = {SinghaL, Narendra K and Sahasrabuddhe, Laxman H and Mukherjee, Biswanath},
+  title = {Provisioning of survivable multicast sessions against single link
+	failures in optical {WDM} mesh networks},
+  journal = {Journal of lightwave technology},
+  year = {2003},
+  volume = {21},
+  pages = {2587},
+  number = {11},
+  publisher = {IEEE}
+}
+
+@BOOK{somani2006survivability,
+  title = {Survivability and traffic grooming in WDM optical networks},
+  publisher = {Cambridge University Press},
+  year = {2006},
+  author = {Somani, Arun}
+}
+
+@INPROCEEDINGS{wu2001multicast,
+  author = {Wu, Kun-Da and Wu, Jieh-Chian and Yang, Chu-Sing},
+  title = {Multicast routing with power consideration in sparse splitting {WDM}
+	networks},
+  booktitle = {Communications, 2001. ICC 2001. IEEE International Conference on},
+  year = {2001},
+  volume = {2},
+  pages = {513--517},
+  organization = {IEEE}
+}
+
+@ARTICLE{XR04,
+  author = {Y. Xin and G. Rouskas},
+  title = {Multicast Routing Under Optical Layer Constraints},
+  journal = {IEEE International Conference on Communications},
+  year = {2004}
+}
+
+@INPROCEEDINGS{zhang2004multicast,
+  author = {Zhang, Ying and Sidhu, Deepinder},
+  title = {A multicast protection algorithm for optical {WDM} networks},
+  booktitle = {Computer Communications and Networks, 2004. ICCCN 2004. Proceedings.
+	13th International Conference on},
+  year = {2004},
+  pages = {315--320},
+  organization = {IEEE}
+}
+
+@ARTICLE{zhou2000survivability,
+  author = {Zhou, Dongyun and Subramaniam, Suresh},
+  title = {Survivability in optical networks},
+  journal = {Network, IEEE},
+  year = {2000},
+  volume = {14},
+  pages = {16--23},
+  number = {6},
+  publisher = {IEEE}
+}
+
+@ARTICLE{zhou2005optical,
+  author = {Zhou, Yinzhu and Poo, Gee-Swee},
+  title = {Optical multicast over wavelength-routed {WDM} networks: A survey},
+  journal = {Optical Switching and Networking},
+  year = {2005},
+  volume = {2},
+  pages = {176--197},
+  number = {3},
+  publisher = {Elsevier}
+}
+
+@ARTICLE{zhu2002traffic,
+  author = {Zhu, Keyao and Mukherjee, Biswanath},
+  title = {Traffic grooming in an optical {WDM} mesh network},
+  journal = {Selected Areas in Communications, IEEE Journal on},
+  year = {2002},
+  volume = {20},
+  pages = {122--133},
+  number = {1},
+  publisher = {IEEE}
+}
+
+@book{maier2008optical,
+  title={Optical switching networks},
+  author={Maier, Martin},
+  volume={324},
+  year={2008},
+  publisher={Cambridge University Press Cambridge}
+}
+
+@article{hamad2002survey,
+  title={A survey of multicasting protocols for broadcast-and-select single-hop networks},
+  author={Hamad, Ashrof M and Kamal, Ahmed E},
+  journal={Network, IEEE},
+  volume={16},
+  number={4},
+  pages={36--48},
+  year={2002},
+  publisher={IEEE}
+}
+@article{davalosreconfiguracion,
+  title={Reconfiguración de Tráfico Dinámico en Redes Ópticas WDM: Un enfoque basado en Algoritmos de Colonia de Hormigas},
+  author={Dávalos, Enrique and Barán, Benjamín and Pinto, Diego}
+}
+@inproceedings{chlamtac1989purely,
+  title={Purely optical networks for terabit communication},
+  author={Chlamtac, Imrich and Ganz, Aura and Karmi, Gadi},
+  booktitle={INFOCOM'89. Proceedings of the Eighth Annual Joint Conference of the IEEE Computer and Communications Societies. Technology: Emerging or Converging, IEEE},
+  pages={887--896},
+  year={1989},
+  organization={IEEE}
+}
+@inproceedings{barry1997max,
+  title={The MAX SUM wavelength assignment algorithm for WDM ring networks},
+  author={Barry, Richard and Subramaniam, Suresh},
+  booktitle={Optical Fiber Communication. OFC 97., Conference on},
+  pages={121--122},
+  year={1997},
+  organization={IEEE}
+}
+@inproceedings{birman1995routing,
+  title={Routing and wavelength assignment methods in single-hop all-optical networks with blocking},
+  author={Birman, Alexander and Kershenbaum, Aaron},
+  booktitle={INFOCOM'95. Fourteenth Annual Joint Conference of the IEEE Computer and Communications Societies. Bringing Information to People. Proceedings. IEEE},
+  pages={431--438},
+  year={1995},
+  organization={IEEE}
+}
+@inproceedings{jeong1996comparison,
+  title={Comparison of wavelength-interchanging and wavelength-selective cross-connects in multiwavelength all-optical networks},
+  author={Jeong, Gibong and Ayanoglu, Ender},
+  booktitle={INFOCOM'96. Fifteenth Annual Joint Conference of the IEEE Computer Societies. Networking the Next Generation. Proceedings IEEE},
+  volume={1},
+  pages={156--163},
+  year={1996},
+  organization={IEEE}
+}
+@article{zang2000review,
+  title={A review of routing and wavelength assignment approaches for wavelength-routed optical WDM networks},
+  author={Zang, Hui and Jue, Jason P and Mukherjee, Biswanath and others},
+  journal={Optical Networks Magazine},
+  volume={1},
+  number={1},
+  pages={47--60},
+  year={2000}
+}
+@article{hu1998multicasting,
+  title={Multicasting optical cross connects employing splitter-and-delivery switch},
+  author={Hu, Wei S and Zeng, Qing J},
+  journal={Photonics Technology Letters, IEEE},
+  volume={10},
+  number={7},
+  pages={970--972},
+  year={1998},
+  publisher={IEEE}
+}
+@article{rouskas2003optical,
+  title={Optical layer multicast: rationale, building blocks, and challenges},
+  author={Rouskas, George N},
+  journal={Network, IEEE},
+  volume={17},
+  number={1},
+  pages={60--65},
+  year={2003},
+  publisher={IEEE}
+}
+
+@article{somani2004trading,
+  title={On trading wavelengths with fibers: a cost-performance based study},
+  author={Somani, Arun K and Mina, Mani and Li, Ling},
+  journal={Networking, IEEE/ACM Transactions on},
+  volume={12},
+  number={5},
+  pages={1274–83},
+  year={2004},
+  publisher={IEEE}
+}
+@misc{tejedor1998estudio,
+  title={Estudio y dise{\~n}o de multiplexores por divisi{\'o}n en longitud de onda (WDM) mediante efectos electro{\'o}pticos, termo{\'o}pticos y acusto{\'o}pticos},
+  author={Tejedor, RJ Mill{\'a}n},
+  year={1998},
+  publisher={Departamento de Teor{\'\i}a de la Se{\~n}al y Comunicaciones e Ingenier{\'\i}a Telem{\'a}tica, Universidad Valladolid, Valladolid, Espa{\~n}a}
+}
+@article{leguizamon2008evolucion,
+  title={Evoluci{\'o}n de las redes de datos: Hacia una plataforma de comunicaciones completamente {\'o}ptica},
+  author={Leguizam{\'o}n, Gustavo Puerto and Ortega, Beatriz and Capmany, Jos{\'e} and Urrego, Karen Cardona and Fajardo, Carlos Su{\'a}rez},
+  journal={Revista Facultad de Ingenier{\'\i}a Universidad de Antioquia},
+  number={45},
+  pages={148--156},
+  year={2008},
+  publisher={Universidad de Antioquia}
+}
+@book{mukherjee2006optical,
+  title={Optical WDM Networks (Optical Networks)},
+  author={Mukherjee, Biswanath},
+  year={2006},
+  publisher={Springer Heidelberg}
+}
+@book{tanenbaum2003redes,
+  title={Redes de computadoras},
+  author={Tanenbaum, Andrew},
+  year={2003},
+  publisher={Pearson educaci{\'o}n}
+}
+@article{ramamurthy2003survivable,
+  title={Survivable WDM mesh networks},
+  author={Ramamurthy, S and Sahasrabuddhe, Laxman and Mukherjee, Biswanath},
+  journal={Journal of Lightwave Technology},
+  volume={21},
+  number={4},
+  pages={870},
+  year={2003},
+  publisher={IEEE}
+}
+@book{agrawal2010fiber,
+  title={Fiber-optic communication systems},
+  author={Agrawal, Govind P},
+  volume={222},
+  year={2010},
+  publisher={John Wiley \& Sons}
+}
+@article{to1994unavailability,
+  title={Unavailability analysis of long-haul networks},
+  author={To, Michael and Neusy, Philippe},
+  journal={Selected Areas in Communications, IEEE Journal on},
+  volume={12},
+  number={1},
+  pages={100--109},
+  year={1994},
+  publisher={IEEE}
+}
+@article{singhal2003protecting,
+  title={Protecting multicast sessions in WDM optical mesh networks},
+  author={Singhal, Narendra K and Mukherjee, Biswanath},
+  journal={Journal of lightwave technology},
+  volume={21},
+  number={4},
+  pages={884},
+  year={2003},
+  publisher={IEEE}
+}
+@inproceedings{boworntummarat2004light,
+  title={Light-tree based protection strategies for multicast traffic in transport WDM mesh networks with multifiber systems},
+  author={Boworntummarat, Charoenchai and Wuttisittikulkij, Lunchakorn and Segkhoonthod, Sak},
+  booktitle={Communications, 2004 IEEE International Conference on},
+  volume={3},
+  pages={1791--1795},
+  year={2004},
+  organization={IEEE}
+}
+@inproceedings{gallager1998multicast,
+  title={Multicast automatic protection switching in arbitrary redundant graphs},
+  author={Gallager, RG and M{\'e}dard, Muriel and Barry, Richard A and Finn, Steven G},
+  booktitle={Communications, 1998. ICC 98. Conference Record. 1998 IEEE International Conference on},
+  volume={1},
+  pages={640--644},
+  year={1998},
+  organization={IEEE}
+}
+
+@Book{IAModerno2004,
+  title     = {Inteligencia Artificial Un Enfoque Moderno},
+  publisher = {Pearson Educaci�n S.A.},
+  year      = {2004},
+  author    = {Stuart Rusell and Peter Norvig},
+  isbn      = {978-84-205-4003-0},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

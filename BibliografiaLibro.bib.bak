@@ -520,4 +520,39 @@
   __markedentry = {[alberto:6]},
 }
 
+@Article{CMIAlan1950,
+  author  = {Alan Turing},
+  title   = {Computing Machinery and Intelligence},
+  journal = {Mind 49: 433-460},
+  year    = {1950},
+}
+
+@Article{DUGrow2012,
+  author  = {John Gantz and David Reinsel},
+  title   = {THE DIGITAL UNIVERSE IN 2020: Big Data , Bigger Digital Shadows, and Biggest Grow th in the Far East},
+  journal = {IDC iView},
+  year    = {2012},
+}
+
+@Article{PCSMc1959,
+  author  = {John McCarthy},
+  title   = {Programs with common sense},
+  journal = {Computer Science Department - Stanford University},
+  year    = {1959},
+}
+
+@Book{PercepMinsPape1987,
+  title     = {Perceptrons: An Introduction to Computational Geometry, Expanded Edition},
+  publisher = {The MIT Press},
+  year      = {1987},
+  author    = {Marvin Minsky and Seymour A. Papert},
+}
+
+@Article{FrameMinsky1974,
+  author  = {Marvin Minsky},
+  title   = {A Framework for Representing Knowledge},
+  journal = {MIT-AI Laboratory Memo 306},
+  year    = {1974},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
