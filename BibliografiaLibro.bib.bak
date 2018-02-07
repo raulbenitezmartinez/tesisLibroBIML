@@ -466,23 +466,58 @@
 }
 
 @Book{Scheps2008,
-  title         = {Business Intelligence For Dummies},
-  publisher     = {For Dummies},
-  year          = {2008},
-  author        = {Swain Scheps},
-  isbn          = {0470127236},
-  __markedentry = {[alberto:]},
-  url           = {https://www.amazon.com/Business-Intelligence-Dummies-Swain-Scheps/dp/0470127236?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0470127236},
+  title     = {Business Intelligence For Dummies},
+  publisher = {For Dummies},
+  year      = {2008},
+  author    = {Swain Scheps},
+  isbn      = {0470127236},
+  url       = {https://www.amazon.com/Business-Intelligence-Dummies-Swain-Scheps/dp/0470127236?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0470127236},
 }
 
 @Book{Kroenke2003,
-  title         = {Procesamiento de bases de datos: fundamentos, dise{\~n}o e implementaci{\'o}n},
-  publisher     = {Pearson Educaci{\'o}n},
-  year          = {2003},
-  author        = {Kroenke, D.M. and Hern{\'a}ndez, A.E.G.},
-  isbn          = {9789702603252},
+  title     = {Procesamiento de bases de datos: fundamentos, dise{\~n}o e implementaci{\'o}n},
+  publisher = {Pearson Educaci{\'o}n},
+  year      = {2003},
+  author    = {Kroenke, D.M. and Hern{\'a}ndez, A.E.G.},
+  isbn      = {9789702603252},
+  url       = {https://books.google.com.py/books?id=7ORUWItwcNEC},
+}
+
+@Article{doi:10.1080/01944360508976688,
+  author    = {Bent Flyvbjerg and Mette K. Skamris Holm and Søren L. Buhl},
+  title     = {How (In)accurate Are Demand Forecasts in Public Works Projects?: The Case of Transportation},
+  journal   = {Journal of the American Planning Association},
+  year      = {2005},
+  volume    = {71},
+  number    = {2},
+  pages     = {131-146},
+  doi       = {10.1080/01944360508976688},
+  eprint    = {https://doi.org/10.1080/01944360508976688},
+  publisher = {Routledge},
+  url       = { 
+        https://doi.org/10.1080/01944360508976688
+    
+},
+}
+
+@Book{Sipper1998,
+  title         = {Planeaci{\'o}n y control de la producci{\'o}n},
+  publisher     = {McGraw-Hill},
+  year          = {1998},
+  author        = {Sipper, D. and Bulfin, R.L. and Osuna, M.G.},
+  isbn          = {9789701019443},
+  __markedentry = {[alberto:]},
+  url           = {https://books.google.com.py/books?id=HfdlPAAACAAJ},
+}
+?
+
+@Misc{PDML17,
+  author        = {Marcello Giordano},
+  title         = {Pronostico de la demanda - MeetLogistics},
+  howpublished  = {\url{https://meetlogistics.com/demand-planning/pronostico-de-la-demanda/}},
+  year          = {2017},
+  note          = {(Accessed on 01/16/2018)},
   __markedentry = {[alberto:6]},
-  url           = {https://books.google.com.py/books?id=7ORUWItwcNEC},
 }
 
 @Article{CMIAlan1950,

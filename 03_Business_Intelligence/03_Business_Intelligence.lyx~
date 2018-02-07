@@ -315,8 +315,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:3.1"
@@ -412,7 +410,7 @@ Extracción, Transformación y Carga
 La extracción, transformación y carga, comúnmente abreviado por las siglas
  ETL (
 \shape italic
- del inglés 
+del inglés 
 \begin_inset Quotes eld
 \end_inset
 
@@ -975,7 +973,7 @@ key "CJ20"
 
 \shape italic
 Se entiende por OLAP o proceso analítico en línea, al método ágil y flexible
- para organilizar datos, especialmente metadatos, sobre un objeto o jerarquía
+ para organizar datos, especialmente metadatos, sobre un objeto o jerarquía
  de objetos como en un sistema u organización multidimensional, y cuyo objetivo
  es recuperar y manipular datos y combinaciones de los mismos a través de
  consultas o incluso informes
@@ -996,13 +994,13 @@ reference "fig:3.2"
 \end_inset
 
  se observa una representación gráfica del OLAP también conocida como cubo.
- En el ejemplo el cubo cuenta con 3 dimensiones (Tiempo, Producto y Región)
- sobre las cuales se pueden realizar consultas, ej.: Monto total de venta
- del producto 
+ En el ejemplo el cubo tiene 3 dimensiones (Tiempo, Producto y Región) sobre
+ las cuales se pueden realizar consultas, ej.: Monto total de venta del producto
+ 
 \begin_inset Quotes eld
 \end_inset
 
-X
+A
 \begin_inset Quotes erd
 \end_inset
 
@@ -1010,20 +1008,22 @@ X
 \begin_inset Quotes eld
 \end_inset
 
-Y
+B
 \begin_inset Quotes erd
 \end_inset
 
- en la region 
+ en la región 
 \begin_inset Quotes eld
 \end_inset
 
-Z
+C
 \begin_inset Quotes erd
 \end_inset
 
 .
- 
+ Los cubos OLAP también permiten representar jerarquías, en el caso de la
+ dimensión Tiempo la jerarquía podría estar compuesta por año, semestre,
+ mes, semana y día.
 \end_layout
 
 \begin_layout Standard
@@ -1102,7 +1102,7 @@ HOLAP (Hybrid OLAP): es una combinación de las dos anteriores, permite almacena
 HERRAMIENTAS DE BI
 \end_layout
 
-\begin_layout Paragraph*
+\begin_layout Standard
 Las principales herramientas de Business Intelligence son 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1185,17 +1185,32 @@ Los KPI
  (Key Performance Indicators)
 \emph default
  o Indicadores Clave de Rendimiento se tratan de indicadores que son decisivos
- para analizar de forma rápida la situación del negocio y que también facilitan
- la toma de decisiones.
- Una característica de los KPI es que todos los KPI son indicadores, pero
- no todos los indicadores son KPI, otra característica es que cada organización
- debe definir sus propios KPI que desean tener siempre presente para manejar
- su rumbo, estas varían de acuerdo según la actividad realizada, el tipo
- de producto o la estrategia de negocios, por dicho motivo los KPI no pueden
- copiarse de una organización a otra ya que cada organización es diferente
- y requiere de una reflexión estratégica de los cuales saldrán los correspondien
-tes KPI.
- Un cuadro de gestión o de mando no debe excederse en la cantidad de KPI,
+ para analizar de forma rápida la situación del negocio y facilitar la toma
+ de decisiones.
+ Una característica es que todos los KPI son indicadores, pero no todos
+ los indicadores son KPI.
+ Otra característica es que cada organización debe definir sus propios KPI
+ según la actividad realizada, el tipo de producto o la estrategia de negocios,
+ no pueden copiarse ya que cada organización es diferente y requiere de
+ una reflexión estratégica de donde saldrán los KPI.
+ Otro elemento importante de los KPI es que pueden no se exclusivamente
+ del tipo financiero, pueden medir otros valores como por ejemplo: calidad
+ del servicio.
+ Por último los KPI son un elemento importarte en la estrategia de negocios
+ por su capacidad de comunicar resultados a las personas que forman parte
+ del proyecto.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMR13"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un cuadro de gestión o de mando no debe excederse en la cantidad de KPI,
  porque puede darse el problema de 
 \begin_inset Quotes eld
 \end_inset
@@ -1207,7 +1222,7 @@ la parálisis por el análisis
  que ocurre cuando se pasa de no tener ninguna información a contar con
  decenas de indicadores y una de las características del entorno competitivo
  actual es que se deben tomar decisiones de forma rápida y antes de que
- lo hagan los demás competidores
+ lo hagan los demás competidores 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMR13"
@@ -1218,9 +1233,10 @@ key "CMR13"
 \end_layout
 
 \begin_layout Standard
-En la siguiente sección haremos uso de los conceptos, herramientas y tecnologías
+En el capítulo 5 haremos uso de los conceptos, herramientas y tecnologías
  que nos provee Business Intelligence para obtener los datos que ayudarán
- a modelar una solución al problema de estudio sobre pronóstico de la demanda.
+ a desarrollar una solución al problema de estudio sobre pronóstico de la
+ demanda.
  Iniciaremos con una breve descripción de la fuente de información, el proceso
  ETL (Extracción, Transformación y Carga), la especificación del datawarehouse,
  la definición de los indicadores clave de rendimiento y finalmente el etiquetad
@@ -1234,8 +1250,8 @@ Aplicaciones de BI
 
 \begin_layout Standard
 Los sistemas de Business Intelligence abarcan un grupo cada vez mayor de
- usuarios, desde especialistas en tareas de control, información financiera,
- personal de ventas, directivos y gerentes
+ usuarios como especialistas en tareas de control, información financiera,
+ personal de ventas, directivos y gerentes 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Rasmussen2002"
@@ -1243,21 +1259,42 @@ key "Rasmussen2002"
 \end_inset
 
 .
- Entre los sectores que utilizan sistemas de Business Intelligence se encuentran
- compañias comerciales, compañias de seguros, entidades financieras, telecomunic
-aciones y empresas de manufactura.
+ En el cuadro 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Cuadro:3.1"
+
+\end_inset
+
+ se puede ver algunas de las áreas en las que se puede implementar sistemas
+ de Business Intelligence, en la primera columna se citan las áreas que
+ utilizan con mayor frecuencia como: compañías comerciales, compañías de
+ seguros, entidades financieras, telecomunicaciones y empresas de manufactura;
+ en la segunda columna se expone algunos casos de aplicación como: análisis
+ de ventas, planificación de pedidos, análisis de clientes, gestión de créditos,
+ etc.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float table
-wide false
-sideways false
-status open
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features islongtable="true" headTopDL="true" headBottomDL="true" longtabularalignment="center">
+<column alignment="left" valignment="middle" width="5cm">
+<column alignment="left" valignment="middle" width="11cm">
+<row caption="true">
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Cuadro:3.1"
+
+\end_inset
+
 Áreas de aplicación de BI
 \end_layout
 
@@ -1266,18 +1303,26 @@ status open
 
 \end_layout
 
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="12" columns="2">
-<features islongtable="true" longtabularalignment="center">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="20cm">
-<row>
-<cell multirow="3" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size small
 Áreas de aplicación de BI
 \end_layout
 
@@ -1287,6 +1332,9 @@ status open
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size small
 Casos de uso
 \end_layout
 
@@ -1298,6 +1346,9 @@ Casos de uso
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Empresas Retail
 \end_layout
 
@@ -1307,11 +1358,17 @@ Empresas Retail
 \begin_inset Text
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Proporcionar un análisis de las transacciones de los clientes.
  Determinar los productos más vendidos, promociones, hábitos de compras.
 \end_layout
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Pronóstico.
  Uso de datos de escaneado para pronosticar la demanda y basarse en el pronóstic
 o, para definir los requisitos de inventario con mayor precisión
@@ -1325,6 +1382,9 @@ o, para definir los requisitos de inventario con mayor precisión
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Inventario
 \end_layout
 
@@ -1334,6 +1394,9 @@ Inventario
 \begin_inset Text
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Planificación de Inventarios.
  Ayudar a identificar el nivel de inventario necesario para garantizar la
  demanda de los clientes.
@@ -1347,6 +1410,9 @@ Planificación de Inventarios.
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Gestión de Pedidos
 \end_layout
 
@@ -1356,8 +1422,11 @@ Gestión de Pedidos
 \begin_inset Text
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Pedido y reposición.
- Uso de la información para tomar decisiones más rapidas sobre los artículos
+ Uso de la información para tomar decisiones más rápidas sobre los artículos
  a pedir y determinar cantidades óptimas.
 \end_layout
 
@@ -1369,6 +1438,9 @@ Pedido y reposición.
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Contabilidad
 \end_layout
 
@@ -1378,6 +1450,9 @@ Contabilidad
 \begin_inset Text
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 El uso de datos contables permite una mejor oportunidad de administración
  del riesgo, agilizar las operaciones, identificar ahorros de costos y oportunid
 ades estratégicas de ingresos.
@@ -1391,6 +1466,9 @@ ades estratégicas de ingresos.
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Bancos, Financieras y Valores.
 \end_layout
 
@@ -1400,6 +1478,9 @@ Bancos, Financieras y Valores.
 \begin_inset Text
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Análisis de rentabilidad del cliente: Analizar la rentabilidad global del
  cliente, a corto y largo plazo, proporcionar la base para las ventas de
  alta rentabilidad y la banca de relación, maximizar las ventas a clientes
@@ -1408,6 +1489,9 @@ Análisis de rentabilidad del cliente: Analizar la rentabilidad global del
 \end_layout
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Gestión de créditos: Establecer patrones de progresión de problemas de crédito
  por clase y tipo de clientes, alertar a los clientes para evitar problemas
  de crédito, gestionar límites de crédito, evaluar la cartera crediticia
@@ -1415,6 +1499,9 @@ Gestión de créditos: Establecer patrones de progresión de problemas de crédi
 \end_layout
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Atención en sucursales: Mejorar el servicio y la atención al cliente, aperturas
  de nuevas cuentas, fortalecer la lealtad del cliente.
 \end_layout
@@ -1427,6 +1514,9 @@ Atención en sucursales: Mejorar el servicio y la atención al cliente, apertura
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Telecomunicaciones
 \end_layout
 
@@ -1436,6 +1526,9 @@ Telecomunicaciones
 \begin_inset Text
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Perfil y segmentación de clientes.
  Determinar perfiles de productos de alto beneficio y segmentos de clientes,
  proporcionar perfiles de clientes detallados e integrados, desarrollar
@@ -1444,6 +1537,9 @@ es de los clientes.
 \end_layout
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Previsión de la demanda del cliente.
  Prever las necesidades futuras del producto o actividad de servicio, proporcion
 ar una base para el análisis y control de la rotación para mejorar la retención
@@ -1458,6 +1554,9 @@ ar una base para el análisis y control de la rotación para mejorar la retenci�
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Transporte
 \end_layout
 
@@ -1466,8 +1565,13 @@ Transporte
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
+\begin_layout Itemize
+\noindent
 
+\size footnotesize
+Aerolíneas.
+ Analizar conductas, tarifas abonadas, respuestas a promociones, canje de
+ millas, categorías de los pasajeros frecuentes de la empresa.
 \end_layout
 
 \end_inset
@@ -1478,6 +1582,9 @@ Transporte
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Educación
 \end_layout
 
@@ -1486,8 +1593,13 @@ Educación
 <cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Plain Layout
+\begin_layout Itemize
+\noindent
 
+\size footnotesize
+Universidades y Colegios.
+ Análisis del proceso de admisión de alumnos, registros de cursos y asistencia
+ estudiantil, monitoreo del progreso de los alumnos.
 \end_layout
 
 \end_inset
@@ -1498,6 +1610,9 @@ Educación
 \begin_inset Text
 
 \begin_layout Plain Layout
+\noindent
+
+\size footnotesize
 Salud
 \end_layout
 
@@ -1507,77 +1622,31 @@ Salud
 \begin_inset Text
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Analizar los resultados, identificar tendencias, detectar patrones y predecir
  los resultados para mejorar el desempeño clínico y operacional.
 \end_layout
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Monitorear iniciativas de calidad y programas de atención.
 \end_layout
 
 \begin_layout Itemize
+\noindent
+
+\size footnotesize
 Seguimiento y monitoreo de ingresos, márgenes y rendimiento operacional.
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Comercio Electrónico
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Seguros
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Itemize
-Análisis de clientes.
- Analizar las necesidades de los clientes y los patrones de uso del producto,
- desarrollar programas de mercadeo en las características del cliente, realizar
- análisis de riesgo, mejorar el servicio al cliente.
-\end_layout
-
-\begin_layout Itemize
-Análisis de riesgo.
- Identificar segmentos de mercado de alto riesgo y oportunidades en segmentos
- específicos, relacionar segmentos de mercado, reducir la frecuencia de
- reclamos
-\end_layout
-
-\end_inset
-</cell>
-</row>
 </lyxtabular>
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
