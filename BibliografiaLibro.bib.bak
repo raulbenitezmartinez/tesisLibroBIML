@@ -520,4 +520,11 @@
   year    = {1974},
 }
 
+@Book{RLIntroduccion1998,
+  title     = {Reinforcement Learning: An Introduction},
+  publisher = {A Bradford Book. MIT Press, Cambridge, Massachusetts.},
+  year      = {1998},
+  author    = {Richard S. Sutton and Andrew G. Barto},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
