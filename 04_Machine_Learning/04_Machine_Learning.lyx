@@ -434,10 +434,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Graphics
 	filename recursos/THE DIGITAL UNIVERSE IN 2020.png
 	scale 70
@@ -494,7 +490,17 @@ Definición
 \end_layout
 
 \begin_layout Standard
-En 1959 Arthur Samuel en una publicación escribió: 
+Arthur Samuel acuñó el término Machine Learning en 1959 mientras trabaja
+ para IBM.
+ En el IBM Journal publicó 
+\begin_inset Quotes eld
+\end_inset
+
+Some Studies in Machine Learning Using the Game of Checker
+\begin_inset Quotes erd
+\end_inset
+
+ en el cual escribió: 
 \shape italic
 
 \begin_inset Quotes eld
@@ -514,31 +520,39 @@ key "Arthur1959"
 
 \end_inset
 
-.
- Este pionero ya presagiaba que los programas, a partir del aprendizaje
- sobre datos históricos (la experiencia), podrían efectuar tareas de toma
- de decisiones sin ser programadas explícitamente dichas decisiones.
- Samuel desarrolló en el año 1952 programas que aprendían a jugar Damas
- y los cuales aprendían su propia función de evaluación.
- En el año 1959 desarrolló programas que aprendían a jugar Ajedrez.
-\end_layout
-
-\begin_layout Standard
-Samuel define como sigue: 
+ por lo que de su artículo se interpreta que 
 \shape italic
 
 \begin_inset Quotes eld
 \end_inset
 
 Machine Learning es un campo de estudio que da a las computadoras la capacidad
- de aprender sin ser explícitamente programadas
+ de aprender a resolver problemas sin ser explícitamente programados
+\shape default
+
 \begin_inset Quotes erd
 \end_inset
 
-
-\shape default
 .
- Otro investigador, Tom Mitchell propuso en 1998 la siguiente definición:
+ Samuel desarrolló en el año 1959 programas que aprendían a jugar Ajedrez
+ y en el año 1952 programas que aprendían a jugar Damas, los cuales aprendían
+ su propia función de evaluación.
+ Este pionero ya demostraba que los programas a través del aprendizaje pueden
+ efectuar tareas de toma de decisiones sin ser programadas explícitamente
+ dichas decisiones.
+ Cabe destacar que Arthur Samuel fue uno de los asistentes del 
+\begin_inset Quotes eld
+\end_inset
+
+Dartmouth Summer Research Project on Artificial Intelligence
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Otro investigador, Tom Mitchell propuso en 1998 la siguiente definición:
  
 \shape italic
 
@@ -562,22 +576,9 @@ e on T, as measured by P, improves with experience E
 \end_layout
 
 \begin_layout Standard
-* Machine Learning como sub campo de IA.
- Qué es Machine Learning.
-\end_layout
-
-\begin_layout Standard
-- Definición de Arthur Samuel - Definición de John McCarthy - Agentes inteligent
-es - Elementos de accion - Elemento de aprendizaje - Mejores decisiones
- - Tipo de realimentación - Estado actual y acciones - Propiedades del mundo
- y percepciones - Evolución del mundo - Información de utilidad y estados
- deseables - Información acción-valor y acciones deseables - Metas y estados
- que maximizan utilidad
-\end_layout
-
-\begin_layout Standard
-
+Otra definición es 
 \shape italic
+
 \begin_inset Quotes eld
 \end_inset
 
@@ -598,77 +599,115 @@ key "Jean2016"
 .
  La dificultad radica en que debemos construir modelos que nos acerquen
  a una buena predicción sobre datos aún no conocidos o imprevistos.
- Peter Prettenhofer y Gille Louppe presentan la siguiente definición:
 \end_layout
 
 \begin_layout Standard
-Data comes as...
-\end_layout
-
-\begin_layout Itemize
-A set of examples 
-\begin_inset Formula $\left\{ \left(x_{i},y_{i}\right)\mid0\leq i<n\;samples\right\} $
+En el contexto de IA y según el enfoque propuesto en el libro 
+\begin_inset Quotes eld
 \end_inset
 
-, with
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Feature vector 
-\begin_inset Formula $x\in\mathbb{R}^{n\;features}$
+Inteligencia Artificial Un Enfoque Moderno
+\begin_inset Quotes erd
 \end_inset
 
-, and
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IAEModerno2"
 
-\begin_layout Itemize
-Response 
-\begin_inset Formula $y\in\mathbb{R}$
 \end_inset
 
-(regression) or 
-\begin_inset Formula $y\in\left\{ -1,1\right\} $
+, se conciben los sistemas inteligentes como agentes racionales dotados
+ de capacidades específicas.
+ Entre las capacidades principales están el poder percibir el entorno de
+ trabajo (
+\begin_inset Quotes eld
 \end_inset
 
- (classification)
+problemas para los cuales fueron hechos
+\begin_inset Quotes erd
+\end_inset
+
+) con la ayuda de sus sensores, actuar en ese entorno mediante sus actuadores
+ y contar con una medida de rendimiento para medir el éxito.
+ Estructuralmente un agente = arquitectura + programa.
+ Los sensores y actuadores forman parte de la arquitectura, la arquitectura
+ es el medio físico que podría ser una PC común o un sofisticado robot con
+ brazos mecánicos, cámaras, sensores, etc.
+ El objetivo principal de IA es construir el programa del agente, que es
+ donde se implementa la función del agente.
+ Para que el agente sea considerado un agente que aprende, el programa debe
+ contener el 
+\begin_inset Quotes eld
+\end_inset
+
+Elemento de aprendizaje
+\begin_inset Quotes erd
+\end_inset
+
+.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Agente-racional"
+
+\end_inset
+
+ se grafica el concepto, un modelo de agente inteligente que aprende.
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Goal is to...
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename recursos/Agentes que aprenden.png
+	scale 70
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Agente-racional"
+
+\end_inset
+
+Modelo general para agentes que aprenden 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IAEModerno2"
+
+\end_inset
+
+.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Find a function 
-\begin_inset Formula $ŷ=f\left(x\right)$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Itemize
-Such that error 
-\begin_inset Formula $L\left(y,ŷ\right)$
 \end_inset
 
-on new (unseen) 
-\begin_inset Formula $x$
-\end_inset
 
- is minimal
 \end_layout
 
-\end_deeper
 \begin_layout Section
 Formas de Aprendizaje 
 \end_layout
 
 \begin_layout Standard
 Los algoritmos de aprendizaje automático se pueden agrupar según la forma
- en que se realiza el aprendizaje, pero teniendo en cuenta que todos reciben
- un conjunto de ejemplos del cuál aprender.
+ en que se realiza el aprendizaje, conforme a la información que poseen
+ o que pueden llegar a poseer.
  Uno de los componentes más importantes al momento de diagnosticar la naturaleza
  del problema de aprendizaje es el tipo de retroalimentación disponible
  para el aprendizaje.
@@ -688,19 +727,102 @@ Aprendizaje supervisado
 \end_layout
 
 \begin_layout Standard
-En los problemas de apredizaje supervisado los algoritmos reciben como entrada
- datos de entrenamiento que ya tienen resultados conocidos o etiquetas.
- En el caso más general un instructor provee el valor correcto de la salida
+Los agentes inteligentes que implementan algoritmos de apredizaje supervisado
+ (supervised learning), tienen como objetivo aprender una función de hipótesis
+ 
+\begin_inset Quotes eld
+\end_inset
+
+h
+\begin_inset Quotes erd
+\end_inset
+
+ que se aproxime a la función verdadera 
+\begin_inset Quotes eld
+\end_inset
+
+f
+\begin_inset Quotes erd
+\end_inset
+
+ y que es solución al problema que se intenta resolver.
+ Lo que se conoce de 
+\begin_inset Quotes eld
+\end_inset
+
+f
+\begin_inset Quotes erd
+\end_inset
+
+ son los llamados 
+\begin_inset Quotes eld
+\end_inset
+
+ejemplos
+\begin_inset Quotes erd
+\end_inset
+
+, que son puntos concretos dentro de la desconocida curva que representa
+ la función verdadera 
+\begin_inset Quotes eld
+\end_inset
+
+f
+\begin_inset Quotes erd
+\end_inset
+
+.
+ En otras palabras, la definición matemática de la función 
+\begin_inset Quotes eld
+\end_inset
+
+f
+\begin_inset Quotes erd
+\end_inset
+
+ no se conoce, solamente se conocen un conjunto de ejemplos definidos por
+ valores correctos de entradas y salidas de la función 
+\begin_inset Quotes eld
+\end_inset
+
+f
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Estos 
+\begin_inset Quotes eld
+\end_inset
+
+ejemplos
+\begin_inset Quotes erd
+\end_inset
+
+ son datos de entrada para los algoritmos de aprendizaje supervisado y actúan
+ como datos de entrenamiento, persiguiendo el objetivo principal de encontrar
+ la función 
+\begin_inset Quotes eld
+\end_inset
+
+h
+\begin_inset Quotes erd
+\end_inset
+
+.
+ En el caso más general, un instructor provee el valor correcto de la salida
  de cada ejemplo.
- Como resultado se aprende una función a partir de las entradas y salidas
- de los ejemplos.
- Como ejemplo de aplicación están los vehículos autoconducidos que deben
- aprender a diferenciar una calle de la que no es (salida booleana es calle
- o no es calle), también debe aprender a frenar (salida booleana frenar
- o no frenar), etc.
- Example problems are classification and regression para Supervised Learning.
- Example algorithms include Logistic Regression and the Back Propagation
- Neural Network.
+ Problemas del tipo clasificación o regresión se resuelven normalmente con
+ aprendizaje supervisado.
+ Como ejemplo de aplicaciones que implementan esta técnica están los vehículos
+ autoconducidos que deben aprender a diferenciar entre una calle y de la
+ que no es (salida booleana es calle o no es calle?), también debe aprender
+ a frenar (salida booleana frenar o no frenar?), etc.
+ Entre los algoritmos que implementan aprendizaje supervisado están: Logistic
+ Regression y Back Propagation Neural Network.
 \end_layout
 
 \begin_layout Standard
@@ -709,17 +831,21 @@ El problema de estudio en cuestión utiliza algoritmos de aprendizaje supervisad
 \end_layout
 
 \begin_layout Standard
-* Aprendizaje supervisado
-\end_layout
+***
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Standard
-- Agente aprende - Aprender una función - Ejemplos, sus entradas y salidas
- - Regla condición-acción (frenar o no frenar) - Aprender función (contiene
- la imagen un autobús?) - Aprender función, estado actual, acciones - Aprendizaj
-e inductivo - Valores correctos, función desconocida - Ejemplos de f, función
- verdadera - Función h, hipótesis aproxima f - Espacio de hipótesis - Función
- computable, máquina de Turing - Arboles de decisiones - Compromiso expresividad
- espacio hipótesis-complejidad h sencillas y consistentes
+Si la realimentación disponible, tanto de un profesor como del entorno,
+ proporciona el valor correcto para los ejemplos, el problema de aprendizaje
+ se denomina aprendizaje supervisado.
+ La tarea, también llamada aprendizaje inductivo, consiste en aprender una
+ función a partir de ejemplos de sus entradas y salidas.
+ aprendizaje de una función de valores discretos se denomina clasificación;
+ el aprendizaje de una función continua se denomina regresión.
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -727,8 +853,9 @@ Aprendizaje no supervisado
 \end_layout
 
 \begin_layout Standard
-En los problemas de apredizaje no supervisado los algoritmos reciben como
- entrada datos de entrenamiento que no tienen resultados conocidos o etiquetas.
+En los problemas de apredizaje no supervisado (unsupervised learning) los
+ algoritmos reciben como entrada datos de entrenamiento que no tienen resultados
+ conocidos ni etiquetas.
  Se buscan estructuras presentes y como resultado se pueden extraer reglas
  generales, o reducir sistemáticamente la redundancia, o se pueden organizar
  los datos por similitud.
@@ -738,24 +865,11 @@ En los problemas de apredizaje no supervisado los algoritmos reciben como
 a priori
 \shape default
  no hay etiquetas o respuesta correcta en los ejemplos.
- Como ejemplo de aplicación está el caso de la computadora que aprendió
- sola el concepto de un animal gato.
- Example problems are clustering, dimensionality reduction and association
- rule learning para Unsupervised Learning.
- Example algorithms include: the Apriori algorithm and k-Means.
-\end_layout
-
-\begin_layout Standard
-* Aprendizaje no supervisado
-\end_layout
-
-\begin_layout Standard
-- Agente de aprendizaje no supervisado - Aprender patrones de entradas -
- Valores de salidas no especificados - Ejemplo no etiquetados (dias tráfico
- bueno y malo) - Estado deseable no desconocido a priori - Acción correcta
- desconocida a priori - Naive Bayes - Métodos de aprendizaje paramétrico
- - Aprendizaje basado en instancias - Redes neuronales - Máquinas de vectores
- soporte (SVMs) o máquinas núcleo - Reconocimiento de dígitos
+ Como ejemplo de implementaciones está el caso de la computadora que aprendió
+ sola el concepto de lo que es un animal gato, otro ejemplo es el reconocimiento
+ de dígitos escritos a mano.
+ Entre los algoritmos que implementan aprendizaje supervisado están: Bayesian
+ Network, Neural Networks y Support Vector Machines (SVM) o Máquinas Núcleo.
 \end_layout
 
 \begin_layout Subsection
@@ -763,30 +877,48 @@ Aprendizaje por refuerzo
 \end_layout
 
 \begin_layout Standard
-El problema del aprendizaje por refuerzo es el más general de las tres categoría
-s.
- En vez de que un instructor indique al agente qué hacer, el agente de aprendiza
-je por refuerzo debe aprender a partir del refuerzo o recompensa.
- Por ejemplo, la falta de propina al final del viaje (o una gran factura
- por golpear la parte trasera del coche de delante) da al agente algunas
- indicaciones de que su comportamiento no es el deseable.
- El aprendizaje por refuerzo típicamente incluye el subproblema de aprender
- cómo se comporta el entorno.
+El aprendizaje por refuerzo (reinforcement learning) es el más general entre
+ las tres categorías.
+ En vez de que un instructor indique al agente qué hacer, el agente inteligente
+ debe aprender cómo se comporta el entorno mediante recompensas (refuerzos)
+ o castigos derivados del éxito o del fracaso respectivamente.
+ El objetivo principal es aprender la función de valor que le ayude al agente
+ inteligente a maximizar la señal de recompensa y así optimizar sus políticas
+ de modo a comprender el comportamiento del entorno y a tomar buenas decisiones
+ para el logro de sus objetivos formales.
 \end_layout
 
 \begin_layout Standard
-* Aprendizaje por refuerzo
+Los algoritmos principales se desarrollan dentro de los métodos de resolución
+ de problemas de decisión finitios de Markov, que incorporan las ecuaciones
+ de Bellman y las funciones de valor.
+ Tres métodos son los principales: la Programación Dinámica (Dynamic Programming
+ o DP), los métodos de Monte Carlo y el aprendizaje de Diferencias Temporales
+ (Temporal-Difference learning o TD).
+ ***Los métodos de programación dinámica requieren de un modelo completo
+ del entorno.
+ Los métodos de Monte Carlo no requieren de un modelo y son conceptualmente
+ simples, pero no son adecuados para el cálculo incremental paso a paso.
+ Los métodos de diferencia temporal no requieren modelo y son completamente
+ incrementales, pero son más complejos de analizar 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RLIntroduccion1998"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-- Agentes que aprenden a partir refuerzo - Aprender comportamiento del entorno
- - Modelo del entorno (completo o no tan completo) - Función de recompensa
- - Ningún conocimiento a priori - Juego nuevo, reglas desconocidas (al final
- del juego, perdiste o ganaste) - Aprendizaje por refuerzo pasivo - Aprendizaje
- por refuerzo activo (exploración, aprendizaje-q) - Aproximacion de funciones
- - Aplicaciones a juegos - Aplicaciones a control de robots - Búsqueda de
- la política - Diseño global del agente - Diseños basados en el modelo -
- Diseños de modelo libre - Diseños reactivos
+Entre las implementaciones desarrolladas está AlphaGo, un programa de IA
+ desarrollado por Google DeepMind para jugar el juego de mesa Go.
+ En marzo de 2016 AlphaGo le ganó una partida al jugardor profesional Lee
+ Sedol que tiene la categoría noveno dan y 18 títulos mundiales.
+ Entre los algoritmos que utiliza se encuentra el árbol de búsqueda Monte
+ Carlo, también utiliza aprendizaje profundon con redes neuronales.
+ Puede ver lo ocurrido en la serie de Netflix https://www.netflix.com/title/801908
+44.
 \end_layout
 
 \begin_layout Section
