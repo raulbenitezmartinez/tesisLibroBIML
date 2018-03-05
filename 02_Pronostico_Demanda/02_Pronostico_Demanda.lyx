@@ -92,7 +92,16 @@ Pronóstico de la Demanda
 
 \begin_layout Standard
 La elaboración de pronósticos de ventas precisos es uno de los retos más
- importantes en empresas del tipo retail.
+ importantes en empresas del tipo retail, determinar que sucederá en el
+ futuro con el fin de tomar decisiones adecuadas es un problema que se presenta
+ con frecuencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sipper1998"
+
+\end_inset
+
+.
  En un escenario inicial se tienen los depósitos llenos de productos listos
  para ser llevados a los mostradores.
  A medida que pasa el tiempo la cantidad en depósito va decreciendo por
@@ -103,9 +112,22 @@ La elaboración de pronósticos de ventas precisos es uno de los retos más
 \emph on
 Administración de Compras
 \emph default
-, hay un componente vital dentro de este proceso que es estimar la cantidad
- o volumen de productos a adquirir para reponer el stock.
- Es ahí donde entra en juego el pronóstico de la demanda.
+, hay un componente vital dentro de este proceso que es la estimación de
+ la cantidad o volumen de productos a adquirir para reponer el stock.
+ Es ahí donde entra en juego el pronóstico de la demanda 
+\series bold
+\color blue
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adam1991"
+
+\end_inset
+
+
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -118,44 +140,81 @@ Administración de Compras
 \end_layout
 
 \begin_layout Section
-Administración de compras 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "ADMINCA"
-
-\end_inset
-
-
+Administración de compras
 \end_layout
 
 \begin_layout Standard
-Los términos compras, adquisiciones, administración de materiales, logística,
- abastecimiento, administración del suministro y administración de la cadena
- de suministro se utilizan de manera indistinta ya que no existe un concenso
- general sobre la terminología.
+Los términos 
+\shape italic
+compras, adquisiciones, administración de materiales, logística, abastecimiento,
+ administración del suministro y administración de la cadena de suministro
+\shape default
+ se utilizan de manera indistinta ya que no existe un consenso general sobre
+ la terminología.
  El proceso de adquisición es el eje central de la actividad empresarial
  de administración de compras y del suministro.
  Cualquier organización requiere de proveedores por lo que es muy importante
  acoplarlos con efectividad al entorno organizacional, y que las decisiones
  de compras no contradigan las estrategias de la empresa.
+ Las empresas centran sus esfuerzos en aumentar sus ingresos, disminuir
+ sus costos, o una combinación de ambos a fin de obtener ganancias de la
+ forma más eficiente posible 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ADMINCA"
+
+\end_inset
+
+ 
+\series bold
+\color green
+[REF]
+\series default
+\color inherit
+.
+ 
 \end_layout
 
 \begin_layout Standard
-Las empresas centran sus esfuerzos en aumentar sus ingresos, disminuir sus
- costos, o una combinación de ambos a fin de obtener ganancias de la forma
- más eficiente posible.
- Este trabajo intenta contribuir a lograr decisiones eficientes de compras
+Este trabajo intenta contribuir a lograr decisiones eficientes de compras
  basadas en pronósticos de demanda precisos.
- Se considera que es una decisión importante estimar o predecir eficientemente
- la cantidad o volumen de productos para reponer el stock y que sirvan para
- el período de ventas que está por llegar.
+ Se considera que es un componente importante dentro de la planeación estratégic
+a y operacional la estimación eficiente de la cantidad o volumen de productos
+ para la reposición del stock del siguiente período de ventas 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MTPD20017"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 El stock o existencia de una empresa es el conjunto de materiales y artículos
  que se almacenan, tanto aquellos que son necesarios para el proceso productivo
- como los destinados a la venta.
- La función que desempeña el stock o existencia en una empresa son:
+ como los destinados a la venta 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DEDIEGOMORILLO2015"
+
+\end_inset
+
+.
+ La función que desempeña el stock o existencia en una empresa son 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "M.M.P.A.I.B.B.2010"
+
+\end_inset
+
+ 
+\series bold
+\color green
+[REF]
+\series default
+\color inherit
+:
 \end_layout
 
 \begin_layout Itemize
@@ -175,40 +234,80 @@ Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
 
 \begin_layout Standard
 El proceso de compras o adquisiciones se trata de un conjunto de etapas:
- a) Detectar la necesidad, b) Traducir la necesidad en una especificación
- comercial, c) Buscar potenciales proveedores, d) Seleccionar el proveedor
- adecuado, e) Detallar la orden de compra y pactar el suministro, f) Recibir
- los productos, g) Pagar a los proveedores.
- En el detalle de la orden se ven reflejadas las estimaciones de las cantidades
- a comprar de los productos.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Detectar la necesidad.
+\end_layout
+
+\begin_layout Enumerate
+Traducir la necesidad en una especificación comercial.
+\end_layout
+
+\begin_layout Enumerate
+Buscar potenciales proveedores.
+\end_layout
+
+\begin_layout Enumerate
+Seleccionar el proveedor adecuado.
+\end_layout
+
+\begin_layout Enumerate
+Detallar la orden de compra y pactar el suministro.
+\end_layout
+
+\begin_layout Enumerate
+Recibir los productos.
+\end_layout
+
+\begin_layout Enumerate
+Pagar a los proveedores.
+ 
 \end_layout
 
 \begin_layout Standard
-En el proceso de compras el caso ideal por supuesto sería poder adivinar
- por cada producto la cantidad que se va a vender en el siguiente periodo
- de venta.
- De ser así al finalizar cada periodo de ventas se dispondría de stock cero,
- con lo cual se llega a una máxima eficiencia en compras.
- Pero como adivinar es imposible, lo que si se puede hacer es predecir eficiente
-mente la demanda futura.
+En el punto 5, en el detalle de la orden se ven reflejadas las estimaciones
+ de las cantidades a comprar de los productos, en este proceso el caso ideal
+ por supuesto sería poder adivinar por cada producto la cantidad exacta
+ que se va a vender en el siguiente periodo de venta.
+ De este modo al finalizar cada periodo de ventas se dispondría de un stock
+ de cero unidades, con lo cual se llegaría a una máxima eficiencia en la
+ cantidad o volumen de productos comprados.
+ Sin embargo adivinar es una tarea imposible, lo que si se puede hacer es
+ predecir eficientemente la demanda futura.
 \end_layout
 
 \begin_layout Standard
 Del por qué la importancia de estimar de forma correcta esta cantidad o
  volumen, los expertos en negocios explican que los productos parados en
- stock mientras no se venden es dinero en estantería, además que generan
+ stock mientras no se venden es capital inmovilizado, además que generan
  sobrecostos de mantenimiento como seguros, personal encargado, fecha de
- vencimiento de los productos, etc.
- Otro hecho no deseado es la ruptura de stock, es decir el no disponer de
- un producto en stock cuando haya clientes interesados en comprarlo, lo
- cual también es considerado pérdida para la empresa.
- Lo que se desea es mantener un nivel de stock óptimo, es decir, por una
- parte tener suficiente cantidad para satisfacer la demanda sin caer en
- roturas de stock y, por otra, evitar que haya un exceso inútil del mismo.
+ vencimiento de los productos, etc 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MTPD20017"
+
+\end_inset
+
+ 
+\series bold
+\color green
+[REF]
+\series default
+\color inherit
+.
+ Otro hecho no deseado a causa de una mala estimación es la ruptura de stock,
+ es decir, no disponer de un producto cuando existan clientes interesados
+ en comprarlo, lo cual también se considera como una pérdida para la empresa.
+ En este punto, con una estimación acertada lo que se desea es mantener
+ un nivel de stock óptimo, es decir, tener suficiente cantidad para satisfacer
+ la demanda sin roturas de stock y por otra parte evitar que haya un exceso
+ inútil del mismo.
  Si bien el presente trabajo no está enfocado en medir los costos, lo que
- sí se busca es comprar de forma eficiente utilizando las herramientas de
- business intelligence y machine learning que ayudan a estimar lo que se
- va a vender en el siguiente periodo.
+ sí se busca es pronosticar la cantidad o volumen de compra de productos
+ de forma eficiente utilizando las herramientas de Business Intelligence
+ y Machine Learning para el siguiente periodo de ventas.
 \end_layout
 
 \begin_layout Standard
@@ -251,11 +350,35 @@ Métodos de Pronósticos Cualitativos
 \emph on
 Métodos de Pronósticos Cuantitativo
 \emph default
-s.
+s 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCN2011"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+ 
+\series bold
+\color green
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Section
 Métodos de pronósticos cualitativos 
+\end_layout
+
+\begin_layout Standard
+Las principales técnicas cualitativas de pronóstico de demanda son 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "GPO2011"
@@ -269,13 +392,13 @@ key "MCA2008"
 
 \end_inset
 
-
+:
 \end_layout
 
 \begin_layout Itemize
 Opinión del Gerente: El pronóstico se basa en la opinión, experiencia o
  el conocimiento técnico de las condiciones de un solo gerente.
- Pueden haber datos en los cuales el gerentes apoya su decisión.
+ Pueden haber datos en los cuales el gerente apoya su decisión.
 \end_layout
 
 \begin_layout Itemize
@@ -299,7 +422,7 @@ Encuesta en el mercado de consumo: Se encuesta a los clientes acerca de
  sus planes de compras, sus intereses por determinados productos o posibles
  nuevas características.
  La estimación se extrae de los resultados de las encuestas.
- Son útiles para elaborar planes de marketing, lazamiento de nuevos productos,
+ Son útiles para elaborar planes de marketing, lanzamiento de nuevos productos,
  etc.
 \end_layout
 
@@ -309,7 +432,7 @@ Método Delphi: Se basa en identificar un panel de expertos que pueden ser
  Se tiene un cuestionario donde cada uno de ellos lo completa de forma aislada.
  Se integran todas las respuestas, luego cada experto tiene acceso al set
  de respuestas y puede ajustar su respuesta conforme le parezca conveniente.
- Este proceso se repite iterativamentte hasta alcanzar un cierto nivel de
+ Este proceso se repite iterativamente hasta alcanzar un cierto nivel de
  consenso.
  Finalmente los resultados de este panel de expertos sirven de base para
  las decisiones de pronóstico de las personas que deben realizarlo.
@@ -329,7 +452,7 @@ Métodos de pronósticos cuantitativos
 \end_layout
 
 \begin_layout Standard
-Estos modelos se basan en métodos de pronóstico estadísticos que a partir
+Estos modelos se basan en métodos de pronósticos estadísticos que a partir
  de los datos históricos de ventas y suponiendo que las tendencias históricas
  continuarán, son capaces de anticipar la demanda futura 
 \begin_inset CommandInset citation
@@ -397,7 +520,7 @@ key "MCA2008"
 \begin_layout Standard
 El objetivo del método es obtener una buena predicción del valor futuro
  de la variable a pronosticar, enmarcado por supuesto en la serie de tiempo.
- Para lograr el objetivo, el modelo debe descubrir el patrón dentro de la
+ Para lograr el objetivo, el método debe descubrir el patrón dentro de la
  serie y luego ser capaz de extrapolarlo hacia el futuro 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -437,9 +560,18 @@ En el sentido estricto de la interpretación es erróneo hablar de pronosticar
  alguna distribución de probabilidades.
  Si ese siguiente valor es la media de la distribución de probabilidades
  acortaría el problema, pero se desconoce su distribución de probabilidades
- así como también su media.
- Lo mejor que se puede realizar es una estimación de la media tan cerca
- como sea posible, utilizando todos los datos disponibles.
+ así como también su media 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
+\end_layout
+
+\begin_layout Standard
+Lo mejor que se puede realizar es una estimación de la media tan cerca como
+ sea posible, utilizando todos los datos disponibles.
  La meta de los métodos de pronóstico de series de tiempo es estimar la
  media de la distribución de probabilidades subyacente del siguiente valor
  de la serie de tiempo tan cerca como sea posible.
@@ -471,7 +603,7 @@ key "ADMINCA"
 
 \end_inset
 
- este patrón tiene seis componentes básicos: valor constante (la flctuación
+ este patrón tiene seis componentes básicos: valor constante (la fluctuación
  de los datos alrededor de una media constante), tendencia (el incremento
  o decremento sistemático de la media a lo largo del tiempo), variaciones
  estacionales, cíclicas, aleatorias y puntos críticos.
@@ -485,22 +617,53 @@ key "MCN2011"
  el patrón de los datos en una serie de tiempo tienen cuatro componentes
  separados: tendencia, cíclico, estacional e irregular, y que luego se combinan
  para generar los valores de la serie de tiempo.
- Se analizan estos cuatro componente:
+ 
+\end_layout
+
+\begin_layout Standard
+Se analizan estos cuatro componentes:
 \end_layout
 
 \begin_layout Enumerate
-Componente de tendencia: Los valores de la serie de tiempo pueden ir cambiando
- gradualmente, tendiendo hacia valores que incrementan o que disminuyen.
+\noindent
+\align left
+
+\shape italic
+Componente de tendencia
+\shape default
+: Los valores de la serie de tiempo pueden ir cambiando gradualmente, tendiendo
+ hacia valores que incrementan o que disminuyen.
  Cuando estos incrementos o disminuciones se dan por periodos de tiempo
  prolongados se dice que la serie tiene un componente de tendencia.
- a) muestra una tendencia no lineal; en este caso la serie de tiempo indica
+ La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figura 2.1"
+
+\end_inset
+
+.a muestra una tendencia no lineal; en este caso la serie de tiempo indica
  poco crecimiento inicial, luego un periodo de rápido crecimiento y por
  último una estabilización.
- b) La tendencia lineal decreciente de la gráfica es útil para las series
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figura 2.1"
+
+\end_inset
+
+.b la tendencia lineal decreciente de la gráfica es útil para las series
  de tiempo que muestran una declinación constante en el tiempo.
- c) La línea horizontal en la gráfica representa una serie de tiempo que
- no tiene un aumento o disminución constante en el tiempo, y por tanto no
- muestra tendencia.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figura 2.1"
+
+\end_inset
+
+.c la línea horizontal en la gráfica representa una serie de tiempo que no
+ tiene un aumento o disminución constante en el tiempo, y por tanto no muestra
+ tendencia.
  Generalmente el componente tendencia se debe a factores a largo plazo.
 \begin_inset Float figure
 placement H
@@ -509,6 +672,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Recursos/tendencia.png
 	scale 70
@@ -520,6 +684,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Figura 2.1"
+
+\end_inset
+
 Ejemplos del componente tendencia en las series de tiempo.
 \end_layout
 
@@ -534,17 +704,33 @@ Ejemplos del componente tendencia en las series de tiempo.
 \end_layout
 
 \begin_layout Enumerate
-Componente cíclico: es habitual que los puntos de la serie de tiempo se
- encuentren por encima o por debajo de la linea de tendencia.
+\noindent
+\align left
+
+\shape italic
+Componente cíclico
+\shape default
+: es habitual que los puntos de la serie de tiempo se encuentren por encima
+ o por debajo de la linea de tendencia.
  Cuando el patrón de puntos está de forma alterna por encima y por debajo
  de la linea de tendencia durante períodos mayor a un año, entonces estamos
  ante presencia del componente cíclico de la serie de tiempo.
+ Esto se observa en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Figura 2.2"
+
+\end_inset
+
+
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename Recursos/ciclico.png
 	scale 70
@@ -556,6 +742,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Figura 2.2"
+
+\end_inset
+
 Ejemplo del componente cíclico y de tendencia en las series de tiempo.
 \end_layout
 
@@ -570,10 +762,13 @@ Ejemplo del componente cíclico y de tendencia en las series de tiempo.
 \end_layout
 
 \begin_layout Enumerate
-Componente estacional: Cuando el patrón de puntos está por encima o por
- debajo de la linea de tendencia durante períodos alternos menores o igual
- a un año, entonces estamos ante presencia del componente estacional de
- la serie de tiempo.
+
+\shape italic
+Componente estacional
+\shape default
+: Cuando el patrón de puntos está por encima o por debajo de la linea de
+ tendencia durante períodos alternos menores o igual a un año, entonces
+ estamos ante presencia del componente estacional de la serie de tiempo.
  Las altas cantidades de ventas de abrigos durante el otoño e invierno son
  patrones que se repite debido a la influencia estacional.
  En ciertos tipos de productos, las ventas que se anticipan en un mes particular
@@ -590,8 +785,11 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Enumerate
-Componente irregular: Se refiere a la presencia de variabilidad aleatoria
- en la serie de tiempo.
+
+\shape italic
+Componente irregular
+\shape default
+: Se refiere a la presencia de variabilidad aleatoria en la serie de tiempo.
  Corresponde a aquellos puntos que aparecieron desviados en relación a lo
  esperado de los efectos del componente de tendencia, cíclico y estacional.
  Como este componente es impredecible no se puede cuantificar el impacto
@@ -604,7 +802,7 @@ En general, los métodos de series de tiempo se clasifican en: método de
  pronóstico del último valor, método de pronóstico por promedios, método
  de pronóstico de promedio móvil, método de pronóstico por suavizamiento
  exponencial, método de suavizamiento exponencial con tendencia y el método
- ARIMA (AutoRegressive Integrated Moving Average) 
+ ARIMA (Auto Regressive Integrated Moving Average) 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -693,7 +891,7 @@ donde
 El método de pronóstico por suavizamiento exponencial: Con este método se
  asignan pesos diferentes a los valores de la serie.
  El último período es el de mayor peso y así paulatinamente se van asignando
- pesos cada vez menores a los valores mas antiguos de la serie.
+ pesos cada vez menores a los valores más antiguos de la serie.
  Este resultado se puede obtener de forma simple y sintética mediante una
  combinación del último valor de la serie y del último pronóstico correspondient
 e a dicho último valor.
@@ -702,7 +900,7 @@ e a dicho último valor.
 
 \begin_inset Formula 
 \begin{equation}
-Pronóstico=\alpha\left(último\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico\right)
+Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)
 \end{equation}
 
 \end_inset
@@ -767,23 +965,7 @@ El método de suavizamiento exponencial con tendencia: El inconveniente del
 \size small
 \begin_inset Formula 
 \begin{equation}
-Pronóstico=\alpha\left(último\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico\right)+tendencia\;estimada
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-tendencia\;estimada=\beta\left(última\;tendencia\right)\left(1\text{-}\beta\right)\left(estimación\;anterior\right)
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-última\;tendencia=\alpha\left(último\;valor-penúltimo\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico-penúltimo\;pronóstico\right)
+Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)+tendencia\;estimada
 \end{equation}
 
 \end_inset
@@ -794,7 +976,35 @@ tendencia\;estimada=\beta\left(última\;tendencia\right)\left(1\text{-}\beta\rig
 \begin_layout Standard
 \noindent
 \align left
-donde 
+
+\shape italic
+\size small
+donde:
+\begin_inset Formula 
+\begin{equation}
+tendencia\;estimada=\beta*\left(última\;tendencia\right)*\left(1\text{-}\beta\right)*\left(estimación\;anterior\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+última\;tendencia\:=\:\alpha*\left(último\;valor-penúltimo\;valor\right)\,+\\
+\qquad\qquad\qquad\qquad\qquad\qquad\qquad\left(1\text{-}\alpha\right)*\left(último\;pronóstico-penúltimo\;pronóstico\right)
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+con 
 \begin_inset Formula $\beta$
 \end_inset
 
@@ -812,13 +1022,6 @@ donde
 
 \begin_layout Subsection
 Pronósticos causales 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "MCA2008"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -838,7 +1041,14 @@ El pronóstico causal obtiene una proyección de la cantidad de interés (la
  Por ejemplo, las promociones sobre uno o varios productos pueden ser la
  causa de una mayor cantidad de ventas en dichos artículos, como tal tenemos
  una relación causa (promociones)-efecto (mayores ventas), es decir las
- promociones provocan cambios en los niveles de ventas.
+ promociones provocan cambios en los niveles de ventas 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -868,23 +1078,49 @@ y=a+bx
 \end_layout
 
 \begin_layout Standard
-donde:
-\shape italic
- 
-\size small
 
+\shape italic
+donde: 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\size small
 \begin_inset Formula $y=variable\;dependiente$
 \end_inset
 
-, 
+,
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\size small
 \begin_inset Formula $x=variable\;independiente$
 \end_inset
 
-, 
+,
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\size small
 \begin_inset Formula $a=intersección\;de\;la\;línea\;con\;el\;eje\;y$
 \end_inset
 
-, 
+,
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\size small
 \begin_inset Formula $b=pendiente\;de\;la\;línea$
 \end_inset
 
@@ -1012,8 +1248,8 @@ Relación con el problema de estudio
 
 \begin_layout Standard
 Este capítulo pretendió dar a conocer las técnicas de pronósticos de demanda
- ampliamente conocidas y estudiadas en los diferentes textos consultados
- 
+ clásicas ampliamente conocidas y estudiadas en los diferentes textos consultado
+s 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ADMINCA"
@@ -1048,13 +1284,6 @@ o como lo hacen las técnicas de esta sección, debe quedar claro que la soluci�
  cuantitativo o cualitativo propiamente dicho, sin embargo toma ciertos
  aspectos de ambos y se implementa con conceptos, tecnologías y herramientas
  de solución totalmente diferentes.
-\end_layout
-
-\begin_layout Standard
-En los capítulos tres y cuatro se combinan los conceptos, herramientas y
- tecnologías que modelan la solución de esta nueva técnica de pronóstico.
- En quinto capítulo se realizan las experimentaciones en base al caso de
- estudio y se evaluan los resultados obtenidos.
 \end_layout
 
 \end_body
