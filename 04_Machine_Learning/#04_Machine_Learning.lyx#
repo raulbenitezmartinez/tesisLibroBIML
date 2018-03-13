@@ -349,11 +349,14 @@ key "IntroML2008"
 \end_layout
 
 \begin_layout Itemize
-Reconocimiento de rostros de Facebook
+Reconocimiento facial de Facebook: Computer Vision and Pattern Recognition.
+ machine vision.
+ https://research.fb.com/learning-to-segment/
 \end_layout
 
 \begin_layout Itemize
-Kinect para Xbox 360
+Kinect para Xbox 360: técnicas de reconocimiento de voz y reconocimiento
+ facial para la identificación automática de los usuarios.
 \end_layout
 
 \begin_layout Itemize
@@ -393,6 +396,34 @@ Recomender system en plataformos como Amazon, Netflix, Facebook
 
 \begin_layout Itemize
 Reconocimiento automático de ciertas áreas en el mundo realizado por satélites
+\end_layout
+
+\begin_layout Standard
+Algoritmos para subcampos de especialidad de aprendizaje automático:
+\end_layout
+
+\begin_layout Itemize
+Computational intelligence (evolutionary algorithms, etc.)
+\end_layout
+
+\begin_layout Itemize
+Computer Vision (CV)
+\end_layout
+
+\begin_layout Itemize
+Natural Language Processing (NLP)
+\end_layout
+
+\begin_layout Itemize
+Recommender Systems
+\end_layout
+
+\begin_layout Itemize
+Reinforcement Learning
+\end_layout
+
+\begin_layout Itemize
+Graphical Models
 \end_layout
 
 \begin_layout Standard
@@ -830,24 +861,6 @@ El problema de estudio en cuestión utiliza algoritmos de aprendizaje supervisad
 , donde el experto en compras da la respuesta correcta a cada ejemplo.
 \end_layout
 
-\begin_layout Standard
-***
-\begin_inset Quotes eld
-\end_inset
-
-Si la realimentación disponible, tanto de un profesor como del entorno,
- proporciona el valor correcto para los ejemplos, el problema de aprendizaje
- se denomina aprendizaje supervisado.
- La tarea, también llamada aprendizaje inductivo, consiste en aprender una
- función a partir de ejemplos de sus entradas y salidas.
- aprendizaje de una función de valores discretos se denomina clasificación;
- el aprendizaje de una función continua se denomina regresión.
-\begin_inset Quotes erd
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 Aprendizaje no supervisado
 \end_layout
@@ -894,13 +907,7 @@ Los algoritmos principales se desarrollan dentro de los métodos de resolución
  de Bellman y las funciones de valor.
  Tres métodos son los principales: la Programación Dinámica (Dynamic Programming
  o DP), los métodos de Monte Carlo y el aprendizaje de Diferencias Temporales
- (Temporal-Difference learning o TD).
- ***Los métodos de programación dinámica requieren de un modelo completo
- del entorno.
- Los métodos de Monte Carlo no requieren de un modelo y son conceptualmente
- simples, pero no son adecuados para el cálculo incremental paso a paso.
- Los métodos de diferencia temporal no requieren modelo y son completamente
- incrementales, pero son más complejos de analizar 
+ (Temporal-Difference learning o TD) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RLIntroduccion1998"
@@ -914,14 +921,22 @@ key "RLIntroduccion1998"
 Entre las implementaciones desarrolladas está AlphaGo, un programa de IA
  desarrollado por Google DeepMind para jugar el juego de mesa Go.
  En marzo de 2016 AlphaGo le ganó una partida al jugardor profesional Lee
- Sedol que tiene la categoría noveno dan y 18 títulos mundiales.
+ Se-Dol que tiene la categoría noveno dan y 18 títulos mundiales.
  Entre los algoritmos que utiliza se encuentra el árbol de búsqueda Monte
  Carlo, también utiliza aprendizaje profundon con redes neuronales.
- Puede ver lo ocurrido en una serie de Netflix
+ Puede ver lo ocurrido en el documental de Netflix 
+\begin_inset Quotes eld
+\end_inset
+
+AlphaGo
+\begin_inset Quotes erd
+\end_inset
+
+ https://www.netflix.com/title/80190844.
 \end_layout
 
 \begin_layout Section
-Algoritmos de Machine Learning
+Algoritmos de aprendizaje supervisado y no supervisado
 \end_layout
 
 \begin_layout Standard
@@ -1021,6 +1036,7 @@ Los Algoritmos de Regresión (Regression Algorithms) modelan la relación
  Podemos utilizar el término regresión para referirnos a la clase de problema
  y también a la clase de algoritmo.
  Para ser más exactos, la regresión es realmente un proceso.
+ Estos algoritmos implementan aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1028,9 +1044,9 @@ Algoritmos basados en instancia
 \end_layout
 
 \begin_layout Standard
-El modelo de aprendizaje Basado en Instancia (Instance Based) es un problema
- de decisión con instancias o ejemplos de datos de entrenamiento que se
- consideran importantes o requeridos para el modelo.
+El modelo de aprendizaje Basado en Instancia (Instance-Based Learning) es
+ un problema de decisión con instancias o ejemplos de datos de entrenamiento
+ que se consideran importantes o requeridos para el modelo.
  Estos métodos típicamente construyen una base de datos con ejemplos y los
  compara con los nuevos datos utilizando una medida de similaridad para
  así encontrar la mejor coincidencia y hacer la predicción.
@@ -1038,6 +1054,7 @@ El modelo de aprendizaje Basado en Instancia (Instance Based) es un problema
  de aprendizaje basado en memoria.
  El enfoque se pone en la representación de las instancias almacenadas y
  las medidas de similaridad utilizadas entre instancias.
+ Estos algoritmos implementan aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1050,6 +1067,7 @@ Los Algoritmos de Regularización (Regularization), comprende una extensión
  Penaliza los modelos basándose en sus complejidades, favoreciendo modelos
  más simples que también son mejores de generalizar.
  Son populares, potentes y en general simples modificaciones de otros métodos.
+ Estos algoritmos implementan aprendizaje supervisado o no supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1065,6 +1083,7 @@ Los métodos de Árboles de Decisión (Decision Tree) construyen un modelo
 ción y regresión.
  Los árboles de decisión son a menudo rápidos y precisos y un gran favorito
  en aprendizaje automático.
+ Estos algoritmos implementan aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1074,6 +1093,7 @@ Algoritmos bayesianos
 \begin_layout Standard
 Los métodos Bayesianos (Bayesian) son los que aplican explícitamente el
  teorema de Bayes para problemas tales como la clasificación y la regresión.
+ Estos algoritmos implementan aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1088,6 +1108,7 @@ La Agrupación (Clustering) así como también la regresión describen la clase
  Todos los métodos atañen a la utilización de las estructuras inherentes
  en los datos, para organizar dichos datos de la mejor manera posible en
  grupos de máxima uniformidad.
+ Estos algoritmos implementan aprendizaje no supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1101,6 +1122,7 @@ Los métodos de aprendizaje de Reglas de Asociación (Rule System) extraen
  Estas reglas pueden descubrir asociaciones importantes y comercialmente
  útiles, en grandes conjuntos de datos multidimensionales que pueden ser
  explotados por una organización.
+ Estos algoritmos implementan aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1116,6 +1138,8 @@ Las Redes Neuronales artificiales (Neural Networks) son modelos inspirados
 s para todo tipo de tipos de problemas.
  Se ha separado el aprendizaje profundo de las redes neuronales debido a
  su enorme crecimiento y popularidad.
+ Estos algoritmos implementan aprendizaje supervisado, no supervisado o
+ por refuerzo.
 \end_layout
 
 \begin_layout Subsection
@@ -1129,6 +1153,7 @@ n de las redes neuronales artificiales que explotan el abundante y barato
  Se ocupan en construir redes neuronales mucho más grandes y complejas y,
  muchos métodos se refieren a problemas de aprendizaje semi-supervisados
  donde grandes conjuntos de datos contienen muy pocos datos etiquetados.
+ Estos algoritmos implementan aprendizaje supervisado o no supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1144,6 +1169,7 @@ Al igual que los métodos de agrupación, la Reducción de la Dimensionalidad
  datos que luego se pueden utilizar en un método de aprendizaje supervisado.
  Muchos de estos métodos pueden ser adaptados para su uso en clasificación
  y regresión.
+ Estos algoritmos implementan aprendizaje no supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1157,62 +1183,57 @@ Métodos de Ensamble (Ensemble) son modelos compuestos por múltiples modelos
  Mucho esfuerzo se pone en qué tipos de aprendices débiles combinar y las
  formas en que hay que combinarlos.
  Esta es una clase de técnica muy poderosa y como tal es muy popular.
+ Estos algoritmos implementan aprendizaje supervisado o no supervisado.
 \end_layout
 
 \begin_layout Subsection
-Otros algoritmos
+Algoritmos no lineales
 \end_layout
 
 \begin_layout Standard
-Algoritmos no lineales como:
+Uno de los mas importante es Support Vector Machines.
+ Estos algoritmos implementan aprendizaje supervisado o no supervisado.
 \end_layout
 
-\begin_layout Itemize
-Support Vector Machines
-\end_layout
-
-\begin_layout Standard
-Algoritmos para tareas especiales en el proceso del aprendizaje automático:
-\end_layout
-
-\begin_layout Itemize
-Feature selection algorithms 
-\end_layout
-
-\begin_layout Itemize
-Algorithm accuracy evaluation 
-\end_layout
-
-\begin_layout Itemize
-Performance measures
+\begin_layout Section
+Algoritmos de aprendizaje por refuerzo
 \end_layout
 
 \begin_layout Standard
-Algoritmos para subcampos de especialidad de aprendizaje automático:
+Se puede complementar el listado propuesto por el Dr.
+ Jason con alguno de los algoritmos para aprendizaje por refuerzo.
 \end_layout
 
-\begin_layout Itemize
-Computational intelligence (evolutionary algorithms, etc.)
+\begin_layout Subsection
+Programación dinámica (Dynamic programming o DP)
 \end_layout
 
-\begin_layout Itemize
-Computer Vision (CV)
+\begin_layout Standard
+Programación dinámica con Policy Iteration.
+ Programación dinámica con Value Iteration.
+ Programación dinámica con Generalized policy iteration (GPI).
+ Asynchronous DP.
+ Bootstrapping.
 \end_layout
 
-\begin_layout Itemize
-Natural Language Processing (NLP)
+\begin_layout Subsection
+Métodos de Monte Carlo
 \end_layout
 
-\begin_layout Itemize
-Recommender Systems
+\begin_layout Standard
+On-Policy Monte Carlo Control.
+ Off-Policy Monte Carlo Control.
 \end_layout
 
-\begin_layout Itemize
-Reinforcement Learning
+\begin_layout Subsection
+Temporal-difference learning (called one-step, tabular, modelfree TD methods)
 \end_layout
 
-\begin_layout Itemize
-Graphical Models
+\begin_layout Standard
+Sarsa: On-Policy TD Control.
+ Q-learning: Off-Policy TD Control.
+ Actor-Critic Methods.
+ R-Learning for Undiscounted Continual Tasks.
 \end_layout
 
 \begin_layout Section
@@ -1357,7 +1378,7 @@ key "DM2011"
 \end_layout
 
 \begin_layout Standard
-Para desarrollar un modelo o esquema de machine learning para resolver problemas
+Para desarrollar un modelo o esquema de Machine Learning para resolver problemas
  de clasificación multiclase, es necesario conocer los componentes esenciales
  que la forman.
 \end_layout
@@ -3331,32 +3352,78 @@ arianza
 \end_layout
 
 \begin_layout Section
-Evaluación del aprendizaje
+Técnicas de evaluación para aprendizaje supervisado
 \end_layout
 
 \begin_layout Standard
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
- Entre las técnicas de evaluación se destacan la Validación Cruzada (Cross-Valid
-ation) y la Validación Cruzada k-pliegues Estratificado (Stratified k-fold
- Cross-Validation).
- 
+ Entre las técnicas de evaluación para problemas de aprendizaje supervisado
+ se destacan:
+\end_layout
+
+\begin_layout Subsection
+Entrenamiento y pruebas sobre los mismos datos
 \end_layout
 
 \begin_layout Standard
-La técnica de Cross-Validation consiste en dividir los datos en un número
- de pliegues o particiones, si por ejemplo elegimos cuatro, entonces cada
- partición se utiliza para las pruebas y las demás para el entrenamiento,
- al repetir este proceso 4 veces se consigue que cada partición se haya
- utilizado una vez como conjunto de pruebas.
- 
+Recompensa modelos demasiado complejos que "sobreajustan" los datos de entrenami
+ento y que no necesariamente generalizan.
+\end_layout
+
+\begin_layout Subsection
+Porcentaje de División
+\end_layout
+
+\begin_layout Standard
+La técnica es el Porcentaje de División (Percentage Split) divide el conjunto
+ de datos en dos partes, de modo que el modelo pueda ser entrenado y probado
+ sobre diferentes datos.
+ Presenta una mejor estimación del rendimiento fuera de la muestra, pero
+ sigue siendo una estimación de "alta varianza".
+ Útil debido a su velocidad, simplicidad y flexibilidad.
+\end_layout
+
+\begin_layout Standard
+Divide el conjunto de datos en dos conjuntos: un conjunto de entrenamiento
+ (generalmente el 70% del conjunto de datos completo) del que aprende el
+ modelo y un conjunto de prueba (el otro 30%).
+ Debido a que el conjunto de pruebas se retiene del modelo durante el entrenamie
+nto, puede contribuir a una evaluación imparcial de qué tan bien se desempeña
+ un modelo en datos nunca antes vistos.
+ Esto protege contra el sobreajuste y permite evaluar cómo nuestro modelo
+ funcionaría con los nuevos datos a medida que surgen.
+\end_layout
+
+\begin_layout Subsection
+Validación Cruzada de k pasadas
+\end_layout
+
+\begin_layout Standard
+La técnica de Validación Cruzada de k pasadas (k-fold Cross-Validation)
+ consiste en dividir los datos en un número de particiones iguales.
+ Por ejemplo, en una validación cruzada de 4 pasadas se divide el conjunto
+ de datos en cuatro particiones de igual tamaño.
+ Luego se entrena el modelo en tres de esas cuatro particiones y se prueba
+ el modelo en la partición restante.
+ Luego, se repite el proceso, seleccionando una partición diferente para
+ que sea el grupo de prueba y entrenando un nuevo modelo en el conjunto
+ restante de tres particiones.
+ El proceso se repite dos veces más, para un total de cuatro rondas de validació
+n cruzada, una por cada pasada.
+ Luego se tienen cuatro modelos diferentes, cada uno ha sido entrenado y
+ probado en un subconjunto diferente de datos y cada uno tiene su propio
+ peso y exactitud de predicción.
+ Al final, se combinan estos modelos al promediar sus pesos para estimar
+ un modelo predictivo final.
+ La validación cruzada es otro antídoto contra el sobreajuste.
 \end_layout
 
 \begin_layout Standard
 La técnica estándar para predecir la tasa de error es Stratified k-fold
  Cross-Validation, donde la estratificación se refiere al proceso de reorganizar
- los datos de tal manera a asegurar que cada pliegue sea una buena representació
-n del conjunto.
+ los datos de tal manera a asegurar que cada partición sea una buena representac
+ión del conjunto.
  Comúnmente se acepta que 10 es el número de pliegues con el que se obtiene
  la mejor estimación de error, idea basada en diversas pruebas sobre conjuntos
  de datos diferentes y para distintas técnicas de aprendizaje 
@@ -3369,46 +3436,37 @@ key "DM2011"
 .
 \end_layout
 
-\begin_layout Standard
-Otra técnica es el Porcentaje de División (Percentage Split) con el que
- puede retener para la prueba un determinado porcentaje de los datos.
- Es una alternativa utilizar un conjunto de pruebas separado o una división
- porcentual de los datos de entrenamiento.
- Si elegimos 60% como porcentaje de división, entonces el conjunto de prueba
- se constituirá con el 40% de las instancias y el conjunto de entrenamiento
- con el 60% de las instancias.
-\end_layout
-
 \begin_layout Section
-Métricas de desempeño 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "DM2011"
-
-\end_inset
-
-
+Métricas de desempeño para problemas de clasificación 
 \end_layout
 
 \begin_layout Standard
-Para los problemas de clasificación, es natural medir el rendimiento de
+Las métricas de clasificación son las medidas contra las cuales se evalúan
+ los modelos.
+ Para los problemas de clasificación, es natural medir el rendimiento de
  un clasificador en términos de la tasa de error (error rate).
  El clasificador predice la clase de cada instancia: si es correcta se cuenta
  como un éxito, sino se cuenta como un error.
  La tasa de error es sólo la proporción de errores cometidos sobre un conjunto
  de instancias, y mide el rendimiento general del clasificador.
  Por supuesto, lo que nos interesa es el probable desempeño futuro en nuevos
- datos, no el rendimiento pasado en datos antiguos.
+ datos, no el rendimiento pasado sobre datos antiguos.
 \end_layout
 
 \begin_layout Standard
-Para predecir el rendimiento de un clasificador en nuevos datos, necesitamos
+Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
  evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
  papel en la formación del clasificador.
  Este conjunto de datos independiente se denomina conjunto de prueba.
- En tales situaciones se suele hablar de tres conjuntos de datos: los datos
- de entrenamiento, los datos de validación y los datos de prueba.
- 
+ En tales situaciones se suele hablar de tres conjuntos de datos, los datos
+ de entrenamiento, los datos de validación y los datos de prueba 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DM2011"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3423,26 +3481,42 @@ n debe ser diferente del conjunto de entrenamiento para obtener un buen
  desempeño en la etapa de optimización o selección y el conjunto de pruebas
  debe ser diferente de ambos para obtener una estimación confiable de la
  tasa de error real.
+ Para fines prácticos generalmente se utiliza la metodología de dividir
+ los datos en dos conjuntos, el conjunto de entrenamiento y el conjunto
+ de prueba, como es el caso del trabajo actual donde se utilizan valores
+ por defecto en los parámetros de los clasificadores.
 \end_layout
 
 \begin_layout Subsection
-Aciertos
+Porcentaje de Acierto
 \end_layout
 
 \begin_layout Standard
-Número de instancias correctamente clasificadas.
+Porcentaje de instancias correctamente clasificadas o de predicciones correctas.
+ La métrica más simple y más común es la precisión.
+ La precisión se calcula dividiendo el número de predicciones correctas
+ entre el número total de predicciones.
+ En nuestro ejemplo de modelo de clasificación supervisada de transacciones,
+ si probamos nuestro modelo en cien transacciones y predijimos correctamente
+ su etiqueta (fraude / no fraude) para noventa y cinco de ellas, entonces
+ la precisión de nuestro modelo es del 95%.
 \end_layout
 
 \begin_layout Subsection
-Porcentaje de Aciertos
+Matriz de confusión
 \end_layout
 
 \begin_layout Standard
-Porcentaje de instancias correctamente clasificadas.
-\end_layout
-
-\begin_layout Subsection
-Estadística Kappa (Kappa Statistic)
+La precisión de clasificación es la métrica de clasificación más fácil de
+ entender.
+ Pero, no te dice la distribución subyacente de los valores de respuesta,
+ ni dice qué "tipos" de errores está haciendo su clasificador.
+ La precisión es la medida más simple y comprensible que podemos usar, pero
+ no nos gustaría basarnos solo en la precisión porque no distingue entre
+ falsos positivos, transacciones incorrectamente clasificadas como fraude
+ y falsos negativos, transacciones incorrectamente clasificadas como no
+ fraudulentas .
+ Para esto, necesitamos una matriz de confusión.
 \end_layout
 
 \begin_layout Standard
@@ -3457,7 +3531,91 @@ En problemas de clasificación para aplicaciones reales normalmente los errores
  incorrectamente como sí (o positivo) cuando es realmente no (o negativo).
  Un Falso Negativo (False Negative - FN) es cuando el resultado se predice
  incorrectamente como negativo cuando es realmente positivo.
- En la predicción multiclase, cada elemento de la matriz de confusión muestra
+\end_layout
+
+\begin_layout Standard
+Entre las métricas calculadas a partir de una matriz de confusión se encuentran:
+\end_layout
+
+\begin_layout Subsubsection
+Exactitud de clasificación (Classification Accuracy)
+\end_layout
+
+\begin_layout Standard
+En general, ¿con qué frecuencia es correcto el clasificador?.
+ (TP + TN) / (TP + TN + FP + FN).
+\end_layout
+
+\begin_layout Subsubsection
+Error de clasificación (Classification Error)
+\end_layout
+
+\begin_layout Standard
+En general, ¿con qué frecuencia el clasificador es incorrecto?.
+ También conocido como "Tasa de clasificación incorrecta".
+ (FP + FN) / (TP + TN + FP + FN).
+\end_layout
+
+\begin_layout Subsubsection
+Sensibilidad (Sensitivity)
+\end_layout
+
+\begin_layout Standard
+Cuando el valor real es positivo, ¿con qué frecuencia es correcta la predicción?.
+ Algo que queremos maximizar.
+ ¿Qué tan "sensible" es el clasificador para detectar instancias positivas?.
+ También conocido como "Tasa positiva real" o "Recordar", "True Positive
+ Rate" or "Recall".
+\end_layout
+
+\begin_layout Standard
+TP / Todo positivo.
+\end_layout
+
+\begin_layout Standard
+Todo positivo = TP + FN.
+\end_layout
+
+\begin_layout Subsubsection
+Especificidad (Specificity)
+\end_layout
+
+\begin_layout Standard
+Cuando el valor real es negativo, ¿con qué frecuencia es correcta la predicción?.
+ Algo que queremos maximizar.
+ ¿Qué tan "sensible" es el clasificador para detectar instancias positivas?.
+ También conocido como "Tasa positiva real" o "Recordar", "True Positive
+ Rate" or "Recall".
+\end_layout
+
+\begin_layout Standard
+TP / Todo positivo.
+\end_layout
+
+\begin_layout Standard
+Todo positivo = TP + FN.
+\end_layout
+
+\begin_layout Standard
+Especificidad: cuando el valor real es negativo, ¿con qué frecuencia es
+ la predicción correcta?
+\end_layout
+
+\begin_layout Standard
+Algo que queremos maximizar
+\end_layout
+
+\begin_layout Standard
+¿Qué tan "específico" (o "selectivo") es el clasificador en predecir las
+ instancias positivas? TN / todo negativo todo negativo = TN + FP
+\end_layout
+
+\begin_layout Subsubsection
+Estadística Kappa (Kappa Statistic)
+\end_layout
+
+\begin_layout Standard
+En la predicción multiclase, cada elemento de la matriz de confusión muestra
  el número de ejemplos de prueba para los que la clase real es la fila y
  la clase prevista es la columna.
  Son buenos resultados los grandes números en la diagonal principal e idealmente
@@ -3508,7 +3666,7 @@ s para calcular las probabilidades de que cada observador clasifique aleatoriame
 nte cada categoría.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Sensibilidad (Recall)
 \end_layout
 
@@ -3528,7 +3686,7 @@ Recall=\frac{TP}{TP+FN}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Precisión (Precision)
 \end_layout
 
@@ -3548,7 +3706,7 @@ Precision=\frac{TP}{TP+FP}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Puntuación-F (F-Measure)
 \end_layout
 

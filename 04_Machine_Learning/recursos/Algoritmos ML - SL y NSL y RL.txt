@@ -1,0 +1,116 @@
+1. Supervised Learning
+
+Linear Regression (continuous variables)
+Logistic Regression (classification)
+Decision Tree (classification, continuous dependent variables)
+SVM - Support Vector Machine (classification method)
+Naive Bayes (classification technique, based on Bayes’s theorem)
+KNN - K-Nearest Neighbors (classification and regression problems)
+RF - Random Forest (ensemble of decision trees, the tree “votes” for that class)
+Gradient Boosting Algorithms (GBM - Gradient Boosted Trees, XGBoost, LightGBM, AdaBoost)
+Deep Learning (neural networks, regression problems, easily adapted to classification problems)
+NN - Nearest Neighbors (regression problems, algorithms are instance-based, memory-intensive)
+CART - Classification and regression trees
+
+* Algoritmos de regresión (Regression). SUPERVISED.
+Linear Regression. SUPERVISED, REGRESSION.
+Ordinary Least Squares Regression (OLSR).
+Stepwise Regression
+Multivariate Adaptive Regression Splines (MARS)
+Locally Estimated Scatterplot Smoothing (LOESS)
+Logistic Regression. SUPERVISED, CLASSIFICATION.
+
+* Algoritmos basados en instancia (instance-based learning). SUPERVISED.
+k-Nearest Neighbour (kNN)
+Learning Vector Quantization (LVQ)
+Self-Organizing Map (SOM)
+Locally Weighted Learning (LWL)
+
+* Algoritmos de regularización (Regularization). SUPERVISED or UNSUPERVISED. REVISAR!
+Ridge Regression
+Least Absolute Shrinkage and Selection Operator (LASSO)
+Elastic Net
+Least Angle Regression (LARS)
+
+* Algoritmos de árboles de decisión (Decision Tree). SUPERVISED.
+Classification and Regression Tree (CART)
+Iterative Dichotomiser 3 (ID3)
+C4.5
+C5.0
+Chi-squared Automatic Interaction Detection (CHAID)
+Decision Stump
+Conditional Decision Trees
+M5
+
+* Algoritmos bayesianos (Bayesian Algorithms). SUPERVISED.
+Naive Bayes
+Averaged One-Dependence Estimators (AODE)
+Bayesian Belief Network (BBN)
+Gaussian Naive Bayes
+Multinomial Naive Bayes
+Bayesian Network (BN)
+
+* Algoritmos de aprendizaje de reglas de asociación (Rule-Based System). SUPERVISED.
+Cubist
+One Rule (OneR)
+Zero Rule (ZeroR)
+Repeated Incremental Pruning to Produce Error Reduction (RIPPER)
+
+* Algoritmos de redes neurales artificiales (Neural Networks). SUPERVISED or UNSUPERVISED or REINFORCEMENT.
+Radial Basis Function Network (RBFN)
+Perceptron
+Back-Propagation
+Hopfield Network
+
+* Algoritmos de aprendizaje profundo (Deep Learning). SUPERVISED or UNSUPERVISED.
+Deep Boltzmann Machine (DBM)
+Deep Belief Networks (DBN)
+Convolutional Neural Network (CNN)
+Stacked Auto-Encoders
+
+* Algoritmos ensamble (Ensemble Learning). SUPERVISED or UNSUPERVISED.
+Random Forest
+Gradient Boosting Machines (GBM)
+Boosting
+Bootstrapped Aggregation (Bagging)
+AdaBoost
+Stacked Generalization (Blending)
+Gradient Boosted Regression Trees (GBRT)
+
+* Algoritmos no lineales. SUPERVISED or UNSUPERVISED.
+Support Vector Machines
+
+2. Unsupervised Learning
+
+K-Means (unsupervised algorithm, based on geometric distances)
+Dimensionality Reduction Algorithms (How’d you identify highly significant variable(s) out 1000 or 2000?)
+Gradient Boosting Algorithms (GBM, XGBoost, LightGBM, AdaBoost)
+Affinity Propagation (new clustering technique)
+Hierarchical/Agglomerative
+DBSCAN (makes clusters for dense regions of points)
+HDBSCAN (allows varying density clusters)
+
+* Algoritmos de agrupación (Clustering Algorithms). UNSUPERVISED.
+k-Means
+k-Medians
+Expectation Maximization
+Hierarchical Clustering
+
+* Algoritmos de reducción de dimensionalidad (Dimensionality Reduction). UNSUPERVISED.
+Principal Component Analysis (PCA)
+Partial Least Squares Regression (PLSR)
+Sammon Mapping
+Multidimensional Scaling (MDS)
+Projection Pursuit
+Principal Component Regression (PCR)
+Partial Least Squares Discriminant Analysis
+Mixture Discriminant Analysis (MDA)
+Quadratic Discriminant Analysis (QDA)
+Regularized Discriminant Analysis (RDA)
+Flexible Discriminant Analysis (FDA)
+Linear Discriminant Analysis (LDA)
+
+3. Reinforcement Learning:
+
+
+

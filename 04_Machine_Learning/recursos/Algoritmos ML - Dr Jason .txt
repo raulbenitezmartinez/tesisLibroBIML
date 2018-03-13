@@ -1,0 +1,89 @@
+* Algoritmos de regresión (Regression). Supervised.
+Linear Regression
+Ordinary Least Squares Regression (OLSR)
+Stepwise Regression
+Multivariate Adaptive Regression Splines (MARS)
+Locally Estimated Scatterplot Smoothing (LOESS)
+Logistic Regression
+
+* Algoritmos basados en instancia (instance-based learning). Supervised.
+k-Nearest Neighbour (kNN)
+Learning Vector Quantization (LVQ)
+Self-Organizing Map (SOM)
+Locally Weighted Learning (LWL)
+
+* Algoritmos de regularización (Regularization). Supervised, semi-supervised or unsupervised.
+Ridge Regression
+Least Absolute Shrinkage and Selection Operator (LASSO)
+Elastic Net
+Least Angle Regression (LARS)
+
+* Algoritmos de árboles de decisión (Decision Tree). Supervised.
+Classification and Regression Tree (CART)
+Iterative Dichotomiser 3 (ID3)
+C4.5
+C5.0
+Chi-squared Automatic Interaction Detection (CHAID)
+Decision Stump
+Conditional Decision Trees
+M5
+
+* Algoritmos bayesianos (Bayesian Algorithms). Supervised learning, semi-supervised.
+Naive Bayes
+Averaged One-Dependence Estimators (AODE)
+Bayesian Belief Network (BBN)
+Gaussian Naive Bayes
+Multinomial Naive Bayes
+Bayesian Network (BN)
+
+* Algoritmos de agrupación (Clustering Algorithms). Unsupervised.
+k-Means
+k-Medians
+Expectation Maximization
+Hierarchical Clustering
+
+* Algoritmos de aprendizaje de reglas de asociación (Rule-Based System). Supervised.
+Cubist
+One Rule (OneR)
+Zero Rule (ZeroR)
+Repeated Incremental Pruning to Produce Error Reduction (RIPPER)
+
+* Algoritmos de redes neurales artificiales (Neural Networks). Supervised, unsupervised or reinforcement.
+Radial Basis Function Network (RBFN)
+Perceptron
+Back-Propagation
+Hopfield Network
+
+* Algoritmos de aprendizaje profundo (Deep Learning). Supervised, semi-supervised or unsupervised.
+Deep Boltzmann Machine (DBM)
+Deep Belief Networks (DBN)
+Convolutional Neural Network (CNN)
+Stacked Auto-Encoders
+
+* Algoritmos de reducción de dimensionalidad (Dimensionality Reduction). Unsupervised.
+Principal Component Analysis (PCA)
+Partial Least Squares Regression (PLSR)
+Sammon Mapping
+Multidimensional Scaling (MDS)
+Projection Pursuit
+Principal Component Regression (PCR)
+Partial Least Squares Discriminant Analysis
+Mixture Discriminant Analysis (MDA)
+Quadratic Discriminant Analysis (QDA)
+Regularized Discriminant Analysis (RDA)
+Flexible Discriminant Analysis (FDA)
+Linear Discriminant Analysis (LDA)
+
+* Algoritmos ensamble (Ensemble Learning). Supervised or unsupervised.
+Random Forest
+Gradient Boosting Machines (GBM)
+Boosting
+Bootstrapped Aggregation (Bagging)
+AdaBoost
+Stacked Generalization (Blending)
+Gradient Boosted Regression Trees (GBRT)
+
+* Algoritmos no lineales. Supervised.
+Support Vector Machines
+
+

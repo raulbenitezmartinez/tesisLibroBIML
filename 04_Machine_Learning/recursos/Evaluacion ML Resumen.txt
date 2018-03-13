@@ -1,0 +1,50 @@
+* Terminología utilizada
+
+Techniques for estimating the prediction errors. Tecnicas para estimar los errores de prediccion.
+The prediction error or "generalization error" evaluation. Errores de predicción o evaluación del error de generalización.
+Techniques for estimating the prediction errors (simple division of data into training/validation sets, cross-validations, etc.). Tecnicas para estimar los errores de predicción.
+The evaluation process itself is an error-prone process and that there are multiple contributing ‘components’ to prediction errors. El proceso de evaluación es en sí mismo un proceso propenso a errores y que tiene varios componentes que contribuyen a los errores de predicción.
+Prediction errors of machine learned models. Errores de predicción de los modelos de ML.
+
+Prediction accuracy. Precisión de la predicción.
+Evaluating prediction accuracy of machine learned models. Evaluando la precisión de la predicción de modelos de ML.
+
+Use a model evaluation procedure to estimate how well a model will generalize to out-of-sample data
+Requires a model evaluation metric to quantify the model performance
+
+Evaluating the performance of a classification algorithm
+Evaluating the performance of a supervised machine learning algorithm
+
+Evaluación del aprendizaje (Model evaluation procedures). Evaluating a Classification Model.
+Métricas de desempeño [#DM2011] (Model evaluation metrics for Classification problems)
+
+* Training and testing on the same data
+
+Rewards overly complex models that "overfit" the training data and won't necessarily generalize.
+Recompensa modelos demasiado complejos que "sobreajusten" los datos de entrenamiento y que no necesariamente generalicen.
+
+* Train/test split
+
+Split the dataset into two pieces, so that the model can be trained and tested on different data Better estimate of out-of-sample performance, but still a "high variance" estimate Useful due to its speed, simplicity, and flexibility.
+Divida el conjunto de datos en dos partes, de modo que el modelo pueda ser entrenado y probado en diferentes datos. Mejor estimación del rendimiento fuera de la muestra, pero sigue siendo una estimación de "alta varianza". Útil debido a su velocidad, simplicidad y flexibilidad
+
+This can be accomplished in various ways. For simplicity, we’ll first talk about splitting our dataset into two sets: a training set (typically 70% of the whole dataset) from which the model learns and a test set (the other 30%).
+Esto se puede lograr de varias maneras. Para simplificar, primero hablaremos de dividir nuestro conjunto de datos en dos conjuntos: un conjunto de entrenamiento (generalmente el 70% del conjunto de datos completo) del que aprende el modelo y un conjunto de prueba (el otro 30%).
+
+Because the test set is withheld from the model during training, it can contribute to an unbiased evaluation of how well a model performs on previously unseen data. This protects against overfitting and allows us to evaluate how our model would perform “in the wild” on new data as it emerges.
+Debido a que el conjunto de pruebas se retiene del modelo durante el entrenamiento, puede contribuir a una evaluación imparcial de qué tan bien se desempeña un modelo en datos nunca antes vistos. Esto protege contra el sobreajuste y nos permite evaluar cómo nuestro modelo funcionaría "en la naturaleza" con los nuevos datos a medida que surgen.
+
+* K-fold cross-validation
+
+Systematically create "K" train/test splits and average the results together Even better estimate of out-of-sample performance Runs "K" times slower than train/test split.
+Crea sistemáticamente "K" particiones train/test y promedie los resultados. Mejor estimación del rendimiento fuera de la muestra. Ejecuta tiempos "K" más lentos que la división train/test.
+
+Cross-validation is another antidote for overfitting. Cross-validation involves partitioning data into multiple groups and then training and testing models on different group combinations.
+La validación cruzada es otro antídoto para el sobreajuste. La validación cruzada implica dividir los datos en múltiples grupos y luego entrenar y probar modelos en diferentes combinaciones de grupos.
+
+For example, in a 5-fold cross-validation we would split our transaction data set into five partitions of equal sizes. We would then train our model on four of those five partitions and test our model on the remaining partition. We would then repeat the process—selecting a different partition to be the test group and training a new model on the remaining set of four partitions.
+Por ejemplo, en una validación cruzada de 5 pasadas dividiríamos nuestro conjunto de datos de transacción en cinco particiones de igual tamaño. Luego entrenaríamos nuestro modelo en cuatro de esas cinco particiones y probaremos nuestro modelo en la partición restante. Luego, repetiremos el proceso, seleccionando una partición diferente para que sea el grupo de prueba y entrenando un nuevo modelo en el conjunto restante de cuatro particiones.
+
+We would repeat three more times, for a total of five rounds of cross-validation, one for each fold. We will then have five different models, each having been trained and tested on a different subset of data and each having their own weights and prediction accuracy. At the end, we combine these models by averaging their weights together to estimate a final predictive model.
+Lo repetiríamos tres veces más, para un total de cinco rondas de validación cruzada, uno por cada pasada. Entonces tendremos cinco modelos diferentes, cada uno ha sido entrenado y probado en un subconjunto diferente de datos y cada uno tiene su propio peso y exactitud de predicción. Al final, combinamos estos modelos al promediar sus pesos para estimar un modelo predictivo final.
+
