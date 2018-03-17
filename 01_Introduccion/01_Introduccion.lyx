@@ -103,10 +103,6 @@ key "PDML17"
 \end_inset
 
 .
- 
-\series bold
-\color blue
-[CONSULTAR SI ESTA REFERENCIA ES VÁLIDA, PORQUE ES UNA PAGINA WEB.]
 \end_layout
 
 \begin_layout Standard
@@ -195,11 +191,12 @@ cantidad de ventas
  de la opinión y experiencia del experto; que si bien pueden ser válidos
  se utilizan principalmente en casos donde la proyección es a largo plazo
  o ante carencia de datos históricos 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MCN2011"
+
+\end_inset
+
 .
 \end_layout
 
@@ -239,7 +236,7 @@ key "Sipper1998"
 \end_inset
 
 .
-  Para el sector retail, la mayoría de las empresas puede pronosticar la
+ Para el sector retail, la mayoría de las empresas puede pronosticar la
  demanda total de todos los productos, como un grupo con errores menores
  al 5%, no obstante el pronóstico de la demanda de un producto puede generar
  errores considerablemente mayores 
@@ -353,7 +350,7 @@ Analizar el rendimiento de los distintos clasificadores entrenados.
 \end_layout
 
 \begin_layout Section
-Organización del libro
+Organización del Trabajo Final de Grado
 \end_layout
 
 \begin_layout Standard

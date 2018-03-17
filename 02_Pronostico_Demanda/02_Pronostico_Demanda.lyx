@@ -91,7 +91,17 @@ Pronóstico de la Demanda
 \end_layout
 
 \begin_layout Standard
-La elaboración de pronósticos de ventas precisos es uno de los retos más
+El pronóstico de demanda es una técnica utilizada para estimar la cantidad
+ de bienes o servicios que los consumidores demandarán en el futuro basadas
+ en el conocimiento del pasado, como los datos históricos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chapman2006"
+
+\end_inset
+
+.
+ La elaboración de pronósticos de ventas precisos es uno de los retos más
  importantes en empresas del tipo retail, determinar que sucederá en el
  futuro con el fin de tomar decisiones adecuadas es un problema que se presenta
  con frecuencia 
@@ -165,14 +175,7 @@ key "ADMINCA"
 
 \end_inset
 
- 
-\series bold
-\color green
-[REF]
-\series default
-\color inherit
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -208,12 +211,6 @@ key "M.M.P.A.I.B.B.2010"
 
 \end_inset
 
- 
-\series bold
-\color green
-[REF]
-\series default
-\color inherit
 :
 \end_layout
 
@@ -290,12 +287,6 @@ key "MTPD20017"
 
 \end_inset
 
- 
-\series bold
-\color green
-[REF]
-\series default
-\color inherit
 .
  Otro hecho no deseado a causa de una mala estimación es la ruptura de stock,
  es decir, no disponer de un producto cuando existan clientes interesados
@@ -364,12 +355,6 @@ key "MCA2008"
 
 \end_inset
 
- 
-\series bold
-\color green
-[REF]
-\series default
-\color inherit
 .
 \end_layout
 
@@ -1240,6 +1225,36 @@ MSE=\frac{suma\;de\;los\;cuadrados\;de\;los\;errores\;de\;pronóstico}{número\;
 El resultado de esta última fórmula pone de relieve los errores grandes
  de pronóstico, así como también destaca si el método de pronóstico es preciso.
  Se utiliza como complemento informativo a MAD.
+\end_layout
+
+\begin_layout Section
+Revisión Literaria acerca del pronóstico de la demanda
+\end_layout
+
+\begin_layout Standard
+Los pronósticos de la demanda son de vital importancia para todas las organizaci
+ones de negocios, así como para la toma de decisiones importantes de los
+ gerentes, es una técnica fundamental utilizada para el logro de los objetivos
+ en la decisiones estratégicas y tácticas de la organización y su gestión.
+ El propósito del pronóstico es estimar la cantidad de bienes y servicios
+ que los clientes consumirán en el futuro 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sevgi2017"
+
+\end_inset
+
+.
+ En esta sección se hace una revisión acerca de la literatura existente
+ respecto al pronóstico de la demanda, los métodos de pronósticos utilizados
+ y sus áreas de aplicación.
+\end_layout
+
+\begin_layout Standard
+En el trabajo 
+\series bold
+\color blue
+[REF]
 \end_layout
 
 \begin_layout Section
