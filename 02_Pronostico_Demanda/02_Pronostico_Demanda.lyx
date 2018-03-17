@@ -91,7 +91,7 @@ Pronóstico de la Demanda
 \end_layout
 
 \begin_layout Standard
-El pronóstico de demanda es una técnica utilizada para estimar la cantidad
+El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
  de bienes o servicios que los consumidores demandarán en el futuro basadas
  en el conocimiento del pasado, como los datos históricos 
 \begin_inset CommandInset citation
@@ -101,7 +101,7 @@ key "Chapman2006"
 \end_inset
 
 .
- La elaboración de pronósticos de ventas precisos es uno de los retos más
+ La elaboración de pronósticos de demanda precisos es uno de los retos más
  importantes en empresas del tipo retail, determinar que sucederá en el
  futuro con el fin de tomar decisiones adecuadas es un problema que se presenta
  con frecuencia 
@@ -126,7 +126,6 @@ Administración de Compras
  la cantidad o volumen de productos a adquirir para reponer el stock.
  Es ahí donde entra en juego el pronóstico de la demanda 
 \series bold
-\color blue
 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -136,7 +135,6 @@ key "Adam1991"
 
 
 \series default
-\color inherit
 .
 \end_layout
 
@@ -295,10 +293,10 @@ key "MTPD20017"
  un nivel de stock óptimo, es decir, tener suficiente cantidad para satisfacer
  la demanda sin roturas de stock y por otra parte evitar que haya un exceso
  inútil del mismo.
- Si bien el presente trabajo no está enfocado en medir los costos, lo que
- sí se busca es pronosticar la cantidad o volumen de compra de productos
- de forma eficiente utilizando las herramientas de Business Intelligence
- y Machine Learning para el siguiente periodo de ventas.
+ Si bien el presente trabajo no toma en cuenta los costos asociados al almacenam
+iento, lo que se busca es pronosticar la cantidad o volumen de demanda de
+ productos de forma eficiente utilizando las herramientas de Business Intelligen
+ce y Machine Learning para el siguiente periodo.
 \end_layout
 
 \begin_layout Standard
@@ -420,7 +418,7 @@ Método Delphi: Se basa en identificar un panel de expertos que pueden ser
  Este proceso se repite iterativamente hasta alcanzar un cierto nivel de
  consenso.
  Finalmente los resultados de este panel de expertos sirven de base para
- las decisiones de pronóstico de las personas que deben realizarlo.
+ las decisiones de pronóstico de las gerentes.
 \end_layout
 
 \begin_layout Itemize
@@ -463,7 +461,7 @@ key "MCN2011"
 El pronóstico de la demanda de productos es sólo una aplicación importante
  de estos métodos.
  En otros casos, los pronósticos se podrían utilizar para evaluar los requerimie
-ntos de cantidades tan diversas como las partes de repuestos, el rendimiento
+ntos de cantidades variadas como las partes de repuestos, el rendimiento
  de la producción y las necesidades de personal.
  Las técnicas de pronóstico se usan también frecuentemente para anticipar
  las tendencias económicas a nivel regional, nacional o incluso internacional
@@ -627,7 +625,7 @@ reference "Figura 2.1"
 
 \end_inset
 
-.a muestra una tendencia no lineal; en este caso la serie de tiempo indica
+.a) muestra una tendencia no lineal; en este caso la serie de tiempo indica
  poco crecimiento inicial, luego un periodo de rápido crecimiento y por
  último una estabilización.
  En la figura 
@@ -637,7 +635,7 @@ reference "Figura 2.1"
 
 \end_inset
 
-.b la tendencia lineal decreciente de la gráfica es útil para las series
+.b) la tendencia lineal decreciente de la gráfica es útil para las series
  de tiempo que muestran una declinación constante en el tiempo.
  En la figura 
 \begin_inset CommandInset ref
@@ -646,9 +644,9 @@ reference "Figura 2.1"
 
 \end_inset
 
-.c la línea horizontal en la gráfica representa una serie de tiempo que no
- tiene un aumento o disminución constante en el tiempo, y por tanto no muestra
- tendencia.
+.c) la línea horizontal en la gráfica representa una serie de tiempo que
+ no tiene un aumento o disminución constante en el tiempo, y por tanto no
+ muestra tendencia.
  Generalmente el componente tendencia se debe a factores a largo plazo.
 \begin_inset Float figure
 placement H
@@ -675,7 +673,14 @@ name "Figura 2.1"
 
 \end_inset
 
-Ejemplos del componente tendencia en las series de tiempo.
+Ejemplos del componente tendencia en las series de tiempo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCN2011"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -733,7 +738,14 @@ name "Figura 2.2"
 
 \end_inset
 
-Ejemplo del componente cíclico y de tendencia en las series de tiempo.
+Ejemplo del componente cíclico y de tendencia en las series de tiempo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCN2011"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -783,18 +795,14 @@ Componente irregular
 \end_layout
 
 \begin_layout Standard
-En general, los métodos de series de tiempo se clasifican en: método de
- pronóstico del último valor, método de pronóstico por promedios, método
- de pronóstico de promedio móvil, método de pronóstico por suavizamiento
- exponencial, método de suavizamiento exponencial con tendencia y el método
- ARIMA (Auto Regressive Integrated Moving Average) 
+En general, los métodos de series de tiempo se clasifican en 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
 
 \end_inset
 
-.
+:
 \end_layout
 
 \begin_layout Itemize
@@ -862,10 +870,11 @@ Pronóstico=promedio\;de\;los\;últimos\;n\;valores
 
 \end_inset
 
+donde:
+\end_layout
 
-\shape default
-\size default
-donde 
+\begin_layout Standard
+\align center
 \begin_inset Formula $n=número\;de\;periodos\;más\;recientes$
 \end_inset
 
@@ -890,14 +899,15 @@ Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\lef
 
 \end_inset
 
+donde:
+\end_layout
 
-\shape default
-\size default
-donde 
+\begin_layout Standard
+\align center
 \begin_inset Formula $\alpha$
 \end_inset
 
- (alfa) es una constante entre 0 y 1 llamada 
+es una constante entre 0 y 1 llamada 
 \begin_inset Quotes eld
 \end_inset
 
@@ -906,7 +916,11 @@ constante de suavizamiento
 \end_inset
 
 .
- Para series de tiempo estables es recomendable valores de 
+ 
+\end_layout
+
+\begin_layout Standard
+Para series de tiempo estables es recomendable valores de 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -932,8 +946,7 @@ constante de suavizamiento
 \align left
 El método de suavizamiento exponencial con tendencia: El inconveniente del
  método de pronóstico por suavizamiento exponencial sin tendencia es que
- justamente se retrasa suficiente respecto de la tendencia ya que no lo
- toma en cuenta.
+ justamente se retrasa respecto de la tendencia ya que no lo toma en cuenta.
  Al considerar la tendencia se obtienen pronósticos más precisos.
  Se calcula la pendiente actual de la linea de tendencia para luego ajustar
  el nuevo pronóstico a la pendiente obtenida.
@@ -942,7 +955,7 @@ El método de suavizamiento exponencial con tendencia: El inconveniente del
  u horizontal.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 \noindent
 \align left
 
@@ -958,9 +971,9 @@ Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\lef
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-\noindent
-\align left
+\align block
 
 \shape italic
 \size small
@@ -1005,6 +1018,23 @@ con
 .
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\shape italic
+\color blue
+ARIMA (Auto Regresive Integrated Moving Average): En estadística y econometría,
+ en particular en series temporales, ARIMA es un modelo estadístico que
+ utiliza variaciones y regresiones de datos estadísticos con el fin de encontrar
+ patrones para una predicción hacia el futuro.
+ Se trata de un modelo dinámico de series temporales, es decir, las estimaciones
+ futuras vienen explicadas por los datos del pasado y no por variables independi
+entes.
+ Fue desarrollado a finales de los sesenta del siglo XX.
+ Box y Jenkins (1976) lo sistematizaron
+\end_layout
+
 \begin_layout Subsection
 Pronósticos causales 
 \end_layout
@@ -1013,8 +1043,7 @@ Pronósticos causales
 Ciertamente las series de tiempo se basan en un solo indicador clave, como
  lo es por ejemplo la variable ventas.
  Siguiendo el ejemplo, el objetivo de la serie de tiempo es encontrar un
- valor de pronóstico de la variable ventas a partir de valores pasados de
- la misma variable ventas.
+ valor de pronóstico de la variable ventas a partir de valores pasados.
  Ahora bien, si tenemos dos variables en relación causa-efecto las series
  de tiempo no nos sirven.
 \end_layout
@@ -1044,7 +1073,7 @@ regresión lineal
 \emph default
 .
  El objetivo de este método es encontrar la linea recta que más se aproxime
- a la relación entre la variable dependiente y la/s variables independiente/s.
+ a la relación entre la variable dependiente y la/s variable/s independiente/s.
  Cuando hay una sola variable independiente la forma de la ecuación es la
  de la recta:
 \end_layout
@@ -1180,7 +1209,7 @@ error promedio del pronóstico
 \emph default
 , conocido como 
 \emph on
-Desviación Absoluta Media (MAD)
+Desviación Media Absoluta (MAD - Median Absolute Desviation)
 \emph default
  y que se calcula con la siguiente fórmula:
 \end_layout
@@ -1202,7 +1231,7 @@ MAD=\frac{suma\;de\;los\;errores\;de\;pronóstico}{número\;de\;pronósticos}
 \begin_layout Standard
 Otra forma significativa de medir la precisión es a través del 
 \emph on
-Error Cuadrático Promedio (MSE)
+Error Cuadrático Promedio (MSE - Mean Squared Error)
 \emph default
  y que se calcula de la siguiente forma:
 \end_layout
@@ -1252,9 +1281,14 @@ key "Sevgi2017"
 
 \begin_layout Standard
 En el trabajo 
-\series bold
-\color blue
-[REF]
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Huber2017"
+
+\end_inset
+
+, los autores se enfocan en pronosticar la demanda diaria de productos alimentic
+ios perecederos utilizando el método ARIMA
 \end_layout
 
 \begin_layout Section
@@ -1296,7 +1330,7 @@ key "MCN2011"
  Si bien el presente trabajo también busca encontrar una estimación de pronóstic
 o como lo hacen las técnicas de esta sección, debe quedar claro que la solución
  propuesta es una alternativa distinta, es decir, no se trata de un método
- cuantitativo o cualitativo propiamente dicho, sin embargo toma ciertos
+ cualitativo ni cuantitativo propiamente dicho, sin embargo toma ciertos
  aspectos de ambos y se implementa con conceptos, tecnologías y herramientas
  de solución totalmente diferentes.
 \end_layout

@@ -95,7 +95,7 @@ empresas retail
  puede generar insatisfacción de los clientes y a su vez ésto repercute
  en las utilidades de la empresa.
  Uno de los mayores desafíos en empresas de este sector es pronosticar de
- manera eficiente las ventas para el próximo período comercial 
+ manera eficiente la demanda para el próximo período comercial 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PDML17"
@@ -118,8 +118,8 @@ key "MCN2011"
 .
  Independientemente de la técnica elegida, el problema real de los pronósticos
  es su falta de confiabilidad, ya que por lo general no son precisos, entonces,
- la interrogante que siempre surge es si serán superiores o inferiores a
- la demanda real y en qué medida 
+ la interrogante será siempre si los pronosticos son superiores o inferiores
+ a la demanda real y en que medida 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ADMINCA"
@@ -131,7 +131,7 @@ key "ADMINCA"
 
 \begin_layout Standard
 En consecuencia a lo anterior en el presente trabajo se plantea una nueva
- técnica para estimar los volúmenes de ventas del siguiente período comercial.
+ técnica para estimar los volúmenes de demanda del siguiente período comercial.
  Luego, esta estimación servirá de apoyo en la toma de decisión de la cantidad
  establecida en las órdenes de compras para la reposición de stock.
  En este nuevo enfoque se integran técnicas de Business Intelligence y Machine
@@ -204,12 +204,19 @@ key "MCN2011"
 Otra debilidad de los pronósticos es que no se adaptan, es decir, las herramient
 as de pronósticos existentes en su mayoría utilizan algoritmos genéricos
  con la suposición de que la demanda puede predecirse de igual forma para
- todas las empresas, todas las industrias, todos los productos y ubicación
- geográfica.
+ todas las empresas, todas las industrias, todos los productos y para caulquier
+ ubicación geográfica.
  Este enfoque de algoritmos genéricos obtiene pronósticos que no reflejan
  el impacto de los diferentes factores que afectan a la demanda; de la misma
  forma no se adapta a la evolución del mercado y el comportamiento de los
- consumidores.
+ consumidores 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PDML17"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -221,21 +228,17 @@ La oportunidad que surge es poder implementar una técnica de pronóstico
 \end_layout
 
 \begin_layout Standard
-Como ya se mencionó independientemente de la técnica elegida el problema
- real con los pronósticos es su falta de confiabilidad, ya que por lo general
- no son precisos.
- En consecuencia la interrogante que surge reiteradamente con estos modelos
- es si los resultados serán superiores o inferiores a la demanda real y
- en qué medida.
- Las desviaciones normales del pronóstico en general con respecto a los
- valores reales oscilan entre el 5 y el 40% 
+Como ya se mencionó, cualquiera sea la técnica aplicada el problema con
+ los pronósticos es que generalmente no son precisos.
+ En 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sipper1998"
 
 \end_inset
 
-.
+, los autores mencionan que las desviaciones normales del pronóstico en
+ general con respecto a los valores reales oscilan entre el 5 y el 40%.
  Para el sector retail, la mayoría de las empresas puede pronosticar la
  demanda total de todos los productos, como un grupo con errores menores
  al 5%, no obstante el pronóstico de la demanda de un producto puede generar
@@ -250,7 +253,8 @@ key "MCN2011"
 \end_layout
 
 \begin_layout Standard
-Según un estudio realizado sobre pronósticos de tráfico en proyectos de
+En otros ámbitos, la importancia del pronóstico es de igual relevancia.
+ Según un estudio realizado sobre pronósticos de tráfico en proyectos de
  infraestructura de transporte con una muestra importante que cubrió 210
  proyectos en 14 países con un valor de U$$ 59.000 millones demostró que
  los pronosticadores realizan un trabajo pobre al realizar la estimación
@@ -311,7 +315,7 @@ Objetivo General
 \end_layout
 
 \begin_layout Standard
-El objetivo general y aporte principal del presente trabajo es el siguiente:
+El objetivo general y aporte principal del presente trabajo es:
 \end_layout
 
 \begin_layout Itemize
@@ -325,8 +329,7 @@ Objetivos Específicos
 \end_layout
 
 \begin_layout Standard
-Los objetivos particulares para el logro del objetivo principal son los
- siguientes:
+Los objetivos particulares para el logro del objetivo principal son:
 \end_layout
 
 \begin_layout Itemize
@@ -342,11 +345,11 @@ Realizar el proceso de etiquetado y obtener las instancias de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
-Aplicar técnicas de entrenamiento para los distintos clasificadores.
+Realizar el proceso de entrenamiento con los distintos clasificadores.
 \end_layout
 
 \begin_layout Itemize
-Analizar el rendimiento de los distintos clasificadores entrenados.
+Evaluar el rendimiento de los distintos clasificadores entrenados.
 \end_layout
 
 \begin_layout Section
@@ -372,21 +375,20 @@ El Capítulo 4 se enfoca en los conceptos referentes a Machine Learning.
 
 \begin_layout Itemize
 En el Capítulo 5 se explica el proceso de Business Intelligence para obtener
- los KPI junto con el etiquetado de los datos, el proceso de entrenamiento
- y la selección de los algoritmos clasificadores.
+ los KPI junto con el etiquetado de los datos.
 \end_layout
 
 \begin_layout Itemize
-En el Capítulo 6 se muestran los resultados experimentales y se analiza
- el desempeño de los algoritmos.
- 
+En el Capítulo 6 se desarrolla el proceso de entrenamiento y selección de
+ los algoritmos clasificadores, se muestran los resultados experimentales
+ y se analiza el desempeño de los algoritmos.
 \end_layout
 
 \begin_layout Itemize
-En el Capítulo 7 se extraen las conclusiones generales del trabajo, contrastando
- los objetivos propuestos inicialmente y los resultados obtenidos.
- También se describen las propuestas de trabajos futuros que complementarían
- la técnica propuesta.
+En el Capítulo 7 se extraen las conclusiones generales del trabajo, se contrasta
+n los objetivos propuestos con los resultados obtenidos.
+ Se describen las propuestas de trabajos futuros que complementarían la
+ técnica propuesta.
 \end_layout
 
 \end_body

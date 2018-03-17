@@ -465,6 +465,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename recursos/THE DIGITAL UNIVERSE IN 2020.png
 	scale 70
@@ -695,6 +696,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename recursos/Agentes que aprenden.png
 	scale 70
