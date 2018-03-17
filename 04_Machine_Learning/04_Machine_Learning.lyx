@@ -3450,7 +3450,7 @@ Las métricas de clasificación son las medidas contra las cuales se evalúan
  La tasa de error es sólo la proporción de errores cometidos sobre un conjunto
  de instancias, y mide el rendimiento general del clasificador.
  Por supuesto, lo que nos interesa es el probable desempeño futuro en nuevos
- datos, no el rendimiento pasado sobre datos antiguos.
+ datos, no el rendimiento sobre datos pasados.
 \end_layout
 
 \begin_layout Standard
@@ -3467,10 +3467,7 @@ key "DM2011"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Los datos de entrenamiento son utilizados por uno o más esquemas de aprendizaje
+ Los datos de entrenamiento son utilizados por uno o más esquemas de aprendizaje
  para conocer clasificadores.
  Los datos de validación se utilizan para optimizar los parámetros de los
  clasificadores, o para seleccionar uno determinado.
@@ -3478,13 +3475,17 @@ Los datos de entrenamiento son utilizados por uno o más esquemas de aprendizaje
  error del método final optimizado.
  Cada uno de los tres conjuntos debe ser independiente: El conjunto de validació
 n debe ser diferente del conjunto de entrenamiento para obtener un buen
- desempeño en la etapa de optimización o selección y el conjunto de pruebas
+ desempeño en la etapa de optimización o selección y el conjunto de prueba
  debe ser diferente de ambos para obtener una estimación confiable de la
  tasa de error real.
- Para fines prácticos generalmente se utiliza la metodología de dividir
- los datos en dos conjuntos, el conjunto de entrenamiento y el conjunto
- de prueba, como es el caso del trabajo actual donde se utilizan valores
- por defecto en los parámetros de los clasificadores.
+ 
+\end_layout
+
+\begin_layout Standard
+Por fines prácticos generalmente se utiliza la metodología de dividir los
+ datos en dos conjuntos, el conjunto de entrenamiento y el conjunto de prueba,
+ como es el caso del trabajo actual donde se utilizan valores por defecto
+ en los parámetros de los clasificadores.
 \end_layout
 
 \begin_layout Subsection
@@ -3493,13 +3494,13 @@ Porcentaje de Acierto
 
 \begin_layout Standard
 Porcentaje de instancias correctamente clasificadas o de predicciones correctas.
- La métrica más simple y más común es la precisión.
- La precisión se calcula dividiendo el número de predicciones correctas
+ La métrica más simple y más común es la tasa de acierto.
+ La tasa de acierto se calcula dividiendo el número de predicciones correctas
  entre el número total de predicciones.
- En nuestro ejemplo de modelo de clasificación supervisada de transacciones,
- si probamos nuestro modelo en cien transacciones y predijimos correctamente
- su etiqueta (fraude / no fraude) para noventa y cinco de ellas, entonces
- la precisión de nuestro modelo es del 95%.
+ Por ejemplo, en un modelo de clasificación supervisada para transacciones
+ bancarias, si probamos el modelo en cien transacciones y se predice correctamen
+te la etiqueta (fraude/no fraude) para noventa de ellas, entonces el porcentaje
+ de acierto del modelo es del 90%.
 \end_layout
 
 \begin_layout Subsection
@@ -3507,16 +3508,22 @@ Matriz de confusión
 \end_layout
 
 \begin_layout Standard
-La precisión de clasificación es la métrica de clasificación más fácil de
- entender.
- Pero, no te dice la distribución subyacente de los valores de respuesta,
- ni dice qué "tipos" de errores está haciendo su clasificador.
- La precisión es la medida más simple y comprensible que podemos usar, pero
- no nos gustaría basarnos solo en la precisión porque no distingue entre
- falsos positivos, transacciones incorrectamente clasificadas como fraude
- y falsos negativos, transacciones incorrectamente clasificadas como no
- fraudulentas .
- Para esto, necesitamos una matriz de confusión.
+El porcentaje de acierto es la métrica de clasificación más fácil, simple
+ y entendible que se puede utilizar.
+ Pero no dice sobre la distribución subyacente de los valores de respuesta,
+ ni dice qué "tipos" de errores está cometiendo el clasificador.
+ No distingue entre falsos positivos, transacciones incorrectamente clasificadas
+ como fraude y falsos negativos, transacciones incorrectamente clasificadas
+ como no fraudulentas.
+ Es por eso que se necesita la matriz de confusión.
+\end_layout
+
+\begin_layout Standard
+Una matriz de confusión es una tabla de 2 por 2 que clasifica las predicciones
+ en una de cuatro clasificaciones: verdadero positivo, verdadero negativo,
+ falso positivo y falso negativo.
+ Nuestro modelo de clasificación de transacciones podría generar una matriz
+ de confusión como esta:
 \end_layout
 
 \begin_layout Standard
@@ -3528,40 +3535,60 @@ En problemas de clasificación para aplicaciones reales normalmente los errores
  Los Verdaderos Positivos (True Positive - TP) y Verdaderos Negativos (True
  Negative - TN) son clasificaciones correctas.
  Un Falso Positivo (False Positive - FP) es cuando el resultado se predice
- incorrectamente como sí (o positivo) cuando es realmente no (o negativo).
+ incorrectamente como positivo cuando es realmente negativo.
  Un Falso Negativo (False Negative - FN) es cuando el resultado se predice
  incorrectamente como negativo cuando es realmente positivo.
 \end_layout
 
 \begin_layout Standard
-La matriz de confusión le brinda una imagen más completa de cómo está funcionand
-o su clasificador.
- También le permite calcular varias métricas de clasificación, y estas métricas
- pueden guiar su selección de modelo.
+La matriz de confusión brinda una imagen más completa de cómo está funcionando
+ el clasificador.
+ También permite calcular varias métricas de clasificación y estas métricas
+ pueden guiar la selección del modelo.
  La elección de la métrica depende del objetivo de su negocio.
- Identificar si FP o FN es más importante para reducir.
- Elija una métrica con la variable relevante (FP o FN en la ecuación).
+ Es importante identificar si FP o FN es más relevante reducir, para luego
+ elegir la métrica con la variable relevante (FP o FN en la ecuación).
  Entre las métricas calculadas a partir de una matriz de confusión se encuentran
 :
 \end_layout
 
 \begin_layout Subsubsection
-Exactitud de clasificación (Classification Accuracy)
+Exactitud de clasificación (Classification accuracy)
 \end_layout
 
 \begin_layout Standard
 En general, ¿con qué frecuencia es correcto el clasificador?.
- (TP + TN) / (TP + TN + FP + FN).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Exactitud=\frac{TP+TN}{TP+TN+FP+FN}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-Error de clasificación (Classification Error)
+Error de clasificación (Classification error)
 \end_layout
 
 \begin_layout Standard
 En general, ¿con qué frecuencia el clasificador es incorrecto?.
  También conocido como "Tasa de clasificación incorrecta".
- (FP + FN) / (TP + TN + FP + FN).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Error=\frac{FP+FN}{TP+TN+FP+FN}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3577,7 +3604,8 @@ Cuando el valor real es positivo, ¿con qué frecuencia es correcta la predicci�
 \end_layout
 
 \begin_layout Standard
-TP / Todo positivo.
+Calcula la sensibilidad con respecto a una clase en particular, esto se
+ define como: positivos correctamente clasificados / positivos totales.
 \end_layout
 
 \begin_layout Standard
@@ -3585,7 +3613,14 @@ Todo positivo = TP + FN.
 \end_layout
 
 \begin_layout Standard
-sensitivity = TP / FN + TP.
+\begin_inset Formula 
+\begin{equation}
+Sensibilidad=\frac{TP}{TP+FN}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3600,19 +3635,22 @@ Cuando el valor real es negativo, ¿con qué frecuencia es correcta la predicci�
 \end_layout
 
 \begin_layout Standard
-TN / Todo negativo.
-\end_layout
-
-\begin_layout Standard
 Todo negativo = TN + FP.
 \end_layout
 
 \begin_layout Standard
-specificity = TN / (TN + FP)
+\begin_inset Formula 
+\begin{equation}
+Especificidad=\frac{TN}{TN+FP}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-Tasa de falsos positivos (False Positive Rate)
+Tasa de falsos positivos (False positive rate)
 \end_layout
 
 \begin_layout Standard
@@ -3622,6 +3660,17 @@ a?
 
 \begin_layout Standard
 false_positive_rate = FP / TN + FP = 1 - specificity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Tasa\:de\:falsos\:positivos=\frac{FP}{TN+FP}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3635,12 +3684,41 @@ Cuando se predice un valor positivo, ¿con qué frecuencia es correcta la
 \end_layout
 
 \begin_layout Standard
-precision = TP / TP + FP
+Calcula la precisión con respecto a una clase en particular, esto se define
+ como: positivos correctamente clasificados / total predicho como positivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Presición=\frac{TP}{TP+FP}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
-Many other metrics can be computed: F1 score, Matthews correlation coefficient,
- etc.
+Medida F (F-measure)
+\end_layout
+
+\begin_layout Standard
+La Medida F es una medida de la exactitud de una prueba.
+ La Medida F puede interpretarse como un promedio ponderado de la precisión
+ y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
+ Se define como: 2 * Recall * Precision / (Recall + Precision).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -3697,68 +3775,6 @@ Donde:
  es la probabilidad hipotética de acuerdo al azar utilizando los datos observado
 s para calcular las probabilidades de que cada observador clasifique aleatoriame
 nte cada categoría.
-\end_layout
-
-\begin_layout Subsubsection
-Sensibilidad (Recall)
-\end_layout
-
-\begin_layout Standard
-Calcula la sensibilidad con respecto a una clase en particular, esto se
- define como: positivos correctamente clasificados / positivos totales.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Recall=\frac{TP}{TP+FN}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Precisión (Precision)
-\end_layout
-
-\begin_layout Standard
-Calcula la precisión con respecto a una clase en particular, esto se define
- como: positivos correctamente clasificados / total predicho como positivo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Precision=\frac{TP}{TP+FP}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Puntuación-F (F-Measure)
-\end_layout
-
-\begin_layout Standard
-La Puntuación-F es una medida de la exactitud de una prueba.
- La Puntuación-F puede interpretarse como un promedio ponderado de la precisión
- y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
- Se define como: 2 * Recall * Precision / (Recall + Precision).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-F-Measure=\frac{2*Recall*Precision}{\left(Recall+Precision\right)}
-\end{equation}
-
-\end_inset
-
-
 \end_layout
 
 \end_body
