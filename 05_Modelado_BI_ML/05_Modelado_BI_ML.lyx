@@ -94,22 +94,9 @@ key "KIM92"
 
 .
  Uno de los principales problemas con los que se enfrentan las empresas
- retail
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Una empresa retail es cualquier comercio que vende sus productos al consumidor
- final, desde un supermercado a una tienda de barrio, desde un negocio de
- electrodomésticos a una franquicia textil, ya sea con cientos de puntos
- de venta o con un solo establecimiento.
-\end_layout
-
-\end_inset
-
-, trata acerca de pronosticar la demanda, es decir, determinar la cantidad
- de productos que se deben disponer para satisfacer la demanda de los clientes
- en el siguiente periodo.
+ retail, trata acerca de pronosticar la demanda, es decir, determinar la
+ cantidad de productos que se deben disponer para satisfacer la demanda
+ de los clientes en el siguiente periodo.
  Utilizando los conceptos y herramientas de Business Intelligence, se parte
  con el análisis de una fuente de información auténtica obtenida de una
  empresa retail; se diseña el datawarehouse que será poblado con información
@@ -404,12 +391,20 @@ Dimensión Cajas:
 \end_layout
 
 \begin_layout Standard
-En la siguiente figura observamos un ejemplo del modelo en esquema estrella
- de la tabla de hechos Detalles.
+En figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Hechos_detalles 5.1"
+
+\end_inset
+
+ observamos un ejemplo del modelo en esquema estrella de la tabla de hechos
+ Detalles.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -430,8 +425,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Hechos_detalles 5.1"
 
-\lang english
+\end_inset
+
 Tabla de hechos Detalles
 \end_layout
 
@@ -446,7 +445,7 @@ Tabla de hechos Detalles
 \end_layout
 
 \begin_layout Subsection
-Definición de los Indicadores Claves de Rendimiento (KPI)
+Definición de los Indicadores Claves de Rendimiento
 \end_layout
 
 \begin_layout Standard
@@ -480,8 +479,9 @@ Ticket Medio.
 \begin_layout Standard
 Es la cantidad media por cada transacción de venta que se realiza de un
  determinado producto.
- El indicador viene determinado por dos variables: La cantidad total vendida
- del producto y el total de tickets en las que fue vendido el producto.
+ El indicador viene determinado por dos variables: a) la cantidad total
+ vendida del producto, b) el total de tickets en las que fue vendido el
+ producto.
  Aplicando la siguiente fórmula obtenemos el valor de la cantidad media
  de venta para cada producto.
 \end_layout
@@ -489,7 +489,7 @@ Es la cantidad media por cada transacción de venta que se realiza de un
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=\frac{\sum\left(Cantidad\right)}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
+X\,=\frac{Cantidad\,Vendida\,Periodo}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
 \end{equation}
 
 \end_inset
@@ -510,7 +510,7 @@ La cifra de ventas es un KPI que sirve para explicar el importe total de
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=\sum\left(Precio*Cantidad\right)\label{eq: Cifra de Ventas}
+X\,=Precio*Cantidad\,Vendida\,Periodo\label{eq: Cifra de Ventas}
 \end{equation}
 
 \end_inset
@@ -531,7 +531,7 @@ Es la razón entre el precio de venta y precio de costo del producto, es
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=\frac{\sum\left(\left(Precio-Costo\right)*Cantidad\right)}{\sum\left(Precio*Cantidad\right)}*100\label{eq:Margen Comercial}
+X\,=\frac{\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo}{Precio*Cantidad\,Vendida\,Periodo}*100\label{eq:Margen Comercial}
 \end{equation}
 
 \end_inset
@@ -553,7 +553,7 @@ Este indicador mide la cantidad de veces que el stock del producto se renueva
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=\frac{\sum\left(Total\,Ventas\,Periodo\right)}{\left(\frac{Stock\,Inicial\,-Stock\,Final}{2}\right)}\label{eq:Rotación Stock}
+X\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,-Stock\,Final}{2}\right)}\label{eq:Rotación Stock}
 \end{equation}
 
 \end_inset
@@ -575,7 +575,7 @@ El indicador mide la rentabilidad obtenida por la empresa basada en el margen
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X=\left(\sum\left(Precio-Costo\right)*Cantidad\right)*Rotacion\,Stock\label{eq:Coeficiente Rentabilidad}
+X=\left(\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo\right)*Rotacion\,Stock\label{eq:Coeficiente Rentabilidad}
 \end{equation}
 
 \end_inset
@@ -643,7 +643,7 @@ reference "fig:5-2"
 
 \end_inset
 
-se puede observar un extracto de los valores obtenidos para un producto
+ se puede observar un extracto de los valores obtenidos para un producto
  por el rango de tiempo semanal.
 \end_layout
 
@@ -663,7 +663,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_SEMANAL.png
-	scale 22
+	scale 40
 
 \end_inset
 
@@ -725,7 +725,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_QUINCENAL.png
-	scale 22
+	scale 40
 
 \end_inset
 
@@ -787,7 +787,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_MENSUAL.png
-	scale 22
+	scale 40
 
 \end_inset
 
@@ -858,7 +858,6 @@ name "tab:un cuadro flotante"
 
 
 \series bold
-\lang english
 RANGO KPI TICKET MEDIO
 \end_layout
 
@@ -985,7 +984,6 @@ name "tab:un cuadro flotante-1"
 
 
 \series bold
-\lang english
 RANGO KPI CIFRA VENTAS (%)
 \end_layout
 
@@ -1112,7 +1110,6 @@ name "tab:un cuadro flotante-2"
 
 
 \series bold
-\lang english
 RANGO KPI MARGEN COMERCIAL (%)
 \end_layout
 
@@ -1239,7 +1236,6 @@ name "tab:un cuadro flotante-3"
 
 
 \series bold
-\lang english
 RANGO KPI ROTACIÓN STOCK
 \end_layout
 
@@ -1366,7 +1362,6 @@ name "tab:un cuadro flotante-4"
 
 
 \series bold
-\lang english
 RANGO KPI COBERTURA STOCK
 \end_layout
 
@@ -1566,7 +1561,6 @@ name "tab:un cuadro flotante-4-1"
 
 
 \series bold
-\lang english
 TABLA DE ETIQUETADO POR EL EXPERTO
 \end_layout
 
@@ -1971,8 +1965,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang english
 Etiquetado de KPI del periodo semanal
 \end_layout
 

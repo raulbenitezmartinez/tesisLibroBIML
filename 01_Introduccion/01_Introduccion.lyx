@@ -87,6 +87,19 @@ En las
 \shape italic
 empresas retail
 \shape default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Una empresa retail es cualquier comercio que vende sus productos al consumidor
+ final, desde un supermercado a una tienda de barrio, desde un negocio de
+ electrodomésticos a una franquicia textil, ya sea con cientos de puntos
+ de venta o con un solo establecimiento.
+\end_layout
+
+\end_inset
+
  o de ventas minoristas uno de los principales problemas con que se enfrentan
  es el manejo eficiente del stock de manera a evitar tener los productos
  en exceso en los depósitos que incurran en sobrecostos.

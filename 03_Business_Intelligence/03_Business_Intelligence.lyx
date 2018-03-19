@@ -1350,6 +1350,8 @@ name "Cuadro:3.1"
 \begin_layout Plain Layout
 \noindent
 
+\series bold
+\shape italic
 \size small
 Áreas de aplicación de BI
 \end_layout
@@ -1362,6 +1364,8 @@ name "Cuadro:3.1"
 \begin_layout Plain Layout
 \noindent
 
+\series bold
+\shape italic
 \size small
 Casos de uso
 \end_layout
