@@ -170,8 +170,7 @@ Tabla de Ventas Detalle
  detalle está relacionado a un registro de la tabla venta cabecera.
  Contiene datos de la fecha, el producto, precio de costo unitario, precio
  de venta unitario, cantidad, importe grabado, importe del impuesto entre
- otros datos, la tabla cuenta con 981.402 detalles de ventas registrados
- en el periodo mencionado previamente.
+ otros datos, la tabla cuenta con 981.402 detalles de ventas registrados.
 \end_layout
 
 \begin_layout Itemize
@@ -213,12 +212,12 @@ Datos del proveedor con valores nulos, los cuales eran completados con un
 \end_layout
 
 \begin_layout Itemize
-Artículos con datos de costo nulo, en tales casos los valores eran asignados
+Artículos con valores de costo nulo, en tales casos los valores eran asignados
  con un costo promedio tomados de la tabla de Ventas Detalle.
 \end_layout
 
 \begin_layout Itemize
-Artículos con datos donde el costo eran mayores al precio de venta unitario,
+Artículos con valores donde el costo eran mayor al precio de venta unitario,
  en dichos casos los datos fueron completados con el costo promedio tomados
  de la tabla de Ventas Detalle.
 \end_layout
@@ -284,9 +283,8 @@ Tablas de hechos
 
 \begin_layout Standard
 De las tablas transaccionales se definen 3 tablas de hechos a partir de
- las cuales se definen y obtienen los valores de los KPI que luego se utilizarán
- para el modelado de la solución propuesta.
- 
+ las cuales se obtienen los valores de los KPI que se utilizan en la solución
+ propuesta.
 \end_layout
 
 \begin_layout Itemize
@@ -353,9 +351,9 @@ Dimensión Fecha:
 Dimensión Productos:
 \series default
  La tabla de dimensión producto está relacionada a las tablas de hechos
- Detalles y Stock, contiene los atributos o campos (ej.: nombre del producto)
- por la cual se pueden filtrar o agrupar datos al realizar consultas sobre
- la tabla de hechos.
+ Detalles y Stock.
+ Contiene los atributos o campos (ej.: nombre del producto) por las cuales
+ se pueden filtrar o agrupar datos.
 \end_layout
 
 \begin_layout Itemize
@@ -364,9 +362,9 @@ Dimensión Productos:
 Dimensión Proveedores:
 \series default
  La tabla de dimensión proveedores está relacionada a la tabla de hechos
- Detalles, contiene los atributos o campos (ej.: nombre del proveedor) por
- la cual se puede filtrar o agrupar datos al realizar consultas sobre la
- tabla de hechos.
+ Detalles.
+ Contiene los atributos o campos (ej.: nombre del proveedor) por las cuales
+ se pueden realizar filtros o agrupaciones de datos.
 \end_layout
 
 \begin_layout Itemize
@@ -375,9 +373,9 @@ Dimensión Proveedores:
 Dimensión Clientes:
 \series default
  La tabla de dimensión Clientes está relacionada a las tablas de hechos
- Cabecera y Detalles, contiene los atributos o campos (ej.: nombre del cliente)
- por la cual se pueden filtrar o agrupar datos al realizar consultas sobre
- la tabla de hechos.
+ Cabecera y Detalles.
+ Contiene los atributos o campos (ej.: nombre del cliente) por las cuales
+ se pueden hacer consultas de datos.
 \end_layout
 
 \begin_layout Itemize
@@ -385,9 +383,9 @@ Dimensión Clientes:
 \series bold
 Dimensión Cajas:
 \series default
- La tabla de dimensión Cajas está relacionada a la tabla de hechos Cabecera,
- contiene los atributos o campos (ej.: número de caja) por la cual se pueden
- filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+ La tabla de dimensión Cajas está relacionada a la tabla de hechos Cabecera.
+ Contiene los atributos o campos (ej.: número de caja) por las cuales se
+ pueden filtrar o agrupar datos.
 \end_layout
 
 \begin_layout Standard
@@ -413,7 +411,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/DER_BI_DW_FACT_DETALLES.png
-	scale 35
+	scale 50
 	rotateOrigin center
 
 \end_inset
@@ -451,7 +449,7 @@ Definición de los Indicadores Claves de Rendimiento
 \begin_layout Standard
 En el marco de este trabajo, en esta sección se definen los KPIs y se obtienen
  los valores que serán utilizados como datos de entrada en las herramientas
- de aprendizaje automático para el modelado de una solución para pronosticar
+ de aprendizaje automático para el desarrollo de una técnica para pronosticar
  la demanda y que servirá de apoyo en la toma de decisiones para la reposición
  de stock del siguiente periodo
 \begin_inset CommandInset citation
@@ -461,15 +459,19 @@ key "CMR13"
 \end_inset
 
  (Ej.: cantidad a comprar para satisfacer la demanda de la siguiente semana,
- quincena, o mes), los KPIs definidos mas adelante fueron adaptados a la
- solución planteada debido a que en los textos consultados los KPI engloban
- a toda la organización en áreas como compras, ventas, marketing, recursos
- humanos y otros.
+ quincena, o mes).
+ 
+\end_layout
+
+\begin_layout Standard
+Los KPIs definidos fueron adaptados a la solución planteada debido a que
+ en los textos consultados los KPI engloban a toda la organización en áreas
+ como compras, ventas, marketing, recursos humanos y otros.
  Cada KPI mide un valor obtenido de los datos históricos almacenados en
  el datawarehouse.
- El cálculo de cada valor se realiza para cada producto y en un periodo
- de tiempo (semanal, quincenal o mensual), es decir, cada producto tendrá
- un valor distinto para cada uno de los KPI citados a continuación.
+ El cálculo de cada KPI se realiza por cada producto y periodo de tiempo
+ (semanal, quincenal o mensual).
+ A continuación se definen los KPIs
 \end_layout
 
 \begin_layout Paragraph
@@ -489,7 +491,7 @@ Es la cantidad media por cada transacción de venta que se realiza de un
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=\frac{Cantidad\,Vendida\,Periodo}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
+TM\,=\frac{Cantidad\,Vendida\,Periodo}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
 \end{equation}
 
 \end_inset
@@ -510,7 +512,7 @@ La cifra de ventas es un KPI que sirve para explicar el importe total de
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=Precio*Cantidad\,Vendida\,Periodo\label{eq: Cifra de Ventas}
+CV\,=Precio*Cantidad\,Vendida\,Periodo\label{eq: Cifra de Ventas}
 \end{equation}
 
 \end_inset
@@ -531,7 +533,7 @@ Es la razón entre el precio de venta y precio de costo del producto, es
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=\frac{\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo}{Precio*Cantidad\,Vendida\,Periodo}*100\label{eq:Margen Comercial}
+MC\,=\frac{\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo}{Precio*Cantidad\,Vendida\,Periodo}*100\label{eq:Margen Comercial}
 \end{equation}
 
 \end_inset
@@ -553,7 +555,7 @@ Este indicador mide la cantidad de veces que el stock del producto se renueva
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,-Stock\,Final}{2}\right)}\label{eq:Rotación Stock}
+RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
 \end{equation}
 
 \end_inset
@@ -575,7 +577,7 @@ El indicador mide la rentabilidad obtenida por la empresa basada en el margen
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X=\left(\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo\right)*Rotacion\,Stock\label{eq:Coeficiente Rentabilidad}
+CR=\left(\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo\right)*RS\label{eq:Coeficiente Rentabilidad}
 \end{equation}
 
 \end_inset
@@ -596,7 +598,7 @@ Este indicador muestra el periodo de tiempo (habitualmente se expresa en
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X\,=\frac{Stock\,Actual}{Promedio\,Cantidad\,Venta\,Ultimos\,3\,Periodos}\label{eq:Cobertura Stock}
+CS\,=\frac{Stock\,Actual\,Periodo}{Promedio\,Cantidad\,Venta\,Ultimos\,N\,Periodos}\label{eq:Cobertura Stock}
 \end{equation}
 
 \end_inset
@@ -605,21 +607,19 @@ X\,=\frac{Stock\,Actual}{Promedio\,Cantidad\,Venta\,Ultimos\,3\,Periodos}\label{
 \end_layout
 
 \begin_layout Subsection
-Cálculo de valores para los Indicadores Clave de Desempeño.
+Obtención de los valores para los Indicadores Clave de Rendimiento.
 \end_layout
 
 \begin_layout Standard
-Definidos los KPI a ser utilizados, se procede a obtener los valores de
- cada KPI para cada producto y periodo de los datos almacenados en las tablas
- de hechos del datawarehouse, para ello las fórmulas descritas en la sección
- anterior se codifican a sentencias SQL y los resultados obtenidos de la
- ejecución fueron almacenamos en una tabla.
- Además de los valores de los KPI, en cada registro adicionalmente se guarda
- la información de la cantidad, fecha, año, mes, quincena y semana.
+Se obtiene los valores de KPI por cada producto y periodo, mediante codificación
+ de sentencias SQL que operan sobre los datos almacenados en el datawarehouse,
+ y todos los resultados obtenidos de la ejecución se almacenan en una tabla.
+ En dicha tabla además de los valores de KPI, en cada registro se guarda
+ adicionalmente información de cantidad, fecha, año, mes, quincena y semana.
  Durante el cálculo de los valores de los KPI se establecieron ciertas restricci
-ones, si un producto no fue vendido durante un número consecutivo de periodos
- esta era descartada, ya que los cálculos para cada KPI daban como resultado
- un valor cero, el cual no tiene relevancia para el modelado.
+ones, como por ejemplo si un producto no fue vendido durante un número consecuti
+vo de periodos entonces era descartado, ya que los cálculos para cada KPI
+ daban como resultado un valor cero, el cual no tiene relevancia.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -643,7 +643,7 @@ reference "fig:5-2"
 
 \end_inset
 
-se puede observar un extracto de los valores obtenidos para un producto
+ se puede observar un extracto de los valores obtenidos para un producto
  por el rango de tiempo semanal.
 \end_layout
 
@@ -663,7 +663,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_SEMANAL.png
-	scale 40
+	scale 43
 
 \end_inset
 
@@ -725,7 +725,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_QUINCENAL.png
-	scale 40
+	scale 42
 
 \end_inset
 
@@ -787,7 +787,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_MENSUAL.png
-	scale 40
+	scale 42
 
 \end_inset
 
@@ -1954,7 +1954,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/5_semanal.png
-	scale 50
+	scale 80
 
 \end_inset
 

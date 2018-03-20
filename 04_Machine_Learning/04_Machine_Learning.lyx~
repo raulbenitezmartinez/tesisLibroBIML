@@ -3475,6 +3475,17 @@ te la etiqueta (fraude/no fraude) para noventa de ellas, entonces el porcentaje
  de acierto del modelo es del 90%.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Aciertos=\frac{Nro\,Predicciones\,Correctas}{Número\,Total\,Predicciones}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Matriz de confusión
 \end_layout

@@ -110,7 +110,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
-	scale 35
+	scale 60
 
 \end_inset
 
@@ -433,7 +433,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/cross_kappa_mensual.png
-	scale 40
+	scale 65
 
 \end_inset
 
@@ -471,7 +471,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/aciertos_cross.png
-	scale 50
+	scale 70
 
 \end_inset
 
