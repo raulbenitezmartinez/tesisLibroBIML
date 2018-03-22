@@ -613,9 +613,11 @@ Obtención de los valores para los Indicadores Clave de Rendimiento.
 \begin_layout Standard
 Se obtiene los valores de KPI por cada producto y periodo, mediante codificación
  de sentencias SQL que operan sobre los datos almacenados en el datawarehouse,
- y todos los resultados obtenidos de la ejecución se almacenan en una tabla.
- En dicha tabla además de los valores de KPI, en cada registro se guarda
- adicionalmente información de cantidad, fecha, año, mes, quincena y semana.
+ y todos los resultados obtenidos de la ejecución se almacenan en una tabla
+ base.
+ En dicha tabla base además de los valores de KPI, en cada registro se guarda
+ adicionalmente información de cantidad, fecha, año, mes, quincena, semana
+ y periodo.
  Durante el cálculo de los valores de los KPI se establecieron ciertas restricci
 ones, como por ejemplo si un producto no fue vendido durante un número consecuti
 vo de periodos entonces era descartado, ya que los resultados para algunos
@@ -623,12 +625,17 @@ vo de periodos entonces era descartado, ya que los resultados para algunos
 \end_layout
 
 \begin_layout Subsubsection*
-PERIODOS DE TIEMPO
+PERIODOS DE ANÁLISIS
 \end_layout
 
 \begin_layout Standard
-Agrupamos el conjunto de los valores de los KPI de cada producto en 3 periodos
- de tiempo: semanal, quincenal y mensual.
+De la tabla base donde se almacenan los valores obtenidos de los KPI, por
+ la columna 
+\shape italic
+periodo
+\shape default
+ se pueden agrupar los registros en los tres periodos de análisis: semanal,
+ quincenal y mensual.
 \end_layout
 
 \begin_layout Paragraph*
@@ -643,13 +650,18 @@ reference "fig:5-2"
 
 \end_inset
 
- se puede observar un extracto de los valores obtenidos para un producto
- por el rango de tiempo semanal.
-\end_layout
+ se puede observar un extracto de los valores de la tabla base agrupados
+ por periodo semanal para un determinado producto.
+ Por ejemplo, el primer registro corresponde al producto con Id 133, periodo
+ 'S' (semanal), semana 49, mes 12 y año 2013, observamos que para el KPI
+ Rotación de Stock según la fórmula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Rotación Stock"
 
-\begin_layout Standard
-El campo SEMANA se completa de acuerdo al periodo calculado, en el campo
- PERIODO, se guarda el valor S para semanal.
+\end_inset
+
+ se obtuvo un valor 0,769230.
 \end_layout
 
 \begin_layout Standard
@@ -680,7 +692,7 @@ name "fig:5-2"
 
 \end_inset
 
-Tabla de Valores KPI Semanal
+Ejemplo de valores KPI para un periodo semanal
 \end_layout
 
 \end_inset
@@ -705,13 +717,18 @@ reference "fig:5-3"
 
 \end_inset
 
- se puede observar un extracto de los valores obtenidos para un producto
- por el rango de tiempo quincenal.
-\end_layout
+ se puede observar un extracto de los valores de la tabla base agrupados
+ por periodo quincenal para un determinado producto.
+ Por ejemplo, el primer registro corresponde al producto con Id 133, periodo
+ 'Q' (quincenal), quincena 23, mes 12 y año 2013, observamos que para el
+ KPI Cobertura de Stock según la fórmula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Cobertura Stock"
 
-\begin_layout Standard
-El campo QUINCENA se completa de acuerdo al periodo calculado, en el campo
- PERIODO, se guarda el valor Q para quincenal.
+\end_inset
+
+ se obtuvo un valor de 1,2.
 \end_layout
 
 \begin_layout Standard
@@ -742,7 +759,7 @@ name "fig:5-3"
 
 \end_inset
 
-Tabla de Valores KPI Quincenal
+Ejemplo de valores KPI para un periodo quincenal
 \end_layout
 
 \end_inset
@@ -767,13 +784,18 @@ reference "fig:5-4"
 
 \end_inset
 
- se puede observar un extracto de los valores obtenidos para un producto
- por el rango de tiempo mensual.
-\end_layout
+ se puede observar un extracto de los valores de la tabla base agrupados
+ por periodo mensual para un determinado producto.
+ Por ejemplo, el primer registro corresponde al producto con Id 133, periodo
+ 'M' (mensual), mes 12 y año 2013, observamos que para el KPI Margen Comercial
+ según la fórmula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Margen Comercial"
 
-\begin_layout Standard
-El campo MES se completa para todos los casos del periodo calculado, en
- el campo PERIODO, se guarda el valor M para mensual.
+\end_inset
+
+ se obtuvo un valor 23619,047619.
 \end_layout
 
 \begin_layout Standard
@@ -804,7 +826,7 @@ name "fig:5-4"
 
 \end_inset
 
-Tabla de Valores KPI Mensual
+Ejemplo de valores KPI para un periodo mensual
 \end_layout
 
 \end_inset
@@ -822,21 +844,78 @@ Asignación de etiquetas
 \end_layout
 
 \begin_layout Standard
-A cada tupla de valores KPI obtenidos para cada producto se le debe asignar
- una etiqueta, el cual es uno de los puntos focales más importantes para
- el modelado mediante el aprendizaje automático.
- Para una mayor fiabilidad esta asignación de etiquetas debe ser realizada
- y revisada por el experto del área de compras (que podría ser el gerente
- de administración de compras u otra persona a cargo de la reposición de
- stock), sin embargo para el presente trabajo el etiquetado fue realizado
- en forma empírica, sin la intervención de un experto por la dificultad
- de contar con una persona especializada en el área.
- La estrategia utilizada para el etiquetado es de la siguiente manera:
+A cada tupla de KPI se le debe asignar una sola etiqueta de entre las siguientes
+ 
+\shape italic
+
+\begin_inset Quotes eld
+\end_inset
+
+Nada
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Poco
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Medio
+\begin_inset Quotes erd
+\end_inset
+
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+Mucho
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ El etiquetado es uno de los puntos focales para el aprendizaje automático.
+ 
 \end_layout
 
 \begin_layout Standard
-Para cada KPI se definen un rango de valores y se asigna una letra (a, b,
- c ,d, e, f, g, h, i, ..., u) de acuerdo al valor obtenido.
+Para una mayor fiabilidad esta asignación de etiquetas debe ser realizada
+ y revisada por el experto del área de compras (que podría ser el gerente
+ de administración de compras u otra persona a cargo de la reposición de
+ stock), es decir, el experto debería analizar los KPI por cada tupla y
+ tomar la decisión en base a sus conocimientos y experiencia el volumen
+ de compra apropiado para la reposición de stock para el siguiente periodo.
+ Por ejemplo si el experto escoge la etiqueta 
+\shape italic
+Nada
+\shape default
+ para una tupla dada, significa que el considera no realizar ninguna compra
+ para el siguiente periodo.
+\end_layout
+
+\begin_layout Standard
+Para el presente trabajo el etiquetado fue realizado en forma empírica,
+ sin la intervención de un experto por la dificultad de contar con una persona
+ especializada en el área.
+ La estrategia para el etiquetado se basa en los siguientes pasos:
+\end_layout
+
+\begin_layout Subsubsection*
+Paso 1:
+\end_layout
+
+\begin_layout Standard
+Para cada KPI se define una tabla con un rango de valores, luego de acuerdo
+ al valor calculado para dicho KPI se le asigna una determinada letra.
+ A continuación mostramos la tabla de rangos para cada KPI.
 \end_layout
 
 \begin_layout Standard
@@ -1489,12 +1568,20 @@ u
 
 \end_layout
 
+\begin_layout Subsubsection*
+Paso 2: 
+\end_layout
+
 \begin_layout Standard
-Una vez asignado las letras 
+Posteriormente cada tupla queda definida por un conjunto de 5 letras, luego
+ a cada combinación de letras se asignó de forma empírica una de las posibles
+ etiquetas 
+\shape italic
+
 \begin_inset Quotes eld
 \end_inset
 
-a
+Nada
 \begin_inset Quotes erd
 \end_inset
 
@@ -1502,7 +1589,7 @@ a
 \begin_inset Quotes eld
 \end_inset
 
-b
+Poco
 \begin_inset Quotes erd
 \end_inset
 
@@ -1510,36 +1597,28 @@ b
 \begin_inset Quotes eld
 \end_inset
 
-c
+Medio
 \begin_inset Quotes erd
 \end_inset
 
-, 
+ o 
 \begin_inset Quotes eld
 \end_inset
 
-d
+Mucho
+\shape default
+
 \begin_inset Quotes erd
 \end_inset
 
-, 
-\begin_inset Quotes eld
+ denotado en el cuadro 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:un cuadro flotante-4-1"
+
 \end_inset
 
-e
-\begin_inset Quotes erd
-\end_inset
-
- hasta 
-\begin_inset Quotes eld
-\end_inset
-
-u
-\begin_inset Quotes erd
-\end_inset
-
- se busca la combinación de letras correspondientes en la tabla de etiquetado
- realizado por el experto y se asigna el valor de la etiqueta correspondiente.
+.
 \end_layout
 
 \begin_layout Standard
@@ -1929,19 +2008,15 @@ Nada
 \end_layout
 
 \begin_layout Standard
-Una vez finalizado el etiquetado de la totalidad de las tuplas de KPI por
- cada producto y periodo, lo resultados son exportados a archivos con extensión
- csv, para cada producto se crea 3 archivos, uno por cada periodo (semanal,
- quincenal, mensual) que tiene como nombre el Identificador del producto
- y que contiene los valores de los resultados para los KPI.
- Estos archivos son los datos que sirven como entrada para crear el modelo
- de pronóstico para la reposición de stock mediante algoritmos de aprendizaje
- automático.
-\end_layout
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Ejemplo-de-etiquetado 5.5"
 
-\begin_layout Standard
-En la figura a continuación un ejemplo del etiquetado para los valores de
- los KPI correspondientes al periodo semanal.
+\end_inset
+
+ se muestra un extracto del etiquetado para un periodo semanal.
+ La última columna contiene las etiquetas como resultado del proceso.
 \end_layout
 
 \begin_layout Standard
@@ -1965,7 +2040,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Etiquetado de KPI del periodo semanal
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Ejemplo-de-etiquetado 5.5"
+
+\end_inset
+
+Ejemplo de etiquetado para periodo semanal.
 \end_layout
 
 \end_inset
