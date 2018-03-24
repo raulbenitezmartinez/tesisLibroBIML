@@ -95,8 +95,14 @@ Se describirá cómo es la implementación del proceso de aprendizaje automátic
 \end_layout
 
 \begin_layout Standard
-Para resumir la técnica propuesta, en la siguiente figura se ilustra el
- mapa mental general.
+Para resumir la técnica propuesta, en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6.1"
+
+\end_inset
+
+ se ilustra el esquema general de la solución.
 \end_layout
 
 \begin_layout Standard
@@ -110,7 +116,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
-	scale 60
+	scale 50
 
 \end_inset
 
@@ -118,7 +124,13 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Mapa mental general 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.1"
+
+\end_inset
+
+Esquema general de solución 
 \end_layout
 
 \end_inset
@@ -142,12 +154,12 @@ La salida de Business Intelligence provee tres conjuntos de datos independientes
 \end_layout
 
 \begin_layout Itemize
-Períodos Mensuales: Se analizaron 309 productos diferentes y por cada producto
+Períodos Mensuales: Se analizaron 309 productos diferentes, y por cada producto
  se tiene un máximo de 34 instancias.
  Cada instancia tiene los siguientes atributos: Ticket Medio, Cifra de Ventas,
  Margen Comercial, Rotación de Stock, Coeficiente de Rentabilidad, Cobertura
  de Stock, Cantidad, Año, Mes.
- La clase de cada instancia está definido por 
+ La clase de cada instancia está definida por 
 \begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
 \end_inset
 
@@ -155,12 +167,12 @@ Períodos Mensuales: Se analizaron 309 productos diferentes y por cada producto
 \end_layout
 
 \begin_layout Itemize
-Períodos Quincenales: Se analizaron 228 productos diferentes y por cada
+Períodos Quincenales: Se analizaron 228 productos diferentes, y por cada
  producto se tiene un máximo de 68 instancias.
  Cada instancia tiene los siguientes atributos: Ticket Medio, Cifra de Ventas,
  Margen Comercial, Rotación de Stock, Coeficiente de Rentabilidad, Cobertura
  de Stock, Cantidad, Año, Quincena.
- La clase de cada instancia está definido por 
+ La clase de cada instancia está definida por 
 \begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
 \end_inset
 
@@ -168,12 +180,12 @@ Períodos Quincenales: Se analizaron 228 productos diferentes y por cada
 \end_layout
 
 \begin_layout Itemize
-Períodos Semanales: Se analizaron 127 productos diferentes y por cada producto
+Períodos Semanales: Se analizaron 127 productos diferentes, y por cada producto
  se tiene un máximo de 151 instancias.
  Cada instancia tiene los siguientes atributos: Ticket Medio, Cifra de Ventas,
  Margen Comercial, Rotación de Stock, Coeficiente de Rentabilidad, Cobertura
  de Stock, Cantidad, Año, Semana.
- La clase de cada instancia está definido por 
+ La clase de cada instancia está definida por 
 \begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
 \end_inset
 
@@ -219,11 +231,11 @@ Entrenamiento y evaluación
 \begin_layout Standard
 Como se mencionó en el esquema general de procesamiento, el entrenamiento
  y testeo se realiza con todos los algoritmos de clasificación posibles,
- para ello se utiliza la herramienta WEKA y los algoritmos de clasificación
- que implementa según la tabla 
+ para ello se utiliza la herramienta WEKA y sus algoritmos de clasificación
+ según la tabla 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "tab:algoritmosWekaVsReales"
+reference "tab:Clasificadores-Weka"
 
 \end_inset
 
@@ -249,8 +261,14 @@ Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
 \end_layout
 
 \begin_layout Standard
-En el siguiente pseudocódigo se presenta la estrategia de aprendizaje y
- selección de los clasificadores.
+En el algorimo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pseudocódigo-clasificacion"
+
+\end_inset
+
+ se presenta la estrategia de aprendizaje y selección de los clasificadores.
 \end_layout
 
 \begin_layout LyX-Code
@@ -265,7 +283,6 @@ status open
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 for cada período de análisis {mensual,quincenal,semanal}:
 \end_layout
 
@@ -273,7 +290,6 @@ for cada período de análisis {mensual,quincenal,semanal}:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 for cada producto con sus instancias:
 \end_layout
 
@@ -281,21 +297,18 @@ for cada producto con sus instancias:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 establecer conjunto de entrenamiento;
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 establecer conjunto de testeo;
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 for cada algoritmo de clasificación:
 \end_layout
 
@@ -303,21 +316,18 @@ for cada algoritmo de clasificación:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 construir clasificador (conjunto de entrenamiento);
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 evaluar clasificador (conjunto de testeo);
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 obtener métricas de evaluación;
 \end_layout
 
@@ -325,28 +335,24 @@ obtener métricas de evaluación;
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 endfor;
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 criterios de línea de base (ZeroR, criterios del experto u otro);
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 seleccionar mejor clasificador (max(Kappa));
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 guardar clasificador;
 \end_layout
 
@@ -354,7 +360,6 @@ guardar clasificador;
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 endfor;
 \end_layout
 
@@ -362,7 +367,6 @@ endfor;
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 endfor;
 \end_layout
 
@@ -372,6 +376,12 @@ endfor;
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Pseudocódigo-clasificacion"
+
+\end_inset
+
 Pseudocódigo para el proceso de clasificación.
  
 \end_layout
@@ -391,7 +401,7 @@ La evaluación se hace por el método Stratified k-fold Cross Validation para
  un valor de k igual a 10 y las métricas de desempeño consideradas son el
  
 \shape italic
-Porcentaje de Aciertos
+Porcentaje de Acierto
 \shape default
  y la 
 \shape italic
@@ -403,7 +413,24 @@ Estadística Kappa
  de clasificación.
  Se considera que también puede resultar conveniente que el experto en compras
  establezca su propio criterio de línea de base, como puede ser un umbral
- mínimo de porcentaje de aciertos aceptado.
+ mínimo de porcentaje de acierto aceptado.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+\color blue
+[GRAFICO ZERO-R] COMPARATIVO CON GRAFICO DE LINEAS ENTRE LOS ACIERTOS DE
+ NUETROS ALGORITMOS Y LA LINEA BASE ZERO-R
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size large
+\color blue
+[GRAFICO SESGO Y VARIANZA]
 \end_layout
 
 \begin_layout Standard
@@ -413,13 +440,19 @@ Por cada producto y período de análisis se elige como clasificador aquel
 Kappa
 \shape default
 .
- En la siguiente figura se muestra como quedó la distribución de clasificadores
- para períodos mensuales.
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6.2"
+
+\end_inset
+
+ se muestra como quedó la distribución de clasificadores para períodos mensuales.
  Por ejemplo, el clasificador 
 \shape italic
 Logistic
 \shape default
- resultó una mejor solución para 149 productos.
+ resultó una mejor solución para 149 productos para periodos mensuales.
 \end_layout
 
 \begin_layout Standard
@@ -433,7 +466,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/cross_kappa_mensual.png
-	scale 60
+	scale 65
 
 \end_inset
 
@@ -441,6 +474,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.2"
+
+\end_inset
+
 Conteo de clasificadores para período mensual.
 \end_layout
 
@@ -455,9 +494,15 @@ Conteo de clasificadores para período mensual.
 \end_layout
 
 \begin_layout Standard
-Se puede observar en la siguiente gráfica de barras que la técnica propuesta
- alcanza altos porcentajes de aciertos en promedio, tanto para periodos
- mensuales, quincenales como semanales.
+Se puede observar en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6.3"
+
+\end_inset
+
+ que la técnica propuesta alcanza altos porcentajes de aciertos en promedio,
+ tanto para periodos mensuales, quincenales como semanales.
 \end_layout
 
 \begin_layout Standard
@@ -471,7 +516,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/aciertos_cross.png
-	scale 60
+	scale 70
 
 \end_inset
 
@@ -479,6 +524,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.3"
+
+\end_inset
+
 Promedio de porcentaje de aciertos para los tres períodos de análisis.
 \end_layout
 
@@ -498,13 +549,12 @@ Como se trata de una prueba exhaustiva, por cada producto se intenta con
  Stratified 10-fold Cross Validation.
  Estas métricas de desempeño preliminares dan indicio de que la técnica
  propuesta en este trabajo puede alcanzar altos grados de confiabilidad.
- Obtener buenos resultados depende en gran medida de que los valores de
- 
+ Obtener buenos resultados depende en gran medida de que la obtención de
+ valores de 
 \shape italic
 KPI
 \shape default
- hayan sido obtenidos correctamente y también que el etiquetado haya sido
- realizado por un experto en compras.
+ y la asignación de etiquetas hayan sido realizadas correctamente.
 \end_layout
 
 \begin_layout Subsection
@@ -512,8 +562,15 @@ Cómo hacer las predicciones
 \end_layout
 
 \begin_layout Standard
-En el siguiente pseudocódigo se muestra el mecanismo para obtener el pronóstico
- de la demanda en un ambiente de producción.
+En el algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:6.2"
+
+\end_inset
+
+ se muestra el mecanismo para obtener el pronóstico de la demanda en un
+ ambiente de producción.
 \end_layout
 
 \begin_layout LyX-Code
@@ -528,7 +585,6 @@ status open
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 for cada próximo período a pronosticar {mensual,quincenal,semanal}:
 \end_layout
 
@@ -536,7 +592,6 @@ for cada próximo período a pronosticar {mensual,quincenal,semanal}:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 for cada producto:
 \end_layout
 
@@ -544,28 +599,24 @@ for cada producto:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 obtener KPIs del período actual finalizado;
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 ejecutar su mejor clasificador (KPIs);
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 obtener etiqueta {nada,poco,medio,mucho}
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 extrapolar a valores continuos(criterio experto);
 \end_layout
 
@@ -573,7 +624,6 @@ extrapolar a valores continuos(criterio experto);
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 endfor;
 \end_layout
 
@@ -581,7 +631,6 @@ endfor;
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 endfor;
 \end_layout
 
@@ -591,6 +640,12 @@ endfor;
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:6.2"
+
+\end_inset
+
 Pseudocódigo para el proceso de pronóstico de la demanda.
  
 \end_layout
@@ -606,7 +661,7 @@ Pseudocódigo para el proceso de pronóstico de la demanda.
 \end_layout
 
 \begin_layout Standard
-Como se mencionó anteriormente, el modelo propuesto arroja como resultado
+Como se mencionó anteriormente, la técnica propuesta arroja como resultado
  un valor discreto 
 \begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
 \end_inset
@@ -615,7 +670,8 @@ Como se mencionó anteriormente, el modelo propuesto arroja como resultado
  Luego en función de la etiqueta resultante, del tipo de producto y del
  período seleccionado, el experto extrapola a un valor continuo que representa
  la cantidad en la orden de compra.
- El significado de las etiquetas varía 
+ El significado de las etiquetas también varía en función del tipo de producto.
+ 
 \end_layout
 
 \begin_layout Section

@@ -2046,7 +2046,7 @@ name "fig:Ejemplo-de-etiquetado 5.5"
 
 \end_inset
 
-Ejemplo de etiquetado de KPI del periodo semanal
+Ejemplo de etiquetado para periodo semanal.
 \end_layout
 
 \end_inset
@@ -2060,7 +2060,7 @@ Ejemplo de etiquetado de KPI del periodo semanal
 \end_layout
 
 \begin_layout Section
-Resumen de la sección
+Resumen
 \end_layout
 
 \begin_layout Standard
@@ -2070,6 +2070,62 @@ s en el dataware y el etiquetado a cada tupla de valores KPI, estos datos
  serán utilizados como un conjunto de entrenamiento por los algoritmos de
  aprendizaje automático del cual se obtendrá un modelo de solución al problema
  de estudio planteado de pronóstico de la demanda.
+\end_layout
+
+\begin_layout Standard
+——————————————
+\end_layout
+
+\begin_layout Standard
+Sintetizando el capítulo se puede resumir que el modelado del problema se
+ basa en tres grandes procesos: a) proceso de Business Intelligence y sus
+ etapas b) proceso de obtención de KPI y c) proceso de etiquetado.
+\end_layout
+
+\begin_layout Standard
+El proceso de Business Intelligence abarcó tres de sus principales etapas,
+ 1) el acceso a las fuentes de información, 2) el proceso de extracción,
+ transformación y carga de los datos obtenidos de la fuente de origen y
+ 3) el diseño y construcción del datawarehouse.
+ El acceso a la fuente de información de los datos no representó mayores
+ inconvenientes, el proceso consistió en restaurar en un servidor local
+ el backup de los datos de la empresa que proporcionó la información.
+ Durante el ETL se tuvo que identificar las columnas de las tablas relevantes
+ para la 
+\shape italic
+extracción
+\shape default
+ que posteriormente generan las métricas de las tablas de hechos, los problemas
+ encontrados en esta etapa se dieron por ciertas inconsistencias de datos,
+ valores vacíos y datos nulos los cuales fueron corregidos en la 
+\shape italic
+transformación
+\shape default
+ y posterior 
+\shape italic
+carga
+\shape default
+ de los datos al datawarehouse.
+ Para construir el datawarehouse el trabajo clave consistió en definir las
+ tablas de hechos que sirven de base para el calculo de los KPI junto con
+ sus principales dimensiones utilizando el esquema estrella.
+\end_layout
+
+\begin_layout Standard
+En el proceso de obtención de KPI, el principal trabajo fue la selección
+ de los KPI relevantes en las áreas de negocios ventas y productos.
+ Debido a que en la literatura los KPI miden los procesos de negocios a
+ un nivel de generalización donde se ven a los productos como un todo, las
+ fórmulas fueron adaptadas de modo que las mediciones fueron bajadas a un
+ nivel de productos individuales.
+\end_layout
+
+\begin_layout Standard
+El en etiquetado, lo esencial es contar con la participación de un experto
+ en administración en compras con conocimientos y capacidad de interpretación
+ de KPI.
+ En este proceso se simula al experto mediante un conjunto de reglas para
+ indicar la etiqueta a cada tupla de KPI.
 \end_layout
 
 \end_body
