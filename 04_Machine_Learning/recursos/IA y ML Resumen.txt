@@ -1105,6 +1105,6 @@ Recently policy-based methods such as actor-critic and value-function-less metho
 	- Sarsa: On-Policy TD Control*
 	- Q-learning: Off-Policy TD Control* 
 	- Actor-Critic Methods*
-	- R-Learning for Undiscounted Continual Tasks 
+	- R-Learning for Undiscounted Continual Tasks*
 	
 ***Los métodos de programación dinámica requieren de un modelo completo del entorno. Los métodos de Monte Carlo no requieren de un modelo y son conceptualmente simples, pero no son adecuados para el cálculo incremental paso a paso. Los métodos de diferencia temporal no requieren modelo y son completamente incrementales, pero son más complejos de analizar.
