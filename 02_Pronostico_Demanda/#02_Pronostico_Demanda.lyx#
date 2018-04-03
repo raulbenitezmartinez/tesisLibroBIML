@@ -1020,11 +1020,12 @@ con
 
 \end_deeper
 \begin_layout Itemize
-Auto Regressive Integrated Moving Average (ARIMA): Es una generalización
+Auto-Regressive Integrated Moving Average (ARIMA): Es una generalización
  de Autoregressive Moving Average (ARMA), que combina procesos autoregresivos
- (Autoregressive, AR) y procesos de media móvil (Moving Average, MA) creando
+ (Autoregressive, AR) y procesos de media móvil (Moving Average, MA) y crea
  así un modelo compuesto de series de tiempo.
- ARIMA (p, d, q) captura los siguientes elementos 
+ Como indica el acrónimo, ARIMA (p, d, q) captura los elementos claves siguiente
+s 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Siami-Namini2018"
@@ -1055,7 +1056,7 @@ MA: Promedio móvil.
 \end_layout
 
 \begin_layout Standard
-En econometría, los pronósticos de series de tiempo se aplican tradicionalmente
+Los pronósticos de series de tiempo se aplican tradicionalmente en econometría
  utilizando modelos ARIMA, generalizado por Box y Jenkins 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1064,8 +1065,8 @@ key "Box1973"
 \end_inset
 
 .
- ARIMA es un método estándar para el pronóstico de series de tiempo y habituales
- en el modelado de series temporales económicas y financieras.
+ ARIMA es un método estándar para el pronóstico de series de tiempo y muy
+ habituales en el modelado de series de tiempo económicas y financieras.
 \end_layout
 
 \end_deeper

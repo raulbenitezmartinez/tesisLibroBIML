@@ -1055,7 +1055,7 @@ MA: Promedio móvil.
 \end_layout
 
 \begin_layout Standard
-En econometría, los pronósticos de series de tiempo se aplican tradicionalmente
+Los pronósticos de series de tiempo se aplican tradicionalmente en econometría
  utilizando modelos ARIMA, generalizado por Box y Jenkins 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1064,8 +1064,8 @@ key "Box1973"
 \end_inset
 
 .
- ARIMA es un método estándar para el pronóstico de series de tiempo y habituales
- en el modelado de series temporales económicas y financieras.
+ ARIMA es un método estándar para el pronóstico de series de tiempo y muy
+ habituales en el modelado de series temporales económicas y financieras.
 \end_layout
 
 \end_deeper
