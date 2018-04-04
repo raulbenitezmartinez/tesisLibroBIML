@@ -1,0 +1,154 @@
+002_INVESTIGACION LITERARIA SOBRE LA ESTIMACION DE LA DEMANDA DE NEGOCIOS.PDF
+-----------------------------------------------------------------------------
+{
+	ABSTRACT
+		Las empresas deben comprender los eventos correctamente y producir soluciones apropiadas en el marco de un buen plan para proteger y desarrollar su situación actual. Para las empresas, la posibilidad de sobrevivir es paralela a la precisión de estas predicciones en un entorno de competencia cada vez mayor. De acuerdo con esta idea, el pronóstico de la demanda tiene una importancia vital para todas las empresas. El propósito del pronóstico es predecir situaciones en el futuro, utilizando diferentes datos y técnicas, y tomar medidas con anticipación. La previsión de la demanda es determinar el nivel de demanda de un producto o de algunos productos de una empresa durante un tiempo específico en el futuro. Hay muchos métodos utilizados para pronosticar la demanda que son críticos para las empresas. En este estudio, explicó los métodos de previsión de la demanda y realizó una encuesta bibliográfica.
+	
+	INTRODUCCION
+	
+		La estimación se puede expresar como el análisis de los resultados de eventos pasados y viendo de antemano las consecuencias de eventos futuros. En general, las estimaciones a largo, mediano y corto plazo se utilizan para tomar decisiones estratégicas y operativas. Es muy importante que estas estimaciones hechas en términos de negocios sean precisas. Para que las estimaciones sean precisas y saludables, deben basarse en bases de trabajo científico. Con base en estimaciones, es necesario hacer estas estimaciones lo más cerca posible de los objetivos y la situación del negocio, ya que se preparará un cronograma de producción en el que se prepararán las instalaciones, el personal, los materiales y las capacidades existentes. Se puede decir que se necesitan estimaciones para que la planificación y el control se puedan llevar a cabo de manera efectiva
+
+		La previsión de demanda es la actividad más fundamental utilizada para alcanzar objetivos a corto, mediano y largo plazo en las decisiones estratégicas y tácticas de la empresa y su gestión. Con una previsión efectiva de la demanda, se reduce el conflicto entre los requisitos estratégicos y operativos de las manos, mientras que las funciones empresariales se mueven hacia un beneficio óptimo con un costo mínimo.
+		
+		Dado que el objetivo principal de las empresas es producir y comercializar productos y servicios para satisfacer la demanda de productos en el mercado, las empresas operan para satisfacer la demanda del consumidor. El pronóstico de la demanda es la estimación de la demanda futura de bienes y servicios producidos por la empresa. Previsiones de demanda de datos básicos para la determinación de materias primas, repuestos, productos semi acabados, maquinaria, energía humana y necesidades de inversión. El hecho de que todo el trabajo a realizar en las empresas de producción depende de la cantidad de demanda que se genera.
+		
+		Hay una serie de métodos existentes utilizados para hacer pronósticos de demanda. En este estudio, se pretende realizar un estudio de la literatura haciendo referencia a los métodos de previsión de la demanda existentes y a los estudios de previsión de la demanda.
+		
+	1. ¿QUÉ ES EL PRONÓSTICO DE LA DEMANDA Y PARA QUÉ SE UTILIZA?	
+	
+		La demanda muestra la cantidad que los compradores desean comprar, por unidad, por unidad de tiempo en cada nivel de precio, suponiendo que las cosas no hayan cambiado. La demanda es aproximadamente la medida de la disposición de las personas a comprar un producto que se cree que se producirá. (1) La estimación puede definirse como la determinación de lo que ocurrirá en el futuro en una serie temporal de una variable (Türksay, 1995).
+	
+		El pronóstico de demanda es la función de estimar la cantidad de bienes y servicios que los consumidores demandarán en el futuro. Esta estimación es la base para determinar el nivel de producción del negocio. Se interpreta según las estimaciones de demanda qué producto se producirá, qué cantidad demandarán los consumidores de este producto y la probabilidad de que esta demanda ocurra en su mayoría. Los métodos cuantitativos y cualitativos se utilizan en la predicción de la demanda. La previsión de demanda cualitativa consiste en métodos basados en el conocimiento y la experiencia del estimador. Los métodos de predicción de demanda cuantitativa consisten en métodos basados en análisis de series de tiempo y técnicas basadas en la relación causal (Çagil, 1997).
+	
+		Akyildiz (2004) afirma que la previsión de la demanda es una actividad que requiere determinar la cantidad de bienes o servicios que los clientes necesitarán en el futuro y que las funciones de comercialización, producción y logística se llevan a cabo de manera efectiva. Además, las previsiones de demanda se comercializarán para determinar las demandas de los clientes, las estrategias de promoción y el tamaño de la fuerza de ventas; planificación de la producción; proporcionando orientación sobre logística en la que los productos deberían almacenarse en qué cantidades y dónde deberían transportarse según la demanda.
+	
+		A pesar de que el pronóstico de la demanda se realiza de acuerdo con ciertos principios y métodos, se puede decir que las estimaciones de demanda realizadas tienen un cierto grado de precisión y que ninguna estimación tiene un grado de precisión del 100%.
+	
+		Los atributos del producto y el método de demanda afectan el tipo de pronóstico que se realizará y el período de tiempo que cubrirán. Si la demanda del producto es generalmente estable, el período de tiempo estimado puede mantenerse un poco más corto. Si hay fluctuaciones en la demanda del producto, el pronóstico debe cubrir al menos un período. Si se espera una tendencia a largo plazo, es necesario hacer un pronóstico más largo. Para algunos productos, los valores de demanda disminuyen o se multiplican según las estaciones. En tales casos, es necesario determinar la causa de los cambios estacionales en la demanda y utilizar los métodos de pronóstico estacional. (Acar, 1999).
+	
+		Las estimaciones de demanda generalmente se basan en cuatro periodos. Estos períodos son: (Tekin, 1996).
+			- Pronósticos muy cortos: puede haber pronósticos diarios y semanales. Control de piezas de repuesto, control de inventario, reordenamiento, se puede hacer para preparar el programa de trabajo.
+			- Estimaciones a corto plazo: estimaciones de 1 semana a 6 meses. La cantidad apropiada de la orden puede determinarse para fines de ajuste de la maquinaria y el trabajo.
+			- Estimaciones a mediano plazo: las estimaciones se realizan por un período de 6 meses y 5 años. Se pueden hacer para planificar compras de materiales con un período de suministro incierto o largo, para preparar presupuestos de capital y efectivo.
+			- Estimaciones a largo plazo: estimaciones hechas durante 5 años. Las inversiones en instalaciones pueden realizarse con fines de planificación de capital.
+		
+		Se pueden explicar los principios importantes a considerar en los pronósticos de demanda (Acar, 1998).
+			- Las estimaciones para grupos que son grandes en términos de cantidad o variedad son más precisos.
+			- La precisión aumenta a medida que el intervalo de tiempo cubierto por las previsiones se acorta.
+			- Cada estudio de estimación de demanda debe incluir una tasa de error aceptable.
+			- El método utilizado debe probarse antes de proceder a aplicar los resultados de cualquier estudio de estimación de la demanda.
+			
+	2. ETAPAS DE PREDICCIÓN DE DEMANDA
+	
+		La previsión de la demanda se lleva a cabo básicamente en cinco etapas. Estos pasos:
+		
+		1. Determinación de Factores afectivos: Antes de determinar el pronóstico de demanda, es necesario determinar el entorno en el que se encuentra, qué productos produce, la situación actual de la empresa y la situación futura que desea alcanzar, la situación de los competidores, la relación precio / demanda, cambios económicos, cambios industriales, desarrollo tecnológico, Se deben determinar los factores que afectan la demanda, tales como las tendencias internacionales y sus ponderaciones (Bolt, 1994)
+		
+		2. Recolección de datos: se recopilarán datos que serán esenciales para el plan considerando los factores de la demanda. Los datos generalmente consisten en datos reales pasados, probabilidades estadísticas y datos objetivo. Los recursos internos, la encuesta de la empresa y la investigación del pronóstico, los datos estadísticos publicados, las encuestas publicadas y los datos económicos pueden utilizarse en la compilación de los datos (Bolt, 1994).
+		
+		3. Determinación del período de pronóstico de la demanda: Existe una estrecha relación entre el propósito de los resultados de la encuesta de demanda y la duración del período. Por ejemplo, el uso a largo plazo de estimaciones semanales puede dar resultados muy engañosos (Tekin, 1996).
+		
+		4. Elección del método de pronóstico: el pronóstico de la demanda es un problema muy complejo que depende de los factores ambientales e internos. Los métodos objetivo y subjetivo se pueden usar como método de previsión de demanda. Los métodos objetivos son métodos basados en datos estadísticos y matemáticos. Los métodos subjetivos son métodos basados en juicio e inteligencia, más que en datos matemáticos. El método de pronóstico de demanda ideal es una mezcla de métodos objetivos y subjetivos. (Bolt, 1994).
+		
+		5. Investigación de la validez de los resultados de la estimación: los resultados de la estimación deben compararse con los valores reales y el error debe determinarse sistemáticamente.
+		
+	3. MÉTODOS DE PRONÓSTICO DE DEMANDA
+	
+		Los métodos de estimación se pueden agrupar en tres grupos principales: métodos de estimación basados en inteligencia artificial y cuantitativa. Si bien los métodos cualitativos se basan principalmente en opiniones personales, los métodos cuantitativos se basan en cálculos matemáticos. Se pueden utilizar métodos basados en la inteligencia artificial, que hacen imposible resolver estructuras de datos más complicadas en los casos en que estos métodos de estimación convencionales no son suficientes.
+	
+		a. Métodos Cualitativos de Pronósticos de Demanda		
+			Las técnicas de estimación cualitativa, también llamadas técnicas "subjetivas" o "basadas en criterios", usan la capacidad humana principalmente para predecir y generalizar (Viglioni, 2007).
+			Las estimaciones cualitativas son estimaciones emocionales, personales o judiciales, y no utilizan métodos científicos basados en datos. Es por eso que el rendimiento del pronóstico es bajo.
+			
+		b. Métodos cuantitativos
+			Las técnicas de estimación cuantitativa nos permiten calcular matemáticamente las estimaciones de datos futuros utilizando datos pasados. Se pueden hacer estimaciones utilizando técnicas cuantitativas en las siguientes situaciones:
+			
+			- Cuando la información histórica está disponible.
+			- La información se puede medir matemáticamente.
+			
+			También podemos tratar de estimar la continuidad de lo que hemos podido predecir en el pasado que la evidencia estandarizada continuará en el futuro (Viglioni, 2007).
+			
+		c. Métodos basados en Inteligencia Artificial
+			La Inteligencia Artificial se trata de simular sistemas naturales como humanos y animales usando instrumentos hechos por humanos como computadoras y robots. Este método implica conocer cómo se puede representar la información para que pueda almacenarse en la memoria de la computadora, y en particular en información incierta e indefinida, y esta información puede deducirse automáticamente. También incluye cómo tomar decisiones sobre la base de información almacenada, cómo crear planes de acción y cómo manejar información que se puede procesar en una computadora por ejemplo o cuestionando a expertos humanos (Kruse, Borgelt, 2002).
+			
+		d. Medición de precisión del pronóstico de la demanda
+			Cualquiera sea el método que se use, no hay una estimación exacta del 100%. Si el futuro es 100% conocido, de todos modos no es "adivinar". Por esta razón, es necesario aceptar una tasa de error específica desde el principio. Hay docenas de modelos diferentes desarrollados para predecir movimientos futuros. Las ventajas de cada modelo son únicas y al mismo tiempo tienen desventajas al mismo tiempo (Kayim, 1986)
+			
+			Se pueden usar muchos criterios para evaluar la efectividad del método de pronóstico. El más importante de estos criterios es la precisión de la predicción. La precisión del método de predicción se mide al analizar los errores de predicción. El error de predicción es la diferencia entre el valor real observado y el valor estimado. El error de pronóstico para cualquier período t es el siguiente
+			
+				Ver la formulas en el libro (1.1)
+		
+	4. REVISIÓN DE LITERATURA
+	
+		La previsión de la demanda es una cuestión de importancia estratégica que se utiliza en muchas áreas, como la planificación de la producción, el control y la gestión de la producción, y para las empresas. Con respecto al Pronóstico de Demanda, se han producido desarrollos significativos desde la década de 1960, y cada día se prueban más y más métodos nuevos. Para reflejar al menos parte de los desarrollos experimentados durante este período, algunos de los trabajos de previsión de la demanda realizados por métodos estadísticos, tanto a nivel nacional como en el extranjero, se resumen a continuación (Karahan, 2011: 4).
+		
+		Muchos investigadores han enfatizado que las estimaciones juegan un papel importante en la vida comercial práctica y que los factores gerenciales deben ser explorados en el desarrollo y la implementación de muchos modelos modelados (Friedes, 2006; Makridakis, 1996; Winklhofer et al., 1996).
+		
+		Podemos enumerar los métodos de estimación comúnmente utilizados de la siguiente manera (Akar, 2005): 
+		
+			1. Análisis de series de tiempo
+			2. Modelo de usuario final.
+			3. Estimado por porcentajes incrementales promedio.
+			4. Modelos econométricos
+			5. Análisis de regresión
+			6. Redes neuronales artificiales
+			
+		Matuyama et al. (2008) desarrollaron una vista periódica del sistema de inventario utilizando dos fórmulas de estimación diferentes con dos políticas de retroalimentación diferentes en el estudio que llevaron a cabo para los casos en que se conoce el nivel de inventario pero la demanda no es segura. Dado el cambio en el nivel de inventario durante el período, pueden determinar la cantidad de la orden con la ecuación de la diferencia. De acuerdo con los resultados del estudio, la retroalimentación está ganando importancia si la demanda en el futuro cercano se acerca al valor esperado. Por otro lado, si la demanda está exactamente en el valor esperado, la importancia de la retroalimentación también está disminuyendo.
+		
+		Fildes et al. (2008) intentaron determinar si la tasa de error se redujo al estimar los resultados de cualquier estimación basada en computadora en el estudio que estaban realizando, y mediante intervenciones críticas y correctivas de expertos en planificación. Ya sea que los datos preparados del sistema hagan predicciones más precisas o las estimaciones mejoradas de opinión de expertos están examinando la hipótesis de que surgirán resultados más precisos. En el estudio, cuatro empresas de cadena de suministro fueron examinadas e intentaron determinar cómo mejorar la experiencia en la estimación de sistemas informáticos, y al final del estudio llegaron a la conclusión de que la efectividad de la visión temporal depende del éxito del sector al que sirve la empresa y del equipo que realiza la mejora.
+		
+		Kirby (1966) compara los métodos de predicción de la demanda estadística a corto y mediano plazo, y en la práctica de producción de máquinas de coser Singer, realizó un estudio de previsión de demanda utilizando 23 series diferentes que consisten en datos de ventas de 7,5 años de diferentes máquinas de coser de 5 países diferentes. En el estudio, los métodos de mínimos cuadrados se usaron en suavización exponencial, promedios móviles y análisis de series de tiempo. El resultado del estudio es que el análisis de tendencias y el suavizamiento exponencial con estacionalidad arrojan mejores resultados. En el estudio, se determinó que la precisión predictiva variaba con las características de los datos y con el período de tiempo corto, mediano y largo en el que se realizó la estimación.
+		
+		Carlson y Umble (1980) utilizaron el método de análisis de regresión múltiple como técnica de estimación en el estudio de cinco tipos diferentes de automóviles en las categorías estándar y de automóviles de lujo en América para determinar el pronóstico de la demanda para los próximos cinco años. En el estudio, se determinó que los precios de la gasolina, los efectos de la gasolina en el mercado, los precios de los automóviles, los ingresos de los consumidores y las huelgas de los trabajadores de la industria automotriz estadounidense son factores influyentes.
+		
+		Akbay et al. (1999) estudio se había hecho, la demanda de productos alimenticios en Turquía se estima que en el estudio, llevado a cabo un estudio para estimar el modelo Tobit. Los resultados del estudio proporcionan información importante para las empresas que producen jugo concentrado. A la luz de esta información, cuando las empresas quieren aumentar las demandas del mercado, el grupo de edad de 12-17 años debe centrarse en los consumidores y, especialmente aquellos con un alto nivel educativo deben tratar de cambiar sus actitudes negativas hacia el producto.
+		
+		Gavcar et al. (1999) lo han hecho "Determinación del tipo de cartón papel- previsión de la demanda utilizado en Turquía" en la investigación, la fábrica de papel SEKA en el futuro se producirá en 8 diferentes productos de papel han hecho las previsiones de demanda probables. El pronóstico de la demanda en el estudio se realizó mediante análisis de regresión múltiple y la relación entre las variables se determinó mediante el análisis de correlación. índice de precios de bienes totales de productos de papel e industria de impresión, cantidades de importación y exportación, Producto Nacional Bruto (PIB) y factores de población son tomados en consideración.
+		
+		En su disertación doctoral, Chen (2000) seleccionó tres de los parques nacionales estadounidenses para muestrear solicitudes de turismo y entretenimiento, y realizó estimaciones de la demanda, como el número de visitantes de estos parques. En el estudio, el método ARIMA, que es uno de los métodos de estimación estadística, se comparó con los otros métodos estadísticos y se observó que el método ARIMA produjo estimaciones más precisas que los otros métodos y también realizó estimaciones altas según datos anuales y estacionales.
+		
+		Zhoumcmahon et al. (2002) utilizaron el método de análisis de series de tiempo para estimar la demanda futura de agua utilizando los datos del consumo de agua diario a seis años del sistema australiano de suministro de agua de la región de Melbourne.
+		
+		En su trabajo, Cahow (2004) estimó la demanda de enfermeras con enfermedades crónicas tratadas en el hogar usando métodos de simulación de Regresión múltiple y Monte Carlo. El estudio mostró estimaciones de los datos obtenidos de las encuestas de salud y jubilación, que aumentarán rápidamente en los EE. UU. Hasta 2025.
+		
+		En un estudio titulado "Producción general y planificación financiera para organizaciones integradas de pollos", Satir y Köksal (2006) realizaron una aplicación de predicción de demanda con el modelo ARIMA a partir de los métodos de análisis de series temporales para 90 tipos de productos producidos por la organización utilizando datos de una producción integrada de pollos. De acuerdo con los resultados de la investigación, se encontró que el modelo era satisfactorio y se concluyó que algunos arreglos pequeños también podrían usarse en otras organizaciones integradas de pollos.
+		
+		Lin et al. (2009) compararon el rendimiento estimado del modelo de series de tiempo con un modelo estadístico recientemente desarrollado en el estudio de estimación de la demanda de turismo médico y los ingresos de pacientes extranjeros en Taylan. Los resultados de la investigación muestran que el nuevo modelo, que se desarrolla, tiene un mejor rendimiento que el modelo de análisis de series de tiempo en términos de la probabilidad de generar errores. El estudio proporcionó predicciones importantes para los administradores internacionales de turismo médico.
+		
+		Xu et al. (2010) estudiaron la demanda de materiales que se necesitan inmediatamente después de un desastre natural; han utilizado los métodos estadísticos y econométricos tradicionales, como la regresión lineal y ARMA en la estimación de los materiales necesarios en el proceso de primeros auxilios inmediatamente después de los desastres naturales. Este estudio ha tenido éxito en la predicción de la demanda de productos agrícolas en el período de desastre después de la tormenta invernal china en 2008.
+		
+		Griffiths et al. (2010) han estimado algunas incertidumbres utilizando la información que obtuvieron de cinco estados diferentes de Australia Occidental en el modelo de Regresión y la estimación de la productividad local del trigo. Los datos de precipitación de los períodos anteriores se recopilaron para el trabajo de estimación en el estudio y el trabajo de estimación se realizó mediante el modelo de regresión.
+		
+		Sun et al. (2010) realizaron el estudio de previsión de la demanda de los clientes de la industria de la construcción naval. Los resultados de la investigación muestran que, a pesar de algunas incertidumbres, las estimaciones son bastante consistentes y confiables.
+		
+		Hay muchos estudios de estimación sobre redes neuronales artificiales en la literatura. El primer trabajo de predicción con redes neuronales artificiales es estimar el clima. Más tarde, en 1964, el trabajo de modelado de red neuronal artificial realizado por Hu en las empresas hizo popular al modelo. Los estudios de estimación con redes neuronales artificiales en empresas se realizaron principalmente en economía y finanzas, y se obtuvieron resultados significativos.
+		
+		Wong y otros (1997), en su estudio de artículos científicos publicados entre 1988 y 1995 sobre aplicaciones de redes neuronales artificiales a través de un cuestionario; las aplicaciones de redes neuronales artificiales se han utilizado cada vez más en las operaciones comerciales. De acuerdo con los resultados de la investigación; Las redes neuronales artificiales se están adaptando rápidamente a las nuevas tecnologías existentes o emergentes, las tecnologías de inteligencia artificial y las innovaciones en los sistemas informáticos han creado nuevas oportunidades para que la tecnología de redes neuronales se utilice en la investigación empresarial.
+		
+		Hu (2002), en el estudio de la estimación de la demanda interna de turismo y Çuhadar et al. (2009), en la estimación de la demanda externa de turismo; el método de red neuronal artificial tiene mejores predicciones que otros métodos convencionales. Se ha sugerido que los modelos desarrollados pueden generalizarse mediante el aprendizaje de las relaciones no lineales entre los datos y así resolver incluso problemas inexplicados previamente en límites aceptables de errores.
+		
+		Insel et al., (2010); Ataseven, (2007); Steel, (2008); Hajirezaie et al. (2010) afirmaron que el modelo de red neuronal artificial es tan rápido como confiable en la medición del rendimiento de las aplicaciones de planificación y control de calidad, y que el modelo puede tomar decisiones más consistentes en el proceso de toma de decisiones utilizando el poder predictivo.
+		
+		Aydogan et al. (2010) La velocidad del flujo de agua de mar en el estrecho de Estambul, Sahoo et al. (2009) diseñaron un modelo de red neuronal artificial para estimar el caudal del flujo de agua caliente, Shamseldin (2010), el caudal del río Nilo azul en Sudán. Se ha observado que los modelos diseñados en estudios producen resultados más consistentes y más satisfactorios que las estimaciones previas realizadas con métodos tradicionales.
+		
+		Jones, (2008) diseñó un modelo de red neuronal artificial en capas ocultas, basada en la retroalimentación, en el estudio del modelado de predicción de la demanda y la evaluación de los departamentos de primeros auxilios de los hospitales. La capa de entrada del modelo consiste en variables de información de demanda mensual, semanal para períodos de vacaciones. Se pueden hacer estimaciones consistentes por los pesos de los elementos del procesador en el modelo desarrollado y los algoritmos de retropropagación.
+		
+		Hunter (2009) realizó un modelo de red neuronal artificial para estimar los retornos diarios de algunas poblaciones seleccionadas del índice ISE-30. Los resultados del estudio revelan que el modelo de redes neuronales artificiales es útil y eficaz para predecir el rendimiento de las acciones
+		
+		Asilkan (2009) intentó estimar los precios futuros de los automóviles de segunda mano que utilizan redes neuronales artificiales. En el estudio, se compararon los resultados obtenidos mediante la aplicación de redes neuronales artificiales y los resultados obtenidos por análisis de series temporales. Los resultados muestran que las redes neuronales artificiales tienen más éxito que los análisis de series de tiempo para predecir los precios futuros de los automóviles de segunda mano.
+		
+			------------------AQUI VA LA TABLA DE RESUMEN DE TODO LO ANTERIOR---------------------------------
+			
+	5. RESULTADOS
+		
+		De acuerdo con las revisiones de la literatura nacional e internacional, se observa que existen estudios relacionados con el pronóstico de la demanda en muchos temas.
+		
+		La predicción de lo que sucederá en el futuro es de importancia estratégica, especialmente para las empresas en un entorno competitivo, pero este es un proceso no determinista. Se puede decir que todas las decisiones de gestión de las empresas se basan en estimaciones anticipadas. Por lo tanto, hacer una predicción o pronosticación sólida para situaciones de incertidumbre futuras puede decirse que es crucial para la confiabilidad de las decisiones que se tomarán.
+		
+		Dadas las condiciones actuales, las estructuras dinámicas de las economías mundiales, el desarrollo de las tecnologías de la información y los datos utilizados en los mecanismos de decisión son demasiado complejos y complejos. parece que se necesitan nuevas técnicas que tengan más capacidades que los métodos de solución en serie de los sistemas tradicionales utilizados en el proceso de toma de decisiones. Para satisfacer estas necesidades, los investigadores han sido dirigidos a procesos de procesamiento paralelos que imitan el cerebro humano.
+		
+		Económicamente, la demanda es la cantidad que los consumidores están preparados para comprar a un cierto nivel de precio de un bien o servicio. Las empresas operan para producir y comercializar bienes y servicios para satisfacer la demanda del consumidor. Para hacer un plan de producción preciso para estas actividades, la demanda de bienes y servicios producidos por el operador debe ser estimada para períodos futuros. Las previsiones de demanda se utilizan como datos básicos para determinar las materias primas, las piezas de repuesto, los productos semiacabados, la maquinaria, el poder humano y las necesidades de inversión. Por esta razón, es evidente que la importancia de un pronóstico saludable de la demanda es evidente, ya que todo el trabajo por hacer para la producción dependerá de la cantidad de demanda que se genere.
+		
+		El objetivo de este estudio es tratar de crear un estudio de la literatura en esta materia considerando los estudios realizados hasta ahora sobre la previsión de la demanda. Se ha observado que la previsión de la demanda se ha intentado hacer una estimación del futuro utilizando varios métodos de previsión de la demanda en muchas áreas. Se ha enfatizado la importancia del pronóstico de demanda para poder hacer predicciones sobre el futuro y hacer planes, y se afirma que esto continuará trabajando rápidamente en el entorno competitivo para satisfacer las necesidades que pueden ser respaldadas por programas asistidos por computadora y nuevas técnicas.
+		
+}

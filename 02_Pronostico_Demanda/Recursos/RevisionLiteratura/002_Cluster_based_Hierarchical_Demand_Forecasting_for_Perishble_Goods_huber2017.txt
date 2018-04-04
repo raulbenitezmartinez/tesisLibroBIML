@@ -1,0 +1,17 @@
+001_Cluster_based_Hierarchical_Demand_Forecasting_for_Perishble_Goods_huber2017.pdf
+-----------------------------------------------------------------------------------
+{
+	PREDICCIÓN JERÁRQUICA DE LA DEMANDA BASADA EN CLUSTERS PARA PRODUCTOS PERECEDEROS
+
+	Puntos Destacados
+		• Análisis de conglomerados de artículos basado en el patrón de ventas intradía.
+		• Explotación de clusters de artículos y estructura organizativa para la previsión de la demanda.
+		• DSS para ordenar mercancías perecederas sustituibles de rápido movimiento.
+		• Evaluación basada en datos reales de una panadería industrializada
+	
+	ABSTRACT
+		
+		La previsión de la demanda es de particular importancia para los minoristas en el contexto de las cadenas de suministro de productos perecederos y alimentos frescos. Dichos bienes se producen y entregan diariamente, ya que deben proporcionarse lo más frescos posible y deteriorarse rápidamente. La subestimación de la demanda y la sobreestimación afectan negativamente los ingresos del minorista. Los desabastecimientos tienen un impacto indeseado en los consumidores, mientras que los artículos no vendidos deben descartarse al final del día. Proponemos un DSS que admita al día de las operaciones al proporcionar pronósticos jerárquicos a diferentes niveles organizacionales basados en los datos más recientes del punto de venta. Identifica grupos de artículos que se usan para extender la jerarquía según el patrón de ventas diaria. Aplicamos modelos ARIMA multivariantes para pronosticar la demanda diaria para respaldar decisiones operativas. Evaluamos el enfoque con datos de punto de venta de una cadena de panadería industrializada y mostramos que es posible aumentar la disponibilidad al mismo tiempo que se limita la pérdida. El análisis de clúster revela que los artículos sustituibles tienen un patrón de ventas diaria similar, lo que hace que sea razonable pronosticar la demanda a un nivel agregado. La precisión de los pronósticos descendentes es comparable a los pronósticos directos, lo que permite reducir los costos computacionales.
+	
+	
+}
