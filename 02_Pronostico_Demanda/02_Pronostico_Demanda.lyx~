@@ -1055,7 +1055,7 @@ MA: Promedio móvil.
 \end_layout
 
 \begin_layout Standard
-Los pronósticos de series de tiempo se aplican tradicionalmente en econometría
+En econometría, los pronósticos de series de tiempo se aplican tradicionalmente
  utilizando modelos ARIMA, generalizado por Box y Jenkins 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1064,8 +1064,8 @@ key "Box1973"
 \end_inset
 
 .
- ARIMA es un método estándar para el pronóstico de series de tiempo y muy
- habituales en el modelado de series temporales económicas y financieras.
+ ARIMA es un método estándar para el pronóstico de series de tiempo y habituales
+ en el modelado de series temporales económicas y financieras.
 \end_layout
 
 \end_deeper
@@ -1322,7 +1322,36 @@ key "Huber2017"
 \end_inset
 
 , los autores se enfocan en pronosticar la demanda diaria de productos alimentic
-ios perecederos utilizando el método ARIMA
+ios perecederos en un punto de venta de una panadería industrializada utilizando
+ el modelo ARIMA multivariante para respaldar las decisiones operativas.
+ Con el modelo utilizado llegaron a la conclusión de que es posible aumentar
+ la disponibilidad y disminuir la pérdida económica.
+ El enfoque no es óptimo para los minoristas que poseen varios cientos de
+ tiendas, ya que la precisión no es confiable y ocasiona el desabastecimiento
+ regular de productos.
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Akpinar2016"
+
+\end_inset
+
+, los autores estudian la previsión de la demanda anual de gas natural para
+ la ciudad de Sakarya en Turquía.
+ El pronóstico se basa en datos del consumo de gas natural de los años 2011-2014
+, recopilados en periodos mensuales de hogares y usuarios comerciales de
+ bajo consumo.
+ Para el análisis utilizaron y compararon tres métodos estadísticos estacionales
+ univariables, descomposición de series de tiempo, suavisamiento exponencial
+ de Holt-Winters y método de promedio móvil integrado autorregresivo estacional
+ (SARIMA).
+ Los autores concluyen que todos los métodos proporcionan resultados satisfactor
+ios y las diferencias entre cada método son muy bajas, pero que a medida
+ que aumenta la complejidad de cómputo del modelo la precisión del pronóstico
+ aumenta y disminuyen las tasas de error.
 \end_layout
 
 \begin_layout Section
