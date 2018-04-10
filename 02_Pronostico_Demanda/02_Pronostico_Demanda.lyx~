@@ -1349,9 +1349,65 @@ key "Akpinar2016"
  de Holt-Winters y método de promedio móvil integrado autorregresivo estacional
  (SARIMA).
  Los autores concluyen que todos los métodos proporcionan resultados satisfactor
-ios y las diferencias entre cada método son muy bajas, pero que a medida
- que aumenta la complejidad de cómputo del modelo la precisión del pronóstico
- aumenta y disminuyen las tasas de error.
+ios y las diferencias entre cada método son muy bajas, a medida que aumenta
+ la complejidad de cómputo del modelo la precisión del pronóstico aumenta
+ y disminuyen las tasas de error.
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bigovic2012"
+
+\end_inset
+
+, el autor plantea construir un modelo ARIMA estacional utilizando la metodologí
+a de Box-Jenkins para pronosticar a corto plazo la llegada de turistas y
+ pernoctaciones turísticas en Montenegro.
+ El periodo de tiempo para el estudio abarca diez años que va desde 01/2001
+ a 12/2010, un análisis minucioso de las series temporales no revelaron
+ nada extremo ni inusual sobre los datos.
+ Por lo tanto, solo los impactos económicos fueron afectados por las series
+ de tiempo.
+ Esto fue importante porque se excluyó el análisis econométrico en el diseño
+ y la construcción de los modelos.
+ Los resultados muestran excelentes resultados en las predicciones.
+ Según la previsiones de producción para el año 2011, Montenegro puede esperar
+ un crecimiento tanto en llegadas de turistas así como pernoctaciones turísticas.
+ El modelo ha mostrado un aumento alrededor del 7.25 % en la llegada de turistas
+ respecto al año anterior.
+ Por otro lado, el aumento calculado de las pernoctaciones es de alrededor
+ del 8.42 % mas que el año anterior.
+ Al término del año 2011, con datos reales de llegadas de turistas hubo
+ un crecimiento del 8.74% mientras que para las pernoctaciones de turistas
+ hubo un crecimiento del 10.16% respecto al año anterior, esto demuestra
+ que los modelos utilizados son adecuados para las predicciones con una
+ tasa de error mínima aproximado del 1.5%.
+\end_layout
+
+\begin_layout Standard
+En el trabajo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LakshmiAnusha2014"
+
+\end_inset
+
+, los autores presentan un caso de estudio de pronóstico de la demanda en
+ una cadena farmacéutica minorista (retail) Apollo Pharmacy que cuenta con
+ 70 puntos de venta en la India, donde la gerencia no ha considerado la
+ previsión como una función importante en el proceso de gestión eficiente
+ de la cadena de suministro.
+ Para el caso de estudio se aplicaron las técnicas Promedio Móvil, Suavizamiento
+ Exponiencial Simple y Suavizamiento Exponencial de Winters para pronosticar
+ la demanda de productos farmacéuticos.
+ Se eligieron en forma empírica dos productos para el estudio: Tableta de
+ 10 mg de Okalet (estacional) y Tableta de Stamlo Beta (no estacional).
+ Los autores concluyen que para productos estacionales la técnica de Suavizamien
+to Exponencial de Winters tienen un mejor pronóstico, en tanto, que para
+ productos que tienen una demanda constante el método de Promedio Móvil
+ tiene una mayor precisión en el pronóstico.
 \end_layout
 
 \begin_layout Section
