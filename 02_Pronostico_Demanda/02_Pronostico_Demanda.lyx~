@@ -1404,10 +1404,37 @@ key "LakshmiAnusha2014"
  la demanda de productos farmacéuticos.
  Se eligieron en forma empírica dos productos para el estudio: Tableta de
  10 mg de Okalet (estacional) y Tableta de Stamlo Beta (no estacional).
- Los autores concluyen que para productos estacionales la técnica de Suavizamien
-to Exponencial de Winters tienen un mejor pronóstico, en tanto, que para
- productos que tienen una demanda constante el método de Promedio Móvil
- tiene una mayor precisión en el pronóstico.
+ Los autores concluyen que para productos farmacéuticos estacionales la
+ técnica de Suavizamiento Exponencial de Winters tienen un mejor pronóstico,
+ en tanto, que para productos farmacéuticos que tienen una demanda constante
+ el método de Promedio Móvil tiene una mayor precisión en el pronóstico.
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Patak2015"
+
+\end_inset
+
+, los autores investigan el nivel de previsión de la demanda en los supermercado
+s minoristas de productos alimenticios en la República Checa.
+ El objetivo principal de la investigación fue descubrir los métodos que
+ se utilizan para el pronóstico de la demanda, que factores afectan la demanda
+ de alimentos y que fuentes de información utilizan para basar el pronóstico,
+ se realizaron consultas a un total de 75 puntos de venta.
+ Finalizada la investigación los autores concluyeron que hay un uso predominante
+ de los métodos cualitativos, entre los más aplicados están el método de
+ Juicio del Experto (utilizado 40% de las veces), el método de Expectativas
+ del Cliente (utilizado 9% de las veces) y el método de la Analogía (utilizado
+ 4% de las veces).
+ Entre los métodos cuantitativos mas implementados se encuentran el método
+ de Promedio Móvil (21%) y el método Naive (19%).
+ Aplicar métodos cuantitativos en tiendas minoristas con una gran variedad
+ de productos es muy costosa y requiere mucho tiempo.
+ Los autores recomiendan de acuerdo a la literatura revisada el uso de métodos
+ de análisis de series de tiempo o análisis de ventas pasadas.
 \end_layout
 
 \begin_layout Section
