@@ -1438,13 +1438,18 @@ s minoristas de productos alimenticios en la República Checa.
 \end_layout
 
 \begin_layout Section
-Relación con el problema de estudio
+Resumen
 \end_layout
 
 \begin_layout Standard
-Este capítulo pretendió dar a conocer las técnicas de pronósticos de demanda
- clásicas ampliamente conocidas y estudiadas en los diferentes textos consultado
-s 
+Este capítulo pretendió dar a conocer las técnicas clásicas de pronósticos
+ de demanda ampliamente conocidas, las cuales son las técnicas cualitativas
+ y cuantitativas.
+ En general las técnicas más utilizadas son los métodos de ARIMA y Suavizamiento
+ Exponencial, que son técnicas cuantitativas.
+ Entre las empresas comerciales que implementan estas técnicas están los
+ negocios minoristas como supermercados, panaderias, cadenas farmacéuticas,
+ proveedores de gas natural y muchos otros 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "ADMINCA"
@@ -1473,16 +1478,16 @@ key "MCN2011"
 \end_inset
 
 .
- Si bien el presente trabajo también busca encontrar una estimación de pronóstic
-o como lo hacen las técnicas de esta sección, debe quedar claro que la solución
+ 
+\end_layout
+
+\begin_layout Standard
+Si bien el presente trabajo también busca encontrar una estimación de pronóstico
+ como lo hacen las técnicas de esta sección, debe quedar claro que la solución
  propuesta es una alternativa distinta, es decir, no se trata de un método
  cualitativo ni cuantitativo propiamente dicho, sin embargo toma ciertos
  aspectos de ambos y se implementa con conceptos, tecnologías y herramientas
  de solución totalmente diferentes.
-\end_layout
-
-\begin_layout Section
-Resumen
 \end_layout
 
 \end_body

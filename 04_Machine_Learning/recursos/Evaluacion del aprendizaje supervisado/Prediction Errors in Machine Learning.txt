@@ -1,0 +1,26 @@
+SESGO (BIAS)
+------------
+
+La mayoría de los modelos de predicción son funciones que toman entradas (características) y luego escuchan una salida (predicción). Sin embargo, es importante saber que estas funciones restringen cómo se calcula la predicción de salida a partir de las características de entrada.
+
+Por ejemplo, tome un modelo de regresión lineal y suponga que todas las características de entrada son números. Un modelo de regresión lineal solo puede predecir los valores de salida que se pueden calcular como:
+f (x) = b1 * x1 + b2 * x2 + ... + b0
+donde x1, x2, ... son los valores de característica de entrada y b0, b1, b2, ... son los 'parámetros' del modelo. De la ecuación anterior se desprende que las posibles predicciones para el modelo de regresión lineal están limitadas a la suma ponderada de las características de entrada.
+
+Tal modelo aún puede ser razonablemente preciso si la salida se puede aproximar como una suma lineal. Sin embargo, si hay relaciones significativamente no lineales entre las características y la salida (por ejemplo, la verdadera relación implica condicionales, como si x1 es menor que 1 y x2 es mayor que 2, entonces la salida es 11, ...) , esto siempre dará como resultado errores, sin importar qué tan bien podamos entrenar modelos o incluso si tenemos una cantidad infinita de puntos de datos.
+
+Tales errores se llaman 'sesgo' del modelo. Intuitivamente, estos errores son los resultados del modelo de máquina aprendida que no puede representar la verdadera relación entre las características y los resultados, debido a los límites en las "formas" de cálculos que puede realizar el modelo.
+
+ESTIMACION SESGO (BIAS)
+-----------------------
+
+
+Una mirada más detallada al sesgo revela que a menudo el sesgo de "estimación" del modelo influye en los errores de predicción en el mundo real. El sesgo de 'Estimación' (en algunos casos denominado sesgo de inducción) se refiere al hecho de que los modelos generados por algoritmos de aprendizaje automático en la práctica solo cubren un subconjunto de todas las configuraciones posibles del tipo de modelo. Es decir, el algoritmo mismo restringe las configuraciones del modelo que se pueden aprender.
+
+Por ejemplo, tome el algoritmo de regresión de cresta. Técnicamente, este es también un "aprendiz" de regresión lineal que tiene una restricción llamada "regularizador L2". Es decir, la 'forma' de salida sigue siendo la misma que los modelos de regresión lineal ordinarios. Sin embargo, la capacitación se realiza para satisfacer la siguiente 'optimización':
+
+Aunque esto puede parecer intimidante, todo lo que se dice es que, además de minimizar el MSE (Mean Squared Error) de la etiqueta, también quiere reducir la "magnitud" del vector de los coeficientes (pesos). La compensación entre la minimización de MSE y la minimización de la magnitud de los coeficientes se controla a través de un parámetro definido por el usuario adicional.
+
+Aunque la 'forma' del modelo es la misma que la de los modelos generados por el algoritmo de regresión lineal ordinario, el algoritmo anterior de hecho confina los posibles coeficientes que se pueden aprender a rangos mucho más pequeños (mientras que la regresión lineal ordinaria no lo hace). Por lo tanto, esto puede aumentar aún más el componente de polarización del error de predicción.
+
+Este sesgo adicional introducido por el "algoritmo", en comparación con el sesgo de la "representación" se denomina sesgo de estimación o sesgo de inducción. Muchos algoritmos de aprendizaje automático introducen sesgos de estimación en la práctica.

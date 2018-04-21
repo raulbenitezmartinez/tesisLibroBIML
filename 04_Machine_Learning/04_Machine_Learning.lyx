@@ -3741,11 +3741,37 @@ nte cada categoría.
 \end_layout
 
 \begin_layout Section
+Componentes de los errores de predicción: Ruido, sesgo y varianza
+\end_layout
 
-\series bold
-\size large
-\color blue
-[DEFINICION DE SESGO Y VARIANZA]
+\begin_layout Standard
+Los errores de predicción en los modelos de aprendizaje automático tienen
+ tres componentes: Ruido Irreducible (Irreducible noise), Sesgo (Bias) y
+ Varianza (Variance)
+\end_layout
+
+\begin_layout Subsection
+Ruido
+\end_layout
+
+\begin_layout Standard
+Representa el componente 
+\begin_inset Quotes eld
+\end_inset
+
+irreducible
+\begin_inset Quotes erd
+\end_inset
+
+ del error de generalización
+\end_layout
+
+\begin_layout Subsection
+Sesgo
+\end_layout
+
+\begin_layout Subsection
+Varianza
 \end_layout
 
 \begin_layout Section
