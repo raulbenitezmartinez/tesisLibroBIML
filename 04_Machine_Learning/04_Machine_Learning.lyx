@@ -3741,13 +3741,29 @@ nte cada categoría.
 \end_layout
 
 \begin_layout Section
-Componentes de los errores de predicción: Ruido, sesgo y varianza
+Componentes de los errores de predicción: Ruido, Sesgo y Varianza
 \end_layout
 
 \begin_layout Standard
-Los errores de predicción en los modelos de aprendizaje automático tienen
- tres componentes: Ruido Irreducible (Irreducible noise), Sesgo (Bias) y
- Varianza (Variance)
+Es importante evaluar el rendimiento de un modelo de aprendizaje de la mejor
+ manera posible.
+ Una de las razones es para determinar si usar o no el modelo para la predicción
+ de valores futuros, otra de las razones es que la evaluación es una componente
+ integral de muchos métodos de aprendizaje.
+ Los errores de predicción en los modelos de aprendizaje automático tienen
+ tres componentes: Ruido (
+\shape italic
+Noise
+\shape default
+), Sesgo (
+\shape italic
+Bias
+\shape default
+) y Varianza (
+\shape italic
+Variance
+\shape default
+)
 \end_layout
 
 \begin_layout Subsection
@@ -3755,7 +3771,15 @@ Ruido
 \end_layout
 
 \begin_layout Standard
-Representa el componente 
+El ruido es un error aleatorio de varianza de la variable que está siendo
+ medida 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Han2011"
+
+\end_inset
+
+, representa el componente 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3763,15 +3787,173 @@ irreducible
 \begin_inset Quotes erd
 \end_inset
 
- del error de generalización
+ de error de generalización en una función, este término está fuera del
+ control incluso aún conociendo la verdadera función de predicción.
+ El ruido es una distorsión de los datos originales, está presente en casi
+ cualquier problema del mundo real, sin embargo no siempre son conocidas.
+ Como ejemplo de ruido en los datos para un sistema de monitoreo ambiental
+ puede darse por mal funcionamientos, calibraciones defectuosas en sensores
+ de medición, problemas de red que transportan los datos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kalapanidas2003"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
 Sesgo
 \end_layout
 
+\begin_layout Standard
+La precisión observada de la hipótesis aprendida a través de los ejemplos
+ de entrenamiento es a menudo una mala estimación de su exactitud sobre
+ futuros ejemplos.
+ Debido a que la hipótesis aprendida se derivó de estos ejemplos, típicamente
+ proporcionarán una estimación optimista sesgada de la precisión de la hipótesis
+ sobre ejemplos futuros, esto se conoce como sesgo en la estimación 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mitchell1997"
+
+\end_inset
+
+.
+ El sesgo conocido también como 
+\begin_inset Quotes eld
+\end_inset
+
+subajuste
+\begin_inset Quotes erd
+\end_inset
+
+, ocurre cuando la función de aprendizaje mapea pobremente los datos de
+ entrenamiento y esto da un error de generalización con datos futuros.
+ En estadística se entiende por sesgo como la diferencia al cuadrado entre
+ el verdadero valor y el valor esperado de la estimación 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Friedman2001"
+
+\end_inset
+
+.
+ El sesgo define la capacidad de ajuste del modelo de la función de aprendizaje,
+ en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Errores-en-la-prediccion"
+
+\end_inset
+
+se observa que a menor complejidad, mayor sesgo, esto indica que el error
+ de predicción tanto en el entrenamiento como en el testeo es mayor cuando
+ el modelo seleccionado es mas simple 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dietterich1995"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 Varianza
+\end_layout
+
+\begin_layout Standard
+Si la precisión de la hipótesis se mide en un conjunto imparcial de ejemplos
+ de prueba independientes de los ejemplos de entrenamiento, la precisión
+ medida puede variar de la precisión real, dependiendo de la configuración
+ del conjunto particular de ejemplos de prueba.
+ Cuanto menor es el conjunto de ejemplos de prueba, mayor es la varianza
+ esperada 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mitchell1997"
+
+\end_inset
+
+.
+ La varianza llamada también 
+\begin_inset Quotes eld
+\end_inset
+
+sobreajuste
+\begin_inset Quotes erd
+\end_inset
+
+ se da cuando la función seleccionada aprende casi perfectamente la tendencia
+ de los datos del ejemplo de entrenamiento, pero puede fallar en la generalizaci
+ón con datos nuevos del futuro.
+ La varianza es una medida de generalización, tanto el sesgo como la varianza
+ están relacionadas con la complejidad del modelo de la función, la figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Errores-en-la-prediccion"
+
+\end_inset
+
+ muestra que a medida que aumenta la complejidad del modelo, la varianza
+ tiende a aumentar y el sesgo tiende a disminuir 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Friedman2001"
+
+\end_inset
+
+.
+ En Machine Learning es esencial encontrar modelos con un balance entre
+ sesgo y varianza, o visto de otra forma, un equilibrio entre error y complejida
+d.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename recursos/Bias_Varianza.PNG
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Errores-en-la-prediccion"
+
+\end_inset
+
+Errores en la Predicción 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Friedman2001"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
