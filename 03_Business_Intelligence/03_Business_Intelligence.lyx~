@@ -176,7 +176,7 @@ Business Intelligence es un proceso interactivo para explorar y analizar
 use), para descubrir tendencias o patrones, a partir de las cuales derivar
  ideas y extraer conclusiones.
  Las áreas incluyen clientes, proveedores, productos, servicios y competidores.
- El proceso de business intelligence incluye la comunicación de los descubrimien
+ El proceso de Business Intelligence incluye la comunicación de los descubrimien
 tos y efectuar los cambios
 \emph default
 
@@ -891,7 +891,7 @@ Tabla de hecho
 
 \begin_deeper
 \begin_layout Itemize
-Medidas del proceso de trabajo que se pretende modelizar.
+Medidas del proceso de trabajo que se pretende modelar.
 \end_layout
 
 \begin_layout Itemize
@@ -1106,7 +1106,7 @@ Existen distintos tipos de OLAP, las cuales difieren principalmente en la
 
 \begin_layout Itemize
 MOLAP (Multidimensional OLAP): es la forma tradicional del OLAP, accede
- directamente sobre una base de datos multidimesional, que utiliza estructuras
+ directamente sobre una base de datos multidimensional, que utiliza estructuras
  de datos optimizadas para la recuperación de los mismos, es eficaz en los
  tiempos de respuestas de las consultas.
 \end_layout
@@ -1683,6 +1683,19 @@ Seguimiento y monitoreo de ingresos, márgenes y rendimiento operacional.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Resumen
+\end_layout
+
+\begin_layout Standard
+En el capitulo se presentó los conceptos básicos de Business Intelligence.
+\end_layout
+
+\begin_layout Standard
+Los principales componentes de Business Intelligence son : fuentes de informació
+n, ETL, datawarehouse, análisis OLAP y herramientas de visualización.
 \end_layout
 
 \end_body

@@ -102,7 +102,7 @@ Una empresa retail es cualquier comercio que vende sus productos al consumidor
 
  o de ventas minoristas uno de los principales problemas con que se enfrentan
  es el manejo eficiente del stock de manera a evitar tener los productos
- en exceso en los depósitos que incurran en sobrecostos.
+ en exceso en los depósitos que incurran en sobre-costos.
  En el otro extremo, la falta de dichos productos o ruptura de stock conlleva
  a pérdidas de oportunidades de ventas por no disponer del producto que
  puede generar insatisfacción de los clientes y a su vez ésto repercute
@@ -131,7 +131,7 @@ key "MCN2011"
 .
  Independientemente de la técnica elegida, el problema real de los pronósticos
  es su falta de confiabilidad, ya que por lo general no son precisos, entonces,
- la interrogante será siempre si los pronosticos son superiores o inferiores
+ la interrogante será siempre si los pronósticos son superiores o inferiores
  a la demanda real y en que medida 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -217,7 +217,7 @@ key "MCN2011"
 Otra debilidad de los pronósticos es que no se adaptan, es decir, las herramient
 as de pronósticos existentes en su mayoría utilizan algoritmos genéricos
  con la suposición de que la demanda puede predecirse de igual forma para
- todas las empresas, todas las industrias, todos los productos y para caulquier
+ todas las empresas, todas las industrias, todos los productos y para cualquier
  ubicación geográfica.
  Este enfoque de algoritmos genéricos obtiene pronósticos que no reflejan
  el impacto de los diferentes factores que afectan a la demanda; de la misma

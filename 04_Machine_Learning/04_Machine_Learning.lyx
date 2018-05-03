@@ -3373,21 +3373,65 @@ Validación Cruzada de k pasadas
 \begin_layout Standard
 La técnica de Validación Cruzada de k pasadas (k-fold Cross-Validation)
  consiste en dividir los datos en un número de particiones iguales.
- Por ejemplo, en una validación cruzada de 4 pasadas se divide el conjunto
- de datos en cuatro particiones de igual tamaño.
- Luego se entrena el modelo en tres de esas cuatro particiones y se prueba
+ En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Esq-general-de-Cross"
+
+\end_inset
+
+ se muestra un ejemplo de una validación cruzada de 10 pasadas donde se
+ divide el conjunto de datos en diez particiones de igual tamaño.
+ Luego se entrena el modelo en nueve de esas diez particiones y se prueba
  el modelo en la partición restante.
  Luego, se repite el proceso, seleccionando una partición diferente para
  que sea el grupo de prueba y entrenando un nuevo modelo en el conjunto
- restante de tres particiones.
- El proceso se repite dos veces más, para un total de cuatro rondas de validació
-n cruzada, una por cada pasada.
- Luego se tienen cuatro modelos diferentes, cada uno ha sido entrenado y
- probado en un subconjunto diferente de datos y cada uno tiene su propio
- peso y exactitud de predicción.
+ restante de nueve particiones.
+ El proceso se repite ocho veces más, para un total de diez rondas de validación
+ cruzada, una por cada pasada.
+ Luego se tienen diez modelos diferentes, cada uno ha sido entrenado y probado
+ en un subconjunto diferente de datos y cada uno tiene su propio peso y
+ exactitud de predicción.
  Al final, se combinan estos modelos al promediar sus pesos para estimar
  un modelo predictivo final.
  La validación cruzada es otro antídoto contra el sobreajuste.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename recursos/Esquema K-fold Cross Validation.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esq-general-de-Cross"
+
+\end_inset
+
+Esquema general de iteraciones para 10-fold Cross-Validation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

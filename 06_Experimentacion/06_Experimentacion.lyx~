@@ -197,15 +197,15 @@ Esquema general de procesamiento
 \end_layout
 
 \begin_layout Standard
-Se implementa el siguiente esquema de procesamiento con el dataset:
+Se implementa el siguiente esquema de procesamiento con el conjunto de datos:
 \end_layout
 
 \begin_layout Itemize
-Instancias de Períodos Mensuales: Por cada producto, se realiza el entrenamiento
+Instancias de Períodos Semanales: Por cada producto, se realiza el entrenamiento
  y testeo de sus instancias con todos los algoritmos de clasificación posibles,
  luego se analizan las métricas de desempeño arrojadas por cada algoritmo
  y finalmente se elige el mejor clasificador que será utilizado para la
- predicción de la demanda en períodos mensuales futuros.
+ predicción de la demanda en períodos semanales futuros.
 \end_layout
 
 \begin_layout Itemize
@@ -216,12 +216,107 @@ to y testeo de sus instancias con todos los algoritmos de clasificación
  para la predicción de la demanda en períodos quincenales futuros.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/Entrenamiento y testeo - Semanal Quincenal.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esquema-de-entrenamiento"
+
+\end_inset
+
+Esquema de entrenamiento y prueba en periodos semanales y quincenales.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para los periodos semanales y quincenales se divide el conjunto de datos
+ (instancias) en un conjunto de entrenamiento que corresponde al 70% de
+ las instancias y en un conjunto de prueba que corresponde al 30% restante
+ de instancias como se observa en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Esquema-de-entrenamiento"
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Itemize
-Instancias de Períodos Semanales: Por cada producto, se realiza el entrenamiento
+Instancias de Períodos Mensuales: Por cada producto, se realiza el entrenamiento
  y testeo de sus instancias con todos los algoritmos de clasificación posibles,
  luego se analizan las métricas de desempeño arrojadas por cada algoritmo
  y finalmente se elige el mejor clasificador que será utilizado para la
- predicción de la demanda en períodos semanales futuros.
+ predicción de la demanda en períodos mensuales futuros.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/Entrenamiento y testeo - Mensual.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Esquema-de-entrenamiento-1"
+
+\end_inset
+
+Esquema de entrenamiento, testeo y evaluación para periodos mensuales.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+asdfsf falta explicar que se usa el 100% de los datos para el entrenamiento,
+ testeo y evaluacion porque se tiene pocas instancias.........................................................................***************************
+*****************************************
 \end_layout
 
 \begin_layout Subsection
@@ -422,7 +517,7 @@ Estadística Kappa
 \size large
 \color blue
 [GRAFICO ZERO-R] COMPARATIVO CON GRAFICO DE LINEAS ENTRE LOS ACIERTOS DE
- NUETROS ALGORITMOS Y LA LINEA BASE ZERO-R
+ NUESTROS ALGORITMOS Y LA LINEA BASE ZERO-R
 \end_layout
 
 \begin_layout Standard

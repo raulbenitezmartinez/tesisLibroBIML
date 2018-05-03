@@ -277,7 +277,7 @@ En el punto 5, en el detalle de la orden se ven reflejadas las estimaciones
 Del por qué la importancia de estimar de forma correcta esta cantidad o
  volumen, los expertos en negocios explican que los productos parados en
  stock mientras no se venden es capital inmovilizado, además que generan
- sobrecostos de mantenimiento como seguros, personal encargado, fecha de
+ sobre-costos de mantenimiento como seguros, personal encargado, fecha de
  vencimiento de los productos, etc 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -418,7 +418,7 @@ Método Delphi: Se basa en identificar un panel de expertos que pueden ser
  Este proceso se repite iterativamente hasta alcanzar un cierto nivel de
  consenso.
  Finalmente los resultados de este panel de expertos sirven de base para
- las decisiones de pronóstico de las gerentes.
+ las decisiones de pronóstico de los gerentes.
 \end_layout
 
 \begin_layout Itemize
@@ -481,7 +481,7 @@ En general, los métodos cuantitativos se clasifican en técnicas de series
 \end_layout
 
 \begin_layout Subsection
-Métodos de series de tiempo
+Pronósticos de series de tiempo
 \end_layout
 
 \begin_layout Standard
@@ -543,13 +543,7 @@ En el sentido estricto de la interpretación es erróneo hablar de pronosticar
  alguna distribución de probabilidades.
  Si ese siguiente valor es la media de la distribución de probabilidades
  acortaría el problema, pero se desconoce su distribución de probabilidades
- así como también su media 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
-.
+ así como también su media.
 \end_layout
 
 \begin_layout Standard
@@ -625,7 +619,7 @@ reference "Figura 2.1"
 
 \end_inset
 
-.a) muestra una tendencia no lineal; en este caso la serie de tiempo indica
+.a muestra una tendencia no lineal; en este caso la serie de tiempo indica
  poco crecimiento inicial, luego un periodo de rápido crecimiento y por
  último una estabilización.
  En la figura 
@@ -635,7 +629,7 @@ reference "Figura 2.1"
 
 \end_inset
 
-.b) la tendencia lineal decreciente de la gráfica es útil para las series
+.b la tendencia lineal decreciente de la gráfica es útil para las series
  de tiempo que muestran una declinación constante en el tiempo.
  En la figura 
 \begin_inset CommandInset ref
@@ -644,9 +638,9 @@ reference "Figura 2.1"
 
 \end_inset
 
-.c) la línea horizontal en la gráfica representa una serie de tiempo que
- no tiene un aumento o disminución constante en el tiempo, y por tanto no
- muestra tendencia.
+.c la línea horizontal en la gráfica representa una serie de tiempo que no
+ tiene un aumento o disminución constante en el tiempo, y por tanto no muestra
+ tendencia.
  Generalmente el componente tendencia se debe a factores a largo plazo.
 \begin_inset Float figure
 placement H
@@ -852,8 +846,8 @@ El método de pronóstico de promedio móvil: Consiste en considerar solamente
 \begin_inset Formula $n$
 \end_inset
 
- períodos y luego promediarlo para así obtener el valor de pronóstico de
- la serie.
+ períodos y luego promediar para así obtener el valor de pronóstico de la
+ serie.
  Recomendable para series de tiempo medianamente estables, razón por la
  cual se toman en cuenta únicamente 
 \begin_inset Formula $n$
@@ -1021,7 +1015,7 @@ con
 \end_deeper
 \begin_layout Itemize
 Auto Regressive Integrated Moving Average (ARIMA): Es una generalización
- de Autoregressive Moving Average (ARMA), que combina procesos autoregresivos
+ de Autoregressive Moving Average (ARMA), que combina procesos autorregresivos
  (Autoregressive, AR) y procesos de media móvil (Moving Average, MA) creando
  así un modelo compuesto de series de tiempo.
  ARIMA (p, d, q) captura los siguientes elementos 
@@ -1345,7 +1339,7 @@ key "Akpinar2016"
 , recopilados en periodos mensuales de hogares y usuarios comerciales de
  bajo consumo.
  Para el análisis utilizaron y compararon tres métodos estadísticos estacionales
- univariables, descomposición de series de tiempo, suavisamiento exponencial
+ univariables, descomposición de series de tiempo, suavizamiento exponencial
  de Holt-Winters y método de promedio móvil integrado autorregresivo estacional
  (SARIMA).
  Los autores concluyen que todos los métodos proporcionan resultados satisfactor
@@ -1400,7 +1394,7 @@ key "LakshmiAnusha2014"
  previsión como una función importante en el proceso de gestión eficiente
  de la cadena de suministro.
  Para el caso de estudio se aplicaron las técnicas Promedio Móvil, Suavizamiento
- Exponiencial Simple y Suavizamiento Exponencial de Winters para pronosticar
+ Exponencial Simple y Suavizamiento Exponencial de Winters para pronosticar
  la demanda de productos farmacéuticos.
  Se eligieron en forma empírica dos productos para el estudio: Tableta de
  10 mg de Okalet (estacional) y Tableta de Stamlo Beta (no estacional).
@@ -1448,7 +1442,7 @@ Este capítulo pretendió dar a conocer las técnicas clásicas de pronósticos
  En general las técnicas más utilizadas son los métodos de ARIMA y Suavizamiento
  Exponencial, que son técnicas cuantitativas.
  Entre las empresas comerciales que implementan estas técnicas están los
- negocios minoristas como supermercados, panaderias, cadenas farmacéuticas,
+ negocios minoristas como supermercados, panaderías, cadenas farmacéuticas,
  proveedores de gas natural y muchos otros 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1487,7 +1481,7 @@ Si bien el presente trabajo también busca encontrar una estimación de pronóst
  propuesta es una alternativa distinta, es decir, no se trata de un método
  cualitativo ni cuantitativo propiamente dicho, sin embargo toma ciertos
  aspectos de ambos y se implementa con conceptos, tecnologías y herramientas
- de solución totalmente diferentes.
+ de solución diferentes.
 \end_layout
 
 \end_body
