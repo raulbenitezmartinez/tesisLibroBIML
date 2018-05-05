@@ -444,21 +444,52 @@ Estadística Kappa
  mínimo de porcentaje de acierto aceptado.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Section
+Análisis del desempeño
+\end_layout
 
-\series bold
-\size large
-\color blue
-[GRAFICO ZERO-R] COMPARATIVO CON GRAFICO DE LINEAS ENTRE LOS ACIERTOS DE
- NUESTROS ALGORITMOS Y LA LINEA BASE ZERO-R
+\begin_layout Subsection
+Comparación con linea base ZeroR
 \end_layout
 
 \begin_layout Standard
+En este apartado se contrasta los resultados obtenidos mediante una comparación
+ del porcentaje de aciertos entre la línea base ZeroR, el clasificador seleccion
+ado en el entrenamiento y el test.
+ Como se mencionó la linea base es el clasificador ZeroR, el cual es el
+ criterio mínimo de aceptación de un clasificador.
+ Los puntos de la línea de entrenamiento son los porcentajes de acierto
+ de los clasificadores seleccionados, según el algoritmo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pseudocódigo-clasificacion"
 
-\series bold
-\size large
-\color blue
-[GRAFICO SESGO Y VARIANZA]
+\end_inset
+
+.
+ La línea de test contiene los puntos que representan los porcentajes de
+ aciertos durante la evaluación sobre el conjunto de prueba.
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6.3"
+
+\end_inset
+
+ el gráfico contiene las líneas comparativas para periodos quincenales.
+ Los productos incluidos en el gráfico constituyen un subconjunto representativo
+, esto debido a la extensa cantidad de productos y su dificultad para graficarlo
+s por completo.
+ De los resultados se puede deducir que hay aprendizaje, ya que los porcentajes
+ de acierto alcanzados en el testeo se encuentran por encima de la linea
+ base en la mayoría de los casos.
+\end_layout
+
+\begin_layout Standard
+........................................................
 \end_layout
 
 \begin_layout Standard
@@ -471,7 +502,7 @@ Kappa
  En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:6.3"
+reference "fig:6.5"
 
 \end_inset
 
@@ -480,7 +511,7 @@ reference "fig:6.3"
 \shape italic
 Logistic
 \shape default
- resultó una mejor solución para 149 productos para periodos mensuales.
+ resultó una mejor solución para 140 productos para periodos mensuales.
 \end_layout
 
 \begin_layout Standard
@@ -493,8 +524,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/cross_kappa_mensual.png
-	scale 65
+	filename Recursos/quincenal_zeror_entre_test.png
 
 \end_inset
 
@@ -505,6 +535,80 @@ status open
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:6.3"
+
+\end_inset
+
+Cuadro comparativo .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/semanal_zeror_entre_test.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.4"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/recuento_cross_mensual.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.5"
 
 \end_inset
 
@@ -522,10 +626,92 @@ Conteo de clasificadores para período mensual.
 \end_layout
 
 \begin_layout Standard
+asdf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/recuento_cross_quincenal.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.6"
+
+\end_inset
+
+Conteo de clasificadores para período quincenal.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+asñljkfd
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/recuento_cross_semanal.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.7"
+
+\end_inset
+
+Conteo de clasificadores para período semanal.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Se puede observar en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:6.4"
+reference "fig:6.8"
 
 \end_inset
 
@@ -544,7 +730,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/aciertos_cross.png
-	scale 70
 
 \end_inset
 
@@ -554,7 +739,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:6.4"
+name "fig:6.8"
 
 \end_inset
 
