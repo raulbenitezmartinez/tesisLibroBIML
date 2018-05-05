@@ -80,7 +80,7 @@ Experimentación
 \end_layout
 
 \begin_layout Section
-Experimentación
+Esquema general
 \end_layout
 
 \begin_layout Standard
@@ -143,7 +143,7 @@ Esquema general de solución
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Datos proveídos por Business Intelligence
 \end_layout
 
@@ -192,28 +192,31 @@ Períodos Semanales: Se analizaron 127 productos diferentes, y por cada producto
 .
 \end_layout
 
-\begin_layout Subsection
-Esquema general de procesamiento
+\begin_layout Section
+Entrenamiento, testeo y evaluación
 \end_layout
 
 \begin_layout Standard
-Se implementa el siguiente esquema de procesamiento con el conjunto de datos:
-\end_layout
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Esquema-de-entrenamiento"
 
-\begin_layout Itemize
-Instancias de Períodos Semanales: Por cada producto, se realiza el entrenamiento
- y testeo de sus instancias con todos los algoritmos de clasificación posibles,
- luego se analizan las métricas de desempeño arrojadas por cada algoritmo
- y finalmente se elige el mejor clasificador que será utilizado para la
- predicción de la demanda en períodos semanales futuros.
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-Instancias de Períodos Quincenales: Por cada producto, se realiza el entrenamien
-to y testeo de sus instancias con todos los algoritmos de clasificación
- posibles, luego se analizan las métricas de desempeño arrojadas por cada
- algoritmo y finalmente se elige el mejor clasificador que será utilizado
- para la predicción de la demanda en períodos quincenales futuros.
+ se muestra la estrategia general utilizada para el entrenamiento, testeo
+ y evaluación en los periodos semanales, quincenales y mensuales.
+ El conjunto de entrenamiento se basa en el 70% de las instancias y el conjunto
+ de prueba corresponde al 30% restante.
+ Esta estrategia es la utilizada en el curso The Machine Learning Masterclass
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Science.com2016"
+
+\end_inset
+
+, un curso moderno de Machine Learning para proyectos de análisis predictivo.
 \end_layout
 
 \begin_layout Standard
@@ -240,7 +243,7 @@ name "fig:Esquema-de-entrenamiento"
 
 \end_inset
 
-Esquema de entrenamiento y prueba en periodos semanales y quincenales.
+Esquema de entrenamiento y prueba.
  
 \end_layout
 
@@ -255,117 +258,14 @@ Esquema de entrenamiento y prueba en periodos semanales y quincenales.
 \end_layout
 
 \begin_layout Standard
-Para los periodos semanales y quincenales se divide el conjunto de datos
- (instancias) en un conjunto de entrenamiento que corresponde al 70% de
- las instancias y en un conjunto de prueba que corresponde al 30% restante
- de instancias como se observa en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Esquema-de-entrenamiento"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-Instancias de Períodos Mensuales: Por cada producto, se realiza el entrenamiento
- y testeo de sus instancias con todos los algoritmos de clasificación posibles,
- luego se analizan las métricas de desempeño arrojadas por cada algoritmo
- y finalmente se elige el mejor clasificador que será utilizado para la
- predicción de la demanda en períodos mensuales futuros.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Recursos/Entrenamiento y testeo - Mensual.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Esquema-de-entrenamiento-1"
-
-\end_inset
-
-Esquema de entrenamiento, testeo y evaluación para periodos mensuales.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\color blue
-asdfsf falta explicar que se usa el 100% de los datos para el entrenamiento,
- testeo y evaluacion porque se tiene pocas instancias.........................................................................***************************
-*****************************************
-\end_layout
-
-\begin_layout Subsection
-Entrenamiento y evaluación
-\end_layout
-
-\begin_layout Standard
-Como se mencionó en el esquema general de procesamiento, el entrenamiento
- y testeo se realiza con todos los algoritmos de clasificación posibles,
- para ello se utiliza la herramienta WEKA y sus algoritmos de clasificación
- según la tabla 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Clasificadores-Weka"
-
-\end_inset
-
-.
- Otra forma de categorizar los clasificadores incluidos en WEKA es como
- sigue:
-\end_layout
-
-\begin_layout Itemize
-Bayesianos: BayesNet, NaiveBayes, NaiveBayesUpdateable.
-\end_layout
-
-\begin_layout Itemize
-Basados en funciones: Logistic, MultilayerPerceptron, SimpleLogistic, SMO.
-\end_layout
-
-\begin_layout Itemize
-Basados en reglas: OneR, DecisionTable, JRip, PART, ZeroR.
-\end_layout
-
-\begin_layout Itemize
-Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
-\end_layout
-
-\begin_layout Standard
-En el algorimo 
+En el algoritmo 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:Pseudocódigo-clasificacion"
 
 \end_inset
 
- se presenta la estrategia de aprendizaje y selección de los clasificadores.
+ se presenta el pseudocódigo de aprendizaje y selección de los clasificadores.
 \end_layout
 
 \begin_layout LyX-Code
@@ -380,7 +280,7 @@ status open
 \begin_layout LyX-Code
 
 \series bold
-for cada período de análisis {mensual,quincenal,semanal}:
+for cada período de análisis {mensual, quincenal,semanal}:
 \end_layout
 
 \begin_deeper
@@ -419,7 +319,7 @@ construir clasificador (conjunto de entrenamiento);
 \begin_layout LyX-Code
 
 \series bold
-evaluar clasificador (conjunto de testeo);
+evaluar clasificador (stratified k-folds cross-validation);
 \end_layout
 
 \begin_layout LyX-Code
@@ -438,7 +338,8 @@ endfor;
 \begin_layout LyX-Code
 
 \series bold
-criterios de línea de base (ZeroR, criterios del experto u otro);
+criterios de línea de base (ZeroR, criterios del experto u otro); // se
+ descartan los clasificadores que no cumplen esta condición
 \end_layout
 
 \begin_layout LyX-Code
@@ -494,7 +395,37 @@ Pseudocódigo para el proceso de clasificación.
 \end_layout
 
 \begin_layout Standard
-La evaluación se hace por el método Stratified k-fold Cross Validation para
+Los algoritmos utilizados para construir los clasificadores son los proveídos
+ por la herramienta WEKA, según la tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Clasificadores-Weka"
+
+\end_inset
+
+.
+ Otra forma de categorizar los clasificadores incluidos en WEKA es como
+ sigue:
+\end_layout
+
+\begin_layout Itemize
+Bayesianos: BayesNet, NaiveBayes, NaiveBayesUpdateable.
+\end_layout
+
+\begin_layout Itemize
+Basados en funciones: Logistic, MultilayerPerceptron, SimpleLogistic, SMO.
+\end_layout
+
+\begin_layout Itemize
+Basados en reglas: OneR, DecisionTable, JRip, PART, ZeroR.
+\end_layout
+
+\begin_layout Itemize
+Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
+\end_layout
+
+\begin_layout Standard
+La evaluación se hace por el método Stratified k-fold Cross-Validation para
  un valor de k igual a 10 y las métricas de desempeño consideradas son el
  
 \shape italic
@@ -505,7 +436,7 @@ Porcentaje de Acierto
 Estadística Kappa
 \shape default
 .
- El criterio de línea de base utilizado fue el clasificador ZeroR, el cual
+ El criterio de línea de base utilizado es el clasificador ZeroR, el cual
  es uno de los criterios de línea de base más representativos para problemas
  de clasificación.
  Se considera que también puede resultar conveniente que el experto en compras
@@ -540,7 +471,7 @@ Kappa
  En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:6.2"
+reference "fig:6.3"
 
 \end_inset
 
@@ -573,7 +504,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:6.2"
+name "fig:6.3"
 
 \end_inset
 
@@ -594,7 +525,7 @@ Conteo de clasificadores para período mensual.
 Se puede observar en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:6.3"
+reference "fig:6.4"
 
 \end_inset
 
@@ -623,7 +554,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:6.3"
+name "fig:6.4"
 
 \end_inset
 
@@ -654,7 +585,7 @@ KPI
  y la asignación de etiquetas hayan sido realizadas correctamente.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Cómo hacer las predicciones
 \end_layout
 
