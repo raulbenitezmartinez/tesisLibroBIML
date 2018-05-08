@@ -116,7 +116,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -230,6 +230,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/Entrenamiento y testeo - Semanal Quincenal.png
+	scale 50
 
 \end_inset
 
@@ -338,8 +339,7 @@ endfor;
 \begin_layout LyX-Code
 
 \series bold
-criterios de línea de base (ZeroR, criterios del experto u otro); // se
- descartan los clasificadores que no cumplen esta condición
+criterios de línea de base (ZeroR, criterios del experto u otro);
 \end_layout
 
 \begin_layout LyX-Code
@@ -396,7 +396,8 @@ Pseudocódigo para el proceso de clasificación.
 
 \begin_layout Standard
 Los algoritmos utilizados para construir los clasificadores son los proveídos
- por la herramienta WEKA, según la tabla 
+ por la herramienta WEKA utilizando los parámetros de configuración por
+ defecto, según la tabla 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Clasificadores-Weka"
@@ -449,7 +450,7 @@ Análisis del desempeño
 \end_layout
 
 \begin_layout Subsection
-Comparación con linea base ZeroR
+Comparación con línea base ZeroR
 \end_layout
 
 \begin_layout Standard
@@ -479,7 +480,7 @@ reference "fig:6.3"
 
 \end_inset
 
- el gráfico contiene las líneas comparativas para periodos quincenales.
+ el gráfico contiene las líneas comparativas para periodos semanales.
  Los productos incluidos en el gráfico constituyen un subconjunto representativo
 , esto debido a la extensa cantidad de productos y su dificultad para graficarlo
 s por completo.
@@ -489,7 +490,125 @@ s por completo.
 \end_layout
 
 \begin_layout Standard
-........................................................
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/semanal_zeror_entre_test.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.3"
+
+\end_inset
+
+Entrenamiento vs Test vs ZeroR para períodos semanales.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/quincenal_zeror_entre_test.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.4"
+
+\end_inset
+
+Entrenamiento vs Test vs ZeroR para períodos quincenales.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/mensual_zeror_entre_test.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.5"
+
+\end_inset
+
+Entrenamiento vs Test vs ZeroR para períodos mensuales.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Recuentos por tipo de clasificador
+\end_layout
+
+\begin_layout Standard
+A continuación se presenta un recuento 
 \end_layout
 
 \begin_layout Standard
@@ -502,7 +621,7 @@ Kappa
  En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:6.5"
+reference "fig:6.8"
 
 \end_inset
 
@@ -524,122 +643,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Recursos/quincenal_zeror_entre_test.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:6.3"
-
-\end_inset
-
-Cuadro comparativo .
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Recursos/semanal_zeror_entre_test.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:6.4"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Recursos/recuento_cross_mensual.png
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:6.5"
-
-\end_inset
-
-Conteo de clasificadores para período mensual.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-asdf
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename Recursos/recuento_cross_quincenal.png
+	filename Recursos/recuento_cross_semanal.png
+	scale 50
 
 \end_inset
 
@@ -653,7 +658,7 @@ name "fig:6.6"
 
 \end_inset
 
-Conteo de clasificadores para período quincenal.
+Conteo de clasificadores para períodos semanales.
 \end_layout
 
 \end_inset
@@ -667,7 +672,7 @@ Conteo de clasificadores para período quincenal.
 \end_layout
 
 \begin_layout Standard
-asñljkfd
+fasf
 \end_layout
 
 \begin_layout Standard
@@ -680,7 +685,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Recursos/recuento_cross_semanal.png
+	filename Recursos/recuento_cross_quincenal.png
+	scale 50
 
 \end_inset
 
@@ -694,7 +700,49 @@ name "fig:6.7"
 
 \end_inset
 
-Conteo de clasificadores para período semanal.
+Recuento de clasificadores para períodos quincenales.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+asf
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Recursos/recuento_cross_mensual.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:6.8"
+
+\end_inset
+
+Recuento de clasificadores para períodos mensuales.
 \end_layout
 
 \end_inset
@@ -711,7 +759,7 @@ Conteo de clasificadores para período semanal.
 Se puede observar en la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:6.8"
+reference "fig:6.9"
 
 \end_inset
 
@@ -730,6 +778,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/aciertos_cross.png
+	scale 50
 
 \end_inset
 
@@ -739,7 +788,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:6.8"
+name "fig:6.9"
 
 \end_inset
 
