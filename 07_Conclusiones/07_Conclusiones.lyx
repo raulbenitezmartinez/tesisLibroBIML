@@ -86,10 +86,10 @@ Conclusiones Generales
 \begin_layout Standard
 Este trabajo se enfocó en proponer una nueva técnica de estimación de la
  demanda de productos, para reposición de stock en empresas retail.
- Como se mencionó en la Sección 2, la gestión de compras es uno los ejes
- centrales en la actividad empresarial y la decisión del volumen de compras
- para cada producto es un desafío que enfrentan las empresas al momento
- de reponer el stock.
+ En el capitulo 2 se mencionó, la gestión de compras es uno los ejes centrales
+ en la actividad empresarial y la decisión del volumen de compras para cada
+ producto es un desafío que enfrentan las empresas al momento de reponer
+ el stock.
  Partiendo de esta premisa y analizando las técnicas de pronóstico de la
  demanda empleadas en la actualidad, y el creciente incremento del uso de
  tecnologías de Business Intelligence en las organizaciones, se encontró
@@ -104,17 +104,73 @@ Este trabajo se enfocó en proponer una nueva técnica de estimación de la
 De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
  y evaluando con un método ampliamente aceptado.
- La técnica propuesta pretende que este nuevo modelo se convierta en una
- herramienta de apoyo en la toma de decisiones del gerente de compras en
- el proceso de reposición de stock.
+ La técnica propuesta pretende que se convierta en una herramienta de apoyo
+ en la toma de decisiones del gerente de compras en el proceso de reposición
+ de stock
 \end_layout
 
 \begin_layout Section
 Aporte de este Trabajo
 \end_layout
 
+\begin_layout Standard
+Este trabajo de grado brinda los siguientes resultados:
+\end_layout
+
+\begin_layout Itemize
+Definición de KPI adaptados a la medición del rendimiento de productos individua
+les.
+\end_layout
+
+\begin_layout Itemize
+Esquema básico y automatizado para el etiquetado de las instancias.
+\end_layout
+
+\begin_layout Itemize
+Integración de las herramientas Business Intelligence centrado en los Indicadore
+s Claves de Rendimiento y Machine Learning basado en aprendizaje supervisado.
+\end_layout
+
+\begin_layout Itemize
+Técnica de pronostico de la demanda de productos para reposición de stock.
+\end_layout
+
 \begin_layout Section
 Trabajos Futuros
+\end_layout
+
+\begin_layout Standard
+Con el propósito de futuras mejoras del presente trabajo, a continuación
+ se citan una serie de propuestas:
+\end_layout
+
+\begin_layout Itemize
+Incorporar mas KPI referentes a otros procesos de negocios que inciden en
+ la venta de un producto.
+\end_layout
+
+\begin_layout Itemize
+Etiquetado basado en clustering (aprendizaje no supervisado) con la aprobación
+ del experto de compras.
+\end_layout
+
+\begin_layout Itemize
+Optimizar los algoritmos de aprendizaje de la herramienta WEKA mediante
+ el ajuste de los parámetros (
+\shape italic
+Tuning Hyperparameters
+\shape default
+).
+\end_layout
+
+\begin_layout Itemize
+Incluir los costos asociados a un producto (costos de almacenamiento, seguro,
+ mantenimiento).
+\end_layout
+
+\begin_layout Itemize
+Desarrollar un software SaaS (Software as a Service) que provee un servicio
+ de pronóstico de la demanda.
 \end_layout
 
 \end_body

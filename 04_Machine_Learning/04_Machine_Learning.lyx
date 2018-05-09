@@ -3408,6 +3408,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Esquema K-fold Cross Validation.png
+	scale 50
 
 \end_inset
 
@@ -3545,10 +3546,18 @@ El porcentaje de acierto es la métrica de clasificación más fácil, simple
 \end_layout
 
 \begin_layout Standard
-Una matriz de confusión es una tabla de N por N que clasifica las predicciones
- en una de cuatro clasificaciones: verdadero positivo (True Positive - TP),
- verdadero negativo (True Negative - TN), falso positivo (False Positive
- - FP) y falso negativo (False Negative - FN).
+Una matriz de confusión para una clasificación binaria es una tabla de 2
+ x 2 como se muestra en la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:matriz-confusion"
+
+\end_inset
+
+ que clasifica las predicciones en una de cuatro clasificaciones: verdadero
+ positivo (True Positive - TP), verdadero negativo (True Negative - TN),
+ falso positivo (False Positive - FP) y falso negativo (False Negative -
+ FN).
  En problemas de clasificación para aplicaciones reales normalmente los
  errores cuestan diferentes cantidades.
  Por ejemplo en bancos y financieras el costo de prestar a una persona que
@@ -3559,6 +3568,94 @@ Una matriz de confusión es una tabla de N por N que clasifica las predicciones
  positivo cuando es realmente negativo.
  Un Falso Negativo es cuando el resultado se predice incorrectamente como
  negativo cuando es realmente positivo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename recursos/confusion_matrix_1.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:matriz-confusion"
+
+\end_inset
+
+Matriz de confusión para clasificación binaria.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:matriz-confusion-1"
+
+\end_inset
+
+ se muestra un esquema general de matriz de confusión para clasificación
+ multiclase.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename recursos/Matriz_Confusion_generica.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:matriz-confusion-1"
+
+\end_inset
+
+Matriz de confusión para clasificación multiclase.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3966,7 +4063,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Bias_Varianza.PNG
-	scale 80
+	scale 50
 
 \end_inset
 
