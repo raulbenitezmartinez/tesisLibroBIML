@@ -80,7 +80,15 @@ Experimentación
 \end_layout
 
 \begin_layout Section
-Esquema general
+Componente de solución 
+\begin_inset Quotes eld
+\end_inset
+
+Machine Learning
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -94,57 +102,8 @@ Se describirá cómo es la implementación del proceso de aprendizaje automátic
  evaluación consideradas para medir el rendimiento de los clasificadores.
 \end_layout
 
-\begin_layout Standard
-Para resumir la técnica propuesta, en la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:6.1"
-
-\end_inset
-
- se ilustra el esquema general de la solución.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
-	scale 40
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:6.1"
-
-\end_inset
-
-Esquema general de solución 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Datos proveídos por Business Intelligence
+Datos de entrada de Machine Learning
 \end_layout
 
 \begin_layout Standard
@@ -747,6 +706,10 @@ Recuento de clasificadores para períodos mensuales.
 
 \end_layout
 
+\begin_layout Subsection
+Porcentajes de acierto por período
+\end_layout
+
 \begin_layout Standard
 Se puede observar en la figura 
 \begin_inset CommandInset ref
@@ -812,7 +775,15 @@ KPI
 \end_layout
 
 \begin_layout Section
-Cómo hacer las predicciones
+Componente de solución 
+\begin_inset Quotes eld
+\end_inset
+
+Técnica de solución propuesta
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

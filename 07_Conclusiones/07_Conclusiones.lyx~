@@ -150,8 +150,12 @@ Incorporar mas KPI referentes a otros procesos de negocios que inciden en
 \end_layout
 
 \begin_layout Itemize
+Establecer valores continuos a la clase de las instancias.
+\end_layout
+
+\begin_layout Itemize
 Etiquetado basado en clustering (aprendizaje no supervisado) con la aprobación
- del experto de compras.
+ del experto en compras.
 \end_layout
 
 \begin_layout Itemize
@@ -164,12 +168,12 @@ Tuning Hyperparameters
 \end_layout
 
 \begin_layout Itemize
-Incluir los costos asociados a un producto (costos de almacenamiento, seguro,
+Incluir costos asociados a un producto (costos de almacenamiento, seguro,
  mantenimiento).
 \end_layout
 
 \begin_layout Itemize
-Desarrollar un software SaaS (Software as a Service) que provee un servicio
+Desarrollar un software SaaS (Software as a Service) que provea un servicio
  de pronóstico de la demanda.
 \end_layout
 

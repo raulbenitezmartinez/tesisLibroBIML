@@ -3408,6 +3408,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Esquema K-fold Cross Validation.png
+	scale 50
 
 \end_inset
 
@@ -3580,6 +3581,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/confusion_matrix_1.png
+	scale 60
 
 \end_inset
 
@@ -3629,6 +3631,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Matriz_Confusion_generica.png
+	scale 50
 
 \end_inset
 
@@ -4060,7 +4063,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Bias_Varianza.PNG
-	scale 80
+	scale 50
 
 \end_inset
 
@@ -4095,7 +4098,75 @@ key "Friedman2001"
 \end_layout
 
 \begin_layout Section
-Resumen
+Trabajos ralacionados a Pronóstico - Business Intelligence - Machine Learning
+\end_layout
+
+\begin_layout Standard
+Publicaciones que comprenden los últimos diez años, presentan trabajos muy
+ interesantes en el ámbito de Machine Learning asociado al Demand Forecasting
+ (Pronóstico de la Demanda).
+ Se citan a continuación algunos de los problemas afrontados en publicaciones,
+ que dan una idea del estado del arte en este tema:
+\end_layout
+
+\begin_layout Standard
+• Mejorar la precisión de la previsión de demanda de agua urbana para la
+ ciudad de Montreal – Canadá (2017).
+ 
+\end_layout
+
+\begin_layout Standard
+• Proponer un método de control inteligente para sistemas de calefacción
+ y refrigeración.
+ (2017).
+ 
+\end_layout
+
+\begin_layout Standard
+• Proponer un modelo predictivo probabilístico de consumo de energía, basado
+ en datos, para la predicción del consumo en edificios residenciales (2017).
+ 
+\end_layout
+
+\begin_layout Standard
+• Revisión de diferentes modelos de predicción de la carga eléctrica con
+ un enfoque particular en modelos de regresión (2017).
+ 
+\end_layout
+
+\begin_layout Standard
+• Aplicación de Machine Learning en la nube para encontrar conversaciones
+ de los consumidores que influyen en las decisiones de compras (2016).
+ 
+\end_layout
+
+\begin_layout Standard
+• Modelar la demanda turística de España (2016).
+ • Predicción del Mercado de Valores (2016).
+ 
+\end_layout
+
+\begin_layout Standard
+• Análisis para un minorista en línea: Previsión de la demanda y optimización
+ de precios (2016).
+ 
+\end_layout
+
+\begin_layout Standard
+• Demanda de calefacción residencial basado en el consumo total mensual
+ de gas natural (2015).
+ 
+\end_layout
+
+\begin_layout Standard
+• Predicción de la demanda de importación de crudo en Taiwán (2014).
+ 
+\end_layout
+
+\begin_layout Standard
+• Predicción del desempeño de las estrategias de pronóstico para la demanda
+ de repuestos navales (2012).
+ 
 \end_layout
 
 \end_body

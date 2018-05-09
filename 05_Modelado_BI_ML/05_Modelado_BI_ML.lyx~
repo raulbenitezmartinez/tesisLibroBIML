@@ -76,11 +76,88 @@
 \begin_body
 
 \begin_layout Chapter
-Modelado del problema
+Propuesta de solución
 \end_layout
 
 \begin_layout Section
-Planteamiento del problema
+Esquema general de solución
+\end_layout
+
+\begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:5.1.1"
+
+\end_inset
+
+ se ilustra el esquema general de la solución.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:5.1.1"
+
+\end_inset
+
+Esquema general de solución 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este capítulo se desarrolla el primer componente de la solución propuesta
+ que es Business Intelligence.
+ Para ello, se obtienen los datos de la fuentes de información, se sigue
+ el proceso de ETL y se construye el datawarehouse.
+ Luego definen y se obtienen los valores de los KPI, a continuación se define
+ la estrategia de etiquetado y se asignan las etiquetas a cada tupla de
+ KPI.
+\end_layout
+
+\begin_layout Standard
+En el capítulo siguiente se desarrollan el segundo y tercer componente da
+ la solución propuesta que son: Machine Learning y la Técnica de solución
+ propuesta.
+\end_layout
+
+\begin_layout Section
+Componente de solución 
+\begin_inset Quotes eld
+\end_inset
+
+Business Intelligence
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -405,7 +482,7 @@ reference "fig:Hechos_detalles 5.1"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2064,29 +2141,16 @@ Resumen
 \end_layout
 
 \begin_layout Standard
-Hemos visto como los componentes de Business Intelligence ayudaron a obtener
- el conjunto de valores para los KPI a partir de los datos históricos almacenado
-s en el dataware y el etiquetado a cada tupla de valores KPI, estos datos
- serán utilizados como un conjunto de entrenamiento por los algoritmos de
- aprendizaje automático del cual se obtendrá un modelo de solución al problema
- de estudio planteado de pronóstico de la demanda.
-\end_layout
-
-\begin_layout Standard
-——————————————
-\end_layout
-
-\begin_layout Standard
 Sintetizando el capítulo se puede resumir que el modelado del problema se
  basa en tres grandes procesos: a) proceso de Business Intelligence y sus
  etapas b) proceso de obtención de KPI y c) proceso de etiquetado.
 \end_layout
 
 \begin_layout Standard
-El proceso de Business Intelligence abarcó tres de sus principales etapas,
- 1) el acceso a las fuentes de información, 2) el proceso de extracción,
- transformación y carga de los datos obtenidos de la fuente de origen y
- 3) el diseño y construcción del datawarehouse.
+El proceso de Business Intelligence incluyó tres de sus componentes, 1)
+ el acceso a las fuentes de información, 2) el proceso de extracción, transforma
+ción y carga de los datos obtenidos de la fuente de origen y 3) el diseño
+ y construcción del datawarehouse.
  El acceso a la fuente de información de los datos no representó mayores
  inconvenientes, el proceso consistió en restaurar en un servidor local
  el backup de los datos de la empresa que proporcionó la información.
