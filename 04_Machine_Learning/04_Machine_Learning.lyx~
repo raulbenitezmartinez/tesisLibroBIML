@@ -3616,7 +3616,7 @@ reference "fig:matriz-confusion-1"
 
 \end_inset
 
- se muestra un esquema general de matriz de confusión para clasificación
+ se muestra una generalización de la matriz de confusión para clasificación
  multiclase.
 \end_layout
 
@@ -4098,7 +4098,25 @@ key "Friedman2001"
 \end_layout
 
 \begin_layout Section
-Trabajos ralacionados a Pronóstico - Business Intelligence - Machine Learning
+Interpretación de la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Errores-en-la-prediccion"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color blue
+Leer e interpretar Ruido, Sesgo y Varianza para ver si es suficiente explicación
+ para de la grafica
+\end_layout
+
+\begin_layout Section
+Trabajos relacionados a Pronóstico - Business Intelligence - Machine Learning
 \end_layout
 
 \begin_layout Standard

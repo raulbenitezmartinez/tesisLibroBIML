@@ -3616,7 +3616,7 @@ reference "fig:matriz-confusion-1"
 
 \end_inset
 
- se muestra un esquema general de matriz de confusión para clasificación
+ se muestra una generalización de la matriz de confusión para clasificación
  multiclase.
 \end_layout
 
@@ -3826,6 +3826,8 @@ Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
 \end_layout
 
 \begin_layout Subsubsection
+
+\color blue
 Estadística Kappa (Kappa Statistic)
 \end_layout
 
@@ -4109,11 +4111,14 @@ reference "fig:Errores-en-la-prediccion"
 \end_layout
 
 \begin_layout Standard
-dlsnfsaldkfndkf
+
+\color blue
+Leer e interpretar Ruido, Sesgo y Varianza para ver si es suficiente explicación
+ para de la grafica
 \end_layout
 
 \begin_layout Section
-Trabajos ralacionados a Pronóstico - Business Intelligence - Machine Learning
+Trabajos relacionados a Pronóstico - Business Intelligence - Machine Learning
 \end_layout
 
 \begin_layout Standard

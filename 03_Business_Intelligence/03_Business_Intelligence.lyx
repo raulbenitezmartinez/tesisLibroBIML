@@ -1690,15 +1690,21 @@ Resumen
 \end_layout
 
 \begin_layout Standard
+
+\color blue
 En el capitulo se presentó los conceptos básicos de Business Intelligence.
 \end_layout
 
 \begin_layout Standard
+
+\color blue
 Los principales componentes de Business Intelligence son : fuentes de informació
 n, ETL, datawarehouse, análisis OLAP y herramientas de visualización.
 \end_layout
 
 \begin_layout Standard
+
+\color blue
 Entre las áreas de aplicación se encuentran 
 \end_layout
 
