@@ -418,7 +418,7 @@ Método Delphi: Se basa en identificar un panel de expertos que pueden ser
  Este proceso se repite iterativamente hasta alcanzar un cierto nivel de
  consenso.
  Finalmente los resultados de este panel de expertos sirven de base para
- las decisiones de pronóstico de las gerentes.
+ las decisiones de pronóstico de los gerentes.
 \end_layout
 
 \begin_layout Itemize
@@ -667,7 +667,7 @@ name "Figura 2.1"
 
 \end_inset
 
-Ejemplos del componente tendencia en las series de tiempo 
+Componentes de tendencia en las series de tiempo 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCN2011"
@@ -1014,10 +1014,39 @@ con
 
 \end_deeper
 \begin_layout Itemize
-Auto Regressive Integrated Moving Average (ARIMA): Es una generalización
- de Autoregressive Moving Average (ARMA), que combina procesos autorregresivos
- (Autoregressive, AR) y procesos de media móvil (Moving Average, MA) creando
- así un modelo compuesto de series de tiempo.
+Auto Regressive Integrated Moving Average (ARIMA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ARIMA"
+description "Auto Regressive Integrated Moving Average"
+
+\end_inset
+
+): Es una generalización de Auto Regressive Moving Average (ARMA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ARMA"
+description "Auto Regressive Moving Average"
+
+\end_inset
+
+), que combina procesos autorregresivos (Autoregressive, AR
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AR"
+description "Auto Regressive"
+
+\end_inset
+
+) y procesos de media móvil (Moving Average, MA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MA"
+description "Moving Average"
+
+\end_inset
+
+) creando así un modelo compuesto de series de tiempo.
  ARIMA (p, d, q) captura los siguientes elementos 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1036,13 +1065,13 @@ AR: Autoregression.
 \end_layout
 
 \begin_layout Itemize
-I: Integrado.
+I: Integrated.
  Para hacer la serie temporal estacionaria midiendo las diferencias de observaci
 ones en diferentes momentos (d).
 \end_layout
 
 \begin_layout Itemize
-MA: Promedio móvil.
+MA: Moving Average.
  Un enfoque que tiene en cuenta la dependencia entre las observaciones y
  los términos de error residual cuando se usa un modelo de promedio móvil
  para las observaciones pasadas (q).
@@ -1237,7 +1266,15 @@ error promedio del pronóstico
 \emph default
 , conocido como 
 \emph on
-Desviación Media Absoluta (MAD - Median Absolute Desviation)
+Desviación Media Absoluta (MAD
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MAD"
+description "Median Absolute Desviation"
+
+\end_inset
+
+ - Median Absolute Desviation)
 \emph default
  y que se calcula con la siguiente fórmula:
 \end_layout
@@ -1259,7 +1296,15 @@ MAD=\frac{suma\;de\;los\;errores\;de\;pronóstico}{número\;de\;pronósticos}
 \begin_layout Standard
 Otra forma significativa de medir la precisión es a través del 
 \emph on
-Error Cuadrático Promedio (MSE - Mean Squared Error)
+Error Cuadrático Promedio (MSE
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MSE"
+description "Mean Squared Error"
+
+\end_inset
+
+ - Mean Squared Error)
 \emph default
  y que se calcula de la siguiente forma:
 \end_layout

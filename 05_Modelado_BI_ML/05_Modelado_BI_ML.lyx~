@@ -373,7 +373,15 @@ Tabla de hechos Cabecera:
  de hechos guarda datos de: fecha, cliente, caja, número de factura y monto
  total, monto exento, monto gravado IVA.
  Las métricas definidas para la tabla de hechos son: monto total, monto
- exento, monto gravado IVA.
+ exento, monto gravado IVA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IVA"
+description "Impuesto Valor Agregado"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -519,7 +527,7 @@ Tabla de hechos Detalles
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Definición de los Indicadores Claves de Rendimiento
 \end_layout
 
@@ -683,7 +691,7 @@ CS\,=\frac{Stock\,Actual\,Periodo}{Promedio\,Cantidad\,Venta\,Ultimos\,N\,Period
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Obtención de los valores para los Indicadores Clave de Rendimiento.
 \end_layout
 
@@ -916,7 +924,7 @@ Ejemplo de valores KPI para un periodo mensual
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Asignación de etiquetas
 \end_layout
 

@@ -149,7 +149,7 @@ key "BICCI07"
 \end_layout
 
 \begin_layout Standard
-El primero que acuñó el término fue Howard Dresner, quién fue consultor
+El primero que acuñó el término fue Howard Dresner en 1989, quién fue consultor
  de Gartner Group.
  Dresner utilizó el término para describir un conjunto de conceptos y métodos
  que mejoran la toma de decisiones, partiendo de la información disponible
@@ -372,7 +372,31 @@ Las fuentes de información representan el origen de los datos con la cual
 
 \begin_layout Itemize
 Sistemas operacionales o transaccionales, que incluyen aplicaciones desarrollada
-s a medida, ERP, CRM, SCM, etc.
+s a medida, ERP
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ERP"
+description "Entreprise Resource Planning"
+
+\end_inset
+
+, CRM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CRM"
+description "Customer Relationship Management"
+
+\end_inset
+
+, SCM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SCM"
+description "Supply Chain Management"
+
+\end_inset
+
+, etc.
 \end_layout
 
 \begin_layout Itemize
@@ -405,14 +429,37 @@ Estructurados: almacenados en las bases de datos.
 \end_layout
 
 \begin_layout Itemize
-Semi estructurados: son formatos entendibles por los computadores como Html
- tabulado, Excel, CSV u otros que pueden ser obtenidos mediante técnicas
- estándar de extracción de datos.
+Semi estructurados: son formatos entendibles por los computadores como HTML
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HTML"
+description "HyperText Markup Language"
+
+\end_inset
+
+ tabulado, Excel, CSV
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CSV"
+description "Comma Separated Values"
+
+\end_inset
+
+ u otros que pueden ser obtenidos mediante técnicas estándar de extracción
+ de datos.
 \end_layout
 
 \begin_layout Itemize
 No estructurados: son formatos no legibles para computadoras como Word,
- Html no tabulado, PDF, etc.
+ HTML no tabulado, PDF
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PDF"
+description "Portable Document Format"
+
+\end_inset
+
+, etc.
  que pueden obtenerse mediante técnicas avanzadas de extracción de datos.
 \end_layout
 
@@ -422,7 +469,15 @@ Extracción, Transformación y Carga
 
 \begin_layout Standard
 La extracción, transformación y carga, comúnmente abreviado por las siglas
- ETL (
+ ETL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ETL"
+description "Extract, Transform and Load"
+
+\end_inset
+
+ (
 \shape italic
 del inglés 
 \begin_inset Quotes eld
@@ -662,7 +717,15 @@ DATAWAREHOUSE
 \end_layout
 
 \begin_layout Standard
-El datawarehouse o 
+El datawarehouse abreviado como DW
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DW"
+description "Datawarehouse"
+
+\end_inset
+
+ o 
 \begin_inset Quotes eld
 \end_inset
 
@@ -798,8 +861,16 @@ Data Mart: es un subconjunto de datos del datawarehouse cuyo objetivo es
 \end_layout
 
 \begin_layout Itemize
-Operational Data Store (ODS): es un tipo de almacén de datos que proporciona
- sólo los últimos valores de los datos y no su historial.
+Operational Data Store (ODS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ODS"
+description "Operational Data Store"
+
+\end_inset
+
+): es un tipo de almacén de datos que proporciona sólo los últimos valores
+ de los datos y no su historial.
 \end_layout
 
 \begin_layout Itemize
@@ -950,7 +1021,15 @@ OLAP
 
 \begin_layout Standard
 Existen múltiples tecnologías que permiten analizar las información almacenada
- en un datawarehouse, uno de los más importantes es OLAP (
+ en un datawarehouse, uno de los más importantes es OLAP
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "OLAP"
+description "Online Analytical Processing"
+
+\end_inset
+
+ (
 \shape italic
 Online Analytical Processing
 \shape default
@@ -1105,20 +1184,44 @@ Existen distintos tipos de OLAP, las cuales difieren principalmente en la
 \end_layout
 
 \begin_layout Itemize
-MOLAP (Multidimensional OLAP): es la forma tradicional del OLAP, accede
- directamente sobre una base de datos multidimensional, que utiliza estructuras
- de datos optimizadas para la recuperación de los mismos, es eficaz en los
- tiempos de respuestas de las consultas.
+MOLAP
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MOLAP"
+description "Multidimensional Online Analytical Processing"
+
+\end_inset
+
+ (Multidimensional OLAP): es la forma tradicional del OLAP, accede directamente
+ sobre una base de datos multidimensional, que utiliza estructuras de datos
+ optimizadas para la recuperación de los mismos, es eficaz en los tiempos
+ de respuestas de las consultas.
 \end_layout
 
 \begin_layout Itemize
-ROLAP (Relational OLAP): accede directamente a las bases de datos relacionales
+ROLAP
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ROLAP"
+description "Relational Online Analytical Processing"
+
+\end_inset
+
+ (Relational OLAP): accede directamente a las bases de datos relacionales
  que almacenan los datos base y las tablas dimensionales como tablas relacionada
 s.
 \end_layout
 
 \begin_layout Itemize
-HOLAP (Hybrid OLAP): es una combinación de las dos anteriores, permite almacenar
+HOLAP
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HOLAP"
+description "Hybrid Online Analytical Processing"
+
+\end_inset
+
+ (Hybrid OLAP): es una combinación de las dos anteriores, permite almacenar
  parte de los datos en una base de datos multidimensional y otra parte de
  en una relacional.
  En la base de datos relacional se guardan cantidades mas grandes de información
@@ -1690,16 +1793,69 @@ Resumen
 \end_layout
 
 \begin_layout Standard
-En el capitulo se presentó los conceptos básicos de Business Intelligence.
+
+\color black
+En el capítulo se introdujo los conceptos más relevantes de Business Intelligenc
+e.
+ El término acuñado en 1989 por Howard Dressner consultor de Gartner Group,
+ lo describe como un conjunto de conceptos y métodos para transformar los
+ datos empresariales en información significativa y útil para mejorar las
+ decisiones.
+ Se realiza una breve introducción de los principales componentes de Business
+ Intelligence citadas a continuación: 
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Fuentes de información.
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Extracción, transformación y carga.
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Datawarehouse.
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Análisis OLAP, y
+\end_layout
+
+\begin_layout Itemize
+
+\color black
+Herramientas de visualización.
 \end_layout
 
 \begin_layout Standard
-Los principales componentes de Business Intelligence son : fuentes de informació
-n, ETL, datawarehouse, análisis OLAP y herramientas de visualización.
+Los Indicadores Claves de Rendimiento, como lo dice el nombre se tratan
+ de indicadores que son decisivos y brindan un análisis rápido de la situación
+ actual del negocio para facilitar la toma de decisiones.
+ Son un elemento importarte en la estrategia de negocios por su capacidad
+ de comunicar resultados a las personas que forman parte del proyecto.
 \end_layout
 
 \begin_layout Standard
-Entre las áreas de aplicación se encuentran 
+
+\color black
+Por último en el cuadro 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Cuadro:3.1"
+
+\end_inset
+
+, se resume algunas de las áreas de mayor aplicación de Business Intelligence,
+ entre las cabe destacar: salud, educación, transporte, telecomunicaciones,
+ bancos, financieras, inventario, empresas retail.
 \end_layout
 
 \end_body

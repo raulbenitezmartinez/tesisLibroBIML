@@ -143,6 +143,16 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset FloatList figure
 
 \end_inset

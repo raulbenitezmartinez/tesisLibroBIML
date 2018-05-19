@@ -174,8 +174,15 @@ Incluir costos asociados a un producto (costos de almacenamiento, seguro,
 \end_layout
 
 \begin_layout Itemize
-Desarrollar un software SaaS (Software as a Service) que provea un servicio
- de pronóstico de la demanda.
+Desarrollar un software SaaS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SaaS"
+description "Software as a Service"
+
+\end_inset
+
+ (Software as a Service) que provea un servicio de pronóstico de la demanda.
 \end_layout
 
 \end_body

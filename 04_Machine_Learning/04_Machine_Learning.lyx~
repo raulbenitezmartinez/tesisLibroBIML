@@ -131,7 +131,15 @@ key "CMIAlan1950"
 \end_inset
 
  expuso este y otros conceptos y como tal es considerado padre de la Inteligenci
-a Artificial (IA).
+a Artificial (IA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IA"
+description "Inteligencia Artificial"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -236,9 +244,17 @@ key "PCSMc1959"
 Generador de Consejos
 \shape default
 , todos estos aportes desarrollados en 1958.
- Minsky diseñó SNARC (Stochastic Neural Analog Reinforcement Calculator)
- la primera máquina a partir de una red neuronal, en el año 1951, junto
- a Seymour Papert publicó el libro 
+ Minsky diseñó SNARC
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SNARC"
+description "Stochastic Neural Analog Reinforcement Calculator"
+
+\end_inset
+
+ (Stochastic Neural Analog Reinforcement Calculator) la primera máquina
+ a partir de una red neuronal, en el año 1951, junto a Seymour Papert publicó
+ el libro 
 \begin_inset Quotes eld
 \end_inset
 
@@ -285,7 +301,15 @@ En setiembre de 1956 en el
 \begin_inset Quotes eld
 \end_inset
 
-MIT Symposium on Information Theory
+MIT
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MIT"
+description "Massachusetts Institute of Technology"
+
+\end_inset
+
+ Symposium on Information Theory
 \begin_inset Quotes erd
 \end_inset
 
@@ -328,7 +352,15 @@ General Problem Solver
 \begin_inset Quotes erd
 \end_inset
 
- (GPS), pretendía funcionar como una máquina universal para resolver problemas
+ (GPS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GPS"
+description "General Problem Solver"
+
+\end_inset
+
+), pretendía funcionar como una máquina universal para resolver problemas
  y fue el primer programa de computador que separó su conocimiento de los
  problemas (reglas representadas como datos de entrada) de su estrategia
  de cómo resolver problemas (un motor de resolución genérico).
@@ -386,8 +418,15 @@ Reconocimiento automático de ciertas áreas en el mundo realizado por satélite
 
 \begin_layout Standard
 Para recalcar el veloz crecimiento de los datos en el mundo, en un estudio
- publicado por la International Data Corporation (IDC) y patrocinado por
- DELL EMC que se denomina: 
+ publicado por la International Data Corporation (IDC
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IDC"
+description "International Data Corporation"
+
+\end_inset
+
+) y patrocinado por DELL EMC que se denomina: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -440,8 +479,7 @@ name "fig:IDC-exabyes"
 
 \end_inset
 
-Del 2005 al 2020 el universo digital crecerá en un factor de 300, de 130
- exabytes a 40,000 exabytes, es decir se duplicará cada dos años.
+Proyección de crecimiento de datos del 2005 al 2020.
 \end_layout
 
 \end_inset
@@ -459,8 +497,16 @@ El universo digital analizado está compuesto por imágenes y vídeos en teléfo
  móviles cargados en YouTube, películas digitales, datos bancarios en cajeros
  automáticos, imágenes de seguridad en aeropuertos y en eventos importantes
  como los Juegos Olímpicos, colisiones subatómicos registradas por el Gran
- Colisionador de Hadrones en el CERN, llamadas de voz a través de líneas
- telefónicas digitales y los mensajes de texto.
+ Colisionador de Hadrones en el CERN
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CERN"
+description "Conseil Europeen pour la Recherche Nucleaire"
+
+\end_inset
+
+, llamadas de voz a través de líneas telefónicas digitales y los mensajes
+ de texto.
  Las mediciones indican que en el 2005 existían 130 exabytes en datos digitales,
  en el 2010 llegó a 1200 exabytes, en el 2015 a unos 7900 exabytes y para
  el 2020 se pronostica que llegará a los 40000 exabytes.
@@ -474,7 +520,15 @@ Definición
 
 \begin_layout Standard
 Arthur Samuel acuñó el término Machine Learning en 1959 mientras trabaja
- para IBM.
+ para IBM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IBM"
+description "International Business Machines"
+
+\end_inset
+
+.
  En el IBM Journal publicó 
 \begin_inset Quotes eld
 \end_inset
@@ -614,8 +668,15 @@ problemas para los cuales fueron hechos
  y contar con una medida de rendimiento para medir el éxito.
  Estructuralmente un agente = arquitectura + programa.
  Los sensores y actuadores forman parte de la arquitectura, la arquitectura
- es el medio físico que podría ser una PC común o un sofisticado robot con
- brazos mecánicos, cámaras, sensores, etc.
+ es el medio físico que podría ser una PC
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PC"
+description "Personal Computer"
+
+\end_inset
+
+ común o un sofisticado robot con brazos mecánicos, cámaras, sensores, etc.
  El objetivo principal de IA es construir el programa del agente, que es
  donde se implementa la función del agente.
  Para que el agente sea considerado un agente que aprende, el programa debe
@@ -711,8 +772,11 @@ Aprendizaje supervisado
 
 \begin_layout Standard
 Los agentes inteligentes que implementan algoritmos de apredizaje supervisado
- (supervised learning), tienen como objetivo aprender una función de hipótesis
- 
+ (
+\shape italic
+Supervised Learning
+\shape default
+), tienen como objetivo aprender una función de hipótesis 
 \begin_inset Quotes eld
 \end_inset
 
@@ -818,9 +882,12 @@ Aprendizaje no supervisado
 \end_layout
 
 \begin_layout Standard
-En los problemas de aprendizaje no supervisado (unsupervised learning) los
- algoritmos reciben como entrada datos de entrenamiento que no tienen resultados
- conocidos ni etiquetas.
+En los problemas de aprendizaje no supervisado (
+\shape italic
+Unsupervised Learning
+\shape default
+) los algoritmos reciben como entrada datos de entrenamiento que no tienen
+ resultados conocidos ni etiquetas.
  Se buscan estructuras presentes y como resultado se pueden extraer reglas
  generales, o reducir sistemáticamente la redundancia, o se pueden organizar
  los datos por similitud.
@@ -834,8 +901,15 @@ a priori
  sola el concepto de lo que es un animal gato, otro ejemplo es el reconocimiento
  de dígitos escritos a mano.
  Entre los algoritmos que implementan aprendizaje no supervisado están:
- Bayesian Network, Neural Networks y Support Vector Machines (SVM) o Máquinas
- Núcleo.
+ Bayesian Network, Neural Networks y Support Vector Machines (SVM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SVM"
+description "Support Vector Machines"
+
+\end_inset
+
+) o Máquinas Núcleo.
 \end_layout
 
 \begin_layout Subsection
@@ -843,11 +917,17 @@ Aprendizaje por refuerzo
 \end_layout
 
 \begin_layout Standard
-El aprendizaje por refuerzo (reinforcement learning) es el más general entre
- las tres categorías.
+El aprendizaje por refuerzo (
+\shape italic
+Reinforcement Learning
+\shape default
+) es el más general entre las tres categorías.
  En vez de que un instructor indique al agente qué hacer, el agente inteligente
- debe aprender cómo se comporta el entorno mediante recompensas (refuerzos)
- o castigos, derivados del éxito o del fracaso respectivamente.
+ debe aprender cómo se comporta el entorno mediante recompensas (
+\shape italic
+refuerzos
+\shape default
+) o castigos, derivados del éxito o del fracaso respectivamente.
  El objetivo principal es aprender la función de valor que le ayude al agente
  inteligente a maximizar la señal de recompensa y así optimizar sus políticas
  de modo a comprender el comportamiento del entorno y a tomar buenas decisiones
@@ -858,9 +938,36 @@ El aprendizaje por refuerzo (reinforcement learning) es el más general entre
 Los principales algoritmos de aprendizaje por refuerso se desarrollan dentro
  de los métodos de resolución de problemas de decisión finitios de Markov,
  que incorporan las ecuaciones de Bellman y las funciones de valor.
- Los tres métodos principales son: la Programación Dinámica (Dynamic Programming
- o DP), los métodos de Monte Carlo y el aprendizaje de Diferencias Temporales
- (Temporal-Difference learning o TD) 
+ Los tres métodos principales son: la Programación Dinámica (
+\shape italic
+Dynamic Programming
+\shape default
+ 
+\shape italic
+o DP
+\shape default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "DP"
+description "Dynamic Programming"
+
+\end_inset
+
+), los métodos de Monte Carlo y el aprendizaje de Diferencias Temporales
+ (
+\shape italic
+Temporal-Difference Learning o TD
+\shape default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TD"
+description "Temporal-Difference Learning"
+
+\end_inset
+
+) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RLIntroduccion1998"
@@ -982,9 +1089,12 @@ Algoritmos de regresión
 \end_layout
 
 \begin_layout Standard
-Los Algoritmos de Regresión (Regression Algorithms) modelan la relación
- que existe entre variables, se mejora iterativamente utilizando una medida
- de error en las predicciones hechas por el modelo.
+Los Algoritmos de Regresión (
+\shape italic
+Regression Algorithms
+\shape default
+) modelan la relación que existe entre variables, se mejora iterativamente
+ utilizando una medida de error en las predicciones hechas por el modelo.
  Los métodos de regresión son herramientas de las estadísticas que se han
  adoptado en el aprendizaje de la máquina.
  Se pueden utilizar el término regresión para referirse a la clase de problema
@@ -998,8 +1108,11 @@ Algoritmos basados en instancia
 \end_layout
 
 \begin_layout Standard
-El modelo de aprendizaje Basado en Instancia (Instance-Based Learning) es
- un problema de decisión con instancias o ejemplos de datos de entrenamiento
+El modelo de aprendizaje Basado en Instancia (
+\shape italic
+Instance-Based Learning
+\shape default
+) es un problema de decisión con instancias o ejemplos de datos de entrenamiento
  que se consideran importantes o requeridos para el modelo.
  Estos métodos típicamente construyen una base de datos con ejemplos y los
  compara con los nuevos datos utilizando una medida de similaridad para
@@ -1016,8 +1129,12 @@ Algoritmos de regularización
 \end_layout
 
 \begin_layout Standard
-Los Algoritmos de Regularización (Regularization), comprende una extensión
- hecha a otros métodos (típicamente a los métodos de regresión).
+Los Algoritmos de Regularización (
+\shape italic
+Regularization
+\shape default
+), comprende una extensión hecha a otros métodos (típicamente a los métodos
+ de regresión).
  Penaliza los modelos basándose en sus complejidades, favoreciendo modelos
  más simples que también son mejores de generalizar.
  Son populares, potentes y en general simples modificaciones de otros métodos.
@@ -1030,8 +1147,12 @@ Algoritmos de árboles de decisión
 \end_layout
 
 \begin_layout Standard
-Los métodos de Árboles de Decisión (Decision Tree) construyen un modelo
- de decisiones hechas en base a los valores de atributos en los datos.
+Los métodos de Árboles de Decisión (
+\shape italic
+Decision Tree
+\shape default
+) construyen un modelo de decisiones hechas en base a los valores de atributos
+ en los datos.
  Las decisiones se bifurcan en la estructura del árbol hasta que se tome
  una decisión de predicción para un registro dado.
  Los árboles de decisión son entrenados en los datos para problemas de clasifica
@@ -1046,8 +1167,12 @@ Algoritmos bayesianos
 \end_layout
 
 \begin_layout Standard
-Los métodos Bayesianos (Bayesian) son los que aplican explícitamente el
- teorema de Bayes para problemas tales como la clasificación y la regresión.
+Los métodos Bayesianos (
+\shape italic
+Bayesian
+\shape default
+) son los que aplican explícitamente el teorema de Bayes para problemas
+ tales como la clasificación y la regresión.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado.
 \end_layout
 
@@ -1056,8 +1181,12 @@ Algoritmos de agrupación
 \end_layout
 
 \begin_layout Standard
-La Agrupación (Clustering) así como también la regresión describen la clase
- de problema y la clase de método.
+La Agrupación (
+\shape italic
+Clustering
+\shape default
+) así como también la regresión describen la clase de problema y la clase
+ de método.
  Los métodos de agrupación suelen estar organizados según el enfoque del
  modelado, tales como los basados en centroides y los jerárquicos.
  Todos los métodos atañen a la utilización de las estructuras inherentes
@@ -1071,9 +1200,12 @@ Algoritmos de aprendizaje de reglas de asociación
 \end_layout
 
 \begin_layout Standard
-Los métodos de aprendizaje de Reglas de Asociación (Rule System) extraen
- reglas que mejor explican las relaciones observadas entre variables en
- los datos.
+Los métodos de aprendizaje de Reglas de Asociación (
+\shape italic
+Rule System
+\shape default
+) extraen reglas que mejor explican las relaciones observadas entre variables
+ en los datos.
  Estas reglas pueden descubrir asociaciones importantes y comercialmente
  útiles, en grandes conjuntos de datos multidimensionales que pueden ser
  explotados por una organización.
@@ -1085,8 +1217,12 @@ Algoritmos de redes neurales artificiales
 \end_layout
 
 \begin_layout Standard
-Las Redes Neuronales artificiales (Neural Networks) son modelos inspirados
- en la estructura y/o función de las redes neuronales biológicas.
+Las Redes Neuronales artificiales (
+\shape italic
+Neural Networks
+\shape default
+) son modelos inspirados en la estructura y/o función de las redes neuronales
+ biológicas.
  Son una clase de búsqueda de patrones que se utilizan comúnmente para problemas
  de regresión y clasificación.
  Es realmente un enorme subcampo compuesto de cientos de algoritmos y variacione
@@ -1102,9 +1238,12 @@ Algoritmos de aprendizaje profundo
 \end_layout
 
 \begin_layout Standard
-Los métodos de Aprendizaje Profundo (Deep Learning) son una moderna actualizació
-n de las redes neuronales artificiales que explotan el abundante y barato
- poder de computación.
+Los métodos de Aprendizaje Profundo (
+\shape italic
+Deep Learning
+\shape default
+) son una moderna actualización de las redes neuronales artificiales que
+ explotan el abundante y barato poder de computación.
  Se ocupan en construir redes neuronales mucho más grandes y complejas y,
  muchos métodos se refieren a problemas de aprendizaje semi-supervisados
  donde grandes conjuntos de datos contienen muy pocos datos etiquetados.
@@ -1118,9 +1257,13 @@ Algoritmos de reducción de dimensionalidad
 
 \begin_layout Standard
 Al igual que los métodos de agrupación, la Reducción de la Dimensionalidad
- (Dimensionality Reduction) busca y explora la estructura inherente en los
- datos, pero en este caso de una manera no supervisada o en orden a resumir
- o describir los datos utilizando menos información.
+ (
+\shape italic
+Dimensionality Reduction
+\shape default
+) busca y explora la estructura inherente en los datos, pero en este caso
+ de una manera no supervisada o en orden a resumir o describir los datos
+ utilizando menos información.
  Esto puede ser útil para visualizar datos dimensionales o para simplificar
  datos que luego se pueden utilizar en un método de aprendizaje supervisado.
  Muchos de estos métodos pueden ser adaptados para su uso en clasificación
@@ -1133,9 +1276,13 @@ Algoritmos ensamble
 \end_layout
 
 \begin_layout Standard
-Métodos de Ensamble (Ensemble) son modelos compuestos por múltiples modelos
- más débiles, que son entrenados independientemente y cuyas predicciones
- son combinadas de alguna manera para hacer la predicción general.
+Métodos de Ensamble (
+\shape italic
+Ensemble
+\shape default
+) son modelos compuestos por múltiples modelos más débiles, que son entrenados
+ independientemente y cuyas predicciones son combinadas de alguna manera
+ para hacer la predicción general.
  Mucho esfuerzo se pone en qué tipos de aprendices débiles combinar y las
  formas en que hay que combinarlos.
  Esta es una clase de técnica muy poderosa y como tal es muy popular.
@@ -1179,7 +1326,15 @@ Programación dinámica con Value Iteration.
 \end_layout
 
 \begin_layout Itemize
-Programación dinámica con Generalized policy iteration (GPI).
+Programación dinámica con Generalized Policy Iteration (GPI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GPI"
+description "Generalized Policy Iteration"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Itemize
@@ -1428,8 +1583,16 @@ Algoritmos de clasificación en Weka
 \end_layout
 
 \begin_layout Standard
-Weka es una colección de algoritmos de aprendizaje automático para tareas
- de minería de datos.
+Weka
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Weka"
+description "Waikato Environment for Knowledge Analysis"
+
+\end_inset
+
+ es una colección de algoritmos de aprendizaje automático para tareas de
+ minería de datos.
  Los algoritmos pueden ser aplicados directamente a un conjunto de datos
  o llamados desde código Java.
  Weka contiene herramientas para pre-procesamiento de datos, clasificación,
@@ -1925,6 +2088,14 @@ Basado en funciones
 
 \size small
 SMO
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SMO"
+description "Sequential Minimal Optimization"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2071,6 +2242,14 @@ Clasificadores perezosos
 
 \size small
 LWL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LWL"
+description "Locally Weighted Learning"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3137,6 +3316,14 @@ key "Quinlan1993"
 
 \size small
 LMT
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LMT"
+description "Logistic Model Trees"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3347,9 +3534,12 @@ Porcentaje de División
 \end_layout
 
 \begin_layout Standard
-La técnica de Porcentaje de División (Percentage Split) divide el conjunto
- de datos en dos partes, de modo que el modelo pueda ser entrenado y probado
- sobre diferentes datos.
+La técnica de Porcentaje de División (
+\shape italic
+Percentage Split
+\shape default
+) divide el conjunto de datos en dos partes, de modo que el modelo pueda
+ ser entrenado y probado sobre diferentes datos.
  Presenta una mejor estimación del rendimiento fuera de la muestra, pero
  sigue siendo una estimación de "alta varianza".
  Útil debido a su velocidad, simplicidad y flexibilidad.
@@ -3826,6 +4016,8 @@ Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
 \end_layout
 
 \begin_layout Subsubsection
+
+\color blue
 Estadística Kappa (Kappa Statistic)
 \end_layout
 
@@ -4120,71 +4312,25 @@ Trabajos relacionados a Pronóstico - Business Intelligence - Machine Learning
 \end_layout
 
 \begin_layout Standard
-Publicaciones que comprenden los últimos diez años, presentan trabajos muy
- interesantes en el ámbito de Machine Learning asociado al Demand Forecasting
- (Pronóstico de la Demanda).
+En esta sección se pretende dar a conocer un análisis de los trabajos relacionad
+os con los tres puntos más importantes del este trabajo.
+ En los textos revisados cabe destacar que no se ha encontrado un trabajo
+ o estudio que aborda el problema del Pronóstico de la Demanda con Business
+ Intelligence y Machine Learning en la misma solución.
+ Sin embargo, en publicaciones que comprenden los últimos los años, presentan
+ trabajos muy interesantes en el ámbito de Machine Learning asociado al
+ Pronóstico de la Demanda (
+\shape italic
+Demand Forecasting
+\shape default
+), como así también Pronóstico de la demanda en conjunto con Business Intelligen
+ce.
  Se citan a continuación algunos de los problemas afrontados en publicaciones,
  que dan una idea del estado del arte en este tema:
 \end_layout
 
 \begin_layout Standard
-• Mejorar la precisión de la previsión de demanda de agua urbana para la
- ciudad de Montreal – Canadá (2017).
- 
-\end_layout
-
-\begin_layout Standard
-• Proponer un método de control inteligente para sistemas de calefacción
- y refrigeración.
- (2017).
- 
-\end_layout
-
-\begin_layout Standard
-• Proponer un modelo predictivo probabilístico de consumo de energía, basado
- en datos, para la predicción del consumo en edificios residenciales (2017).
- 
-\end_layout
-
-\begin_layout Standard
-• Revisión de diferentes modelos de predicción de la carga eléctrica con
- un enfoque particular en modelos de regresión (2017).
- 
-\end_layout
-
-\begin_layout Standard
-• Aplicación de Machine Learning en la nube para encontrar conversaciones
- de los consumidores que influyen en las decisiones de compras (2016).
- 
-\end_layout
-
-\begin_layout Standard
-• Modelar la demanda turística de España (2016).
- • Predicción del Mercado de Valores (2016).
- 
-\end_layout
-
-\begin_layout Standard
-• Análisis para un minorista en línea: Previsión de la demanda y optimización
- de precios (2016).
- 
-\end_layout
-
-\begin_layout Standard
-• Demanda de calefacción residencial basado en el consumo total mensual
- de gas natural (2015).
- 
-\end_layout
-
-\begin_layout Standard
-• Predicción de la demanda de importación de crudo en Taiwán (2014).
- 
-\end_layout
-
-\begin_layout Standard
-• Predicción del desempeño de las estrategias de pronóstico para la demanda
- de repuestos navales (2012).
- 
+.........................................................................................
 \end_layout
 
 \end_body
