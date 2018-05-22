@@ -4367,9 +4367,9 @@ os con los tres puntos más importantes del este trabajo.
  En los textos revisados cabe destacar que no se ha encontrado un trabajo
  o estudio que aborda el problema del Pronóstico de la Demanda con Business
  Intelligence y Machine Learning en la misma solución.
- Sin embargo, en publicaciones que comprenden los últimos los años, presentan
- trabajos muy interesantes en el ámbito de Machine Learning asociado al
- Pronóstico de la Demanda (
+ Sin embargo, publicaciones que comprenden los últimos años presentan trabajos
+ muy interesantes en el ámbito de Machine Learning asociado al Pronóstico
+ de la Demanda (
 \shape italic
 Demand Forecasting
 \shape default
@@ -4380,7 +4380,35 @@ ce.
 \end_layout
 
 \begin_layout Standard
-.........................................................................................
+En 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Castro2016"
+
+\end_inset
+
+, se afronta el problema de mejorar el tiempo y la calidad en la toma de
+ decisiones gerenciales en la empresa 
+\begin_inset Quotes eld
+\end_inset
+
+Figueri SRL
+\begin_inset Quotes erd
+\end_inset
+
+, el tiempo y el esfuerzo requerido por el área de sistemas para la generación
+ de informes a la gerencia afectan en la toma de decisiones.
+ El enfoque adoptado para la solución consiste en la implementación de un
+ sistema de Business Intelligence basado en un modelo de pronóstico de ventas.
+ En el desarrollo de Business Intelligence se construye un Data mart bajo
+ la metodología de Kimball para guardar los datos históricos, se realiza
+ el proceso ETL para obtener y cargar los datos al dataware.
+ El desarrollo del pronóstico se basa en el modelo de series de tiempo autorregr
+esivo ARMA de la demanda de productos.
+ Como resultado de la solución propuesta la empresa obtuvo una disminución
+ en el porcentaje de devolución y el porcentaje de rotación de productos,
+ los pronósticos ayudaron a la toma de decisiones, generando mayores ventas
+ y nuevas estrategias de marketing.
 \end_layout
 
 \end_body

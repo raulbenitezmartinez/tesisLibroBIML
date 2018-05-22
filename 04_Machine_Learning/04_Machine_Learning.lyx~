@@ -3650,7 +3650,11 @@ Métricas de desempeño para problemas de clasificación
 Las métricas de clasificación son las medidas contra las cuales se evalúan
  los modelos.
  Para los problemas de clasificación, es natural medir el rendimiento de
- un clasificador en términos de la tasa de error (error rate).
+ un clasificador en términos de la tasa de error (
+\shape italic
+Error Rate
+\shape default
+).
  El clasificador predice la clase de cada instancia: si es correcta se cuenta
  como un éxito, sino se cuenta como un error.
  La tasa de error es sólo la proporción de errores cometidos sobre un conjunto
@@ -3745,9 +3749,55 @@ reference "fig:matriz-confusion"
 \end_inset
 
  que clasifica las predicciones en una de cuatro clasificaciones: verdadero
- positivo (True Positive - TP), verdadero negativo (True Negative - TN),
- falso positivo (False Positive - FP) y falso negativo (False Negative -
- FN).
+ positivo (
+\shape italic
+True Positive - TP
+\shape default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TP"
+description "True Positive"
+
+\end_inset
+
+), verdadero negativo (
+\shape italic
+True Negative - TN
+\shape default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TN"
+description "True Negative"
+
+\end_inset
+
+), falso positivo (
+\shape italic
+False Positive - FP
+\shape default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FP"
+description "False Positive"
+
+\end_inset
+
+) y falso negativo (
+\shape italic
+False Negative - FN
+\shape default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "FN"
+description "False Negative"
+
+\end_inset
+
+).
  En problemas de clasificación para aplicaciones reales normalmente los
  errores cuestan diferentes cantidades.
  Por ejemplo en bancos y financieras el costo de prestar a una persona que
@@ -4317,9 +4367,9 @@ os con los tres puntos más importantes del este trabajo.
  En los textos revisados cabe destacar que no se ha encontrado un trabajo
  o estudio que aborda el problema del Pronóstico de la Demanda con Business
  Intelligence y Machine Learning en la misma solución.
- Sin embargo, en publicaciones que comprenden los últimos los años, presentan
- trabajos muy interesantes en el ámbito de Machine Learning asociado al
- Pronóstico de la Demanda (
+ Sin embargo, publicaciones que comprenden los últimos años presentan trabajos
+ muy interesantes en el ámbito de Machine Learning asociado al Pronóstico
+ de la Demanda (
 \shape italic
 Demand Forecasting
 \shape default
@@ -4330,7 +4380,35 @@ ce.
 \end_layout
 
 \begin_layout Standard
-.........................................................................................
+En 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Castro2016"
+
+\end_inset
+
+, se afronta el problema de mejorar el tiempo y la calidad en la toma de
+ decisiones gerenciales en la empresa 
+\begin_inset Quotes eld
+\end_inset
+
+Figueri SRL
+\begin_inset Quotes erd
+\end_inset
+
+, el tiempo y el esfuerzo requerido por el área de sistemas para la generación
+ de informes a la gerencia afectan en la toma de decisiones.
+ El enfoque adoptado para la solución consiste en la implementación de un
+ sistema de Business Intelligence basado en un modelo de pronóstico de ventas.
+ En el desarrollo de Business Intelligence se construye un Data mart bajo
+ la metodología de Kimball para guardar los datos históricos, se realiza
+ el proceso ETL para obtener y cargar los datos al dataware.
+ El desarrollo del pronóstico de series de tiempo se basa en el modelo autorregr
+esivo ARMA de la demanda de productos.
+ Como resultado de la solución propuesta la empresa obtuvo una disminución
+ en el porcentaje de devolución y el porcentaje de rotación de productos,
+ los pronósticos ayudaron a la toma de decisiones, generando mayores ventas
+ y nuevas estrategias de marketing.
 \end_layout
 
 \end_body

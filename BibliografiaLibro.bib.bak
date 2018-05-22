@@ -737,20 +737,27 @@
 }
 
 @Book{Friedman2001,
-  title         = {The elements of statistical learning},
-  publisher     = {Springer series in statistics New York},
-  year          = {2001},
-  author        = {Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert},
-  volume        = {1},
-  __markedentry = {[alberto:]},
+  title     = {The elements of statistical learning},
+  publisher = {Springer series in statistics New York},
+  year      = {2001},
+  author    = {Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert},
+  volume    = {1},
 }
 
 @Book{Science.com2016,
   title         = {The Machine Learning Masterclass},
   year          = {2016},
   author        = {Elite Data Science.com},
-  __markedentry = {[alberto:6]},
+  __markedentry = {[alberto:]},
   url           = {https://elitedatascience.com},
+}
+
+@Article{Castro2016,
+  author        = {Juan Castro},
+  title         = {APLICACION DE BUSINESS INTELLIGENCE BASADO EN UN MODELO DE PRONOSTICO DE SERIES DE TIEMPO PARA MEJORAR EL VOLUMEN DE VENTAS DE LA EMPRESA FSRL DE LIMA | Castro | Revista de Investigacion Business Intelligence},
+  year          = {2016},
+  __markedentry = {[alberto:6]},
+  howpublished  = {\url{http://revistascientificas.upeu.edu.pe/index.php/ri_bi/article/view/490}},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
