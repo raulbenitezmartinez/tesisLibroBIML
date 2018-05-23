@@ -4411,5 +4411,76 @@ esivo ARMA de la demanda de productos.
  y nuevas estrategias de marketing.
 \end_layout
 
+\begin_layout Standard
+En 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mouatadid2017"
+
+\end_inset
+
+ los autores abordan cómmo pronosticar la demanda de agua urbana en la ciudad
+ de Montreal (Canadá) en plazos de 1 y 3 días.
+ Para llegar a la solución propuesta se compararon cuatro modelos de pronóstico:
+ Artificial Neural Network (ANN), Support Vector Regression (SVR) y Extreme
+ Learning Machine (ELM) y el tradicional Multiple Linear Regression (MLR).
+ Los modelos se basaron en combinaciones de variables de entrada como la
+ temperatura diaria máxima, precipitación diaria total y la demanda diaria
+ de agua con datos disponibles desde 1999 a 2010.
+ Los dos índices de rendimiento utilizados para evaluar los modelos MLR,
+ ANN, SVR y ELM fueron el Coeficiente de Determinación (
+\begin_inset Formula $R^{2}$
+\end_inset
+
+) y el Error Cuadrático Medio (RMSE).
+ ELM alcanzó una mayor precisión en ambos períodos de pronóstico 1 y 3 días,
+ en comparación con MLR, ANN y SVR que alcanzaron buena precisión para el
+ plazo de 1 día.
+ En general, ELM resulta ser un método de aprendizaje eficiente cuando se
+ trata de pronosticar a corto plazo.
+\end_layout
+
+\begin_layout Standard
+En 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ferreira2016"
+
+\end_inset
+
+ es un caso de estudio del retailer online 
+\shape italic
+Rue La La
+\shape default
+ (http://www.ruelala.com).
+ Los autores buscan estrategias para estimar la demanda de estilos nunca
+ antes vendidos y tambien buscan un algoritmo que optimize combinaciones
+ de precios para que sirva como herramienta de apoyo diario en la toma de
+ decisiones de precios y que maximice los ingresos de dichos primeros estilos
+ de exposición.
+ Los datos de transacciones de ventas abarcaron desde principios de 2011
+ hasta mediados de 2013, donde cada registro representa una venta con su
+ sello de tiempo, cantidad vendida del artículo, precio, fecha/hora de inicio
+ del evento, duración del evento y el inventario inicial del artículo.
+ Además, se disponen de datos relacionados al producto como la marca, el
+ tamaño, el color, el precio sugerido por el fabricante (MSRP o Manufacturer’s
+ Suggested Retail Price) y la clasificación jerárquica del producto.
+ Los modelos probados fueron: Least Squares Regression, Principal Components
+ Regression, Partial Least Squares Regression, Multiplicative (power) Regression
+, Semilogarithmic Regression y Regression Trees.
+ Para comparar estos modelos se dividió aleatoriamente los datos en conjuntos
+ de entrenamiento y prueba, y se utilizó los datos de entrenamiento para
+ construir los modelos de regresión.
+ Para los modelos que requerían parámetros de ajuste se utilizó validación
+ cruzada de cinco pasadas sobre los datos de entrenamiento.
+ Se encontró que Regression Trees con Bagging superó a los demás métodos
+ de regresión.
+ Luego de poner en producción la herramienta las ventas no disminuyen debido
+ a la implementación de aumentos de precios recomendados por el algoritmo
+ de optimización de precios.
+ Se logró un aumento en los ingresos del grupo de prueba en aproximadamente
+ 9.7%.
+\end_layout
+
 \end_body
 \end_document

@@ -4459,19 +4459,19 @@ Rue La La
  decisiones de precios y que maximice los ingresos de dichos primeros estilos
  de exposición.
  Los datos de transacciones de ventas abarcaron desde principios de 2011
- hasta mediados de 2013, donde cada registro representa una venta con sello
- de tiempo, cantidad vendida del artículo, precio, fecha/hora de inicio
+ hasta mediados de 2013, donde cada registro representa una venta con su
+ sello de tiempo, cantidad vendida del artículo, precio, fecha/hora de inicio
  del evento, duración del evento y el inventario inicial del artículo.
- Además, se disponían de datos relacionados al producto como la marca, el
+ Además, se disponen de datos relacionados al producto como la marca, el
  tamaño, el color, el precio sugerido por el fabricante (MSRP o Manufacturer’s
  Suggested Retail Price) y la clasificación jerárquica del producto.
- Models tested included least squares regression, principal components regressio
-n, partial least squares regression, multiplicative (power) regression,
- semilogarithmic regression, and regression trees.
- Para comparar modelos de regresión múltiple, primero dividimos aleatoriamente
- los datos en conjuntos de datos de entrenamiento y prueba, y usamos los
- datos de entrenamiento para construir los modelos de regresión.
- Para aquellos modelos que requieren parámetros de ajuste, también utilizamos
+ Los modelos probados fueron: Least Squares Regression, Principal Components
+ Regression, Partial Least Squares Regression, Multiplicative (power) Regression
+, Semilogarithmic Regression y Regression Trees.
+ Para comparar estos modelos se dividió aleatoriamente los datos en conjuntos
+ de entrenamiento y prueba, y se utilizó los datos de entrenamiento para
+ construir los modelos de regresión.
+ Para los modelos que requieren parámetros de ajuste, también utilizamos
  la validación cruzada de cinco veces en los datos de entrenamiento para
  establecer estos parámetros.
  Encontramos que los árboles de regresión (regression trees) con ensacado

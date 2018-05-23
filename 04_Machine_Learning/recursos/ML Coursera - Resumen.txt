@@ -1,0 +1,149 @@
+WEEK 6
+
+* Depurando un aprendizaje automatico:
+1. Obtener mas ejemplos de entrenamiento (training examples).
+2. Intentar menos cantidad de caracteristicas.
+3. Intentar obtener caracteristicas adicionales. Implica mas funciones.
+4. Intentar agregar caracteristicas polinomicas.
+5. Intentar reducir Lambda (parametro de regularizacion).
+6. Intentar incrementar Lambda (parametro de regularizacion)
+
+* Como evaluar los algoritmos de aprendizaje
+
+1. Evaluar una hipotesis:
+- Se busca prevenir problemas de sobreajuste y subajuste.
+- Se busca elegir parametros que minimicen el error de entrenamiento.
+- Sobreajuste (Overfitting) o Varianza (Variance - Diferencia) Alta: Error de entrenamiento bajo (se ajusta bien al conjunto de entrenamiento) pero falla en la generalizacion 
+de nuevos ejemplos que no estan en el conjunto de entrenamiento.
+- Subajuste (Underfitting) o Sesgo (Bias - Tendencia) Alto:
+
+2. Descubrir hipotesis sobreajustada:
+- El metodo grafico no es viable.
+- Error de entrenamiento: no generaliza el error en el conjunto de nuevos ejemplos.
+- Conjunto de aprendizaje 70% (Training Set) y  Conjunto de Prueba 30% (Test Set). Primo reordenar aleatoriamente antes de dividir.
+- Procedimiento Training/Testing para regresion lineal.
+- Procedimiento Training/Testing para regresion logistica (Error del conjunto de prueba. Error 0/1 de mala clasificacion).
+Es la tecnica estandar para evaluar que tan buena es la hipotesis.
+
+3. Problemas de seleccion del modelo:
+- Parametros Theta y Grado de polinomio.
+- Que grado de polinomio (d) ajustar al conjunto de datos. Funcion lineal, cuadratica o cubica?
+- Que funciones incluir.
+- Conjuntos de entrenamiento 60% (training set), validacion 20% (cross validation set - CV) y prueba 20% (test set). Training/validation/test.
+- Training Set: se obtiene un vector Theta por cada funcion (Lineal, Cuadratica, Cubica, etc...)
+- Cross Validation Set: cada hipotesis se prueba en este conjunto de datos.
+- Test Set: la hipotesis con menor cross validation error (por ejemplo el polinomio de cuarto orden) se elige y se evalua con este conjunto de datos.
+- Training error, Cross validation error, Test error (estima el error generalizado del modelo elegido).
+- El parametro de regularizacion Lambda.
+
+4. Regularizacion y Sesgo/Varianza:
+- Lambda muy pequeño (Ej: 0): Alta varianza (sobreajuste grande).
+- Lambda muy grande (Ej: 10000): Alto sesgo (subajuste grande). Theta1, Theta2, ..., ThetaN +-= 0. h(x) +-= Theta0
+- Lambda intermedio (Ej: 0,01 ): Razonable ajuste a los datos. 
+
+5. Elegir Lambda:
+- Intentar Lambda=0,01; 0,02; 0,03; 0,04;...;10. Cada uno de estos Lambdas se prueban en el Training Set.
+- Cada hipotesis obtenida en el paso anterior se valida en el Cross Validation Set. Se elige el que causa el menor error de validacion
+(medida basada en el promedio de error cuadratico).
+- Test error: La hipotesis seleccionada en el paso anterior se evalua en el Test Set.
+
+6.Bias/Variance como funcion de regularizacion del parametro Lambda:
+- Se dibuja la curva del Training Error.
+- Se dibuja la curva del Cross Validation Error.
+- Ambos varian segun varia el parametro de regularizacion Lambda.
+- Lambda muy pequeño: riesgo de overfitting. Alta varianza. Problema de varianza.
+- Lambda muy grande: riesgo de underfitting. Sesgado (biased). Problema de sesgo.
+- Lambda que trabaje bien: que de un pequeño Cross Validation Error o un pequeño Test Theta.
+
+7. Curvas de aprendizaje (Learning Curves):
+- Eje x: Tamaño del Training Set
+- Eje y: Error
+- A medida que aumenta el tamaño del Conjunto de Entrenamiento también crece el Error del Conjunto de Entrenamiento.
+- A medida que aumenta el tamaño del Conjunto de Entrenamiento disminuye el Error del Conjunto de Validacion Cruzada. Mientras mas datos 
+tengamos mejor sera la generalizacion con nuevos ejemplos, la hipotesis se ajustara mejor.
+- Problema de High Bias o Sesgo Alto (Subajuste): El error de conjunto de entrenamiento aumenta a medida que aumenta el tamaño de dicho conjunto, pero
+llegando a un punto dicho error se vuelve recto. El error del conjunto de validacion cruzada empieza alto con pocos datos de
+entrenamiento pero disminuye a medida que aumenta dicho conjunto, llegando a un punto dicho error se vuelve recto. Ambas curvas
+presentan alto error. Tener mas datos de entrenamiento no ayudará mucho a tener un menor error en el conjunto de validacion cruzada 
+y el conjunto de test.
+- Problema de High Variance o Alta Varianza (Sobreajuste): El error de conjunto de entrenamiento aumenta a medida 
+que aumenta el tamaño de dicho conjunto, pero dicho error será aún muy bajo. El error del conjunto de validacion cruzada 
+empieza alto con pocos datos de entrenamiento pero disminuye a medida que aumenta dicho conjunto, pero dicho error se mantiene alto.
+Tener mas datos de entrenamiento efectivamente ayudará a tener un menor error en el conjunto de validacion cruzada 
+(o el test error o error de aprendizaje)que es lo que nos importa.
+- Problema de ambos de los dos.
+
+8. Diagnosticos de aprendizaje automatico:
+- Obtener mas ejemplos de entrenamiento (training examples): Funciona cuando hay Alta Varianza al trazar las curvas de aprendizaje.
+Cuando el error del conjunto de validacion cruzada es mucha mas grande que el error del conjunto de entrenamiento.
+- Intentar menos cantidad de caracteristicas: Funciona cuando hay Alta Varianza al trazar las curvas de aprendizaje.
+- Intentar obtener caracteristicas adicionales. Implica mas funciones: Funciona cuando hay Alto Sesgo al trazar las curvas de aprendizaje.
+- Intentar añadir funciones de polinomios: Funciona cuando hay Alto Sesgo al trazar las curvas de aprendizaje.
+- Intentar reducir Lambda (parametro de regularizacion): Funciona cuando hay Alto Sesgo al trazar las curvas de aprendizaje.
+- Intentar incrementar Lambda (parametro de regularizacion): Funciona cuando hay Alta Varianza al trazar las curvas de aprendizaje.
+
+9. Redes Neuronales:
+- Pequeñas redes neuronales: Pocos parametros y mas propenso al problema del subajuste. Calculo computacional barato.
+- Grandes redes neuronales: Muchos parametros y mas propenso al problema del sobreajuste. Calcula computacional alto.
+Usar regularizacion Lambda para dirigir el sobreajuste.
+- Se puede probar como funciona con 1, 2, 3 o mas capas ocultas y su efecto en el conjunto de validacion cruzada.
+Luego se elije la cantidad de capas ocultas de acuerdo a la que dió mejores resultados.
+
+10. Análisis de Error:
+- Lo recomendado es hacer en el conjunto de validación cruzada y no en el de test.
+- Examinar las curvas de aprendizaje.
+- Examinar manualmente los ejemplos (en el conjunto de validacion cruzada) que el algoritmo no acertó.
+- Importancia de la evaluacion numérica, por ejemplo el error de validacion cruzada con stemming 3% y sin stemming 5% (para un clasificador de spam).
+
+11. Métricas de error para clases sesgadas (skewed classes):
+- Precisión/Recuperación (Precision/Recall): Tabla: Clase Real x Clase Predicha. Positivo Verdadero (la clase predicha es 1 y la clase real es 1),
+Negativo Verdadero (la clase predicha es 0 y la clase real es 0), Positivo Falso (la clase predicha es 1 y la clase real es 0),
+Negativo False (la clase predicha es 0 y la clase real es 1)
+- Precision = Positivos Verdaderos / #Positivos predichos = Positivos Verdaderos / (Positivos Verdaderos + Positivos Falsos). 
+De todos los pacientes a quienes se predice 1 qué fraccion tiene verdaderamente la enfermedad. Una precisión alta es deseada.
+- Recall = Positivos Verdaderos / #Positivos reales = Positivos Verdaderos / (Positivos Verdaderos + Negativos Falsos).
+De todos los pacientes que tienen la enfermedad, que fracción fue correctamente detectada que tiene la enfermedad. Un recall alto será bueno.
+Por ejemplo si todo predice 0 entonces recall = 0, y es un indicador de que no es un buen clasificador.
+- Sirve aún para las situaciones más sesgadas.
+- Métrica de evaluación útil y directa para entender si el algoritmo se está desempeñando bien. No permite que el algoritmo haga trampa.
+- Convención: y = 1 en presencia de la clase más rara.
+
+12. Compensación entre Precisión y Recuperación (trading off Precision and Recall):
+- Predice 1 si h(x) mayor o igual a 0,7. Alta precisión, bajo recall. Para evitar Positivos Falsos.
+- Predice 1 si h(x) mayor o igual a 0.3. Baja precisión, alto recall. Para evitar Negativos Falsos.
+- Generalizando: Predice 1 si h(x) mayor o igual a un UMBRAL. Se traza la curva de Recall (Eje x) y Precision (Eje y).
+- Cómo compara los valores numéricos de Precisión y Recall. F o F1 Score = 2(PR/P+R). El mayor valor posible se obtiene
+para Precisión = 1 y Recall = 1. El más bajo posible se obtiene para Precisión = 0 y Recall = 0.
+- Se controla la Precisión y el Recall variando el UMBRAL.
+- Se puede intentar probar un rango de valores para el UMBRAL. Se prueba en el conjunto de validación cruzada.
+Luego se elige el UMBRAL que arroje el valor de F1 más alto. Esto es una forma de elegir de forma automática
+el UMBRAL para el clasificador.
+
+13. Datos para Machine Learning:
+- Para algunos problemas con datos de entrenamiento en grandes cantidades, varios algoritmos pueden tener igual desempeño.
+- Para algorimos con muchos parámetros (Ej: regresión logística o lineal con muchas caracteristicas, redes neuronales
+con muchas unidades ocultas), tendrán bajo sesgo y el error de entrenamiento (Jtrain de Theta) será bajo.
+- Para un conjunto de entrenamiento masivo y algoritmos con muchos parámetros como el anterior, es poco probable
+que estos algoritmos causen overfitting (Implica que el Error del conjunto de entrenamiento será cercano al Error
+del conjunto de prueba, es decir, Jtrain de Theta más o menos igual a Jtest de Theta).
+- Mirando ambos puntos anteriores, el Error del conjunto de test será bajo se el Error del conjunto del entrenamiento es bajo.
+- El algoritmo no debe tener alto sesgo ni alta varianza. Para evitar el problema del alto sesgo se debe tener muchos parámetros y 
+para evitar el problema de la alta varianza se debe tener un conjunto de entrenamiento muy grande. Luego, como consecuencia
+el conjunto de Test tendrá bajo error.
+- Una clase rica en funciones (rica en información) garantizan una baja oscilación y un conjunto de entrenamiento masivo garantiza
+más varianza.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
