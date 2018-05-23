@@ -66,10 +66,10 @@
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref true
-\pdf_title "Optical Multicast With Node Failure Protection.     An Approach Based On MOACO"
-\pdf_author "Aditardo Vazquez Rojas"
+\pdf_title "Pronóstico de la demanda en empresas retail - Técnica basada en Business Intelligence y Machine Learning"
+\pdf_author "Alberto Garcete - Raúl Benítez"
 \pdf_subject "Tesis de Grado de Ingeniería Informática"
-\pdf_keywords "Index Terms--- optical networks, optical layer multicast, node failure, protection."
+\pdf_keywords "Index Terms--"
 \pdf_bookmarks true
 \pdf_bookmarksnumbered true
 \pdf_bookmarksopen true
@@ -134,6 +134,54 @@ filename "Titulo.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand input
+filename "Preliminares/dedicatorias.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand input
+filename "Preliminares/agradecimientos.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand input
+filename "Preliminares/Resumen.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand input
+filename "Preliminares/Abstract.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 

@@ -1,59 +1,62 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
-\begin_preamble
-% Bibliografia en español
-\usepackage[fixlanguage]{babelbib}
-\selectbiblanguage{spanish}
-
-% Bibliografia
-\usepackage[authoryear,square,sort]{natbib}
-\bibliographystyle{plainnat}
-\bibpunct{[}{]}{,}{a}{}{;}
-\renewcommand\cite{\citep}
-\end_preamble
-\use_default_options true
+\use_default_options false
 \maintain_unincluded_children false
 \language spanish
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
-\output_sync 0
+\output_sync 1
 \bibtex_command bibtex
 \index_command default
+\float_placement H
 \paperfontsize 12
-\spacing onehalf
+\spacing double
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\use_refstyle 1
+\justification true
+\use_refstyle 0
 \index Index
 \shortcut idx
 \color #008000
 \end_index
+\paperwidth 8.5in
+\paperheight 11in
 \leftmargin 2.5cm
 \topmargin 2.5cm
 \rightmargin 1.5cm
@@ -75,7 +78,7 @@
 
 \begin_body
 
-\begin_layout Section*
+\begin_layout Chapter*
 Dedicatorias
 \end_layout
 

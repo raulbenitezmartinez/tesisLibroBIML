@@ -1,48 +1,66 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass book
 \use_default_options false
 \maintain_unincluded_children false
 \language spanish
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
-
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
-\output_sync 0
-\bibtex_command default
+\output_sync 1
+\bibtex_command bibtex
 \index_command default
-\paperfontsize default
-\spacing single
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
 \use_hyperref false
-\papersize default
-\use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
-\cite_engine natbib_authoryear
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
-\index Índice
+\index Index
 \shortcut idx
 \color #008000
 \end_index
+\paperwidth 8.5in
+\paperheight 11in
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
@@ -68,539 +86,414 @@ Lista de Siglas y Abreviaturas
 \labelwidthstring 00.00.0000
 
 \series bold
-ACO
+AR
 \series default
- 
-\emph on
-Ant Colony Optimization
-\emph default
- - Optimización por Colonia de Hormigas.
+ Auto Regressive 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-dB
+ARIMA
 \series default
- Decibeles.
- 
+ Auto Regressive Integrated Moving Average 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-DMUX
+ARMA
 \series default
- 
-\emph on
-De-multiplexer
-\emph default
- - De-multiplexores.
- 
+ Auto Regressive Moving Average 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-FF
+BI
 \series default
- 
-\emph on
-First-Fit
-\emph default
- - Primer Ajuste.
- 
+ Business Intelligence 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-Gbps
+CERN
 \series default
- 
-\emph on
-Giga bits per second
-\emph default
- - Gigabits por segundo.
- 
+ Conseil Europeen pour la Recherche Nucleaire 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-Gbyte
+CRM
 \series default
- 
-\emph on
-Gigabyte
-\emph default
-.
- 
+ Customer Relationship Management 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-HDTV
+CSV
 \series default
- 
-\emph on
-High Definition Television
-\emph default
- - Televisión de Alta Definición.
- 
+ Comma Separated Values 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-ILP
+DP
 \series default
- 
-\emph on
-Integer Linear Programing
-\emph default
- - Programación Lineal Entera.
- 
+ Dynamic Programming 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-LF
+DW
 \series default
- 
-\emph on
-Longest-First
-\emph default
-.
- 
+ Datawarehouse 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-LT
+ERP
 \series default
- 
-\emph on
-Light-Tree
-\emph default
-.
- 
+ Entreprise Resource Planning 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-LU
+ETL
 \series default
- 
-\emph on
-Least-Used.
- 
+ Extract, Transform and Load 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MC
+FN
 \series default
-\emph on
- Multicast-Capable - 
-\emph default
-Capacidad de Multidifusión.
+ False Negative 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MC-OXC
+FP
 \series default
- 
-\emph on
-Multicast-Capable Optical Cross Connect
-\emph default
- - Matriz de Conmutación Óptica con Capacidad para Multidifusión.
- 
+ False Positive 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MOACO
+GPI
 \series default
- 
-\emph on
-Multi-Objective Ant Colony Optimization
-\emph default
- - Optimización de Colonia por Hormigas Multiobjetivo.
- 
+ Generalized Policy Iteration 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MOACS
+GPS
 \series default
- 
-\emph on
-Multiobjetive Ant Colony Optimization
-\emph default
- 
-\emph on
-System-
-\emph default
- Sistema de Optimización de Colonia de Hormigas Multiobjetivo.
- 
+ General Problem Solver 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MOACS-PNF-RP1
+HOLAP
 \series default
- 
-\emph on
-Multiobjetive Ant Colony Optimization-Protection against Node Failures-Parcial
- Reconfiguration 1 - 
-\emph default
-Sistema de Optimización por Colonia de Hormigas Multiobjetivo
-\emph on
- - 
-\emph default
-con Protección contra Falla de Nodo - Reconfiguración Parcial 1
-\emph on
-.
+ Hybrid Online Analytical Processing 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MOACS-PNF-RP2
+HTML
 \series default
- 
-\emph on
-Multiobjetive Ant Colony Optimization-Protection against Node Failures-Parcial
- Reconfiguration 2 
-\emph default
-Sistema de Optimización por Colonia de Hormigas Multiobjetivo
-\emph on
- - 
-\emph default
-con Protección contra Falla de Nodo - Reconfiguración Parcial 
-\emph on
-2.
+ HyperText Markup Language 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MOACS-PNF-RT
+IA
 \series default
- 
-\emph on
-Multiobjetive Ant Colony Optimization-Protection against Node Failures-Total
- Reconfiguration - 
-\emph default
-Sistema de Optimización por Colonia de Hormigas Multiobjetivo
-\emph on
- - 
-\emph default
-con Protección contra Falla de Nodo - Reconfiguración
-\emph on
- 
-\emph default
-Total
-\emph on
-.
+ Inteligencia Artificial 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MOP
+IBM
 \series default
- 
-\emph on
-Multiobjective Optimization Problem
-\emph default
- - Problema de Optimización Multiobjetivo.
- 
+ International Business Machines 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-RWA
+IDC
 \series default
- 
-\emph on
-Routing and Wavelength Assignment
-\emph default
- - Enrutamiento y Asignación de Longitud de Onda.
- 
+ International Data Corporation 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MRWA
+IVA
 \series default
- 
-\emph on
-Multicast Routing and Wavelength Assigment
-\emph default
- - Enruteamiento de Multidifusión y Asignación de Longitud de Onda.
- 
+ Impuesto Valor Agregado
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MU
+KPI
 \series default
- 
-\emph on
-Most-Used.
- 
+ Key Performance Indicators 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-MUX
+LMT
 \series default
- 
-\emph on
-Multiplexer
-\emph default
- - Multiplexores.
- 
+ Logistic Model Trees 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-NSF
+LWL
 \series default
- 
-\emph on
-National Science Foundation.
- 
+ Locally Weighted Learning 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-OXC
+MA
 \series default
- 
-\emph on
-Optical Cross Connects
-\emph default
- - Matriz de Conmutación Óptica.
+ Moving Average 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-OADM
+MAD
 \series default
- 
-\emph on
-Optical Add-Drop Multiplexer
-\emph default
-.
- 
+ Median Absolute Desviation 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-OLT
+MIT
 \series default
- 
-\emph on
-Optical Line Terminal.
- 
+ Massachusetts Institute of Technology 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-O-SAN
+ML
 \series default
- 
-\emph on
-Optical Storage Area Networks.
- 
+ Machine Learning 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-RP
+MOLAP
 \series default
- 
-\emph on
-Parcial Reconfiguration
-\emph default
- - Reconguración Parcial.
- 
+ Multidimensional Online Analytical Processing 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-RR
+MSE
 \series default
- 
-\emph on
-Random
-\emph default
- - Aleatorio.
- 
+ Mean Squared Error 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-SDM
+ODS
 \series default
- 
-\emph on
-Space Division Multiplexing
-\emph default
- - Multiplexación por División de Espacio.
- 
+ Operational Data Store 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-SO
+OLAP
 \series default
- Sistema Operativo.
+ Online Analytical Processing 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-Tb/s
+PC
 \series default
- Terabit por segundo.
- 
+ Personal Computer 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-TDM
+PDF
 \series default
- 
-\emph on
-Time Division Multiplexing
-\emph default
- - Multiplexación por División de Tiempo.
- 
+ Portable Document Format 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-THz
+ROLAP
 \series default
- 
-\emph on
-Tera Hertz.
-
-\emph default
- 
+ Relational Online Analytical Processing 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-USNet
+SaaS
 \series default
- 
-\emph on
-Network US.
- 
+ Software as a Service 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-VLT
+SARIMA
 \series default
- 
-\emph on
-Virtual Light-Tree.
- 
+ Seasonal Autoregressive Integrated Moving Average 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-VOD
+SCM
 \series default
- 
-\emph on
-Video On Demand
-\emph default
- - Vídeo Bajo Demanda.
+ Supply Chain Management 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-WDM
+SMO
 \series default
- 
-\emph on
-Wavelength Division Multiplexing - 
-\emph default
-Multiplexación por División de Longitud de Onda.
+ Sequential Minimal Optimization 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+SNARC
+\series default
+ Stochastic Neural Analog Reinforcement Calculator 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+SQL
+\series default
+ Structured Query Language 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+SVM
+\series default
+ Support Vector Machines 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+TD
+\series default
+ Temporal-Difference Learning 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+TN
+\series default
+ True Negative 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+TP
+\series default
+ True Positive 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Weka
+\series default
+ Waikato Environment for Knowledge Analysis
 \end_layout
 
 \end_body
