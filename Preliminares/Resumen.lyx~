@@ -80,10 +80,41 @@
 
 \begin_layout Chapter*
 Resumen
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Resumen
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-aca van las dedicatorias
+Pronosticar ciertos eventos constituye una actividad por la cual el ser
+ humano siempre sintió fascinación y necesidad de realizarlo.
+ En la actualidad, uno de esos eventos se relacionan con las empresas y
+ consiste en pronosticar la demanda de ventas para un período futuro, a
+ su vez representa uno de los más importantes retos con que se enfrenta
+ una organización.
+ Este pronóstico de demanda disminuirá la incertidumbre del Gerente de Compras
+ en el momento de tomar decisiones acerca del volumen de productos a adquirir
+ para la reposición de stock.
+ Este trabajo propone una nueva técnica de pronósticos basada en la integración
+ de herramientas de Business Intelligence y Machine Learning.
+ Los experimentos indican que el modelo propuesto alcanza resultados prometedore
+s y esta nueva técnica puede transformarse en una sólida herramienta de
+ apoyo para la toma de decisiones.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Palabras claves:
+\series default
+ Pronóstico, Retail, Compras, Business Intelligence, KPI, Machine Learning
 \end_layout
 
 \end_body
