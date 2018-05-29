@@ -762,7 +762,7 @@
   author        = {Soukayna Mouatadid and Jan Adamowski},
   title         = {Using extreme learning machines for short-term urban water demand forecasting},
   journal       = {Urban Water Journal},
-  year          = {2017},
+  year          = {2016},
   volume        = {14},
   number        = {6},
   pages         = {630-638},
@@ -776,11 +776,11 @@
 },
 }
 
-@Article{Ferreira2016,
+@Article{Ferreira2015,
   author        = {Kris Johnson Ferreira and Bin Hong Alex Lee and David Simchi-Levi},
   title         = {Analytics for an Online Retailer: Demand Forecasting and Price Optimization},
   journal       = {Manufacturing \& Service Operations Management},
-  year          = {2016},
+  year          = {2015},
   volume        = {18},
   number        = {1},
   pages         = {69-88},
@@ -791,6 +791,13 @@
         https://doi.org/10.1287/msom.2015.0561
     
 },
+}
+
+@Article{HybridSoft2014,
+  author  = {Yuehjen E. Shao and and Chi-Jie Lu and Chia-Ding Hou},
+  title   = {Hybrid Soft Computing Schemes for the Prediction of Import Demand of Crude Oil in Taiwan},
+  journal = {Mathematical Problems in Engineering},
+  year    = {2014},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

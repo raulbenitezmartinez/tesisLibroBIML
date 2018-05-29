@@ -4412,10 +4412,10 @@ esivo ARMA de la demanda de productos.
 \end_layout
 
 \begin_layout Standard
-En 
+En el trabajo presentado en el año 2016 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Mouatadid2017"
+key "Mouatadid2016"
 
 \end_inset
 
@@ -4441,14 +4441,14 @@ key "Mouatadid2017"
 \end_layout
 
 \begin_layout Standard
-En 
+En el año 2015 se presentó 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Ferreira2016"
+key "Ferreira2015"
 
 \end_inset
 
- es un caso de estudio del retailer online 
+ un caso de estudio basado en la empresa de retailer online 
 \shape italic
 Rue La La
 \shape default
@@ -4459,28 +4459,59 @@ Rue La La
  decisiones de precios y que maximice los ingresos de dichos primeros estilos
  de exposición.
  Los datos de transacciones de ventas abarcaron desde principios de 2011
- hasta mediados de 2013, donde cada registro representa una venta con sello
- de tiempo, cantidad vendida del artículo, precio, fecha/hora de inicio
+ hasta mediados de 2013, donde cada registro representa una venta con su
+ sello de tiempo, cantidad vendida del artículo, precio, fecha/hora de inicio
  del evento, duración del evento y el inventario inicial del artículo.
- Además, se disponían de datos relacionados al producto como la marca, el
+ Además, se disponen de datos relacionados al producto como la marca, el
  tamaño, el color, el precio sugerido por el fabricante (MSRP o Manufacturer’s
  Suggested Retail Price) y la clasificación jerárquica del producto.
- Models tested included least squares regression, principal components regressio
-n, partial least squares regression, multiplicative (power) regression,
- semilogarithmic regression, and regression trees.
- Para comparar modelos de regresión múltiple, primero dividimos aleatoriamente
- los datos en conjuntos de datos de entrenamiento y prueba, y usamos los
- datos de entrenamiento para construir los modelos de regresión.
- Para aquellos modelos que requieren parámetros de ajuste, también utilizamos
- la validación cruzada de cinco veces en los datos de entrenamiento para
- establecer estos parámetros.
- Encontramos que los árboles de regresión (regression trees) con ensacado
- (bagging) superaron otros métodos de regresión que probamos en una variedad
- de parámetros de rendimiento.
- Las ventas no disminuyen debido a la implementación de aumentos de precios
- recomendados por la herramienta.
- Estimamos un aumento en los ingresos del grupo de prueba en aproximadamente
+ Los modelos probados fueron: Least Squares Regression, Principal Components
+ Regression, Partial Least Squares Regression, Multiplicative (power) Regression
+, Semilogarithmic Regression y Regression Trees.
+ Para comparar estos modelos se dividió aleatoriamente los datos en conjuntos
+ de entrenamiento y prueba, y se utilizó los datos de entrenamiento para
+ construir los modelos de regresión.
+ Para los modelos que requerían parámetros de ajuste se utilizó validación
+ cruzada de cinco pasadas sobre los datos de entrenamiento.
+ Se encontró que Regression Trees con Bagging superó a los demás métodos
+ de regresión.
+ Luego de poner en producción la herramienta las ventas no disminuyen debido
+ a la implementación de aumentos de precios recomendados por el algoritmo
+ de optimización de precios.
+ Se logró un aumento en los ingresos del grupo de prueba en aproximadamente
  9.7%.
+\end_layout
+
+\begin_layout Standard
+El trabajo presentado en el año 2014 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "HybridSoft2014"
+
+\end_inset
+
+, plantea como objetivo pronosticar la demanda del petróleo crudo importado
+ (Imported Crude Oil - ICO) en Taiwán.
+ Para el estudio se utilizaron datos reales, desde los años 1993 a 2010,
+ que fueron registrado por la Oficina de Energía de Taiwán.
+ Como solución se propone un modelo híbrido de dos etapas.
+ Para evidenciar la efectividad de los modelos híbridos se lo comparan con
+ modelos de una sola etapa.
+ Los modelos de pronóstico de una sola etapa incluyen: Multiple Linear Regressio
+n (MLR), Support Vector Regression (SVR), Artificial Neural Networks (ANN),
+ y Extreme Learning Machine (ELM), y una selección de 23 variables influyentes
+ como posibles datos de entrada.
+ Para ANN y SVR se utilizaron las 23 variables, para ELM entre 1 y 15 variables,
+ y para MLR se utilizaron 2 variables significativas.
+ Para los modelos de pronóstico híbridos se utilizaron las 2 variables seleccion
+adas para MLR como variables de entrada, dando así 3 modelos híbridos: MLR(sel)-
+ANN, MLR(sel)-SVR y MLR(sel)-ELM.
+ Como medidas de rendimiento de los pronósticos se utilizaron: Mean Absolute
+ Percentage Error (MAPE), Root Mean Square Error (RMSE), y el Mean Absolute
+ Difference (MAD) fueron utilizados.
+ Los resultados mostraron que los enfoques híbridos propuestos son más precisos
+ que los de una sola etapa, por lo tanto son capaces de predecir con mayor
+ precisión la demanda de petróleo crudo en Taiwán.
 \end_layout
 
 \end_body

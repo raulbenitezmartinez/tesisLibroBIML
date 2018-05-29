@@ -212,11 +212,144 @@ Finalmente, alentamos una mayor exploración del uso de técnicas de regresión 
 
 
 
-Predicción del desempeño de las estrategias de pronóstico para la demanda de repuestos navales (2012). 
-
-Predicción de la demanda de importación de crudo en Taiwán (2014).
-
-H y b r i d So f t Co m p u t i n g Sc h e m e s f o r th e P r e d i c t i o n of
-Import Demand of Crude Oil i n Taiwan
+[006] Predicting the Performance of Forecasting Strategies for Naval Spare Parts Demand: A Machine Learning Approach
 
 
+
+
+Hierarchical forecasting strategy does not always outperform direct forecasting strategy. The performance generally depends on demand features. This research guides the use of the alternative forecasting strategies according to demand features. This paper developed and evaluated various classification models such as logistic regression (LR), artificial neural networks (ANN), decision trees (DT), boosted trees (BT), and random forests (RF) for predicting the relative performance of the alternative forecasting strategies for the South Korean navy's spare parts demand which has non-normal characteristics. ANN minimized classification errors and inventory costs, whereas LR minimized the Brier scores and the sum of forecasting errors.
+
+La estrategia de previsión jerárquica no siempre supera a la estrategia de previsión directa. El rendimiento generalmente depende de las características de demanda. Esta investigación guía el uso de estrategias de pronóstico alternativas de acuerdo con las características de demanda. Este documento desarrolló y evaluó varios modelos de clasificación tales como regresión logística (LR), redes neuronales artificiales (ANN), árboles de decisión (DT), árboles potenciados (BT) y bosques aleatorios (RF) para predecir el rendimiento relativo de los pronósticos alternativos. estrategias para la demanda de recambios de la armada de Corea del Sur que tiene características no normales. ANN minimizó los errores de clasificación y los costos de inventario, mientras que LR minimizó los puntajes de Brier y la suma de los errores de previsión.
+
+Introduccion
+
+All Military establishments experience spare parts supply problems caused by inaccurate forecasts of spare parts demand (Seon and U, 2009). In common with many militaries, the South Korean Navy is under immense pressure to maintain adequate stocks of warship's spare parts with budgetary limitations. This requires a careful choice of a forecasting strategy. However, forecasting demand for spare parts is difficult. This is because the spare parts demand exhibits non-normal characteristics (Moon et ai, 2012). Demand that has infrequent occurrences, low average volumes or highly variable volumes is said to be non-normal (Boylan et al, 2008).
+
+Todos los establecimientos militares experimentan problemas de suministro de repuestos causados por pronósticos imprecisos de la demanda de repuestos (Seon y U, 2009). Al igual que muchos ejércitos, la Armada de Corea del Sur está bajo una inmensa presión para mantener reservas adecuadas de repuestos de buques de guerra con limitaciones presupuestarias. Esto requiere una elección cuidadosa de una estrategia de pronóstico. Sin embargo, pronosticar la demanda de repuestos es difícil. Esto se debe a que la demanda de piezas de repuesto exhibe características no normales (Moon et al., 2012). Se dice que la demanda que tiene ocurrencias infrecuentes, volúmenes promedio bajos o volúmenes altamente variables no es normal (Boylan et al, 2008).
+
+A hierarchical structure of time series comprises individual item-level time series and an aggregated group-level time series in which the items are members (Hyndman et al., 2007). A hierarchical forecasting strategy (HE) derives forecasts at item level by prorating demand forecasts for the group in which the items are members; whereas a direct forecasting strategy (DF) simply generates a forecast using item-level time series. HF may be divided into two sub-strategies. Top-down forecasting (TDF) models a forecast at the top group level by using the top group-level time series, and then creates lower-level forecasts according to the item's percentage contribution within the group. Combinatorial forecasting (CF) models forecasts at all levels by using all levels of the time series, and then creates lower-level forecasts based on a combination of the forecasts.
+
+Una estructura jerárquica de series de tiempo comprende series de tiempo individuales a nivel de artículo y una serie temporal de nivel grupal agregada en la que los artículos son miembros (Hyndman et al., 2007). Una estrategia de previsión jerárquica (HE) deriva pronósticos a nivel de ítem al prorratear pronósticos de demanda para el grupo en el que los ítems son miembros; mientras que una estrategia de previsión directa (DF) simplemente genera un pronóstico utilizando series temporales a nivel de ítem. HF se puede dividir en dos sub-estrategias. El pronóstico de arriba hacia abajo (TDF) modela un pronóstico en el nivel superior del grupo mediante el uso de las series temporales de nivel de grupo superior, y luego crea pronósticos de menor nivel de acuerdo con la contribución porcentual del elemento dentro del grupo. La predicción combinatoria (CF) modela los pronósticos en todos los niveles mediante el uso de todos los niveles de la serie temporal, y luego crea pronósticos de menor nivel basados en una combinación de los pronósticos.
+
+CASE STUDY
+
+This section summarizes the results of the previous research (Moon, 2012; Moon et al, 2012a; 2012b) on which this paper is based. The features of the demand for spare parts within the South Korean navy and the alternative forecasting strategies are described.
+
+CONCLUSIONS
+
+This paper compared the five classification models for predicting the performance of the alternative forecasting strategies (most robust simple combination forecast and most robust direct forecast) for forecasting non-normal demand associated with spare parts demand in the South Korean navy. The five classification models were constructed using logistic regression (LR), artificial neural networks (ANN), decision trees (DT), boosted trees (BT), and random forests (RP), with three predictors (Correlation, variability in demand volume (Cv (vol)), and Equipment).
+
+Este documento comparó los cinco modelos de clasificación para predecir el rendimiento de las estrategias de pronóstico alternativas (pronóstico de combinación simple más robusto y pronóstico directo más robusto) para pronosticar la demanda no normal asociada con la demanda de piezas de repuesto en la armada de Corea del Sur. Los cinco modelos de clasificación se construyeron utilizando regresión logística (LR), redes neuronales artificiales (ANN), árboles de decisión (DT), árboles potenciados (BT) y bosques aleatorios (RP), con tres predictores (correlación, variabilidad en el volumen de demanda ( Cv (vol)) y Equipo).
+
+The most important predictor in LR (in terms of z statistics oi ß), DT (in terms of the number of employments in the 10 cross-validation sets) and RF (in terms of the mean decrease accuracy) was Cv (vol), followed by Equipment and Correlation. The feature of BT that concentrates on the most difficult variable might be the reason that Correlation took the highest rank in terms of the variable importance for BT. Consistent impacts of Cv (vol) and Equipment in LR and DT were identified. When Cv (vol) within LR increased, the log odds of the probability of RCF being superior decreased. This was presented as a rule by DT; that is, if Cv (vol) is less than 2.065, then RCF is superior. LR identified that RCF performed better for Gun/RD, and DT also generated a rule including this effect.
+
+El predictor más importante en LR (en términos de z statistics oi ß), DT (en términos del número de empleos en los 10 conjuntos de validación cruzada) y RF (en términos de la precisión media de disminución) fue Cv (vol), seguido por equipo y correlación. La característica de BT que se concentra en la variable más difícil podría ser la razón por la cual la Correlación obtuvo el rango más alto en términos de la importancia variable para BT. Se identificaron impactos constantes de Cv (vol) y Equipo en LR y DT. Cuando Cv (vol) dentro de LR aumentó, las probabilidades de registro de la probabilidad de que RCF sea superior disminuyeron. Esto fue presentado como una regla por DT; es decir, si Cv (vol) es menor que 2.065, entonces RCF es superior. LR identificó que RCF se desempeñó mejor para Gun / RD, y DT también generó una regla que incluye este efecto.
+
+The performance of the five models was evaluated by several measures. In terms of the error matrix (as shown in Table 6), all the five models performed better than the null model, and the best model was ANN, followed by LR. All models except RF were sensible in terms of the Brier score. Only ANN and LR were superior to the null model in terms of all the measures such as the sum of forecasting errors, the Brier score, and the inventory costs, as shown in Table 7. LR minimized the sum of forecasting errors and the Brier score; ANN minimized the classification errors and the inventory costs. These points lead to the conclusion that the reliability and internal validity of ANN and RF have been established.
+
+El rendimiento de los cinco modelos fue evaluado por varias medidas. En términos de la matriz de error (como se muestra en la Tabla 6), los cinco modelos funcionaron mejor que el modelo nulo, y el mejor modelo fue ANN, seguido por LR. Todos los modelos excepto RF fueron sensibles en términos de la puntuación de Brier. Solo ANN y LR fueron superiores al modelo nulo en términos de todas las medidas, como la suma de los errores de pronóstico, el puntaje Brier y los costos de inventario, como se muestra en la Tabla 7. LR minimizó la suma de los errores de pronóstico y el puntaje Brier ; ANN minimizó los errores de clasificación y los costos de inventario. Estos puntos llevan a la conclusión de que la fiabilidad y la validez interna de ANN y RF se han establecido.
+
+The eventual purpose of the classification model was to minimize the inventory costs through guiding the use of the alternative forecasting strategies. Therefore ANN might be the best choice for the inventory manager. Although ANN performed nicely, it is difficult to interpret the weights. Sometimes the primary goal of the inventory manager might be an interpretation of the results. In this case, LR (or even DT) can be recommended.
+
+El objetivo final del modelo de clasificación fue minimizar los costos de inventario al guiar el uso de las estrategias de pronóstico alternativas. Por lo tanto, ANN podría ser la mejor opción para el administrador de inventario. Aunque ANN se desempeñó muy bien, es difícil interpretar los pesos. A veces, el objetivo principal del administrador de inventario puede ser una interpretación de los resultados. En este caso, se puede recomendar LR (o incluso DT).
+
+This paper identified the characteristics of the five classification models in order to predict the performance of the alternative strategies for forecasting the spare parts demand and to evaluate the performance of the classification models in terms of classification accuracy and inventory costs. Therefore the research gap might be claimed to be filled.
+
+Este documento identificó las características de los cinco modelos de clasificación para predecir el desempeño de las estrategias alternativas para pronosticar la demanda de repuestos y para evaluar el desempeño de los modelos de clasificación en términos de precisión de clasificación y costos de inventario. Por lo tanto, puede afirmarse que la brecha de investigación se ha completado.
+
+The performance of ANN and LR was found to be marginally superior to the null model. This may be caused by the low reliability of data obtained from the unsettled database. The low reliability of data might lead to the poor performance of BT. As DT, BT, and RF are generally used with sufficient data (as shown in Table 2), the data set for this research with only 900 items might be an unfavorable setting for these models. Further investigation into the performance of the classification with more reliable and/Or larger datasets is strongly recommended.
+
+El rendimiento de ANN y LR resultó marginalmente superior al modelo nulo. Esto puede ser causado por la baja confiabilidad de los datos obtenidos de la base de datos sin resolver. La baja confiabilidad de los datos puede conducir al bajo rendimiento de BT. Como DT, BT y RF generalmente se usan con datos suficientes (como se muestra en la Tabla 2), el conjunto de datos para esta investigación con solo 900 elementos podría ser una configuración desfavorable para estos modelos. Se recomienda encarecidamente realizar más investigaciones sobre el rendimiento de la clasificación con conjuntos de datos más confiables y / o más grandes.
+
+
+direct forecasting (DF)
+combinatorial forecasting (CF)
+hierarchical forecasting strategy (HE)
+top-down forecasting (TDF) 
+
+RDF - robust direct forecast
+classifying alt the observations into the majority class (RCF)
+SCF - simple combination forecast
+
+MAD - mean absolute deviation
+RMSE - root mean square error
+
+logistic regression (LR)
+artificial neural networks (ANN)
+decision trees (DT) 
+boosted trees (BT)
+random forests (RF)
+
+
+
+[007] Hybrid Soft Computing Schemes for the Prediction of Import Demand of Crude Oil in Taiwan
+
+El trabajo presentado en el 2014 [007], plantea como objetivo pronosticar la demanda del petróleo crudo importado (Imported Crude Oil - ICO) en Taiwán. Para el estudio se utilizaron datos reales, desde los años 1993 a 2010, que fueron registrado por la Oficina de Energía de Taiwán. Como solución se propone un modelo híbrido de dos etapas. Para evidenciar la efectividad de los modelos híbridos se lo comparan con modelos de una sola etapa. Los modelos de pronóstico de una sola etapa incluyen: Multiple Linear Regression (MLR), Support Vector Regression (SVR), Artificial Neural Networks (ANN), y Extreme Learning Machine (ELM), y una selección de 23 variables influyentes como posibles datos de entrada. Para ANN y SVR se utilizaron las 23 variables, para ELM entre 1 y 15 variables, y para MLR se utilizaron 2 variables significativas. Para los modelos de pronóstico híbridos se utilizaron las 2 variables seleccionadas para MLR como variables de entrada, dando así 3 modelos híbridos: MLR(sel)-ANN, MLR(sel)-SVR y MLR(sel)-ELM. Como medidas de rendimiento de los pronósticos se utilizaron: Mean Absolute Percentage Error (MAPE), Root Mean Square Error (RMSE), y el Mean Absolute Difference (MAD) fueron utilizados. Los resultados mostraron que los enfoques híbridos propuestos son más precisos que los de una sola etapa, por lo tanto son capaces de predecir con mayor precisión la demanda de petróleo crudo en Taiwán.
+
+
+Crude oil is the most important nonrenewable energy resource and the most key element for the world. In contrast to typical forecasts of oil price, this study aims at forecasting the demand of imported crude oil (ICO). Ths study proposes different single stage and two-stage hybrid stages of forecasting models for prediction of ICO in Taiwan. Th single stage forecasting modeling includes multiple linear regression (MLR), support vector regression (SVR), artificial neural networks (ANN), and extreme learning machine (ELM) approaches. While the fist step of the two-stage modeling is to select the fewer but more significant explanatory variables, the second step is to generate predictions by using these significant explanatory variables. Th proposed two-stage hybrid models consist of integration of different modeling components. Mean absolute percentage error, root mean square error, and mean absolute difference are utilized as the performance measures. Real data set of crude oil in Taiwan for the period of 1993–2010 and twenty-three associated explanatory variables are sampled and investigated. Th forecasting results reveal that the proposed two-stage hybrid modeling is able to accurately predict the demand of crude oil in Taiwan.
+
+El petróleo crudo es el recurso de energía no renovable más importante y el elemento más importante para el mundo. En contraste con los pronósticos típicos del precio del petróleo, este estudio tiene como objetivo pronosticar la demanda de petróleo crudo importado (ICO). Este estudio propone diferentes etapas híbridas de etapa única y etapa doble de modelos de predicción para la predicción de ICO en Taiwán. El modelo de pronóstico de una sola etapa incluye regresión lineal múltiple (MLR), regresión de vector de soporte (SVR), redes neuronales artificiales (ANN) y enfoques de máquina de aprendizaje extremo (ELM). Si bien el primer paso del modelado de dos etapas es seleccionar las variables menores pero mas explicativas y significativas, el segundo paso es generar predicciones mediante el uso de estas variables explicativas significativas. Los modelos híbridos de dos etapas propuestos consisten en la integración de diferentes componentes de modelado. El error de porcentaje absoluto medio, el error cuadrático medio y la diferencia absoluta media se utilizan como medidas de rendimiento. Conjunto de datos reales de petróleo crudo en Taiwán para el período 1993-2010 y veintitrés variables explicativas asociadas se muestrean e investigan. Los resultados del pronóstico revelan que el modelo híbrido en dos etapas propuesto es capaz de predecir con precisión la demanda de petróleo crudo en Taiwán.
+
+Introduction
+
+Natural resources are often classified into two groups: renewable and non-renewable resources. Renewable energy is the one which comes from natural resources such as sunlight, wind, and rain, and it is naturally replenished. It is reported that about 16% of global filial energy consumption comes from renewable energy. Th share of renewable energy in global electricity generation is around 19% [1]. In the United States, renewables provided 12.7% of total domestic electricity in 2011, up from 10.2% in 2010, and 9.3% in 2009. In China, wind power generation increased by more than 48.2% in 2011. In European Union, renewables accounted for more than 71% of total electric capacity additions in 2011 [2]. Non-renewable resources form very slowly or do not naturally form in the environment. A good example of the nonrenewable is fossil fuels. Although many studies have reported that the renewable sources of energy are currently receiving considerable attention, the fossil fuels are still the most needed element of the world energies [3]. In particular, crude oil is the most important nonrenewable energy resource and the most key element for the world [4, 5].
+
+Los recursos naturales a menudo se clasifican en dos grupos: recursos renovables y no renovables. La energía renovable es la que proviene de recursos naturales como la luz solar, el viento y la lluvia, y se repone naturalmente. Se informa que alrededor del 16% del consumo mundial de energía filial proviene de la energía renovable. La cuota de energía renovable en la generación de electricidad mundial es de alrededor del 19% [1]. En los Estados Unidos, las energías renovables proporcionaron 12.7% de la electricidad doméstica total en 2011, frente a 10.2% en 2010 y 9.3% en 2009. En China, la generación de energía eólica aumentó en más de 48.2% en 2011. En la Unión Europea, las energías renovables se contabilizaron para más del 71% de las adiciones totales de capacidad eléctrica en 2011 [2]. Los recursos no renovables se forman muy lentamente o no se forman naturalmente en el medio ambiente. Un buen ejemplo de lo no renovable son los combustibles fósiles. Aunque muchos estudios han informado que las fuentes renovables de energía están recibiendo actualmente una atención considerable, los combustibles fósiles siguen siendo el elemento más necesario de las energías mundiales [3]. En particular, el petróleo crudo es el recurso de energía no renovable más importante y el elemento más importante para el mundo [4, 5].
+
+Research Methodologies
+
+The study considers MLR, SVR, ANN, ELM, and their hybrid modeling schemes as possible forecasting models for import demand of crude oil in Taiwan.
+
+El estudio considera MLR, SVR, ANN, ELM y sus esquemas de modelado híbrido como posibles modelos de previsión para la demanda de importación de petróleo crudo en Taiwán.
+
+Results and Analysis
+
+To show the effectiveness of the proposed hybrid modeling, the real data, from the years 1993 to 2010, were sampled for the ICO from Bureau of Energy in Taiwan [62]. Following the suggestion [39] and having discussed with the ICO practitioners, we sample 23 associated influential variables. Table 1 lists these 23 variables. Th yearly data were collected for the period of 1993–2010 from the web sites of Bureau of Energy in Taiwan [62]. Th fist 14 years’ data are used for model building, and the last four years’ data are used for model confirmation.
+
+Para mostrar la efectividad del modelo híbrido propuesto, los datos reales, desde los años 1993 a 2010, fueron muestreados para el ICO de la Oficina de Energía en Taiwán [62]. Siguiendo la sugerencia [39] y habiendo discutido con los practicantes de ICO, se muestrean 23 variables influyentes asociadas. La Tabla 1 enumera estas 23 variables. Los datos anuales se recogieron para el período 1993-2010 en los sitios web de la Oficina de Energía de Taiwán [62]. Los primeros datos de 14 años se utilizan para la creación de modelos, y los datos de los últimos cuatro años se utilizan para la confirmación del modelo.
+
+3.1. Single-Stage Modeling. Figure 1 displays the yearly data of ICO in Taiwan for the periods of 1993–2006. For MLR modeling, we fist compute the variance inflation factors (VIFs) to examine the existence of collinearity.
+
+3.1. Modelado de una sola etapa. La Figura 1 muestra los datos anuales de ICO en Taiwán para los períodos de 1993-2006. Para el modelado de MLR, primero calculamos los factores de inflación de varianza (VIF) para examinar la existencia de colinealidad.
+
+3.2. Proposed Hybrid Modeling. A rational strategy for a hybrid modeling is to use the fewer but more informative variables, which were selected by the fist stage of modeling approaches, as the inputs for the second stage of classifier approaches. Accordingly, in this study, the significant variables selected, that is, average electricity price (X7) and dependence on imported energy (X22), are used as the input variables of the ANN and SVR for hybrid modeling.
+
+3.2. Proyecto de modelado híbrido. Una estrategia racional para un modelado híbrido es usar las pocas variables, pero más informativas, que fueron seleccionadas por la primera etapa de los enfoques de modelado, a medida que se aproximan las entradas para la segunda etapa del clasificador. En consecuencia, en este estudio, las variables significativas seleccionadas, es decir, el precio promedio de la electricidad (X7) y la dependencia de la energía importada (X22), se utilizan como las variables de entrada de la ANN y SVR para el modelado híbrido.
+
+After completing the fist stage of hybrid modeling, the ANN topology settings can be established. Ths study has found that the {2-3-1} topology with a learning rate of 0.01 provides the best result for the hybrid model. The network topology with the minimum testing RMSE is also considered as the optimal network topology. For the MR/SVR hybrid modeling, the parameters of C and gamma were still estimated as 2(−15) and 2(−15), respectively. In the construction of MR/ELM hybrid model, the model with eight hidden nodes has the smallest average RMSE values is the best MR/ELM hybrid model.
+
+Después de completar la primera etapa de modelado híbrido, se puede establecer la configuración de topología ANN. Este estudio ha encontrado que la topología {2-3-1} con una tasa de aprendizaje de 0.01 proporciona el mejor resultado para el modelo híbrido. La topología de red con la prueba mínima RMSE también se considera como la topología de red óptima. Para el modelado híbrido MR / SVR, los parámetros de C y gamma se estimaron todavía como 2 (-15) y 2 (-15), respectivamente. En la construcción del modelo híbrido MR / ELM, el modelo con ocho nodos ocultos tiene los valores promedio RMSE más pequeños y es el mejor modelo híbrido MR / ELM.
+
+3.3. Experimental Results. In this study, we consider the forecasting accuracy measures of MAPE, MSE, and MAD to address the forecasting performance for the fie different approaches...
+
+3.3. Resultados experimentales. En este estudio, consideramos las medidas de exactitud de previsión de MAPE, MSE y MAD para abordar el rendimiento de previsión de los cinco enfoques diferentes ...
+
+Th results are listed in Table 5. In Table 5, by considering single stage modeling approaches, we note that ELM model has the best performance than the MR, ANN, and SVR models. In comparison to the single stage and our proposed hybrid models in Table 5, one is able to apparently observe that our proposed hybrid models provide more accurate results than the single stage models. In terms of MAPE, MSE, or MAD, the two hybrid models are all lower than the three single stage models.
+
+Los resultados se enumeran en la Tabla 5. En la Tabla 5, al considerar los enfoques de modelado de una sola etapa, observamos que el modelo ELM tiene el mejor rendimiento que los modelos MR, ANN y SVR. En comparación con la etapa única y nuestros modelos híbridos propuestos en la Tabla 5, uno puede aparentemente observar que nuestros modelos híbridos propuestos proporcionan resultados más precisos que los modelos de una sola etapa. En términos de MAPE, MSE o MAD, los dos modelos híbridos son todos inferiores a los tres modelos de una sola etapa.
+
+For example, the MAPE percentage improvements of the proposed MR(sel)-ANN model over the four-single-stage models, ANN, SVR, MR(sel), and ELM are 53.43%, 67.26%, 37.87%, and 28.23%, respectively. Table 6 lists a comparison with respect to the overall improvement percentage in the single stage models.
+
+Por ejemplo, las mejoras porcentuales de MAPE del modelo MR (sel) -ANN propuesto sobre los modelos de cuatro etapas individuales, ANN, SVR, MR (sel) y ELM son 53.43%, 67.26%, 37.87% y 28.23% , respectivamente. La Tabla 6 enumera una comparación con respecto al porcentaje de mejora global en los modelos de etapa única. 
+
+As shown in Figures 4, 5, and 6 and Tables 5 and 6, the proposed hybrid models outperform all three-single-stage models. As a consequence, the proposed two-stage hybrid approaches are more efficient for forecasting ICO in Taiwan than the typical single stage methods.
+
+Como se muestra en las Figuras 4, 5 y 6 y las Tablas 5 y 6, los modelos híbridos propuestos superan a los tres modelos de una sola etapa. Como consecuencia, los enfoques híbridos de dos etapas propuestos son más eficientes para pronosticar el ICO en Taiwán que los métodos típicos de una sola etapa.
+
+
+Conclusions
+
+Oil is not only used to make gas for cars, but for heating homes, producing electricity, making plastics, and other commodities. Oil and its byproducts are ingrained into almost every culture in the world. Therefore, the accurate prediction of the demand of ICO is very important for the economic development of a country.
+
+El petróleo no solo se usa para producir gasolina para automóviles, sino también para calentar casas, producir electricidad, fabricar plásticos y otros productos básicos. El petróleo y sus subproductos están arraigados en casi todas las culturas del mundo. Por lo tanto, la predicción precisa de la demanda de ICO es muy importante para el desarrollo económico de un país.
+
+Because it is difficult to fully capture the characteristics of the real ICO data, the two hybrid prediction models are then proposed to forecast the demand of ICO in Taiwan. Based on our numerical results, it is found that the proposed hybrid approaches are more accurate than the established single stage ones. Th modeling procedures and results of this work may provide a guidance to develop forecasting models for other energies.
+
+Debido a que es difícil captar por completo las características de los datos reales de ICO, se proponen los dos modelos de predicción híbridos para pronosticar la demanda de ICO en Taiwán. Con base en nuestros resultados numéricos, se encuentra que los enfoques híbridos propuestos son más precisos que los establecidos en una sola etapa. Los procedimientos de modelado y los resultados de este trabajo pueden proporcionar una guía para desarrollar modelos de pronóstico para otras energías.
+
+Besides, there are many other two-stage hybrid forecasting models that have been proposed and applied in various fields [63–70]. Th proposed hybrid model in this study is not the only hybrid forecasting scheme for the prediction of demand of crude oil, as one can combine other artificial intelligence techniques or traditional multivariate models, like decision tree, multivariate adaptive regression splines, logistic regression, rough set, or independent component analysis, with ANN, SVR, or ELM for further improving the prediction accuracies.
+
+Además, hay muchos otros modelos de pronóstico híbrido de dos etapas que se han propuesto y aplicado en diversos campos [63-70]. El modelo híbrido propuesto en este estudio no es el único esquema de predicción híbrido para la predicción de la demanda de petróleo crudo, ya que uno puede combinar otras técnicas de inteligencia artificial o modelos multivariados tradicionales, como árbol de decisiones, splines de regresión adaptativa multivariante, regresión logística, conjunto aproximado , o análisis de componente independiente, con ANN, SVR o ELM para mejorar aún más las precisiones de predicción.
+
+Based on our work, further research may be expanded. For example, extensions of the proposed hybrid prediction methods to other machine learning techniques or statistical prediction methods or to multistage prediction procedures are possible. Such works deserve further research and are our future concern.
