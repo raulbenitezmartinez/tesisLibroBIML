@@ -337,15 +337,7 @@ addcontentsline{toc}{section}{Índice de Tablas}
 
 \begin_layout Standard
 \align center
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-listofalgorithms
-\end_layout
+\begin_inset FloatList algorithm
 
 \end_inset
 

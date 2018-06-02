@@ -1,0 +1,821 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\useoutertheme{infolines}
+% \setbeamertemplate{footline}{\insertframenumber}
+\usetheme{Berkeley}
+% CambridgeUS or Antibes or Berkeley...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\setbeamertemplate{navigation symbols}{}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\shape italic
+\size larger
+Pronóstico de la demanda en empresas retail
+\series bold
+\shape default
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+\shape italic
+\size normal
+Pronóstico de la demanda en empresas retail
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+
+\shape italic
+Técnica basada en Business Intelligence y Machine Learning
+\series bold
+\shape default
+\size larger
+ 
+\end_layout
+
+\begin_layout Author
+
+\size large
+Raúl Benítez 
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+ Alberto Garcete 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+\size normal
+R.Benítez
+\begin_inset Newline newline
+\end_inset
+
+A.Garcete
+\size default
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+Tutores: PhD.
+ Diego P.
+ Pinto Roa - Ing.
+ Aditardo Vázquez
+\end_layout
+
+\begin_layout TitleGraphic
+\begin_inset Graphics
+	filename logo_pol.jpg
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+Universidad Nacional de Asunción - Facultad Politécnica
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+FP-UNA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+
+\size larger
+Junio 2018
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+Junio 2018
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=1.5cm]{institution-logo}{logo_pol.jpg}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Agenda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+\shape italic
+Problema
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Pronóstico de la demanda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Objetivo Uno
+\end_layout
+
+\begin_layout Itemize
+Objetivo Dos
+\end_layout
+
+\begin_layout Itemize
+Objetivo Tres
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+\shape italic
+Conceptos
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Técnicas de pronóstico
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Theorem
+En la primera diapositiva.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Corollary
+En la segunda diapositiva.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Business Intelligence
+\shape default
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Theorem
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+1-
+\end_layout
+
+\end_inset
+
+En la columna de la izquierda.
+\end_layout
+
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Corollary
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2-
+\end_layout
+
+\end_inset
+
+En la columna de la derecha.
+\begin_inset Newline newline
+\end_inset
+
+Nueva línea
+\end_layout
+
+\begin_layout Corollary
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Caracteristicas de Machine Learning
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+\shape italic
+Motivación
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Motivación o Desafio
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Aqui va la motivación de la tesis
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+\shape italic
+Modelado
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Modelado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Los subtítulos de los fotogramas son opcionales.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+- Un título debería resumir el contenido de la transparencia de modo comprensibl
+e para cualquiera que no conoce lo que ésta contiene.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Usar Enumeración* a discreción.
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Usar oraciones muy cortas o frases cortas.
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Estos solapados se crean usando el estilo Pausa.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+
+\shape italic
+Experimentos
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Experimentos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\shape italic
+Resultados
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Resultados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\shape italic
+Conclusiones
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Conclusiones
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Aqui va la conclusion
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Trabajos
+\shape default
+ 
+\shape italic
+Futuros
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Aqui van los trabajos futuros
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\start_of_appendix
+
+\shape italic
+Referencias
+\end_layout
+
+\begin_layout Subsection*
+Lecturas complementarias
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+allowframebreaks
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+Lecturas complementarias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatebookbibitems
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Empezar con libros generales.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Autor1990"
+
+\end_inset
+
+A.
+ Autor.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+
+\emph on
+Manual de Lo que sea
+\emph default
+.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Editorial, 1990.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+beamertemplatearticlebibitems
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Y seguir con artículos, una lista breve.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Alguien2002"
+
+\end_inset
+
+S.
+ Alguien.
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+ Sobre esto y aquello
+\emph on
+.
+
+\emph default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newblock
+\end_layout
+
+\end_inset
+
+
+\emph on
+Revista Esto y Aquello
+\emph default
+.
+ 2(1):50–100, 2000.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
