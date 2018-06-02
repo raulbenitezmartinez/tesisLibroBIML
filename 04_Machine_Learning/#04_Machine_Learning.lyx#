@@ -935,8 +935,8 @@ refuerzos
 \end_layout
 
 \begin_layout Standard
-Los principales algoritmos de aprendizaje por refuerso se desarrollan dentro
- de los métodos de resolución de problemas de decisión finitios de Markov,
+Los principales algoritmos de aprendizaje por refuerzo se desarrollan dentro
+ de los métodos de resolución de problemas de decisión finitos de Markov,
  que incorporan las ecuaciones de Bellman y las funciones de valor.
  Los tres métodos principales son: la Programación Dinámica (
 \shape italic
@@ -4176,7 +4176,7 @@ irreducible
  cualquier problema del mundo real, sin embargo no siempre son conocidas.
  Como ejemplo de ruido en los datos para un sistema de monitoreo ambiental
  puede darse por mal funcionamientos, calibraciones defectuosas en sensores
- de medición, problemas de red que transportan los datos 
+ de medición, problemas de la red que transporta los datos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kalapanidas2003"
@@ -4270,8 +4270,8 @@ sobreajuste
 \end_inset
 
  se da cuando la función seleccionada aprende casi perfectamente la tendencia
- de los datos del ejemplo de entrenamiento, pero puede fallar en la generalizaci
-ón con datos nuevos del futuro.
+ de los datos del ejemplo de entrenamiento, pero fallar en la generalización
+ con datos nuevos del futuro.
  La varianza es una medida de generalización, tanto el sesgo como la varianza
  están relacionadas con la complejidad del modelo de la función, la figura
  
@@ -4293,6 +4293,175 @@ key "Friedman2001"
  En Machine Learning es esencial encontrar modelos con un balance entre
  sesgo y varianza, o visto de otra forma, un equilibrio entre error y complejida
 d.
+\end_layout
+
+\begin_layout Section
+Complejidad del modelo y Curvas de aprendizaje
+\end_layout
+
+\begin_layout Standard
+La capacidad de generalización está determinada principalmente por dos factores:
+\end_layout
+
+\begin_layout Itemize
+La complejidad del modelo
+\end_layout
+
+\begin_layout Itemize
+El tamaño del conjunto de entrenamiento.
+\end_layout
+
+\begin_layout Standard
+La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Errores-en-la-prediccion"
+
+\end_inset
+
+ muestra la relación existente entre la complejidad del modelo (eje x) y
+ el error de predicción (eje y).
+ Indica cómo va variando el error de predicción en los conjuntos de entrenamient
+o y de prueba a medida que aumenta la complejidad del modelo.
+ Los medelos muy simples dan una situación no deseada de sesgo (subajuste)
+ y los modelos muy complejos igualmente una situación no deseada de varianza
+ (sobreajuste).
+ Para obtener una buena capacidad de generalización se debe encontrar un
+ compromiso entre sesgo y varianza.
+\end_layout
+
+\begin_layout Standard
+Este compromiso entre sesgo y varianza se puede encontrar probando distintas
+ configuraciones de los parámetros de ajuste (tuning parameters) de los
+ algoritmos de aprendizaje y luego eligiendo el que arroje mejores resultados.
+ Normalmente se recomienda probar las distintas configuraciones de los parámetro
+s sobre un conjunto de datos aparte llamado de validación, que no se debe
+ confundir con los conjuntos de entrenamiento y de prueba.
+\end_layout
+
+\begin_layout Standard
+Algunos ejemplos de familias de algoritmos y sus parámetros de ajuste son:
+\end_layout
+
+\begin_layout Itemize
+Algoritmos de regresión: la cantidad de atributos del modelo (que determinará
+ la cantidad de variables independientes).
+\end_layout
+
+\begin_layout Itemize
+Modelos bayesianos:
+\end_layout
+
+\begin_layout Itemize
+Árboles de decisión: profundidad del árbol, factor de poda 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Friedman2001"
+
+\end_inset
+
+.
+ C: pruning confidence, M: minimum number of instances, N: number of folds
+ for reduced error pruning.
+\end_layout
+
+\begin_layout Itemize
+Redes neuronales artificiales: la topología de la red, donde se debe elegir
+ la cantidad neronas para la capa de entrada, salida y la oculta.
+ También se deben probar distintas tasas de aprendizaje (learning rate)
+ y funciones de activación.
+\end_layout
+
+\begin_layout Itemize
+Support vector machines: los parámetros gamma (γ), costo (C), y epsilon
+ (ε).
+ Gamma (γ) es una constante que reduce el espacio modelo y controla la complejid
+ad de la solución, C es una constante positiva que es un parámetro de control
+ de capacidad, mientras que ε es la función de pérdida que describe el vector
+ de regresión sin todos los datos de entrada.
+\end_layout
+
+\begin_layout Standard
+How can we optimize generalization ability, via optimizing choice of tuning
+ parameters, model size, and learning parameters?
+\end_layout
+
+\begin_layout Standard
+¿Cómo podemos optimizar la capacidad de generalización, mediante la optimización
+ de la elección de los parámetros de ajuste, el tamaño del modelo y los
+ parámetros de aprendizaje?
+\end_layout
+
+\begin_layout Standard
+Test set can be used to determine generalization ability, and used to choose
+ best setting of tuning parameters/model size/learning parameters with best
+ generalization.
+\end_layout
+
+\begin_layout Standard
+Once these tuning parameters are chosen, still important to determine generaliza
+tion ability, but cannot use performance on test set to gauge this anymore!
+\end_layout
+
+\begin_layout Standard
+El conjunto de prueba se puede usar para determinar la capacidad de generalizaci
+ón y se usa para elegir la mejor configuración de parámetros de ajuste /
+ tamaño de modelo / parámetros de aprendizaje con la mejor generalización.
+\end_layout
+
+\begin_layout Standard
+Una vez que se eligen estos parámetros de ajuste, es importante determinar
+ la capacidad de generalización, pero no se puede utilizar el rendimiento
+ en el conjunto de pruebas para medir esto nunca más.
+\end_layout
+
+\begin_layout Standard
+Redes Neuronales: - Pequeñas redes neuronales: Pocos parametros y mas propenso
+ al problema del subajuste.
+ Calculo computacional barato.
+ - Grandes redes neuronales: Muchos parametros y mas propenso al problema
+ del sobreajuste.
+ Calcula computacional alto.
+ Usar regularizacion Lambda para dirigir el sobreajuste.
+ - Se puede probar como funciona con 1, 2, 3 o mas capas ocultas y su efecto
+ en el conjunto de validacion cruzada.
+ Luego se elije la cantidad de capas ocultas de acuerdo a la que dió mejores
+ resultados.
+\end_layout
+
+\begin_layout Standard
+Where does the prediction error come from?
+\end_layout
+
+\begin_layout Standard
+Noise: Intrinsic difficulty of regression problem.
+\end_layout
+
+\begin_layout Standard
+Bias: How far away is the best learner in the model (average learner over
+ all possible datasets) from the optimal one?
+\end_layout
+
+\begin_layout Standard
+Variance: How variable is our learning method if given different datasets?
+\end_layout
+
+\begin_layout Standard
+¿De dónde viene el error de predicción?
+\end_layout
+
+\begin_layout Standard
+Ruido: dificultad intrínseca del problema de regresión.
+\end_layout
+
+\begin_layout Standard
+Sesgo: ¿A qué distancia está el mejor alumno del modelo (el alumno promedio
+ en todos los conjuntos de datos posibles) del óptimo?
+\end_layout
+
+\begin_layout Standard
+Varianza: ¿Qué tan variable es nuestro método de aprendizaje si se les da
+ diferentes conjuntos de datos?
 \end_layout
 
 \begin_layout Standard
@@ -4319,7 +4488,7 @@ name "fig:Errores-en-la-prediccion"
 
 \end_inset
 
-Errores en la Predicción 
+Complejidad del modelo 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Friedman2001"
@@ -4339,11 +4508,37 @@ key "Friedman2001"
 
 \end_layout
 
-\begin_layout Section
-Interpretación de la figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Errores-en-la-prediccion"
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename recursos/Curvas de aprendizaje.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Curvas-de-aprendizaje"
+
+\end_inset
+
+Curvas de aprendizaje
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -4351,10 +4546,143 @@ reference "fig:Errores-en-la-prediccion"
 \end_layout
 
 \begin_layout Standard
+—–
+\end_layout
 
-\color blue
-Leer e interpretar Ruido, Sesgo y Varianza para ver si es suficiente explicación
- para de la grafica
+\begin_layout Standard
+Curvas de aprendizaje (Learning Curves): - Eje x: Tamaño del Training Set
+ - Eje y: Error - A medida que aumenta el tamaño del Conjunto de Entrenamiento
+ también crece el Error del Conjunto de Entrenamiento.
+ - A medida que aumenta el tamaño del Conjunto de Entrenamiento disminuye
+ el Error del Conjunto de Validacion Cruzada.
+ Mientras mas datos tengamos mejor sera la generalizacion con nuevos ejemplos,
+ la hipotesis se ajustara mejor.
+\end_layout
+
+\begin_layout Standard
+- Problema de High Bias o Sesgo Alto (Subajuste): El error de conjunto de
+ entrenamiento aumenta a medida que aumenta el tamaño de dicho conjunto,
+ pero llegando a un punto dicho error se vuelve recto.
+ El error del conjunto de validacion cruzada empieza alto con pocos datos
+ de entrenamiento pero disminuye a medida que aumenta dicho conjunto, llegando
+ a un punto dicho error se vuelve recto.
+ Ambas curvas presentan alto error.
+ Tener mas datos de entrenamiento no ayudará mucho a tener un menor error
+ en el conjunto de validacion cruzada y el conjunto de test.
+\end_layout
+
+\begin_layout Standard
+- Problema de High Variance o Alta Varianza (Sobreajuste): El error de conjunto
+ de entrenamiento aumenta a medida que aumenta el tamaño de dicho conjunto,
+ pero dicho error será aún muy bajo.
+ El error del conjunto de validacion cruzada empieza alto con pocos datos
+ de entrenamiento pero disminuye a medida que aumenta dicho conjunto, pero
+ dicho error se mantiene alto.
+ Tener mas datos de entrenamiento efectivamente ayudará a tener un menor
+ error en el conjunto de validacion cruzada (o el test error o error de
+ aprendizaje)que es lo que nos importa.
+\end_layout
+
+\begin_layout Standard
+- Problema de ambos de los dos.
+\end_layout
+
+\begin_layout Standard
+Diagnosticos de aprendizaje automatico: - Obtener mas ejemplos de entrenamiento
+ (training examples): Funciona cuando hay Alta Varianza al trazar las curvas
+ de aprendizaje.
+ Cuando el error del conjunto de validacion cruzada es mucha mas grande
+ que el error del conjunto de entrenamiento.
+ - Intentar menos cantidad de caracteristicas: Funciona cuando hay Alta
+ Varianza al trazar las curvas de aprendizaje.
+ - Intentar obtener caracteristicas adicionales.
+ Implica mas funciones: Funciona cuando hay Alto Sesgo al trazar las curvas
+ de aprendizaje.
+ - Intentar añadir funciones de polinomios: Funciona cuando hay Alto Sesgo
+ al trazar las curvas de aprendizaje.
+ - Intentar reducir Lambda (parametro de regularizacion): Funciona cuando
+ hay Alto Sesgo al trazar las curvas de aprendizaje.
+ - Intentar incrementar Lambda (parametro de regularizacion): Funciona cuando
+ hay Alta Varianza al trazar las curvas de aprendizaje.
+\end_layout
+
+\begin_layout Standard
+Análisis de Error: - Lo recomendado es hacer en el conjunto de validación
+ cruzada y no en el de test.
+ - Examinar las curvas de aprendizaje.
+ - Examinar manualmente los ejemplos (en el conjunto de validacion cruzada)
+ que el algoritmo no acertó.
+ - Importancia de la evaluacion numérica, por ejemplo el error de validacion
+ cruzada con stemming 3% y sin stemming 5% (para un clasificador de spam).
+\end_layout
+
+\begin_layout Standard
+Métricas de error para clases sesgadas (skewed classes): - Precisión/Recuperació
+n (Precision/Recall): Tabla: Clase Real x Clase Predicha.
+ Positivo Verdadero (la clase predicha es 1 y la clase real es 1), Negativo
+ Verdadero (la clase predicha es 0 y la clase real es 0), Positivo Falso
+ (la clase predicha es 1 y la clase real es 0), Negativo False (la clase
+ predicha es 0 y la clase real es 1) - Precision = Positivos Verdaderos
+ / #Positivos predichos = Positivos Verdaderos / (Positivos Verdaderos +
+ Positivos Falsos).
+ De todos los pacientes a quienes se predice 1 qué fraccion tiene verdaderamente
+ la enfermedad.
+ Una precisión alta es deseada.
+ - Recall = Positivos Verdaderos / #Positivos reales = Positivos Verdaderos
+ / (Positivos Verdaderos + Negativos Falsos).
+ De todos los pacientes que tienen la enfermedad, que fracción fue correctamente
+ detectada que tiene la enfermedad.
+ Un recall alto será bueno.
+ Por ejemplo si todo predice 0 entonces recall = 0, y es un indicador de
+ que no es un buen clasificador.
+ - Sirve aún para las situaciones más sesgadas.
+ - Métrica de evaluación útil y directa para entender si el algoritmo se
+ está desempeñando bien.
+ No permite que el algoritmo haga trampa.
+ - Convención: y = 1 en presencia de la clase más rara.
+\end_layout
+
+\begin_layout Standard
+Compensación entre Precisión y Recuperación (trading off Precision and Recall):
+ - Predice 1 si h(x) mayor o igual a 0,7.
+ Alta precisión, bajo recall.
+ Para evitar Positivos Falsos.
+ - Predice 1 si h(x) mayor o igual a 0.3.
+ Baja precisión, alto recall.
+ Para evitar Negativos Falsos.
+ - Generalizando: Predice 1 si h(x) mayor o igual a un UMBRAL.
+ Se traza la curva de Recall (Eje x) y Precision (Eje y).
+ - Cómo compara los valores numéricos de Precisión y Recall.
+ F o F1 Score = 2(PR/P+R).
+ El mayor valor posible se obtiene para Precisión = 1 y Recall = 1.
+ El más bajo posible se obtiene para Precisión = 0 y Recall = 0.
+ - Se controla la Precisión y el Recall variando el UMBRAL.
+ - Se puede intentar probar un rango de valores para el UMBRAL.
+ Se prueba en el conjunto de validación cruzada.
+ Luego se elige el UMBRAL que arroje el valor de F1 más alto.
+ Esto es una forma de elegir de forma automática el UMBRAL para el clasificador.
+\end_layout
+
+\begin_layout Standard
+Datos para Machine Learning: - Para algunos problemas con datos de entrenamiento
+ en grandes cantidades, varios algoritmos pueden tener igual desempeño.
+ - Para algorimos con muchos parámetros (Ej: regresión logística o lineal
+ con muchas caracteristicas, redes neuronales con muchas unidades ocultas),
+ tendrán bajo sesgo y el error de entrenamiento (Jtrain de Theta) será bajo.
+ - Para un conjunto de entrenamiento masivo y algoritmos con muchos parámetros
+ como el anterior, es poco probable que estos algoritmos causen overfitting
+ (Implica que el Error del conjunto de entrenamiento será cercano al Error
+ del conjunto de prueba, es decir, Jtrain de Theta más o menos igual a Jtest
+ de Theta).
+ - Mirando ambos puntos anteriores, el Error del conjunto de test será bajo
+ se el Error del conjunto del entrenamiento es bajo.
+ - El algoritmo no debe tener alto sesgo ni alta varianza.
+ Para evitar el problema del alto sesgo se debe tener muchos parámetros
+ y para evitar el problema de la alta varianza se debe tener un conjunto
+ de entrenamiento muy grande.
+ Luego, como consecuencia el conjunto de Test tendrá bajo error.
+ - Una clase rica en funciones (rica en información) garantizan una baja
+ oscilación y un conjunto de entrenamiento masivo garantiza más varianza.
 \end_layout
 
 \begin_layout Section
@@ -4380,14 +4708,14 @@ ce.
 \end_layout
 
 \begin_layout Standard
-En 
+En el año 2016 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Castro2016"
 
 \end_inset
 
-, se afronta el problema de mejorar el tiempo y la calidad en la toma de
+ se afronta el problema de mejorar el tiempo y la calidad en la toma de
  decisiones gerenciales en la empresa 
 \begin_inset Quotes eld
 \end_inset
@@ -4412,10 +4740,10 @@ esivo ARMA de la demanda de productos.
 \end_layout
 
 \begin_layout Standard
-En 
+En el trabajo presentado en el año 2016 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Mouatadid2017"
+key "Mouatadid2016"
 
 \end_inset
 
@@ -4441,7 +4769,7 @@ key "Mouatadid2017"
 \end_layout
 
 \begin_layout Standard
-En el 2015 se presentó 
+En el año 2015 se presentó 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ferreira2015"
@@ -4483,7 +4811,7 @@ Rue La La
 \end_layout
 
 \begin_layout Standard
-El trabajo presentado en el 2014 
+El trabajo presentado en el año 2014 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "HybridSoft2014"
