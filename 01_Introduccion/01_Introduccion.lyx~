@@ -147,7 +147,8 @@ En consecuencia a lo anterior en el presente trabajo se plantea una nueva
  técnica para estimar los volúmenes de demanda del siguiente período comercial.
  Luego, esta estimación servirá de apoyo en la toma de decisión de la cantidad
  establecida en las órdenes de compras para la reposición de stock.
- En este nuevo enfoque se integran técnicas de Business Intelligence (BI
+ En este nuevo enfoque se integran técnicas de Business Intelligence (conocida
+ por sus BI
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "BI"
@@ -155,7 +156,7 @@ description "Business Intelligence"
 
 \end_inset
 
-) y Machine Learning (ML
+) y Machine Learning (conocida por las siglas ML
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ML"

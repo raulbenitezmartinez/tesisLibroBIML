@@ -949,7 +949,7 @@ El método de suavizamiento exponencial con tendencia: El inconveniente del
  u horizontal.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 \noindent
 \align left
 
@@ -965,7 +965,6 @@ Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\lef
 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \align block
 
@@ -1012,7 +1011,6 @@ con
 .
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Auto Regressive Integrated Moving Average (ARIMA
 \begin_inset CommandInset nomenclature
@@ -1386,7 +1384,15 @@ key "Akpinar2016"
  Para el análisis utilizaron y compararon tres métodos estadísticos estacionales
  univariables, descomposición de series de tiempo, suavizamiento exponencial
  de Holt-Winters y método de promedio móvil integrado autorregresivo estacional
- (SARIMA).
+ (SARIMA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SARIMA"
+description "Seasonal Autoregressive Integrated Moving Average"
+
+\end_inset
+
+).
  Los autores concluyen que todos los métodos proporcionan resultados satisfactor
 ios y las diferencias entre cada método son muy bajas, a medida que aumenta
  la complejidad de cómputo del modelo la precisión del pronóstico aumenta

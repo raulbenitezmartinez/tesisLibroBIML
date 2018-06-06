@@ -713,7 +713,7 @@ Este proceso es el que nos permite añadir los nuevos datos al datawarehouse,
 \end_layout
 
 \begin_layout Subsection
-DATAWAREHOUSE
+Datawarehouse
 \end_layout
 
 \begin_layout Standard
@@ -1311,13 +1311,9 @@ Indicadores Clave de Rendimiento
 \end_layout
 
 \begin_layout Standard
-Los KPI
-\emph on
- (Key Performance Indicators)
-\emph default
- o Indicadores Clave de Rendimiento se tratan de indicadores que son decisivos
- para analizar de forma rápida la situación del negocio y facilitar la toma
- de decisiones.
+Los KPI o Indicadores Clave de Rendimiento se tratan de indicadores que
+ son decisivos para analizar de forma rápida la situación del negocio y
+ facilitar la toma de decisiones.
  Una característica es que todos los KPI son indicadores, pero no todos
  los indicadores son KPI.
  Otra característica es que cada organización debe definir sus propios KPI

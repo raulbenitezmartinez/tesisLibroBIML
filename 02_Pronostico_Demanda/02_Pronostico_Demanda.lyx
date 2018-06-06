@@ -901,7 +901,7 @@ donde:
 \begin_inset Formula $\alpha$
 \end_inset
 
-es una constante entre 0 y 1 llamada 
+ es una constante entre 0 y 1 llamada 
 \begin_inset Quotes eld
 \end_inset
 
@@ -949,7 +949,7 @@ El método de suavizamiento exponencial con tendencia: El inconveniente del
  u horizontal.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 \noindent
 \align left
 
@@ -965,7 +965,6 @@ Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\lef
 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 \align block
 
@@ -1012,7 +1011,6 @@ con
 .
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
 Auto Regressive Integrated Moving Average (ARIMA
 \begin_inset CommandInset nomenclature

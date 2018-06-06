@@ -248,8 +248,6 @@ beamerdefaultoverlayspecification{<+->}
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
 Agenda
 \end_layout
 
@@ -280,9 +278,7 @@ Problema
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
-Pronóstico de la demanda
+Pronósticos
 \end_layout
 
 \end_inset
@@ -291,33 +287,16 @@ Pronóstico de la demanda
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Objetivo Uno
+\begin_layout Standard
+Pronosticar ciertos eventos constituye una actividad por la cual el hombre:
 \end_layout
 
-\begin_layout Itemize
-Objetivo Dos
-\end_layout
-
-\begin_layout Itemize
-Objetivo Tres
-\end_layout
-
-\end_deeper
-\begin_layout Section
-
-\shape italic
-Conceptos
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
+\begin_layout Standard
+\begin_inset Phantom VPhantom
 status open
 
 \begin_layout Plain Layout
 
-\shape italic
-Técnicas de pronóstico
 \end_layout
 
 \end_inset
@@ -325,17 +304,16 @@ Técnicas de pronóstico
 
 \end_layout
 
-\begin_deeper
-\begin_layout Theorem
-En la primera diapositiva.
+\begin_layout Itemize
+Siente una fascinación.
 \end_layout
 
-\begin_layout Pause
-
+\begin_layout Itemize
+Siente necesidad de realizarlo.
 \end_layout
 
-\begin_layout Corollary
-En la segunda diapositiva.
+\begin_layout Itemize
+Tiene como una actividad cotidiana.
 \end_layout
 
 \end_deeper
@@ -351,11 +329,7 @@ En la segunda diapositiva.
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
-Business Intelligence
-\shape default
- 
+Áreas de aplicacion de Pronósticos
 \end_layout
 
 \end_inset
@@ -364,59 +338,69 @@ Business Intelligence
 \end_layout
 
 \begin_deeper
-\begin_layout ColumnsTopAligned
+\begin_layout Itemize
 
+\series bold
+Meteorología
+\series default
+: pronóstico del clima.
 \end_layout
 
-\begin_deeper
-\begin_layout Column
-5cm
+\begin_layout Itemize
+
+\series bold
+Deportes
+\series default
+: pronóstico de resultado de eventos deportivos.
 \end_layout
 
-\begin_layout Theorem
-\begin_inset Argument 1
-status open
+\begin_layout Itemize
 
-\begin_layout Plain Layout
-1-
+\series bold
+Turismo
+\series default
+: pronóstico de cantidad de turistas.
 \end_layout
 
-\end_inset
+\begin_layout Itemize
 
-En la columna de la izquierda.
+\series bold
+Bolsa de Valores
+\series default
+: pronóstico de rendimiento de acciones, tasas de cambio.
 \end_layout
 
-\begin_layout Column
-5cm
+\begin_layout Itemize
+
+\series bold
+Presupuestos gubernamentales
+\series default
+: pronóstico de ingresos.
 \end_layout
 
-\begin_layout Corollary
-\begin_inset Argument 1
-status open
+\begin_layout Itemize
 
-\begin_layout Plain Layout
-2-
+\series bold
+Transportes
+\series default
+: pronóstico de cantidad de usuarios del transporte público.
 \end_layout
 
-\end_inset
+\begin_layout Itemize
 
-En la columna de la derecha.
-\begin_inset Newline newline
-\end_inset
-
-Nueva línea
+\series bold
+Retail: pronóstico de ventas o demanda.
 \end_layout
 
-\begin_layout Corollary
+\begin_layout Itemize
 
+\series bold
+Energía
+\series default
+: pronóstico de consumo de energía eléctrica, gas natural.
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Frame
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -429,14 +413,67 @@ Nueva línea
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
-Machine Learning
+Principios de los Pronósticos
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Los pronósticos siempre estan equivocados [
+\size large
+\color green
+Planificación_y_control_de_la_produccion_Chapman
+\size default
+\color inherit
+]
+\end_layout
+
+\begin_layout Itemize
+Son mas precisos para grupos o familias de artículos.
+\end_layout
+
+\begin_layout Itemize
+Son mas precisos para periodos cortos.
+\end_layout
+
+\begin_layout Itemize
+Siempre deben incluir un error en la estimación.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronóstico de la Demanda en empresas retail
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La elaboración de pronósticos de demanda precisos es uno de los retos más
+ importantes en empresas del tipo retail.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+..............................................................................AQUI PONER EJEMPLOS GRAFICOS O EJEMPLOS DE UN PRONOSTICO........................................
 \end_layout
 
 \begin_layout Section
@@ -450,9 +487,7 @@ Motivación
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
-Motivación o Desafio
+Motivación
 \end_layout
 
 \end_inset
@@ -462,7 +497,932 @@ Motivación o Desafio
 
 \begin_deeper
 \begin_layout Standard
-Aqui va la motivación de la tesis
+La elaboración de pronósticos de demanda precisos es uno de los retos más
+ importantes en empresas del tipo retail, determinar que sucederá en el
+ futuro con el fin de tomar decisiones adecuadas es un problema que se presenta
+ con frecuencia.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Desarrollar una nueva técnica de pronóstico de la demanda para la toma de
+ decisión en la reposición de stock integrando herramientas y conceptos
+ de Business Intelligence y Machine Learning
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objetivos específicos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Reportar las principales soluciones que abordan el problema.
+\end_layout
+
+\begin_layout Itemize
+Aplicar el proceso de Business Intelligence para obtener los KPI.
+\end_layout
+
+\begin_layout Itemize
+Realizar el proceso de etiquetado y obtener las instancias de entrenamiento.
+\end_layout
+
+\begin_layout Itemize
+Realizar el proceso de entrenamiento con los distintos clasificadores.
+\end_layout
+
+\begin_layout Itemize
+Evaluar el rendimiento de los distintos clasificadores entrenados.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\shape italic
+Conceptos
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+ADMINISTRACIÓN DE COMPRAS
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Administración de Compras
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+En la 
+\emph on
+Administración de Compras
+\emph default
+, hay un componente vital dentro del proceso de adquisición que es la estimación
+ de la cantidad o volumen de productos a adquirir para reponer el stock.
+ Es ahí donde entra en juego el pronóstico de la demanda.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Etapas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Detectar la necesidad.
+\end_layout
+
+\begin_layout Enumerate
+Traducir la necesidad en una especificación comercial.
+\end_layout
+
+\begin_layout Enumerate
+Buscar potenciales proveedores.
+\end_layout
+
+\begin_layout Enumerate
+Seleccionar el proveedor adecuado.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Detallar la orden de compra y pactar el suministro.
+\end_layout
+
+\begin_layout Enumerate
+Recibir los productos.
+\end_layout
+
+\begin_layout Enumerate
+Pagar a los proveedores.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Stock
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El 
+\series bold
+stock
+\series default
+ o existencia de una empresa es el conjunto de materiales y artículos que
+ se almacenan, tanto aquellos que son necesarios para el proceso productivo
+ como los destinados a la venta.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DEDIEGOMORILLO2015"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronóstico de la demanda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align block
+El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
+ de bienes o servicios que los consumidores demandarán en el futuro basadas
+ en el conocimiento del pasado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+TÉCNICAS DE PRONÓSTICOS DE LA DEMANDA
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Métodos de pronósticos cualitativos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Las principales técnicas cualitativas de pronóstico de demanda son 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Opinión del Gerente
+\end_layout
+
+\begin_layout Itemize
+Junta de opinión ejecutiva
+\end_layout
+
+\begin_layout Itemize
+Consulta a la fuerza de ventas
+\end_layout
+
+\begin_layout Itemize
+Encuesta en el mercado de consumo
+\end_layout
+
+\begin_layout Itemize
+Método Delphi
+\end_layout
+
+\begin_layout Itemize
+Analogía de productos similares
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Métodos de pronósticos cuantitativos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+En general, los métodos cuantitativos se clasifican en técnicas de:
+\end_layout
+
+\begin_layout Itemize
+Pronósticos de series de tiempo.
+\end_layout
+
+\begin_layout Itemize
+Pronósticos causales.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronósticos de series de tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+El método de pronóstico del último valor.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Pronóstico=último\;valor
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El método de pronóstico por promedios.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Pronóstico=promedio\;de\;todos\;los\;valores\;hasta\;la\;fecha
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+El método de pronóstico de promedio móvil.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Pronóstico=promedio\;de\;los\;últimos\;n\;valores
+\end{equation}
+
+\end_inset
+
+
+\color inherit
+donde:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+\color brown
+\begin_inset Formula $n=número\;de\;periodos\;más\;recientes$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronósticos de series de tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+El método de pronóstico por suavizamiento exponencial.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)
+\end{equation}
+
+\end_inset
+
+
+\color inherit
+donde:
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+\color brown
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\color inherit
+ es una constante entre 0 y 1 llamada 
+\begin_inset Quotes eld
+\end_inset
+
+constante de suavizamiento
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\noindent
+El método de suavizamiento exponencial con tendencia.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\noindent
+\align left
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)+tendencia\;estimada
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+
+\shape italic
+\size tiny
+donde:
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+tendencia\;estimada=\beta*\left(última\;tendencia\right)*\left(1\text{-}\beta\right)*\left(estimación\;anterior\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\begin{array}{c}
+última\;tendencia\:=\:\alpha*\left(último\;valor-penúltimo\;valor\right)\,+\\
+\qquad\qquad\qquad\qquad\qquad\qquad\qquad\left(1\text{-}\alpha\right)*\left(último\;pronóstico-penúltimo\;pronóstico\right)
+\end{array}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+
+\size tiny
+con 
+\color brown
+
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\color inherit
+ (beta) es una constante de suavizamiento de tendencia entre 0 y 1.
+ La elección del valor y rango de 
+\color brown
+
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\color inherit
+ tienen igual significado que 
+\color brown
+
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\color inherit
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Auto Regressive Integrated Moving Average (ARIMA).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronósticos causales
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Regresión Lineal
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+y=a+bx
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+donde: 
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula $y=variable\;dependiente$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula $x=variable\;independiente$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula $a=intersección\;de\;la\;línea\;con\;el\;eje\;y$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula $b=pendiente\;de\;la\;línea$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+BUSINESS INTELLIGENCE
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Business Intelligence 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Business Intelligence es un término paraguas que abarca los procesos, las
+ herramientas y las tecnologías para convertir datos en información, información
+ en conocimiento y planes para conducir de forma eficaz las actividades
+ de los negocios
+\begin_inset Quotes erd
+\end_inset
+
+
+\emph default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EH05"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Componentes de BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fuentes de información.
+\end_layout
+
+\begin_layout Itemize
+Extracción, transformación y Carga.
+\end_layout
+
+\begin_layout Itemize
+Datawarehouse.
+\end_layout
+
+\begin_layout Itemize
+OLAP
+\end_layout
+
+\begin_layout Itemize
+Herramientas de BI
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Indicadores Claves de Rendimiento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+concepto
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Aplicaciones de BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Caracteristicas de Machine Learning
 \end_layout
 
 \end_deeper
@@ -477,8 +1437,6 @@ Modelado
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
 Modelado
 \end_layout
 
@@ -540,8 +1498,6 @@ Experimentos
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
 Experimentos
 \end_layout
 
@@ -561,8 +1517,6 @@ Resultados
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
 Resultados
 \end_layout
 
@@ -582,8 +1536,6 @@ Conclusiones
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
 Conclusiones
 \end_layout
 
@@ -614,13 +1566,7 @@ Aqui va la conclusion
 status open
 
 \begin_layout Plain Layout
-
-\shape italic
-Trabajos
-\shape default
- 
-\shape italic
-Futuros
+Trabajos Futuros
 \end_layout
 
 \end_inset
@@ -641,175 +1587,16 @@ Aqui van los trabajos futuros
 Referencias
 \end_layout
 
-\begin_layout Subsection*
-Lecturas complementarias
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 3
-status open
-
-\begin_layout Plain Layout
-allowframebreaks
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-
-\shape italic
-Lecturas complementarias
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-beamertemplatebookbibitems
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Empezar con libros generales.
-\end_layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "F:/TESIS_2016/Libro-Paper/tesisLibroBIML/BibliografiaLibro"
+options "plain"
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Autor1990"
-
-\end_inset
-
-A.
- Autor.
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
-
-\emph on
-Manual de Lo que sea
-\emph default
-.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
- Editorial, 1990.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-beamertemplatearticlebibitems
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Y seguir con artículos, una lista breve.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Alguien2002"
-
-\end_inset
-
-S.
- Alguien.
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
- Sobre esto y aquello
-\emph on
-.
-
-\emph default
- 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-newblock
-\end_layout
-
-\end_inset
-
-
-\emph on
-Revista Esto y Aquello
-\emph default
-.
- 2(1):50–100, 2000.
-\end_layout
-
-\end_deeper
 \end_body
 \end_document

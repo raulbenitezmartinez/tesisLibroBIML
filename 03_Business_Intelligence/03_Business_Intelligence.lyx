@@ -713,7 +713,7 @@ Este proceso es el que nos permite añadir los nuevos datos al datawarehouse,
 \end_layout
 
 \begin_layout Subsection
-DATAWAREHOUSE
+Datawarehouse
 \end_layout
 
 \begin_layout Standard
@@ -1230,7 +1230,7 @@ description "Hybrid Online Analytical Processing"
 \end_layout
 
 \begin_layout Subsection
-HERRAMIENTAS DE BI
+Herramientas de BI
 \end_layout
 
 \begin_layout Standard
