@@ -758,7 +758,7 @@
   howpublished = {\url{http://revistascientificas.upeu.edu.pe/index.php/ri_bi/article/view/490}},
 }
 
-@Article{Mouatadid2017,
+@Article{Mouatadid2016,
   author        = {Soukayna Mouatadid and Jan Adamowski},
   title         = {Using extreme learning machines for short-term urban water demand forecasting},
   journal       = {Urban Water Journal},

@@ -13,8 +13,7 @@ WEEK 6
 1. Evaluar una hipotesis:
 - Se busca prevenir problemas de sobreajuste y subajuste.
 - Se busca elegir parametros que minimicen el error de entrenamiento.
-- Sobreajuste (Overfitting) o Varianza (Variance - Diferencia) Alta: Error de entrenamiento bajo (se ajusta bien al conjunto de entrenamiento) pero falla en la generalizacion 
-de nuevos ejemplos que no estan en el conjunto de entrenamiento.
+- Sobreajuste (Overfitting) o Varianza (Variance - Diferencia) Alta: Error de entrenamiento bajo (se ajusta bien al conjunto de entrenamiento) pero falla en la generalizacion de nuevos ejemplos que no estan en el conjunto de entrenamiento.
 - Subajuste (Underfitting) o Sesgo (Bias - Tendencia) Alto:
 
 2. Descubrir hipotesis sobreajustada:
@@ -61,16 +60,19 @@ Es la tecnica estandar para evaluar que tan buena es la hipotesis.
 - A medida que aumenta el tamaño del Conjunto de Entrenamiento también crece el Error del Conjunto de Entrenamiento.
 - A medida que aumenta el tamaño del Conjunto de Entrenamiento disminuye el Error del Conjunto de Validacion Cruzada. Mientras mas datos 
 tengamos mejor sera la generalizacion con nuevos ejemplos, la hipotesis se ajustara mejor.
+
 - Problema de High Bias o Sesgo Alto (Subajuste): El error de conjunto de entrenamiento aumenta a medida que aumenta el tamaño de dicho conjunto, pero
 llegando a un punto dicho error se vuelve recto. El error del conjunto de validacion cruzada empieza alto con pocos datos de
 entrenamiento pero disminuye a medida que aumenta dicho conjunto, llegando a un punto dicho error se vuelve recto. Ambas curvas
 presentan alto error. Tener mas datos de entrenamiento no ayudará mucho a tener un menor error en el conjunto de validacion cruzada 
 y el conjunto de test.
+
 - Problema de High Variance o Alta Varianza (Sobreajuste): El error de conjunto de entrenamiento aumenta a medida 
 que aumenta el tamaño de dicho conjunto, pero dicho error será aún muy bajo. El error del conjunto de validacion cruzada 
 empieza alto con pocos datos de entrenamiento pero disminuye a medida que aumenta dicho conjunto, pero dicho error se mantiene alto.
 Tener mas datos de entrenamiento efectivamente ayudará a tener un menor error en el conjunto de validacion cruzada 
 (o el test error o error de aprendizaje)que es lo que nos importa.
+
 - Problema de ambos de los dos.
 
 8. Diagnosticos de aprendizaje automatico:
