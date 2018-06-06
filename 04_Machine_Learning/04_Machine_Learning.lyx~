@@ -777,28 +777,16 @@ Los agentes inteligentes que implementan algoritmos de apredizaje supervisado
 Supervised Learning
 \shape default
 ), tienen como objetivo aprender una función de hipótesis 
-\begin_inset Quotes eld
-\end_inset
-
-h
-\begin_inset Quotes erd
+\begin_inset Formula $h$
 \end_inset
 
  que se aproxime a la función verdadera 
-\begin_inset Quotes eld
-\end_inset
-
-f
-\begin_inset Quotes erd
+\begin_inset Formula $f$
 \end_inset
 
  y que es solución al problema que se intenta resolver.
  Lo que se conoce de 
-\begin_inset Quotes eld
-\end_inset
-
-f
-\begin_inset Quotes erd
+\begin_inset Formula $f$
 \end_inset
 
  son los llamados 
@@ -809,39 +797,42 @@ ejemplos
 \begin_inset Quotes erd
 \end_inset
 
-, que son puntos concretos dentro de la desconocida curva que representa
+, que son puntos concretos dentro de la desconocida linea que representa
  la función verdadera 
-\begin_inset Quotes eld
-\end_inset
-
-f
-\begin_inset Quotes erd
+\begin_inset Formula $f$
 \end_inset
 
 .
  En otras palabras, la definición matemática de la función 
-\begin_inset Quotes eld
+\begin_inset Formula $f$
 \end_inset
 
-f
-\begin_inset Quotes erd
-\end_inset
-
- no se conoce, solamente se conocen un conjunto de ejemplos definidos por
+ no se conoce, solamente se conoce un conjunto de ejemplos definidos por
  valores correctos de entradas y salidas de la función 
-\begin_inset Quotes eld
+\begin_inset Formula $f$
 \end_inset
 
-f
-\begin_inset Quotes erd
-\end_inset
-
-.
- 
+ .
 \end_layout
 
 \begin_layout Standard
-Estos 
+Otra forma de verlo es de la siguiente manera, se dispone de variables de
+ entrada 
+\begin_inset Formula $(X)$
+\end_inset
+
+ y una variable de salida 
+\begin_inset Formula $(Y)$
+\end_inset
+
+, mediante un algoritmo y a partir de un conjunto de datos de entrenamiento
+ se busca aprender una función 
+\begin_inset Formula $Y=f(X)$
+\end_inset
+
+ que mapee la salida desde la entrada.
+ Los datos de entrenamiento constituyen las respuestas correctas conocidas
+ o 
 \begin_inset Quotes eld
 \end_inset
 
@@ -849,32 +840,41 @@ ejemplos
 \begin_inset Quotes erd
 \end_inset
 
- son datos de entrada para los algoritmos de aprendizaje supervisado y actúan
- como datos de entrenamiento, persiguiendo el objetivo principal de encontrar
- la función 
-\begin_inset Quotes eld
+.
+ El objetivo esencial es aproximar la función de mapeo lo mejor que se pueda,
+ de manera que cuando se tengan nuevos datos de entrada 
+\begin_inset Formula $(X)$
 \end_inset
 
-h
-\begin_inset Quotes erd
+ se pueda predecir la variable de salida 
+\begin_inset Formula $(Y)$
 \end_inset
 
 .
- En el caso más general, un instructor provee el valor correcto de la salida
- de cada ejemplo.
- Problemas del tipo clasificación o regresión se resuelven normalmente con
- aprendizaje supervisado.
- Como ejemplo de aplicaciones que implementan esta técnica están los vehículos
- autoconducidos que deben aprender a diferenciar entre una calle y de la
- que no es (salida booleana es calle o no es calle?), también debe aprender
- a frenar (salida booleana frenar o no frenar?), etc.
- Entre los algoritmos que implementan aprendizaje supervisado están: Logistic
- Regression y Back Propagation Neural Network.
 \end_layout
 
 \begin_layout Standard
-El problema de estudio en cuestión utiliza algoritmos de aprendizaje supervisado
-, donde el experto en compras da la respuesta correcta a cada ejemplo.
+Problemas del tipo clasificación o regresión se resuelven normalmente con
+ aprendizaje supervisado.
+ Un problema de clasificación es cuando la variable de salida es una categoría
+ y un problema de regresión es cuando la variable de salida es un valor
+ real.
+ Como ejemplo de aplicaciones que implementan esta técnica están los vehículos
+ autoconducidos, que deben aprender a diferenciar una calle y de la que
+ no es (salida booleana: es calle o no es calle?), también debe aprender
+ a frenar (salida booleana: frenar o no frenar?), etc.
+ Entre los algoritmos que implementan aprendizaje supervisado están: Logistic
+ Regression, Linear Regression, Support Vector Machines (SVM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SVM"
+description "Support Vector Machines"
+
+\end_inset
+
+), Back Propagation Neural Network, etc.
+ El problema de estudio de la tesis utiliza algoritmos de aprendizaje supervisad
+o, donde el experto en compras da la respuesta correcta a cada ejemplo.
 \end_layout
 
 \begin_layout Subsection
@@ -886,30 +886,38 @@ En los problemas de aprendizaje no supervisado (
 \shape italic
 Unsupervised Learning
 \shape default
-) los algoritmos reciben como entrada datos de entrenamiento que no tienen
- resultados conocidos ni etiquetas.
- Se buscan estructuras presentes y como resultado se pueden extraer reglas
- generales, o reducir sistemáticamente la redundancia, o se pueden organizar
- los datos por similitud.
- Se aprende a partir de patrones de entrada de los que no se dispone de
- sus valores de salida, es decir 
-\shape italic
-a priori
-\shape default
- no hay etiquetas o respuesta correcta en los ejemplos.
- Como ejemplo de implementaciones está el caso de la computadora que aprendió
+) los algoritmos reciben como entrada datos de entrenamiento (ejemplos)
+ que no tienen respuestas correctas conocidas.
+ Solo se dispone de variables de entrada 
+\begin_inset Formula $(X)$
+\end_inset
+
+ pero no hay correspondiente variable de salida 
+\begin_inset Formula $(Y)$
+\end_inset
+
+.
+ Los algoritmos buscan estructuras presentes y como resultado pueden extraer
+ reglas generales, o reducir sistemáticamente la redundancia, o se pueden
+ organizar los datos por similitud.
+ Los problemas de agrupamiento (clustering) y asociación (association) se
+ resuelven normalmente con algoritmos de aprendizaje no supervisados.
+\end_layout
+
+\begin_layout Standard
+Como ejemplo de implementaciones está el caso de la computadora que aprendió
  sola el concepto de lo que es un animal gato, otro ejemplo es el reconocimiento
  de dígitos escritos a mano.
  Entre los algoritmos que implementan aprendizaje no supervisado están:
- Bayesian Network, Neural Networks y Support Vector Machines (SVM
+ k-Means, Principal Component Analysis (PCA
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "SVM"
-description "Support Vector Machines"
+symbol "PCA"
+description "Principal Component Analysis"
 
 \end_inset
 
-) o Máquinas Núcleo.
+), Hierarchical Clustering.
 \end_layout
 
 \begin_layout Subsection
@@ -4123,6 +4131,61 @@ s para calcular las probabilidades de que cada observador clasifique aleatoriame
 nte cada categoría.
 \end_layout
 
+\begin_layout Standard
+—-
+\end_layout
+
+\begin_layout Standard
+Métricas de error para clases sesgadas (skewed classes): - Precisión/Recuperació
+n (Precision/Recall): Tabla: Clase Real x Clase Predicha.
+ Positivo Verdadero (la clase predicha es 1 y la clase real es 1), Negativo
+ Verdadero (la clase predicha es 0 y la clase real es 0), Positivo Falso
+ (la clase predicha es 1 y la clase real es 0), Negativo False (la clase
+ predicha es 0 y la clase real es 1) - Precision = Positivos Verdaderos
+ / #Positivos predichos = Positivos Verdaderos / (Positivos Verdaderos +
+ Positivos Falsos).
+ De todos los pacientes a quienes se predice 1 qué fraccion tiene verdaderamente
+ la enfermedad.
+ Una precisión alta es deseada.
+ - Recall = Positivos Verdaderos / #Positivos reales = Positivos Verdaderos
+ / (Positivos Verdaderos + Negativos Falsos).
+ De todos los pacientes que tienen la enfermedad, que fracción fue correctamente
+ detectada que tiene la enfermedad.
+ Un recall alto será bueno.
+ Por ejemplo si todo predice 0 entonces recall = 0, y es un indicador de
+ que no es un buen clasificador.
+ - Sirve aún para las situaciones más sesgadas.
+ - Métrica de evaluación útil y directa para entender si el algoritmo se
+ está desempeñando bien.
+ No permite que el algoritmo haga trampa.
+ - Convención: y = 1 en presencia de la clase más rara.
+\end_layout
+
+\begin_layout Standard
+Compensación entre Precisión y Recuperación (trading off Precision and Recall):
+ - Predice 1 si h(x) mayor o igual a 0,7.
+ Alta precisión, bajo recall.
+ Para evitar Positivos Falsos.
+ - Predice 1 si h(x) mayor o igual a 0.3.
+ Baja precisión, alto recall.
+ Para evitar Negativos Falsos.
+ - Generalizando: Predice 1 si h(x) mayor o igual a un UMBRAL.
+ Se traza la curva de Recall (Eje x) y Precision (Eje y).
+ - Cómo compara los valores numéricos de Precisión y Recall.
+ F o F1 Score = 2(PR/P+R).
+ El mayor valor posible se obtiene para Precisión = 1 y Recall = 1.
+ El más bajo posible se obtiene para Precisión = 0 y Recall = 0.
+ - Se controla la Precisión y el Recall variando el UMBRAL.
+ - Se puede intentar probar un rango de valores para el UMBRAL.
+ Se prueba en el conjunto de validación cruzada.
+ Luego se elige el UMBRAL que arroje el valor de F1 más alto.
+ Esto es una forma de elegir de forma automática el UMBRAL para el clasificador.
+\end_layout
+
+\begin_layout Standard
+—
+\end_layout
+
 \begin_layout Section
 Componentes de los errores de predicción: Ruido, Sesgo y Varianza
 \end_layout
@@ -4270,7 +4333,7 @@ sobreajuste
 \end_inset
 
  se da cuando la función seleccionada aprende casi perfectamente la tendencia
- de los datos del ejemplo de entrenamiento, pero fallar en la generalización
+ de los datos del ejemplo de entrenamiento, pero falla en la generalización
  con datos nuevos del futuro.
  La varianza es una medida de generalización, tanto el sesgo como la varianza
  están relacionadas con la complejidad del modelo de la función, la figura
@@ -4304,11 +4367,11 @@ La capacidad de generalización está determinada principalmente por dos factore
 \end_layout
 
 \begin_layout Itemize
-La complejidad del modelo.
+La complejidad del modelo (model complexity).
 \end_layout
 
 \begin_layout Itemize
-El tamaño del conjunto de entrenamiento.
+El tamaño del conjunto de entrenamiento (learning curves).
 \end_layout
 
 \begin_layout Standard
@@ -4349,8 +4412,9 @@ Algoritmos de regresión lineal: la cantidad de atributos del modelo (que
 \end_layout
 
 \begin_layout Itemize
-Modelos bayesianos: en bayesian network el algoritmo estimador para encontrar
- y el método para encontrar estructuras de red.
+Modelos bayesianos: en bayesian network el algoritmo estimador (estimating
+ the conditional probability tables of a Bayes network) y el método para
+ encontrar estructuras de red.
 \end_layout
 
 \begin_layout Itemize
@@ -4387,89 +4451,6 @@ key "Mouatadid2016"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-How can we optimize generalization ability, via optimizing choice of tuning
- parameters, model size, and learning parameters?
-\end_layout
-
-\begin_layout Standard
-¿Cómo podemos optimizar la capacidad de generalización, mediante la optimización
- de la elección de los parámetros de ajuste, el tamaño del modelo y los
- parámetros de aprendizaje?
-\end_layout
-
-\begin_layout Standard
-Test set can be used to determine generalization ability, and used to choose
- best setting of tuning parameters/model size/learning parameters with best
- generalization.
-\end_layout
-
-\begin_layout Standard
-Once these tuning parameters are chosen, still important to determine generaliza
-tion ability, but cannot use performance on test set to gauge this anymore!
-\end_layout
-
-\begin_layout Standard
-El conjunto de prueba se puede usar para determinar la capacidad de generalizaci
-ón y se usa para elegir la mejor configuración de parámetros de ajuste /
- tamaño de modelo / parámetros de aprendizaje con la mejor generalización.
-\end_layout
-
-\begin_layout Standard
-Una vez que se eligen estos parámetros de ajuste, es importante determinar
- la capacidad de generalización, pero no se puede utilizar el rendimiento
- en el conjunto de pruebas para medir esto nunca más.
-\end_layout
-
-\begin_layout Standard
-Redes Neuronales: - Pequeñas redes neuronales: Pocos parametros y mas propenso
- al problema del subajuste.
- Calculo computacional barato.
- - Grandes redes neuronales: Muchos parametros y mas propenso al problema
- del sobreajuste.
- Calcula computacional alto.
- Usar regularizacion Lambda para dirigir el sobreajuste.
- - Se puede probar como funciona con 1, 2, 3 o mas capas ocultas y su efecto
- en el conjunto de validacion cruzada.
- Luego se elije la cantidad de capas ocultas de acuerdo a la que dió mejores
- resultados.
-\end_layout
-
-\begin_layout Standard
-Where does the prediction error come from?
-\end_layout
-
-\begin_layout Standard
-Noise: Intrinsic difficulty of regression problem.
-\end_layout
-
-\begin_layout Standard
-Bias: How far away is the best learner in the model (average learner over
- all possible datasets) from the optimal one?
-\end_layout
-
-\begin_layout Standard
-Variance: How variable is our learning method if given different datasets?
-\end_layout
-
-\begin_layout Standard
-¿De dónde viene el error de predicción?
-\end_layout
-
-\begin_layout Standard
-Ruido: dificultad intrínseca del problema de regresión.
-\end_layout
-
-\begin_layout Standard
-Sesgo: ¿A qué distancia está el mejor alumno del modelo (el alumno promedio
- en todos los conjuntos de datos posibles) del óptimo?
-\end_layout
-
-\begin_layout Standard
-Varianza: ¿Qué tan variable es nuestro método de aprendizaje si se les da
- diferentes conjuntos de datos?
 \end_layout
 
 \begin_layout Standard
@@ -4517,6 +4498,69 @@ key "Friedman2001"
 \end_layout
 
 \begin_layout Standard
+La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Curvas-de-aprendizaje"
+
+\end_inset
+
+ muestra la relación existente entre la el tamaño del conjunto de entrenamiento
+ (eje x) y el error de predicción (eje y).
+ Indica cómo va variando el error de predicción en los conjuntos de entrenamient
+o y de prueba a medida que aumenta el tamaño del conjunto de entrenamiento.
+ Los medelos muy simples dan problema de alto sesgo (figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Curvas-de-aprendizaje"
+
+\end_inset
+
+ (a)) y los modelos muy complejos dan problema de alta varianza (figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Curvas-de-aprendizaje"
+
+\end_inset
+
+ (b)).
+\end_layout
+
+\begin_layout Standard
+Cuando el modelo está sesgado (figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Curvas-de-aprendizaje"
+
+\end_inset
+
+ (a)) por mas que se aumenten los datos del conjunto de entrenamiento el
+ nivel de error del conjunto de entrenamiento y el de prueba se mantienen
+ alto, por lo que para modelos sesgados no es una solución aumentar significativ
+amente la cantidad de los datos del conjunto de entrenamiento.
+ La solución se debería buscar aumentando la complejidad del modelo.
+\end_layout
+
+\begin_layout Standard
+Cuando el modelo tiene alta varianza (figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Curvas-de-aprendizaje"
+
+\end_inset
+
+ (b)) el error en el conjunto de entrenamiento se mantiene bajo aún aumentando
+ su cantidad de datos.
+ El conjunto de prueba en cambio inicia con alto porcentaje de error con
+ pocos datos, pero a medida que aumentan los datos en el conjunto de entrenamien
+to el error del conjunto de prueba disminuye significativamente.
+ Por tanto, anta alta varianza es una posible solución aumentar el tamaño
+ de los datos.
+ También se puede probar disminuyendo la complejidad del modelo.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4525,8 +4569,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename recursos/Curvas de aprendizaje.png
-	scale 50
+	filename recursos/Curvas de aprendizaje2.png
 
 \end_inset
 
@@ -4551,146 +4594,6 @@ Curvas de aprendizaje
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-—–
-\end_layout
-
-\begin_layout Standard
-Curvas de aprendizaje (Learning Curves): - Eje x: Tamaño del Training Set
- - Eje y: Error - A medida que aumenta el tamaño del Conjunto de Entrenamiento
- también crece el Error del Conjunto de Entrenamiento.
- - A medida que aumenta el tamaño del Conjunto de Entrenamiento disminuye
- el Error del Conjunto de Validacion Cruzada.
- Mientras mas datos tengamos mejor sera la generalizacion con nuevos ejemplos,
- la hipotesis se ajustara mejor.
-\end_layout
-
-\begin_layout Standard
-- Problema de High Bias o Sesgo Alto (Subajuste): El error de conjunto de
- entrenamiento aumenta a medida que aumenta el tamaño de dicho conjunto,
- pero llegando a un punto dicho error se vuelve recto.
- El error del conjunto de validacion cruzada empieza alto con pocos datos
- de entrenamiento pero disminuye a medida que aumenta dicho conjunto, llegando
- a un punto dicho error se vuelve recto.
- Ambas curvas presentan alto error.
- Tener mas datos de entrenamiento no ayudará mucho a tener un menor error
- en el conjunto de validacion cruzada y el conjunto de test.
-\end_layout
-
-\begin_layout Standard
-- Problema de High Variance o Alta Varianza (Sobreajuste): El error de conjunto
- de entrenamiento aumenta a medida que aumenta el tamaño de dicho conjunto,
- pero dicho error será aún muy bajo.
- El error del conjunto de validacion cruzada empieza alto con pocos datos
- de entrenamiento pero disminuye a medida que aumenta dicho conjunto, pero
- dicho error se mantiene alto.
- Tener mas datos de entrenamiento efectivamente ayudará a tener un menor
- error en el conjunto de validacion cruzada (o el test error o error de
- aprendizaje)que es lo que nos importa.
-\end_layout
-
-\begin_layout Standard
-- Problema de ambos de los dos.
-\end_layout
-
-\begin_layout Standard
-Diagnosticos de aprendizaje automatico: - Obtener mas ejemplos de entrenamiento
- (training examples): Funciona cuando hay Alta Varianza al trazar las curvas
- de aprendizaje.
- Cuando el error del conjunto de validacion cruzada es mucha mas grande
- que el error del conjunto de entrenamiento.
- - Intentar menos cantidad de caracteristicas: Funciona cuando hay Alta
- Varianza al trazar las curvas de aprendizaje.
- - Intentar obtener caracteristicas adicionales.
- Implica mas funciones: Funciona cuando hay Alto Sesgo al trazar las curvas
- de aprendizaje.
- - Intentar añadir funciones de polinomios: Funciona cuando hay Alto Sesgo
- al trazar las curvas de aprendizaje.
- - Intentar reducir Lambda (parametro de regularizacion): Funciona cuando
- hay Alto Sesgo al trazar las curvas de aprendizaje.
- - Intentar incrementar Lambda (parametro de regularizacion): Funciona cuando
- hay Alta Varianza al trazar las curvas de aprendizaje.
-\end_layout
-
-\begin_layout Standard
-Análisis de Error: - Lo recomendado es hacer en el conjunto de validación
- cruzada y no en el de test.
- - Examinar las curvas de aprendizaje.
- - Examinar manualmente los ejemplos (en el conjunto de validacion cruzada)
- que el algoritmo no acertó.
- - Importancia de la evaluacion numérica, por ejemplo el error de validacion
- cruzada con stemming 3% y sin stemming 5% (para un clasificador de spam).
-\end_layout
-
-\begin_layout Standard
-Métricas de error para clases sesgadas (skewed classes): - Precisión/Recuperació
-n (Precision/Recall): Tabla: Clase Real x Clase Predicha.
- Positivo Verdadero (la clase predicha es 1 y la clase real es 1), Negativo
- Verdadero (la clase predicha es 0 y la clase real es 0), Positivo Falso
- (la clase predicha es 1 y la clase real es 0), Negativo False (la clase
- predicha es 0 y la clase real es 1) - Precision = Positivos Verdaderos
- / #Positivos predichos = Positivos Verdaderos / (Positivos Verdaderos +
- Positivos Falsos).
- De todos los pacientes a quienes se predice 1 qué fraccion tiene verdaderamente
- la enfermedad.
- Una precisión alta es deseada.
- - Recall = Positivos Verdaderos / #Positivos reales = Positivos Verdaderos
- / (Positivos Verdaderos + Negativos Falsos).
- De todos los pacientes que tienen la enfermedad, que fracción fue correctamente
- detectada que tiene la enfermedad.
- Un recall alto será bueno.
- Por ejemplo si todo predice 0 entonces recall = 0, y es un indicador de
- que no es un buen clasificador.
- - Sirve aún para las situaciones más sesgadas.
- - Métrica de evaluación útil y directa para entender si el algoritmo se
- está desempeñando bien.
- No permite que el algoritmo haga trampa.
- - Convención: y = 1 en presencia de la clase más rara.
-\end_layout
-
-\begin_layout Standard
-Compensación entre Precisión y Recuperación (trading off Precision and Recall):
- - Predice 1 si h(x) mayor o igual a 0,7.
- Alta precisión, bajo recall.
- Para evitar Positivos Falsos.
- - Predice 1 si h(x) mayor o igual a 0.3.
- Baja precisión, alto recall.
- Para evitar Negativos Falsos.
- - Generalizando: Predice 1 si h(x) mayor o igual a un UMBRAL.
- Se traza la curva de Recall (Eje x) y Precision (Eje y).
- - Cómo compara los valores numéricos de Precisión y Recall.
- F o F1 Score = 2(PR/P+R).
- El mayor valor posible se obtiene para Precisión = 1 y Recall = 1.
- El más bajo posible se obtiene para Precisión = 0 y Recall = 0.
- - Se controla la Precisión y el Recall variando el UMBRAL.
- - Se puede intentar probar un rango de valores para el UMBRAL.
- Se prueba en el conjunto de validación cruzada.
- Luego se elige el UMBRAL que arroje el valor de F1 más alto.
- Esto es una forma de elegir de forma automática el UMBRAL para el clasificador.
-\end_layout
-
-\begin_layout Standard
-Datos para Machine Learning: - Para algunos problemas con datos de entrenamiento
- en grandes cantidades, varios algoritmos pueden tener igual desempeño.
- - Para algorimos con muchos parámetros (Ej: regresión logística o lineal
- con muchas caracteristicas, redes neuronales con muchas unidades ocultas),
- tendrán bajo sesgo y el error de entrenamiento (Jtrain de Theta) será bajo.
- - Para un conjunto de entrenamiento masivo y algoritmos con muchos parámetros
- como el anterior, es poco probable que estos algoritmos causen overfitting
- (Implica que el Error del conjunto de entrenamiento será cercano al Error
- del conjunto de prueba, es decir, Jtrain de Theta más o menos igual a Jtest
- de Theta).
- - Mirando ambos puntos anteriores, el Error del conjunto de test será bajo
- se el Error del conjunto del entrenamiento es bajo.
- - El algoritmo no debe tener alto sesgo ni alta varianza.
- Para evitar el problema del alto sesgo se debe tener muchos parámetros
- y para evitar el problema de la alta varianza se debe tener un conjunto
- de entrenamiento muy grande.
- Luego, como consecuencia el conjunto de Test tendrá bajo error.
- - Una clase rica en funciones (rica en información) garantizan una baja
- oscilación y un conjunto de entrenamiento masivo garantiza más varianza.
 \end_layout
 
 \begin_layout Section
