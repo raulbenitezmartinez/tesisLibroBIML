@@ -422,14 +422,19 @@ Principios de los Pronósticos
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Los pronósticos tienen los siguientes principios 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chapman2006"
+
+\end_inset
+
+:
+\end_layout
+
 \begin_layout Itemize
-Los pronósticos siempre estan equivocados [
-\size large
-\color green
-Planificación_y_control_de_la_produccion_Chapman
-\size default
-\color inherit
-]
+Los pronósticos siempre estan equivocados.
 \end_layout
 
 \begin_layout Itemize
@@ -1248,6 +1253,45 @@ donde:
 \end_layout
 
 \begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Revisión Literaria
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Cuadro
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -1349,6 +1393,17 @@ OLAP
 Herramientas de BI
 \end_layout
 
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fuentes_informacion - Copy.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1372,10 +1427,24 @@ Indicadores Claves de Rendimiento
 
 \begin_deeper
 \begin_layout Standard
-concepto
+Los KPI o Indicadores Clave de Rendimiento se tratan de indicadores que
+ son decisivos para analizar de forma rápida la situación del negocio y
+ facilitar la toma de decisiones.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMR13"
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\begin_layout Frame
+Características
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1396,10 +1465,371 @@ Aplicaciones de BI
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\size tiny
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="2.5cm">
+<column alignment="left" valignment="middle" width="7cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\size tiny
+Áreas de aplicación de BI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\size tiny
+Casos de uso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+Empresas Retail
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+Proporcionar un análisis de las transacciones de los clientes.
+ Determinar los productos más vendidos, promociones, hábitos de compras.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size tiny
+Pronóstico.
+ Uso de datos históricos para pronosticar la demanda.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+Inventario
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Planificación de Inventarios.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+Gestión de Pedidos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Pedido y reposición.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Bancos, Financieras y Valores
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Análisis de rentabilidad del cliente.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Gestión de créditos.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Atención en sucursales: Mejorar el servicio y la atención al cliente.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Telecomunicaciones
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Perfil y segmentación de clientes.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Previsión de la demanda del cliente.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Aplicaciones de BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size tiny
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="2.5cm">
+<column alignment="left" valignment="middle" width="7cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\size tiny
+Áreas de aplicación de BI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\shape italic
+\size tiny
+Casos de uso
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Transporte
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Aerolíneas.
+ Analizar conductas, tarifas abonadas, respuestas a promociones, canje de
+ millas, categorías de los pasajeros frecuentes de la empresa.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Educación
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Universidades y Colegios.
+ Análisis del proceso de admisión de alumnos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Salud
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Analizar los resultados, identificar tendencias, detectar patrones y predecir
+ los resultados para mejorar el desempeño clínico y operacional.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Monitorear iniciativas de calidad y programas de atención.
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+
+\size tiny
+Seguimiento y monitoreo de ingresos, márgenes y rendimiento operacional.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -1446,44 +1876,8 @@ Modelado
 \end_layout
 
 \begin_deeper
-\begin_layout FrameSubtitle
-Los subtítulos de los fotogramas son opcionales.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-- Un título debería resumir el contenido de la transparencia de modo comprensibl
-e para cualquiera que no conoce lo que ésta contiene.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Usar Enumeración* a discreción.
-\end_layout
-
-\begin_deeper
-\begin_layout Pause
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Usar oraciones muy cortas o frases cortas.
-\end_layout
-
-\begin_deeper
-\begin_layout Pause
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Estos solapados se crean usando el estilo Pausa.
+\begin_layout Standard
+Aqui va el modelado del problema
 \end_layout
 
 \end_deeper
@@ -1546,7 +1940,12 @@ Conclusiones
 
 \begin_deeper
 \begin_layout Standard
-Aqui va la conclusion
+De acuerdo a los resultados experimentales se obtuvieron altas tasas de
+ aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
+ y evaluando con un método ampliamente aceptado.
+ La técnica propuesta pretende que se convierta en una herramienta de apoyo
+ en la toma de decisiones del gerente de compras en el proceso de reposición
+ de stock.
 \end_layout
 
 \end_deeper
@@ -1576,7 +1975,42 @@ Trabajos Futuros
 
 \begin_deeper
 \begin_layout Standard
-Aqui van los trabajos futuros
+Con el propósito de futuras mejoras del presente trabajo, a continuación
+ se citan una serie de propuestas:
+\end_layout
+
+\begin_layout Itemize
+Incorporar mas KPI referentes a otros procesos de negocios que inciden en
+ la venta de un producto.
+\end_layout
+
+\begin_layout Itemize
+Asignación por parte del experto en compras de valores continuos a la clase
+ de las instancias.
+\end_layout
+
+\begin_layout Itemize
+Etiquetado basado en clustering (aprendizaje no supervisado) con la aprobación
+ del experto en compras.
+\end_layout
+
+\begin_layout Itemize
+Optimizar los algoritmos de aprendizaje de la herramienta WEKA mediante
+ el ajuste de los parámetros (
+\shape italic
+Tuning Hyperparameters
+\shape default
+).
+\end_layout
+
+\begin_layout Itemize
+Incluir costos asociados a un producto (costos de almacenamiento, seguro,
+ mantenimiento).
+\end_layout
+
+\begin_layout Itemize
+Desarrollar un software SaaS (Software as a Service) que provea un servicio
+ de pronóstico de la demanda.
 \end_layout
 
 \end_deeper
