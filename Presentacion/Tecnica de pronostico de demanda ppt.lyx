@@ -826,13 +826,6 @@ Métodos de pronósticos cualitativos
 \begin_layout Standard
 Las principales técnicas cualitativas de pronóstico de demanda son 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "GPO2011"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
 
@@ -1364,7 +1357,7 @@ key "EH05"
 status open
 
 \begin_layout Plain Layout
-Componentes de BI
+Componentes de Business Intelligence
 \end_layout
 
 \end_inset
@@ -1386,18 +1379,30 @@ Datawarehouse.
 \end_layout
 
 \begin_layout Itemize
-OLAP
+OLAP.
 \end_layout
 
 \begin_layout Itemize
-Herramientas de BI
+Herramientas de BI.
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename fuentes_informacion - Copy.png
-	scale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Componentes de Business Intelligence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
 
 \end_inset
 
@@ -1441,8 +1446,51 @@ key "CMR13"
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
-Características
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Característias de los KPI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Todos los KPI son indicadores, pero no todos los indicadores son KPI.
+\end_layout
+
+\begin_layout Itemize
+Cada organización debe definir sus propios KPI según la actividad realizada.
+\end_layout
+
+\begin_layout Itemize
+Los KPI pueden no ser exclusivamente del tipo financiero.
+\end_layout
+
+\begin_layout Itemize
+Los KPI son un elemento importarte en la estrategia de negocios por su capacidad
+ de comunicar resultados a las personas que forman parte del proyecto.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
 \end_layout
 
 \begin_layout Standard
@@ -1457,7 +1505,7 @@ Características
 status open
 
 \begin_layout Plain Layout
-Aplicaciones de BI
+Aplicaciones de Business Intelligence
 \end_layout
 
 \end_inset
@@ -1648,7 +1696,7 @@ Atención en sucursales: Mejorar el servicio y la atención al cliente.
 status open
 
 \begin_layout Plain Layout
-Aplicaciones de BI
+Aplicaciones de Business Intelligence
 \end_layout
 
 \end_inset
@@ -1852,7 +1900,147 @@ Machine Learning
 
 \begin_deeper
 \begin_layout Standard
-Caracteristicas de Machine Learning
+Arthur Samuel define 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arthur1959"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Machine Learning es un campo de estudio que da a las computadoras la capacidad
+ de aprender a resolver problemas sin ser explícitamente programados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Otra definición propuesta por Tom Mitchell:
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Problema de aprendizaje bien planteado: se dice que un programa de computadora
+ aprende de la experiencia E con respecto a alguna tarea T y alguna medida
+ de rendimiento P, si su desempeño en T, medido por P, mejora con la experiencia
+ E.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modelo general de un agente
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Agentes que aprenden.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Modelo general para agentes que aprenden 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IAEModerno2"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Aplicaciones de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Reconocimiento facial de Facebook.
+\end_layout
+
+\begin_layout Itemize
+Kinect para Xbox 360.
+\end_layout
+
+\begin_layout Itemize
+Voice reconigtion.
+\end_layout
+
+\begin_layout Itemize
+La tecnología del habla y el campo relacionado del reconocimiento de caracteres
+ manuscritos.
+\end_layout
+
+\begin_layout Itemize
+Motores de búsqueda.
+\end_layout
+
+\begin_layout Itemize
+Recomender system en plataformas como Amazon, Netflix, Facebook.
+\end_layout
+
+\begin_layout Itemize
+Reconocimiento automático de ciertas áreas en el mundo realizado por satélites.
 \end_layout
 
 \end_deeper
