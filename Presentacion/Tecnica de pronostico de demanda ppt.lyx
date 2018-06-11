@@ -477,10 +477,6 @@ La elaboración de pronósticos de demanda precisos es uno de los retos más
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-..............................................................................AQUI PONER EJEMPLOS GRAFICOS O EJEMPLOS DE UN PRONOSTICO........................................
-\end_layout
-
 \begin_layout Section
 
 \shape italic
@@ -1357,7 +1353,7 @@ key "EH05"
 status open
 
 \begin_layout Plain Layout
-Componentes de Business Intelligence
+Componentes
 \end_layout
 
 \end_inset
@@ -1366,6 +1362,31 @@ Componentes de Business Intelligence
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fuentes_informacion - Copy.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Componentes de Business Intelligence
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 Fuentes de información.
 \end_layout
@@ -1384,29 +1405,6 @@ OLAP.
 
 \begin_layout Itemize
 Herramientas de BI.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename fuentes_informacion - Copy.png
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-Componentes de Business Intelligence
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BICCI07"
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -1505,7 +1503,7 @@ Los KPI son un elemento importarte en la estrategia de negocios por su capacidad
 status open
 
 \begin_layout Plain Layout
-Aplicaciones de Business Intelligence
+Aplicaciones de BI
 \end_layout
 
 \end_inset
@@ -1696,7 +1694,7 @@ Atención en sucursales: Mejorar el servicio y la atención al cliente.
 status open
 
 \begin_layout Plain Layout
-Aplicaciones de Business Intelligence
+Aplicaciones de BI
 \end_layout
 
 \end_inset
@@ -1890,7 +1888,41 @@ Previsión de la demanda del cliente.
 status open
 
 \begin_layout Plain Layout
-Machine Learning
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+MACHINE LEARNING
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Machine Learning o Aprendizaje automático
 \end_layout
 
 \end_inset
@@ -1978,6 +2010,8 @@ Modelo general de un agente
 
 \begin_layout Standard
 \align center
+
+\size scriptsize
 Modelo general para agentes que aprenden 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1989,10 +2023,6 @@ key "IAEModerno2"
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -2005,7 +2035,7 @@ key "IAEModerno2"
 status open
 
 \begin_layout Plain Layout
-Aplicaciones de Machine Learning
+Aplicaciones
 \end_layout
 
 \end_inset
@@ -2041,8 +2071,467 @@ Recomender system en plataformas como Amazon, Netflix, Facebook.
 
 \begin_layout Itemize
 Reconocimiento automático de ciertas áreas en el mundo realizado por satélites.
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Formas de aprendizaje automático
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Los algoritmos de aprendizaje automático se pueden agrupar según la forma
+ en que se realiza el aprendizaje:
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Aprendizaje supervisado.
+\end_layout
+
+\begin_layout Itemize
+Aprendizaje no supervisado.
+\end_layout
+
+\begin_layout Itemize
+Aprendizaje por refuerzo.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Algoritmos de aprendizaje automático
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/MachineLearningAlgorithms.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Agrupación de algoritmos de aprendizaje automático.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Problemas de Clasificación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Tipos de clasificación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Clasificacón binaria.
+\end_layout
+
+\begin_layout Itemize
+Clasificación multiclase.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Instancias.
+\end_layout
+
+\begin_layout Itemize
+Atributos.
+\end_layout
+
+\begin_layout Itemize
+Etiquetas
+\end_layout
+
+\begin_layout Itemize
+Conjunto de entrenamiento
+\end_layout
+
+\begin_layout Itemize
+Conjunto de prueba.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Técnicas de evaluación para aprendizaje supervisado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Técnicas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Entrenamiento y prueba sobre los mismos datos.
+\end_layout
+
+\begin_layout Itemize
+Porcentaje de división.
+\end_layout
+
+\begin_layout Itemize
+Validación cruzada.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Métricas de desempeño para problemas de clasificación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Métricas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Porcentaje de acierto.
+\end_layout
+
+\begin_layout Itemize
+Matriz de confusión.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Exactitud de la clasificación.
+\end_layout
+
+\begin_layout Itemize
+Error de clasificación.
+\end_layout
+
+\begin_layout Itemize
+Sensibilidad.
+\end_layout
+
+\begin_layout Itemize
+Especificidad.
+\end_layout
+
+\begin_layout Itemize
+Tasa de falsos positivos.
+\end_layout
+
+\begin_layout Itemize
+Precisión.
+\end_layout
+
+\begin_layout Itemize
+Medida F.
+\end_layout
+
+\begin_layout Itemize
+Estadística Kappa.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Componentes de error de predicción.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ruido.
+\end_layout
+
+\begin_layout Itemize
+Sesgo.
+\end_layout
+
+\begin_layout Itemize
+Varianza.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Complejidad del modelo y Curvas de aprendizaje
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Complejidad
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Bias_Varianza.PNG
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Complejidad del modelo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Friedman2001"
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Complejidad del modelo y Curvas de aprendizaje
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Curvas de aprendizaje
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Curvas de aprendizaje2.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Curvas de aprendizaje
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Section
 
@@ -2055,7 +2544,21 @@ Modelado
 status open
 
 \begin_layout Plain Layout
-Modelado
+Propuesta de solución
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Esquema general de solución
 \end_layout
 
 \end_inset
@@ -2065,7 +2568,577 @@ Modelado
 
 \begin_deeper
 \begin_layout Standard
-Aqui va el modelado del problema
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Esquema general de solución.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modelado BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Fuentes de Información
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Base de datos relacional Oracle 10g.
+\end_layout
+
+\begin_layout Itemize
+Operaciones transaccionales de una empresa retail dedicada a la venta de
+ productos alimenticios y artículos de limpieza.
+\end_layout
+
+\begin_layout Itemize
+Datos de la operaciones comprendidas entre noviembre de 2013 y octubre de
+ 2016.
+\end_layout
+
+\begin_layout Itemize
+Principales tablas consideradas.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tabla de Productos
+\end_layout
+
+\begin_layout Itemize
+Tabla de Proveedores
+\end_layout
+
+\begin_layout Itemize
+Tablas de Ventas Cabecera
+\end_layout
+
+\begin_layout Itemize
+Tablas de Ventas Detalle
+\end_layout
+
+\begin_layout Itemize
+Tabla de Movimientos Stock
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modelado BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Proceso ETL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\size scriptsize
+Tabla de Productos
+\series default
+:
+\size default
+ 
+\size scriptsize
+se detectaron registros de artículos con las siguientes inconsistencias:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size scriptsize
+Datos del proveedor con valores nulos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+Artículos con valores de costo nulo.
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+Artículos con valores donde el costo eran mayor al precio de venta unitario.
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+Artículos cuyo precio de venta unitario era nulo.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\size scriptsize
+Tabla de Ventas Cabecera
+\series default
+: se encontraron registros donde los datos del cliente eran nulos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size scriptsize
+Tabla de Ventas Detalle
+\series default
+: se detectaron registros con las siguientes falencias:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size scriptsize
+Registros de detalles donde los valores de costo eran iguales a cero.
+\end_layout
+
+\begin_layout Itemize
+
+\size scriptsize
+Registros de detalle donde el costo unitario eran mayores al precio de venta
+ unitario
+\size default
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modelado BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Datawarehouse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tablas de Hechos.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tabla de hechos cabecera.
+\end_layout
+
+\begin_layout Itemize
+Tabla de hechos detalle.
+\end_layout
+
+\begin_layout Itemize
+Tabla de hechos Stock.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Dimensiones.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dimensión Fecha.
+\end_layout
+
+\begin_layout Itemize
+Dimesión Productos.
+\end_layout
+
+\begin_layout Itemize
+Dimensión Proveedores.
+\end_layout
+
+\begin_layout Itemize
+Dimensión Clientes.
+\end_layout
+
+\begin_layout Itemize
+Dimensión Cajas.
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modelado BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Esquema hechos detalles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../03_Business_Intelligence/figuras/DER_BI_DW_FACT_DETALLES.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Definición de KPI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ticket Medio 
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+TM\,=\frac{Cantidad\,Vendida\,Periodo}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cifra de Ventas
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+CV\,=Precio*Cantidad\,Vendida\,Periodo\label{eq: Cifra de Ventas}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Margen Comercial
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+MC\,=\frac{\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo}{Precio*Cantidad\,Vendida\,Periodo}*100\label{eq:Margen Comercial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Rotación de Stock
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Coeficiente de Rentabilidad
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+CR=\left(\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo\right)*RS\label{eq:Coeficiente Rentabilidad}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Cobertura de Stock
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+CS\,=\frac{Stock\,Actual\,Periodo}{Promedio\,Cantidad\,Venta\,Ultimos\,N\,Periodos}\label{eq:Cobertura Stock}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Obtención de los valores de KPI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Se obtiene los valores de KPI por cada producto y periodo, mediante codificación
+ de sentencias SQL que operan sobre los datos almacenados en el datawarehouse.
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Periodos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Semanal
+\end_layout
+
+\begin_layout Itemize
+Quincenal
+\end_layout
+
+\begin_layout Itemize
+Mensual
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Asignación de etiquetas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A cada tupla de KPI se le debe asignar una sola etiqueta de entre las siguientes
+ 
+\shape italic
+
+\begin_inset Quotes eld
+\end_inset
+
+Nada
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Poco
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Medio
+\begin_inset Quotes erd
+\end_inset
+
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+Mucho
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ El etiquetado es uno de los puntos focales para el aprendizaje automático.
 \end_layout
 
 \end_deeper
