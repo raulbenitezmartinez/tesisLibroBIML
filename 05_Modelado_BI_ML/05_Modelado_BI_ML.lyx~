@@ -697,9 +697,16 @@ Obtención de los valores para los Indicadores Clave de Rendimiento.
 
 \begin_layout Standard
 Se obtiene los valores de KPI por cada producto y periodo, mediante codificación
- de sentencias SQL que operan sobre los datos almacenados en el datawarehouse,
- y todos los resultados obtenidos de la ejecución se almacenan en una tabla
- base.
+ de sentencias SQL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SQL"
+description "Structured Query Language"
+
+\end_inset
+
+ que operan sobre los datos almacenados en el datawarehouse, y todos los
+ resultados obtenidos de la ejecución se almacenan en una tabla base.
  En dicha tabla base además de los valores de KPI, en cada registro se guarda
  adicionalmente información de cantidad, fecha, año, mes, quincena, semana
  y periodo.
@@ -1020,9 +1027,7 @@ name "tab:un cuadro flotante"
 
 \end_inset
 
-
-\series bold
-RANGO KPI TICKET MEDIO
+Rango KPI Ticket Medio
 \end_layout
 
 \end_inset
@@ -1146,9 +1151,7 @@ name "tab:un cuadro flotante-1"
 
 \end_inset
 
-
-\series bold
-RANGO KPI CIFRA VENTAS (%)
+Rango KPI Cifra Ventas (%)
 \end_layout
 
 \end_inset
@@ -1272,9 +1275,7 @@ name "tab:un cuadro flotante-2"
 
 \end_inset
 
-
-\series bold
-RANGO KPI MARGEN COMERCIAL (%)
+Rango KPI Margen Comercial (%)
 \end_layout
 
 \end_inset

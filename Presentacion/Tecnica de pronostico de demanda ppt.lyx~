@@ -2169,6 +2169,9 @@ Algoritmos de aprendizaje automático
 
 \size scriptsize
 Agrupación de algoritmos de aprendizaje automático.
+\series bold
+\color red
+[REF]
 \end_layout
 
 \end_deeper
@@ -2528,7 +2531,11 @@ Curvas de aprendizaje
 \align center
 
 \size scriptsize
-Curvas de aprendizaje
+Curvas de aprendizaje.
+ 
+\series bold
+\color red
+[REF]
 \end_layout
 
 \end_deeper
@@ -3073,7 +3080,7 @@ Quincenal
 \end_layout
 
 \begin_layout Itemize
-Mensual.
+Mensual
 \end_layout
 
 \end_deeper
@@ -3091,6 +3098,20 @@ status open
 
 \begin_layout Plain Layout
 Asignación de etiquetas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -3141,6 +3162,95 @@ Mucho
  El etiquetado es uno de los puntos focales para el aprendizaje automático.
 \end_layout
 
+\begin_layout Itemize
+La asignación de las etiquetas debe ser realizada y revisada por el experto
+ del área de compras.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Para el presente trabajo el etiquetado fue realizado en forma empírica,
+ sin la intervención de un experto por la dificultad de contar con una persona
+ especializada en el área
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Asignación de etiquetas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Ejemplo de etiquetas asignadas
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../03_Business_Intelligence/figuras/5_semanal.png
+	scale 55
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Etiquetado para periodo semanal.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Section
 
@@ -3153,7 +3263,7 @@ Experimentos
 status open
 
 \begin_layout Plain Layout
-Experimentos
+Datos de entrada de Machine Learning
 \end_layout
 
 \end_inset
@@ -3161,6 +3271,334 @@ Experimentos
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Business Intelligence provee tres conjuntos de datos independientes que
+ se corresponden con los períodos de análisis.
+ Corresponden a las instancias necesarias para el proceso de aprendizaje
+ automático
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Conjuntos de datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\size small
+Períodos Mensuales
+\series default
+: Se analizaron 309 productos diferentes, y por cada producto se tiene un
+ máximo de 34 instancias.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+Períodos Quincenales
+\series default
+: Se analizaron 228 productos diferentes, y por cada producto se tiene un
+ máximo de 68 instancias.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+Períodos Semanales
+\series default
+: Se analizaron 127 productos diferentes, y por cada producto se tiene un
+ máximo de 151 instancias.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Entrenamiento, testeo y evaluación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+El conjunto de entrenamiento se basa en el 70% de las instancias y el conjunto
+ de prueba corresponde al 30% restante.
+\end_layout
+
+\begin_layout Itemize
+Estrategia utilizada en el curso The Machine Learning Masterclass 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Science.com2016"
+
+\end_inset
+
+, un curso moderno de Machine Learning para proyectos de análisis predictivo.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/Entrenamiento y testeo - Semanal Quincenal.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Esquema de entrenamiento y prueba.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Entrenamiento, testeo y evaluación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Pseudocódigo para el proceso de clasificación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+for cada período de análisis {mensual, quincenal,semanal}:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+for cada producto con sus instancias:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+establecer conjunto de entrenamiento;
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+establecer conjunto de testeo;
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+for cada algoritmo de clasificación:
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+   construir clasificador (conjunto de entrenamiento);
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+   evaluar clasificador (stratified k-folds cross-validation);
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+   obtener métricas de evaluación;
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+endfor;
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+criterios de línea de base (ZeroR, criterios del experto u otro);
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+seleccionar mejor clasificador (max(Kappa));
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+guardar clasificador;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+endfor;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\size tiny
+endfor;
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Pseudocódigo para el proceso de Clasificación.
+ 
+\series bold
+\color red
+[REF]
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Entrenamiento, testeo y evaluación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Evaluación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+La evaluación se hace por el método Stratified k-fold Cross-Validation para
+ un valor de k igual a 10 y las métricas de desempeño consideradas son el
+ 
+\shape italic
+Porcentaje de Acierto
+\shape default
+ y la 
+\shape italic
+Estadística Kappa
+\shape default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Esquema K-fold Cross Validation.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Esquema general de iteraciones para 10-fold Cross-Validation.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 
 \shape italic

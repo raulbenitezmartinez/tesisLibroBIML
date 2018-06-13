@@ -137,11 +137,27 @@ En este capítulo se desarrolla el primer componente de la solución propuesta
  que es Business Intelligence.
  Para ello, se obtienen los datos de la fuentes de información, se sigue
  el proceso de ETL y se construye el datawarehouse.
- Luego se definen y obtienen los KPI, 
+ Luego definen y se obtienen los valores de los KPI, a continuación se define
+ la estrategia de etiquetado y se asignan las etiquetas a cada tupla de
+ KPI.
+\end_layout
+
+\begin_layout Standard
+En el capítulo siguiente se desarrollan el segundo y tercer componente da
+ la solución propuesta que son: Machine Learning y la Técnica de solución
+ propuesta.
 \end_layout
 
 \begin_layout Section
+Componente de solución 
+\begin_inset Quotes eld
+\end_inset
+
 Business Intelligence
+\begin_inset Quotes erd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -357,7 +373,15 @@ Tabla de hechos Cabecera:
  de hechos guarda datos de: fecha, cliente, caja, número de factura y monto
  total, monto exento, monto gravado IVA.
  Las métricas definidas para la tabla de hechos son: monto total, monto
- exento, monto gravado IVA.
+ exento, monto gravado IVA
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IVA"
+description "Impuesto Valor Agregado"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
@@ -503,7 +527,7 @@ Tabla de hechos Detalles
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Definición de los Indicadores Claves de Rendimiento
 \end_layout
 
@@ -667,15 +691,22 @@ CS\,=\frac{Stock\,Actual\,Periodo}{Promedio\,Cantidad\,Venta\,Ultimos\,N\,Period
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Obtención de los valores para los Indicadores Clave de Rendimiento.
 \end_layout
 
 \begin_layout Standard
 Se obtiene los valores de KPI por cada producto y periodo, mediante codificación
- de sentencias SQL que operan sobre los datos almacenados en el datawarehouse,
- y todos los resultados obtenidos de la ejecución se almacenan en una tabla
- base.
+ de sentencias SQL
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SQL"
+description "Structured Query Language"
+
+\end_inset
+
+ que operan sobre los datos almacenados en el datawarehouse, y todos los
+ resultados obtenidos de la ejecución se almacenan en una tabla base.
  En dicha tabla base además de los valores de KPI, en cada registro se guarda
  adicionalmente información de cantidad, fecha, año, mes, quincena, semana
  y periodo.
@@ -900,7 +931,7 @@ Ejemplo de valores KPI para un periodo mensual
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Section
 Asignación de etiquetas
 \end_layout
 
@@ -996,9 +1027,7 @@ name "tab:un cuadro flotante"
 
 \end_inset
 
-
-\series bold
-RANGO KPI TICKET MEDIO
+Rango KPI Ticket Medio
 \end_layout
 
 \end_inset
