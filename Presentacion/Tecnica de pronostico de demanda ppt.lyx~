@@ -3610,7 +3610,7 @@ Resultados
 status open
 
 \begin_layout Plain Layout
-Resultados
+Análisis del desempeño
 \end_layout
 
 \end_inset
@@ -3618,6 +3618,507 @@ Resultados
 
 \end_layout
 
+\begin_deeper
+\begin_layout FrameSubtitle
+Comparacion con línea base ZeroR
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Periodo Semanal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/semanal_zeror_entre_test.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Entrenamiento vs Test vs ZeroR para períodos semanales.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Análisis del desempeño
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Comparacion con línea base ZeroR
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Periodo Quincenal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/quincenal_zeror_entre_test.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Entrenamiento vs Test vs ZeroR para períodos quincenales.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Análisis del desempeño
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Comparacion con línea base ZeroR
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Periodo Mensual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/mensual_zeror_entre_test.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Entrenamiento vs Test vs ZeroR para períodos mensuales.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Análisis del desempeño
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Recuento de clasificadores
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Periodo Semanal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Por cada producto y período de análisis se elige como clasificador aquel
+ que haya alcanzado el mayor valor de 
+\shape italic
+Kappa.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/recuento_cross_semanal.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Conteo de clasificadores para períodos semanales.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Análisis del desempeño
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Recuento de clasificadores
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Periodo Quincenal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/recuento_cross_quincenal.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Recuento de clasificadores para períodos quincenales.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Análisis del desempeño
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Recuento de clasificadores
+\end_layout
+
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Periodo Mensual
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/recuento_cross_mensual.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Recuento de clasificadores para períodos mensuales.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Análisis del desempeño
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Porcentajes de acierto por periodo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/aciertos_cross.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Promedio de porcentaje de aciertos para los tres períodos de análisis
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Técnica de solución propuesta
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Pseudocódigo para el pronóstico de la demanda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada próximo período a pronosticar {mensual,quincenal,semanal}:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada producto:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+obtener KPIs del período actual finalizado;
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+ejecutar su mejor clasificador (KPIs);
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+obtener etiqueta {nada,poco,medio,mucho}
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+extrapolar a valores continuos(criterio experto);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Pseudocódigo para el proceso de pronóstico de la demanda.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Section
 
 \shape italic
@@ -3674,26 +4175,36 @@ Trabajos Futuros
 
 \begin_deeper
 \begin_layout Standard
+
+\size small
 Con el propósito de futuras mejoras del presente trabajo, a continuación
  se citan una serie de propuestas:
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Incorporar mas KPI referentes a otros procesos de negocios que inciden en
  la venta de un producto.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Asignación por parte del experto en compras de valores continuos a la clase
  de las instancias.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Etiquetado basado en clustering (aprendizaje no supervisado) con la aprobación
  del experto en compras.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Optimizar los algoritmos de aprendizaje de la herramienta WEKA mediante
  el ajuste de los parámetros (
 \shape italic
@@ -3703,11 +4214,15 @@ Tuning Hyperparameters
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Incluir costos asociados a un producto (costos de almacenamiento, seguro,
  mantenimiento).
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Desarrollar un software SaaS (Software as a Service) que provea un servicio
  de pronóstico de la demanda.
 \end_layout

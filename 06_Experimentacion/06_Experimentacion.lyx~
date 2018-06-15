@@ -589,7 +589,7 @@ reference "fig:6.8"
 \shape italic
 Logistic
 \shape default
- resultó una mejor solución para 140 productos para periodos mensuales.
+ resultó una mejor solución para 92 productos para periodos mensuales.
 \end_layout
 
 \begin_layout Standard
@@ -704,6 +704,10 @@ Recuento de clasificadores para períodos mensuales.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Porcentajes de acierto por período
 \end_layout
 
 \begin_layout Standard
