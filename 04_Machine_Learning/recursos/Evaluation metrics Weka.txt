@@ -1,0 +1,47 @@
+//INDICADORES RESUMEN.
+
+//Aciertos.
+cantidad_aciertos = evaluar.correct();
+porcentaje_aciertos = evaluar.pctCorrect();
+				
+//Desaciertos.
+cantidad_desaciertos = evaluar.incorrect();
+porcentaje_desaciertos = evaluar.pctIncorrect();
+				
+//Kappa.
+kappa_statistic = evaluar.kappa();
+
+
+//INDICADORES DE PRECISION POR CLASE.
+						
+//Verdaderos positivos.
+true_positive_rate = evaluar.truePositiveRate(indice_clase);
+						
+//Falsos positivos.
+false_positive_rate = evaluar.falsePositiveRate(indice_clase);
+						
+//Verdaderos negativos.
+true_negative_rate = evaluar.trueNegativeRate(indice_clase);
+						
+//Falsos negativos.
+false_negative_rate = evaluar.falseNegativeRate(indice_clase);
+
+//Precision.
+precision = evaluar.precision(indice_clase);
+
+//Recall.
+recall = evaluar.recall(indice_clase);
+
+//F-Measure.
+f_measure = evaluar.fMeasure(indice_clase);
+
+//Matthews Correlation Coefficient (sometimes called phi coefficient).
+mcc = evaluar.matthewsCorrelationCoefficient(indice_clase);
+
+//Area under ROC.
+roc_area = evaluar.areaUnderROC(indice_clase);
+
+//Area under precision-recall curve (AUPRC).
+prc_area = evaluar.areaUnderPRC(indice_clase);
+
+
