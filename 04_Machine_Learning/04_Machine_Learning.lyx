@@ -4488,6 +4488,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Curvas de aprendizaje2.png
+	scale 50
 
 \end_inset
 
