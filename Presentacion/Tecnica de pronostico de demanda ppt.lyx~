@@ -4119,6 +4119,117 @@ Pseudocódigo para el proceso de pronóstico de la demanda.
 
 \end_deeper
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Discusión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Impacto del periodo de análisis
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+Una de las decisiones que se debe tomar es acerca del tiempo asignado al
+ período de análisis.
+ En este trabajo se analizaron tres períodos distintos: mensuales, quincenales
+ y semanales con propósitos experimentales y por ser los más comunes en
+ el ámbito comercial.
+ En la práctica, la elección del período es una decisión estratégica a nivel
+ gerencial que depende en gran medida del sector y tamaño de la empresa,
+ tipos de productos y otros criterios.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+En el presente trabajo, por tratarse de períodos de tiempo muy cercanos
+ (1, 2 y 4 semanas) no se observan diferencias significativas en el porcentaje
+ de aciertos.
+ Otro factor a tener en cuenta es que para períodos de tiempo muy extensos
+ (6, 12 meses) existe mayor incertidumbre en el pronóstico.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Discusión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Impacto del etiquetado
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+La técnica propuesta se trata de un sistema parametrizado, donde las variables
+ principales son el período comercial y las etiquetas seleccionadas para
+ la clasificación.
+ Por cuestiones de practicidad y generalidad se eligió para este trabajo
+ un enfoque de problema de clasificación.
+ El etiquetado proporciona mayor flexibilidad al sistema y un entorno más
+ controlable, en comparación a un sistema de asignación de valores continuos.
+ La flexibilidad del sistema permitió emular la opinión del experto en compras
+ y encontrar una cantidad eficiente de etiquetas.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Section
 
 \shape italic
