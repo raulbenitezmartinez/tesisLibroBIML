@@ -854,7 +854,7 @@ ejemplos
 \end_layout
 
 \begin_layout Standard
-Problemas del tipo clasificación o regresión se resuelven normalmente con
+Problemas del tipo clasificación o regresión se resuelven típicamente con
  aprendizaje supervisado.
  Un problema de clasificación es cuando la variable de salida es una categoría
  y un problema de regresión es cuando la variable de salida es un valor
@@ -898,18 +898,20 @@ Unsupervised Learning
 
 .
  Los algoritmos buscan estructuras presentes y como resultado pueden extraer
- reglas generales, o reducir sistemáticamente la redundancia, o se pueden
- organizar los datos por similitud.
+ reglas generales, o reducir sistemáticamente la redundancia, u organizar
+ los datos por similitud.
  Los problemas de agrupamiento (clustering) y asociación (association) se
- resuelven normalmente con algoritmos de aprendizaje no supervisados.
-\end_layout
-
-\begin_layout Standard
-Como ejemplo de implementaciones está el caso de la computadora que aprendió
- sola el concepto de lo que es un animal gato, otro ejemplo es el reconocimiento
+ resuelven típicamente con algoritmos de aprendizaje no supervisados.
+ En empresas retail buscan descubrir grupos de clientes que tienen el mismo
+ comportamiento en las compras (los que toman vino por ejemplo), lo que
+ representa una situación de agrupación inherente en los datos.
+ Cuando buscan descubrir reglas que se deduzcan del conjunto de datos (por
+ ejemplo, los que toman vino compran agua tónica o mineral), se tiene una
+ situación de asociación inherente en los datos.
+ Entre las aplicaciones que implementan esta técnica está el reconocimiento
  de dígitos escritos a mano.
- Entre los algoritmos que implementan aprendizaje no supervisado están:
- k-Means, Principal Component Analysis (PCA
+ Entre los algoritmos de aprendizaje no supervisado están: k-Means, Principal
+ Component Analysis (PCA
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PCA"
@@ -917,7 +919,7 @@ description "Principal Component Analysis"
 
 \end_inset
 
-), Hierarchical Clustering.
+), Hierarchical Clustering, etc.
 \end_layout
 
 \begin_layout Subsection
@@ -3528,6 +3530,18 @@ o.
  se destacan:
 \end_layout
 
+\begin_layout Itemize
+Hold-out validation, 
+\end_layout
+
+\begin_layout Itemize
+K-fold cross-validation
+\end_layout
+
+\begin_layout Itemize
+Bootstrap resampling
+\end_layout
+
 \begin_layout Subsection
 Entrenamiento y prueba sobre los mismos datos
 \end_layout
@@ -3538,13 +3552,13 @@ ento y que no necesariamente generalizan.
 \end_layout
 
 \begin_layout Subsection
-Porcentaje de División
+Método de retención
 \end_layout
 
 \begin_layout Standard
-La técnica de Porcentaje de División (
+La técnica de Retención (
 \shape italic
-Percentage Split
+Holdout method
 \shape default
 ) divide el conjunto de datos en dos partes, de modo que el modelo pueda
  ser entrenado y probado sobre diferentes datos.
@@ -3565,11 +3579,11 @@ to, puede contribuir a una evaluación imparcial de qué tan bien se desempeña
 \end_layout
 
 \begin_layout Subsection
-Validación Cruzada de k pasadas
+Validación cruzada de k iteraciones
 \end_layout
 
 \begin_layout Standard
-La técnica de Validación Cruzada de k pasadas (k-fold Cross-Validation)
+La técnica de Validación Cruzada de k iteraciones (k-fold Cross-Validation)
  consiste en dividir los datos en un número de particiones iguales.
  En la figura 
 \begin_inset CommandInset ref
@@ -3578,8 +3592,8 @@ reference "fig:Esq-general-de-Cross"
 
 \end_inset
 
- se muestra un ejemplo de una validación cruzada de 10 pasadas donde se
- divide el conjunto de datos en diez particiones de igual tamaño.
+ se muestra un ejemplo de una validación cruzada de 10 iteraciones donde
+ se divide el conjunto de datos en diez particiones de igual tamaño.
  Luego se entrena el modelo en nueve de esas diez particiones y se prueba
  el modelo en la partición restante.
  Luego, se repite el proceso, seleccionando una partición diferente para
@@ -3656,11 +3670,15 @@ Métricas de desempeño para problemas de clasificación
 
 \begin_layout Standard
 Las métricas de clasificación son las medidas contra las cuales se evalúan
- los modelos.
+ los modelos de clasificación.
  Para los problemas de clasificación, es natural medir el rendimiento de
  un clasificador en términos de la tasa de error (
 \shape italic
-Error Rate
+error rate
+\shape default
+) o tasa de acierto (
+\shape italic
+sucess rate
 \shape default
 ).
  El clasificador predice la clase de cada instancia: si es correcta se cuenta
@@ -3696,25 +3714,25 @@ n debe ser diferente del conjunto de entrenamiento para obtener un buen
  desempeño en la etapa de optimización o selección y el conjunto de prueba
  debe ser diferente de ambos para obtener una estimación confiable de la
  tasa de error real.
- 
 \end_layout
 
 \begin_layout Standard
-Por fines prácticos generalmente se utiliza la metodología de dividir los
+Para fines prácticos generalmente se utiliza la metodología de dividir los
  datos en dos conjuntos, el conjunto de entrenamiento y el conjunto de prueba,
  como es el caso del trabajo actual donde se utilizan valores por defecto
  en los parámetros de los clasificadores.
 \end_layout
 
 \begin_layout Subsection
-Porcentaje de Acierto
+Porcentaje de acierto
 \end_layout
 
 \begin_layout Standard
-Porcentaje de instancias correctamente clasificadas o de predicciones correctas.
- La métrica más simple y más común es la tasa de acierto.
- La tasa de acierto se calcula dividiendo el número de predicciones correctas
- entre el número total de predicciones.
+Es el porcentaje de instancias correctamente clasificadas o de predicciones
+ correctas.
+ La métrica más simple y más común es el porcentaje de acierto.
+ Se calcula dividiendo el número de predicciones correctas sobre el número
+ total de predicciones realizadas, multiplicado por 100.
  Por ejemplo, en un modelo de clasificación supervisada para transacciones
  bancarias, si probamos el modelo en cien transacciones y se predice correctamen
 te la etiqueta (fraude/no fraude) para noventa de ellas, entonces el porcentaje
@@ -3724,7 +3742,7 @@ te la etiqueta (fraude/no fraude) para noventa de ellas, entonces el porcentaje
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Aciertos=\frac{Nro\,Predicciones\,Correctas}{Número\,Total\,Predicciones}
+Porcentaje\,de\,acierto=\frac{Número\,de\,predicciones\,correctas}{Número\,total\,de\,predicciones\,realizadas}x100
 \end{equation}
 
 \end_inset
@@ -3919,7 +3937,7 @@ La matriz de confusión brinda una imagen más completa de cómo está funcionan
 \end_layout
 
 \begin_layout Subsubsection
-Exactitud de clasificación (Classification accuracy)
+Exactitud (accuracy)
 \end_layout
 
 \begin_layout Standard
@@ -3938,18 +3956,19 @@ Exactitud=\frac{TP+TN}{TP+TN+FP+FN}
 \end_layout
 
 \begin_layout Subsubsection
-Error de clasificación (Classification error)
+Precisión (precision)
 \end_layout
 
 \begin_layout Standard
-En general, ¿con qué frecuencia el clasificador es incorrecto?.
- También conocido como "Tasa de clasificación incorrecta".
+Cuando se predice un valor positivo, ¿con qué frecuencia es correcta la
+ predicción?.
+ ¿Cuán "preciso" es el clasificador al predecir instancias positivas?.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Error=\frac{FP+FN}{TP+TN+FP+FN}
+Precisión=\frac{TP}{TP+FP}
 \end{equation}
 
 \end_inset
@@ -3958,7 +3977,7 @@ Error=\frac{FP+FN}{TP+TN+FP+FN}
 \end_layout
 
 \begin_layout Subsubsection
-Sensibilidad (Sensitivity)
+Sensibilidad (sensitivity)
 \end_layout
 
 \begin_layout Standard
@@ -3967,10 +3986,6 @@ Cuando el valor real es positivo, ¿con qué frecuencia es correcta la predicci�
  ¿Qué tan "sensible" es el clasificador para detectar instancias positivas?.
  También conocido como "Tasa positiva real" o "Recordar" (True Positive
  Rate or Recall).
-\end_layout
-
-\begin_layout Standard
-Todo positivo = TP + FN.
 \end_layout
 
 \begin_layout Standard
@@ -3985,7 +4000,7 @@ Sensibilidad=\frac{TP}{TP+FN}
 \end_layout
 
 \begin_layout Subsubsection
-Especificidad (Specificity)
+Especificidad (specificity)
 \end_layout
 
 \begin_layout Standard
@@ -3993,10 +4008,6 @@ Cuando el valor real es negativo, ¿con qué frecuencia es correcta la predicci�
  Algo que queremos maximizar.
  ¿Qué tan "específico" (o "selectivo") es el clasificador en predecir las
  instancias positivas?
-\end_layout
-
-\begin_layout Standard
-Todo negativo = TN + FP.
 \end_layout
 
 \begin_layout Standard
@@ -4011,55 +4022,13 @@ Especificidad=\frac{TN}{TN+FP}
 \end_layout
 
 \begin_layout Subsubsection
-Tasa de falsos positivos (False positive rate)
-\end_layout
-
-\begin_layout Standard
-Cuando el valor real es negativo, ¿con qué frecuencia la predicción es incorrect
-a?
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Tasa\:de\:falsos\:positivos=\frac{FP}{TN+FP}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Precisión (Precision)
-\end_layout
-
-\begin_layout Standard
-Cuando se predice un valor positivo, ¿con qué frecuencia es correcta la
- predicción?.
- ¿Cuán "preciso" es el clasificador al predecir instancias positivas?.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-Presición=\frac{TP}{TP+FP}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Medida F (F-measure)
+Medida F (f-measure)
 \end_layout
 
 \begin_layout Standard
 La Medida F es una medida de la exactitud de una prueba.
  La Medida F puede interpretarse como un promedio ponderado de la precisión
  y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
- Se define como:
 \end_layout
 
 \begin_layout Standard
@@ -4107,6 +4076,10 @@ Kappa se utiliza para medir el acuerdo entre la predicción y la observación
 \end_layout
 
 \begin_layout Standard
+Returns value of kappa statistic if class is nominal
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \kappa=\frac{Pr\left(a\right)-Pr\left(e\right)}{1-Pr\left(e\right)}
@@ -4129,61 +4102,6 @@ Donde:
  es la probabilidad hipotética de acuerdo al azar utilizando los datos observado
 s para calcular las probabilidades de que cada observador clasifique aleatoriame
 nte cada categoría.
-\end_layout
-
-\begin_layout Standard
-—-
-\end_layout
-
-\begin_layout Standard
-Métricas de error para clases sesgadas (skewed classes): - Precisión/Recuperació
-n (Precision/Recall): Tabla: Clase Real x Clase Predicha.
- Positivo Verdadero (la clase predicha es 1 y la clase real es 1), Negativo
- Verdadero (la clase predicha es 0 y la clase real es 0), Positivo Falso
- (la clase predicha es 1 y la clase real es 0), Negativo False (la clase
- predicha es 0 y la clase real es 1) - Precision = Positivos Verdaderos
- / #Positivos predichos = Positivos Verdaderos / (Positivos Verdaderos +
- Positivos Falsos).
- De todos los pacientes a quienes se predice 1 qué fraccion tiene verdaderamente
- la enfermedad.
- Una precisión alta es deseada.
- - Recall = Positivos Verdaderos / #Positivos reales = Positivos Verdaderos
- / (Positivos Verdaderos + Negativos Falsos).
- De todos los pacientes que tienen la enfermedad, que fracción fue correctamente
- detectada que tiene la enfermedad.
- Un recall alto será bueno.
- Por ejemplo si todo predice 0 entonces recall = 0, y es un indicador de
- que no es un buen clasificador.
- - Sirve aún para las situaciones más sesgadas.
- - Métrica de evaluación útil y directa para entender si el algoritmo se
- está desempeñando bien.
- No permite que el algoritmo haga trampa.
- - Convención: y = 1 en presencia de la clase más rara.
-\end_layout
-
-\begin_layout Standard
-Compensación entre Precisión y Recuperación (trading off Precision and Recall):
- - Predice 1 si h(x) mayor o igual a 0,7.
- Alta precisión, bajo recall.
- Para evitar Positivos Falsos.
- - Predice 1 si h(x) mayor o igual a 0.3.
- Baja precisión, alto recall.
- Para evitar Negativos Falsos.
- - Generalizando: Predice 1 si h(x) mayor o igual a un UMBRAL.
- Se traza la curva de Recall (Eje x) y Precision (Eje y).
- - Cómo compara los valores numéricos de Precisión y Recall.
- F o F1 Score = 2(PR/P+R).
- El mayor valor posible se obtiene para Precisión = 1 y Recall = 1.
- El más bajo posible se obtiene para Precisión = 0 y Recall = 0.
- - Se controla la Precisión y el Recall variando el UMBRAL.
- - Se puede intentar probar un rango de valores para el UMBRAL.
- Se prueba en el conjunto de validación cruzada.
- Luego se elige el UMBRAL que arroje el valor de F1 más alto.
- Esto es una forma de elegir de forma automática el UMBRAL para el clasificador.
-\end_layout
-
-\begin_layout Standard
-—
 \end_layout
 
 \begin_layout Section
@@ -4359,7 +4277,7 @@ d.
 \end_layout
 
 \begin_layout Section
-Complejidad del modelo y Curvas de aprendizaje
+Complejidad del modelo y curvas de aprendizaje
 \end_layout
 
 \begin_layout Standard
