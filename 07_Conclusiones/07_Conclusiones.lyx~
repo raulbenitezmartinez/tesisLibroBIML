@@ -104,9 +104,18 @@ Este trabajo se enfocó en proponer una nueva técnica de estimación de la
 De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
  y evaluando con un método ampliamente aceptado.
- La técnica propuesta pretende que se convierta en una herramienta de apoyo
+ Es importante considerar que para una implementacion real es primordial
+ tener en cuenta los siguientes aspectos: el etiquetado multiclase puede
+ ser reemplazado por valores continuos; el experto en compras debe realizar
+ o guiar todo el proceso de etiquetado ya sea con valores continuos o discretos;
+ para periodos de análisis cortos se obtuvieron buenos resultados, pero
+ también podrían considerarse periodos de tiempo mas extensos.
+\end_layout
+
+\begin_layout Standard
+La técnica propuesta pretende que se convierta en una herramienta de apoyo
  en la toma de decisiones del gerente de compras en el proceso de reposición
- de stock
+ de stock.
 \end_layout
 
 \begin_layout Section
@@ -174,8 +183,15 @@ Incluir costos asociados a un producto (costos de almacenamiento, seguro,
 \end_layout
 
 \begin_layout Itemize
-Desarrollar un software SaaS (Software as a Service) que provea un servicio
- de pronóstico de la demanda.
+Desarrollar un software SaaS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SaaS"
+description "Software as a Service"
+
+\end_inset
+
+ (Software as a Service) que provea un servicio de pronóstico de la demanda.
 \end_layout
 
 \end_body
