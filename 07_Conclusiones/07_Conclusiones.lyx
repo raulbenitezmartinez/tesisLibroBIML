@@ -172,10 +172,10 @@ Etiquetado basado en clustering (aprendizaje no supervisado) con la aprobación
 \end_layout
 
 \begin_layout Itemize
-Optimizar los algoritmos de aprendizaje de la herramienta WEKA mediante
- el ajuste de los parámetros (
+Optimizar los algoritmos de aprendizaje mediante el ajuste de los parámetros
+ (
 \shape italic
-Tuning Hyperparameters
+Tuning parameters
 \shape default
 ).
 \end_layout

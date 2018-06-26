@@ -109,7 +109,10 @@ De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  ser reemplazado por valores continuos; el experto en compras debe realizar
  o guiar todo el proceso de etiquetado ya sea con valores continuos o discretos;
  para periodos de análisis cortos se obtuvieron buenos resultados, pero
- también podrían considerarse periodos de tiempo mas extensos.
+ también podrían considerarse periodos de tiempo mas extensos; el conjunto
+ de KPI seleccionados fueron en base a las limitaciones de la base de datos,
+ es importante incluir otros KPI que consideren más aspectos como costos,
+ marketing, clientes y otros.
 \end_layout
 
 \begin_layout Standard

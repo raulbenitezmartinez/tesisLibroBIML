@@ -187,14 +187,14 @@ FP-UNA
 \begin_layout Date
 
 \size larger
-Junio 2018
+Julio 2018
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
 
 \size normal
-Junio 2018
+Julio 2018
 \end_layout
 
 \end_inset
@@ -434,19 +434,19 @@ key "Chapman2006"
 \end_layout
 
 \begin_layout Itemize
-Los pronósticos siempre estan equivocados.
+Los pronósticos siempre están equivocados.
 \end_layout
 
 \begin_layout Itemize
-Son mas precisos para grupos o familias de artículos.
+Son más precisos para grupos o familias de artículos.
 \end_layout
 
 \begin_layout Itemize
-Son mas precisos para periodos cortos.
+Son más precisos para periodos cortos.
 \end_layout
 
 \begin_layout Itemize
-Siempre deben incluir un error en la estimación.
+Siempre incluye un error en la estimación.
 \end_layout
 
 \end_deeper
@@ -497,6 +497,20 @@ Motivación
 \end_layout
 
 \begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 La elaboración de pronósticos de demanda precisos es uno de los retos más
  importantes en empresas del tipo retail, determinar que sucederá en el
@@ -504,6 +518,7 @@ La elaboración de pronósticos de demanda precisos es uno de los retos más
  con frecuencia.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -517,7 +532,21 @@ La elaboración de pronósticos de demanda precisos es uno de los retos más
 status open
 
 \begin_layout Plain Layout
-Objetivos
+Objetivo general
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -533,6 +562,7 @@ Desarrollar una nueva técnica de pronóstico de la demanda para la toma de
 \end_layout
 
 \end_deeper
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -546,6 +576,20 @@ status open
 
 \begin_layout Plain Layout
 Objetivos específicos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -574,6 +618,7 @@ Realizar el proceso de entrenamiento con los distintos clasificadores.
 Evaluar el rendimiento de los distintos clasificadores entrenados.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -636,6 +681,20 @@ Administración de Compras
 \end_layout
 
 \begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 En la 
 \emph on
@@ -643,9 +702,17 @@ Administración de Compras
 \emph default
 , hay un componente vital dentro del proceso de adquisición que es la estimación
  de la cantidad o volumen de productos a adquirir para reponer el stock.
- Es ahí donde entra en juego el pronóstico de la demanda.
+ Es ahí donde entra en juego el pronóstico de la demanda
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ADMINCA"
+
+\end_inset
+
+.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -721,6 +788,20 @@ Stock
 \end_layout
 
 \begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 El 
 \series bold
@@ -738,6 +819,7 @@ key "DEDIEGOMORILLO2015"
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1315,6 +1397,20 @@ Business Intelligence
 \end_layout
 
 \begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 \begin_inset Quotes eld
 \end_inset
@@ -1340,6 +1436,7 @@ key "EH05"
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1429,6 +1526,20 @@ Indicadores Claves de Rendimiento
 \end_layout
 
 \begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 Los KPI o Indicadores Clave de Rendimiento se tratan de indicadores que
  son decisivos para analizar de forma rápida la situación del negocio y
@@ -1443,6 +1554,7 @@ key "CMR13"
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1931,8 +2043,28 @@ Machine Learning o Aprendizaje automático
 \end_layout
 
 \begin_deeper
+\begin_layout Block
+
+\series bold
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
-Arthur Samuel define 
+
+\series bold
+Arthur Samuel define
+\series default
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Arthur1959"
@@ -1949,6 +2081,7 @@ Machine Learning es un campo de estudio que da a las computadoras la capacidad
  de aprender a resolver problemas sin ser explícitamente programados.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset Phantom VPhantom
 status open
@@ -1962,7 +2095,25 @@ status open
 
 \end_layout
 
+\begin_layout Block
+
+\series bold
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
+
+\series bold
 Otra definición propuesta por Tom Mitchell:
 \end_layout
 
@@ -1975,6 +2126,7 @@ Problema de aprendizaje bien planteado: se dice que un programa de computadora
  E.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2268,7 +2420,7 @@ Técnicas de evaluación para aprendizaje supervisado
 status open
 
 \begin_layout Plain Layout
-Técnicas
+
 \end_layout
 
 \end_inset
@@ -2282,11 +2434,11 @@ Entrenamiento y prueba sobre los mismos datos.
 \end_layout
 
 \begin_layout Itemize
-Porcentaje de división.
+Hold-out validation - Porcentaje de retención
 \end_layout
 
 \begin_layout Itemize
-Validación cruzada.
+K-fold cross-validation - Validación cruzada de K iteraciones
 \end_layout
 
 \end_deeper
@@ -2317,7 +2469,7 @@ Métricas de desempeño para problemas de clasificación
 status open
 
 \begin_layout Plain Layout
-Métricas
+
 \end_layout
 
 \end_inset
@@ -2352,10 +2504,6 @@ Especificidad.
 \end_layout
 
 \begin_layout Itemize
-Tasa de falsos positivos.
-\end_layout
-
-\begin_layout Itemize
 Precisión.
 \end_layout
 
@@ -2382,7 +2530,7 @@ Estadística Kappa.
 status open
 
 \begin_layout Plain Layout
-Componentes de error de predicción.
+Orígenes de los errores de predicción.
 \end_layout
 
 \end_inset
@@ -2551,6 +2699,40 @@ Modelado
 status open
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+MODELADO
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Propuesta de solución
 \end_layout
 
@@ -2585,6 +2767,7 @@ Esquema general de solución
 
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \align center
 
@@ -2592,7 +2775,6 @@ Esquema general de solución
 Esquema general de solución.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2657,11 +2839,11 @@ Tabla de Proveedores
 \end_layout
 
 \begin_layout Itemize
-Tablas de Ventas Cabecera
+Tabla de Ventas Cabecera
 \end_layout
 
 \begin_layout Itemize
-Tablas de Ventas Detalle
+Tabla de Ventas Detalle
 \end_layout
 
 \begin_layout Itemize
@@ -2847,7 +3029,7 @@ Dimensión Fecha.
 \end_layout
 
 \begin_layout Itemize
-Dimesión Productos.
+Dimensión Productos.
 \end_layout
 
 \begin_layout Itemize
@@ -3258,6 +3440,47 @@ Etiquetado para periodo semanal.
 Experimentos
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+EXPERIMENTOS
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -3522,10 +3745,6 @@ endfor;
 
 \size scriptsize
 Pseudocódigo para el proceso de Clasificación.
- 
-\series bold
-\color red
-[REF]
 \end_layout
 
 \end_deeper
@@ -3605,6 +3824,47 @@ Esquema general de iteraciones para 10-fold Cross-Validation.
 Resultados
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+RESULTADOS
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -3618,7 +3878,6 @@ Análisis del desempeño
 
 \end_layout
 
-\begin_deeper
 \begin_layout FrameSubtitle
 Comparacion con línea base ZeroR
 \end_layout
@@ -3655,7 +3914,6 @@ Periodo Semanal
 Entrenamiento vs Test vs ZeroR para períodos semanales.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4236,6 +4494,47 @@ La técnica propuesta se trata de un sistema parametrizado, donde las variables
 Conclusiones
 \end_layout
 
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+CONCLUSIONES
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -4249,7 +4548,6 @@ Conclusiones
 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
@@ -4259,7 +4557,6 @@ De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  de stock.
 \end_layout
 
-\end_deeper
 \begin_layout Frame
 
 \end_layout
@@ -4295,7 +4592,7 @@ Con el propósito de futuras mejoras del presente trabajo, a continuación
 \begin_layout Itemize
 
 \size small
-Incorporar mas KPI referentes a otros procesos de negocios que inciden en
+Incorporar más KPI referentes a otros procesos de negocios que inciden en
  la venta de un producto.
 \end_layout
 
@@ -4316,10 +4613,10 @@ Etiquetado basado en clustering (aprendizaje no supervisado) con la aprobación
 \begin_layout Itemize
 
 \size small
-Optimizar los algoritmos de aprendizaje de la herramienta WEKA mediante
- el ajuste de los parámetros (
+Optimizar los algoritmos de aprendizaje mediante el ajuste de los parámetros
+ (
 \shape italic
-Tuning Hyperparameters
+Tuning parameters
 \shape default
 ).
 \end_layout
@@ -4336,6 +4633,36 @@ Incluir costos asociados a un producto (costos de almacenamiento, seguro,
 \size small
 Desarrollar un software SaaS (Software as a Service) que provea un servicio
  de pronóstico de la demanda.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\series bold
+\size large
+¡MUCHAS GRACIAS!
 \end_layout
 
 \end_deeper

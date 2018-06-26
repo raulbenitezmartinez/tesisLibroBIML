@@ -207,7 +207,7 @@ Para el presente trabajo, se cuenta con una base de datos relacional Oracle
 \begin_layout Itemize
 
 \series bold
-Tabla de Productos
+Tabla Productos
 \series default
 : almacena datos como descripción, unidad de medida, categoría, tipo de
  impuesto, línea del producto, marca, código de barras, proveedor, costo,
