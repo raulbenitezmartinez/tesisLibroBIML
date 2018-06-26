@@ -1328,32 +1328,6 @@ donde:
 status open
 
 \begin_layout Plain Layout
-Revisión Literaria
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Cuadro
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -2321,9 +2295,6 @@ Algoritmos de aprendizaje automático
 
 \size scriptsize
 Agrupación de algoritmos de aprendizaje automático.
-\series bold
-\color red
-[REF]
 \end_layout
 
 \end_deeper
@@ -2680,10 +2651,6 @@ Curvas de aprendizaje
 
 \size scriptsize
 Curvas de aprendizaje.
- 
-\series bold
-\color red
-[REF]
 \end_layout
 
 \end_deeper

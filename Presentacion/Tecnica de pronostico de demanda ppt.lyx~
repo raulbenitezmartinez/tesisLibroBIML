@@ -1328,32 +1328,6 @@ donde:
 status open
 
 \begin_layout Plain Layout
-Revisión Literaria
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Cuadro
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -3878,6 +3852,7 @@ Análisis del desempeño
 
 \end_layout
 
+\begin_deeper
 \begin_layout FrameSubtitle
 Comparacion con línea base ZeroR
 \end_layout
@@ -3914,6 +3889,7 @@ Periodo Semanal
 Entrenamiento vs Test vs ZeroR para períodos semanales.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4548,6 +4524,7 @@ Conclusiones
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
@@ -4557,6 +4534,7 @@ De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  de stock.
 \end_layout
 
+\end_deeper
 \begin_layout Frame
 
 \end_layout
