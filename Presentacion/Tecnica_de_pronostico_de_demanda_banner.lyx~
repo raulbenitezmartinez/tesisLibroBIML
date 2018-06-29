@@ -1,0 +1,1661 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass a0poster
+\begin_preamble
+\usepackage{tcolorbox}
+% tcolorbox skins support
+\tcbuselibrary{skins}
+
+% define the box color
+\colorlet{myboxcolor}{red!50!black} 
+
+% For \arrayrulecolor
+\usepackage{colortbl}
+\end_preamble
+\options a0,portrait
+\use_default_options false
+\begin_modules
+tcolorbox
+multicol
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "palatino" "default"
+\font_sans "berasans" "default"
+\font_typewriter "beramono" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
+\secnumdepth 0
+\tocdepth 0
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle empty
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This template uses the 
+\family sans
+a0poster
+\family default
+ class, which itself offers no specific options to display text blocks,
+ and the 
+\family sans
+tcolorbox
+\family default
+ package (via the 
+\begin_inset Quotes eld
+\end_inset
+
+Colored Boxes
+\begin_inset Quotes erd
+\end_inset
+
+ module), which provides nice-looking, adjustable boxes that are highly
+ suited for conference posters.
+ Please refer to the 
+\family sans
+tcolorbox
+\family default
+ documentation for details on how to alter the look: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirrors.ctan.org/macros/latex/contrib/tcolorbox/tcolorbox.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Use the 
+\family sans
+Color Box Setup
+\family default
+ paragraph style to adjust the default appearance of (subsequent) color
+ boxes (the custom color 
+\family typewriter
+myboxcolor
+\family default
+ is defined in 
+\family sans
+Document\SpecialChar menuseparator
+Settings\SpecialChar menuseparator
+\SpecialChar LaTeX
+ Preamble
+\family default
+): 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Color Box Setup
+
+colframe=myboxcolor, fonttitle=
+\backslash
+Large
+\backslash
+bfseries, boxsep=5mm
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Flex Dynamic Color Box
+status open
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+colback=myboxcolor, coltext=white
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a hand-crafted poster heading with two potential logo placeholders.
+ Adjust to your needs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="77line%">
+<column alignment="left" valignment="middle" width="19line%">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size huge
+Pronóstico de la demanda en empresas retail.
+ Técnica basada en Business Intelligence y Machine Learning.
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" usebox="none" width="19line%">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename logo_pol_trans.png
+	rotateOrigin leftTop
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size larger
+Alberto Garcete, Raúl Benítez, Diego Pinto-Roa, Aditardo Vázquez
+\end_layout
+
+\begin_layout Plain Layout
+
+\size larger
+albertogarcetepy@gmail.com, raulkvd@gmail.com, dppintoroa@gmail.com, vazquez.aditard
+o@gmail.com
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size larger
+Facultad Politécnica - Universidad Nacional de Asunción, San Lorenzo, Paraguay
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5pt*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Resumen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+Pronosticar ciertos eventos constituye una actividad por la cual el ser
+ humano siempre sintió fascinación y necesidad de realizarlo.
+ En la actualidad, uno de esos eventos se relacionan con las empresas y
+ consiste en pronosticar la demanda de ventas para un período futuro, a
+ su vez representa uno de los más importantes retos con que se enfrenta
+ una organización.
+ Este pronóstico de demanda disminuirá la incertidumbre del Gerente de Compras
+ en el momento de tomar decisiones acerca del volumen de productos a adquirir
+ para la reposición de stock.
+ Este trabajo propone una nueva técnica de pronósticos basada en la integración
+ de herramientas de Business Intelligence y Machine Learning.
+ Los experimentos indican que el modelo propuesto alcanza resultados prometedore
+s y esta nueva técnica puede transformarse en una sólida herramienta de
+ apoyo para la toma de decisiones.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\lang spanish
+Palabras claves:
+\series default
+ Pronóstico, Retail, Compras, Business Intelligence, KPI, Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Introducción
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+Actualmente en el proceso de gestión de compras se utilizan ciertas técnicas
+ de pronósticos para determinar las cantidades de las órdenes de compra,
+ dichas técnicas pueden ser cuantitativas o cualitativas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MCN2011"
+
+\end_inset
+
+.
+ Independientemente de la técnica elegida, el problema real de los pronósticos
+ es su falta de confiabilidad, ya que por lo general no son precisos, entonces,
+ la interrogante será siempre si los pronósticos son superiores o inferiores
+ a la demanda real y en que medida 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ADMINCA"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+En consecuencia a lo anterior en el presente trabajo se plantea una nueva
+ técnica para estimar los volúmenes de demanda del siguiente período comercial.
+ Luego, esta estimación servirá de apoyo en la toma de decisión de la cantidad
+ establecida en las órdenes de compras para la reposición de stock.
+ En este nuevo enfoque se integran técnicas de Business Intelligence (conocida
+ por sus siglas BI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "BI"
+description "Business Intelligence"
+
+\end_inset
+
+) y Machine Learning (conocida por las siglas ML
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ML"
+description "Machine Learning"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Objetivos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Objetivo general
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Desarrollar una nueva técnica de pronóstico de la demanda para la toma de
+ decisión en la reposición de stock integrando herramientas y conceptos
+ de Business Intelligence y Machine Learning
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\lang spanish
+Objetivos específicos
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Reportar las principales soluciones que abordan el problema.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Aplicar el proceso de Business Intelligence para obtener los KPI.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Realizar el proceso de etiquetado y obtener las instancias de entrenamiento.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Realizar el proceso de entrenamiento con los distintos clasificadores.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Evaluar el rendimiento de los distintos clasificadores entrenados.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Pronóstico de demanda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
+ de bienes o servicios que los consumidores demandarán en el futuro basadas
+ en el conocimiento del pasado, como los datos históricos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chapman2006"
+
+\end_inset
+
+.
+ La elaboración de pronósticos de demanda precisos es uno de los retos más
+ importantes en empresas del tipo retail, determinar que sucederá en el
+ futuro con el fin de tomar decisiones adecuadas es un problema que se presenta
+ con frecuencia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sipper1998"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Business Intelligence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+The Datawarehouse Institute propone una definición mas formal 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EH05"
+
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Business Intelligence es un término paraguas que abarca los procesos, las
+ herramientas y las tecnologías para convertir datos en información, información
+ en conocimiento y planes para conducir de forma eficaz las actividades
+ de los negocios.
+ Business Intelligence abarca las tecnologías de datawarehousing, los procesos
+ en el 'back end', consultas, informes, análisis y las herramientas para
+ mostrar información (herramientas de Business Intelligence) y los procesos
+ en el 'front end'
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\lang spanish
+Indicadores Clave de Rendimiento (Key Performance Indicators 
+\begin_inset Quotes eld
+\end_inset
+
+KPI
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+Los KPI o Indicadores Clave de Rendimiento se tratan de indicadores que
+ son decisivos para analizar de forma rápida la situación del negocio y
+ facilitar la toma de decisiones.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMR13"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\lang spanish
+Arthur Samuel define
+\series default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arthur1959"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+\lang spanish
+Machine Learning es un campo de estudio que da a las computadoras la capacidad
+ de aprender a resolver problemas sin ser explícitamente programados.
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\lang spanish
+Otra definición propuesta por Tom Mitchell:
+\end_layout
+
+\begin_layout Plain Layout
+
+\shape italic
+\lang spanish
+Problema de aprendizaje bien planteado: se dice que un programa de computadora
+ aprende de la experiencia E con respecto a alguna tarea T y alguna medida
+ de rendimiento P, si su desempeño en T, medido por P, mejora con la experiencia
+ E.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Esquema de solución
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
+	scale 58
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Definición de KPI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Ticket Medio 
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+TM\,=\frac{Cantidad\,Vendida\,Periodo}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Cifra de Ventas
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+CV\,=Precio*Cantidad\,Vendida\,Periodo\label{eq: Cifra de Ventas}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Margen Comercial
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+MC\,=\frac{\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo}{Precio*Cantidad\,Vendida\,Periodo}*100\label{eq:Margen Comercial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Rotación de Stock
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Coeficiente de Rentabilidad
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+CR=\left(\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo\right)*RS\label{eq:Coeficiente Rentabilidad}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Cobertura de Stock
+\shape italic
+\size tiny
+\color brown
+
+\begin_inset Formula 
+\begin{equation}
+CS\,=\frac{Stock\,Actual\,Periodo}{Promedio\,Cantidad\,Venta\,Ultimos\,N\,Periodos}\label{eq:Cobertura Stock}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Conjunto de datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+\lang spanish
+Períodos Mensuales
+\series default
+: Se analizaron 309 productos diferentes, y por cada producto se tiene un
+ máximo de 34 instancias.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+\lang spanish
+Períodos Quincenales
+\series default
+: Se analizaron 228 productos diferentes, y por cada producto se tiene un
+ máximo de 68 instancias.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+\lang spanish
+Períodos Semanales
+\series default
+: Se analizaron 127 productos diferentes, y por cada producto se tiene un
+ máximo de 151 instancias.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=
+\lang spanish
+Pseudocódigo del entrenamiento
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+for cada período de análisis {mensual, quincenal,semanal}:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+for cada producto con sus instancias:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+establecer conjunto de entrenamiento;
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+establecer conjunto de testeo;
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+for cada algoritmo de clasificación:
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+   construir clasificador (conjunto de entrenamiento);
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+   evaluar clasificador (stratified k-folds cross-validation);
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+   obtener métricas de evaluación;
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+endfor;
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+criterios de línea de base (ZeroR, criterios del experto u otro);
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+seleccionar mejor clasificador (max(Kappa));
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+guardar clasificador;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+\lang spanish
+endfor;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\size tiny
+\lang spanish
+endfor;
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Resultados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Multiple Columns
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/06_Experimentacion/Recursos/semanal_zeror_entre_test.png
+	width 18cm
+	height 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10pt*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/06_Experimentacion/Recursos/recuento_cross_semanal.png
+	width 18cm
+	height 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/06_Experimentacion/Recursos/quincenal_zeror_entre_test.png
+	width 18cm
+	height 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 10pt*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/06_Experimentacion/Recursos/aciertos_cross.png
+	width 18cm
+	height 10cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Color Box
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Conclusión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+De acuerdo a los resultados experimentales se obtuvieron altas tasas de
+ aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
+ y evaluando con un método ampliamente aceptado.
+ La técnica propuesta pretende que se convierta en una herramienta de apoyo
+ en la toma de decisiones del gerente de compras en el proceso de reposición
+ de stock.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Color Box
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+title=Bibliografía
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{2.2cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(adjusts the space between columns)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotesize
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/BibliografiaLibro"
+options "bibtotoc,alpha"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

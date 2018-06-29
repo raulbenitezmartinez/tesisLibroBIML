@@ -544,7 +544,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Flex Multiple Columns
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Argument 1
@@ -660,6 +660,237 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
  Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
  consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
  accumsan et iusto odio dignissim.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Multiple Columns
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex SectionBox
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Abstract
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\emph on
+This is my special abstract This is my special abstract This is my special
+ abstract This is my special abstract This is my special abstract This is
+ my special abstract This is my special abstract This is my special abstract
+ This is my special abstract This is my special abstract.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex SectionBox
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Background
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+This is the background and our hypothesis.
+ This is the background and our hypothesis.
+ This is the background and our hypothesis.
+ This is the background and our hypothesis.
+ This is the background and our hypothesis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Flex SectionBox
+status open
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "One/Two(2010)"
+key "key-1"
+
+\end_inset
+
+Author One & Author Two (2010): Our Great Book.
+ Somewhere.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Two/One(2011)"
+key "key-2"
+
+\end_inset
+
+Author Two & Author One (2011): Our Even Greater Book.
+ Somewhere.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+columnbreak
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex SectionBox
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Experiment
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+This is the experiment.
+ This is the experiment.
+ This is the experiment.
+ This is the experiment.
+ This is the experiment.
+ This is the experiment.
+ This is the experiment.
+ This is the experiment.
+ This is the experiment.
+ This is the experiment.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex SectionBox
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Results
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+result
+\end_layout
+
+\begin_layout Itemize
+result
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex SectionBox
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 2
+status collapsed
+
+\begin_layout Plain Layout
+Conclusions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+first conclusion
+\end_layout
+
+\begin_layout Enumerate
+second conclusion
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
