@@ -471,9 +471,16 @@ Pronóstico de la Demanda en empresas retail
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-La elaboración de pronósticos de demanda precisos es uno de los retos más
- importantes en empresas del tipo retail.
+\begin_layout Itemize
+Manejo eficiente del stock
+\end_layout
+
+\begin_layout Itemize
+Sobre costos y ruptura de stock
+\end_layout
+
+\begin_layout Itemize
+Desafío: Pronosticar eficientemente la demanda
 \end_layout
 
 \end_deeper
@@ -516,6 +523,153 @@ La elaboración de pronósticos de demanda precisos es uno de los retos más
  importantes en empresas del tipo retail, determinar que sucederá en el
  futuro con el fin de tomar decisiones adecuadas es un problema que se presenta
  con frecuencia.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Motivación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Métodos cuantitativos: la variable ventas históricas 
+\end_layout
+
+\begin_layout Standard
+Métodos cualitativos: la experiencia del experto
+\end_layout
+
+\begin_layout Standard
+Estos métodos no son adaptativos (tipo de empresa, productos, sucursal,
+ evolución del mercado, comportamiento de consumidores, etc).
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Motivación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Implementar una técnica de pronóstico automática o con mínima intervención
+ humana 
+\end_layout
+
+\begin_layout Standard
+Paliar debilidades de adaptación de los métodos cuantitativos y cualitativos
+ 
+\end_layout
+
+\begin_layout Standard
+Incluyendo las buenas características de cada uno
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Motivación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Las desviaciones normales oscilan entre el 5 y el 40 % de error.
+ 
+\end_layout
+
+\begin_layout Standard
+Por familia de productos los errores son menore al 5 %.
 \end_layout
 
 \end_deeper
@@ -2295,9 +2449,6 @@ Algoritmos de aprendizaje automático
 
 \size scriptsize
 Agrupación de algoritmos de aprendizaje automático.
-\series bold
-\color red
-[REF]
 \end_layout
 
 \end_deeper
@@ -2654,10 +2805,6 @@ Curvas de aprendizaje
 
 \size scriptsize
 Curvas de aprendizaje.
- 
-\series bold
-\color red
-[REF]
 \end_layout
 
 \end_deeper
