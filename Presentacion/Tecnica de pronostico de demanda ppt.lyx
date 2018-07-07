@@ -905,10 +905,6 @@ El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
 \end_layout
 
 \begin_layout Frame
-
-\end_layout
-
-\begin_layout Frame
 \begin_inset Argument 4
 status open
 
@@ -1020,60 +1016,6 @@ Pagar a los proveedores.
 status open
 
 \begin_layout Plain Layout
-Stock
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-El 
-\series bold
-stock
-\series default
- o existencia de una empresa es el conjunto de materiales y artículos que
- se almacenan, tanto aquellos que son necesarios para el proceso productivo
- como los destinados a la venta.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "DEDIEGOMORILLO2015"
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1113,6 +1055,25 @@ Métodos de pronósticos cualitativos
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Son pronósticos subjetivos porque intervienen factores como la experiencia,
+ intuición o emociones del que toma la decisión 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 Las principales técnicas cualitativas de pronóstico de demanda son 
 \begin_inset CommandInset citation
@@ -1170,6 +1131,26 @@ Métodos de pronósticos cuantitativos
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Estos modelos se basan en métodos de pronósticos estadísticos que a partir
+ de los datos históricos de ventas y suponiendo que las tendencias históricas
+ continuarán, son capaces de anticipar la demanda futura 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 En general, los métodos cuantitativos se clasifican en técnicas de:
 \end_layout
