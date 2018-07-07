@@ -434,7 +434,7 @@ key "Chapman2006"
 \end_layout
 
 \begin_layout Itemize
-Los pronósticos siempre están equivocados.
+Los pronósticos son imposibles de predecir de manera exacta.
 \end_layout
 
 \begin_layout Itemize
@@ -1068,6 +1068,13 @@ key "GPO2011"
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Las principales técnicas cualitativas de pronóstico de demanda son 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1427,8 +1434,21 @@ Pronósticos causales
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Regresión Lineal
+\begin_layout Standard
+El pronóstico causal obtiene una proyección de la cantidad de interés (la
+ variable dependiente) relacionándola directamente con una o más cantidades
+ (las variables independientes).
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+Una de las técnicas para resolver problemas de pronósticos causales es la
+ 
+\emph on
+regresión lineal.
 \end_layout
 
 \begin_layout Standard
@@ -1447,58 +1467,39 @@ y=a+bx
 \end_layout
 
 \begin_layout Standard
-
-\shape italic
-\size tiny
-donde: 
+Para problemas donde se consideran varios indicadores clave como variables
+ independientes, la ecuación presenta la siguiente forma:
 \end_layout
 
 \begin_layout Standard
-\align center
 
 \shape italic
 \size tiny
 \color brown
-\begin_inset Formula $y=variable\;dependiente$
+\begin_inset Formula 
+\begin{equation}
+y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}
+\end{equation}
+
 \end_inset
 
-,
+
 \end_layout
 
 \begin_layout Standard
-\align center
-
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula $x=variable\;independiente$
+Donde el proceso de obtención de 
+\begin_inset Formula $a$
 \end_inset
 
-,
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula $a=intersección\;de\;la\;línea\;con\;el\;eje\;y$
+ y 
+\begin_inset Formula $b_{1},b_{2},...,b_{n}$
 \end_inset
 
-,
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula $b=pendiente\;de\;la\;línea$
-\end_inset
-
-
+ es también por el método de 
+\emph on
+mínimos cuadrados
+\emph default
+.
 \end_layout
 
 \end_deeper
