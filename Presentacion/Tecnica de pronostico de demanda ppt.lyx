@@ -876,6 +876,35 @@ ADMINISTRACIÓN DE COMPRAS
 \end_layout
 
 \begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronóstico de la demanda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align block
+El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
+ de bienes o servicios que los consumidores demandarán en el futuro basadas
+ en el conocimiento del pasado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 
 \end_layout
 
@@ -1032,35 +1061,6 @@ key "DEDIEGOMORILLO2015"
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Pronóstico de la demanda
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align block
-El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
- de bienes o servicios que los consumidores demandarán en el futuro basadas
- en el conocimiento del pasado.
-\end_layout
-
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain

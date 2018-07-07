@@ -562,15 +562,15 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 Métodos cuantitativos: la variable ventas históricas 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Métodos cualitativos: la experiencia del experto
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Estos métodos no son adaptativos (tipo de empresa, productos, sucursal,
  evolución del mercado, comportamiento de consumidores, etc).
 \end_layout
@@ -612,17 +612,17 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 Implementar una técnica de pronóstico automática o con mínima intervención
  humana 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Paliar debilidades de adaptación de los métodos cuantitativos y cualitativos
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Incluyendo las buenas características de cada uno
 \end_layout
 
@@ -663,13 +663,71 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 Las desviaciones normales oscilan entre el 5 y el 40 % de error.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Por familia de productos los errores son menore al 5 %.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Consideraciones
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dado un conjunto de productos de una empresa retail
+\end_layout
+
+\begin_layout Itemize
+Problema de pronóstico de la demanda para reposición de stock, por producto
+ 
+\end_layout
+
+\begin_layout Itemize
+Stock cíclico 
+\end_layout
+
+\begin_layout Itemize
+Períodos de reposición regulares 
+\end_layout
+
+\begin_layout Itemize
+Productos no estacionales
 \end_layout
 
 \end_deeper
