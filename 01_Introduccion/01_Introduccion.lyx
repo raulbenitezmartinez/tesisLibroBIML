@@ -245,7 +245,7 @@ as de pronósticos existentes en su mayoría utilizan algoritmos genéricos
  ubicación geográfica.
  Este enfoque de algoritmos genéricos obtiene pronósticos que no reflejan
  el impacto de los diferentes factores que afectan a la demanda; de la misma
- forma no se adapta a la evolución del mercado y el comportamiento de los
+ forma no se adapta a la evolución del mercado y al comportamiento de los
  consumidores 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -260,8 +260,8 @@ key "PDML17"
 La oportunidad que surge es poder implementar una técnica de pronóstico
  de demanda automática o con una mínima intervención manual.
  Esta técnica permitiría paliar las debilidades de los modelos actuales,
- y a su vez que integraría las características esenciales de las técnicas
- cualitativas y cuantitativas existentes.
+ y a su vez integraría las características esenciales de las técnicas cualitativ
+as y cuantitativas existentes.
 \end_layout
 
 \begin_layout Standard
