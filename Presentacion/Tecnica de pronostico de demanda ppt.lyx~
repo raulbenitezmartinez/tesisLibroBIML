@@ -1440,7 +1440,10 @@ El pronóstico causal obtiene una proyección de la cantidad de interés (la
  (las variables independientes).
 \end_layout
 
-\begin_layout Frame
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
 
 \end_layout
 
@@ -2997,7 +3000,7 @@ Tabla de Ventas Cabecera
 \end_layout
 
 \begin_layout Itemize
-Tabla de Ventas Detalle
+Tabla de Ventas Detalle (981.402 registros)
 \end_layout
 
 \begin_layout Itemize

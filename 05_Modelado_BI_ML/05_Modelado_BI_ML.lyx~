@@ -137,7 +137,7 @@ En este capítulo se desarrolla el primer componente de la solución propuesta
  que es Business Intelligence.
  Para ello, se obtienen los datos de la fuentes de información, se sigue
  el proceso de ETL y se construye el datawarehouse.
- Luego definen y se obtienen los valores de los KPI, a continuación se define
+ Luego se definen y obtienen los valores de los KPI, a continuación se define
  la estrategia de etiquetado y se asignan las etiquetas a cada tupla de
  KPI.
 \end_layout
@@ -207,7 +207,7 @@ Para el presente trabajo, se cuenta con una base de datos relacional Oracle
 \begin_layout Itemize
 
 \series bold
-Tabla de Productos
+Tabla Productos
 \series default
 : almacena datos como descripción, unidad de medida, categoría, tipo de
  impuesto, línea del producto, marca, código de barras, proveedor, costo,

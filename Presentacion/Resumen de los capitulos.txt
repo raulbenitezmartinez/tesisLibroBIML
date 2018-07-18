@@ -1,0 +1,79 @@
+Abstract
+
+* Pronosticar eventos en general
+* Pronóstico de la demanda en las empresas (para reponer el stock)
+* Toma de decisión gerencial
+* Nueva técnica de pronóstico de la demanda: integra BI y ML
+
+CAPITULO 1 - INTRODUCCIÓN
+
+* Problema: Manejo eficiente del stock
+* Sobre costos y ruptura de stock
+* Desafío: Pronosticar eficientemente la demanda
+
+* Técnicas cuantitativas y cualitativas
+* Cantidades en las órdenes de compra
+* En general no hay técnica 100% precisa
+
+* Nueva técnica para estimar los volúmenes de demanda
+* Integra BI y ML
+
+* BI tiene por objetivo los KPI
+* Los KPI son etiquetados por el experto en compras (fija el nivel de compra conveniente)
+
+* ML toma como instancias los KPI + etiquetados
+* Aprendizaje supervisado
+* Entrenamiento, testeo y evaluación con distintos algoritmos de clasificación
+
+Motivación
+
+* Métodos cuantitativos: la variable ventas históricas
+* Métodos cualitativos: la experiencia del experto
+
+* Estos métodos no son adaptativos (tipo de empresa, productos, sucursal, evolución del mercado, comportamiento de consumidores, etc).
+
+* Implementar una técnica de pronóstico automática o con mínima intervención humana
+* Paliar debilidades de adaptación de los métodos cuantitativos y cualitativos
+* Incluyendo las buenas características de cada uno
+
+* Las desviaciones normales oscilan entre el 5 y el 40 % de error.
+* Por familia de productos los errores son menore al 5 %.
+
+* 210 proyectos ferroviarios, en 14 países, 9 de cada 10 sobreestimaron un 106 %
+* Proyectos de carreteras la diferencia entre el tráfico real y previsto +-20%
+
+Plantemiento del problema
+
+* Dado conjunto de productos de una empresa retail
+* Problema de pronóstico de la demanda para reposición de stock, por producto
+* Stock cíclico
+* Períodos de reposición regulares
+* Productos no estacionales
+
+Objetivo General
+
+* Desarrollar una nueva técnica de pronóstico de la demanda 
+* para la toma de decision en la reposición de stock 
+* integrando herramientas y conceptos de Business Intelligence y Machine Learning.
+
+
+CAPITULO 2 - PRONOSTICO DE LA DEMANDA
+
+
+* Pronóstico de la demanda: Técnica utilizada para estimar la cantidad de bienes o servicios que los consumidores demandarán.
+* Administracion de Compras: estima la cantidad o volumen de productos a adquirir para reponer el stock.
+
+El proceso deadquisici´on es el eje central de la actividad empresarial de administraci´on de compras y del
+suministro. 
+
+
+
+
+
+
+
+
+
+
+
+

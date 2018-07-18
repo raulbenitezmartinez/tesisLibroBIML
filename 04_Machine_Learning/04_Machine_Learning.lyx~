@@ -253,7 +253,7 @@ description "Stochastic Neural Analog Reinforcement Calculator"
 \end_inset
 
  (Stochastic Neural Analog Reinforcement Calculator) la primera máquina
- a partir de una red neuronal, en el año 1951, junto a Seymour Papert publicó
+ a partir de una red neuronal en el año 1951, junto a Seymour Papert publicó
  el libro 
 \begin_inset Quotes eld
 \end_inset
@@ -399,17 +399,15 @@ Voice reconigtion.
 \end_layout
 
 \begin_layout Itemize
-La tecnología del habla y el campo relacionado del reconocimiento de caracteres
- manuscritos.
+Campo relacionado del reconocimiento de caracteres manuscritos.
 \end_layout
 
 \begin_layout Itemize
-Motores de búsqueda, sistemas de recomendación, y los sistemas para la construcc
-ión de portales Web.
+Motores de búsqueda.
 \end_layout
 
 \begin_layout Itemize
-Recomender system en plataformas como Amazon, Netflix, Facebook .
+Recomender system en plataformas como Amazon, Netflix, Facebook.
 \end_layout
 
 \begin_layout Itemize
@@ -519,7 +517,7 @@ Definición
 \end_layout
 
 \begin_layout Standard
-Arthur Samuel acuñó el término Machine Learning en 1959 mientras trabaja
+Arthur Samuel acuñó el término Machine Learning en 1959 mientras trabajaba
  para IBM
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -771,7 +769,7 @@ Aprendizaje supervisado
 \end_layout
 
 \begin_layout Standard
-Los agentes inteligentes que implementan algoritmos de apredizaje supervisado
+Los agentes inteligentes que implementan algoritmos de aprendizaje supervisado
  (
 \shape italic
 Supervised Learning
@@ -797,7 +795,7 @@ ejemplos
 \begin_inset Quotes erd
 \end_inset
 
-, que son puntos concretos dentro de la desconocida linea que representa
+, que son puntos concretos dentro de la desconocida línea que representa
  la función verdadera 
 \begin_inset Formula $f$
 \end_inset
@@ -860,9 +858,9 @@ Problemas del tipo clasificación o regresión se resuelven típicamente con
  y un problema de regresión es cuando la variable de salida es un valor
  real.
  Como ejemplo de aplicaciones que implementan esta técnica están los vehículos
- autoconducidos, que deben aprender a diferenciar una calle y de la que
- no es (salida booleana: es calle o no es calle?), también debe aprender
- a frenar (salida booleana: frenar o no frenar?), etc.
+ autoconducidos, que deben aprender a diferenciar una calle de la que no
+ es (salida booleana: es calle o no es calle?), también debe aprender a
+ frenar (salida booleana: frenar o no frenar?), etc.
  Entre los algoritmos que implementan aprendizaje supervisado están: Logistic
  Regression, Linear Regression, Support Vector Machines (SVM
 \begin_inset CommandInset nomenclature
@@ -1143,7 +1141,7 @@ Los Algoritmos de Regularización (
 \shape italic
 Regularization
 \shape default
-), comprende una extensión hecha a otros métodos (típicamente a los métodos
+), comprenden una extensión hecha a otros métodos (típicamente a los métodos
  de regresión).
  Penaliza los modelos basándose en sus complejidades, favoreciendo modelos
  más simples que también son mejores de generalizar.
@@ -1236,7 +1234,7 @@ Neural Networks
  Son una clase de búsqueda de patrones que se utilizan comúnmente para problemas
  de regresión y clasificación.
  Es realmente un enorme subcampo compuesto de cientos de algoritmos y variacione
-s para todo tipo de tipos de problemas.
+s para todo tipo de problemas.
  Se ha separado el aprendizaje profundo de las redes neuronales debido a
  su enorme crecimiento y popularidad.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado,
@@ -1316,7 +1314,7 @@ Algoritmos de aprendizaje por refuerzo
 
 \begin_layout Standard
 Se puede complementar el listado propuesto por el Dr.
- Jason con alguno de los algoritmos de aprendizaje por refuerzo.
+ Jason con algunos de los algoritmos de aprendizaje por refuerzo.
 \end_layout
 
 \begin_layout Subsection
@@ -1435,15 +1433,12 @@ key "IntroML2008"
 La clasificación binaria es probablemente el problema más estudiado en el
  aprendizaje automático y ha dado lugar a una gran cantidad de desarrollos
  algorítmicos y teóricos importantes durante el siglo pasado.
- En su forma más simple, se reduce a la pregunta: dado un patrón x extraído
- de un dominio X, estimar qué valor asumirá una variable aleatoria binaria
- asociada y ∈ {± 1}.
 \end_layout
 
 \begin_layout Standard
 Por ejemplo, si se muestran imágenes de manzanas y naranjas, podemos indicar
  si el objeto en cuestión es una manzana o una naranja.
- Igualmente bien, si se quiere predecir si un propietario de vivienda podría
+ Igualmente, si se quiere predecir si un propietario de vivienda podría
  incumplir su préstamo dado sus datos de ingresos y su historial de crédito,
  o si un correo electrónico determinado es spam o no.
 \end_layout
@@ -1474,7 +1469,7 @@ key "IntroML2008"
 .
  Por ejemplo, es posible que se desee clasificar un documento de acuerdo
  con el idioma en el que fue escrito (inglés, francés, alemán, español,
- hindi, japonés, chino, ...).
+ hindú, japonés, chino, ...).
  
 \end_layout
 
@@ -1532,7 +1527,7 @@ Etiquetas
 \begin_layout Standard
 Las cantidades nominales tienen valores que son símbolos distintos.
  Los valores mismos sirven como etiquetas o nombres, de ahí el término nominal,
- que viene de la palabra latina para nombre.
+ que viene de la palabra latina nombre.
  Los atributos nominales a veces se llaman categorizados, enumerados o discretos.
 \end_layout
 
@@ -1553,7 +1548,7 @@ Algoritmos de clasificación multiclase
 Constituye el conjunto de algoritmos de machine learning que soportan problemas
  de clasificación multiclase.
  Cada algoritmo se construye con su Función Objetivo (f), Variables de entrada
- (X), Variable de salida (Y), donde Y = f(X)
+ (X), Variable de salida (Y), donde Y = f(X).
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1561,7 +1556,7 @@ Conjunto de prueba
 \end_layout
 
 \begin_layout Standard
-Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
+Para medir el rendimiento de un clasificador sobre nuevos datos, necesitamos
  evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
  papel en la formación del clasificador.
  Este conjunto de datos independiente se denomina conjunto de prueba.
@@ -3543,15 +3538,6 @@ Bootstrap resampling
 \end_layout
 
 \begin_layout Subsection
-Entrenamiento y prueba sobre los mismos datos
-\end_layout
-
-\begin_layout Standard
-Recompensa modelos demasiado complejos que "sobreajustan" los datos de entrenami
-ento y que no necesariamente generalizan.
-\end_layout
-
-\begin_layout Subsection
 Método de retención
 \end_layout
 
@@ -4007,7 +3993,7 @@ Especificidad (specificity)
 Cuando el valor real es negativo, ¿con qué frecuencia es correcta la predicción?.
  Algo que queremos maximizar.
  ¿Qué tan "específico" (o "selectivo") es el clasificador en predecir las
- instancias positivas?
+ instancias negativas?
 \end_layout
 
 \begin_layout Standard
@@ -4212,7 +4198,7 @@ reference "fig:Errores-en-la-prediccion"
 
 \end_inset
 
-se observa que a menor complejidad, mayor sesgo, esto indica que el error
+ se observa que a menor complejidad, mayor sesgo, esto indica que el error
  de predicción tanto en el entrenamiento como en el testeo es mayor cuando
  el modelo seleccionado es mas simple 
 \begin_inset CommandInset citation
@@ -4304,7 +4290,7 @@ reference "fig:Errores-en-la-prediccion"
  el error de predicción (eje y).
  Indica cómo va variando el error de predicción en los conjuntos de entrenamient
 o y de prueba a medida que aumenta la complejidad del modelo.
- Los medelos muy simples dan una situación no deseada de sesgo (subajuste)
+ Los modelos muy simples dan una situación no deseada de sesgo (subajuste)
  y los modelos muy complejos igualmente una situación no deseada de varianza
  (sobreajuste).
  Para obtener una buena capacidad de generalización se debe encontrar un
@@ -4316,8 +4302,8 @@ Este compromiso entre sesgo y varianza se puede encontrar probando distintas
  configuraciones de los parámetros de ajuste (tuning parameters) de los
  algoritmos de aprendizaje y luego eligiendo el que arroje mejores resultados.
  Normalmente se recomienda probar las distintas configuraciones de los parámetro
-s sobre un conjunto de datos aparte llamado de validación, que no se debe
- confundir con los conjuntos de entrenamiento y de prueba.
+s sobre un conjunto de datos llamado de validación, que no se debe confundir
+ con los conjuntos de entrenamiento y de prueba.
 \end_layout
 
 \begin_layout Standard
@@ -4330,9 +4316,9 @@ Algoritmos de regresión lineal: la cantidad de atributos del modelo (que
 \end_layout
 
 \begin_layout Itemize
-Modelos bayesianos: en bayesian network el algoritmo estimador (estimating
- the conditional probability tables of a Bayes network) y el método para
- encontrar estructuras de red.
+Modelos bayesianos: en las redes bayesianas por ejemplo se debe elegir el
+ algoritmo estimador (estimación de las tablas de probabilidad condicional
+ de las redes bayesianas) y el método para encontrar estructuras de red.
 \end_layout
 
 \begin_layout Itemize
@@ -4349,8 +4335,8 @@ key "Mantovani2016"
 \end_layout
 
 \begin_layout Itemize
-Redes neuronales artificiales: la topología de la red, donde se debe elegir
- la cantidad neronas para la capa de entrada, salida y la oculta.
+Redes neuronales artificiales: la topología de la red donde se debe elegir
+ la cantidad de neuronas para la capa de entrada, salida y la oculta.
  También se deben probar distintas tasas de aprendizaje (learning rate)
  y funciones de activación.
 \end_layout
@@ -4423,11 +4409,11 @@ reference "fig:Curvas-de-aprendizaje"
 
 \end_inset
 
- muestra la relación existente entre la el tamaño del conjunto de entrenamiento
+ muestra la relación existente entre el tamaño del conjunto de entrenamiento
  (eje x) y el error de predicción (eje y).
  Indica cómo va variando el error de predicción en los conjuntos de entrenamient
 o y de prueba a medida que aumenta el tamaño del conjunto de entrenamiento.
- Los medelos muy simples dan problema de alto sesgo (figura 
+ Los modelos muy simples dan problema de alto sesgo (figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Curvas-de-aprendizaje"
@@ -4488,6 +4474,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Curvas de aprendizaje2.png
+	scale 50
 
 \end_inset
 
