@@ -198,7 +198,7 @@ Para el presente trabajo, se cuenta con una base de datos relacional Oracle
  acondicionadores, aromatizantes, cuidado corporal, desodorantes, limpiadores,
  salud e higiene, salud y belleza, aguas, gaseosas, cervezas, vinos, chocolates,
  galletitas, enlatados, lácteos, yerbas y varias líneas de productos más.
- La base de datos almacena datos de la operaciones comprendidas entre noviembre
+ La base de datos almacena datos de las operaciones comprendidas entre noviembre
  de 2013 y octubre de 2016.
  A continuación una reseña de las principales tablas tenidas en cuenta para
  el diseño del datawarehouse.
@@ -640,7 +640,7 @@ Este indicador mide la cantidad de veces que el stock del producto se renueva
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
+RS\,=\frac{Cantidad\,Vendida\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
 \end{equation}
 
 \end_inset
@@ -683,7 +683,7 @@ Este indicador muestra el periodo de tiempo (habitualmente se expresa en
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-CS\,=\frac{Stock\,Actual\,Periodo}{Promedio\,Cantidad\,Venta\,Ultimos\,N\,Periodos}\label{eq:Cobertura Stock}
+CS\,=\frac{Stock\,Inicio\,Periodo}{Promedio\,Cantidad\,Vendida\,Ultimos\,N\,Periodos}\label{eq:Cobertura Stock}
 \end{equation}
 
 \end_inset
@@ -2144,9 +2144,10 @@ Resumen
 \end_layout
 
 \begin_layout Standard
-Sintetizando el capítulo se puede resumir que el modelado del problema se
- basa en tres grandes procesos: a) proceso de Business Intelligence y sus
- etapas b) proceso de obtención de KPI y c) proceso de etiquetado.
+Sintetizando el capítulo se puede resumir que el modelado del problema del
+ componente BI se basa en tres grandes procesos: a) proceso de Business
+ Intelligence y sus etapas b) proceso de obtención de KPI y c) proceso de
+ etiquetado.
 \end_layout
 
 \begin_layout Standard
