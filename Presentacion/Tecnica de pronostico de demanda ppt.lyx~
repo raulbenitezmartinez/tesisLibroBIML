@@ -2996,7 +2996,7 @@ Tabla de Proveedores
 \end_layout
 
 \begin_layout Itemize
-Tabla de Ventas Cabecera
+Tabla de Ventas Cabecera (301.316 registros)
 \end_layout
 
 \begin_layout Itemize
@@ -3329,7 +3329,7 @@ Rotación de Stock
 
 \begin_inset Formula 
 \begin{equation}
-RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
+RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo+Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
 \end{equation}
 
 \end_inset

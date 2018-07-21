@@ -3329,7 +3329,7 @@ Rotación de Stock
 
 \begin_inset Formula 
 \begin{equation}
-RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
+RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo+Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
 \end{equation}
 
 \end_inset
@@ -3844,14 +3844,14 @@ for cada algoritmo de clasificación:
 \paragraph_spacing single
 
 \size tiny
-   evaluar clasificador (stratified k-folds cross-validation);
+   validar clasificador (stratified k-folds cross-validation);
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
 \size tiny
-   obtener métricas de evaluación;
+   obtener métricas de validación;
 \end_layout
 
 \begin_layout LyX-Code
@@ -3873,6 +3873,13 @@ criterios de línea de base (ZeroR, criterios del experto u otro);
 
 \size tiny
 seleccionar mejor clasificador (max(Kappa));
+\end_layout
+
+\begin_layout LyX-Code
+\paragraph_spacing single
+
+\size tiny
+evaluar mejor clasificador (conjunto de testeo);
 \end_layout
 
 \begin_layout LyX-Code

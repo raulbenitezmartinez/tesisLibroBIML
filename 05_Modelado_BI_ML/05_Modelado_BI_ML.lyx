@@ -640,7 +640,7 @@ Este indicador mide la cantidad de veces que el stock del producto se renueva
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-RS\,=\frac{Cantidad\,Vendida\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
+RS\,=\frac{Cantidad\,Vendida\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo+Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
 \end{equation}
 
 \end_inset

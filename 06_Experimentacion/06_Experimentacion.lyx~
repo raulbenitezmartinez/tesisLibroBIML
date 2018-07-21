@@ -279,13 +279,13 @@ construir clasificador (conjunto de entrenamiento);
 \begin_layout LyX-Code
 
 \series bold
-evaluar clasificador (stratified k-folds cross-validation);
+validar clasificador (stratified k-folds cross-validation);
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-obtener métricas de evaluación;
+obtener métricas de validación;
 \end_layout
 
 \end_deeper
@@ -305,6 +305,12 @@ criterios de línea de base (ZeroR, criterios del experto u otro);
 
 \series bold
 seleccionar mejor clasificador (max(Kappa));
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+evaluar mejor clasificador (conjunto de testeo);
 \end_layout
 
 \begin_layout LyX-Code
@@ -355,15 +361,14 @@ Pseudocódigo para el proceso de clasificación.
 
 \begin_layout Standard
 Los algoritmos utilizados para construir los clasificadores son los proveídos
- por la herramienta WEKA utilizando los parámetros de configuración por
- defecto, según la tabla 
+ por la herramienta WEKA según tabla 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Clasificadores-Weka"
 
 \end_inset
 
-.
+ y los parámetros de configuración establecidos por defecto.
  Otra forma de categorizar los clasificadores incluidos en WEKA es como
  sigue:
 \end_layout
@@ -385,7 +390,7 @@ Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
 \end_layout
 
 \begin_layout Standard
-La evaluación se hace por el método Stratified k-fold Cross-Validation para
+La validación se hace por el método Stratified k-fold Cross-Validation para
  un valor de k igual a 10 y las métricas de desempeño consideradas son el
  
 \shape italic
@@ -413,9 +418,10 @@ Comparación con línea base ZeroR
 \end_layout
 
 \begin_layout Standard
-En este apartado se contrasta los resultados obtenidos mediante una comparación
- del porcentaje de aciertos entre la línea base ZeroR, el clasificador seleccion
-ado en el entrenamiento y el test.
+En este apartado se contrastan los resultados obtenidos mediante una comparación
+ entre el porcentaje de acierto de la línea base ZeroR, el porcentaje de
+ acierto alcanzado en la validación por el mejor algoritmo y el porcentaje
+ de acierto en el testeo del mejor algoritmo.
  Como se mencionó la linea base es el clasificador ZeroR, el cual es el
  criterio mínimo de aceptación de un clasificador.
  Los puntos de la línea de entrenamiento son los porcentajes de acierto
@@ -589,7 +595,7 @@ reference "fig:6.8"
 \shape italic
 Logistic
 \shape default
- resultó una mejor solución para 92 productos para periodos mensuales.
+ resultó una mejor solución en 92 productos para periodos mensuales.
 \end_layout
 
 \begin_layout Standard
