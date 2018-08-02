@@ -420,12 +420,13 @@ Comparación con línea base ZeroR
 \begin_layout Standard
 En este apartado se contrastan los resultados obtenidos mediante una comparación
  entre el porcentaje de acierto de la línea base ZeroR, el porcentaje de
- acierto alcanzado en la validación por el mejor algoritmo y el porcentaje
- de acierto en el testeo del mejor algoritmo.
+ acierto del mejor algoritmo alcanzado en la validación y el porcentaje
+ de acierto en el testeo del mismo algoritmo.
  Como se mencionó la linea base es el clasificador ZeroR, el cual es el
  criterio mínimo de aceptación de un clasificador.
  Los puntos de la línea de entrenamiento son los porcentajes de acierto
- de los clasificadores seleccionados, según el algoritmo 
+ de los clasificadores seleccionados durante la validación, según el algoritmo
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "alg:Pseudocódigo-clasificacion"
@@ -438,17 +439,59 @@ reference "alg:Pseudocódigo-clasificacion"
 \end_layout
 
 \begin_layout Standard
-En la figura 
+Los productos incluidos en el gráfico constituyen un subconjunto representativo,
+ esto debido a la extensa cantidad de productos y su dificultad para graficarlos
+ por completo.
+\end_layout
+
+\begin_layout Standard
+En las figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:6.3"
 
 \end_inset
 
- el gráfico contiene las líneas comparativas para periodos semanales.
- Los productos incluidos en el gráfico constituyen un subconjunto representativo
-, esto debido a la extensa cantidad de productos y su dificultad para graficarlo
-s por completo.
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6.4"
+
+\end_inset
+
+ los gráficos contienen las líneas comparativas para periodos semanales
+ y quincenales respectivamente.
+ De acuerdo a las experimentaciones el porcentaje de acierto en el entrenamiento
+ es siempre mayor o igual a la linea base, en concordancia con el algoritmo
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:Pseudocódigo-clasificacion"
+
+\end_inset
+
+.
+ En el testeo por tratarse de un conjunto de datos separado del conjunto
+ de entrenamiento los porcentajes de aciertos varían.
+ Se dieron dos casos atípicos donde el porcentaje de acierto fue menor al
+ de la línea base, estos casos aparecen cuando hay una etiqueta dominante,
+ en periodos semanales fue el producto 222 con el 88% de etiquetas 
+\begin_inset Quotes eld
+\end_inset
+
+Nada
+\begin_inset Quotes erd
+\end_inset
+
+ y en periodos quincenales fue el producto 400 con el 92% de etiquetas 
+\begin_inset Quotes eld
+\end_inset
+
+Nada
+\begin_inset Quotes erd
+\end_inset
+
+.
  De los resultados se puede deducir que hay aprendizaje, ya que los porcentajes
  de acierto alcanzados en el testeo se encuentran por encima de la linea
  base en la mayoría de los casos.
@@ -531,6 +574,32 @@ Entrenamiento vs Test vs ZeroR para períodos quincenales.
 \end_layout
 
 \begin_layout Standard
+La figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6.5"
+
+\end_inset
+
+ muestra las comparativas para periodos mensuales.
+ Al igual que los periodos semanales y quincenales el porcentaje de acierto
+ en el entrenamiento es siempre mayor o igual a la linea base.
+ En el testeo por tratarse de un conjunto de datos separado del conjunto
+ de entrenamiento los porcentajes de aciertos varían.
+ Se tiene un caso atípico donde el porcentaje de acierto fue menor al de
+ la línea base, este caso aparece cuando hay una etiqueta dominante el cual
+ se dio en el producto 309 con el 93% de etiquetas 
+\begin_inset Quotes eld
+\end_inset
+
+Medio
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -570,10 +639,6 @@ Entrenamiento vs Test vs ZeroR para períodos mensuales.
 
 \begin_layout Subsection
 Recuentos por tipo de clasificador
-\end_layout
-
-\begin_layout Standard
-A continuación se presenta un recuento 
 \end_layout
 
 \begin_layout Standard
@@ -901,8 +966,7 @@ Como se mencionó anteriormente, la técnica propuesta arroja como resultado
  Luego en función de la etiqueta resultante, del tipo de producto y del
  período seleccionado, el experto extrapola a un valor continuo que representa
  la cantidad en la orden de compra.
- El significado de las etiquetas también varía en función del tipo de producto.
- 
+ El significado de las etiquetas varía en función del tipo de producto.
 \end_layout
 
 \begin_layout Section

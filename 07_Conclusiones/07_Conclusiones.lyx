@@ -84,14 +84,14 @@ Conclusiones Generales
 \end_layout
 
 \begin_layout Standard
-Este trabajo se enfocó en proponer una nueva técnica de estimación de la
+Este trabajo se enfocó en proponer una nueva técnica de pronóstico de la
  demanda de productos, para reposición de stock en empresas retail.
- En el capitulo 2 se mencionó, la gestión de compras es uno los ejes centrales
- en la actividad empresarial y la decisión del volumen de compras para cada
- producto es un desafío que enfrentan las empresas al momento de reponer
- el stock.
+ En el capitulo 2 se mencionó que la gestión de compras es uno los ejes
+ centrales en la actividad empresarial y la decisión del volumen de compras
+ para cada producto es un desafío que enfrentan las empresas al momento
+ de reponer el stock.
  Partiendo de esta premisa y analizando las técnicas de pronóstico de la
- demanda empleadas en la actualidad, y el creciente incremento del uso de
+ demanda empleadas en la actualidad y el creciente incremento del uso de
  tecnologías de Business Intelligence en las organizaciones, se encontró
  la oportunidad de desarrollar una nueva técnica de pronóstico.
  En esta nueva técnica se utilizan los Indicadores Claves de Rendimiento
@@ -116,9 +116,14 @@ De acuerdo a los resultados experimentales se obtuvieron altas tasas de
 \end_layout
 
 \begin_layout Standard
-La técnica propuesta pretende que se convierta en una herramienta de apoyo
- en la toma de decisiones del gerente de compras en el proceso de reposición
- de stock.
+Como se mencionó en la introducción, para el sector retail la mayoría de
+ las empresas puede pronosticar la demanda total de todos los productos
+ como un grupo con errores menores al 5%, no obstante el pronóstico de la
+ demanda de un producto puede generar errores considerablemente mayores
+ con las técnicas vigentes.
+ Con la técnica propuesta se logran errores menores al 5% por cada producto
+ pretende que se convierta en una herramienta de apoyo en la toma de decisiones
+ del gerente de compras en el proceso de reposición de stock.
 \end_layout
 
 \begin_layout Section
