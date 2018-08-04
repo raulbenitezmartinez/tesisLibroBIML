@@ -393,6 +393,15 @@ PC
 \labelwidthstring 00.00.0000
 
 \series bold
+PCA
+\series default
+ Principal Component Analysis
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
 PDF
 \series default
  Portable Document Format 

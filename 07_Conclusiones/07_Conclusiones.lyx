@@ -104,7 +104,7 @@ Este trabajo se enfocó en proponer una nueva técnica de pronóstico de la
 De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
  y evaluando con un método ampliamente aceptado.
- Es importante considerar que para una implementacion real es primordial
+ Es importante considerar que para una implementación real es primordial
  tener en cuenta los siguientes aspectos: el etiquetado multiclase puede
  ser reemplazado por valores continuos; el experto en compras debe realizar
  o guiar todo el proceso de etiquetado ya sea con valores continuos o discretos;
