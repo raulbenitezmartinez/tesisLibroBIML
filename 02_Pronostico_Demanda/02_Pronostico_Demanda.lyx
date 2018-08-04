@@ -92,8 +92,8 @@ Pronóstico de la Demanda
 
 \begin_layout Standard
 El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
- de bienes o servicios que los consumidores demandarán en el futuro basadas
- en el conocimiento del pasado, como los datos históricos 
+ de bienes o servicios que los consumidores demandarán en el futuro, basadas
+ en el conocimiento del pasado, como son los datos históricos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Chapman2006"
@@ -101,10 +101,10 @@ key "Chapman2006"
 \end_inset
 
 .
- La elaboración de pronósticos de demanda precisos es uno de los retos más
- importantes en empresas del tipo retail, determinar que sucederá en el
- futuro con el fin de tomar decisiones adecuadas es un problema que se presenta
- con frecuencia 
+ La elaboración de pronósticos de demanda precisos es uno de los retos important
+es en empresas del tipo retail, determinar qué sucederá en el futuro con
+ el fin de tomar decisiones adecuadas es un problema que se presenta con
+ frecuencia 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sipper1998"
@@ -112,7 +112,7 @@ key "Sipper1998"
 \end_inset
 
 .
- En un escenario inicial se tienen los depósitos llenos de productos listos
+ En un escenario inicial se tienen depósitos llenos de productos listos
  para ser llevados a los mostradores.
  A medida que pasa el tiempo la cantidad en depósito va decreciendo por
  la demanda de los clientes y llegado un momento crítico hay que tomar la
@@ -139,7 +139,7 @@ key "Adam1991"
 \end_layout
 
 \begin_layout Standard
-A continuación se explicará sintéticamente el proceso de 
+A continuación se explicará el proceso de 
 \emph on
 Administración de Compras
 \emph default
@@ -160,13 +160,13 @@ compras, adquisiciones, administración de materiales, logística, abastecimient
  se utilizan de manera indistinta ya que no existe un consenso general sobre
  la terminología.
  El proceso de adquisición es el eje central de la actividad empresarial
- de administración de compras y del suministro.
- Cualquier organización requiere de proveedores por lo que es muy importante
- acoplarlos con efectividad al entorno organizacional, y que las decisiones
+ de administración de compras o suministros.
+ Cualquier organización requiere de proveedores por lo que es importante
+ incorporarlos con efectividad al entorno organizacional, y que las decisiones
  de compras no contradigan las estrategias de la empresa.
- Las empresas centran sus esfuerzos en aumentar sus ingresos, disminuir
- sus costos, o una combinación de ambos a fin de obtener ganancias de la
- forma más eficiente posible 
+ Las empresas centran sus esfuerzos en aumentar ingresos, disminuir costos,
+ o una combinación de ambos a fin de obtener ganancias de forma más eficiente
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ADMINCA"
@@ -177,10 +177,10 @@ key "ADMINCA"
 \end_layout
 
 \begin_layout Standard
-Este trabajo intenta contribuir a lograr decisiones eficientes de compras
+Este trabajo busca contribuir en lograr decisiones eficientes de compras
  basadas en pronósticos de demanda precisos.
- Se considera que es un componente importante dentro de la planeación estratégic
-a y operacional la estimación eficiente de la cantidad o volumen de productos
+ Se considera como un componente importante dentro de la planeación estratégica
+ y operacional la estimación eficiente de la cantidad o volumen de productos
  para la reposición del stock del siguiente período de ventas 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -202,7 +202,7 @@ key "DEDIEGOMORILLO2015"
 \end_inset
 
 .
- La función que desempeña el stock o existencia en una empresa son 
+ Las funciones que desempeña el stock o existencia en una empresa son 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "M.M.P.A.I.B.B.2010"
@@ -276,9 +276,9 @@ En el punto 5, en el detalle de la orden se ven reflejadas las estimaciones
 \begin_layout Standard
 Del por qué la importancia de estimar de forma correcta esta cantidad o
  volumen, los expertos en negocios explican que los productos parados en
- stock mientras no se venden es capital inmovilizado, además que generan
- sobre-costos de mantenimiento como seguros, personal encargado, fecha de
- vencimiento de los productos, etc 
+ stock mientras no se venden es capital inmovilizado, que generan sobrecostos
+ por mantenimiento, seguros, personal encargado, fecha de vencimiento de
+ los productos, etc 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MTPD20017"
@@ -288,11 +288,11 @@ key "MTPD20017"
 .
  Otro hecho no deseado a causa de una mala estimación es la ruptura de stock,
  es decir, no disponer de un producto cuando existan clientes interesados
- en comprarlo, lo cual también se considera como una pérdida para la empresa.
+ en comprarlo, lo cual se considera una pérdida para la empresa.
  En este punto, con una estimación acertada lo que se desea es mantener
- un nivel de stock óptimo, es decir, tener suficiente cantidad para satisfacer
- la demanda sin roturas de stock y por otra parte evitar que haya un exceso
- inútil del mismo.
+ un nivel de stock eficiente, es decir, tener suficiente cantidad para satisface
+r la demanda sin roturas de stock y por otra parte evitar que haya un exceso
+ inútil.
  Si bien el presente trabajo no toma en cuenta los costos asociados al almacenam
 iento, lo que se busca es pronosticar la cantidad o volumen de demanda de
  productos de forma eficiente utilizando las herramientas de Business Intelligen
@@ -318,15 +318,15 @@ Antes de realizar una compra surgen las siguientes preguntas:
 \end_layout
 
 \begin_layout Itemize
-Cuándo debemos realizar un pedido?
+¿Cuándo debemos realizar un pedido?
 \end_layout
 
 \begin_layout Itemize
-Qué cantidad debemos solicitar en cada pedido?
+¿Qué cantidad debemos solicitar en cada pedido?
 \end_layout
 
 \begin_layout Itemize
-Cuántas unidades de cada artículo debemos mantener en stock?
+¿Cuántas unidades de cada artículo debemos mantener en stock?
 \end_layout
 
 \begin_layout Standard
@@ -420,8 +420,8 @@ Método Delphi: Se basa en identificar un panel de expertos que pueden ser
  Se tiene un cuestionario donde cada uno de ellos lo completa de forma aislada.
  Se integran todas las respuestas, luego cada experto tiene acceso al set
  de respuestas y puede ajustar su respuesta conforme le parezca conveniente.
- Este proceso se repite iterativamente hasta alcanzar un cierto nivel de
- consenso.
+ Este proceso se repite de forma iterativa hasta alcanzar un cierto nivel
+ de consenso.
  Finalmente los resultados de este panel de expertos sirven de base para
  las decisiones de pronóstico de los gerentes.
 \end_layout
@@ -451,8 +451,8 @@ key "MCA2008"
 
 .
  En general, para modelar cuantitativamente se debe disponer de información
- sobre la variable a pronosticar, la información debe ser cuantificable
- y el patrón histórico de cierto modo se debe repetir en el futuro 
+ sobre la variable a pronosticar, la información se debe cuantificar y el
+ patrón histórico de cierto modo debe repetirse en el futuro 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCN2011"
@@ -466,11 +466,10 @@ key "MCN2011"
 El pronóstico de la demanda de productos es sólo una aplicación importante
  de estos métodos.
  En otros casos, los pronósticos se podrían utilizar para evaluar los requerimie
-ntos de cantidades variadas como las partes de repuestos, el rendimiento
- de la producción y las necesidades de personal.
- Las técnicas de pronóstico se usan también frecuentemente para anticipar
- las tendencias económicas a nivel regional, nacional o incluso internacional
- 
+ntos de cantidades variadas como partes de repuestos, rendimiento de la
+ producción y necesidades de personal.
+ Las técnicas de pronóstico se usan también para anticipar las tendencias
+ económicas a nivel regional, nacional e incluso internacional 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -507,7 +506,7 @@ key "MCA2008"
 
 \begin_layout Standard
 El objetivo del método es obtener una buena predicción del valor futuro
- de la variable a pronosticar, enmarcado por supuesto en la serie de tiempo.
+ de la variable a pronosticar, enmarcado en la serie de tiempo.
  Para lograr el objetivo, el método debe descubrir el patrón dentro de la
  serie y luego ser capaz de extrapolarlo hacia el futuro 
 \begin_inset CommandInset citation
@@ -517,7 +516,7 @@ key "MCN2011"
 \end_inset
 
 .
- De cierta manera, hay una suposición intrínseca al modelo de que los factores
+ De cierta manera, hay una suposición intrínseca del modelo de que los factores
  que influyen en las ventas pasadas y presentes continuarán a futuro.
 \end_layout
 
@@ -540,7 +539,7 @@ key "MTPD20017"
 \end_layout
 
 \begin_layout Standard
-En el sentido estricto de la interpretación es erróneo hablar de pronosticar
+En el sentido estricto de la interpretación, es erróneo hablar de pronosticar
  el siguiente valor de la observación en una serie de tiempo.
  Como este valor puede ser cualquiera y dependerá de circunstancias futuras
  que son ajenas al control humano, entonces es imposible predecirlo exactamente.
@@ -556,7 +555,7 @@ Lo mejor que se puede realizar es una estimación de la media tan cerca como
  sea posible, utilizando todos los datos disponibles.
  La meta de los métodos de pronóstico de series de tiempo es estimar la
  media de la distribución de probabilidades subyacente del siguiente valor
- de la serie de tiempo tan cerca como sea posible.
+ de la serie de tiempo.
  Para una serie de tiempo que tiene exactamente la misma distribución para
  todos y cada uno de los periodos, el método de pronóstico de promedios
  proporciona la mejor estimación de la media, pero en general se usan otros
@@ -978,7 +977,7 @@ Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\lef
 donde:
 \begin_inset Formula 
 \begin{equation}
-tendencia\;estimada=\beta*\left(última\;tendencia\right)*\left(1\text{-}\beta\right)*\left(estimación\;anterior\right)
+tendencia\;estimada=\beta*\left(tendencia\;actual\right)*\left(1\text{-}\beta\right)*\left(tendencia\,estimada\;anterior\right)
 \end{equation}
 
 \end_inset
@@ -987,7 +986,7 @@ tendencia\;estimada=\beta*\left(última\;tendencia\right)*\left(1\text{-}\beta\r
 \begin_inset Formula 
 \begin{equation}
 \begin{array}{c}
-última\;tendencia\:=\:\alpha*\left(último\;valor-penúltimo\;valor\right)\,+\\
+tendencia\;actual\:=\:\alpha*\left(último\;valor-penúltimo\;valor\right)\,+\\
 \qquad\qquad\qquad\qquad\qquad\qquad\qquad\left(1\text{-}\alpha\right)*\left(último\;pronóstico-penúltimo\;pronóstico\right)
 \end{array}
 \end{equation}
@@ -1537,7 +1536,7 @@ Si bien el presente trabajo también busca encontrar una estimación de pronóst
  propuesta es una alternativa distinta, es decir, no se trata de un método
  cualitativo ni cuantitativo propiamente dicho, sin embargo toma ciertos
  aspectos de ambos y se implementa con conceptos, tecnologías y herramientas
- de solución diferentes.
+ diferentes.
 \end_layout
 
 \end_body

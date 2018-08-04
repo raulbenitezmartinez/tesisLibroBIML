@@ -83,7 +83,7 @@ Introducción
 \end_layout
 
 \begin_layout Standard
-En las 
+En 
 \shape italic
 empresas retail
 \shape default
@@ -101,12 +101,12 @@ Una empresa retail es cualquier comercio que vende sus productos al consumidor
 \end_inset
 
  o de ventas minoristas uno de los principales problemas con que se enfrentan
- es el manejo eficiente del stock de manera a evitar tener los productos
- en exceso en los depósitos que incurran en sobre-costos.
+ es el manejo eficiente de stock de tal manera a evitar tener productos
+ en exceso en los depósitos que incurran en sobrecostos.
  En el otro extremo, la falta de dichos productos o ruptura de stock conlleva
- a pérdidas de oportunidades de ventas por no disponer del producto que
- puede generar insatisfacción de los clientes y a su vez ésto repercute
- en las utilidades de la empresa.
+ pérdidas de oportunidades de ventas por no disponer del producto lo cual
+ ocasiona insatisfacción de clientes, a su vez ésto repercute sobre las
+ utilidades de la empresa.
  Uno de los mayores desafíos en empresas de este sector es pronosticar de
  manera eficiente la demanda para el próximo período comercial 
 \begin_inset CommandInset citation
@@ -120,8 +120,8 @@ key "PDML17"
 
 \begin_layout Standard
 Actualmente en el proceso de gestión de compras se utilizan ciertas técnicas
- de pronósticos para determinar las cantidades de las órdenes de compra,
- dichas técnicas pueden ser cuantitativas o cualitativas 
+ de pronósticos para determinar cantidades de las órdenes de compra, dichas
+ técnicas pueden ser cuantitativas o cualitativas 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "MCN2011"
@@ -131,8 +131,8 @@ key "MCN2011"
 .
  Independientemente de la técnica elegida, el problema real de los pronósticos
  es su falta de confiabilidad, ya que por lo general no son precisos, entonces,
- la interrogante será siempre si los pronósticos son superiores o inferiores
- a la demanda real y en que medida 
+ la interrogante es si los pronósticos serán superiores o inferiores a la
+ demanda real y en que medida 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ADMINCA"
@@ -143,10 +143,10 @@ key "ADMINCA"
 \end_layout
 
 \begin_layout Standard
-En consecuencia a lo anterior en el presente trabajo se plantea una nueva
- técnica para estimar los volúmenes de demanda del siguiente período comercial.
- Luego, esta estimación servirá de apoyo en la toma de decisión de la cantidad
- establecida en las órdenes de compras para la reposición de stock.
+A raíz de lo anterior en el presente trabajo se plantea una nueva técnica
+ para estimar volúmenes de demanda para el próximo período comercial.
+ Luego, esta estimación servirá de apoyo para la toma de decisión de la
+ cantidad establecida en las órdenes de compras para la reposición de stock.
  En este nuevo enfoque se integran técnicas de Business Intelligence (conocida
  por sus siglas BI
 \begin_inset CommandInset nomenclature
@@ -196,16 +196,16 @@ key "CMR13"
 
 \end_inset
 
- de los productos en base a los datos históricos obtenidos de las bases
- de datos transaccionales.
+, de los productos en base a datos históricos obtenidos de las bases de
+ datos transaccionales.
  Luego, cada serie de KPI obtenidos pasan por un proceso de etiquetado,
- donde el experto en compras los analiza y determina qué nivel de compra
- conviene para cada serie de KPI, para el proceso de aprendizaje.
+ donde el experto en compras analiza y determina qué nivel de compra conviene
+ para cada serie de KPI, para el proceso de aprendizaje.
 \end_layout
 
 \begin_layout Standard
 En la etapa de Machine Learning se utilizan como entrada las series de KPI
- con sus etiquetas obtenidas en la etapa anterior y constituyen las instancias
+ con sus etiquetas obtenidas de la etapa anterior y constituyen las instancias
  que alimentan los distintos algoritmos de clasificación.
  Nótese que el enfoque corresponde a un proceso de aprendizaje supervisado.
  Posteriormente tienen lugar los procesos de entrenamiento y testeo para
@@ -218,16 +218,16 @@ Motivación
 
 \begin_layout Standard
 \align block
-En general las técnicas de pronóstico de la demanda cuantitativas dependen
+En general las técnicas de pronóstico de demanda cuantitativas dependen
  en gran medida de la variable: 
 \shape italic
 cantidad de ventas
 \shape default
 .
  Mientras que los pronósticos de demanda cualitativos dependen en gran medida
- de la opinión y experiencia del experto; que si bien pueden ser válidos
+ de la opinión y experiencia del experto; que si bien pueden ser válidos,
  se utilizan principalmente en casos donde la proyección es a largo plazo
- o ante carencia de datos históricos 
+ o por carencia de datos históricos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "MCN2011"
@@ -241,11 +241,10 @@ key "MCN2011"
 Otra debilidad de los pronósticos es que no se adaptan, es decir, las herramient
 as de pronósticos existentes en su mayoría utilizan algoritmos genéricos
  con la suposición de que la demanda puede predecirse de igual forma para
- todas las empresas, todas las industrias, todos los productos y para cualquier
- ubicación geográfica.
+ todas las empresas, industrias, productos y para cualquier ubicación geográfica.
  Este enfoque de algoritmos genéricos obtiene pronósticos que no reflejan
- el impacto de los diferentes factores que afectan a la demanda; de la misma
- forma no se adapta a la evolución del mercado y el comportamiento de los
+ el impacto de los diferentes factores que afectan la demanda; de la misma
+ forma no se adapta a la evolución del mercado y al comportamiento de los
  consumidores 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -260,8 +259,8 @@ key "PDML17"
 La oportunidad que surge es poder implementar una técnica de pronóstico
  de demanda automática o con una mínima intervención manual.
  Esta técnica permitiría paliar las debilidades de los modelos actuales,
- y a su vez que integraría las características esenciales de las técnicas
- cualitativas y cuantitativas existentes.
+ y a su vez integraría características esenciales de las técnicas cualitativas
+ y cuantitativas existentes.
 \end_layout
 
 \begin_layout Standard
@@ -293,14 +292,14 @@ key "MCN2011"
 En otros ámbitos, la importancia del pronóstico es de igual relevancia.
  Según un estudio realizado sobre pronósticos de tráfico en proyectos de
  infraestructura de transporte con una muestra importante que cubrió 210
- proyectos en 14 países con un valor de U$$ 59.000 millones demostró que
- los pronosticadores realizan un trabajo pobre al realizar la estimación
- de la demanda de proyectos de infraestructura de transporte, para 9 de
- cada 10 proyectos ferroviarios, las previsiones de pasajeros fueron sobrestimad
-as con un promedio de 106%, mientras que para la mitad de los proyectos
- de carreteras, la diferencia entre el tráfico real y el previsto es ±20%.
- El resultado es un riesgo financiero sustancial que los tomadores de decisiones
- suelen ignorar o minimizar en detrimento del bienestar social y económico
+ proyectos en 14 países con una inversión de U$$ 59.000 millones demostró
+ que los pronosticadores realizaron un trabajo pobre de estimación de la
+ demanda, en 9 de cada 10 proyectos ferroviarios las previsiones de pasajeros
+ fueron sobrestimadas con un promedio del 106%, mientras que para la mitad
+ de los proyectos de carreteras la diferencia entre el tráfico real y el
+ previsto fue ±20%.
+ El resultado fue un riesgo financiero sustancial que los tomadores de decisione
+s suelen ignorar o minimizar en detrimento del bienestar social y económico
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -316,11 +315,34 @@ Planteamiento del Problema
 \end_layout
 
 \begin_layout Standard
-Dado un conjunto de productos que una empresa retail ofrece en venta, este
- trabajo aborda el problema del pronóstico de la demanda para la reposición
- de stock.
- Se considera que la empresa retail opera un stock cíclico, con períodos
- de reposición regulares y se analizan los productos que no son estacionales.
+Dado un conjunto de productos que la empresa retail 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+MARKETPLUS S.A
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ ofrece en venta, este trabajo aborda el problema del pronóstico de la demanda
+ para la reposición de stock.
+ Se considera que la empresa 
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+MARKETPLUS S.A
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+ opera con stock cíclico, períodos de reposición regulares y se analizan
+ los productos no estacionales.
 \end_layout
 
 \begin_layout Standard
@@ -328,13 +350,13 @@ En este contexto, este trabajo apuesta por una solución que automatice la
  toma de decisiones de reposición de stock, una técnica de pronóstico de
  la demanda basada en Business Intelligence y Machine Learning aplicadas
  en forma secuencial; que busca a través de los KPI, la opinión de un experto
- en compras y de los algoritmos de clasificación prever volúmenes eficientes
+ en compras y mediante algoritmos de clasificación prever volúmenes eficientes
  de productos para la reposición de stock.
- La primera etapa, a partir del histórico de movimientos de stock y de los
+ En la primera etapa, a partir del histórico de movimientos de stock y los
  detalles de ventas, el módulo de Business Intelligence obtiene los KPI
  asociados por producto y período.
  En la segunda etapa, estos datos son utilizados como entradas al módulo
- de clasificación para determinar los volúmenes de compras para el siguiente
+ de Machine Learning para determinar los volúmenes de compras para el siguiente
  periodo de ventas.
 \end_layout
 
