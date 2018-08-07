@@ -90,8 +90,8 @@ El objetivo de este capítulo es visualizar qué aspectos de Machine Learning
 
 \begin_layout Standard
 En lo que va de la Edad Contemporánea, el hombre siente fuertemente la necesidad
- de encontrar respuestas a ciertos aspectos de sus propias capacidades.
- Respuestas de cómo funciona el cerebro humano, cómo se van originando e
+ de encontrar respuestas a ciertos aspectos de sus propias capacidades,
+ respuestas de cómo funciona el cerebro humano, cómo se van originando e
  hilando los pensamientos, cómo se va adquiriendo el conocimiento, cómo
  la racionalidad está presente en las decisiones humanas, cuál es el mecanismo
  de toma de decisiones de la mente humana, cómo utiliza su inteligencia
@@ -4473,7 +4473,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename recursos/Curvas de aprendizaje2.png
+	filename recursos/Curvas de aprendizaje.v3.png
 	scale 50
 
 \end_inset

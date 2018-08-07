@@ -90,8 +90,8 @@ El objetivo de este capítulo es visualizar qué aspectos de Machine Learning
 
 \begin_layout Standard
 En lo que va de la Edad Contemporánea, el hombre siente fuertemente la necesidad
- de encontrar respuestas a ciertos aspectos de sus propias capacidades.
- Respuestas de cómo funciona el cerebro humano, cómo se van originando e
+ de encontrar respuestas a ciertos aspectos de sus propias capacidades,
+ respuestas de cómo funciona el cerebro humano, cómo se van originando e
  hilando los pensamientos, cómo se va adquiriendo el conocimiento, cómo
  la racionalidad está presente en las decisiones humanas, cuál es el mecanismo
  de toma de decisiones de la mente humana, cómo utiliza su inteligencia
@@ -4459,7 +4459,7 @@ reference "fig:Curvas-de-aprendizaje"
  El conjunto de prueba en cambio inicia con alto porcentaje de error con
  pocos datos, pero a medida que aumentan los datos en el conjunto de entrenamien
 to el error del conjunto de prueba disminuye significativamente.
- Por tanto, anta alta varianza es una posible solución aumentar el tamaño
+ Por tanto, ante alta varianza es una posible solución aumentar el tamaño
  de los datos.
  También se puede probar disminuyendo la complejidad del modelo.
 \end_layout
