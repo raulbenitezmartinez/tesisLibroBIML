@@ -85,9 +85,10 @@ Business Intelligence
 \begin_layout Standard
 En la actualidad Business Intelligence está siendo cada vez más adoptado
  por las organizaciones debido a la necesidad de los mandos superiores de
- contar con información rápida y precisa necesaria para la toma de decisiones
- y su importancia a nivel estratégico y operativo, en este capítulo se presenta
- los conceptos y una introducción al Business Intelligence 
+ contar con información rápida y precisa, necesaria para la toma de decisiones
+ y su importancia a nivel estratégico y operativo.
+ En este capítulo se presentan los conceptos y una introducción a Business
+ Intelligence 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Scheps2008"
@@ -112,18 +113,18 @@ Definición
 Business Intelligence no se trata ni de un producto ni de un sistema, es
  una arquitectura que engloba un conjunto de conceptos, técnicas de computación
  y herramientas para analizar y transformar los datos empresariales en informaci
-ón significativa y útil que permite ser de apoyo a las organizaciones en
+ón significativa y útil, que permite ser de apoyo a las organizaciones en
  la toma de decisiones y brindarles una visión estratégica, táctica y operativa
- más efectivas mediante un acceso fácil a los datos empresariales.
+ más efectivas, mediante un acceso fácil a los datos empresariales.
  Las tecnologías de Business Intelligence ofrecen vistas históricas, actuales
  y predictivas de las operaciones, son procesos que se extienden en el tiempo,
  capaces de manejar grandes volúmenes de datos que ayudan a identificar,
  crear y desarrollar nuevas estrategias de negocios para mejorar la competitivid
 ad.
  La era actual de las tecnologías de la información ha llevado a la necesidad
- de tener mejores, más rápidos y más eficientes métodos de extraer los datos
- de una organización, transformarlo en información y distribuirlo a las
- cadenas de mando.
+ de tener mejores, rápidos y eficientes métodos para extraer los datos de
+ una organización, transformarlo en información y distribuirlo a las cadenas
+ de mando.
  Business Intelligence responde a dicha necesidad 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -252,7 +253,7 @@ key "BICCI07"
 \end_layout
 
 \begin_layout Itemize
-Convertir datos en información, información en conocimiento y conocimiento
+Convertir datos en información, información en conocimiento, y el conocimiento
  en planes operativos o estratégicos.
 \end_layout
 
@@ -262,14 +263,14 @@ Facilitar la disponibilidad de información a los usuarios de negocios, que
 \end_layout
 
 \begin_layout Itemize
-Apoyar de forma sostenible y continuada a las organizaciones para mejorar
- su competitividad, ante el entorno de negocios cambiante de forma que puedan
+Apoyar de forma sostenible y continua a las organizaciones, para mejorar
+ su competitividad ante el entorno de negocios cambiante de forma que puedan
  adaptarse a él.
 \end_layout
 
 \begin_layout Itemize
 Ante la cantidad de información que va creciendo, disponer de más tiempo
- en analizarla, en vez de gastar mucho tiempo en prepararla, organizarla
+ para analizarla, en lugar de gastar mucho tiempo en prepararla, organizarla
  y estructurarla.
 \end_layout
 
@@ -365,7 +366,7 @@ Fuentes de Información
 \end_layout
 
 \begin_layout Standard
-Las fuentes de información representan el origen de los datos con la cual
+Las fuentes de información representan el origen de los datos con las cuales
  se alimenta de información al datawarehouse.
  Estas pueden provenir de diferentes sistemas como:
 \end_layout
@@ -818,7 +819,7 @@ key "KIM92"
 \end_layout
 
 \begin_layout Itemize
-El alcance de un datawarehouse puede ser bien un departamento o bien corporativo.
+El alcance de un datawarehouse puede ser a nivel de departamento o corporativo.
 \end_layout
 
 \begin_layout Itemize
@@ -848,10 +849,10 @@ key "CJ20"
 \end_layout
 
 \begin_layout Itemize
-Datawarehousing: es el proceso de extraer y filtrar datos de las operaciones
+Datawarehousing: es el proceso de extraer y filtrar datos de las operaciones,
  procedentes de los distintos sistemas de información operacionales y sistemas
  externos, para transformarlos, integrarlos y almacenarlos en un almacén
- de datos con el fin de acceder a ellos para dar soporte en el proceso de
+ de datos, con el fin de acceder a ellos para dar soporte al proceso de
  toma de decisiones.
 \end_layout
 
@@ -936,7 +937,7 @@ key "Kroenke2003"
  Un datawarehouse no debe seguir ese patrón de diseño.
  La idea principal es que en el datawarehouse la información esté almacenada
  con una estructura desnormalizada, para optimizar las consultas.
- Para ello se debe identificar, en la organización, los procesos de negocio,
+ Para ello se debe identificar en la organización los procesos de negocios,
  las vistas para el proceso de negocio y las medidas cuantificables asociadas
  a los mismos.
  Los elementos de un datawarehouse son 
@@ -954,7 +955,7 @@ key "CJ20"
 \series bold
 Tabla de hecho
 \series default
-: es la representación en el datawarehouse de los procesos de negocio de
+: es la representación en el datawarehouse de los procesos de negocios de
  la organización.
  A nivel de diseño es una tabla que permite guardar dos tipos de atributos
  diferenciados: 
@@ -1000,7 +1001,7 @@ Esquema en estrella:
  consiste en estructurar la información en procesos, vistas y métricas recordand
 o a una estrella.
  A nivel de diseño, consiste en una tabla de hechos en el centro para el
- hecho objeto de análisis y una o varias tablas de dimensión por cada punto
+ hecho objeto de análisis, y una o varias tablas de dimensión por cada punto
  de vista del análisis que participan en la descripción de ese hecho.
 \end_layout
 
@@ -1033,12 +1034,12 @@ description "Online Analytical Processing"
 \shape italic
 Online Analytical Processing
 \shape default
-), esta tecnología permite realizar un análisis multidimensional de un hecho
+), esta tecnología permite realizar un análisis multidimensional de un hecho,
  desde distintas perspectivas o dimensiones mediante consultas complejas
  que van desde pocas hasta docenas de operaciones de unión, filtrado, agrupación
  y agregación.
- El principal objetivo es la de agilizar la consulta de grandes cantidades
- de datos 
+ El principal objetivo es agilizar la consulta de grandes cantidades de
+ datos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Wrembel2006"
@@ -1222,9 +1223,9 @@ description "Hybrid Online Analytical Processing"
 \end_inset
 
  (Hybrid OLAP): es una combinación de las dos anteriores, permite almacenar
- parte de los datos en una base de datos multidimensional y otra parte de
- en una relacional.
- En la base de datos relacional se guardan cantidades mas grandes de información
+ parte de los datos en una base de datos multidimensional y otra parte en
+ una relacional.
+ En la base de datos relacional se guardan grandes cantidades de información
  detallada, mientras que en la multidimensional se almacenan datos menos
  detallados o agregados.
 \end_layout
@@ -1278,7 +1279,7 @@ Herramientas de Dashboard y Scorecard
 \shape default
 : Permiten a los usuarios finales ver información crítica para el rendimiento
  con un simple vistazo utilizando iconos gráficos y con la posibilidad de
- ver más detalle para analizar información detallada e informes, si lo desean.
+ analizar información detallada e informes.
 \end_layout
 
 \begin_layout Itemize
@@ -1289,8 +1290,8 @@ Herramientas de planificación, modelización y consolidación
 : Permite a los analistas y a los usuarios finales crear planes de negocio
  y simulaciones con la información de Business Intelligence.
  Pueden ser para elaborar la planificación, los presupuestos, las previsiones.
- Estas herramientas proveen a los dashboards y los scorecards con los objetivos
- y los umbrales de las métricas.
+ Estas herramientas proveen a los dashboards y scorecards con los objetivos
+ y umbrales de las métricas.
 \end_layout
 
 \begin_layout Itemize
@@ -1301,7 +1302,7 @@ Herramientas datamining
 : Permiten a estadísticos o analistas de negocio crear modelos estadísticos
  de las actividades de los negocios.
  Datamining es el proceso para descubrir e interpretar patrones desconocidos
- en la información mediante los cuales resolver problemas de negocio.
+ en la información mediante los cuales resolver problemas de negocios.
  Los usos más habituales del datamining son: segmentación, venta cruzada,
  sendas de consumo, clasificación, previsiones, optimizaciones, etc.
 \end_layout
@@ -1346,8 +1347,8 @@ la parálisis por el análisis
 \begin_inset Quotes erd
 \end_inset
 
- que ocurre cuando se pasa de no tener ninguna información a contar con
- decenas de indicadores y una de las características del entorno competitivo
+, que ocurre cuando se pasa de no tener ninguna información a contar con
+ decenas de indicadores, y una de las características del entorno competitivo
  actual es que se deben tomar decisiones de forma rápida y antes de que
  lo hagan los demás competidores 
 \begin_inset CommandInset citation
@@ -1363,12 +1364,11 @@ key "CMR13"
 En el capítulo 5 haremos uso de los conceptos, herramientas y tecnologías
  que nos provee Business Intelligence para obtener los datos que ayudarán
  a desarrollar una solución al problema de estudio sobre pronóstico de la
- demanda.
- Iniciaremos con una breve descripción de la fuente de información, el proceso
- ETL (Extracción, Transformación y Carga), la especificación del datawarehouse,
- la definición de los indicadores clave de rendimiento y finalmente el etiquetad
-o a cada tupla de indicadores que se transformarán en datos de entrada para
- el proceso de aprendizaje automático.
+ demanda, iniciaremos con una breve descripción de la fuente de información,
+ el proceso ETL (Extracción, Transformación y Carga), la especificación
+ del datawarehouse, la definición de los indicadores clave de rendimiento
+ y finalmente el etiquetado a cada tupla de indicadores que se transformarán
+ en datos de entrada para el proceso de aprendizaje automático.
 \end_layout
 
 \begin_layout Section
@@ -1393,11 +1393,11 @@ reference "Cuadro:3.1"
 
 \end_inset
 
- se puede ver algunas de las áreas en las que se puede implementar sistemas
+ se puede ver algunas de las áreas en las que se pueden implementar sistemas
  de Business Intelligence, en la primera columna se citan las áreas que
  utilizan con mayor frecuencia como: compañías comerciales, compañías de
  seguros, entidades financieras, telecomunicaciones y empresas de manufactura;
- en la segunda columna se expone algunos casos de aplicación como: análisis
+ en la segunda columna se exponen algunos casos de aplicación como: análisis
  de ventas, planificación de pedidos, análisis de clientes, gestión de créditos,
  etc.
 \end_layout
@@ -1791,9 +1791,9 @@ Resumen
 \begin_layout Standard
 
 \color black
-En el capítulo se introdujo los conceptos más relevantes de Business Intelligenc
-e.
- El término acuñado en 1989 por Howard Dressner consultor de Gartner Group,
+En el capítulo se introdujeron los conceptos más relevantes de Business
+ Intelligence.
+ El término acuñado en 1989 por Howard Dressner consultor de Gartner Group
  lo describe como un conjunto de conceptos y métodos para transformar los
  datos empresariales en información significativa y útil para mejorar las
  decisiones.
@@ -1842,15 +1842,15 @@ Los Indicadores Claves de Rendimiento, como lo dice el nombre se tratan
 \begin_layout Standard
 
 \color black
-Por último en el cuadro 
+Por último, en el cuadro 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "Cuadro:3.1"
 
 \end_inset
 
-, se resume algunas de las áreas de mayor aplicación de Business Intelligence,
- entre las cabe destacar: salud, educación, transporte, telecomunicaciones,
+ se resumen algunas de las áreas de mayor aplicación de Business Intelligence,
+ entre las que cabe destacar: salud, educación, transporte, telecomunicaciones,
  bancos, financieras, inventario, empresas retail.
 \end_layout
 
