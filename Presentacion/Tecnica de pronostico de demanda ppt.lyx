@@ -187,14 +187,14 @@ FP-UNA
 \begin_layout Date
 
 \size larger
-Julio 2018
+Agosto 2018
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
 
 \size normal
-Julio 2018
+Agosto 2018
 \end_layout
 
 \end_inset
@@ -413,55 +413,6 @@ Energía
 status open
 
 \begin_layout Plain Layout
-Principios de los Pronósticos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-Los pronósticos tienen los siguientes principios 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Chapman2006"
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Itemize
-Los pronósticos son imposibles de predecir de manera exacta.
-\end_layout
-
-\begin_layout Itemize
-Son más precisos para grupos o familias de artículos.
-\end_layout
-
-\begin_layout Itemize
-Son más precisos para periodos cortos.
-\end_layout
-
-\begin_layout Itemize
-Siempre incluye un error en la estimación.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
 Pronóstico de la Demanda en empresas retail
 \end_layout
 
@@ -472,17 +423,43 @@ Pronóstico de la Demanda en empresas retail
 
 \begin_deeper
 \begin_layout Itemize
-Manejo eficiente del stock
+Problemas principales:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Manejo eficiente del stock.
 \end_layout
 
 \begin_layout Itemize
-Sobre costos y ruptura de stock
+Sobrecostos y ruptura de stock.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Desafío: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Elaboración de pronósticos de demanda precisos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Dificultades:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Falta de confiabilidad de los pronósticos.
 \end_layout
 
 \begin_layout Itemize
-Desafío: Pronosticar eficientemente la demanda
+Siempre incluye un error en la estimación.
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Section
 
@@ -504,129 +481,34 @@ Motivación
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-La elaboración de pronósticos de demanda precisos es uno de los retos más
- importantes en empresas del tipo retail, determinar que sucederá en el
- futuro con el fin de tomar decisiones adecuadas es un problema que se presenta
- con frecuencia.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Motivación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
-Métodos cuantitativos: la variable ventas históricas 
+Métodos cuantitativos: la variable ventas históricas.
 \end_layout
 
 \begin_layout Itemize
-Métodos cualitativos: la experiencia del experto
+Métodos cualitativos: la experiencia del experto.
 \end_layout
 
 \begin_layout Itemize
 Estos métodos no son adaptativos (tipo de empresa, productos, sucursal,
- evolución del mercado, comportamiento de consumidores, etc).
+ ubicación geográfica, evolución del mercado, comportamiento de consumidores,
+ etc).
 \end_layout
 
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Motivación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 Implementar una técnica de pronóstico automática o con mínima intervención
- humana 
+ humana.
 \end_layout
 
 \begin_layout Itemize
-Paliar debilidades de adaptación de los métodos cuantitativos y cualitativos
- 
+Paliar debilidades de adaptación de los métodos cuantitativos y cualitativos,
+ incluyendo las buenas características de cada uno.
 \end_layout
 
 \begin_layout Itemize
-Incluyendo las buenas características de cada uno
+Las desviaciones normales oscilan entre el 5 y el 40 % de error.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -649,30 +531,23 @@ Motivación
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
-Las desviaciones normales oscilan entre el 5 y el 40 % de error.
+Según un estudio que cubrió 210 proyectos en 14 países con una inversión
+ de U$$ 59.000 millones demostró que los pronosticadores realizaron un trabajo
+ pobre de estimación de la demanda, en 9 de cada 10 proyectos ferroviarios
+ las previsiones de pasajeros fueron sobrestimadas con un promedio del 106%,
+ mientras que para la mitad de los proyectos de carreteras la diferencia
+ entre el tráfico real y el previsto fue ±20%.
  
 \end_layout
 
 \begin_layout Itemize
-Por familia de productos los errores son menore al 5 %.
+
+\series bold
+\color red
+Fukushima
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -686,21 +561,7 @@ Por familia de productos los errores son menore al 5 %.
 status open
 
 \begin_layout Plain Layout
-Consideraciones
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
+Objetivos
 \end_layout
 
 \end_inset
@@ -710,103 +571,19 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Dado un conjunto de productos de una empresa retail
-\end_layout
-
-\begin_layout Itemize
-Problema de pronóstico de la demanda para reposición de stock, por producto
- 
-\end_layout
-
-\begin_layout Itemize
-Stock cíclico 
-\end_layout
-
-\begin_layout Itemize
-Períodos de reposición regulares 
-\end_layout
-
-\begin_layout Itemize
-Productos no estacionales
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Objetivo general
-\end_layout
-
-\end_inset
-
-
+Objetivo General:
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 Desarrollar una nueva técnica de pronóstico de la demanda para la toma de
  decisión en la reposición de stock integrando herramientas y conceptos
  de Business Intelligence y Machine Learning
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Objetivos específicos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Itemize
+Objetivos Específicos:
 \end_layout
 
 \begin_deeper
@@ -2937,6 +2714,61 @@ Esquema general de solución.
 \begin_inset Separator plain
 \end_inset
 
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Consideraciones
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dado un conjunto de productos de una empresa retail
+\end_layout
+
+\begin_layout Itemize
+Problema de pronóstico de la demanda para reposición de stock, por producto
+ 
+\end_layout
+
+\begin_layout Itemize
+Stock cíclico 
+\end_layout
+
+\begin_layout Itemize
+Períodos de reposición regulares 
+\end_layout
+
+\begin_layout Itemize
+Productos no estacionales
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
 
 \end_layout
 

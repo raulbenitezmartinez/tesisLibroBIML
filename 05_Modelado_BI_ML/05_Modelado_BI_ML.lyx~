@@ -104,7 +104,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
+	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
 	scale 40
 
 \end_inset
@@ -640,7 +640,7 @@ Este indicador mide la cantidad de veces que el stock del producto se renueva
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-RS\,=\frac{Cantidad\,Vendida\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo-Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
+RS\,=\frac{Cantidad\,Vendida\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo+Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
 \end{equation}
 
 \end_inset
