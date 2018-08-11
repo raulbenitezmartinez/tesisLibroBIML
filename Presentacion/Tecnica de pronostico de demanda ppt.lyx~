@@ -481,20 +481,6 @@ Motivación
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 Métodos cuantitativos: la variable ventas históricas.
 \end_layout
@@ -524,7 +510,6 @@ Las desviaciones normales oscilan entre el 5 y el 40 % de error.
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -538,20 +523,6 @@ status open
 
 \begin_layout Plain Layout
 Motivación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -577,7 +548,6 @@ Según un estudio que cubrió 210 proyectos en 14 países con una inversión
 Fukushima
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -671,36 +641,7 @@ status open
 
 \series bold
 \size large
-ADMINISTRACIÓN DE COMPRAS
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Pronóstico de la demanda
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align block
-El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
- de bienes o servicios que los consumidores demandarán en el futuro basadas
- en el conocimiento del pasado.
+PRONÓSTICO DE LA DEMANDA
 \end_layout
 
 \end_deeper
@@ -740,13 +681,24 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-En la 
+Los términos 
+\shape italic
+compras, adquisiciones, administración de materiales, logística, abastecimiento,
+ administración del suministro y administración de la cadena de suministro
+\shape default
+ se utilizan de manera indistinta.
+\end_layout
+
+\begin_layout Standard
+El proceso de adquisición es el eje central de la actividad empresarial
+ de administración de compras o suministros.
+ En la 
 \emph on
 Administración de Compras
 \emph default
 , hay un componente vital dentro del proceso de adquisición que es la estimación
- de la cantidad o volumen de productos a adquirir para reponer el stock.
- Es ahí donde entra en juego el pronóstico de la demanda
+ de la cantidad o volumen de productos a adquirir para reponer el stock
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ADMINCA"
@@ -770,7 +722,7 @@ key "ADMINCA"
 status open
 
 \begin_layout Plain Layout
-Etapas
+Etapas del proceso de compra
 \end_layout
 
 \end_inset
@@ -799,6 +751,12 @@ Seleccionar el proveedor adecuado.
 
 \series bold
 Detallar la orden de compra y pactar el suministro.
+ 
+\series default
+\shape italic
+Es ahí donde entra en juego el pronóstico de la demanda
+\shape default
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -807,9 +765,58 @@ Recibir los productos.
 
 \begin_layout Enumerate
 Pagar a los proveedores.
- 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronóstico de la demanda
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Definición
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
+ de bienes o servicios que los consumidores demandarán en el futuro basadas
+ en el conocimiento del pasado 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Chapman2006"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -939,7 +946,7 @@ Métodos de pronósticos cuantitativos
 
 \begin_deeper
 \begin_layout Standard
-Estos modelos se basan en métodos de pronósticos estadísticos que a partir
+Estos modelos se basan en métodos de pronósticos estadísticos, que a partir
  de los datos históricos de ventas y suponiendo que las tendencias históricas
  continuarán, son capaces de anticipar la demanda futura 
 \begin_inset CommandInset citation
