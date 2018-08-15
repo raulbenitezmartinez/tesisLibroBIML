@@ -1567,6 +1567,8 @@ Cada organización debe definir sus propios KPI según la actividad realizada.
 
 \begin_layout Itemize
 Los KPI pueden no ser exclusivamente del tipo financiero.
+ Ejemplos: calidad del servicio, satisfacción de los clientes, capacitación
+ de los vendedores, etc.
 \end_layout
 
 \begin_layout Itemize
@@ -2014,7 +2016,70 @@ MACHINE LEARNING
 status open
 
 \begin_layout Plain Layout
-Machine Learning o Aprendizaje automático
+Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+En 1950 Alan Turing dio uno de los saltos más importantes al proponer el
+ enfoque de su 
+\begin_inset Quotes eld
+\end_inset
+
+Prueba de Turing
+\begin_inset Quotes erd
+\end_inset
+
+, donde un computador es considerado como agente inteligente si un evaluador
+ humano, sin interactuar con el computador, realiza preguntas y no es capaz
+ de distinguir si las respuestas vienen de una persona o del computador.
+\end_layout
+
+\begin_layout Enumerate
+Procesamiento del lenguaje natural.
+\end_layout
+
+\begin_layout Enumerate
+Representación del conocimiento.
+\end_layout
+
+\begin_layout Enumerate
+Razonamiento automático.
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Aprendizaje automático (Machine Learning).
+\end_layout
+
+\begin_layout Enumerate
+Visión computacional.
+\end_layout
+
+\begin_layout Enumerate
+Robótica.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Definición
 \end_layout
 
 \end_inset
@@ -2407,15 +2472,15 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Entrenamiento y prueba sobre los mismos datos.
-\end_layout
-
-\begin_layout Itemize
 Hold-out validation - Porcentaje de retención
 \end_layout
 
 \begin_layout Itemize
 K-fold cross-validation - Validación cruzada de K iteraciones
+\end_layout
+
+\begin_layout Itemize
+Bootstrap resampling
 \end_layout
 
 \end_deeper
@@ -2469,7 +2534,7 @@ Exactitud de la clasificación.
 \end_layout
 
 \begin_layout Itemize
-Error de clasificación.
+Precisión.
 \end_layout
 
 \begin_layout Itemize
@@ -2478,10 +2543,6 @@ Sensibilidad.
 
 \begin_layout Itemize
 Especificidad.
-\end_layout
-
-\begin_layout Itemize
-Precisión.
 \end_layout
 
 \begin_layout Itemize
@@ -2660,6 +2721,72 @@ Curvas de aprendizaje.
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Estado del arte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Estado del Arte 2.png
+	scale 44
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Estado del arte
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Estado del Arte.png
+	scale 46
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Section
 
