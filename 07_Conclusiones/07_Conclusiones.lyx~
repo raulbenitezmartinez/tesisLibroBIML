@@ -96,23 +96,23 @@ Este trabajo se enfocó en proponer una nueva técnica de pronóstico de la
  la oportunidad de desarrollar una nueva técnica de pronóstico.
  En esta nueva técnica se utilizan los Indicadores Claves de Rendimiento
  y apoyados en la experiencia de un experto en compras (gerente o encargado
- de compras) se realiza el modelado utilizando algoritmos de clasificación
- de Machine Learning.
+ de compras) se realiza la experimentación utilizando algoritmos de clasificació
+n de Machine Learning.
 \end_layout
 
 \begin_layout Standard
 De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
- y evaluando con un método ampliamente aceptado.
- Es importante considerar que para una implementacion real es primordial
+ y validando con un método ampliamente aceptado.
+ Es importante considerar que para una implementación real es primordial
  tener en cuenta los siguientes aspectos: el etiquetado multiclase puede
  ser reemplazado por valores continuos; el experto en compras debe realizar
  o guiar todo el proceso de etiquetado ya sea con valores continuos o discretos;
  para periodos de análisis cortos se obtuvieron buenos resultados, pero
  también podrían considerarse periodos de tiempo mas extensos; el conjunto
  de KPI seleccionados fueron en base a las limitaciones de la base de datos,
- es importante incluir otros KPI que consideren más aspectos como costos,
- marketing, clientes y otros.
+ es importante incluir otros KPI que consideren más aspectos como costos
+ de inventario, marketing, clientes y otros.
 \end_layout
 
 \begin_layout Standard
@@ -121,9 +121,10 @@ Como se mencionó en la introducción, para el sector retail la mayoría de
  como un grupo con errores menores al 5%, no obstante el pronóstico de la
  demanda de un producto puede generar errores considerablemente mayores
  con las técnicas vigentes.
- Con la técnica propuesta se logran errores menores al 5% por cada producto
- pretende que se convierta en una herramienta de apoyo en la toma de decisiones
- del gerente de compras en el proceso de reposición de stock.
+ Con la técnica propuesta se logran errores menores al 5% por cada producto.
+ Se pretende que esta técnica se convierta en una herramienta de apoyo en
+ la toma de decisiones del gerente de compras en el proceso de reposición
+ de stock.
 \end_layout
 
 \begin_layout Section
@@ -135,8 +136,8 @@ Este trabajo de grado brinda los siguientes resultados:
 \end_layout
 
 \begin_layout Itemize
-Definición de KPI adaptados a la medición del rendimiento de productos individua
-les.
+Definición de KPI adaptados para la medición del rendimiento de productos
+ individuales.
 \end_layout
 
 \begin_layout Itemize
@@ -187,7 +188,7 @@ Tuning parameters
 
 \begin_layout Itemize
 Incluir costos asociados a un producto (costos de almacenamiento, seguro,
- mantenimiento).
+ mantenimiento, etc.).
 \end_layout
 
 \begin_layout Itemize

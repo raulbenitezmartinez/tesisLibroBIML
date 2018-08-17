@@ -2780,7 +2780,7 @@ Estado del arte
 \align center
 \begin_inset Graphics
 	filename Estado del Arte.png
-	scale 50
+	scale 46
 
 \end_inset
 
@@ -2888,7 +2888,7 @@ Esquema general de solución.
 status open
 
 \begin_layout Plain Layout
-Consideraciones
+Delimitaciones
 \end_layout
 
 \end_inset
@@ -2912,29 +2912,37 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Dado un conjunto de productos de una empresa retail
+Conjunto de productos de la empresa retail 
+\shape italic
+MARKETPLUS S.A.
 \end_layout
 
 \begin_layout Itemize
-Problema de pronóstico de la demanda para reposición de stock, por producto
- 
+Problema de pronóstico de la demanda para reposición de stock, por producto.
 \end_layout
 
 \begin_layout Itemize
-Stock cíclico 
+Stock con períodos de reposiciones regulares.
 \end_layout
 
 \begin_layout Itemize
-Períodos de reposición regulares 
+No se consideran productos estacionales.
 \end_layout
 
 \begin_layout Itemize
-Productos no estacionales
+No incluyen datos relacionados a costos de inventario.
 \end_layout
 
 \end_deeper
 \end_deeper
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
 
 \end_layout
 
@@ -2965,11 +2973,11 @@ Fuentes de Información
 
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
 Base de datos relacional Oracle 10g.
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 Operaciones transaccionales de una empresa retail dedicada a la venta de
  productos alimenticios y artículos de limpieza.
@@ -3785,7 +3793,7 @@ Entrenamiento, testeo y evaluación
 status open
 
 \begin_layout Plain Layout
-Pseudocódigo para el proceso de clasificación.
+Validación
 \end_layout
 
 \end_inset
@@ -3794,6 +3802,74 @@ Pseudocódigo para el proceso de clasificación.
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+La validación se hace por el método Stratified k-fold Cross-Validation para
+ un valor de k igual a 10 y las métricas de desempeño consideradas son el
+ 
+\shape italic
+Porcentaje de Acierto
+\shape default
+ y la 
+\shape italic
+Estadística Kappa
+\shape default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Esquema K-fold Cross Validation.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Esquema general de iteraciones para 10-fold Cross-Validation.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Entrenamiento, testeo y evaluación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Block
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+Pseudocódigo para el proceso de clasificación.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout LyX-Code
 \paragraph_spacing single
 
@@ -3817,6 +3893,7 @@ for cada producto con sus instancias:
 establecer conjunto de entrenamiento;
 \end_layout
 
+\begin_deeper
 \begin_layout LyX-Code
 \paragraph_spacing single
 
@@ -3918,68 +3995,6 @@ Pseudocódigo para el proceso de Clasificación.
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Entrenamiento, testeo y evaluación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Evaluación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-La evaluación se hace por el método Stratified k-fold Cross-Validation para
- un valor de k igual a 10 y las métricas de desempeño consideradas son el
- 
-\shape italic
-Porcentaje de Acierto
-\shape default
- y la 
-\shape italic
-Estadística Kappa
-\shape default
-.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Esquema K-fold Cross Validation.png
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size scriptsize
-Esquema general de iteraciones para 10-fold Cross-Validation.
-\end_layout
-
-\end_deeper
 \begin_layout Section
 
 \shape italic
@@ -4576,27 +4591,30 @@ Impacto del periodo de análisis
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 
 \size small
-Una de las decisiones que se debe tomar es acerca del tiempo asignado al
- período de análisis.
- En este trabajo se analizaron tres períodos distintos: mensuales, quincenales
- y semanales con propósitos experimentales y por ser los más comunes en
- el ámbito comercial.
- En la práctica, la elección del período es una decisión estratégica a nivel
- gerencial que depende en gran medida del sector y tamaño de la empresa,
- tipos de productos y otros criterios.
+La elección del período es una decisión estratégica a nivel gerencial.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
 \size small
-En el presente trabajo, por tratarse de períodos de tiempo muy cercanos
- (1, 2 y 4 semanas) no se observan diferencias significativas en el porcentaje
- de aciertos.
- Otro factor a tener en cuenta es que para períodos de tiempo muy extensos
- (6, 12 meses) existe mayor incertidumbre en el pronóstico.
+Depende del sector y tamaño de la empresa, tipos de productos y otros criterios.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Por tratarse de períodos de tiempo muy cercanos (1, 2 y 4 semanas) no se
+ observan diferencias significativas en los porcentajes de aciertos.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Para períodos de tiempo muy extensos (6, 12 meses) existe mayor incertidumbre
+ en los pronósticos en general.
 \end_layout
 
 \end_deeper
@@ -4636,17 +4654,35 @@ Impacto del etiquetado
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
 
 \size small
-La técnica propuesta se trata de un sistema parametrizado, donde las variables
- principales son el período comercial y las etiquetas seleccionadas para
- la clasificación.
- Por cuestiones de practicidad y generalidad se eligió para este trabajo
- un enfoque de problema de clasificación.
- El etiquetado proporciona mayor flexibilidad al sistema y un entorno más
- controlable, en comparación a un sistema de asignación de valores continuos.
- La flexibilidad del sistema permitió emular la opinión del experto en compras
+La técnica propuesta se trata de un sistema parametrizado.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Las variables principales son el período comercial y las etiquetas.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Por practicidad y generalidad se eligió un enfoque de problema de clasificación.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+El etiquetado proporciona mayor flexibilidad al sistema y un entorno más
+ controlable.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+La flexibilidad del sistema permitió emular la opinión del experto en compras
  y encontrar una cantidad eficiente de etiquetas.
 \end_layout
 
@@ -4713,20 +4749,99 @@ Conclusiones
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-De acuerdo a los resultados experimentales se obtuvieron altas tasas de
- aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
- y evaluando con un método ampliamente aceptado.
- La técnica propuesta pretende que se convierta en una herramienta de apoyo
- en la toma de decisiones del gerente de compras en el proceso de reposición
+\begin_layout Itemize
+
+\size small
+Analizando las técnicas de pronóstico de la demanda actuales y el creciente
+ uso de BI, se encontró la oportunidad de desarrollar una nueva técnica
+ de pronóstico.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Esta nueva técnica utiliza KPI y se apoya en la experiencia del experto
+ en compras.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Se realiza la experimentación utilizando algoritmos de clasificación de
+ Machine Learning.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Se obtuvieron altas tasas de aciertos, haciendo pruebas exhaustivas con
+ varios algoritmos de clasificación y validando con un método ampliamente
+ aceptado.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Con la técnica propuesta se logran errores menores al 5% por cada producto.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Se pretende que esta técnica se convierta en una herramienta de apoyo en
+ la toma de decisiones del gerente de compras en el proceso de reposición
  de stock.
 \end_layout
 
 \end_deeper
-\begin_layout Frame
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
 
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Aporte de este trabajo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+Definición de KPI adaptados para la medición del rendimiento de productos
+ individuales.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Esquema básico y automatizado para el etiquetado de las instancias.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Integración de las herramientas Business Intelligence centrado en los Indicadore
+s Claves de Rendimiento y Machine Learning basado en aprendizaje supervisado.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Técnica de pronostico de la demanda de productos para reposición de stock.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -4791,7 +4906,7 @@ Tuning parameters
 
 \size small
 Incluir costos asociados a un producto (costos de almacenamiento, seguro,
- mantenimiento).
+ mantenimiento, etc.).
 \end_layout
 
 \begin_layout Itemize
