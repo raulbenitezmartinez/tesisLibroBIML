@@ -2127,19 +2127,6 @@ Machine Learning es un campo de estudio que da a las computadoras la capacidad
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Block
 
 \series bold
@@ -2268,10 +2255,6 @@ Recomender system en plataformas como Amazon, Netflix, Facebook.
 
 \begin_layout Itemize
 Reconocimiento automático de ciertas áreas en el mundo realizado por satélites.
-\begin_inset Separator plain
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -3870,6 +3853,7 @@ Pseudocódigo para el proceso de clasificación.
 
 \end_layout
 
+\begin_deeper
 \begin_layout LyX-Code
 \paragraph_spacing single
 
@@ -3893,7 +3877,6 @@ for cada producto con sus instancias:
 establecer conjunto de entrenamiento;
 \end_layout
 
-\begin_deeper
 \begin_layout LyX-Code
 \paragraph_spacing single
 
@@ -3977,13 +3960,6 @@ endfor;
 
 \size tiny
 endfor;
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size scriptsize
-Pseudocódigo para el proceso de Clasificación.
 \end_layout
 
 \end_deeper
@@ -4544,14 +4520,6 @@ endfor;
 \series bold
 \size tiny
 endfor;
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size scriptsize
-Pseudocódigo para el proceso de pronóstico de la demanda.
- 
 \end_layout
 
 \end_deeper
