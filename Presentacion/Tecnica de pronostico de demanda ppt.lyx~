@@ -288,7 +288,7 @@ Pronósticos
 
 \begin_deeper
 \begin_layout Standard
-Pronosticar ciertos eventos constituye una actividad por la cual el hombre:
+Pronosticar ciertos eventos constituye una acción por la cual el hombre:
 \end_layout
 
 \begin_layout Standard
@@ -305,7 +305,7 @@ status open
 \end_layout
 
 \begin_layout Itemize
-Siente una fascinación.
+Siente fascinación.
 \end_layout
 
 \begin_layout Itemize
@@ -313,7 +313,7 @@ Siente necesidad de realizarlo.
 \end_layout
 
 \begin_layout Itemize
-Tiene como una actividad cotidiana.
+Lo realiza diariamente.
 \end_layout
 
 \end_deeper
@@ -373,31 +373,15 @@ Bolsa de Valores
 \begin_layout Itemize
 
 \series bold
-Presupuestos gubernamentales
-\series default
-: pronóstico de ingresos.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Transportes
-\series default
-: pronóstico de cantidad de usuarios del transporte público.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Retail: pronóstico de ventas o demanda.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
 Energía
 \series default
 : pronóstico de consumo de energía eléctrica, gas natural.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Retail: pronóstico de la demanda de productos/servicios.
 \end_layout
 
 \end_deeper
@@ -423,12 +407,20 @@ Pronóstico de la Demanda en empresas retail
 
 \begin_deeper
 \begin_layout Itemize
-Problemas principales:
+Dificultades:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Manejo eficiente del stock.
+Falta de confiabilidad en los pronósticos en general.
+\end_layout
+
+\begin_layout Itemize
+Los pronósticos siempre incluyen un error de estimación.
+\end_layout
+
+\begin_layout Itemize
+Manejo ineficiente del stock.
 \end_layout
 
 \begin_layout Itemize
@@ -437,26 +429,12 @@ Sobrecostos y ruptura de stock.
 
 \end_deeper
 \begin_layout Itemize
-Desafío: 
+Desafío:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Elaboración de pronósticos de demanda precisos.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Dificultades:
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Falta de confiabilidad de los pronósticos.
-\end_layout
-
-\begin_layout Itemize
-Siempre incluye un error en la estimación.
+Elaborar pronósticos de la demanda precisos.
 \end_layout
 
 \end_deeper
@@ -482,31 +460,20 @@ Motivación
 
 \begin_deeper
 \begin_layout Itemize
-Métodos cuantitativos: la variable ventas históricas.
+Las desviaciones normales de los pronósticos oscilan entre el 5 y 40 %.
 \end_layout
 
 \begin_layout Itemize
-Métodos cualitativos: la experiencia del experto.
+Las limitaciones de los métodos cuantitativos y cualitativos en pronóstico
+ de la demanda.
 \end_layout
 
 \begin_layout Itemize
-Estos métodos no son adaptativos (tipo de empresa, productos, sucursal,
- ubicación geográfica, evolución del mercado, comportamiento de consumidores,
- etc).
+Implementar una técnica de pronóstico automática.
 \end_layout
 
 \begin_layout Itemize
-Implementar una técnica de pronóstico automática o con mínima intervención
- humana.
-\end_layout
-
-\begin_layout Itemize
-Paliar debilidades de adaptación de los métodos cuantitativos y cualitativos,
- incluyendo las buenas características de cada uno.
-\end_layout
-
-\begin_layout Itemize
-Las desviaciones normales oscilan entre el 5 y el 40 % de error.
+Paliar las debilidades de ambos métodos.
 \end_layout
 
 \end_deeper
@@ -532,22 +499,57 @@ Motivación
 
 \begin_deeper
 \begin_layout Itemize
-Según un estudio que cubrió 210 proyectos en 14 países con una inversión
- de U$$ 59.000 millones demostró que los pronosticadores realizaron un trabajo
- pobre de estimación de la demanda, en 9 de cada 10 proyectos ferroviarios
- las previsiones de pasajeros fueron sobrestimadas con un promedio del 106%,
- mientras que para la mitad de los proyectos de carreteras la diferencia
- entre el tráfico real y el previsto fue ±20%.
- 
+Según un estudio publicado en 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "doi:10.1080/01944360508976688"
+
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Basados en 210 proyectos de infraestructura vial, en 14 países.
+\end_layout
+
+\begin_layout Itemize
+Una inversión total de U$$ 59.000 millones.
+\end_layout
+
+\begin_layout Itemize
+En 9 de cada 10 proyectos ferroviarios las previsiones de pasajeros fueron
+ sobrestimadas con un promedio del 106%.
+\end_layout
+
+\begin_layout Itemize
+En 1 de cada 2 proyectos de carreteras la diferencia entre el tráfico real
+ y el previsto fue ±20%.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 
 \series bold
 \color red
-Fukushima
+El caso Fukushima
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+1
+\end_layout
+
+\begin_layout Itemize
+2
+\end_layout
+
+\begin_layout Itemize
+3
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -577,7 +579,7 @@ Objetivo General:
 \begin_deeper
 \begin_layout Itemize
 Desarrollar una nueva técnica de pronóstico de la demanda para la toma de
- decisión en la reposición de stock integrando herramientas y conceptos
+ decisión en la reposición de stock, integrando herramientas y conceptos
  de Business Intelligence y Machine Learning
 \end_layout
 
@@ -4520,14 +4522,6 @@ endfor;
 \series bold
 \size tiny
 endfor;
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size scriptsize
-Pseudocódigo para el proceso de pronóstico de la demanda.
- 
 \end_layout
 
 \end_deeper
