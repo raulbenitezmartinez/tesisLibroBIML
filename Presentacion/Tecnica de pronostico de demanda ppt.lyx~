@@ -1300,13 +1300,6 @@ Ejemplo: Mayor cantidad de ventas por las promociones sobre varios productos.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Una de las técnicas para resolver problemas de pronósticos causales es la
  
 \emph on
@@ -2088,9 +2081,8 @@ key "CMIAlan1950"
 \end_layout
 
 \begin_layout Standard
-Aunque hoy en día aún es válida la Prueba de Turing, el desafío no está
- en construir un agente inteligente total, sino mas bien buscar que un computado
-r tenga capacidades como 
+El desafío ya no está en construir un agente inteligente total, sino mas
+ bien buscar que un computador tenga capacidades como 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IAEModerno2"

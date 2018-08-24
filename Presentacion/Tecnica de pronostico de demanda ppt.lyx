@@ -1287,26 +1287,27 @@ Pronósticos causales
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Variables con relación causa-efecto
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Proyección de la cantidad de interés (la variable dependiente) sobre una
  o más cantidades (las variables independientes).
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Ejemplo: Mayor cantidad de ventas por las promociones sobre varios productos.
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace defskip
-\end_inset
 
-
-\end_layout
-
-\begin_layout Standard
+\size small
 Una de las técnicas para resolver problemas de pronósticos causales es la
  
 \emph on
@@ -1329,6 +1330,8 @@ y=a+bx
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Donde se consideran varios indicadores clave como variables independientes,
  la ecuación presenta la siguiente forma:
 \end_layout
@@ -1349,6 +1352,8 @@ y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}
 \end_layout
 
 \begin_layout Standard
+
+\size small
 El proceso de obtención de 
 \begin_inset Formula $a$
 \end_inset
