@@ -698,24 +698,35 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-Los términos 
+Términos utilizados indistintamente:
+\end_layout
+
+\begin_layout Itemize
+C
 \shape italic
-compras, adquisiciones, administración de materiales, logística, abastecimiento,
- administración del suministro y administración de la cadena de suministro
+ompras, adquisiciones, logística, abastecimiento.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Administración de materiales, administración del suministro y administración
+ de la cadena de suministro
 \shape default
- se utilizan de manera indistinta.
+.
 \end_layout
 
 \begin_layout Standard
-El proceso de adquisición es el eje central de la actividad empresarial
- de administración de compras o suministros.
- En la 
-\emph on
-Administración de Compras
-\emph default
-, hay un componente vital dentro del proceso de adquisición que es la estimación
- de la cantidad o volumen de productos a adquirir para reponer el stock
- 
+Administración de compras
+\end_layout
+
+\begin_layout Itemize
+El proceso de adquisición es el eje central de esta actividad empresarial.
+\end_layout
+
+\begin_layout Itemize
+Estimación de la cantidad o volumen de productos a adquirir para reponer
+ el stock 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ADMINCA"
@@ -821,9 +832,9 @@ Definición
 
 \begin_deeper
 \begin_layout Standard
-El pronóstico de la demanda es una técnica utilizada para estimar la cantidad
- de bienes o servicios que los consumidores demandarán en el futuro basadas
- en el conocimiento del pasado 
+Técnica utilizada para estimar la cantidad de bienes o servicios que los
+ consumidores demandarán en el futuro, basadas en el conocimiento del pasado
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Chapman2006"
@@ -887,8 +898,8 @@ Métodos de pronósticos cualitativos
 
 \begin_deeper
 \begin_layout Standard
-Son pronósticos subjetivos porque intervienen factores como la experiencia,
- intuición o emociones del que toma la decisión 
+Son pronósticos subjetivos ya que intervienen factores como: experiencia,
+ intuición o emociones 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "GPO2011"
@@ -936,10 +947,6 @@ Encuesta en el mercado de consumo
 Método Delphi
 \end_layout
 
-\begin_layout Itemize
-Analogía de productos similares
-\end_layout
-
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -963,18 +970,30 @@ Métodos de pronósticos cuantitativos
 
 \begin_deeper
 \begin_layout Standard
-Estos modelos se basan en métodos de pronósticos estadísticos, que a partir
- de los datos históricos de ventas y suponiendo que las tendencias históricas
- continuarán, son capaces de anticipar la demanda futura 
+Estos modelos se basan en 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
 
 \end_inset
 
-.
- El pronóstico de la demanda de productos es sólo una aplicación importante
- de estos métodos.
+:
+\end_layout
+
+\begin_layout Itemize
+Métodos de pronósticos estadísticos.
+\end_layout
+
+\begin_layout Itemize
+Datos históricos de ventas.
+\end_layout
+
+\begin_layout Itemize
+Las tendencias históricas continuarán.
+\end_layout
+
+\begin_layout Itemize
+Capaces de anticipar la demanda futura.
 \end_layout
 
 \begin_layout Standard
@@ -1267,10 +1286,17 @@ Pronósticos causales
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-El pronóstico causal obtiene una proyección de la cantidad de interés (la
- variable dependiente) relacionándola directamente con una o más cantidades
- (las variables independientes).
+\begin_layout Itemize
+Variables con relación causa-efecto
+\end_layout
+
+\begin_layout Itemize
+Proyección de la cantidad de interés (la variable dependiente) sobre una
+ o más cantidades (las variables independientes).
+\end_layout
+
+\begin_layout Itemize
+Ejemplo: Mayor cantidad de ventas por las promociones sobre varios productos.
 \end_layout
 
 \begin_layout Standard
@@ -1303,8 +1329,8 @@ y=a+bx
 \end_layout
 
 \begin_layout Standard
-Para problemas donde se consideran varios indicadores clave como variables
- independientes, la ecuación presenta la siguiente forma:
+Donde se consideran varios indicadores clave como variables independientes,
+ la ecuación presenta la siguiente forma:
 \end_layout
 
 \begin_layout Standard
@@ -1323,7 +1349,7 @@ y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}
 \end_layout
 
 \begin_layout Standard
-Donde el proceso de obtención de 
+El proceso de obtención de 
 \begin_inset Formula $a$
 \end_inset
 
@@ -1331,7 +1357,7 @@ Donde el proceso de obtención de
 \begin_inset Formula $b_{1},b_{2},...,b_{n}$
 \end_inset
 
- es también por el método de 
+ puede ser también por el método de 
 \emph on
 mínimos cuadrados
 \emph default
@@ -2043,8 +2069,7 @@ Machine Learning
 
 \begin_deeper
 \begin_layout Standard
-En 1950 Alan Turing dio uno de los saltos más importantes al proponer el
- enfoque de su 
+La 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2052,9 +2077,26 @@ Prueba de Turing
 \begin_inset Quotes erd
 \end_inset
 
-, donde un computador es considerado como agente inteligente si un evaluador
- humano, sin interactuar con el computador, realiza preguntas y no es capaz
- de distinguir si las respuestas vienen de una persona o del computador.
+ (Alan Turing 1950) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMIAlan1950"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+El desafío ya no está en construir un agente inteligente total, sino mas
+ bien buscar que un computador tenga capacidades como 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IAEModerno2"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Enumerate
@@ -2124,7 +2166,7 @@ status open
 \begin_layout Standard
 
 \series bold
-Arthur Samuel define
+Arthur Samuel define (1959)
 \series default
  
 \begin_inset CommandInset citation
@@ -2140,7 +2182,7 @@ key "Arthur1959"
 
 \shape italic
 Machine Learning es un campo de estudio que da a las computadoras la capacidad
- de aprender a resolver problemas sin ser explícitamente programados.
+ de aprender a resolver problemas, sin ser explícitamente programadas.
 \end_layout
 
 \end_deeper
@@ -2163,16 +2205,15 @@ status open
 \begin_layout Standard
 
 \series bold
-Otra definición propuesta por Tom Mitchell:
+Definición propuesta por Tom Mitchell (1998):
 \end_layout
 
 \begin_layout Standard
 
 \shape italic
-Problema de aprendizaje bien planteado: se dice que un programa de computadora
- aprende de la experiencia E con respecto a alguna tarea T y alguna medida
- de rendimiento P, si su desempeño en T, medido por P, mejora con la experiencia
- E.
+Se dice que un programa de computadora aprende de la experiencia E con respecto
+ a alguna tarea T y alguna medida de rendimiento P, si su desempeño en T,
+ medido por P, mejora con la experiencia E.
 \end_layout
 
 \end_deeper
@@ -2254,24 +2295,15 @@ Kinect para Xbox 360.
 \end_layout
 
 \begin_layout Itemize
-Voice reconigtion.
+Reconocimiento de voz de Google.
 \end_layout
 
 \begin_layout Itemize
-La tecnología del habla y el campo relacionado del reconocimiento de caracteres
- manuscritos.
+Reconocimiento de caracteres manuscritos.
 \end_layout
 
 \begin_layout Itemize
-Motores de búsqueda.
-\end_layout
-
-\begin_layout Itemize
-Recomender system en plataformas como Amazon, Netflix, Facebook.
-\end_layout
-
-\begin_layout Itemize
-Reconocimiento automático de ciertas áreas en el mundo realizado por satélites.
+Sistemas de recomenadación en Amazon, Netflix, Facebook.
 \end_layout
 
 \end_deeper
