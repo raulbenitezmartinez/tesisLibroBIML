@@ -531,18 +531,25 @@ En 1 de cada 2 proyectos de carreteras la diferencia entre el tráfico real
 \end_deeper
 \begin_layout Itemize
 
-\series bold
-\color red
-El caso Fukushima (año 2011)
+\color black
+El caso Fukushima 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Stacey2015"
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-El método de pronóstico de terremotos fue ARIMA, el modelo estaba sobreajustado.
+El método de pronóstico de terremotos fuertes fue un modelo de regresión
+ lineal, con datos de los últimos 400 años.
 \end_layout
 
 \begin_layout Itemize
-El pronóstico indicaba que cada 10.000 años ocurriría un terremoto de 9 grados.
+El modelo indicaba que cada 13.000 años ocurriría un terremoto de 9 grados.
 \end_layout
 
 \begin_layout Itemize
@@ -551,7 +558,8 @@ La planta nuclear de Fukushima fue construida para soportar un terremoto
 \end_layout
 
 \begin_layout Itemize
-El pronóstico falló ya que luego de 300 años ocurrió el terremoto de 9 grados.
+El pronóstico falló debido a un sobreajuste del modelo, ya que luego de
+ 300 años ocurrió el terremoto de 9 grados.
 \end_layout
 
 \end_deeper
@@ -608,11 +616,12 @@ Realizar el proceso de etiquetado y obtener las instancias de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
-Realizar el proceso de entrenamiento con los distintos clasificadores.
+Realizar el proceso de entrenamiento y validación con los distintos clasificador
+es.
 \end_layout
 
 \begin_layout Itemize
-Evaluar el rendimiento de los distintos clasificadores entrenados.
+Evaluar y seleccionar los mejores clasificadores.
 \end_layout
 
 \end_deeper
