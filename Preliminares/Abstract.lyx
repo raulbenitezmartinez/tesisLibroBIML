@@ -83,7 +83,24 @@ Abstract
 \end_layout
 
 \begin_layout Standard
-aqui va el abstrac en ingles
+Predicting certain events is an activity for which the human being always
+ felt fascination and need to do it.
+ Currently, one of these events is related to companies and is to forecast
+ the demand for sales for a future period, which in turn represents one
+ of the most important challenges facing an organization.
+ This demand forecast will reduce the uncertainty of the Purchasing Manager
+ at the time of making decisions about the volume of products to acquire
+ for the replacement of stock.
+ This thesis proposes a new forecasting technique based on the integration
+ of Business Intelligence and Machine Learning tools.
+ The experiments indicate that the proposed technique achieves promising
+ results and this new technique can become a solid support tool for decision
+ making.
+\end_layout
+
+\begin_layout Standard
+Keywords: Forecasting, Retail, Purchasing, Business Intelligence, KPI, Machine
+ Learning
 \end_layout
 
 \end_body
