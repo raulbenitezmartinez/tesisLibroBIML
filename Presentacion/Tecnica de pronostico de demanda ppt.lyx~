@@ -533,20 +533,25 @@ En 1 de cada 2 proyectos de carreteras la diferencia entre el tráfico real
 
 \series bold
 \color red
-El caso Fukushima
+El caso Fukushima (año 2011)
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-1
+El método de pronóstico de terremotos fue ARIMA, el modelo estaba sobreajustado.
 \end_layout
 
 \begin_layout Itemize
-2
+El pronóstico indicaba que cada 10.000 años ocurriría un terremoto de 9 grados.
 \end_layout
 
 \begin_layout Itemize
-3
+La planta nuclear de Fukushima fue construida para soportar un terremoto
+ de 8.6 grados.
+\end_layout
+
+\begin_layout Itemize
+El pronóstico falló ya que luego de 300 años ocurrió el terremoto de 9 grados.
 \end_layout
 
 \end_deeper
@@ -590,11 +595,12 @@ Objetivos Específicos:
 
 \begin_deeper
 \begin_layout Itemize
-Reportar las principales soluciones que abordan el problema.
+Reportar las principales soluciones que abordan el problema de pronóstico
+ de la demanda.
 \end_layout
 
 \begin_layout Itemize
-Aplicar el proceso de Business Intelligence para obtener los KPI.
+Realizar el proceso de Business Intelligence para obtener los KPI.
 \end_layout
 
 \begin_layout Itemize
