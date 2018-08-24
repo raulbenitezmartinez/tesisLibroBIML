@@ -970,7 +970,7 @@ Métodos de pronósticos cuantitativos
 
 \begin_deeper
 \begin_layout Standard
-Estos modelos se basan en 
+Características de estos métodos 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -985,15 +985,15 @@ Métodos de pronósticos estadísticos.
 \end_layout
 
 \begin_layout Itemize
-Datos históricos de ventas.
+Basados en datos históricos.
 \end_layout
 
 \begin_layout Itemize
-Las tendencias históricas continuarán.
+Suposición que las tendencias históricas continuarán.
 \end_layout
 
 \begin_layout Itemize
-Capaces de anticipar la demanda futura.
+Son capaces de anticipar la demanda futura.
 \end_layout
 
 \begin_layout Standard
