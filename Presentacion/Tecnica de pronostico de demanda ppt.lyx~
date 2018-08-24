@@ -608,11 +608,12 @@ Realizar el proceso de etiquetado y obtener las instancias de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
-Realizar el proceso de entrenamiento con los distintos clasificadores.
+Realizar el proceso de entrenamiento y validación con los distintos clasificador
+es.
 \end_layout
 
 \begin_layout Itemize
-Evaluar el rendimiento de los distintos clasificadores entrenados.
+Evaluar y seleccionar los mejores clasificadores.
 \end_layout
 
 \end_deeper
