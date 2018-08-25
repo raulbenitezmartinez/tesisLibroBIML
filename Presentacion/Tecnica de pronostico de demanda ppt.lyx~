@@ -1430,7 +1430,7 @@ Business Intelligence
 status open
 
 \begin_layout Plain Layout
-
+The Datawarehouse Institute propone la definicion:
 \end_layout
 
 \end_inset
@@ -3045,7 +3045,7 @@ nte cada categoría.
 status open
 
 \begin_layout Plain Layout
-Componentes de los errores de predicción.
+Componentes de los errores de predicción
 \end_layout
 
 \end_inset
@@ -3101,6 +3101,28 @@ Ejemplo: calibraciones defectuosas en sensores de medición.
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Componentes de los errores de predicción
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \size small
