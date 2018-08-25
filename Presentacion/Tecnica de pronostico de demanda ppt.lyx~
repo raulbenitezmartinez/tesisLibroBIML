@@ -2434,7 +2434,7 @@ Unsupervised Learning
 \begin_layout Itemize
 
 \size small
-Variables de entrada 
+Hay variables de entrada 
 \begin_inset Formula $(X)$
 \end_inset
 
@@ -2479,13 +2479,13 @@ Reinforcement Learning
 \begin_layout Itemize
 
 \size small
-La más general entre las tres categorías.
+El más general entre las tres categorías.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Se aprende cómo se comporta el entorno mediante recompensas (
+Aprende cómo se comporta el entorno mediante recompensas (
 \shape italic
 refuerzos
 \shape default
@@ -2495,27 +2495,15 @@ refuerzos
 \begin_layout Itemize
 
 \size small
-El objetivo principal es aprender la función de valor que ayude a maximizar
- la señal de recompensa y así optimizar las políticas.
+El objetivo es aprender la función de valor que maximice la señal de recompensa
+ y así optimice sus políticas.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Los tres métodos principales son: la Programación Dinámica (
-\shape italic
-Dynamic Programming
-\shape default
- 
-\shape italic
-o DP
-\shape default
-), los métodos de Monte Carlo y el aprendizaje de Diferencias Temporales
- (
-\shape italic
-Temporal-Difference Learning o TD
-\shape default
-) 
+Los tres métodos principales son: Programación Dinámica, los métodos de
+ Monte Carlo y el aprendizaje de Diferencias Temporales 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "RLIntroduccion1998"
@@ -2549,6 +2537,8 @@ Algoritmos de aprendizaje automático
 
 \begin_deeper
 \begin_layout Standard
+
+\size small
 Los algoritmos de aprendizaje automático se pueden agrupar según la similaridad
  en términos de su forma o función.
  No hay un consenso general de cómo agrupar los algoritmos de Machine Learning
@@ -2600,6 +2590,8 @@ Clasificación multiclase
 
 \begin_deeper
 \begin_layout Standard
+
+\size small
 Dado un patrón 
 \begin_inset Formula $x$
 \end_inset
@@ -2617,36 +2609,50 @@ Dado un patrón
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Para resolver problemas de clasificación multiclase, es necesario conocer
  los componentes esenciales que la forman:
 \end_layout
 
 \begin_layout Itemize
-Ejemplos o instancias: cada instancia es un ejemplo individual e independiente
- del concepto que se debe aprender.
+
+\size small
+Instancias: cada instancia es un ejemplo individual e independiente del
+ concepto que se debe aprender.
 \end_layout
 
 \begin_layout Itemize
-Atributos o características: las instancias son caracterizadas mediante
- los valores de un conjunto predeterminado de atributos..
+
+\size small
+Atributos: las instancias son caracterizadas mediante los valores de un
+ conjunto predeterminado de atributos..
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Etiquetas: los atributos nominales a veces se llaman categorizados, enumerados
  o discretos.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Conjunto de entrenamiento: el grupo de ejemplos utilizados en el proceso
  de entrenamiento de los algoritmos de aprendizaje automático.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Conjunto de prueba: conjunto de datos que no desempeñó ningún papel en la
  formación del clasificador.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Algoritmos de clasificación multiclase: algoritmos de machine learning que
  soportan problemas de clasificación multiclase.
 \end_layout
@@ -2674,46 +2680,64 @@ Técnicas de evaluación para aprendizaje supervisado
 
 \begin_deeper
 \begin_layout Standard
+
+\size small
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Hold-out validation - Porcentaje de retención
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Un conjunto de entrenamiento (generalmente el 70%) y un conjunto de prueba
  (el otro 30%).
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Puede contribuir a una evaluación imparcial.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
+
+\size small
 K-fold cross-validation - Validación cruzada de K iteraciones
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Dividir los datos en un número de particiones iguales, con 10 se obtiene
  una buena estimación de error.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Cada modelo ha sido entrenado y probado en un subconjunto diferente de datos.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Se combinan estos modelos y se promedian sus pesos para estimar un modelo
  predictivo final.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
+
+\size small
 Bootstrap resampling
 \end_layout
 
@@ -2739,40 +2763,275 @@ Métricas de desempeño para problemas de clasificación
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Porcentaje de acierto.
+\begin_layout Standard
+
+\size small
+Para predecir el rendimiento de un clasificador necesitamos evaluar su tasa
+ de error en un conjunto de datos que no desempeñó ningún papel en la formación
+ del clasificador.
 \end_layout
 
 \begin_layout Itemize
-Matriz de confusión.
+
+\size small
+Porcentaje de acierto: es la métrica más fácil y simple, pero no dice sobre
+ la distribución subyacente de los valores de respuesta, ni dice qué "tipos"
+ de errores se está cometiendo.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Porcentaje\,de\,acierto=\frac{Número\,de\,predicciones\,correctas}{Número\,total\,de\,predicciones\,realizadas}x100
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+Matriz de confusión
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/04_Machine_Learning/recursos/confusion_matrix_1.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size scriptsize
+Matriz de confusión para clasificación binaria.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Métricas de desempeño para problemas de clasificación
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Exactitud de la clasificación.
+
+\size small
+Exactitud: ¿con qué frecuencia es correcto el clasificador?.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Exactitud=\frac{TP+TN}{TP+TN+FP+FN}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Precisión.
+
+\size small
+Precisión: ¿Cuán 
+\begin_inset Quotes eld
+\end_inset
+
+preciso
+\begin_inset Quotes erd
+\end_inset
+
+ es el clasificador al predecir instancias positivas?.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Precisión=\frac{TP}{TP+FP}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Sensibilidad.
+
+\size small
+Sensibilidad: ¿Qué tan 
+\begin_inset Quotes eld
+\end_inset
+
+sensible
+\begin_inset Quotes erd
+\end_inset
+
+ es el clasificador para detectar instancias positivas?.
+ También conocido como True Positive Rate or Recall.
 \end_layout
 
-\begin_layout Itemize
-Especificidad.
-\end_layout
+\begin_layout Standard
 
-\begin_layout Itemize
-Medida F.
-\end_layout
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Sensibilidad=\frac{TP}{TP+FN}
+\end{equation}
 
-\begin_layout Itemize
-Estadística Kappa.
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Métricas de desempeño para problemas de clasificación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+Especificidad: ¿Qué tan 
+\begin_inset Quotes eld
+\end_inset
+
+específico
+\begin_inset Quotes erd
+\end_inset
+
+ (o 
+\begin_inset Quotes eld
+\end_inset
+
+selectivo
+\begin_inset Quotes erd
+\end_inset
+
+) es el clasificador en predecir las instancias negativas?.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Especificidad=\frac{TN}{TN+FP}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Medida F: puede interpretarse como un promedio ponderado de la precisión
+ y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Estadística Kappa: 
+\begin_inset Formula $Pr\left(a\right)$
+\end_inset
+
+ es el acuerdo observado relativo entre los observadores y 
+\begin_inset Formula $Pr\left(e\right)$
+\end_inset
+
+ es la probabilidad hipotética de acuerdo al azar utilizando los datos observado
+s para calcular las probabilidades de que cada observador clasifique aleatoriame
+nte cada categoría.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\size tiny
+\color brown
+\begin_inset Formula 
+\begin{equation}
+\kappa=\frac{Pr\left(a\right)-Pr\left(e\right)}{1-Pr\left(e\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2796,11 +3055,15 @@ Componentes de los errores de predicción.
 
 \begin_deeper
 \begin_layout Standard
+
+\size small
 Los errores de predicción en los modelos de aprendizaje automático tienen
  tres componentes:
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Ruido (
 \shape italic
 Noise
@@ -2810,6 +3073,8 @@ Noise
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Representa el componente 
 \begin_inset Quotes eld
 \end_inset
@@ -2822,17 +3087,23 @@ irreducible
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Es una distorsión de los datos originales, presente en casi cualquier problema
  del mundo real.
  
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Ejemplo: calibraciones defectuosas en sensores de medición.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
+
+\size small
 Sesgo (
 \shape italic
 Bias
@@ -2842,11 +3113,15 @@ Bias
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Sesgo en la estimación: una mala estimación de su exactitud sobre futuros
  ejemplos.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Sesgo conocido como 
 \begin_inset Quotes eld
 \end_inset
@@ -2860,12 +3135,16 @@ subajuste
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 En estadística: la diferencia al cuadrado entre el verdadero valor y el
  valor esperado.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
+
+\size small
 Varianza (
 \shape italic
 Variance
@@ -2875,11 +3154,15 @@ Variance
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 La función seleccionada aprende casi perfectamente la tendencia de los datos
  del ejemplo de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Varianza conocida como 
 \begin_inset Quotes eld
 \end_inset
@@ -2889,10 +3172,11 @@ sobreajuste
 \end_inset
 
 : falla en la generalización con datos nuevos del futuro.
- 
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Cuanto menor es el conjunto de ejemplos de prueba, mayor es la varianza
  esperada 
 \begin_inset CommandInset citation
