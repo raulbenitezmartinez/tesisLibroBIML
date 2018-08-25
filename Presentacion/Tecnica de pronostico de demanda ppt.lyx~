@@ -970,7 +970,7 @@ Métodos de pronósticos cuantitativos
 
 \begin_deeper
 \begin_layout Standard
-Estos modelos se basan en 
+Características de estos métodos 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -985,15 +985,15 @@ Métodos de pronósticos estadísticos.
 \end_layout
 
 \begin_layout Itemize
-Datos históricos de ventas.
+Basados en datos históricos.
 \end_layout
 
 \begin_layout Itemize
-Las tendencias históricas continuarán.
+Suposición que las tendencias históricas continuarán.
 \end_layout
 
 \begin_layout Itemize
-Capaces de anticipar la demanda futura.
+Son capaces de anticipar la demanda futura.
 \end_layout
 
 \begin_layout Standard
@@ -1287,19 +1287,27 @@ Pronósticos causales
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Variables con relación causa-efecto
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Proyección de la cantidad de interés (la variable dependiente) sobre una
  o más cantidades (las variables independientes).
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Ejemplo: Mayor cantidad de ventas por las promociones sobre varios productos.
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Una de las técnicas para resolver problemas de pronósticos causales es la
  
 \emph on
@@ -1322,6 +1330,8 @@ y=a+bx
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Donde se consideran varios indicadores clave como variables independientes,
  la ecuación presenta la siguiente forma:
 \end_layout
@@ -1342,6 +1352,8 @@ y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}
 \end_layout
 
 \begin_layout Standard
+
+\size small
 El proceso de obtención de 
 \begin_inset Formula $a$
 \end_inset
