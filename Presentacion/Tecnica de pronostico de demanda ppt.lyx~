@@ -970,7 +970,7 @@ Métodos de pronósticos cuantitativos
 
 \begin_deeper
 \begin_layout Standard
-Estos modelos se basan en 
+Características de estos métodos 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -985,15 +985,15 @@ Métodos de pronósticos estadísticos.
 \end_layout
 
 \begin_layout Itemize
-Datos históricos de ventas.
+Basados en datos históricos.
 \end_layout
 
 \begin_layout Itemize
-Las tendencias históricas continuarán.
+Suposición que las tendencias históricas continuarán.
 \end_layout
 
 \begin_layout Itemize
-Capaces de anticipar la demanda futura.
+Son capaces de anticipar la demanda futura.
 \end_layout
 
 \begin_layout Standard
@@ -1287,19 +1287,27 @@ Pronósticos causales
 
 \begin_deeper
 \begin_layout Itemize
+
+\size small
 Variables con relación causa-efecto
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Proyección de la cantidad de interés (la variable dependiente) sobre una
  o más cantidades (las variables independientes).
 \end_layout
 
 \begin_layout Itemize
+
+\size small
 Ejemplo: Mayor cantidad de ventas por las promociones sobre varios productos.
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Una de las técnicas para resolver problemas de pronósticos causales es la
  
 \emph on
@@ -1322,6 +1330,8 @@ y=a+bx
 \end_layout
 
 \begin_layout Standard
+
+\size small
 Donde se consideran varios indicadores clave como variables independientes,
  la ecuación presenta la siguiente forma:
 \end_layout
@@ -1342,6 +1352,8 @@ y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}
 \end_layout
 
 \begin_layout Standard
+
+\size small
 El proceso de obtención de 
 \begin_inset Formula $a$
 \end_inset
@@ -2312,7 +2324,7 @@ Sistemas de recomenadación en Amazon, Netflix, Facebook.
 status open
 
 \begin_layout Plain Layout
-Formas de aprendizaje automático
+Tipos de aprendizaje automático
 \end_layout
 
 \end_inset
@@ -2322,16 +2334,84 @@ Formas de aprendizaje automático
 
 \begin_deeper
 \begin_layout Standard
-Los algoritmos de aprendizaje automático se pueden agrupar según la forma
- en que se realiza el aprendizaje:
+
+\size small
+Los algoritmos de aprendizaje automático se pueden agrupar conforme a la
+ información que poseen o que pueden llegar a poseer o el tipo de retroalimentac
+ión disponible para el aprendizaje:
 \end_layout
 
-\begin_layout Block
-\begin_inset Argument 2
+\begin_layout Itemize
+
+\size small
+Aprendizaje supervisado (
+\shape italic
+Supervised Learning
+\shape default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+Variables de entrada 
+\begin_inset Formula $(X)$
+\end_inset
+
+ y una variable de salida 
+\begin_inset Formula $(Y)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Algoritmo y un conjunto de datos de entrenamiento que constituyen las respuestas
+ correctas conocidas o 
+\begin_inset Quotes eld
+\end_inset
+
+ejemplos
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Aprender una función 
+\begin_inset Formula $Y=f(X)$
+\end_inset
+
+ que mapee la salida desde la entrada lo mejor que se pueda.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Problemas del tipo clasificación o regresión.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-
+Tipos de aprendizaje automático
 \end_layout
 
 \end_inset
@@ -2341,15 +2421,108 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Aprendizaje supervisado.
+
+\size small
+Aprendizaje no supervisado (
+\shape italic
+Unsupervised Learning
+\shape default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+Variables de entrada 
+\begin_inset Formula $(X)$
+\end_inset
+
+ pero no hay correspondiente variable de salida 
+\begin_inset Formula $(Y)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
-Aprendizaje no supervisado.
+
+\size small
+Algoritmo y datos de entrenamiento (ejemplos) que no tienen respuestas correctas
+ conocidas.
 \end_layout
 
 \begin_layout Itemize
-Aprendizaje por refuerzo.
+
+\size small
+Los algoritmos buscan estructuras presentes.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Problemas de agrupamiento (clustering) y asociación (association).
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size small
+Aprendizaje por refuerzo (
+\shape italic
+Reinforcement Learning
+\shape default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+La más general entre las tres categorías.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Se aprende cómo se comporta el entorno mediante recompensas (
+\shape italic
+refuerzos
+\shape default
+) o castigos.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+El objetivo principal es aprender la función de valor que ayude a maximizar
+ la señal de recompensa y así optimizar las políticas.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Los tres métodos principales son: la Programación Dinámica (
+\shape italic
+Dynamic Programming
+\shape default
+ 
+\shape italic
+o DP
+\shape default
+), los métodos de Monte Carlo y el aprendizaje de Diferencias Temporales
+ (
+\shape italic
+Temporal-Difference Learning o TD
+\shape default
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RLIntroduccion1998"
+
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -2375,6 +2548,13 @@ Algoritmos de aprendizaje automático
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+Los algoritmos de aprendizaje automático se pueden agrupar según la similaridad
+ en términos de su forma o función.
+ No hay un consenso general de cómo agrupar los algoritmos de Machine Learning
+ en términos de su función o de cómo trabajan.
+\end_layout
+
 \begin_layout Standard
 \align center
 \begin_inset Graphics
@@ -2406,7 +2586,7 @@ Agrupación de algoritmos de aprendizaje automático.
 status open
 
 \begin_layout Plain Layout
-Problemas de Clasificación
+Clasificación multiclase
 \end_layout
 
 \end_inset
@@ -2414,52 +2594,63 @@ Problemas de Clasificación
 
 \end_layout
 
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
+\begin_layout Frame
 
-\begin_layout Plain Layout
-Tipos de clasificación
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+Dado un patrón 
+\begin_inset Formula $x$
 \end_inset
 
+ extraído de un dominio 
+\begin_inset Formula $X$
+\end_inset
 
+, estimar qué valor asumirá una variable aleatoria asociada 
+\begin_inset Formula $y\in\left\{ 1,2,3..,N\right\} $
+\end_inset
+
+.
+ 
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Clasificacón binaria.
-\end_layout
-
-\begin_layout Itemize
-Clasificación multiclase.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Instancias.
-\end_layout
-
-\begin_layout Itemize
-Atributos.
+\begin_layout Standard
+Para resolver problemas de clasificación multiclase, es necesario conocer
+ los componentes esenciales que la forman:
 \end_layout
 
 \begin_layout Itemize
-Etiquetas
+Ejemplos o instancias: cada instancia es un ejemplo individual e independiente
+ del concepto que se debe aprender.
 \end_layout
 
 \begin_layout Itemize
-Conjunto de entrenamiento
+Atributos o características: las instancias son caracterizadas mediante
+ los valores de un conjunto predeterminado de atributos..
 \end_layout
 
 \begin_layout Itemize
-Conjunto de prueba.
+Etiquetas: los atributos nominales a veces se llaman categorizados, enumerados
+ o discretos.
 \end_layout
 
-\end_deeper
-\end_deeper
+\begin_layout Itemize
+Conjunto de entrenamiento: el grupo de ejemplos utilizados en el proceso
+ de entrenamiento de los algoritmos de aprendizaje automático.
+\end_layout
+
+\begin_layout Itemize
+Conjunto de prueba: conjunto de datos que no desempeñó ningún papel en la
+ formación del clasificador.
+\end_layout
+
+\begin_layout Itemize
+Algoritmos de clasificación multiclase: algoritmos de machine learning que
+ soportan problemas de clasificación multiclase.
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2482,33 +2673,50 @@ Técnicas de evaluación para aprendizaje supervisado
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
+\begin_layout Standard
+La evaluación es la clave para lograr avances reales en el aprendizaje automátic
+o.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 Hold-out validation - Porcentaje de retención
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Un conjunto de entrenamiento (generalmente el 70%) y un conjunto de prueba
+ (el otro 30%).
+\end_layout
+
+\begin_layout Itemize
+Puede contribuir a una evaluación imparcial.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 K-fold cross-validation - Validación cruzada de K iteraciones
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Dividir los datos en un número de particiones iguales, con 10 se obtiene
+ una buena estimación de error.
+\end_layout
+
+\begin_layout Itemize
+Cada modelo ha sido entrenado y probado en un subconjunto diferente de datos.
+\end_layout
+
+\begin_layout Itemize
+Se combinan estos modelos y se promedian sus pesos para estimar un modelo
+ predictivo final.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 Bootstrap resampling
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2523,20 +2731,6 @@ status open
 
 \begin_layout Plain Layout
 Métricas de desempeño para problemas de clasificación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
 \end_layout
 
 \end_inset
@@ -2580,7 +2774,6 @@ Estadística Kappa.
 
 \end_deeper
 \end_deeper
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -2593,7 +2786,7 @@ Estadística Kappa.
 status open
 
 \begin_layout Plain Layout
-Orígenes de los errores de predicción.
+Componentes de los errores de predicción.
 \end_layout
 
 \end_inset
@@ -2602,30 +2795,113 @@ Orígenes de los errores de predicción.
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
+\begin_layout Standard
+Los errores de predicción en los modelos de aprendizaje automático tienen
+ tres componentes:
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Ruido (
+\shape italic
+Noise
+\shape default
+)
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Ruido.
+Representa el componente 
+\begin_inset Quotes eld
+\end_inset
+
+irreducible
+\begin_inset Quotes erd
+\end_inset
+
+ de error de generalización en una función.
 \end_layout
 
 \begin_layout Itemize
-Sesgo.
+Es una distorsión de los datos originales, presente en casi cualquier problema
+ del mundo real.
+ 
 \end_layout
 
 \begin_layout Itemize
-Varianza.
+Ejemplo: calibraciones defectuosas en sensores de medición.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Sesgo (
+\shape italic
+Bias
+\shape default
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sesgo en la estimación: una mala estimación de su exactitud sobre futuros
+ ejemplos.
+\end_layout
+
+\begin_layout Itemize
+Sesgo conocido como 
+\begin_inset Quotes eld
+\end_inset
+
+subajuste
+\begin_inset Quotes erd
+\end_inset
+
+: da un error de generalización con datos futuros.
+ La función de aprendizaje mapea pobremente los datos de entrenamiento.
+\end_layout
+
+\begin_layout Itemize
+En estadística: la diferencia al cuadrado entre el verdadero valor y el
+ valor esperado.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Varianza (
+\shape italic
+Variance
+\shape default
+) 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+La función seleccionada aprende casi perfectamente la tendencia de los datos
+ del ejemplo de entrenamiento.
+\end_layout
+
+\begin_layout Itemize
+Varianza conocida como 
+\begin_inset Quotes eld
+\end_inset
+
+sobreajuste
+\begin_inset Quotes erd
+\end_inset
+
+: falla en la generalización con datos nuevos del futuro.
+ 
+\end_layout
+
+\begin_layout Itemize
+Cuanto menor es el conjunto de ejemplos de prueba, mayor es la varianza
+ esperada 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mitchell1997"
+
+\end_inset
+
+.
 \end_layout
 
 \end_deeper

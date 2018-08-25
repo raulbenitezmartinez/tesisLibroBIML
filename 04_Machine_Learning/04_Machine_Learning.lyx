@@ -494,7 +494,7 @@ Proyección de crecimiento de datos del 2005 al 2020.
 El universo digital analizado está compuesto por imágenes y vídeos en teléfonos
  móviles cargados en YouTube, películas digitales, datos bancarios en cajeros
  automáticos, imágenes de seguridad en aeropuertos y en eventos importantes
- como los Juegos Olímpicos, colisiones subatómicos registradas por el Gran
+ como los Juegos Olímpicos, colisiones subatómicas registradas por el Gran
  Colisionador de Hadrones en el CERN
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -562,7 +562,7 @@ key "Arthur1959"
 \end_inset
 
 Machine Learning es un campo de estudio que da a las computadoras la capacidad
- de aprender a resolver problemas sin ser explícitamente programados
+ de aprender a resolver problemas sin ser explícitamente programadas
 \shape default
 
 \begin_inset Quotes erd
@@ -3549,7 +3549,15 @@ Holdout method
 ) divide el conjunto de datos en dos partes, de modo que el modelo pueda
  ser entrenado y probado sobre diferentes datos.
  Presenta una mejor estimación del rendimiento fuera de la muestra, pero
- sigue siendo una estimación de "alta varianza".
+ sigue siendo una estimación de 
+\begin_inset Quotes eld
+\end_inset
+
+alta varianza
+\begin_inset Quotes erd
+\end_inset
+
+.
  Útil debido a su velocidad, simplicidad y flexibilidad.
 \end_layout
 
