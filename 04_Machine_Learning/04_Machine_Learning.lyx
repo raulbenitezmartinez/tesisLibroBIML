@@ -3956,7 +3956,15 @@ Precisión (precision)
 \begin_layout Standard
 Cuando se predice un valor positivo, ¿con qué frecuencia es correcta la
  predicción?.
- ¿Cuán "preciso" es el clasificador al predecir instancias positivas?.
+ ¿Cuán 
+\begin_inset Quotes eld
+\end_inset
+
+preciso
+\begin_inset Quotes erd
+\end_inset
+
+ es el clasificador al predecir instancias positivas?.
 \end_layout
 
 \begin_layout Standard
@@ -3977,7 +3985,15 @@ Sensibilidad (sensitivity)
 \begin_layout Standard
 Cuando el valor real es positivo, ¿con qué frecuencia es correcta la predicción?.
  Algo que queremos maximizar.
- ¿Qué tan "sensible" es el clasificador para detectar instancias positivas?.
+ ¿Qué tan 
+\begin_inset Quotes eld
+\end_inset
+
+sensible
+\begin_inset Quotes erd
+\end_inset
+
+ es el clasificador para detectar instancias positivas?.
  También conocido como "Tasa positiva real" o "Recordar" (True Positive
  Rate or Recall).
 \end_layout
@@ -4000,8 +4016,23 @@ Especificidad (specificity)
 \begin_layout Standard
 Cuando el valor real es negativo, ¿con qué frecuencia es correcta la predicción?.
  Algo que queremos maximizar.
- ¿Qué tan "específico" (o "selectivo") es el clasificador en predecir las
- instancias negativas?
+ ¿Qué tan 
+\begin_inset Quotes eld
+\end_inset
+
+específico
+\begin_inset Quotes erd
+\end_inset
+
+ (o 
+\begin_inset Quotes eld
+\end_inset
+
+selectivo
+\begin_inset Quotes erd
+\end_inset
+
+) es el clasificador en predecir las instancias negativas?
 \end_layout
 
 \begin_layout Standard
@@ -4062,15 +4093,11 @@ Kappa se utiliza para medir el acuerdo entre la predicción y la observación
  Si los evaluadores están totalmente de acuerdo Kappa alcanza un valor máximo
  igual a 1.
  Si no hay total acuerdo entre los evaluadores, entonces Kappa tiene un
- valor 
+ valor
 \begin_inset Formula $<1$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-Returns value of kappa statistic if class is nominal
 \end_layout
 
 \begin_layout Standard
