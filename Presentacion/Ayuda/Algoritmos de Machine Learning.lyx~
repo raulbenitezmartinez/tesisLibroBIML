@@ -1,0 +1,917 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+%\usetheme{Warsaw}
+\usetheme{Boadilla}
+% or ...
+
+\usecolortheme{orchid}
+\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "lmss" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\shape italic
+\size larger
+\lang spanish
+Pronóstico de la demanda en empresas retail
+\series bold
+\shape default
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+\shape italic
+\size normal
+\lang spanish
+Pronóstico de la demanda en empresas retail
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+
+\shape italic
+\lang spanish
+Técnica basada en Business Intelligence y Machine Learning
+\series bold
+\shape default
+\size larger
+ 
+\end_layout
+
+\begin_layout Author
+
+\size large
+\lang spanish
+Raúl Benítez 
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+ Alberto Garcete 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+\size normal
+\lang spanish
+R.Benítez
+\begin_inset Newline newline
+\end_inset
+
+A.Garcete
+\size default
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+Tutores: PhD.
+ Diego P.
+ Pinto Roa - Ing.
+ Aditardo Vázquez
+\end_layout
+
+\begin_layout TitleGraphic
+
+\lang spanish
+\begin_inset Graphics
+	filename logo_pol.jpg
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+
+\lang spanish
+Universidad Nacional de Asunción - Facultad Politécnica
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\lang spanish
+FP-UNA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+
+\size larger
+\lang spanish
+Agosto 2018
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\lang spanish
+Agosto 2018
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=1.5cm]{institution-logo}{logo_pol.jpg}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+No hay un consenso general de cómo agrupar los algoritmos de Machine Learning
+ en términos de su función o de cómo trabajan.
+ La Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Algoritmos-de-machine"
+
+\end_inset
+
+ mostró un método útil de agrupación, que no es perfecto y ni exhaustivo
+ en los grupos y algoritmos.
+ Hay algoritmos que pueden encajar en varias categorías como Learning Vector
+ Quantization que es a la vez un método inspirado en una red neuronal y
+ un método basado en instancia.
+ También hay categorías que tienen el mismo nombre que describen el problema
+ y la clase de algoritmo como Regression y Clustering.
+ Se podría manejar estos casos listando los algoritmos dos veces o insertando
+ en el grupo al que subjetivamente se ajusta mejor.
+ Se utiliza este último enfoque de no duplicar algoritmos.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de regresión
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Los Algoritmos de Regresión (
+\shape italic
+Regression Algorithms
+\shape default
+) modelan la relación que existe entre variables, se mejora iterativamente
+ utilizando una medida de error en las predicciones hechas por el modelo.
+ Los métodos de regresión son herramientas de las estadísticas que se han
+ adoptado en el aprendizaje de la máquina.
+ Se pueden utilizar el término regresión para referirse a la clase de problema
+ y también a la clase de algoritmo.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos basados en instancia
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+El modelo de aprendizaje Basado en Instancia (
+\shape italic
+Instance-Based Learning
+\shape default
+) es un problema de decisión con instancias o ejemplos de datos de entrenamiento
+ que se consideran importantes o requeridos para el modelo.
+ Estos métodos típicamente construyen una base de datos con ejemplos y los
+ compara con los nuevos datos utilizando una medida de similaridad para
+ así encontrar la mejor coincidencia y hacer la predicción.
+ El enfoque se pone en la representación de las instancias almacenadas y
+ las medidas de similaridad utilizadas entre instancias.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de regularización
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Los Algoritmos de Regularización (
+\shape italic
+Regularization
+\shape default
+), comprenden una extensión hecha a otros métodos (típicamente a los métodos
+ de regresión).
+ Penaliza los modelos basándose en sus complejidades, favoreciendo modelos
+ más simples que también son mejores de generalizar.
+ Son populares, potentes y en general simples modificaciones de otros métodos.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ y no supervisado.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de árboles de decisión
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Los métodos de Árboles de Decisión (
+\shape italic
+Decision Tree
+\shape default
+) construyen un modelo de decisiones hechas en base a los valores de atributos
+ en los datos.
+ Las decisiones se bifurcan en la estructura del árbol hasta que se tome
+ una decisión de predicción para un registro dado.
+ Los árboles de decisión son entrenados en los datos para problemas de clasifica
+ción y regresión.
+ Los árboles de decisión son a menudo rápidos y precisos y un gran favorito
+ en aprendizaje automático.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos bayesianos
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Los métodos Bayesianos (
+\shape italic
+Bayesian
+\shape default
+) son los que aplican explícitamente el teorema de Bayes para problemas
+ tales como la clasificación y la regresión.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de agrupación
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+La Agrupación (
+\shape italic
+Clustering
+\shape default
+) así como también la regresión describen la clase de problema y la clase
+ de método.
+ Los métodos de agrupación suelen estar organizados según el enfoque del
+ modelado, tales como los basados en centroides y los jerárquicos.
+ Todos los métodos atañen a la utilización de las estructuras inherentes
+ en los datos, para organizar dichos datos de la mejor manera posible en
+ grupos de máxima uniformidad.
+ Estos algoritmos se implementan en problemas de aprendizaje no supervisado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de aprendizaje de reglas de asociación
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Los métodos de aprendizaje de Reglas de Asociación (
+\shape italic
+Rule System
+\shape default
+) extraen reglas que mejor explican las relaciones observadas entre variables
+ en los datos.
+ Estas reglas pueden descubrir asociaciones importantes y comercialmente
+ útiles, en grandes conjuntos de datos multidimensionales que pueden ser
+ explotados por una organización.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de redes neurales artificiales
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Las Redes Neuronales artificiales (
+\shape italic
+Neural Networks
+\shape default
+) son modelos inspirados en la estructura y/o función de las redes neuronales
+ biológicas.
+ Son una clase de búsqueda de patrones que se utilizan comúnmente para problemas
+ de regresión y clasificación.
+ Es realmente un enorme subcampo compuesto de cientos de algoritmos y variacione
+s para todo tipo de problemas.
+ Se ha separado el aprendizaje profundo de las redes neuronales debido a
+ su enorme crecimiento y popularidad.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado,
+ no supervisado y por refuerzo.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de aprendizaje profundo
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Los métodos de Aprendizaje Profundo (
+\shape italic
+Deep Learning
+\shape default
+) son una moderna actualización de las redes neuronales artificiales que
+ explotan el abundante y barato poder de computación.
+ Se ocupan en construir redes neuronales mucho más grandes y complejas y,
+ muchos métodos se refieren a problemas de aprendizaje semi-supervisados
+ donde grandes conjuntos de datos contienen muy pocos datos etiquetados.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ y no supervisado.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de reducción de dimensionalidad
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Al igual que los métodos de agrupación, la Reducción de la Dimensionalidad
+ (
+\shape italic
+Dimensionality Reduction
+\shape default
+) busca y explora la estructura inherente en los datos, pero en este caso
+ de una manera no supervisada o en orden a resumir o describir los datos
+ utilizando menos información.
+ Esto puede ser útil para visualizar datos dimensionales o para simplificar
+ datos que luego se pueden utilizar en un método de aprendizaje supervisado.
+ Muchos de estos métodos pueden ser adaptados para su uso en clasificación
+ y regresión.
+ Estos algoritmos se implementan en problemas de aprendizaje no supervisado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos ensamble
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Métodos de Ensamble (
+\shape italic
+Ensemble
+\shape default
+) son modelos compuestos por múltiples modelos más débiles, que son entrenados
+ independientemente y cuyas predicciones son combinadas de alguna manera
+ para hacer la predicción general.
+ Mucho esfuerzo se pone en qué tipos de aprendices débiles combinar y las
+ formas en que hay que combinarlos.
+ Esta es una clase de técnica muy poderosa y como tal es muy popular.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ y no supervisado.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos no lineales
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Uno de los mas importante es Support Vector Machines.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ y no supervisado.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Algoritmos de aprendizaje por refuerzo
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Programación dinámica:
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Programación dinámica con Policy Iteration.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Programación dinámica con Value Iteration.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Programación dinámica con Generalized Policy Iteration (GPI
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GPI"
+description "Generalized Policy Iteration"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Asynchronous DP.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Bootstrapping.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Algoritmos de Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Método de Monte Carlo
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+On-Policy Monte Carlo Control.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Off-Policy Monte Carlo Control.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Aprendizaje por Diferencias Temporales
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Sarsa: On-Policy TD Control.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Q-learning: Off-Policy TD Control.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Actor-Critic Methods.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+R-Learning for Undiscounted Continual Tasks.
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+\start_of_appendix
+
+\shape italic
+\lang spanish
+Referencias
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "F:/TESIS_2016/Libro-Paper/tesisLibroBIML/BibliografiaLibro"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

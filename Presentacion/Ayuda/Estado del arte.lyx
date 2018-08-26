@@ -6,23 +6,24 @@
 \origin unavailable
 \textclass beamer
 \begin_preamble
-\useoutertheme{infolines}
-% \setbeamertemplate{footline}{\insertframenumber}
-\usetheme{Berkeley}
-% CambridgeUS or Antibes or Berkeley...
+%\usetheme{Warsaw}
+\usetheme{Boadilla}
+% or ...
+
+\usecolortheme{orchid}
+\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
 
 \setbeamercovered{transparent}
 % or whatever (possibly just delete it)
-\setbeamertemplate{navigation symbols}{}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
-\language spanish
+\language english
 \language_package default
 \inputencoding auto
 \fontencoding global
 \font_roman "times" "default"
-\font_sans "default" "default"
+\font_sans "lmss" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
@@ -43,14 +44,14 @@
 \use_geometry true
 \use_package amsmath 2
 \use_package amssymb 2
-\use_package cancel 0
+\use_package cancel 1
 \use_package esint 0
 \use_package mathdots 1
-\use_package mathtools 0
+\use_package mathtools 1
 \use_package mhchem 1
-\use_package stackrel 0
-\use_package stmaryrd 0
-\use_package undertilde 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
 \biblio_style plain
@@ -60,7 +61,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
-\index Índice
+\index Index
 \shortcut idx
 \color #008000
 \end_index
@@ -85,6 +86,7 @@
 
 \shape italic
 \size larger
+\lang spanish
 Pronóstico de la demanda en empresas retail
 \series bold
 \shape default
@@ -97,6 +99,7 @@ status open
 \series medium
 \shape italic
 \size normal
+\lang spanish
 Pronóstico de la demanda en empresas retail
 \end_layout
 
@@ -108,6 +111,7 @@ Pronóstico de la demanda en empresas retail
 \begin_layout Subtitle
 
 \shape italic
+\lang spanish
 Técnica basada en Business Intelligence y Machine Learning
 \series bold
 \shape default
@@ -118,6 +122,7 @@ Técnica basada en Business Intelligence y Machine Learning
 \begin_layout Author
 
 \size large
+\lang spanish
 Raúl Benítez 
 \begin_inset space ~
 \end_inset
@@ -134,6 +139,7 @@ status open
 
 \shape italic
 \size normal
+\lang spanish
 R.Benítez
 \begin_inset Newline newline
 \end_inset
@@ -158,8 +164,10 @@ Tutores: PhD.
 \end_layout
 
 \begin_layout TitleGraphic
+
+\lang spanish
 \begin_inset Graphics
-	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/Presentacion/logo_pol.jpg
+	filename logo_pol.jpg
 	scale 25
 	rotateOrigin center
 
@@ -169,6 +177,8 @@ Tutores: PhD.
 \end_layout
 
 \begin_layout Institute
+
+\lang spanish
 Universidad Nacional de Asunción - Facultad Politécnica
 \begin_inset Argument 1
 status open
@@ -176,6 +186,7 @@ status open
 \begin_layout Plain Layout
 
 \size normal
+\lang spanish
 FP-UNA
 \end_layout
 
@@ -187,6 +198,7 @@ FP-UNA
 \begin_layout Date
 
 \size larger
+\lang spanish
 Agosto 2018
 \begin_inset Argument 1
 status open
@@ -194,6 +206,7 @@ status open
 \begin_layout Plain Layout
 
 \size normal
+\lang spanish
 Agosto 2018
 \end_layout
 
@@ -203,6 +216,8 @@ Agosto 2018
 \end_layout
 
 \begin_layout Standard
+
+\lang spanish
 \begin_inset ERT
 status open
 
@@ -228,6 +243,8 @@ pgfuseimage{institution-logo}}
 \end_layout
 
 \begin_layout Standard
+
+\lang spanish
 \begin_inset ERT
 status open
 
@@ -244,10 +261,14 @@ beamerdefaultoverlayspecification{<+->}
 \end_layout
 
 \begin_layout Frame
+
+\lang spanish
 \begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
+
+\lang spanish
 Estado del arte
 \end_layout
 
@@ -259,8 +280,10 @@ Estado del arte
 \begin_deeper
 \begin_layout Standard
 \align center
+
+\lang spanish
 \begin_inset Graphics
-	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/Presentacion/Estado del Arte 2.png
+	filename Estado del Arte 2.png
 	scale 44
 
 \end_inset
@@ -270,6 +293,8 @@ Estado del arte
 
 \end_deeper
 \begin_layout Standard
+
+\lang spanish
 \begin_inset Separator plain
 \end_inset
 
@@ -277,10 +302,14 @@ Estado del arte
 \end_layout
 
 \begin_layout Frame
+
+\lang spanish
 \begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
+
+\lang spanish
 Estado del arte
 \end_layout
 
@@ -292,8 +321,10 @@ Estado del arte
 \begin_deeper
 \begin_layout Standard
 \align center
+
+\lang spanish
 \begin_inset Graphics
-	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/Presentacion/Estado del Arte.png
+	filename Estado del Arte.png
 	scale 46
 
 \end_inset
@@ -306,10 +337,13 @@ Estado del arte
 \start_of_appendix
 
 \shape italic
+\lang spanish
 Referencias
 \end_layout
 
 \begin_layout Standard
+
+\lang spanish
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "F:/TESIS_2016/Libro-Paper/tesisLibroBIML/BibliografiaLibro"
