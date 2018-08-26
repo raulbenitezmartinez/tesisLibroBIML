@@ -1,0 +1,1466 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+%\usetheme{Warsaw}
+\usetheme{Boadilla}
+% or ...
+
+\usecolortheme{orchid}
+\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "lmss" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\shape italic
+\size larger
+\lang spanish
+Pronóstico de la demanda en empresas retail
+\series bold
+\shape default
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+\shape italic
+\size normal
+\lang spanish
+Pronóstico de la demanda en empresas retail
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+
+\shape italic
+\lang spanish
+Técnica basada en Business Intelligence y Machine Learning
+\series bold
+\shape default
+\size larger
+ 
+\end_layout
+
+\begin_layout Author
+
+\size large
+\lang spanish
+Raúl Benítez 
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+ Alberto Garcete 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+\size normal
+\lang spanish
+R.Benítez
+\begin_inset Newline newline
+\end_inset
+
+A.Garcete
+\size default
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+Tutores: PhD.
+ Diego P.
+ Pinto Roa - Ing.
+ Aditardo Vázquez
+\end_layout
+
+\begin_layout TitleGraphic
+
+\lang spanish
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/Presentacion/logo_pol.jpg
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+
+\lang spanish
+Universidad Nacional de Asunción - Facultad Politécnica
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\lang spanish
+FP-UNA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+
+\size larger
+\lang spanish
+Agosto 2018
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\lang spanish
+Agosto 2018
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=1.5cm]{institution-logo}{logo_pol.jpg}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Definición
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+El primero que acuñó el término fue Howard Dresner en 1989, quién fue consultor
+ de Gartner Group.
+ Dresner utilizó el término para describir un conjunto de conceptos y métodos
+ que mejoran la toma de decisiones, partiendo de la información disponible
+ acerca de los hechos
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+Según lo expuesto en la definición, Business Intelligence tiene los siguientes
+ objetivos principales:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Convertir datos en información, información en conocimiento, y el conocimiento
+ en planes operativos o estratégicos.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Facilitar la disponibilidad de información a los usuarios de negocios, que
+ les ayude a tomar decisiones más rápidamente.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Apoyar de forma sostenible y continua a las organizaciones, para mejorar
+ su competitividad ante el entorno de negocios cambiante de forma que puedan
+ adaptarse a él.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Ante la cantidad de información que va creciendo, disponer de más tiempo
+ para analizarla, en lugar de gastar mucho tiempo en prepararla, organizarla
+ y estructurarla.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Permitir a las organizaciones dirigir de mejor forma, decidir, medir, gestionar
+ y optimizar el alcance de la eficiencia y los resultados financieros.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Disminuir sustancialmente la incertidumbre que existe ante la toma de decisiones
+ respecto a un plan estratégico.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fuentes de Información
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+Las fuentes de información representan el origen de los datos con las cuales
+ se alimenta de información al datawarehouse.
+ Estas pueden provenir de diferentes sistemas como:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Sistemas operacionales o transaccionales, que incluyen aplicaciones desarrollada
+s a medida, ERP, CRM, SCM, etc.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Sistemas de información departamentales: previsiones, presupuestos, hojas
+ de cálculo, etc.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Fuentes de información externa, en algunos casos comprada a terceros.
+ Las fuentes de información externas podrían ser importantes para enriquecer
+ la información acerca de los clientes.
+ En algunos casos es interesante incorporar información referente, por ejemplo,
+ a población, número de habitantes, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fuentes de Información
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+También las fuentes de información son usualmente heterogéneas, pueden contener
+ los siguientes tipos de datos:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Estructurados: almacenados en las bases de datos.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Semi estructurados: son formatos entendibles por los computadores como HTML
+ tabulado, Excel, CSV u otros que pueden ser obtenidos mediante técnicas
+ estándar de extracción de datos.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+No estructurados: son formatos no legibles para computadoras como Word,
+ HTML no tabulado, PDF, etc.
+ que pueden obtenerse mediante técnicas avanzadas de extracción de datos.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+ETL - Extracción, Transformación y Carga 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+La extracción, transformación y carga, comúnmente abreviado por las siglas
+ ETL (
+\shape italic
+del inglés 
+\begin_inset Quotes eld
+\end_inset
+
+Extract, Transform and Load
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+) es un tipo de integración de datos que consiste en todo el proceso que
+ se realiza entre las fuentes de información y el área de presentación de
+ los datos.
+ Es utilizado para extraer los datos de los sistemas de origen, transformarlos
+ en función a los requerimientos del negocio y cargar los datos en el entorno
+ de destino.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+ETL - Extracción, Transformación y Carga 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+
+\emph on
+\lang spanish
+Extracción
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\lang spanish
+La extracción es el primer paso en el proceso de obtención de los datos,
+ recupera los datos físicamente de las distintas fuentes de información.
+ En este punto se dispone de los datos en bruto.
+ El principal objetivo es extraer aquellos datos de los sistemas transaccionales
+ que son necesarios y prepararlos para el resto de los subprocesos de ETL.
+ Para ello se deben determinar las mejores fuentes de información, las de
+ mejor calidad.
+ Para tal finalidad, se debe analizar las fuentes disponibles y escoger
+ aquellas que sean mejores
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+ETL - Extracción, Transformación y Carga 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+
+\emph on
+\lang spanish
+Limpieza
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\lang spanish
+Este proceso recupera los datos en bruto y comprueba su calidad, elimina
+ los duplicados y, cuando es posible, corrige los valores erróneos y completa
+ los valores vacíos, es decir se transforman los datos -siempre que sea
+ posible- para reducir los errores de carga.
+ En este momento se disponen de datos limpios y de alta calidad.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\lang spanish
+Los sistemas transaccionales contienen datos que no han sido depurados y
+ que deben ser limpiados.
+ Algunas causas que provocan que los datos estén “sucios” son:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Valores por defecto, Ausencia de valor, Campos que tienen distintas utilidades,
+ Valores contradictorios.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Uso inapropiado de los campos, Re utilización de claves primarias, Selección
+ del primer valor de una lista.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Problemas de carga de antiguos sistemas o de integración entre sistemas.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+ETL - Extracción, Transformación y Carga 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+
+\emph on
+\lang spanish
+Transformación
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\lang spanish
+La transformación de los datos se realiza partiendo de los datos una vez
+ limpios, se transforman los datos de acuerdo a las reglas y necesidades
+ del negocio.
+ El resultado de este proceso es la obtención de datos limpios, consistentes,
+ sumarizados y útiles.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\lang spanish
+La transformación incluye:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Cambios de formato.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Sustitución de códigos.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Valores derivados y agregados.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+ETL - Extracción, Transformación y Carga 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+
+\emph on
+\lang spanish
+Integración
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\lang spanish
+Este proceso valida que los datos que cargamos en el datawarehouse son consisten
+tes con las definiciones y formatos del datawarehouse; los integra en los
+ distintos modelos de las distintas áreas de negocio que hemos definido
+ en el mismo.
+ Estos procesos pueden ser complejos.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+ETL - Extracción, Transformación y Carga 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+
+\emph on
+\lang spanish
+Actualización
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\lang spanish
+Este proceso es el que nos permite añadir los nuevos datos al datawarehouse,
+ determina la periodicidad con el que haremos nuevas cargas de datos al
+ datawarehouse.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Datawarehouse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+Bill Inmon definió las características que debe cumplir un datawarehouse:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Orientado a un área: cada parte del datawarehouse está construida para resolver
+ un problema de negocio.
+ Por ejemplo: entender los hábitos de compra de clientes, analizar la calidad
+ de los productos, analizar la productividad de una línea de fabricación.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Integrado: la información debe ser transformada en medidas comunes, códigos
+ comunes y formatos comunes para ser útil.
+ Por ejemplo: la moneda en que están expresadas los importes es común.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Indexado en el tiempo: se mantiene la información histórica.
+ Ejemplo: analizar la evolución de las ventas en los periodos deseados.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+No volátil: los usuarios no la mantienen como lo harían en los entornos
+ transaccionales.
+ No se ve actualizado continuamente, sino periódicamente de forma preestablecida.
+ La información se almacena para la toma de decisiones
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Datawarehouse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+Ralph Kimbal define los objetivos que debería cumplir un datawarehouse:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+El alcance de un datawarehouse puede ser a nivel de departamento o corporativo.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+El datawarehouse no es sólo información sino también las herramientas de
+ consulta, análisis y presentación de la información.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+La información del datawarehouse es consistente.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+La calidad de información en el datawarehouse es el motor de business reengineer
+ing.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Datawarehouse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+Se debe tener en cuenta que existen otros elementos en el contexto de un
+ datawarehouse:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Datawarehousing: es el proceso de extraer y filtrar datos de las operaciones,
+ procedentes de los distintos sistemas de información operacionales y sistemas
+ externos, para transformarlos, integrarlos y almacenarlos en un almacén
+ de datos, con el fin de acceder a ellos para dar soporte al proceso de
+ toma de decisiones.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Data Mart: es un subconjunto de datos del datawarehouse cuyo objetivo es
+ responder a un determinado análisis.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Operational Data Store (ODS): es un tipo de almacén de datos que proporciona
+ sólo los últimos valores de los datos y no su historial.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Datawarehouse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+
+\lang spanish
+Elementos de un datawarehouse
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+\lang spanish
+Tabla de hecho
+\series default
+: es la representación en el datawarehouse de los procesos de negocios de
+ la organización.
+ A nivel de diseño es una tabla que permite guardar dos tipos de atributos
+ diferenciados: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Medidas del proceso de trabajo que se pretende modelar.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+Claves foráneas hacia registros de una tabla de dimensión.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\size small
+\lang spanish
+Dimensión
+\series default
+: es la representación en el datawarehouse de una vista para un cierto proceso
+ de negocio.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+\lang spanish
+Métrica
+\series default
+: son los indicadores de negocio de un proceso de negocio.
+ Aquellos conceptos cuantificables que permiten medir el proceso de negocio.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Datawarehouse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+
+\lang spanish
+Tipos de esquemas
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+\lang spanish
+Esquema en estrella:
+\series default
+ consiste en estructurar la información en procesos, vistas y métricas recordand
+o a una estrella.
+ A nivel de diseño, consiste en una tabla de hechos en el centro para el
+ hecho objeto de análisis, y una o varias tablas de dimensión por cada punto
+ de vista del análisis que participan en la descripción de ese hecho.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size small
+\lang spanish
+Esquema en copo de nieve:
+\series default
+ es un esquema de representación derivado del esquema en estrella, en el
+ que las tablas de dimensión se normalizan en múltiples tablas.
+ Por esta razón la tabla de hechos deja de ser la única tabla del esquema
+ que se relaciona con otras tablas.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+OLAP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+Una definición formal de OLAP sería:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\lang spanish
+\begin_inset Quotes eld
+\end_inset
+
+
+\shape italic
+Se entiende por OLAP o proceso analítico en línea, al método ágil y flexible
+ para organizar datos, especialmente metadatos, sobre un objeto o jerarquía
+ de objetos como en un sistema u organización multidimensional, y cuyo objetivo
+ es recuperar y manipular datos y combinaciones de los mismos a través de
+ consultas o incluso informes
+\shape default
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+OLAP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Una representación gráfica del OLAP también conocida como cubo.
+ En el ejemplo el cubo tiene 3 dimensiones (Tiempo, Producto y Región) sobre
+ las cuales se pueden realizar consultas, ej.: Monto total de venta del producto
+ 
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+ en el año 
+\begin_inset Quotes eld
+\end_inset
+
+B
+\begin_inset Quotes erd
+\end_inset
+
+ en la región 
+\begin_inset Quotes eld
+\end_inset
+
+C
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Los cubos OLAP también permiten representar jerarquías, en el caso de la
+ dimensión Tiempo la jerarquía podría estar compuesta por año, semestre,
+ mes, semana y día.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/03_Business_Intelligence/figuras/OLAP.png
+	scale 32
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+OLAP
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+Existen distintos tipos de OLAP, las cuales difieren principalmente en la
+ forma de guardar los datos:
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+MOLAP (Multidimensional OLAP): es la forma tradicional del OLAP, accede
+ directamente sobre una base de datos multidimensional, que utiliza estructuras
+ de datos optimizadas para la recuperación de los mismos, es eficaz en los
+ tiempos de respuestas de las consultas.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+ROLAP (Relational OLAP): accede directamente a las bases de datos relacionales
+ que almacenan los datos base y las tablas dimensionales como tablas relacionada
+s.
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+\lang spanish
+HOLAP (Hybrid OLAP): es una combinación de las dos anteriores, permite almacenar
+ parte de los datos en una base de datos multidimensional y otra parte en
+ una relacional.
+ En la base de datos relacional se guardan grandes cantidades de información
+ detallada, mientras que en la multidimensional se almacenan datos menos
+ detallados o agregados.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Herramientas de BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size small
+\lang spanish
+Las principales herramientas de Business Intelligence son: 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+\size small
+\lang spanish
+Generadores de informes
+\shape default
+: Utilizadas por desarrolladores profesionales para crear informes estándar
+ para grupos, departamentos o la organización.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+\size small
+\lang spanish
+Herramientas de usuario final de consultas e informes
+\shape default
+: Empleadas por usuarios finales para crear informes para ellos mismos o
+ para otros; no requieren programación.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+\size small
+\lang spanish
+Herramientas OLAP
+\shape default
+: Permiten a los usuarios finales tratar la información de forma multidimensiona
+l para explorarla desde distintas perspectivas y periodos de tiempo.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Herramientas de BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\shape italic
+\size small
+\lang spanish
+Herramientas de Dashboard y Scorecard
+\shape default
+: Permiten a los usuarios finales ver información crítica para el rendimiento
+ con un simple vistazo utilizando iconos gráficos y con la posibilidad de
+ analizar información detallada e informes.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+\size small
+\lang spanish
+Herramientas de planificación, modelización y consolidación
+\shape default
+: Permite a los analistas y a los usuarios finales crear planes de negocio
+ y simulaciones con la información de Business Intelligence.
+ Pueden ser para elaborar la planificación, los presupuestos, las previsiones.
+ Estas herramientas proveen a los dashboards y scorecards con los objetivos
+ y umbrales de las métricas.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+\size small
+\lang spanish
+Herramientas datamining
+\shape default
+: Permiten a estadísticos o analistas de negocio crear modelos estadísticos
+ de las actividades de los negocios.
+ Datamining es el proceso para descubrir e interpretar patrones desconocidos
+ en la información mediante los cuales resolver problemas de negocios.
+ Los usos más habituales del datamining son: segmentación, venta cruzada,
+ sendas de consumo, clasificación, previsiones, optimizaciones, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\end_body
+\end_document
