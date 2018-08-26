@@ -3290,6 +3290,7 @@ Fuentes de Información
 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 Base de datos relacional Oracle 10g.
 \end_layout
@@ -3308,6 +3309,7 @@ Tabla de productos, Proveedores, Ventas Cabecera (301.316 registros), Ventas
  Detalle (981.402 registros) y Movimientos Stock.
 \end_layout
 
+\end_deeper
 \end_deeper
 \end_deeper
 \begin_layout Standard
