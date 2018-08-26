@@ -1,0 +1,589 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+%\usetheme{Warsaw}
+\usetheme{Boadilla}
+% or ...
+
+\usecolortheme{orchid}
+\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "lmss" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\shape italic
+\size larger
+\lang spanish
+Pronóstico de la demanda en empresas retail
+\series bold
+\shape default
+
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\series medium
+\shape italic
+\size normal
+\lang spanish
+Pronóstico de la demanda en empresas retail
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+
+\shape italic
+\lang spanish
+Técnica basada en Business Intelligence y Machine Learning
+\series bold
+\shape default
+\size larger
+ 
+\end_layout
+
+\begin_layout Author
+
+\size large
+\lang spanish
+Raúl Benítez 
+\begin_inset space ~
+\end_inset
+
+-
+\begin_inset space ~
+\end_inset
+
+ Alberto Garcete 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\shape italic
+\size normal
+\lang spanish
+R.Benítez
+\begin_inset Newline newline
+\end_inset
+
+A.Garcete
+\size default
+ 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size normal
+Tutores: PhD.
+ Diego P.
+ Pinto Roa - Ing.
+ Aditardo Vázquez
+\end_layout
+
+\begin_layout TitleGraphic
+
+\lang spanish
+\begin_inset Graphics
+	filename logo_pol.jpg
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+
+\lang spanish
+Universidad Nacional de Asunción - Facultad Politécnica
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\lang spanish
+FP-UNA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+
+\size larger
+\lang spanish
+Agosto 2018
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\lang spanish
+Agosto 2018
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=1.5cm]{institution-logo}{logo_pol.jpg}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+beamerdefaultoverlayspecification{<+->}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Complejidad del modelo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+La capacidad de generalización está determinada principalmente por dos factores:
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+La complejidad del modelo (model complexity).
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+El tamaño del conjunto de entrenamiento (learning curves).
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Muestra la relación existente entre la complejidad del modelo (eje x) y
+ el error de predicción (eje y).
+ Indica cómo va variando el error de predicción en los conjuntos de entrenamient
+o y de prueba a medida que aumenta la complejidad del modelo.
+ Los modelos muy simples dan una situación no deseada de sesgo (subajuste)
+ y los modelos muy complejos igualmente una situación no deseada de varianza
+ (sobreajuste).
+ Para obtener una buena capacidad de generalización se debe encontrar un
+ compromiso entre sesgo y varianza.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Este compromiso entre sesgo y varianza se puede encontrar probando distintas
+ configuraciones de los parámetros de ajuste (tuning parameters) de los
+ algoritmos de aprendizaje y luego eligiendo el que arroje mejores resultados.
+ Normalmente se recomienda probar las distintas configuraciones de los parámetro
+s sobre un conjunto de datos llamado de validación, que no se debe confundir
+ con los conjuntos de entrenamiento y de prueba.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Complejidad del modelo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename Bias_Varianza.PNG
+	scale 46
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Complejidad del modelo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Algunos ejemplos de familias de algoritmos y sus parámetros de ajuste son:
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Algoritmos de regresión lineal: la cantidad de atributos del modelo (que
+ determinará la cantidad de variables independientes).
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Modelos bayesianos: en las redes bayesianas por ejemplo se debe elegir el
+ algoritmo estimador (estimación de las tablas de probabilidad condicional
+ de las redes bayesianas) y el método para encontrar estructuras de red.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Árboles de decisión: el factor de confianza de la poda, mínimo número de
+ instancias, número de pasadas para reducir el error de poda 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mantovani2016"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Redes neuronales artificiales: la topología de la red donde se debe elegir
+ la cantidad de neuronas para la capa de entrada, salida y la oculta.
+ También se deben probar distintas tasas de aprendizaje (learning rate)
+ y funciones de activación.
+\end_layout
+
+\begin_layout Itemize
+
+\lang spanish
+Support vector machines: los parámetros gamma (γ), costo (C), y epsilon
+ (ε).
+ γ es una constante que reduce el espacio modelo y controla la complejidad
+ de la solución, C es una constante positiva que es un parámetro de control
+ de capacidad, mientras que ε es la función de pérdida que describe el vector
+ de regresión sin todos los datos de entrada 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mouatadid2016"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Curvas de aprendizaje
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Muestra la relación existente entre el tamaño del conjunto de entrenamiento
+ (eje x) y el error de predicción (eje y).
+ Indica cómo va variando el error de predicción en los conjuntos de entrenamient
+o y de prueba a medida que aumenta el tamaño del conjunto de entrenamiento.
+ Los modelos muy simples dan problema de alto sesgo y los modelos muy complejos
+ dan problema de alta varianza.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Cuando el modelo está sesgado por mas que se aumenten los datos del conjunto
+ de entrenamiento el nivel de error del conjunto de entrenamiento y el de
+ prueba se mantienen alto, por lo que para modelos sesgados no es una solución
+ aumentar significativamente la cantidad de los datos del conjunto de entrenamie
+nto.
+ La solución se debería buscar aumentando la complejidad del modelo.
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\lang spanish
+Cuando el modelo tiene alta varianza el error en el conjunto de entrenamiento
+ se mantiene bajo aún aumentando su cantidad de datos.
+ El conjunto de prueba en cambio inicia con alto porcentaje de error con
+ pocos datos, pero a medida que aumentan los datos en el conjunto de entrenamien
+to el error del conjunto de prueba disminuye significativamente.
+ Por tanto, ante alta varianza es una posible solución aumentar el tamaño
+ de los datos.
+ También se puede probar disminuyendo la complejidad del modelo.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang spanish
+\begin_inset Graphics
+	filename Estado del Arte.png
+	scale 46
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\start_of_appendix
+
+\shape italic
+\lang spanish
+Referencias
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "F:/TESIS_2016/Libro-Paper/tesisLibroBIML/BibliografiaLibro"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
