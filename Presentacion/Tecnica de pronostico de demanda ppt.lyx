@@ -697,36 +697,13 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-Términos utilizados indistintamente:
+\begin_layout Itemize
+El proceso de compras es el eje central de esta actividad empresarial.
 \end_layout
 
 \begin_layout Itemize
-C
-\shape italic
-ompras, adquisiciones, logística, abastecimiento.
-\end_layout
-
-\begin_layout Itemize
-
-\shape italic
-Administración de materiales, administración del suministro y administración
- de la cadena de suministro
-\shape default
-.
-\end_layout
-
-\begin_layout Standard
-Administración de compras
-\end_layout
-
-\begin_layout Itemize
-El proceso de adquisición es el eje central de esta actividad empresarial.
-\end_layout
-
-\begin_layout Itemize
-Estimación de la cantidad o volumen de productos a adquirir para reponer
- el stock 
+La estimación de la cantidad o volumen de productos a adquirir para reponer
+ el stock, es el componente vital de proceso de compras
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ADMINCA"
@@ -778,7 +755,7 @@ Seleccionar el proveedor adecuado.
 \begin_layout Enumerate
 
 \series bold
-Detallar la orden de compra y pactar el suministro.
+Detallar la orden de compra.
  
 \series default
 \shape italic
@@ -832,9 +809,8 @@ Definición
 
 \begin_deeper
 \begin_layout Standard
-Técnica utilizada para estimar la cantidad de bienes o servicios que los
- consumidores demandarán en el futuro, basadas en el conocimiento del pasado
- 
+Técnica para estimar la cantidad de bienes o servicios que demandarán los
+ consumidores en el futuro, basadas en el conocimiento del pasado 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Chapman2006"
@@ -898,8 +874,8 @@ Métodos de pronósticos cualitativos
 
 \begin_deeper
 \begin_layout Standard
-Son pronósticos subjetivos ya que intervienen factores como: experiencia,
- intuición o emociones 
+Son pronósticos subjetivos.
+ Intervienen factores como: experiencia, intuición o emociones 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "GPO2011"
@@ -917,7 +893,7 @@ key "GPO2011"
 \end_layout
 
 \begin_layout Standard
-Las principales técnicas cualitativas 
+Clasificación 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -970,7 +946,7 @@ Métodos de pronósticos cuantitativos
 
 \begin_deeper
 \begin_layout Standard
-Características de estos métodos 
+Características 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -981,19 +957,15 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Itemize
-Métodos de pronósticos estadísticos.
+Son métodos de pronósticos estadísticos.
 \end_layout
 
 \begin_layout Itemize
-Basados en datos históricos.
+Están basados en datos históricos.
 \end_layout
 
 \begin_layout Itemize
-Suposición que las tendencias históricas continuarán.
-\end_layout
-
-\begin_layout Itemize
-Son capaces de anticipar la demanda futura.
+Hay suposición intrínseca que las tendencias históricas continuarán.
 \end_layout
 
 \begin_layout Standard
@@ -1004,7 +976,7 @@ Son capaces de anticipar la demanda futura.
 \end_layout
 
 \begin_layout Standard
-En general, los métodos cuantitativos se clasifican en técnicas de:
+Clasificación:
 \end_layout
 
 \begin_layout Itemize
@@ -1614,14 +1586,13 @@ Cada organización debe definir sus propios KPI según la actividad realizada.
 \end_layout
 
 \begin_layout Itemize
-Los KPI pueden no ser exclusivamente del tipo financiero.
+Pueden no ser exclusivamente del tipo financiero.
  Ejemplos: calidad del servicio, satisfacción de los clientes, capacitación
  de los vendedores, etc.
 \end_layout
 
 \begin_layout Itemize
-Los KPI son un elemento importarte en la estrategia de negocios por su capacidad
- de comunicar resultados a las personas que forman parte del proyecto.
+Capacidad de comunicar resultados a las personas que forman parte del proyecto.
 \end_layout
 
 \end_deeper
@@ -2191,37 +2162,6 @@ Machine Learning es un campo de estudio que da a las computadoras la capacidad
 \end_layout
 
 \end_deeper
-\begin_layout Block
-
-\series bold
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-
-\series bold
-Definición propuesta por Tom Mitchell (1998):
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-Se dice que un programa de computadora aprende de la experiencia E con respecto
- a alguna tarea T y alguna medida de rendimiento P, si su desempeño en T,
- medido por P, mejora con la experiencia E.
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2296,10 +2236,6 @@ Reconocimiento facial de Facebook.
 \end_layout
 
 \begin_layout Itemize
-Kinect para Xbox 360.
-\end_layout
-
-\begin_layout Itemize
 Reconocimiento de voz de Google.
 \end_layout
 
@@ -2336,9 +2272,8 @@ Tipos de aprendizaje automático
 \begin_layout Standard
 
 \size small
-Los algoritmos de aprendizaje automático se pueden agrupar conforme a la
- información que poseen o que pueden llegar a poseer o el tipo de retroalimentac
-ión disponible para el aprendizaje:
+Se pueden agrupar conforme a la información que poseen o que pueden llegar
+ a poseer o el tipo de retroalimentación disponible:
 \end_layout
 
 \begin_layout Itemize
@@ -2355,22 +2290,8 @@ Supervised Learning
 \begin_layout Itemize
 
 \size small
-Variables de entrada 
-\begin_inset Formula $(X)$
-\end_inset
-
- y una variable de salida 
-\begin_inset Formula $(Y)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Algoritmo y un conjunto de datos de entrenamiento que constituyen las respuestas
- correctas conocidas o 
+Conjunto de datos de entrenamiento que constituyen las respuestas correctas
+ conocidas o 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2391,35 +2312,7 @@ Aprender una función
  que mapee la salida desde la entrada lo mejor que se pueda.
 \end_layout
 
-\begin_layout Itemize
-
-\size small
-Problemas del tipo clasificación o regresión.
-\end_layout
-
 \end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Tipos de aprendizaje automático
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 
 \size small
@@ -2434,34 +2327,13 @@ Unsupervised Learning
 \begin_layout Itemize
 
 \size small
-Hay variables de entrada 
-\begin_inset Formula $(X)$
-\end_inset
-
- pero no hay correspondiente variable de salida 
-\begin_inset Formula $(Y)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Algoritmo y datos de entrenamiento (ejemplos) que no tienen respuestas correctas
- conocidas.
+Datos de entrenamiento (ejemplos) que no tienen respuestas correctas conocidas.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
 Los algoritmos buscan estructuras presentes.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Problemas de agrupamiento (clustering) y asociación (association).
 \end_layout
 
 \end_deeper
@@ -2479,12 +2351,6 @@ Reinforcement Learning
 \begin_layout Itemize
 
 \size small
-El más general entre las tres categorías.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
 Aprende cómo se comporta el entorno mediante recompensas (
 \shape italic
 refuerzos
@@ -2497,20 +2363,6 @@ refuerzos
 \size small
 El objetivo es aprender la función de valor que maximice la señal de recompensa
  y así optimice sus políticas.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Los tres métodos principales son: Programación Dinámica, los métodos de
- Monte Carlo y el aprendizaje de Diferencias Temporales 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "RLIntroduccion1998"
-
-\end_inset
-
-.
 \end_layout
 
 \end_deeper
@@ -2537,19 +2389,10 @@ Algoritmos de aprendizaje automático
 
 \begin_deeper
 \begin_layout Standard
-
-\size small
-Los algoritmos de aprendizaje automático se pueden agrupar según la similaridad
- en términos de su forma o función.
- No hay un consenso general de cómo agrupar los algoritmos de Machine Learning
- en términos de su función o de cómo trabajan.
-\end_layout
-
-\begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/MachineLearningAlgorithms.png
-	scale 20
+	scale 23
 
 \end_inset
 
@@ -2611,50 +2454,37 @@ Dado un patrón
 \begin_layout Standard
 
 \size small
-Para resolver problemas de clasificación multiclase, es necesario conocer
- los componentes esenciales que la forman:
+Componentes:
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Instancias: cada instancia es un ejemplo individual e independiente del
- concepto que se debe aprender.
+Instancias.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Atributos: las instancias son caracterizadas mediante los valores de un
- conjunto predeterminado de atributos..
+Atributos.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Etiquetas: los atributos nominales a veces se llaman categorizados, enumerados
- o discretos.
+Etiquetas.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Conjunto de entrenamiento: el grupo de ejemplos utilizados en el proceso
- de entrenamiento de los algoritmos de aprendizaje automático.
+Conjunto de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Conjunto de prueba: conjunto de datos que no desempeñó ningún papel en la
- formación del clasificador.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Algoritmos de clasificación multiclase: algoritmos de machine learning que
- soportan problemas de clasificación multiclase.
+Conjunto de prueba.
 \end_layout
 
 \end_deeper
@@ -2700,12 +2530,6 @@ Un conjunto de entrenamiento (generalmente el 70%) y un conjunto de prueba
  (el otro 30%).
 \end_layout
 
-\begin_layout Itemize
-
-\size small
-Puede contribuir a una evaluación imparcial.
-\end_layout
-
 \end_deeper
 \begin_layout Itemize
 
@@ -2713,32 +2537,15 @@ Puede contribuir a una evaluación imparcial.
 K-fold cross-validation - Validación cruzada de K iteraciones
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Esquema K-fold Cross Validation.png
+	scale 30
 
-\size small
-Dividir los datos en un número de particiones iguales, con 10 se obtiene
- una buena estimación de error.
-\end_layout
+\end_inset
 
-\begin_layout Itemize
 
-\size small
-Cada modelo ha sido entrenado y probado en un subconjunto diferente de datos.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Se combinan estos modelos y se promedian sus pesos para estimar un modelo
- predictivo final.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\size small
-Bootstrap resampling
 \end_layout
 
 \end_deeper
@@ -2764,14 +2571,6 @@ Métricas de desempeño para problemas de clasificación
 
 \begin_deeper
 \begin_layout Standard
-
-\size small
-Para predecir el rendimiento de un clasificador necesitamos evaluar su tasa
- de error en un conjunto de datos que no desempeñó ningún papel en la formación
- del clasificador.
-\end_layout
-
-\begin_layout Itemize
 
 \size small
 Porcentaje de acierto: es la métrica más fácil y simple, pero no dice sobre
@@ -2945,43 +2744,6 @@ Métricas de desempeño para problemas de clasificación
 \begin_layout Itemize
 
 \size small
-Especificidad: ¿Qué tan 
-\begin_inset Quotes eld
-\end_inset
-
-específico
-\begin_inset Quotes erd
-\end_inset
-
- (o 
-\begin_inset Quotes eld
-\end_inset
-
-selectivo
-\begin_inset Quotes erd
-\end_inset
-
-) es el clasificador en predecir las instancias negativas?.
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Especificidad=\frac{TN}{TN+FP}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\size small
 Medida F: puede interpretarse como un promedio ponderado de la precisión
  y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
 \end_layout
@@ -3083,14 +2845,7 @@ irreducible
 \begin_inset Quotes erd
 \end_inset
 
- de error de generalización en una función.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Es una distorsión de los datos originales, presente en casi cualquier problema
- del mundo real.
+, es una distorsión de los datos originales.
  
 \end_layout
 
@@ -3101,28 +2856,6 @@ Ejemplo: calibraciones defectuosas en sensores de medición.
 \end_layout
 
 \end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Componentes de los errores de predicción
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 
 \size small
@@ -3137,14 +2870,7 @@ Bias
 \begin_layout Itemize
 
 \size small
-Sesgo en la estimación: una mala estimación de su exactitud sobre futuros
- ejemplos.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Sesgo conocido como 
+Conocido como 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3153,14 +2879,13 @@ subajuste
 \end_inset
 
 : da un error de generalización con datos futuros.
- La función de aprendizaje mapea pobremente los datos de entrenamiento.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-En estadística: la diferencia al cuadrado entre el verdadero valor y el
- valor esperado.
+La función de aprendizaje mapea pobremente los datos de entrenamiento.
 \end_layout
 
 \end_deeper
@@ -3178,14 +2903,13 @@ Variance
 \begin_layout Itemize
 
 \size small
-La función seleccionada aprende casi perfectamente la tendencia de los datos
- del ejemplo de entrenamiento.
+La función aprende perfectamente la tendencia de los datos de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Varianza conocida como 
+Conocida como 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3194,20 +2918,6 @@ sobreajuste
 \end_inset
 
 : falla en la generalización con datos nuevos del futuro.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Cuanto menor es el conjunto de ejemplos de prueba, mayor es la varianza
- esperada 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mitchell1997"
-
-\end_inset
-
-.
 \end_layout
 
 \end_deeper
@@ -3519,17 +3229,17 @@ status open
 
 \begin_deeper
 \begin_layout Itemize
-Conjunto de productos de la empresa retail 
+Conjunto de productos de una empresa retail
 \shape italic
-MARKETPLUS S.A.
+.
 \end_layout
 
 \begin_layout Itemize
-Problema de pronóstico de la demanda para reposición de stock, por producto.
+El pronóstico de la demanda es por producto.
 \end_layout
 
 \begin_layout Itemize
-Stock con períodos de reposiciones regulares.
+Períodos de reposición de stock regulares.
 \end_layout
 
 \begin_layout Itemize
@@ -3537,7 +3247,7 @@ No se consideran productos estacionales.
 \end_layout
 
 \begin_layout Itemize
-No incluyen datos relacionados a costos de inventario.
+No se incluyen costos de inventario.
 \end_layout
 
 \end_deeper
@@ -3586,41 +3296,18 @@ Base de datos relacional Oracle 10g.
 
 \begin_deeper
 \begin_layout Itemize
-Operaciones transaccionales de una empresa retail dedicada a la venta de
- productos alimenticios y artículos de limpieza.
+Registros de ventas de productos alimenticios y artículos de limpieza.
 \end_layout
 
 \begin_layout Itemize
-Datos de la operaciones comprendidas entre noviembre de 2013 y octubre de
- 2016.
+Datos comprendidos entre Nov-2013 a Oc-2016.
 \end_layout
 
 \begin_layout Itemize
-Principales tablas consideradas.
+Tabla de productos, Proveedores, Ventas Cabecera (301.316 registros), Ventas
+ Detalle (981.402 registros) y Movimientos Stock.
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Tabla de Productos
-\end_layout
-
-\begin_layout Itemize
-Tabla de Proveedores
-\end_layout
-
-\begin_layout Itemize
-Tabla de Ventas Cabecera (301.316 registros)
-\end_layout
-
-\begin_layout Itemize
-Tabla de Ventas Detalle (981.402 registros)
-\end_layout
-
-\begin_layout Itemize
-Tabla de Movimientos Stock
-\end_layout
-
-\end_deeper
 \end_deeper
 \end_deeper
 \begin_layout Standard
@@ -3664,12 +3351,7 @@ Proceso ETL
 \size scriptsize
 Tabla de Productos
 \series default
-:
-\size default
- 
-\size scriptsize
-se detectaron registros de artículos con las siguientes inconsistencias:
- 
+: 
 \end_layout
 
 \begin_deeper
@@ -3683,19 +3365,8 @@ Datos del proveedor con valores nulos.
 \begin_layout Itemize
 
 \size scriptsize
-Artículos con valores de costo nulo.
-\end_layout
-
-\begin_layout Itemize
-
-\size scriptsize
-Artículos con valores donde el costo eran mayor al precio de venta unitario.
-\end_layout
-
-\begin_layout Itemize
-
-\size scriptsize
-Artículos cuyo precio de venta unitario era nulo.
+Artículos con valores de costo nulo, con costo mayor al precio de venta
+ y con precio de venta iguales a nulo.
 \end_layout
 
 \end_deeper
@@ -3705,30 +3376,32 @@ Artículos cuyo precio de venta unitario era nulo.
 \size scriptsize
 Tabla de Ventas Cabecera
 \series default
-: se encontraron registros donde los datos del cliente eran nulos.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\size scriptsize
-Tabla de Ventas Detalle
-\series default
-: se detectaron registros con las siguientes falencias:
+: 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
 \size scriptsize
-Registros de detalles donde los valores de costo eran iguales a cero.
+Registros donde los datos del cliente eran nulos.
 \end_layout
 
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+\size scriptsize
+Tabla de Ventas Detalle
+\series default
+:
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \size scriptsize
-Registros de detalle donde el costo unitario eran mayores al precio de venta
- unitario
+Registros de detalles donde los valores de costo eran iguales a cero y registros
+ con costo unitario mayor al precio de venta
 \size default
 .
 \end_layout
@@ -4006,7 +3679,7 @@ Obtención de los valores de KPI
 \begin_deeper
 \begin_layout Standard
 Se obtiene los valores de KPI por cada producto y periodo, mediante codificación
- de sentencias SQL que operan sobre los datos almacenados en el datawarehouse.
+ de sentencias SQL sobre los datos del datawarehouse.
 \end_layout
 
 \begin_layout Block
@@ -4072,9 +3745,8 @@ status open
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-A cada tupla de KPI se le debe asignar una sola etiqueta de entre las siguientes
- 
+\begin_layout Itemize
+A cada tupla de KPI se le asigna una etiqueta entre las siguientes 
 \shape italic
 
 \begin_inset Quotes eld
@@ -4111,7 +3783,10 @@ Mucho
 \end_inset
 
 .
- El etiquetado es uno de los puntos focales para el aprendizaje automático.
+\end_layout
+
+\begin_layout Itemize
+El etiquetado es uno de los puntos focales para el aprendizaje automático.
 \end_layout
 
 \begin_layout Itemize
@@ -4142,9 +3817,9 @@ status open
 
 \begin_deeper
 \begin_layout Standard
-Para el presente trabajo el etiquetado fue realizado en forma empírica,
- sin la intervención de un experto por la dificultad de contar con una persona
- especializada en el área
+El etiquetado fue realizado en forma empírica, sin la intervención de un
+ experto por la dificultad de contar con una persona especializada en el
+ área.
 \end_layout
 
 \end_deeper
@@ -4268,8 +3943,6 @@ Datos de entrada de Machine Learning
 \begin_layout Standard
 Business Intelligence provee tres conjuntos de datos independientes que
  se corresponden con los períodos de análisis.
- Corresponden a las instancias necesarias para el proceso de aprendizaje
- automático
 \end_layout
 
 \begin_layout Block
@@ -4371,75 +4044,6 @@ key "Science.com2016"
 
 \size scriptsize
 Esquema de entrenamiento y prueba.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Entrenamiento, testeo y evaluación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Validación
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-La validación se hace por el método Stratified k-fold Cross-Validation para
- un valor de k igual a 10 y las métricas de desempeño consideradas son el
- 
-\shape italic
-Porcentaje de Acierto
-\shape default
- y la 
-\shape italic
-Estadística Kappa
-\shape default
-.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Esquema K-fold Cross Validation.png
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size scriptsize
-Esquema general de iteraciones para 10-fold Cross-Validation.
 \end_layout
 
 \end_deeper
@@ -5202,13 +4806,6 @@ Para períodos de tiempo muy cercanos (1, 2 y 4 semanas) no se observan diferenc
 as significativas en los porcentajes de aciertos.
 \end_layout
 
-\begin_layout Itemize
-
-\size small
-Para períodos de tiempo muy extensos (6, 12 meses) existe mayor incertidumbre
- en los pronósticos en general.
-\end_layout
-
 \end_deeper
 \end_deeper
 \begin_layout Standard
@@ -5246,18 +4843,6 @@ Impacto del etiquetado
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-
-\size small
-La técnica propuesta se trata de un sistema parametrizado.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Las variables principales son el período comercial y las etiquetas.
-\end_layout
-
 \begin_layout Itemize
 
 \size small
@@ -5344,28 +4929,6 @@ Conclusiones
 \begin_layout Itemize
 
 \size small
-Analizando las técnicas de pronóstico de la demanda actuales y el creciente
- uso de BI, se encontró la oportunidad de desarrollar una nueva técnica
- de pronóstico.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Esta nueva técnica utiliza KPI y se apoya en la experiencia del experto
- en compras.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Se realiza la experimentación utilizando algoritmos de clasificación de
- Machine Learning.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
 Se obtuvieron altas tasas de aciertos, haciendo pruebas exhaustivas con
  varios algoritmos de clasificación y validando con un método ampliamente
  aceptado.
@@ -5410,7 +4973,7 @@ Aporte de este trabajo
 \begin_layout Itemize
 
 \size small
-Definición de KPI adaptados para la medición del rendimiento de productos
+Definiciones de KPI adaptados para la medición del rendimiento de productos
  individuales.
 \end_layout
 
@@ -5418,13 +4981,6 @@ Definición de KPI adaptados para la medición del rendimiento de productos
 
 \size small
 Esquema básico y automatizado para el etiquetado de las instancias.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Integración de las herramientas Business Intelligence centrado en los Indicadore
-s Claves de Rendimiento y Machine Learning basado en aprendizaje supervisado.
 \end_layout
 
 \begin_layout Itemize
@@ -5458,15 +5014,13 @@ Trabajos Futuros
 \begin_layout Standard
 
 \size small
-Con el propósito de futuras mejoras del presente trabajo, a continuación
- se citan una serie de propuestas:
+Propuestas de mejoras del presente trabajo :
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Incorporar más KPI referentes a otros procesos de negocios que inciden en
- la venta de un producto.
+Incorporar KPIs referentes a otros procesos de negocios.
 \end_layout
 
 \begin_layout Itemize
