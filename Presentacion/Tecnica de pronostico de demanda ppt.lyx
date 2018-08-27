@@ -3447,15 +3447,15 @@ Tablas de Hechos.
 
 \begin_deeper
 \begin_layout Itemize
-Tabla de hechos cabecera.
+Cabecera.
 \end_layout
 
 \begin_layout Itemize
-Tabla de hechos detalle.
+Detalle.
 \end_layout
 
 \begin_layout Itemize
-Tabla de hechos Stock.
+Stock.
 \end_layout
 
 \end_deeper
@@ -3465,23 +3465,19 @@ Dimensiones.
 
 \begin_deeper
 \begin_layout Itemize
-Dimensión Fecha.
+Fecha.
 \end_layout
 
 \begin_layout Itemize
-Dimensión Productos.
+Productos.
 \end_layout
 
 \begin_layout Itemize
-Dimensión Proveedores.
+Proveedores.
 \end_layout
 
 \begin_layout Itemize
-Dimensión Clientes.
-\end_layout
-
-\begin_layout Itemize
-Dimensión Cajas.
+Clientes.
 \end_layout
 
 \end_deeper
