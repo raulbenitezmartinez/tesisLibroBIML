@@ -3949,6 +3949,23 @@ Exactitud=\frac{TP+TN}{TP+TN+FP+FN}
 
 \end_layout
 
+\begin_layout Standard
+La generalización de la fórmula para clasificación multiclase es la siguiente,
+ donde n es el número total de instancias evaluadas y N el número total
+ de clases.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Exactitud=\frac{1}{n}\sum_{i=1}^{N}f_{ii}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Precisión (precision)
 \end_layout
@@ -3978,6 +3995,23 @@ Precisión=\frac{TP}{TP+FP}
 
 \end_layout
 
+\begin_layout Standard
+La generalización de la fórmula para clasificación multiclase es la siguiente,
+ donde n es el número total de instancias evaluadas y N el número total
+ de clases.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Precisión_{i}=\frac{f_{ii}}{\sum_{j=1}^{N}f_{ji}}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Sensibilidad (sensitivity)
 \end_layout
@@ -3994,8 +4028,7 @@ sensible
 \end_inset
 
  es el clasificador para detectar instancias positivas?.
- También conocido como "Tasa positiva real" o "Recordar" (True Positive
- Rate or Recall).
+ También conocido como True Positive Rate o Recall.
 \end_layout
 
 \begin_layout Standard
@@ -4003,6 +4036,23 @@ sensible
 \begin{equation}
 Sensibilidad=\frac{TP}{TP+FN}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La generalización de la fórmula para clasificación multiclase es la siguiente,
+ donde n es el número total de instancias evaluadas y N el número total
+ de clases.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Sensibilidad_{i}=\frac{f_{ii}}{\sum_{j=1}^{N}f_{ij}}
+\]
 
 \end_inset
 
@@ -4059,7 +4109,22 @@ La Medida F es una medida de la exactitud de una prueba.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
+Medida\:F_{1}=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La generalización de la fórmula para clasificación multiclase es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Medida\:F_{1}(i)=\frac{2*Sensibilidad_{i}*Precision_{i}}{\left(Sensibilidad_{i}+Precision_{i}\right)}
 \end{equation}
 
 \end_inset
@@ -4070,7 +4135,7 @@ Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
 \begin_layout Subsubsection
 
 \color black
-Estadística Kappa (Kappa Statistic)
+Estadística kappa (kappa Statistic)
 \end_layout
 
 \begin_layout Standard
@@ -4079,21 +4144,11 @@ En la predicción multiclase, cada elemento de la matriz de confusión muestra
  la clase prevista es la columna.
  Son buenos resultados los grandes números en la diagonal principal e idealmente
  cero fuera de la diagonal principal.
- 
-\begin_inset Quotes eld
-\end_inset
-
-Kappa se utiliza para medir el acuerdo entre la predicción y la observación
- de las categorizaciones de un conjunto de datos, mientras que se corrige
- para un acuerdo que ocurre por casualidad
-\begin_inset Quotes erd
-\end_inset
-
-.
- Si los evaluadores están totalmente de acuerdo Kappa alcanza un valor máximo
- igual a 1.
- Si no hay total acuerdo entre los evaluadores, entonces Kappa tiene un
- valor
+ El coeficiente kappa de Cohen (κ) es una estadística que mide el acuerdo
+ entre evaluadores para los ítems cualitativos (categóricos).
+ Si los examinadores están completamente de acuerdo Kappa es igual a 1.
+ Si no hay total acuerdo entre los observadores (aparte de lo que se esperaría
+ por casualidad), entonces Kappa tiene un valor
 \begin_inset Formula $<1$
 \end_inset
 
@@ -4116,13 +4171,81 @@ Donde:
 \begin_inset Formula $Pr\left(a\right)$
 \end_inset
 
- es el acuerdo observado relativo entre los observadores y 
+
+\size small
+es el acuerdo relativo observado entre examinadores
+\size default
+ o el número de instancias que fueron clasifiadas correctamente sobre el
+ total de instancias, 
 \begin_inset Formula $Pr\left(e\right)$
 \end_inset
 
- es la probabilidad hipotética de acuerdo al azar utilizando los datos observado
-s para calcular las probabilidades de que cada observador clasifique aleatoriame
-nte cada categoría.
+ 
+\size small
+es la probabilidad de que el acuerdo entre examinadores se deba al azar
+\size default
+ y está relacionada con el número de instancias de cada clase y el número
+ de instancias que el clasificador concuerda con el valor verdadero de la
+ clase.
+ El resultado del numerador da el grado de acuerdo realmente logrado por
+ encima del aza y el del denominador da el grado de acuerdo que es alcanzable
+ por encima del azar.
+\end_layout
+
+\begin_layout Standard
+La generalización de la fórmula para clasificación multiclase es la siguiente,
+ donde n es el número total de instancias evaluadas, N el número total de
+ clases.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Pr(a)=\frac{1}{n}\sum_{i=1}^{N}f_{ii}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Pr(e)=\sum_{k=1}^{N}\left[\frac{1}{n^{2}}\left(\sum_{i=1}^{N}f_{ik}*\sum_{j=1}^{N}f_{kj}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Otra forma de interpretar los resultado se el siguiente:
+\end_layout
+
+\begin_layout Standard
+< 0 Acuerdo deficiente 
+\end_layout
+
+\begin_layout Standard
+0.01 - 0.20 Acuerdo leve
+\end_layout
+
+\begin_layout Standard
+0.21 - 0.40 Acuerdo justo 
+\end_layout
+
+\begin_layout Standard
+0.41 - 0.60 Acuerdo moderado 
+\end_layout
+
+\begin_layout Standard
+0.61 - 0.80 Acuerdo sustancial 
+\end_layout
+
+\begin_layout Standard
+0.81 - 1.00 Acuerdo casi perfecto
 \end_layout
 
 \begin_layout Section
