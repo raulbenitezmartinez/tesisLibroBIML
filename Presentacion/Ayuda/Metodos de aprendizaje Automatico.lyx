@@ -269,7 +269,7 @@ status open
 \begin_layout Plain Layout
 
 \lang spanish
-Complejidad del modelo
+Redes neuronales artificiales
 \end_layout
 
 \end_inset
@@ -280,298 +280,48 @@ Complejidad del modelo
 \begin_deeper
 \begin_layout Standard
 
-\size small
+\size footnotesize
 \lang spanish
-La capacidad de generalización está determinada principalmente por dos factores:
+Este método de aprendizaje automático está inspirado en el funcionamiento
+ del sistema biológico de aprendizaje de los seres humanos, construido a
+ partir de la interconexión de neuronas.
+ De manera análoga, las redes neuronales artificiales se construyen a partir
+ de un conjunto densamente interconectado de unidades simples (neuronas),
+ donde cada unidad toma cierta cantidad de números reales como entrada (que
+ posiblemente representen las salidas de otras unidades) y produce un único
+ valor de salida (el cual puede convertirse en la entrada de muchas otras
+ unidades) 
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size footnotesize
 \lang spanish
-La complejidad del modelo (model complexity).
+Un conjunto de enlaces, cada uno de los cuales está caracterizado por un
+ peso.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size footnotesize
 \lang spanish
-El tamaño del conjunto de entrenamiento (learning curves).
+Un sumador para sumarizar las señales de entrada ponderadas
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 
-\size small
+\size footnotesize
 \lang spanish
-Muestra la relación existente entre la complejidad del modelo (eje x) y
- el error de predicción (eje y).
- Indica cómo va variando el error de predicción en los conjuntos de entrenamient
-o y de prueba a medida que aumenta la complejidad del modelo.
- Los modelos muy simples dan una situación no deseada de sesgo (subajuste)
- y los modelos muy complejos igualmente una situación no deseada de varianza
- (sobreajuste).
- Para obtener una buena capacidad de generalización se debe encontrar un
- compromiso entre sesgo y varianza.
+Una función de activación para limitar la amplitud de la salida de la neurona
 \end_layout
 
-\begin_layout Standard
-
-\size small
-\lang spanish
-Este compromiso entre sesgo y varianza se puede encontrar probando distintas
- configuraciones de los parámetros de ajuste (tuning parameters) de los
- algoritmos de aprendizaje y luego eligiendo el que arroje mejores resultados.
- Normalmente se recomienda probar las distintas configuraciones de los parámetro
-s sobre un conjunto de datos llamado de validación, que no se debe confundir
- con los conjuntos de entrenamiento y de prueba.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-
-\lang spanish
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\lang spanish
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-
-\lang spanish
-Complejidad del modelo
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 
+\size footnotesize
 \lang spanish
 \begin_inset Graphics
-	filename Bias_Varianza.PNG
-	scale 32
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-
-\lang spanish
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\lang spanish
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-
-\lang spanish
-Complejidad del modelo
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-
-\size small
-\lang spanish
-Algunos ejemplos de familias de algoritmos y sus parámetros de ajuste son:
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\lang spanish
-Algoritmos de regresión lineal: la cantidad de atributos del modelo (que
- determinará la cantidad de variables independientes).
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\lang spanish
-Modelos bayesianos: en las redes bayesianas por ejemplo se debe elegir el
- algoritmo estimador (estimación de las tablas de probabilidad condicional
- de las redes bayesianas) y el método para encontrar estructuras de red.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\lang spanish
-Árboles de decisión: el factor de confianza de la poda, mínimo número de
- instancias, número de pasadas para reducir el error de poda 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mantovani2016"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\lang spanish
-Redes neuronales artificiales: la topología de la red donde se debe elegir
- la cantidad de neuronas para la capa de entrada, salida y la oculta.
- También se deben probar distintas tasas de aprendizaje (learning rate)
- y funciones de activación.
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-\lang spanish
-Support vector machines: los parámetros gamma (γ), costo (C), y epsilon
- (ε).
- γ es una constante que reduce el espacio modelo y controla la complejidad
- de la solución, C es una constante positiva que es un parámetro de control
- de capacidad, mientras que ε es la función de pérdida que describe el vector
- de regresión sin todos los datos de entrada 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Mouatadid2016"
-
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-
-\lang spanish
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\lang spanish
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Curvas de aprendizaje
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-
-\size small
-\lang spanish
-Muestra la relación existente entre el tamaño del conjunto de entrenamiento
- (eje x) y el error de predicción (eje y).
- Indica cómo va variando el error de predicción en los conjuntos de entrenamient
-o y de prueba a medida que aumenta el tamaño del conjunto de entrenamiento.
- Los modelos muy simples dan problema de alto sesgo y los modelos muy complejos
- dan problema de alta varianza.
-\end_layout
-
-\end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-
-\size small
-\lang spanish
-Cuando el modelo está sesgado por mas que se aumenten los datos del conjunto
- de entrenamiento el nivel de error del conjunto de entrenamiento y el de
- prueba se mantienen alto, por lo que para modelos sesgados no es una solución
- aumentar significativamente la cantidad de los datos del conjunto de entrenamie
-nto.
- La solución se debería buscar aumentando la complejidad del modelo.
-\end_layout
-
-\end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-
-\size small
-\lang spanish
-Cuando el modelo tiene alta varianza el error en el conjunto de entrenamiento
- se mantiene bajo aún aumentando su cantidad de datos.
- El conjunto de prueba en cambio inicia con alto porcentaje de error con
- pocos datos, pero a medida que aumentan los datos en el conjunto de entrenamien
-to el error del conjunto de prueba disminuye significativamente.
- Por tanto, ante alta varianza es una posible solución aumentar el tamaño
- de los datos.
- También se puede probar disminuyendo la complejidad del modelo.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-
-\lang spanish
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\lang spanish
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Curvas de aprendizaje
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-
-\lang spanish
-\begin_inset Graphics
-	filename Curvas de aprendizaje.v3.png
+	filename recursos/red_neuronal.png
 	scale 40
 
 \end_inset
@@ -580,26 +330,232 @@ Curvas de aprendizaje
 \end_layout
 
 \end_deeper
-\begin_layout Section*
-\start_of_appendix
-
-\shape italic
-\lang spanish
-Referencias
-\end_layout
-
 \begin_layout Standard
 
 \lang spanish
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "F:/TESIS_2016/Libro-Paper/tesisLibroBIML/BibliografiaLibro"
-options "plain"
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Support Vector Machine - SVM
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\size footnotesize
+\lang spanish
+El vector w determina la orientación de un plano discriminante.
+ El escalar b determina el desplazamiento del plano a partir del origen.
+ Asumimos que los dos conjuntos son linealmente separables, esto es, existe
+ un plano que correctamente clasifica todos los puntos en dos conjuntos.
+ Así, SVM busca encontrar el hiperplano óptimo que separa dos clases, mientras
+ maximiza el margen entre los puntos de las clases más cercanos.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Árboles de decisión
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size footnotesize
+\lang spanish
+Puede ser vista como un árbol de decisión o simplemente árbol, donde el
+ primer nodo o nodo raíz está conectado por medio de ramas o enlaces a los
+ demás nodos.
+ Estos enlaces siguen hasta que alcanzan los nodos hoja, los cuales ya no
+ se conectan a otros nodos, tal y como sucede con las estructuras en forma
+ de árbol.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size footnotesize
+\lang spanish
+\begin_inset Graphics
+	filename recursos/arbol.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Tabla de decisiones
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size footnotesize
+\lang spanish
+Una tabla de decisión es una forma de modelar un conjunto de reglas complejas
+ y sus correspondientes acciones.
+ En el caso de la clasificación, las tablas modelan un conjunto de reglas
+ con sus correspondientes clases.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+\lang spanish
+Dada una instancia no etiquetada, un clasificador basado en tabla de decisiones
+ busca por coincidencias exactas en la tabla de decisión utilizando solo
+ las características en el esquema.
+ Si no encuentran instancias coincidentes, la clase con mayor ocurrencia
+ (la clase mayoría) en la tabla de decisión es retornada; caso contrario,
+ la clase con mayor ocurrencia de todas las instancias coincidentes es retornada.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Clasificadores bayesianos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size footnotesize
+\lang spanish
+Este enfoque está basado en cuantificar las compensaciones (tradeoﬀs) entre
+ varias decisiones de clasificación utilizando las probabilidades y los
+ costos que acompañan a tales decisiones.
+ Este tipo de enfoque hace uso del Teorema de Bayes.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\lang spanish
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+Clasificadores basados en instancias
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size footnotesize
+\lang spanish
+El aprendizaje en estos algoritmos consiste simplemente en almacenar los
+ datos de entrenamiento presentados.
+ Cuando una nueva instancia de consulta es encontrada, se procede recuperar
+ un conjunto de instancias relacionadas similares de la memoria y se las
+ utiliza para clasificar la nueva instancia [Mit97].
+ De acuerdo a [WF05], los algoritmos basados en instancias consisten en
+ el almacenamiento de ejemplos de entrenamiento y el uso de una función
+ de distancia con el propósito de determinar cuál miembro del conjunto de
+ entrenamiento es el más “cercano” a una instancia desconocida.
+ Una vez que el ejemplo (o instancia) de entrenamiento más cercano ha sido
+ localizado, se predice la clase para la instancia desconocida.
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

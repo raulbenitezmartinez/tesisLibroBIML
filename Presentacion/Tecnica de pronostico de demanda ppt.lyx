@@ -1261,20 +1261,15 @@ Pronósticos causales
 \begin_layout Itemize
 
 \size small
-Variables con relación causa-efecto
+Las variables independientes y la dependiente se encuentran en una relacion
+ causa-efecto.
 \end_layout
 
 \begin_layout Itemize
 
 \size small
-Proyección de la cantidad de interés (la variable dependiente) sobre una
- o más cantidades (las variables independientes).
-\end_layout
-
-\begin_layout Itemize
-
-\size small
-Ejemplo: Mayor cantidad de ventas por las promociones sobre varios productos.
+Ejemplo: Mayor cantidad de ventas (efecto) por las promociones sobre varios
+ productos (causa).
 \end_layout
 
 \begin_layout Standard
@@ -2244,7 +2239,7 @@ Reconocimiento de caracteres manuscritos.
 \end_layout
 
 \begin_layout Itemize
-Sistemas de recomenadación en Amazon, Netflix, Facebook.
+Sistemas de recomendación en Amazon, Netflix, Facebook.
 \end_layout
 
 \end_deeper
@@ -3064,7 +3059,7 @@ Estado del arte
 \align center
 \begin_inset Graphics
 	filename estado_arte_resumido_1.png
-	scale 44
+	scale 37
 
 \end_inset
 
@@ -3097,7 +3092,7 @@ Estado del arte
 \align center
 \begin_inset Graphics
 	filename estado_arte_resumido_2.png
-	scale 46
+	scale 37
 
 \end_inset
 
