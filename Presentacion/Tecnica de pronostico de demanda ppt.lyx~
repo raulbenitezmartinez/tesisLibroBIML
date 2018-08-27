@@ -2766,17 +2766,17 @@ Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
 \begin_layout Itemize
 
 \size small
-Estadística Kappa: 
+Estadística Kappa: El coeficiente kappa de Cohen (κ) es una estadística
+ que mide el acuerdo entre evaluadores para los ítems cualitativos (categóricos).
+ 
 \begin_inset Formula $Pr\left(a\right)$
 \end_inset
 
- es el acuerdo observado relativo entre los observadores y 
+ es el acuerdo relativo observado entre examinadores y 
 \begin_inset Formula $Pr\left(e\right)$
 \end_inset
 
- es la probabilidad hipotética de acuerdo al azar utilizando los datos observado
-s para calcular las probabilidades de que cada observador clasifique aleatoriame
-nte cada categoría.
+ es la probabilidad de que el acuerdo entre examinadores se deba al azar.
 \end_layout
 
 \begin_layout Standard
@@ -3063,7 +3063,7 @@ Estado del arte
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename Estado del Arte 2.png
+	filename estado_arte_resumido_1.png
 	scale 44
 
 \end_inset
@@ -3096,7 +3096,7 @@ Estado del arte
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename Estado del Arte.png
+	filename estado_arte_resumido_2.png
 	scale 46
 
 \end_inset
@@ -3290,6 +3290,7 @@ Fuentes de Información
 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
 Base de datos relacional Oracle 10g.
 \end_layout
@@ -3308,6 +3309,7 @@ Tabla de productos, Proveedores, Ventas Cabecera (301.316 registros), Ventas
  Detalle (981.402 registros) y Movimientos Stock.
 \end_layout
 
+\end_deeper
 \end_deeper
 \end_deeper
 \begin_layout Standard

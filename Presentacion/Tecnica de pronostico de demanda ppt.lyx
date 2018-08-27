@@ -2766,17 +2766,17 @@ Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
 \begin_layout Itemize
 
 \size small
-Estadística Kappa: 
+Estadística Kappa: el coeficiente kappa de Cohen (κ) es una estadística
+ que mide el acuerdo entre evaluadores para los ítems cualitativos (categóricos).
+ 
 \begin_inset Formula $Pr\left(a\right)$
 \end_inset
 
- es el acuerdo observado relativo entre los observadores y 
+ es el acuerdo relativo observado entre examinadores y 
 \begin_inset Formula $Pr\left(e\right)$
 \end_inset
 
- es la probabilidad hipotética de acuerdo al azar utilizando los datos observado
-s para calcular las probabilidades de que cada observador clasifique aleatoriame
-nte cada categoría.
+ es la probabilidad de que el acuerdo entre examinadores se deba al azar.
 \end_layout
 
 \begin_layout Standard
