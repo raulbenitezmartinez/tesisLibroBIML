@@ -473,7 +473,11 @@ reference "alg:Pseudocódigo-clasificacion"
 .
  En el testeo por tratarse de un conjunto de datos separado del conjunto
  de entrenamiento los porcentajes de aciertos varían.
- Se dieron dos casos atípicos donde el porcentaje de acierto fue menor al
+ 
+\end_layout
+
+\begin_layout Standard
+Se dieron dos casos atípicos donde el porcentaje de acierto fue menor al
  de la línea base, estos casos aparecen cuando hay una etiqueta dominante,
  en periodos semanales fue el producto 222 con el 88% de etiquetas 
 \begin_inset Quotes eld

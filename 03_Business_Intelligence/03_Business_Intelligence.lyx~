@@ -1842,15 +1842,15 @@ Los Indicadores Claves de Rendimiento, como lo dice el nombre se tratan
 \begin_layout Standard
 
 \color black
-Por último en el cuadro 
+Por último, en el cuadro 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "Cuadro:3.1"
 
 \end_inset
 
-, se resume algunas de las áreas de mayor aplicación de Business Intelligence,
- entre las cabe destacar: salud, educación, transporte, telecomunicaciones,
+ se resumen algunas de las áreas de mayor aplicación de Business Intelligence,
+ entre las que cabe destacar: salud, educación, transporte, telecomunicaciones,
  bancos, financieras, inventario, empresas retail.
 \end_layout
 

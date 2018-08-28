@@ -112,8 +112,12 @@ key "Sipper1998"
 \end_inset
 
 .
- En un escenario inicial se tienen depósitos llenos de productos listos
- para ser llevados a los mostradores.
+ 
+\end_layout
+
+\begin_layout Standard
+En un escenario inicial se tienen depósitos llenos de productos listos para
+ ser llevados a los mostradores.
  A medida que pasa el tiempo la cantidad en depósito va decreciendo por
  la demanda de los clientes y llegado un momento crítico hay que tomar la
  decisión de reponer el stock.
@@ -293,8 +297,12 @@ key "MTPD20017"
  un nivel de stock eficiente, es decir, tener suficiente cantidad para satisface
 r la demanda sin roturas de stock y por otra parte evitar que haya un exceso
  inútil.
- Si bien el presente trabajo no toma en cuenta los costos asociados al almacenam
-iento, lo que se busca es pronosticar la cantidad o volumen de demanda de
+ 
+\end_layout
+
+\begin_layout Standard
+Si bien el presente trabajo no toma en cuenta los costos asociados al almacenami
+ento, lo que se busca es pronosticar la cantidad o volumen de demanda de
  productos de forma eficiente utilizando las herramientas de Business Intelligen
 ce y Machine Learning para el siguiente periodo.
 \end_layout
@@ -1421,7 +1429,11 @@ a de Box-Jenkins para pronosticar a corto plazo la llegada de turistas y
  de tiempo.
  Esto fue importante porque se excluyó el análisis econométrico en el diseño
  y la construcción de los modelos.
- Los resultados muestran excelentes resultados en las predicciones.
+ 
+\end_layout
+
+\begin_layout Standard
+Los resultados muestran excelentes resultados en las predicciones.
  Según la previsiones de producción para el año 2011, Montenegro puede esperar
  un crecimiento tanto en llegadas de turistas así como pernoctaciones turísticas.
  El modelo ha mostrado un aumento alrededor del 7.25 % en la llegada de turistas
@@ -1451,7 +1463,11 @@ key "LakshmiAnusha2014"
  Para el caso de estudio se aplicaron las técnicas Promedio Móvil, Suavizamiento
  Exponencial Simple y Suavizamiento Exponencial de Winters para pronosticar
  la demanda de productos farmacéuticos.
- Se eligieron en forma empírica dos productos para el estudio: Tableta de
+ 
+\end_layout
+
+\begin_layout Standard
+Se eligieron en forma empírica dos productos para el estudio: Tableta de
  10 mg de Okalet (estacional) y Tableta de Stamlo Beta (no estacional).
  Los autores concluyen que para productos farmacéuticos estacionales la
  técnica de Suavizamiento Exponencial de Winters tienen un mejor pronóstico,
@@ -1478,7 +1494,11 @@ s minoristas de productos alimenticios en la República Checa.
  Juicio del Experto (utilizado 40% de las veces), el método de Expectativas
  del Cliente (utilizado 9% de las veces) y el método de la Analogía (utilizado
  4% de las veces).
- Entre los métodos cuantitativos mas implementados se encuentran el método
+ 
+\end_layout
+
+\begin_layout Standard
+Entre los métodos cuantitativos mas implementados se encuentran el método
  de Promedio Móvil (21%) y el método Naive (19%).
  Aplicar métodos cuantitativos en tiendas minoristas con una gran variedad
  de productos es muy costosa y requiere mucho tiempo.
