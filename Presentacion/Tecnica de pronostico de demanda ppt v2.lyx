@@ -8,8 +8,9 @@
 \begin_preamble
 \useoutertheme{infolines}
 % \setbeamertemplate{footline}{\insertframenumber}
-\usetheme{Berkeley}
+\usetheme{Boadilla}
 % CambridgeUS or Antibes or Berkeley...
+\usecolortheme{seahorse}
 
 \setbeamercovered{transparent}
 % or whatever (possibly just delete it)
@@ -84,10 +85,11 @@
 \begin_layout Title
 
 \shape italic
-\size larger
+\size largest
 Pronóstico de la demanda en empresas retail
 \series bold
 \shape default
+\size larger
 
 \begin_inset Argument 1
 status open
@@ -202,47 +204,6 @@ Agosto 2018
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pgfdeclareimage[height=1.5cm]{institution-logo}{logo_pol.jpg}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-logo{
-\backslash
-pgfuseimage{institution-logo}}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-%
-\backslash
-beamerdefaultoverlayspecification{<+->}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -288,31 +249,26 @@ Pronósticos
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 Pronosticar ciertos eventos constituye una acción por la cual el hombre:
 \end_layout
 
-\begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Itemize
+
+\size larger
 Siente fascinación.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Siente necesidad de realizarlo.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Lo realiza diariamente.
 \end_layout
 
@@ -338,25 +294,52 @@ status open
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\align center
+
+\size larger
+\begin_inset Graphics
+	filename pronostico1.png
+	scale 25
+	rotateOrigin center
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename pronostico_futbol.png
+	scale 11
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
+\size larger
 Meteorología
 \series default
 : pronóstico del clima.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
+\size larger
 Deportes
 \series default
-: pronóstico de resultado de eventos deportivos.
+: resultados deportivos.
+ 
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
+\size larger
 Turismo
 \series default
 : pronóstico de cantidad de turistas.
@@ -365,22 +348,25 @@ Turismo
 \begin_layout Itemize
 
 \series bold
+\size larger
 Bolsa de Valores
 \series default
-: pronóstico de rendimiento de acciones, tasas de cambio.
+: pronóstico de rendimiento de acciones.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
+\size larger
 Energía
 \series default
-: pronóstico de consumo de energía eléctrica, gas natural.
+: pronóstico de consumo de energía eléctrica.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
+\size larger
 Retail: pronóstico de la demanda de productos/servicios.
 \end_layout
 
@@ -407,33 +393,53 @@ Pronóstico de la Demanda en empresas retail
 
 \begin_deeper
 \begin_layout Itemize
-Dificultades:
+
+\series bold
+\size larger
+Dificultades
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Falta de confiabilidad en los pronósticos en general.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Los pronósticos siempre incluyen un error de estimación.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Manejo ineficiente del stock.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Sobrecostos y ruptura de stock.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Desafío:
+
+\series bold
+\size larger
+Desafío
+\series default
+:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Elaborar pronósticos de la demanda precisos.
 \end_layout
 
@@ -460,19 +466,27 @@ Motivación
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Las desviaciones normales de los pronósticos oscilan entre el 5 y 40 %.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Las limitaciones de los métodos cuantitativos y cualitativos en pronóstico
  de la demanda.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Implementar una técnica de pronóstico automática.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Paliar las debilidades de ambos métodos.
 \end_layout
 
@@ -498,7 +512,9 @@ Motivación
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
+\begin_layout Standard
+
+\size larger
 Según un estudio publicado en 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -509,30 +525,72 @@ key "doi:10.1080/01944360508976688"
 
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Basados en 210 proyectos de infraestructura vial, en 14 países.
+
+\size larger
+Sobre 
+\series bold
+210 proyectos viales
+\series default
+, en 
+\series bold
+14 países
+\series default
+.
+ Inversión total de 
+\series bold
+U$$ 59.000 millones
+\series default
+.
 \end_layout
 
 \begin_layout Itemize
-Una inversión total de U$$ 59.000 millones.
+
+\size larger
+En 
+\series bold
+9 de cada 10 proyectos ferroviarios
+\series default
+ las previsiones de pasajeros fueron sobrestimadas con un promedio del 106%.
 \end_layout
 
 \begin_layout Itemize
-En 9 de cada 10 proyectos ferroviarios las previsiones de pasajeros fueron
- sobrestimadas con un promedio del 106%.
-\end_layout
 
-\begin_layout Itemize
-En 1 de cada 2 proyectos de carreteras la diferencia entre el tráfico real
- y el previsto fue ±20%.
+\size larger
+En 
+\series bold
+1 de cada 2 proyectos de carreteras
+\series default
+ la diferencia entre el tráfico real y el previsto fue ±20%.
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
 
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Motivación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
 \color black
-El caso Fukushima 
+El terremoto en Fukushima 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Stacey2015"
@@ -542,24 +600,62 @@ key "Stacey2015"
 
 \end_layout
 
+\begin_layout Standard
+\align center
+
+\size larger
+\begin_inset Graphics
+	filename graficoFukushima.png
+	scale 50
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Modelo de pronóstico de terremotos.
+ Estimación de terremoto de 9 Mw cada 13.000 años.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Objetivos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_deeper
 \begin_layout Itemize
-El método de pronóstico de terremotos fue un modelo de regresión lineal,
- con datos de los últimos 400 años.
+
+\size larger
+Objetivo General:
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-El modelo indicaba que cada 13.000 años ocurriría un terremoto de 9 grados.
-\end_layout
 
-\begin_layout Itemize
-La planta nuclear de Fukushima fue construida para soportar un terremoto
- de 8.6 grados.
-\end_layout
-
-\begin_layout Itemize
-El pronóstico falló debido a un sobreajuste del modelo, ya que luego de
- 300 años ocurrió el terremoto de 9 grados.
+\size larger
+Desarrollar una nueva técnica de pronóstico de la demanda para la toma de
+ decisión en la reposición de stock, integrando herramientas y conceptos
+ de Business Intelligence y Machine Learning.
 \end_layout
 
 \end_deeper
@@ -586,41 +682,41 @@ Objetivos
 
 \begin_deeper
 \begin_layout Itemize
-Objetivo General:
-\end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Desarrollar una nueva técnica de pronóstico de la demanda para la toma de
- decisión en la reposición de stock, integrando herramientas y conceptos
- de Business Intelligence y Machine Learning
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
+\size larger
 Objetivos Específicos:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Reportar las principales soluciones que abordan el problema de pronóstico
  de la demanda.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Realizar el proceso de Business Intelligence para obtener los KPI.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Realizar el proceso de etiquetado y obtener las instancias de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Realizar el proceso de entrenamiento y validación con los distintos clasificador
 es.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Evaluar y seleccionar los mejores clasificadores.
 \end_layout
 
@@ -683,25 +779,15 @@ Administración de Compras
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
+
+\size larger
 El proceso de compras es el eje central de esta actividad empresarial.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 La estimación de la cantidad o volumen de productos a adquirir para reponer
  el stock, es el componente vital de proceso de compras
 \begin_inset CommandInset citation
@@ -713,7 +799,6 @@ key "ADMINCA"
 .
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -737,24 +822,33 @@ Etapas del proceso de compra
 
 \begin_deeper
 \begin_layout Enumerate
+
+\size larger
 Detectar la necesidad.
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Traducir la necesidad en una especificación comercial.
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Buscar potenciales proveedores.
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Seleccionar el proveedor adecuado.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
+\size larger
 Detallar la orden de compra.
  
 \series default
@@ -765,10 +859,14 @@ Es ahí donde entra en juego el pronóstico de la demanda
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Recibir los productos.
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Pagar a los proveedores.
 \end_layout
 
@@ -809,6 +907,8 @@ Definición
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 Técnica para estimar la cantidad de bienes o servicios que demandarán los
  consumidores en el futuro, basadas en el conocimiento del pasado 
 \begin_inset CommandInset citation
@@ -874,6 +974,8 @@ Métodos de pronósticos cualitativos
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 Son pronósticos subjetivos.
  Intervienen factores como: experiencia, intuición o emociones 
 \begin_inset CommandInset citation
@@ -886,6 +988,8 @@ key "GPO2011"
 \end_layout
 
 \begin_layout Standard
+
+\size larger
 \begin_inset VSpace defskip
 \end_inset
 
@@ -893,6 +997,8 @@ key "GPO2011"
 \end_layout
 
 \begin_layout Standard
+
+\size larger
 Clasificación 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -904,22 +1010,32 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Opinión del Gerente
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Junta de opinión ejecutiva
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Consulta a la fuerza de ventas
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Encuesta en el mercado de consumo
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Método Delphi
 \end_layout
 
@@ -946,6 +1062,8 @@ Métodos de pronósticos cuantitativos
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 Características 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -957,18 +1075,26 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Son métodos de pronósticos estadísticos.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Están basados en datos históricos.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Hay suposición intrínseca que las tendencias históricas continuarán.
 \end_layout
 
 \begin_layout Standard
+
+\size larger
 \begin_inset VSpace defskip
 \end_inset
 
@@ -976,14 +1102,20 @@ Hay suposición intrínseca que las tendencias históricas continuarán.
 \end_layout
 
 \begin_layout Standard
+
+\size larger
 Clasificación:
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Pronósticos de series de tiempo.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Pronósticos causales.
 \end_layout
 
@@ -1010,75 +1142,79 @@ Pronósticos de series de tiempo
 
 \begin_deeper
 \begin_layout Itemize
+\noindent
+
+\size larger
 El método de pronóstico del último valor.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+\paragraph_spacing single
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Pronóstico=último\;valor
-\end{equation}
-
+\color blue
+\begin_inset Formula $Pronóstico=último\;valor$
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
+
+\size larger
 El método de pronóstico por promedios.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+\paragraph_spacing single
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Pronóstico=promedio\;de\;todos\;los\;valores\;hasta\;la\;fecha
-\end{equation}
-
+\color blue
+\begin_inset Formula $Pronóstico=promedio\;de\;todos\;los\;valores\;hasta\;la\;fecha$
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
+
+\size larger
 El método de pronóstico de promedio móvil.
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
+\paragraph_spacing single
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Pronóstico=promedio\;de\;los\;últimos\;n\;valores
-\end{equation}
-
+\color blue
+\begin_inset Formula $Pronóstico=promedio\;de\;los\;últimos\;n\;valores$
 \end_inset
 
 
-\color inherit
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
 donde:
 \end_layout
 
 \begin_layout Standard
 \align center
 
-\size tiny
-\color brown
+\color blue
 \begin_inset Formula $n=número\;de\;periodos\;más\;recientes$
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1102,38 +1238,39 @@ Pronósticos de series de tiempo
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 El método de pronóstico por suavizamiento exponencial.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)
-\end{equation}
-
+\size small
+\color blue
+\begin_inset Formula $Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)$
 \end_inset
 
 
-\color inherit
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
 donde:
 \end_layout
 
 \begin_layout Standard
 \align center
 
-\size tiny
-\color brown
+\color blue
 \begin_inset Formula $\alpha$
 \end_inset
 
-
+ 
 \color inherit
- es una constante entre 0 y 1 llamada 
+es una constante entre 0 y 1 llamada 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1146,53 +1283,76 @@ constante de suavizamiento
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronósticos de series de tiempo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \noindent
+
+\size larger
 El método de suavizamiento exponencial con tendencia.
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
+\paragraph_spacing single
 \noindent
-\align left
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)+tendencia\;estimada
-\end{equation}
-
+\size footnotesize
+\color blue
+\begin_inset Formula $Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)+tendencia\;estimada$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\align block
 
 \shape italic
-\size tiny
+\size small
 donde:
-\color brown
+\end_layout
 
-\begin_inset Formula 
-\begin{equation}
-tendencia\;estimada=\beta*\left(última\;tendencia\right)*\left(1\text{-}\beta\right)*\left(estimación\;anterior\right)
-\end{equation}
+\begin_layout Standard
+\align center
 
+\size small
+\color blue
+\begin_inset Formula $tendencia\;estimada=\beta*\left(última\;tendencia\right)*\left(1\text{-}\beta\right)*\left(estimación\;anterior\right)$
 \end_inset
 
 
-\begin_inset Formula 
-\begin{equation}
-\begin{array}{c}
-última\;tendencia\:=\:\alpha*\left(último\;valor-penúltimo\;valor\right)\,+\\
-\qquad\qquad\qquad\qquad\qquad\qquad\qquad\left(1\text{-}\alpha\right)*\left(último\;pronóstico-penúltimo\;pronóstico\right)
-\end{array}
-\end{equation}
+\end_layout
 
+\begin_layout Standard
+\align center
+
+\size small
+\color blue
+\begin_inset Formula $\begin{array}{c}
+última\;tendencia\:=\:\alpha*\left(último\;valor-penúltimo\;valor\right)\,+\\
+\qquad\left(1\text{-}\alpha\right)*\left(último\;pronóstico-penúltimo\;pronóstico\right)
+\end{array}$
 \end_inset
 
 
@@ -1202,9 +1362,9 @@ tendencia\;estimada=\beta*\left(última\;tendencia\right)*\left(1\text{-}\beta\r
 \noindent
 \align left
 
-\size tiny
+\size small
 con 
-\color brown
+\color blue
 
 \begin_inset Formula $\beta$
 \end_inset
@@ -1213,7 +1373,7 @@ con
 \color inherit
  (beta) es una constante de suavizamiento de tendencia entre 0 y 1.
  La elección del valor y rango de 
-\color brown
+\color blue
 
 \begin_inset Formula $\beta$
 \end_inset
@@ -1221,7 +1381,7 @@ con
 
 \color inherit
  tienen igual significado que 
-\color brown
+\color blue
 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -1233,6 +1393,8 @@ con
 
 \end_deeper
 \begin_layout Itemize
+
+\size larger
 Auto Regressive Integrated Moving Average (ARIMA).
 \end_layout
 
@@ -1260,21 +1422,21 @@ Pronósticos causales
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size large
 Las variables independientes y la dependiente se encuentran en una relacion
  causa-efecto.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size large
 Ejemplo: Mayor cantidad de ventas (efecto) por las promociones sobre varios
  productos (causa).
 \end_layout
 
 \begin_layout Standard
 
-\size small
+\size large
 Una de las técnicas para resolver problemas de pronósticos causales es la
  
 \emph on
@@ -1282,53 +1444,47 @@ regresión lineal.
 \end_layout
 
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-y=a+bx
-\end{equation}
-
+\color blue
+\begin_inset Formula $y=a+bx$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-\size small
 Donde se consideran varios indicadores clave como variables independientes,
  la ecuación presenta la siguiente forma:
 \end_layout
 
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}
-\end{equation}
-
+\color blue
+\begin_inset Formula $y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-
-\size small
 El proceso de obtención de 
+\color blue
+
 \begin_inset Formula $a$
 \end_inset
 
+
+\color inherit
  y 
+\color blue
+
 \begin_inset Formula $b_{1},b_{2},...,b_{n}$
 \end_inset
 
+
+\color inherit
  puede ser también por el método de 
 \emph on
 mínimos cuadrados
@@ -1407,6 +1563,8 @@ The Datawarehouse Institute propone la definicion:
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 \begin_inset Quotes eld
 \end_inset
 
@@ -1415,7 +1573,7 @@ The Datawarehouse Institute propone la definicion:
 Business Intelligence es un término paraguas que abarca los procesos, las
  herramientas y las tecnologías para convertir datos en información, información
  en conocimiento y planes para conducir de forma eficaz las actividades
- de los negocios
+ de los negocios.
 \begin_inset Quotes erd
 \end_inset
 
@@ -1458,7 +1616,7 @@ Componentes
 \align center
 \begin_inset Graphics
 	filename fuentes_informacion - Copy.png
-	scale 40
+	scale 70
 
 \end_inset
 
@@ -1467,8 +1625,6 @@ Componentes
 
 \begin_layout Standard
 \align center
-
-\size scriptsize
 Componentes de Business Intelligence
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1477,26 +1633,6 @@ key "BICCI07"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-Fuentes de información.
-\end_layout
-
-\begin_layout Itemize
-Extracción, transformación y Carga.
-\end_layout
-
-\begin_layout Itemize
-Datawarehouse.
-\end_layout
-
-\begin_layout Itemize
-OLAP.
-\end_layout
-
-\begin_layout Itemize
-Herramientas de BI.
 \end_layout
 
 \end_deeper
@@ -1536,6 +1672,8 @@ status open
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 Los KPI o Indicadores Claves de Rendimiento se tratan de indicadores que
  son decisivos para analizar de forma rápida la situación del negocio y
  facilitar la toma de decisiones.
@@ -1573,20 +1711,28 @@ Característias de los KPI
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Todos los KPI son indicadores, pero no todos los indicadores son KPI.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Cada organización debe definir sus propios KPI según la actividad realizada.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Pueden no ser exclusivamente del tipo financiero.
  Ejemplos: calidad del servicio, satisfacción de los clientes, capacitación
  de los vendedores, etc.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Capacidad de comunicar resultados a las personas que forman parte del proyecto.
 \end_layout
 
@@ -1621,8 +1767,9 @@ Aplicaciones de BI
 
 \begin_deeper
 \begin_layout Standard
+\align center
 
-\size tiny
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
 <features tabularvalignment="middle">
@@ -1636,7 +1783,7 @@ Aplicaciones de BI
 
 \series bold
 \shape italic
-\size tiny
+\size footnotesize
 Áreas de aplicación de BI
 \end_layout
 
@@ -1649,7 +1796,7 @@ Aplicaciones de BI
 
 \series bold
 \shape italic
-\size tiny
+\size footnotesize
 Casos de uso
 \end_layout
 
@@ -1662,7 +1809,7 @@ Casos de uso
 
 \begin_layout Plain Layout
 
-\size tiny
+\size footnotesize
 Empresas Retail
 \end_layout
 
@@ -1673,14 +1820,14 @@ Empresas Retail
 
 \begin_layout Plain Layout
 
-\size tiny
+\size footnotesize
 Proporcionar un análisis de las transacciones de los clientes.
  Determinar los productos más vendidos, promociones, hábitos de compras.
 \end_layout
 
 \begin_layout Plain Layout
 
-\size tiny
+\size footnotesize
 Pronóstico.
  Uso de datos históricos para pronosticar la demanda.
 \end_layout
@@ -1694,7 +1841,7 @@ Pronóstico.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size footnotesize
 Inventario
 \end_layout
 
@@ -1706,7 +1853,7 @@ Inventario
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Planificación de Inventarios.
 \end_layout
 
@@ -1719,7 +1866,7 @@ Planificación de Inventarios.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size footnotesize
 Gestión de Pedidos
 \end_layout
 
@@ -1731,7 +1878,7 @@ Gestión de Pedidos
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Pedido y reposición.
 \end_layout
 
@@ -1745,7 +1892,7 @@ Pedido y reposición.
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Bancos, Financieras y Valores
 \end_layout
 
@@ -1757,21 +1904,21 @@ Bancos, Financieras y Valores
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Análisis de rentabilidad del cliente.
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Gestión de créditos.
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Atención en sucursales: Mejorar el servicio y la atención al cliente.
 \end_layout
 
@@ -1812,8 +1959,9 @@ Aplicaciones de BI
 
 \begin_deeper
 \begin_layout Standard
+\align center
 
-\size tiny
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
 <features tabularvalignment="middle">
@@ -1827,7 +1975,7 @@ Aplicaciones de BI
 
 \series bold
 \shape italic
-\size tiny
+\size footnotesize
 Áreas de aplicación de BI
 \end_layout
 
@@ -1840,7 +1988,7 @@ Aplicaciones de BI
 
 \series bold
 \shape italic
-\size tiny
+\size footnotesize
 Casos de uso
 \end_layout
 
@@ -1854,7 +2002,7 @@ Casos de uso
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Transporte
 \end_layout
 
@@ -1866,7 +2014,7 @@ Transporte
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Aerolíneas.
  Analizar conductas, tarifas abonadas, respuestas a promociones, canje de
  millas, categorías de los pasajeros frecuentes de la empresa.
@@ -1882,7 +2030,7 @@ Aerolíneas.
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Educación
 \end_layout
 
@@ -1894,7 +2042,7 @@ Educación
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Universidades y Colegios.
  Análisis del proceso de admisión de alumnos.
 \end_layout
@@ -1909,7 +2057,7 @@ Universidades y Colegios.
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Salud
 \end_layout
 
@@ -1921,7 +2069,7 @@ Salud
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Analizar los resultados, identificar tendencias, detectar patrones y predecir
  los resultados para mejorar el desempeño clínico y operacional.
 \end_layout
@@ -1929,14 +2077,14 @@ Analizar los resultados, identificar tendencias, detectar patrones y predecir
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Monitorear iniciativas de calidad y programas de atención.
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Seguimiento y monitoreo de ingresos, márgenes y rendimiento operacional.
 \end_layout
 
@@ -1950,7 +2098,7 @@ Seguimiento y monitoreo de ingresos, márgenes y rendimiento operacional.
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Telecomunicaciones
 \end_layout
 
@@ -1962,14 +2110,14 @@ Telecomunicaciones
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Perfil y segmentación de clientes.
 \end_layout
 
 \begin_layout Plain Layout
 \noindent
 
-\size tiny
+\size footnotesize
 Previsión de la demanda del cliente.
 \end_layout
 
@@ -2040,6 +2188,8 @@ Machine Learning
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 La 
 \begin_inset Quotes eld
 \end_inset
@@ -2059,6 +2209,8 @@ key "CMIAlan1950"
 \end_layout
 
 \begin_layout Standard
+
+\size larger
 El desafío ya no está en construir un agente inteligente total, sino mas
  bien buscar que un computador tenga capacidades como 
 \begin_inset CommandInset citation
@@ -2071,28 +2223,39 @@ key "IAEModerno2"
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Procesamiento del lenguaje natural.
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Representación del conocimiento.
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Razonamiento automático.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
+\size larger
 Aprendizaje automático (Machine Learning).
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Visión computacional.
 \end_layout
 
 \begin_layout Enumerate
+
+\size larger
 Robótica.
 \end_layout
 
@@ -2137,6 +2300,7 @@ status open
 \begin_layout Standard
 
 \series bold
+\size larger
 Arthur Samuel define (1959)
 \series default
  
@@ -2152,6 +2316,7 @@ key "Arthur1959"
 \begin_layout Standard
 
 \shape italic
+\size larger
 Machine Learning es un campo de estudio que da a las computadoras la capacidad
  de aprender a resolver problemas, sin ser explícitamente programadas.
 \end_layout
@@ -2183,7 +2348,7 @@ Modelo general de un agente
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Agentes que aprenden.png
-	scale 45
+	scale 50
 
 \end_inset
 
@@ -2192,8 +2357,6 @@ Modelo general de un agente
 
 \begin_layout Standard
 \align center
-
-\size scriptsize
 Modelo general para agentes que aprenden 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2227,18 +2390,26 @@ Aplicaciones
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Reconocimiento facial de Facebook.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Reconocimiento de voz de Google.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Reconocimiento de caracteres manuscritos.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Sistemas de recomendación en Amazon, Netflix, Facebook.
 \end_layout
 
@@ -2266,14 +2437,14 @@ Tipos de aprendizaje automático
 \begin_deeper
 \begin_layout Standard
 
-\size small
+\size larger
 Se pueden agrupar conforme a la información que poseen o que pueden llegar
  a poseer o el tipo de retroalimentación disponible:
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Aprendizaje supervisado (
 \shape italic
 Supervised Learning
@@ -2284,7 +2455,7 @@ Supervised Learning
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Conjunto de datos de entrenamiento que constituyen las respuestas correctas
  conocidas o 
 \begin_inset Quotes eld
@@ -2299,7 +2470,7 @@ ejemplos
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Aprender una función 
 \begin_inset Formula $Y=f(X)$
 \end_inset
@@ -2308,9 +2479,31 @@ Aprender una función
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Tipos de aprendizaje automático
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Aprendizaje no supervisado (
 \shape italic
 Unsupervised Learning
@@ -2321,20 +2514,42 @@ Unsupervised Learning
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Datos de entrenamiento (ejemplos) que no tienen respuestas correctas conocidas.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Los algoritmos buscan estructuras presentes.
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Tipos de aprendizaje automático
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Aprendizaje por refuerzo (
 \shape italic
 Reinforcement Learning
@@ -2345,7 +2560,7 @@ Reinforcement Learning
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Aprende cómo se comporta el entorno mediante recompensas (
 \shape italic
 refuerzos
@@ -2355,7 +2570,7 @@ refuerzos
 
 \begin_layout Itemize
 
-\size small
+\size larger
 El objetivo es aprender la función de valor que maximice la señal de recompensa
  y así optimice sus políticas.
 \end_layout
@@ -2387,7 +2602,7 @@ Algoritmos de aprendizaje automático
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/MachineLearningAlgorithms.png
-	scale 23
+	scale 27
 
 \end_inset
 
@@ -2397,7 +2612,7 @@ Algoritmos de aprendizaje automático
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size footnotesize
 Agrupación de algoritmos de aprendizaje automático.
 \end_layout
 
@@ -2422,14 +2637,10 @@ Clasificación multiclase
 
 \end_layout
 
-\begin_layout Frame
-
-\end_layout
-
 \begin_deeper
 \begin_layout Standard
 
-\size small
+\size larger
 Dado un patrón 
 \begin_inset Formula $x$
 \end_inset
@@ -2448,37 +2659,37 @@ Dado un patrón
 
 \begin_layout Standard
 
-\size small
+\size larger
 Componentes:
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Instancias.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Atributos.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Etiquetas.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Conjunto de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Conjunto de prueba.
 \end_layout
 
@@ -2506,21 +2717,21 @@ Técnicas de evaluación para aprendizaje supervisado
 \begin_deeper
 \begin_layout Standard
 
-\size small
+\size large
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size large
 Hold-out validation - Porcentaje de retención
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size large
 Un conjunto de entrenamiento (generalmente el 70%) y un conjunto de prueba
  (el otro 30%).
 \end_layout
@@ -2528,7 +2739,7 @@ Un conjunto de entrenamiento (generalmente el 70%) y un conjunto de prueba
 \end_deeper
 \begin_layout Itemize
 
-\size small
+\size large
 K-fold cross-validation - Validación cruzada de K iteraciones
 \end_layout
 
@@ -2567,22 +2778,17 @@ Métricas de desempeño para problemas de clasificación
 \begin_deeper
 \begin_layout Standard
 
-\size small
+\size large
 Porcentaje de acierto: es la métrica más fácil y simple, pero no dice sobre
  la distribución subyacente de los valores de respuesta, ni dice qué "tipos"
  de errores se está cometiendo.
 \end_layout
 
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Porcentaje\,de\,acierto=\frac{Número\,de\,predicciones\,correctas}{Número\,total\,de\,predicciones\,realizadas}x100
-\end{equation}
-
+\color blue
+\begin_inset Formula $Porcentaje\,de\,acierto=\frac{Número\,de\,predicciones\,correctas}{Número\,total\,de\,predicciones\,realizadas}x100$
 \end_inset
 
 
@@ -2590,15 +2796,15 @@ Porcentaje\,de\,acierto=\frac{Número\,de\,predicciones\,correctas}{Número\,tot
 
 \begin_layout Standard
 
-\size small
+\size large
 Matriz de confusión
 \end_layout
 
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/confusion_matrix_1.png
-	scale 30
+	filename confusion_matrix.png
+	scale 60
 
 \end_inset
 
@@ -2608,7 +2814,7 @@ Matriz de confusión
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Matriz de confusión para clasificación binaria.
 \end_layout
 
@@ -2636,20 +2842,15 @@ Métricas de desempeño para problemas de clasificación
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size large
 Exactitud: ¿con qué frecuencia es correcto el clasificador?.
 \end_layout
 
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Exactitud=\frac{TP+TN}{TP+TN+FP+FN}
-\end{equation}
-
+\color blue
+\begin_inset Formula $Exactitud=\frac{TP+TN}{TP+TN+FP+FN}$
 \end_inset
 
 
@@ -2657,7 +2858,7 @@ Exactitud=\frac{TP+TN}{TP+TN+FP+FN}
 
 \begin_layout Itemize
 
-\size small
+\size large
 Precisión: ¿Cuán 
 \begin_inset Quotes eld
 \end_inset
@@ -2670,15 +2871,10 @@ preciso
 \end_layout
 
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Precisión=\frac{TP}{TP+FP}
-\end{equation}
-
+\color blue
+\begin_inset Formula $Precisión=\frac{TP}{TP+FP}$
 \end_inset
 
 
@@ -2686,7 +2882,7 @@ Precisión=\frac{TP}{TP+FP}
 
 \begin_layout Itemize
 
-\size small
+\size large
 Sensibilidad: ¿Qué tan 
 \begin_inset Quotes eld
 \end_inset
@@ -2700,15 +2896,10 @@ sensible
 \end_layout
 
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Sensibilidad=\frac{TP}{TP+FN}
-\end{equation}
-
+\color blue
+\begin_inset Formula $Sensibilidad=\frac{TP}{TP+FN}$
 \end_inset
 
 
@@ -2738,21 +2929,16 @@ Métricas de desempeño para problemas de clasificación
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size large
 Medida F: puede interpretarse como un promedio ponderado de la precisión
  y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
 \end_layout
 
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
-\end{equation}
-
+\color blue
+\begin_inset Formula $Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}$
 \end_inset
 
 
@@ -2760,7 +2946,7 @@ Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
 
 \begin_layout Itemize
 
-\size small
+\size large
 Estadística Kappa: el coeficiente kappa de Cohen (κ) es una estadística
  que mide el acuerdo entre evaluadores para los ítems cualitativos (categóricos).
  
@@ -2775,15 +2961,10 @@ Estadística Kappa: el coeficiente kappa de Cohen (κ) es una estadística
 \end_layout
 
 \begin_layout Standard
+\align center
 
-\shape italic
-\size tiny
-\color brown
-\begin_inset Formula 
-\begin{equation}
-\kappa=\frac{Pr\left(a\right)-Pr\left(e\right)}{1-Pr\left(e\right)}
-\end{equation}
-
+\color blue
+\begin_inset Formula $\kappa=\frac{Pr\left(a\right)-Pr\left(e\right)}{1-Pr\left(e\right)}$
 \end_inset
 
 
