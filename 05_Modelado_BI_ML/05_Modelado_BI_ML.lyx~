@@ -104,7 +104,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Tecnologia/Documents/GitHub/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
 	scale 40
 
 \end_inset
@@ -177,13 +177,17 @@ key "KIM92"
  Utilizando los conceptos y herramientas de Business Intelligence, se parte
  con el análisis de una fuente de información auténtica obtenida de una
  empresa retail; se diseña el datawarehouse que será poblado con información
- de las transacciones operacionales diarias del negocio; posteriormente
- se definen los indicadores claves de rendimiento como métricas, se calculan
- los valores de los indicadores con los datos históricos almacenados en
- el datawarehuose para cada periodo de tiempo establecido y se asigna una
- etiqueta a cada tupla de valores KPI que finalmente servirán como parámetros
- de entrada de las herramientas de aprendizaje automático para diseñar una
- solución que pronostique la demanda.
+ de las transacciones operacionales diarias del negocio.
+ 
+\end_layout
+
+\begin_layout Standard
+Posteriormente se definen los indicadores claves de rendimiento como métricas,
+ se calculan los valores de los indicadores con los datos históricos almacenados
+ en el datawarehuose para cada periodo de tiempo establecido y se asigna
+ una etiqueta a cada tupla de valores KPI que finalmente servirán como parámetro
+s de entrada de las herramientas de aprendizaje automático para diseñar
+ una solución que pronostique la demanda.
 \end_layout
 
 \begin_layout Subsection
