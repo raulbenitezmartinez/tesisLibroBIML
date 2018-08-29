@@ -1066,7 +1066,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/MachineLearningAlgorithms.png
-	scale 40
+	scale 55
+	rotateAngle 90
 
 \end_inset
 
@@ -4676,7 +4677,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Curvas de aprendizaje.v3.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -4859,15 +4860,23 @@ key "HybridSoft2014"
  Como solución se propone un modelo híbrido de dos etapas.
  Para evidenciar la efectividad de los modelos híbridos se lo comparan con
  modelos de una sola etapa.
- Los modelos de pronóstico de una sola etapa incluyen: Multiple Linear Regressio
-n (MLR), Support Vector Regression (SVR), Artificial Neural Networks (ANN),
+ 
+\end_layout
+
+\begin_layout Standard
+Los modelos de pronóstico de una sola etapa incluyen: Multiple Linear Regression
+ (MLR), Support Vector Regression (SVR), Artificial Neural Networks (ANN),
  y Extreme Learning Machine (ELM), y una selección de 23 variables influyentes
  como posibles datos de entrada.
  Para ANN y SVR se utilizaron las 23 variables, para ELM entre 1 y 15 variables,
  y para MLR se utilizaron 2 variables significativas.
- Para los modelos de pronóstico híbridos se utilizaron las 2 variables seleccion
-adas para MLR como variables de entrada, dando así 3 modelos híbridos: MLR(sel)-
-ANN, MLR(sel)-SVR y MLR(sel)-ELM.
+ 
+\end_layout
+
+\begin_layout Standard
+Para los modelos de pronóstico híbridos se utilizaron las 2 variables selecciona
+das para MLR como variables de entrada, dando así 3 modelos híbridos: MLR(sel)-A
+NN, MLR(sel)-SVR y MLR(sel)-ELM.
  Como medidas de rendimiento de los pronósticos se utilizaron: Mean Absolute
  Percentage Error (MAPE), Root Mean Square Error (RMSE), y el Mean Absolute
  Difference (MAD) fueron utilizados.

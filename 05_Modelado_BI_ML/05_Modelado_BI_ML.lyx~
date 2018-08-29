@@ -2114,7 +2114,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/5_semanal.png
-	scale 80
+	rotateAngle 90
 
 \end_inset
 
@@ -2163,7 +2163,11 @@ ción y carga de los datos obtenidos de la fuente de origen y 3) el diseño
  El acceso a la fuente de información de los datos no representó mayores
  inconvenientes, el proceso consistió en restaurar en un servidor local
  el backup de los datos de la empresa que proporcionó la información.
- Durante el ETL se tuvo que identificar las columnas de las tablas relevantes
+ 
+\end_layout
+
+\begin_layout Standard
+Durante el ETL se tuvo que identificar las columnas de las tablas relevantes
  para la 
 \shape italic
 extracción
