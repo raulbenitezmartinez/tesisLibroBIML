@@ -2016,7 +2016,7 @@ Componentes
 \align center
 \begin_inset Graphics
 	filename fuentes_informacion - Copy.png
-	scale 70
+	scale 62
 
 \end_inset
 
@@ -2029,19 +2029,6 @@ Componentes de Business Intelligence
 \begin_inset CommandInset citation
 LatexCommand cite
 key "9"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \end_inset
 
@@ -2897,7 +2884,7 @@ Modelo general de un agente
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Agentes que aprenden.png
-	scale 50
+	scale 45
 
 \end_inset
 
@@ -2914,19 +2901,6 @@ key "14"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -3763,8 +3737,8 @@ Complejidad
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Bias_Varianza.PNG
-	scale 25
+	filename Bias_Varianza.PNG
+	scale 29
 
 \end_inset
 
@@ -3774,24 +3748,13 @@ Complejidad
 \begin_layout Standard
 \align center
 
+\size footnotesize
+Complejidad del modelo
 \size small
-Complejidad del modelo 
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "15"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \end_inset
 
@@ -3858,7 +3821,7 @@ Curvas de aprendizaje
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Curvas de aprendizaje2.png
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -3898,7 +3861,7 @@ Estado del arte
 \align center
 \begin_inset Graphics
 	filename estado_arte_resumido_1.png
-	scale 37
+	scale 40
 
 \end_inset
 
@@ -3931,7 +3894,7 @@ Estado del arte
 \align center
 \begin_inset Graphics
 	filename estado_arte_resumido_2.png
-	scale 37
+	scale 40
 
 \end_inset
 
@@ -3997,7 +3960,7 @@ Esquema general de solución
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion.png
-	scale 20
+	scale 25
 
 \end_inset
 
@@ -4905,6 +4868,31 @@ key "16"
 Esquema de entrenamiento y prueba.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Bibliography
 
 \size scriptsize
@@ -5221,7 +5209,7 @@ Periodo Mensual
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/mensual_zeror_entre_test.png
-	scale 50
+	scale 49
 
 \end_inset
 
@@ -5274,7 +5262,7 @@ Kappa.
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/recuento_cross_semanal.png
-	scale 50
+	scale 49
 
 \end_inset
 
