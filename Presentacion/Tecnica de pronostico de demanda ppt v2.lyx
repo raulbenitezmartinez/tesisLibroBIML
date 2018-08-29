@@ -515,14 +515,14 @@ Motivación
 \begin_layout Standard
 
 \size larger
-Según un estudio publicado en 
+Según un estudio publicado en
 \begin_inset CommandInset citation
 LatexCommand cite
-key "doi:10.1080/01944360508976688"
+key "1"
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -562,6 +562,49 @@ En
 1 de cada 2 proyectos de carreteras
 \series default
  la diferencia entre el tráfico real y el previsto fue ±20%.
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "FHB05"
+key "1"
+
+\end_inset
+
+[FHB05] Bent Flyvbjerg and Mette K.
+ Skamris Holm and Søren L.
+ Buhl, "How (In)accurate Are Demand Forecasts in Public Works Projects?:
+ The Case of Transportation".
 \end_layout
 
 \end_deeper
@@ -1771,7 +1814,7 @@ Aplicaciones de BI
 
 \size footnotesize
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="2">
+<lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
 <column alignment="left" valignment="middle" width="2.5cm">
 <column alignment="left" valignment="middle" width="7cm">
@@ -1821,40 +1864,14 @@ Empresas Retail
 \begin_layout Plain Layout
 
 \size footnotesize
-Proporcionar un análisis de las transacciones de los clientes.
- Determinar los productos más vendidos, promociones, hábitos de compras.
+Análisis de transacciones de clientes.
+ Determinar productos más vendidos, promociones, hábitos de compras.
 \end_layout
 
 \begin_layout Plain Layout
 
 \size footnotesize
-Pronóstico.
- Uso de datos históricos para pronosticar la demanda.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\size footnotesize
-Inventario
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\noindent
-
-\size footnotesize
-Planificación de Inventarios.
+Uso de datos históricos para pronosticar la demanda.
 \end_layout
 
 \end_inset
@@ -1913,13 +1930,6 @@ Análisis de rentabilidad del cliente.
 
 \size footnotesize
 Gestión de créditos.
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-
-\size footnotesize
-Atención en sucursales: Mejorar el servicio y la atención al cliente.
 \end_layout
 
 \end_inset
@@ -2017,7 +2027,7 @@ Transporte
 \size footnotesize
 Aerolíneas.
  Analizar conductas, tarifas abonadas, respuestas a promociones, canje de
- millas, categorías de los pasajeros frecuentes de la empresa.
+ millas, categorías de los pasajeros frecuentes.
 \end_layout
 
 \end_inset
@@ -2070,8 +2080,8 @@ Salud
 \noindent
 
 \size footnotesize
-Analizar los resultados, identificar tendencias, detectar patrones y predecir
- los resultados para mejorar el desempeño clínico y operacional.
+Analizar los resultados, identificar tendencias, detectar patrones para
+ mejorar el desempeño clínico.
 \end_layout
 
 \begin_layout Plain Layout
@@ -2079,13 +2089,6 @@ Analizar los resultados, identificar tendencias, detectar patrones y predecir
 
 \size footnotesize
 Monitorear iniciativas de calidad y programas de atención.
-\end_layout
-
-\begin_layout Plain Layout
-\noindent
-
-\size footnotesize
-Seguimiento y monitoreo de ingresos, márgenes y rendimiento operacional.
 \end_layout
 
 \end_inset
@@ -2992,16 +2995,9 @@ Componentes de los errores de predicción
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-
-\size small
-Los errores de predicción en los modelos de aprendizaje automático tienen
- tres componentes:
-\end_layout
-
 \begin_layout Itemize
 
-\size small
+\size larger
 Ruido (
 \shape italic
 Noise
@@ -3012,7 +3008,7 @@ Noise
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Representa el componente 
 \begin_inset Quotes eld
 \end_inset
@@ -3027,14 +3023,36 @@ irreducible
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Ejemplo: calibraciones defectuosas en sensores de medición.
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Componentes de los errores de predicción
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Sesgo (
 \shape italic
 Bias
@@ -3045,7 +3063,7 @@ Bias
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Conocido como 
 \begin_inset Quotes eld
 \end_inset
@@ -3060,14 +3078,36 @@ subajuste
 
 \begin_layout Itemize
 
-\size small
+\size larger
 La función de aprendizaje mapea pobremente los datos de entrenamiento.
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Componentes de los errores de predicción
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Varianza (
 \shape italic
 Variance
@@ -3078,13 +3118,13 @@ Variance
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 La función aprende perfectamente la tendencia de los datos de entrenamiento.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Conocida como 
 \begin_inset Quotes eld
 \end_inset
@@ -3147,7 +3187,7 @@ Complejidad
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Complejidad del modelo 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3209,7 +3249,7 @@ Curvas de aprendizaje
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Curvas de aprendizaje.
 \end_layout
 
