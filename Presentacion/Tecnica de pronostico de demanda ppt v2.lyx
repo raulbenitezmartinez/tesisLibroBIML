@@ -162,7 +162,7 @@ Tutores: DSc.
 \begin_layout TitleGraphic
 \begin_inset Graphics
 	filename logo_pol.jpg
-	scale 25
+	scale 40
 	rotateOrigin center
 
 \end_inset
@@ -300,20 +300,12 @@ status open
 \size larger
 \begin_inset Graphics
 	filename pronostico1.png
-	scale 25
+	scale 70
 	rotateOrigin center
 
 \end_inset
 
  
-\begin_inset Graphics
-	filename pronostico_futbol.png
-	scale 11
-	rotateOrigin center
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -323,16 +315,6 @@ status open
 Meteorología
 \series default
 : pronóstico del clima.
- 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-\size larger
-Deportes
-\series default
-: resultados deportivos.
  
 \end_layout
 
@@ -352,6 +334,52 @@ Turismo
 Bolsa de Valores
 \series default
 : pronóstico de rendimiento de acciones.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Áreas de aplicacion de Pronósticos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+
+\size larger
+\begin_inset Graphics
+	filename pronostico_futbol.png
+	scale 30
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\size larger
+Deportes
+\series default
+: resultados deportivos.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -601,7 +629,11 @@ key "1"
 
 \end_inset
 
-[FHB05] Bent Flyvbjerg and Mette K.
+[FHB05] 
+\begin_inset space ~
+\end_inset
+
+Bent Flyvbjerg and Mette K.
  Skamris Holm and Søren L.
  Buhl, "How (In)accurate Are Demand Forecasts in Public Works Projects?:
  The Case of Transportation".
@@ -636,7 +668,7 @@ Motivación
 El terremoto en Fukushima 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Stacey2015"
+key "2"
 
 \end_inset
 
@@ -649,7 +681,7 @@ key "Stacey2015"
 \size larger
 \begin_inset Graphics
 	filename graficoFukushima.png
-	scale 50
+	scale 45
 	rotateOrigin center
 
 \end_inset
@@ -658,10 +690,37 @@ key "Stacey2015"
 \end_layout
 
 \begin_layout Itemize
-
-\size large
 Modelo de pronóstico de terremotos.
  Estimación de terremoto de 9 Mw cada 13.000 años.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "ST15"
+key "2"
+
+\end_inset
+
+ [ST15] 
+\begin_inset space ~
+\end_inset
+
+Brian Stacey, "Fukushima: The Failure of Predictive Models" (2015).
 \end_layout
 
 \end_deeper
@@ -832,14 +891,61 @@ El proceso de compras es el eje central de esta actividad empresarial.
 
 \size larger
 La estimación de la cantidad o volumen de productos a adquirir para reponer
- el stock, es el componente vital de proceso de compras
+ el stock, es el componente vital de proceso de compras 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "ADMINCA"
+key "3"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "JLF12"
+key "3"
+
+\end_inset
+
+ [JLF12] 
+\begin_inset space ~
+\end_inset
+
+P.
+ Fraser Johnson and Michiel R.
+ Leenders and Anna E.
+ Flynn, "Administración de compras y abastecimientos", McGRAW-HILL / INTERAMERIC
+ANA EDITORES, S.A.
+ DE C.V (2012).
 \end_layout
 
 \end_deeper
@@ -956,7 +1062,7 @@ Técnica para estimar la cantidad de bienes o servicios que demandarán los
  consumidores en el futuro, basadas en el conocimiento del pasado 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Chapman2006"
+key "4"
 
 \end_inset
 
@@ -964,6 +1070,49 @@ key "Chapman2006"
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Cha06"
+key "4"
+
+\end_inset
+
+ [Cha06] 
+\begin_inset space ~
+\end_inset
+
+Chapman, S.N., "Planificación y control de la producción", Pearson Educación
+ (2006).
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1023,7 +1172,7 @@ Son pronósticos subjetivos.
  Intervienen factores como: experiencia, intuición o emociones 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "GPO2011"
+key "5"
 
 \end_inset
 
@@ -1044,8 +1193,8 @@ key "GPO2011"
 \size larger
 Clasificación 
 \begin_inset CommandInset citation
-LatexCommand citet
-key "MCA2008"
+LatexCommand cite
+key "6"
 
 \end_inset
 
@@ -1082,6 +1231,68 @@ Encuesta en el mercado de consumo
 Método Delphi
 \end_layout
 
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "VAH11"
+key "5"
+
+\end_inset
+
+[VAH11] 
+\begin_inset space ~
+\end_inset
+
+Naim Caba Villalobos and Oswaldo Chamorro Altahona and Tomás José Fontalvo
+ Herrera, "Gestión de la Producción y Operaciones" (2011).
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "HH08"
+key "6"
+
+\end_inset
+
+ [HH08] 
+\begin_inset space ~
+\end_inset
+
+Frederick S.
+ Hillier and Mark S.
+ Hillier, "Métodos cuantitativos para administración" (2008).
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1109,8 +1320,8 @@ Métodos de pronósticos cuantitativos
 \size larger
 Características 
 \begin_inset CommandInset citation
-LatexCommand citet
-key "MCA2008"
+LatexCommand cite
+key "7"
 
 \end_inset
 
@@ -1162,6 +1373,50 @@ Pronósticos de series de tiempo.
 Pronósticos causales.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "HH08"
+key "7"
+
+\end_inset
+
+
+\size scriptsize
+ [HH08] 
+\begin_inset space ~
+\end_inset
+
+Frederick S.
+ Hillier and Mark S.
+ Hillier, "Métodos cuantitativos para administración" (2008).
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1193,9 +1448,9 @@ El método de pronóstico del último valor.
 
 \begin_deeper
 \begin_layout Standard
-\paragraph_spacing single
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $Pronóstico=último\;valor$
 \end_inset
@@ -1204,6 +1459,19 @@ El método de pronóstico del último valor.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \size larger
@@ -1212,9 +1480,9 @@ El método de pronóstico por promedios.
 
 \begin_deeper
 \begin_layout Standard
-\paragraph_spacing single
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $Pronóstico=promedio\;de\;todos\;los\;valores\;hasta\;la\;fecha$
 \end_inset
@@ -1223,6 +1491,19 @@ El método de pronóstico por promedios.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \size larger
@@ -1234,6 +1515,7 @@ El método de pronóstico de promedio móvil.
 \paragraph_spacing single
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $Pronóstico=promedio\;de\;los\;últimos\;n\;valores$
 \end_inset
@@ -1242,14 +1524,9 @@ El método de pronóstico de promedio móvil.
 \end_layout
 
 \begin_layout Standard
-
-\shape italic
-donde:
-\end_layout
-
-\begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $n=número\;de\;periodos\;más\;recientes$
 \end_inset
@@ -1290,18 +1567,12 @@ El método de pronóstico por suavizamiento exponencial.
 \begin_layout Standard
 \align center
 
-\size small
+\size large
 \color blue
 \begin_inset Formula $Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-donde:
 \end_layout
 
 \begin_layout Standard
@@ -1370,13 +1641,6 @@ El método de suavizamiento exponencial con tendencia.
 \end_layout
 
 \begin_layout Standard
-
-\shape italic
-\size small
-donde:
-\end_layout
-
-\begin_layout Standard
 \align center
 
 \size small
@@ -1435,6 +1699,19 @@ con
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \size larger
@@ -1465,21 +1742,56 @@ Pronósticos causales
 \begin_deeper
 \begin_layout Itemize
 
-\size large
+\size larger
 Las variables independientes y la dependiente se encuentran en una relacion
  causa-efecto.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
-\size large
+\size larger
 Ejemplo: Mayor cantidad de ventas (efecto) por las promociones sobre varios
  productos (causa).
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Pronósticos causales
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Standard
 
-\size large
+\size larger
 Una de las técnicas para resolver problemas de pronósticos causales es la
  
 \emph on
@@ -1489,6 +1801,7 @@ regresión lineal.
 \begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $y=a+bx$
 \end_inset
@@ -1504,6 +1817,7 @@ Donde se consideran varios indicadores clave como variables independientes,
 \begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}$
 \end_inset
@@ -1621,11 +1935,9 @@ Business Intelligence es un término paraguas que abarca los procesos, las
 \end_inset
 
 
-\emph default
-
 \begin_inset CommandInset citation
 LatexCommand cite
-key "EH05"
+key "8"
 
 \end_inset
 
@@ -1633,6 +1945,51 @@ key "EH05"
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "EH05"
+key "8"
+
+\end_inset
+
+ [EH05] 
+\begin_inset space ~
+\end_inset
+
+Wayne W.
+ Eckerson and Cindi Howson, "Enterprise Business Intelligence: Strategies
+ and Technologies for Deploying BI on an Enterprise Scale TDWI Report Series"
+ (2005).
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -1668,14 +2025,57 @@ Componentes
 
 \begin_layout Standard
 \align center
-Componentes de Business Intelligence
+Componentes de Business Intelligence 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "BICCI07"
+key "9"
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label " Can07"
+key "9"
+
+\end_inset
+
+ [Can07] 
+\begin_inset space ~
+\end_inset
+
+Josep Lluís Cano, "Busines Intelligence: Competir con información", ESADE,
+ Banesto, Banesto Pyme (2007).
 \end_layout
 
 \end_deeper
@@ -1719,18 +2119,59 @@ status open
 \size larger
 Los KPI o Indicadores Claves de Rendimiento se tratan de indicadores que
  son decisivos para analizar de forma rápida la situación del negocio y
- facilitar la toma de decisiones.
- 
+ facilitar la toma de decisiones 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "CMR13"
+key "10"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label " Alv13"
+key "10"
+
+\end_inset
+
+ [Alv13] 
+\begin_inset space ~
+\end_inset
+
+Marcos Alvarez, "Cuadro de Mando Retail", Profit (2013).
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2192,7 +2633,7 @@ Machine Learning
 \begin_deeper
 \begin_layout Standard
 
-\size larger
+\size large
 La 
 \begin_inset Quotes eld
 \end_inset
@@ -2204,7 +2645,7 @@ Prueba de Turing
  (Alan Turing 1950) 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "CMIAlan1950"
+key "11"
 
 \end_inset
 
@@ -2213,12 +2654,12 @@ key "CMIAlan1950"
 
 \begin_layout Standard
 
-\size larger
+\size large
 El desafío ya no está en construir un agente inteligente total, sino mas
  bien buscar que un computador tenga capacidades como 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "IAEModerno2"
+key "12"
 
 \end_inset
 
@@ -2227,39 +2668,101 @@ key "IAEModerno2"
 
 \begin_layout Enumerate
 
-\size larger
+\size large
 Procesamiento del lenguaje natural.
 \end_layout
 
 \begin_layout Enumerate
 
-\size larger
+\size large
 Representación del conocimiento.
 \end_layout
 
 \begin_layout Enumerate
 
-\size larger
+\size large
 Razonamiento automático.
 \end_layout
 
 \begin_layout Enumerate
 
 \series bold
-\size larger
+\size large
 Aprendizaje automático (Machine Learning).
 \end_layout
 
 \begin_layout Enumerate
 
-\size larger
+\size large
 Visión computacional.
 \end_layout
 
 \begin_layout Enumerate
 
-\size larger
+\size large
 Robótica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Tur50"
+key "11"
+
+\end_inset
+
+ [Tur50] 
+\begin_inset space ~
+\end_inset
+
+Alan Turing, "Computing Machinery and Intelligence", Mind 49: 433-460 (1950).
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "RN04"
+key "12"
+
+\end_inset
+
+ [RN04] 
+\begin_inset space ~
+\end_inset
+
+Stuart Russell and Peter Norvig, "Inteligencia Artificial.
+ Un Enfoque Moderno.
+ Segunda Edición", PEARSON EDUCACIÓN, S.A.
+ (2004).
 \end_layout
 
 \end_deeper
@@ -2309,7 +2812,7 @@ Arthur Samuel define (1959)
  
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Arthur1959"
+key "13"
 
 \end_inset
 
@@ -2325,6 +2828,49 @@ Machine Learning es un campo de estudio que da a las computadoras la capacidad
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Sam59"
+key "13"
+
+\end_inset
+
+ [Sam59] 
+\begin_inset space ~
+\end_inset
+
+Arthur Samuel, "Some Studies in Machine Learning Using the Game of Checker",
+ IBM Journal 3, 211-229 (1959).
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2363,11 +2909,56 @@ Modelo general de un agente
 Modelo general para agentes que aprenden 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "IAEModerno2"
+key "14"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "RN04"
+key "14"
+
+\end_inset
+
+
+\size scriptsize
+ [RN04] 
+\begin_inset space ~
+\end_inset
+
+Stuart Russell and Peter Norvig, "Inteligencia Artificial.
+ Un Enfoque Moderno.
+ Segunda Edición", PEARSON EDUCACIÓN, S.A.
+ (2004).
 \end_layout
 
 \end_deeper
@@ -2790,6 +3381,7 @@ Porcentaje de acierto: es la métrica más fácil y simple, pero no dice sobre
 \begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $Porcentaje\,de\,acierto=\frac{Número\,de\,predicciones\,correctas}{Número\,total\,de\,predicciones\,realizadas}x100$
 \end_inset
@@ -2852,6 +3444,7 @@ Exactitud: ¿con qué frecuencia es correcto el clasificador?.
 \begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $Exactitud=\frac{TP+TN}{TP+TN+FP+FN}$
 \end_inset
@@ -2876,6 +3469,7 @@ preciso
 \begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $Precisión=\frac{TP}{TP+FP}$
 \end_inset
@@ -2901,6 +3495,7 @@ sensible
 \begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $Sensibilidad=\frac{TP}{TP+FN}$
 \end_inset
@@ -2940,6 +3535,7 @@ Medida F: puede interpretarse como un promedio ponderado de la precisión
 \begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $Medida\:F=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}$
 \end_inset
@@ -2966,6 +3562,7 @@ Estadística Kappa: el coeficiente kappa de Cohen (κ) es una estadística
 \begin_layout Standard
 \align center
 
+\size large
 \color blue
 \begin_inset Formula $\kappa=\frac{Pr\left(a\right)-Pr\left(e\right)}{1-Pr\left(e\right)}$
 \end_inset
@@ -3159,20 +3756,10 @@ Complejidad del modelo y Curvas de aprendizaje
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Complejidad
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
@@ -3191,14 +3778,56 @@ Complejidad
 Complejidad del modelo 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Friedman2001"
+key "15"
 
 \end_inset
 
 
 \end_layout
 
-\end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "FHT01"
+key "15"
+
+\end_inset
+
+ [FHT01] 
+\begin_inset space ~
+\end_inset
+
+Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert, "The elements
+ of statistical learning", Springer series in statistics New York (2001).
+\end_layout
+
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -3221,20 +3850,10 @@ Complejidad del modelo y Curvas de aprendizaje
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Curvas de aprendizaje
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
@@ -3253,7 +3872,6 @@ Curvas de aprendizaje
 Curvas de aprendizaje.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -3366,20 +3984,6 @@ MODELADO
 status open
 
 \begin_layout Plain Layout
-Propuesta de solución
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
 Esquema general de solución
 \end_layout
 
@@ -3400,11 +4004,10 @@ Esquema general de solución
 
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Esquema general de solución.
 \end_layout
 
@@ -3430,43 +4033,38 @@ Delimitaciones
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
+
+\size larger
 Conjunto de productos de una empresa retail
 \shape italic
 .
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 El pronóstico de la demanda es por producto.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Períodos de reposición de stock regulares.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 No se consideran productos estacionales.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 No se incluyen costos de inventario.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Frame
 
@@ -3493,41 +4091,36 @@ Modelado BI
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Fuentes de Información
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
+
+\size larger
 Base de datos relacional Oracle 10g.
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
+
+\size larger
 Registros de ventas de productos alimenticios y artículos de limpieza.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Datos comprendidos entre Nov-2013 a Oc-2016.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Tabla de productos, Proveedores, Ventas Cabecera (301.316 registros), Ventas
  Detalle (981.402 registros) y Movimientos Stock.
 \end_layout
 
 \end_deeper
-\end_deeper
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -3549,24 +4142,14 @@ Modelado BI
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Proceso ETL
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 
 \series bold
-\size scriptsize
+\size larger
 Tabla de Productos
 \series default
 : 
@@ -3575,23 +4158,49 @@ Tabla de Productos
 \begin_deeper
 \begin_layout Itemize
 
-\size scriptsize
+\size larger
 Datos del proveedor con valores nulos.
  
 \end_layout
 
 \begin_layout Itemize
 
-\size scriptsize
-Artículos con valores de costo nulo, con costo mayor al precio de venta
- y con precio de venta iguales a nulo.
+\size larger
+Artículos con valores sin costo, con costo mayor al precio de venta, y con
+ precio de venta iguales a cero.
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modelado BI
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout FrameSubtitle
+Proceso ETL
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
-\size scriptsize
+\size larger
 Tabla de Ventas Cabecera
 \series default
 : 
@@ -3600,15 +4209,28 @@ Tabla de Ventas Cabecera
 \begin_deeper
 \begin_layout Itemize
 
-\size scriptsize
-Registros donde los datos del cliente eran nulos.
+\size larger
+Registros sin los datos del cliente asignados.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \series bold
-\size scriptsize
+\size larger
 Tabla de Ventas Detalle
 \series default
 :
@@ -3617,14 +4239,11 @@ Tabla de Ventas Detalle
 \begin_deeper
 \begin_layout Itemize
 
-\size scriptsize
+\size larger
 Registros de detalles donde los valores de costo eran iguales a cero y registros
- con costo unitario mayor al precio de venta
-\size default
-.
+ con costo unitario mayor al precio de venta.
 \end_layout
 
-\end_deeper
 \end_deeper
 \end_deeper
 \begin_layout Standard
@@ -3648,60 +4267,67 @@ Modelado BI
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Datawarehouse
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
+
+\size larger
 Tablas de Hechos.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Cabecera.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Detalle.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Stock.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
+
+\size larger
 Dimensiones.
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Fecha.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Productos.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Proveedores.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Clientes.
 \end_layout
 
-\end_deeper
 \end_deeper
 \end_deeper
 \begin_layout Standard
@@ -3725,12 +4351,35 @@ Modelado BI
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
+\begin_layout FrameSubtitle
+Esquema Hechos Detalles
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename DER_BI_DW_FACT_DETALLES.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-Esquema hechos detalles
+Modelado BI
 \end_layout
 
 \end_inset
@@ -3739,18 +4388,21 @@ Esquema hechos detalles
 \end_layout
 
 \begin_deeper
+\begin_layout FrameSubtitle
+Tabla Hechos Detalles
+\end_layout
+
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../03_Business_Intelligence/figuras/DER_BI_DW_FACT_DETALLES.png
-	scale 25
+	filename BI_DW_FACT_DETALLES.png
+	scale 80
 
 \end_inset
 
 
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -3774,96 +4426,124 @@ Definición de KPI
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Ticket Medio 
-\shape italic
-\size tiny
-\color brown
+\end_layout
 
-\begin_inset Formula 
-\begin{equation}
-TM\,=\frac{Cantidad\,Vendida\,Periodo}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
-\end{equation}
+\begin_layout Standard
+\align center
 
+\size large
+\color blue
+\begin_inset Formula $TM\,=\frac{Cantidad\,Vendida\,Periodo}{Total\,Tickets\,Periodo}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Cifra de Ventas
-\shape italic
-\size tiny
-\color brown
+\end_layout
 
-\begin_inset Formula 
-\begin{equation}
-CV\,=Precio*Cantidad\,Vendida\,Periodo\label{eq: Cifra de Ventas}
-\end{equation}
+\begin_layout Standard
+\align center
 
+\size large
+\color blue
+\begin_inset Formula $CV\,=Precio*Cantidad\,Vendida\,Periodo$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Margen Comercial
-\shape italic
-\size tiny
-\color brown
+\end_layout
 
-\begin_inset Formula 
-\begin{equation}
-MC\,=\frac{\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo}{Precio*Cantidad\,Vendida\,Periodo}*100\label{eq:Margen Comercial}
-\end{equation}
+\begin_layout Standard
+\align center
+
+\size large
+\color blue
+\begin_inset Formula $MC\,=\frac{\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo}{Precio*Cantidad\,Vendida\,Periodo}*100$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Definición de KPI
+\end_layout
 
 \end_inset
 
 
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
+
+\size larger
 Rotación de Stock
-\shape italic
-\size tiny
-\color brown
+\end_layout
 
-\begin_inset Formula 
-\begin{equation}
-RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo+Stock\,Final\,Periodo}{2}\right)}\label{eq:Rotación Stock}
-\end{equation}
+\begin_layout Standard
+\align center
 
+\size large
+\color blue
+\begin_inset Formula $RS\,=\frac{Total\,Ventas\,Periodo}{\left(\frac{Stock\,Inicial\,Periodo+Stock\,Final\,Periodo}{2}\right)}$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Coeficiente de Rentabilidad
-\shape italic
-\size tiny
-\color brown
+\end_layout
 
-\begin_inset Formula 
-\begin{equation}
-CR=\left(\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo\right)*RS\label{eq:Coeficiente Rentabilidad}
-\end{equation}
+\begin_layout Standard
+\align center
 
+\size large
+\color blue
+\begin_inset Formula $CR=\left(\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo\right)*RS$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Cobertura de Stock
-\shape italic
-\size tiny
-\color brown
+\end_layout
 
-\begin_inset Formula 
-\begin{equation}
-CS\,=\frac{Stock\,Actual\,Periodo}{Promedio\,Cantidad\,Venta\,Ultimos\,N\,Periodos}\label{eq:Cobertura Stock}
-\end{equation}
+\begin_layout Standard
+\align center
 
+\size large
+\color blue
+\begin_inset Formula $CS\,=\frac{Stock\,Actual\,Periodo}{Promedio\,Cantidad\,Venta\,Ultimos\,N\,Periodos}$
 \end_inset
 
 
@@ -3892,33 +4572,34 @@ Obtención de los valores de KPI
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 Se obtiene los valores de KPI por cada producto y periodo, mediante codificación
  de sentencias SQL sobre los datos del datawarehouse.
 \end_layout
 
-\begin_layout Block
-\begin_inset Argument 2
-status open
+\begin_layout Itemize
 
-\begin_layout Plain Layout
+\size larger
 Periodos
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 Semanal
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Quincenal
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Mensual
 \end_layout
 
@@ -3945,21 +4626,9 @@ Asignación de etiquetas
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
+
+\size larger
 A cada tupla de KPI se le asigna una etiqueta entre las siguientes 
 \shape italic
 
@@ -4000,24 +4669,20 @@ Mucho
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 El etiquetado es uno de los puntos focales para el aprendizaje automático.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 La asignación de las etiquetas debe ser realizada y revisada por el experto
  del área de compras.
 \end_layout
 
-\end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Block
-\begin_inset Argument 2
+\begin_inset Phantom VPhantom
 status open
 
 \begin_layout Plain Layout
@@ -4029,14 +4694,14 @@ status open
 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
+
+\size larger
 El etiquetado fue realizado en forma empírica, sin la intervención de un
  experto por la dificultad de contar con una persona especializada en el
  área.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4059,25 +4724,15 @@ Asignación de etiquetas
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Ejemplo de etiquetas asignadas
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename ../03_Business_Intelligence/figuras/5_semanal.png
-	scale 55
+	filename 5_semanal.png
+	scale 95
 
 \end_inset
 
@@ -4087,11 +4742,10 @@ Ejemplo de etiquetas asignadas
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Etiquetado para periodo semanal.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Section
 
@@ -4155,28 +4809,16 @@ Datos de entrada de Machine Learning
 
 \begin_deeper
 \begin_layout Standard
+
+\size larger
 Business Intelligence provee tres conjuntos de datos independientes que
  se corresponden con los períodos de análisis.
 \end_layout
 
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Conjuntos de datos
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 
 \series bold
-\size small
+\size larger
 Períodos Mensuales
 \series default
 : Se analizaron 309 productos diferentes, y por cada producto se tiene un
@@ -4186,7 +4828,7 @@ Períodos Mensuales
 \begin_layout Itemize
 
 \series bold
-\size small
+\size larger
 Períodos Quincenales
 \series default
 : Se analizaron 228 productos diferentes, y por cada producto se tiene un
@@ -4196,14 +4838,13 @@ Períodos Quincenales
 \begin_layout Itemize
 
 \series bold
-\size small
+\size larger
 Períodos Semanales
 \series default
 : Se analizaron 127 productos diferentes, y por cada producto se tiene un
  máximo de 151 instancias.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4227,15 +4868,19 @@ Entrenamiento, testeo y evaluación
 
 \begin_deeper
 \begin_layout Itemize
+
+\size larger
 El conjunto de entrenamiento se basa en el 70% de las instancias y el conjunto
  de prueba corresponde al 30% restante.
 \end_layout
 
 \begin_layout Itemize
+
+\size larger
 Estrategia utilizada en el curso The Machine Learning Masterclass 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Science.com2016"
+key "16"
 
 \end_inset
 
@@ -4256,8 +4901,50 @@ key "Science.com2016"
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Esquema de entrenamiento y prueba.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "0.25pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+
+\size scriptsize
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+label "Sci16"
+key "16"
+
+\end_inset
+
+ [Sci16] 
+\begin_inset space ~
+\end_inset
+
+Elite Data Science.com, "The Machine Learning Masterclass" (2016).
 \end_layout
 
 \end_deeper
@@ -4282,24 +4969,14 @@ Entrenamiento, testeo y evaluación
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Pseudocódigo para el proceso de clasificación.
+\begin_layout FrameSubtitle
+Pseudocódigo para el proceso de clasificación
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
 for cada período de análisis {mensual, quincenal,semanal}:
 \end_layout
 
@@ -4307,7 +4984,7 @@ for cada período de análisis {mensual, quincenal,semanal}:
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
 for cada producto con sus instancias:
 \end_layout
 
@@ -4315,77 +4992,77 @@ for cada producto con sus instancias:
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
 establecer conjunto de entrenamiento;
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
 establecer conjunto de testeo;
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
 for cada algoritmo de clasificación:
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
-   construir clasificador (conjunto de entrenamiento);
+\size footnotesize
+   construir clasificador(conjunto de entrenamiento);
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
-   validar clasificador (stratified k-folds cross-validation);
+\size footnotesize
+   validar clasificador(stratified k-folds cross-validation);
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
    obtener métricas de validación;
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
 endfor;
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
-criterios de línea de base (ZeroR, criterios del experto u otro);
+\size footnotesize
+criterios de línea de base(ZeroR, criterios del experto);
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
-seleccionar mejor clasificador (max(Kappa));
+\size footnotesize
+seleccionar mejor clasificador(max(Kappa));
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
-evaluar mejor clasificador (conjunto de testeo);
+\size footnotesize
+evaluar mejor clasificador(conjunto de testeo);
 \end_layout
 
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
 guardar clasificador;
 \end_layout
 
@@ -4393,18 +5070,17 @@ guardar clasificador;
 \begin_layout LyX-Code
 \paragraph_spacing single
 
-\size tiny
+\size footnotesize
 endfor;
 \end_layout
 
 \end_deeper
 \begin_layout LyX-Code
 
-\size tiny
+\size footnotesize
 endfor;
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4475,28 +5151,14 @@ Análisis del desempeño
 
 \begin_deeper
 \begin_layout FrameSubtitle
-Comparacion con línea base ZeroR
-\end_layout
-
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
 Periodo Semanal
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/semanal_zeror_entre_test.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -4506,12 +5168,11 @@ Periodo Semanal
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Entrenamiento vs Test vs ZeroR para períodos semanales.
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -4534,28 +5195,14 @@ Análisis del desempeño
 
 \begin_deeper
 \begin_layout FrameSubtitle
-Comparacion con línea base ZeroR
-\end_layout
-
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
 Periodo Quincenal
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/quincenal_zeror_entre_test.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -4565,12 +5212,11 @@ Periodo Quincenal
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Entrenamiento vs Test vs ZeroR para períodos quincenales.
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -4593,28 +5239,14 @@ Análisis del desempeño
 
 \begin_deeper
 \begin_layout FrameSubtitle
-Comparacion con línea base ZeroR
-\end_layout
-
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
 Periodo Mensual
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/mensual_zeror_entre_test.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -4624,11 +5256,10 @@ Periodo Mensual
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Entrenamiento vs Test vs ZeroR para períodos mensuales.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4652,24 +5283,12 @@ Análisis del desempeño
 
 \begin_deeper
 \begin_layout FrameSubtitle
-Recuento de clasificadores
+Recuento de clasificadores - Periodo Semanal
 \end_layout
 
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Periodo Semanal
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
+
+\size large
 Por cada producto y período de análisis se elige como clasificador aquel
  que haya alcanzado el mayor valor de 
 \shape italic
@@ -4680,7 +5299,7 @@ Kappa.
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/recuento_cross_semanal.png
-	scale 35
+	scale 50
 
 \end_inset
 
@@ -4690,12 +5309,11 @@ Kappa.
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Conteo de clasificadores para períodos semanales.
 \end_layout
 
 \end_deeper
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -4718,28 +5336,14 @@ Análisis del desempeño
 
 \begin_deeper
 \begin_layout FrameSubtitle
-Recuento de clasificadores
+Recuento de clasificadores - Periodo Quincenal
 \end_layout
 
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Periodo Quincenal
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/recuento_cross_quincenal.png
-	scale 35
+	scale 45
 
 \end_inset
 
@@ -4749,11 +5353,10 @@ Periodo Quincenal
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Recuento de clasificadores para períodos quincenales.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4777,28 +5380,14 @@ Análisis del desempeño
 
 \begin_deeper
 \begin_layout FrameSubtitle
-Recuento de clasificadores
+Recuento de clasificadores - Periodo Mensual
 \end_layout
 
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
-Periodo Mensual
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/recuento_cross_mensual.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -4808,11 +5397,10 @@ Periodo Mensual
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Recuento de clasificadores para períodos mensuales.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4835,25 +5423,15 @@ Análisis del desempeño
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Porcentajes de acierto por periodo
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Standard
 \align center
 \begin_inset Graphics
 	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/aciertos_cross.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -4863,11 +5441,10 @@ Porcentajes de acierto por periodo
 \begin_layout Standard
 \align center
 
-\size scriptsize
+\size small
 Promedio de porcentaje de aciertos para los tres períodos de análisis
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -4890,24 +5467,14 @@ Técnica de solución propuesta
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Pseudocódigo para el pronóstico de la demanda
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
+\size footnotesize
 for cada próximo período a pronosticar {mensual,quincenal,semanal}:
 \end_layout
 
@@ -4915,7 +5482,7 @@ for cada próximo período a pronosticar {mensual,quincenal,semanal}:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
+\size footnotesize
 for cada producto:
 \end_layout
 
@@ -4923,28 +5490,29 @@ for cada producto:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
+\size footnotesize
 obtener KPIs del período actual finalizado;
 \end_layout
 
+\begin_deeper
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
+\size footnotesize
 ejecutar su mejor clasificador (KPIs);
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
+\size footnotesize
 obtener etiqueta {nada,poco,medio,mucho}
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
+\size footnotesize
 extrapolar a valores continuos(criterio experto);
 \end_layout
 
@@ -4952,7 +5520,7 @@ extrapolar a valores continuos(criterio experto);
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
+\size footnotesize
 endfor;
 \end_layout
 
@@ -4960,7 +5528,7 @@ endfor;
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
+\size footnotesize
 endfor;
 \end_layout
 
@@ -4987,40 +5555,29 @@ Discusión
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Impacto del periodo de análisis
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 La elección del período es una decisión estratégica a nivel gerencial.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Depende del sector y tamaño de la empresa, tipos de productos y otros criterios.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Para períodos de tiempo muy cercanos (1, 2 y 4 semanas) no se observan diferenci
 as significativas en los porcentajes de aciertos.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -5043,41 +5600,30 @@ Discusión
 \end_layout
 
 \begin_deeper
-\begin_layout Block
-\begin_inset Argument 2
-status open
-
-\begin_layout Plain Layout
+\begin_layout FrameSubtitle
 Impacto del etiquetado
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Por practicidad y generalidad se eligió un enfoque de problema de clasificación.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 El etiquetado proporciona mayor flexibilidad al sistema y un entorno más
  controlable.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 La flexibilidad del sistema permitió emular la opinión del experto en compras
  y encontrar una cantidad eficiente de etiquetas.
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Section
 
@@ -5142,7 +5688,7 @@ Conclusiones
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Se obtuvieron altas tasas de aciertos, haciendo pruebas exhaustivas con
  varios algoritmos de clasificación y validando con un método ampliamente
  aceptado.
@@ -5150,13 +5696,13 @@ Se obtuvieron altas tasas de aciertos, haciendo pruebas exhaustivas con
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Con la técnica propuesta se logran errores menores al 5% por cada producto.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Se pretende que esta técnica se convierta en una herramienta de apoyo en
  la toma de decisiones del gerente de compras en el proceso de reposición
  de stock.
@@ -5186,20 +5732,20 @@ Aporte de este trabajo
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Definiciones de KPI adaptados para la medición del rendimiento de productos
  individuales.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Esquema básico y automatizado para el etiquetado de las instancias.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Técnica de pronostico de la demanda de productos para reposición de stock.
 \end_layout
 
@@ -5225,35 +5771,51 @@ Trabajos Futuros
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-
-\size small
-Propuestas de mejoras del presente trabajo :
-\end_layout
-
 \begin_layout Itemize
 
-\size small
+\size larger
 Incorporar KPIs referentes a otros procesos de negocios.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Asignación por parte del experto en compras de valores continuos a la clase
  de las instancias.
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Etiquetado basado en clustering (aprendizaje no supervisado) con la aprobación
  del experto en compras.
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Trabajos Futuros
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
-\size small
+\size larger
 Optimizar los algoritmos de aprendizaje mediante el ajuste de los parámetros
  (
 \shape italic
@@ -5264,14 +5826,14 @@ Tuning parameters
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Incluir costos asociados a un producto (costos de almacenamiento, seguro,
  mantenimiento, etc.).
 \end_layout
 
 \begin_layout Itemize
 
-\size small
+\size larger
 Desarrollar un software SaaS (Software as a Service) que provea un servicio
  de pronóstico de la demanda.
 \end_layout
