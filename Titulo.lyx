@@ -236,7 +236,7 @@ status collapsed
 
 \size larger
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -247,11 +247,19 @@ status collapsed
 
 
 \series bold
-Técnica basada en Business Intelligence y Machine Learning
+Técnica basada en Business Intelligence y 
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Machine Learning
 \series default
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 

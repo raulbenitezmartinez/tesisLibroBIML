@@ -2114,7 +2114,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/5_semanal.png
-	scale 80
+	width 5cm
+	rotateAngle 90
 
 \end_inset
 
