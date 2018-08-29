@@ -129,7 +129,18 @@
 \align block
 \begin_inset CommandInset include
 LatexCommand input
-filename "Titulo.lyx"
+filename "Titulo_v2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "Preliminares/dedicatorias.lyx"
 
 \end_inset
 
@@ -156,6 +167,51 @@ roman{page}}
 
 \backslash
 setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{Dedicatoria}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "Preliminares/agradecimientos.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{section}{Agradecimientos}
 \end_layout
 
 \end_inset

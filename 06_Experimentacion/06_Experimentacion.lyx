@@ -189,7 +189,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/Entrenamiento y testeo - Semanal Quincenal.png
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -512,7 +512,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/semanal_zeror_entre_test.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -550,7 +550,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/quincenal_zeror_entre_test.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -614,7 +614,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/mensual_zeror_entre_test.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -655,16 +655,16 @@ Kappa
  En la figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:6.8"
+reference "fig:6.6"
 
 \end_inset
 
  se muestra como quedó la distribución de clasificadores para períodos mensuales.
  Por ejemplo, el clasificador 
 \shape italic
-Logistic
+IterativeClassifierOptimizer
 \shape default
- resultó una mejor solución en 92 productos para periodos mensuales.
+ resultó una mejor solución en 23 productos para periodos semanales.
 \end_layout
 
 \begin_layout Standard
@@ -678,7 +678,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/recuento_cross_semanal.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -706,6 +706,23 @@ Conteo de clasificadores para períodos semanales.
 \end_layout
 
 \begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6.7"
+
+\end_inset
+
+ se muestra como quedó la distribución de clasificadores para períodos quincenal
+es.
+ Por ejemplo, el clasificador 
+\shape italic
+IterativeClassifierOptimizer
+\shape default
+ resultó una mejor solución en 60 productos para periodos quincenales.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -716,7 +733,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/recuento_cross_quincenal.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -744,6 +761,22 @@ Recuento de clasificadores para períodos quincenales.
 \end_layout
 
 \begin_layout Standard
+En la figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:6.8"
+
+\end_inset
+
+ se muestra como quedó la distribución de clasificadores para períodos mensuales.
+ Por ejemplo, el clasificador 
+\shape italic
+Logistic
+\shape default
+ resultó una mejor solución en 92 productos para periodos mensuales.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -754,7 +787,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/recuento_cross_mensual.png
-	scale 50
+	scale 65
 
 \end_inset
 
@@ -808,7 +841,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/aciertos_cross.png
-	scale 50
+	scale 65
 
 \end_inset
 
