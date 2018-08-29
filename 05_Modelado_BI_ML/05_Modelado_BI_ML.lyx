@@ -494,13 +494,13 @@ reference "fig:Hechos_detalles 5.1"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../03_Business_Intelligence/figuras/DER_BI_DW_FACT_DETALLES.png
-	scale 50
+	scale 55
 	rotateOrigin center
 
 \end_inset
@@ -771,7 +771,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_SEMANAL.png
-	scale 43
+	width 5cm
+	height 24cm
+	rotateAngle 90
 
 \end_inset
 
@@ -838,7 +840,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_QUINCENAL.png
-	scale 42
+	width 4cm
+	height 19cm
+	rotateAngle 90
 
 \end_inset
 
@@ -905,7 +909,9 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagenes/KPI_VALUES_MENSUAL.png
-	scale 42
+	width 4cm
+	height 20cm
+	rotateAngle 90
 
 \end_inset
 

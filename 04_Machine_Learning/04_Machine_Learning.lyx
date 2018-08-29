@@ -1032,9 +1032,8 @@ Algoritmos de aprendizaje supervisado y no supervisado
 \end_layout
 
 \begin_layout Standard
-El Dr.
- Jason Brownlee es un especialista en aprendizaje automático, desarrollador,
- escritor y empresario.
+El PhD Jason Brownlee es un especialista en aprendizaje automático, desarrollado
+r, escritor y empresario.
  Ha trabajado en sistemas de aprendizaje automático para la defensa, startups
  y pronósticos meteorológicos.
  Tiene una comunidad en https://machinelearningmastery.com/, la cual empezó
@@ -1051,8 +1050,7 @@ reference "fig:Algoritmos-de-machine"
 
 \end_inset
 
- lo propuesto por el Dr.
- Jason:
+ lo propuesto por Brownlee.
 \end_layout
 
 \begin_layout Standard
@@ -1081,8 +1079,7 @@ name "fig:Algoritmos-de-machine"
 
 \end_inset
 
-Agrupación de algoritmos según el Dr.
- Jason.
+Agrupación de algoritmos según Jason Brownlee.
 \end_layout
 
 \end_inset
@@ -3558,10 +3555,6 @@ Hold-out validation,
 K-fold cross-validation
 \end_layout
 
-\begin_layout Itemize
-Bootstrap resampling
-\end_layout
-
 \begin_layout Subsection
 Método de retención
 \end_layout
@@ -4181,8 +4174,19 @@ En la predicción multiclase, cada elemento de la matriz de confusión muestra
  la clase prevista es la columna.
  Son buenos resultados los grandes números en la diagonal principal e idealmente
  cero fuera de la diagonal principal.
- El coeficiente kappa de Cohen (κ) es una estadística que mide el acuerdo
- entre evaluadores para los ítems cualitativos (categóricos).
+ El coeficiente kappa de Cohen (
+\begin_inset Formula $\kappa$
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CKappa1960"
+
+\end_inset
+
+ es una estadística que mide el acuerdo entre evaluadores para los ítems
+ cualitativos (categóricos).
  Si los examinadores están completamente de acuerdo Kappa es igual a 1.
  Si no hay total acuerdo entre los observadores (aparte de lo que se esperaría
  por casualidad), entonces Kappa tiene un valor
@@ -4225,7 +4229,7 @@ es la probabilidad de que el acuerdo entre examinadores se deba al azar
  de instancias que el clasificador concuerda con el valor verdadero de la
  clase.
  El resultado del numerador da el grado de acuerdo realmente logrado por
- encima del aza y el del denominador da el grado de acuerdo que es alcanzable
+ encima del azar y el del denominador da el grado de acuerdo que es alcanzable
  por encima del azar.
 \end_layout
 
@@ -4261,27 +4265,27 @@ Pr(e)=\sum_{k=1}^{N}\left[\frac{1}{n^{2}}\left(\sum_{i=1}^{N}f_{ik}*\sum_{j=1}^{
 Otra forma de interpretar los resultado se el siguiente:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 < 0 Acuerdo deficiente 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 0.01 - 0.20 Acuerdo leve
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 0.21 - 0.40 Acuerdo justo 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 0.41 - 0.60 Acuerdo moderado 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 0.61 - 0.80 Acuerdo sustancial 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 0.81 - 1.00 Acuerdo casi perfecto
 \end_layout
 
