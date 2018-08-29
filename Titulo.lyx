@@ -236,7 +236,7 @@ status collapsed
 
 \size larger
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -247,19 +247,11 @@ status open
 
 
 \series bold
-Técnica basada en Business Intelligence y 
-\series default
-
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
-Machine Learning
+Técnica basada en Business Intelligence y
 \series default
 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -268,7 +260,52 @@ status open
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\series bold
+Machine Learning
+\series default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Phantom VPhantom
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -328,9 +365,9 @@ vskip
 
 \begin_layout Plain Layout
 
-\size large
+\size larger
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -339,6 +376,8 @@ status open
 
 \end_inset
 
+
+\size large
 Raúl Alberto Benítez Martínez
 \begin_inset ERT
 status collapsed
@@ -371,9 +410,9 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\size large
+\size larger
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -382,6 +421,8 @@ status open
 
 \end_inset
 
+
+\size large
 Alberto Gabriel Garcete González
 \begin_inset ERT
 status collapsed
