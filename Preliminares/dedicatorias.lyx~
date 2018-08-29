@@ -82,25 +82,25 @@
 
 \emph on
 Dedicatoria
-\emph default
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Dedicatoria
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
 \align center
 
 \shape italic
-Aqui van las dedicatorias.
+A Dios por darme siempre sus bendiciones y guiar e iluminar cada paso en
+ mi vida.
+ En memoria de mis queridas Madre Rosa y Madrina Nidia a quienes debo todo.
+ A Vilma y familia por brindarme siempre su incondicional apoyo en todo
+ momento.
+ A mi familiares que siempre me brindaron su ayuda.
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\shape italic
+Alberto Garcete
 \end_layout
 
 \end_body
