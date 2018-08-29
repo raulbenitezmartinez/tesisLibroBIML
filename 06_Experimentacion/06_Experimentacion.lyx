@@ -512,7 +512,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/semanal_zeror_entre_test.png
-	scale 65
+	scale 69
 
 \end_inset
 
@@ -733,7 +733,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/recuento_cross_quincenal.png
-	scale 65
+	scale 63
 
 \end_inset
 
@@ -787,7 +787,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/recuento_cross_mensual.png
-	scale 65
+	scale 69
 
 \end_inset
 
@@ -841,7 +841,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/aciertos_cross.png
-	scale 65
+	scale 70
 
 \end_inset
 
