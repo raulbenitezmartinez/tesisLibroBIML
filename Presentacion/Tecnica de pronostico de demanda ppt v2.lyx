@@ -881,6 +881,13 @@ Administración de Compras
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 
 \size larger
@@ -902,13 +909,7 @@ key "3"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -1041,6 +1042,13 @@ Pronóstico de la demanda
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Block
 \begin_inset Argument 2
 status open
@@ -1071,13 +1079,7 @@ key "4"
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset VSpace 1.9cm
 \end_inset
 
 
@@ -1905,6 +1907,13 @@ Business Intelligence
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Block
 \begin_inset Argument 2
 status open
@@ -1946,13 +1955,7 @@ key "8"
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset VSpace 1.3cm
 \end_inset
 
 
@@ -2087,6 +2090,13 @@ Indicadores Claves de Rendimiento
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Block
 \begin_inset Argument 2
 status open
@@ -2118,13 +2128,7 @@ key "10"
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset VSpace 2.3cm
 \end_inset
 
 
@@ -2774,6 +2778,13 @@ Definición
 \end_layout
 
 \begin_deeper
+\begin_layout Standard
+\begin_inset VSpace 1.4cm
+\end_inset
+
+
+\end_layout
+
 \begin_layout Block
 
 \series bold
@@ -2816,13 +2827,7 @@ Machine Learning es un campo de estudio que da a las computadoras la capacidad
 
 \end_deeper
 \begin_layout Standard
-\begin_inset Phantom VPhantom
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -4045,6 +4050,46 @@ No se incluyen costos de inventario.
 status open
 
 \begin_layout Plain Layout
+Modelado Business Intelligence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion1.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+Esquema general de solución.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Modelado BI
 \end_layout
 
@@ -4710,6 +4755,46 @@ Etiquetado para periodo semanal.
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Modelado Machine Learning
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/06_Experimentacion/Recursos/modelo_solucion2.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size small
+Esquema general de solución.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 
 \shape italic
@@ -4837,6 +4922,28 @@ El conjunto de entrenamiento se basa en el 70% de las instancias y el conjunto
  de prueba corresponde al 30% restante.
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Entrenamiento, testeo y evaluación
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \size larger
