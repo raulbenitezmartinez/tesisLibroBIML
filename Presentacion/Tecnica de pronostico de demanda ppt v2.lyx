@@ -15,6 +15,8 @@
 \setbeamercovered{transparent}
 % or whatever (possibly just delete it)
 \setbeamertemplate{navigation symbols}{}
+\setbeamerfont{page number in head/foot}{size=\large}
+\setbeamertemplate{footline}[frame number]
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -285,7 +287,7 @@ Lo realiza diariamente.
 status open
 
 \begin_layout Plain Layout
-Áreas de aplicacion de Pronósticos
+Áreas de aplicacion de Pronósticos - 1/2
 \end_layout
 
 \end_inset
@@ -349,7 +351,7 @@ Bolsa de Valores
 status open
 
 \begin_layout Plain Layout
-Áreas de aplicacion de Pronósticos
+Áreas de aplicacion de Pronósticos - 2/2
 \end_layout
 
 \end_inset
@@ -484,7 +486,7 @@ Motivación
 status open
 
 \begin_layout Plain Layout
-Motivación
+Motivación - 1/3
 \end_layout
 
 \end_inset
@@ -531,7 +533,7 @@ Paliar las debilidades de ambos métodos.
 status open
 
 \begin_layout Plain Layout
-Motivación
+Motivación - 2/3
 \end_layout
 
 \end_inset
@@ -652,7 +654,7 @@ Bent Flyvbjerg and Mette K.
 status open
 
 \begin_layout Plain Layout
-Motivación
+Motivación - 3/3
 \end_layout
 
 \end_inset
@@ -1432,7 +1434,7 @@ Frederick S.
 status open
 
 \begin_layout Plain Layout
-Pronósticos de series de tiempo
+Pronósticos de series de tiempo - 1/3
 \end_layout
 
 \end_inset
@@ -1550,7 +1552,7 @@ El método de pronóstico de promedio móvil.
 status open
 
 \begin_layout Plain Layout
-Pronósticos de series de tiempo
+Pronósticos de series de tiempo - 2/3
 \end_layout
 
 \end_inset
@@ -1612,7 +1614,7 @@ constante de suavizamiento
 status open
 
 \begin_layout Plain Layout
-Pronósticos de series de tiempo
+Pronósticos de series de tiempo - 3/3
 \end_layout
 
 \end_inset
@@ -1733,7 +1735,7 @@ Auto Regressive Integrated Moving Average (ARIMA).
 status open
 
 \begin_layout Plain Layout
-Pronósticos causales
+Pronósticos causales - 1/2
 \end_layout
 
 \end_inset
@@ -1782,7 +1784,7 @@ Ejemplo: Mayor cantidad de ventas (efecto) por las promociones sobre varios
 status open
 
 \begin_layout Plain Layout
-Pronósticos causales
+Pronósticos causales - 2/2
 \end_layout
 
 \end_inset
@@ -2232,7 +2234,7 @@ Capacidad de comunicar resultados a las personas que forman parte del proyecto.
 status open
 
 \begin_layout Plain Layout
-Aplicaciones de BI
+Aplicaciones de BI - 1/2
 \end_layout
 
 \end_inset
@@ -2391,7 +2393,7 @@ Gestión de créditos.
 status open
 
 \begin_layout Plain Layout
-Aplicaciones de BI
+Aplicaciones de BI - 2/2
 \end_layout
 
 \end_inset
@@ -2999,7 +3001,7 @@ Sistemas de recomendación en Amazon, Netflix, Facebook.
 status open
 
 \begin_layout Plain Layout
-Tipos de aprendizaje automático
+Tipos de aprendizaje automático - 1/3
 \end_layout
 
 \end_inset
@@ -3065,7 +3067,7 @@ Aprender una función
 status open
 
 \begin_layout Plain Layout
-Tipos de aprendizaje automático
+Tipos de aprendizaje automático - 2/3
 \end_layout
 
 \end_inset
@@ -3111,7 +3113,7 @@ Los algoritmos buscan estructuras presentes.
 status open
 
 \begin_layout Plain Layout
-Tipos de aprendizaje automático
+Tipos de aprendizaje automático - 3/3
 \end_layout
 
 \end_inset
@@ -3340,7 +3342,7 @@ K-fold cross-validation - Validación cruzada de K iteraciones
 status open
 
 \begin_layout Plain Layout
-Métricas de desempeño para problemas de clasificación
+Métricas de desempeño para problemas de clasificación - 1/3
 \end_layout
 
 \end_inset
@@ -3405,7 +3407,7 @@ Matriz de confusión para clasificación binaria.
 status open
 
 \begin_layout Plain Layout
-Métricas de desempeño para problemas de clasificación
+Métricas de desempeño para problemas de clasificación - 2/3
 \end_layout
 
 \end_inset
@@ -3495,7 +3497,7 @@ sensible
 status open
 
 \begin_layout Plain Layout
-Métricas de desempeño para problemas de clasificación
+Métricas de desempeño para problemas de clasificación - 3/3
 \end_layout
 
 \end_inset
@@ -3562,7 +3564,7 @@ Estadística Kappa: el coeficiente kappa de Cohen (κ) es una estadística
 status open
 
 \begin_layout Plain Layout
-Componentes de los errores de predicción
+Componentes de los errores de predicción - 1/3
 \end_layout
 
 \end_inset
@@ -3617,7 +3619,7 @@ Ejemplo: calibraciones defectuosas en sensores de medición.
 status open
 
 \begin_layout Plain Layout
-Componentes de los errores de predicción
+Componentes de los errores de predicción - 2/3
 \end_layout
 
 \end_inset
@@ -3672,7 +3674,7 @@ La función de aprendizaje mapea pobremente los datos de entrenamiento.
 status open
 
 \begin_layout Plain Layout
-Componentes de los errores de predicción
+Componentes de los errores de predicción - 3/3
 \end_layout
 
 \end_inset
@@ -3726,7 +3728,7 @@ sobreajuste
 status open
 
 \begin_layout Plain Layout
-Complejidad del modelo y Curvas de aprendizaje
+Complejidad del modelo y Curvas de aprendizaje - 1/2
 \end_layout
 
 \end_inset
@@ -3809,7 +3811,7 @@ Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert, "The elements
 status open
 
 \begin_layout Plain Layout
-Complejidad del modelo y Curvas de aprendizaje
+Complejidad del modelo y Curvas de aprendizaje - 2/2
 \end_layout
 
 \end_inset
@@ -3825,8 +3827,8 @@ Curvas de aprendizaje
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Curvas de aprendizaje2.png
-	scale 40
+	filename Curvas de aprendizaje2.png
+	scale 50
 
 \end_inset
 
@@ -3853,7 +3855,7 @@ Curvas de aprendizaje.
 status open
 
 \begin_layout Plain Layout
-Estado del arte
+Estado del arte - 1/2
 \end_layout
 
 \end_inset
@@ -3886,7 +3888,7 @@ Estado del arte
 status open
 
 \begin_layout Plain Layout
-Estado del arte
+Estado del arte - 2/2
 \end_layout
 
 \end_inset
@@ -4050,7 +4052,7 @@ No se incluyen costos de inventario.
 status open
 
 \begin_layout Plain Layout
-Modelado Business Intelligence
+
 \end_layout
 
 \end_inset
@@ -4090,7 +4092,7 @@ Esquema general de solución.
 status open
 
 \begin_layout Plain Layout
-Modelado BI
+Modelado BI - 1/6
 \end_layout
 
 \end_inset
@@ -4141,7 +4143,7 @@ Tabla de productos, Proveedores, Ventas Cabecera (301.316 registros), Ventas
 status open
 
 \begin_layout Plain Layout
-Modelado BI
+Modelado BI - 2/6
 \end_layout
 
 \end_inset
@@ -4192,7 +4194,7 @@ Artículos con valores sin costo, con costo mayor al precio de venta, y con
 status open
 
 \begin_layout Plain Layout
-Modelado BI
+Modelado BI - 3/6
 \end_layout
 
 \end_inset
@@ -4266,7 +4268,7 @@ Registros de detalles donde los valores de costo eran iguales a cero y registros
 status open
 
 \begin_layout Plain Layout
-Modelado BI
+Modelado BI - 4/6
 \end_layout
 
 \end_inset
@@ -4350,7 +4352,7 @@ Clientes.
 status open
 
 \begin_layout Plain Layout
-Modelado BI
+Modelado BI - 5/6
 \end_layout
 
 \end_inset
@@ -4387,7 +4389,7 @@ Esquema Hechos Detalles
 status open
 
 \begin_layout Plain Layout
-Modelado BI
+Modelado BI - 6/6
 \end_layout
 
 \end_inset
@@ -4424,7 +4426,7 @@ Tabla Hechos Detalles
 status open
 
 \begin_layout Plain Layout
-Definición de KPI
+Definición de KPI - 1/2
 \end_layout
 
 \end_inset
@@ -4497,7 +4499,7 @@ Margen Comercial
 status open
 
 \begin_layout Plain Layout
-Definición de KPI
+Definición de KPI - 2/2
 \end_layout
 
 \end_inset
@@ -4625,7 +4627,7 @@ Mensual
 status open
 
 \begin_layout Plain Layout
-Asignación de etiquetas
+Asignación de etiquetas - 1/2
 \end_layout
 
 \end_inset
@@ -4723,7 +4725,7 @@ El etiquetado fue realizado en forma empírica, sin la intervención de un
 status open
 
 \begin_layout Plain Layout
-Asignación de etiquetas
+Asignación de etiquetas - 2/2
 \end_layout
 
 \end_inset
@@ -4767,7 +4769,7 @@ Etiquetado para periodo semanal.
 status open
 
 \begin_layout Plain Layout
-Modelado Machine Learning
+
 \end_layout
 
 \end_inset
@@ -4801,40 +4803,6 @@ Esquema general de solución.
 Experimentos
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\align center
-
-\series bold
-\size large
-EXPERIMENTOS
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -4906,7 +4874,7 @@ Períodos Semanales
 status open
 
 \begin_layout Plain Layout
-Entrenamiento, testeo y evaluación
+Entrenamiento, testeo y evaluación - 1/3
 \end_layout
 
 \end_inset
@@ -4935,7 +4903,7 @@ El conjunto de entrenamiento se basa en el 70% de las instancias y el conjunto
 status open
 
 \begin_layout Plain Layout
-Entrenamiento, testeo y evaluación
+Entrenamiento, testeo y evaluación - 2/3
 \end_layout
 
 \end_inset
@@ -5030,7 +4998,7 @@ Elite Data Science.com, "The Machine Learning Masterclass" (2016).
 status open
 
 \begin_layout Plain Layout
-Entrenamiento, testeo y evaluación
+Entrenamiento, testeo y evaluación - 3/3
 \end_layout
 
 \end_inset
@@ -5211,7 +5179,7 @@ RESULTADOS
 status open
 
 \begin_layout Plain Layout
-Análisis del desempeño
+Análisis del desempeño - 1/7
 \end_layout
 
 \end_inset
@@ -5255,7 +5223,7 @@ Entrenamiento vs Test vs ZeroR para períodos semanales.
 status open
 
 \begin_layout Plain Layout
-Análisis del desempeño
+Análisis del desempeño - 2/7
 \end_layout
 
 \end_inset
@@ -5299,7 +5267,7 @@ Entrenamiento vs Test vs ZeroR para períodos quincenales.
 status open
 
 \begin_layout Plain Layout
-Análisis del desempeño
+Análisis del desempeño - 3/7
 \end_layout
 
 \end_inset
@@ -5343,7 +5311,7 @@ Entrenamiento vs Test vs ZeroR para períodos mensuales.
 status open
 
 \begin_layout Plain Layout
-Análisis del desempeño
+Análisis del desempeño - 4/7
 \end_layout
 
 \end_inset
@@ -5396,7 +5364,7 @@ Conteo de clasificadores para períodos semanales.
 status open
 
 \begin_layout Plain Layout
-Análisis del desempeño
+Análisis del desempeño - 5/7
 \end_layout
 
 \end_inset
@@ -5440,7 +5408,7 @@ Recuento de clasificadores para períodos quincenales.
 status open
 
 \begin_layout Plain Layout
-Análisis del desempeño
+Análisis del desempeño - 6/7
 \end_layout
 
 \end_inset
@@ -5484,7 +5452,7 @@ Recuento de clasificadores para períodos mensuales.
 status open
 
 \begin_layout Plain Layout
-Análisis del desempeño
+Análisis del desempeño - 7/7
 \end_layout
 
 \end_inset
@@ -5616,7 +5584,7 @@ endfor;
 status open
 
 \begin_layout Plain Layout
-Discusión
+Discusión - 1/2
 \end_layout
 
 \end_inset
@@ -5661,7 +5629,7 @@ as significativas en los porcentajes de aciertos.
 status open
 
 \begin_layout Plain Layout
-Discusión
+Discusión - 2/2
 \end_layout
 
 \end_inset
@@ -5832,7 +5800,7 @@ Técnica de pronostico de la demanda de productos para reposición de stock.
 status open
 
 \begin_layout Plain Layout
-Trabajos Futuros
+Trabajos Futuros - 1/2
 \end_layout
 
 \end_inset
@@ -5874,7 +5842,7 @@ Etiquetado basado en clustering (aprendizaje no supervisado) con la aprobación
 status open
 
 \begin_layout Plain Layout
-Trabajos Futuros
+Trabajos Futuros - 2/2
 \end_layout
 
 \end_inset

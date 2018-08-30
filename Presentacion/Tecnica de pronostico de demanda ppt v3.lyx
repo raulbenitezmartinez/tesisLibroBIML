@@ -8,9 +8,9 @@
 \begin_preamble
 \useoutertheme{infolines}
 % \setbeamertemplate{footline}{\insertframenumber}
-\usetheme{Boadilla}
+\usetheme{CambridgeUS}
 % CambridgeUS or Antibes or Berkeley...
-\usecolortheme{seahorse}
+\usecolortheme{beaver}
 
 \setbeamercovered{transparent}
 % or whatever (possibly just delete it)
@@ -911,7 +911,7 @@ key "3"
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 2cm
+\begin_inset VSpace 1.8cm
 \end_inset
 
 
@@ -1045,7 +1045,7 @@ Pronóstico de la demanda
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset VSpace 2cm
+\begin_inset VSpace 1.8cm
 \end_inset
 
 
@@ -1081,7 +1081,7 @@ key "4"
 
 \end_deeper
 \begin_layout Standard
-\begin_inset VSpace 1.9cm
+\begin_inset VSpace 1.7cm
 \end_inset
 
 
@@ -1910,7 +1910,7 @@ Business Intelligence
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset VSpace 1cm
+\begin_inset VSpace 0.9cm
 \end_inset
 
 
@@ -1957,7 +1957,7 @@ key "8"
 
 \end_deeper
 \begin_layout Standard
-\begin_inset VSpace 1.3cm
+\begin_inset VSpace 1cm
 \end_inset
 
 
@@ -2021,7 +2021,7 @@ Componentes
 \align center
 \begin_inset Graphics
 	filename fuentes_informacion - Copy.png
-	scale 62
+	scale 60
 
 \end_inset
 
@@ -2030,6 +2030,8 @@ Componentes
 
 \begin_layout Standard
 \align center
+
+\size small
 Componentes de Business Intelligence 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2130,7 +2132,7 @@ key "10"
 
 \end_deeper
 \begin_layout Standard
-\begin_inset VSpace 2.3cm
+\begin_inset VSpace 2cm
 \end_inset
 
 
@@ -2781,7 +2783,7 @@ Definición
 
 \begin_deeper
 \begin_layout Standard
-\begin_inset VSpace 1.4cm
+\begin_inset VSpace 1cm
 \end_inset
 
 
@@ -3745,7 +3747,7 @@ Complejidad
 \align center
 \begin_inset Graphics
 	filename Bias_Varianza.PNG
-	scale 29
+	scale 28
 
 \end_inset
 
@@ -3795,7 +3797,7 @@ key "15"
 \end_inset
 
 Friedman, Jerome and Hastie, Trevor and Tibshirani, Robert, "The elements
- of statistical learning", Springer series in statistics New York (2001).
+ of statistical learning".
 \end_layout
 
 \end_deeper
@@ -3827,8 +3829,8 @@ Curvas de aprendizaje
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename F:/TESIS_2016/Libro-Paper/tesisLibroBIML/04_Machine_Learning/recursos/Curvas de aprendizaje2.png
-	scale 40
+	filename Curvas de aprendizaje2.png
+	scale 50
 
 \end_inset
 
@@ -3901,7 +3903,7 @@ Estado del arte - 2/2
 \align center
 \begin_inset Graphics
 	filename estado_arte_resumido_2.png
-	scale 48
+	scale 46
 
 \end_inset
 
