@@ -601,7 +601,7 @@ La cifra de ventas es un KPI que sirve para explicar el importe total de
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-CV\,=Precio*Cantidad\,Vendida\,Periodo\label{eq: Cifra de Ventas}
+CV\,=Precio\times Cantidad\,Vendida\,Periodo\label{eq: Cifra de Ventas}
 \end{equation}
 
 \end_inset
@@ -622,7 +622,7 @@ Es la razón entre el precio de venta y precio de costo del producto, es
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-MC\,=\frac{\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo}{Precio*Cantidad\,Vendida\,Periodo}*100\label{eq:Margen Comercial}
+MC\,=\frac{\left(Precio-Costo\right)\times Cantidad\,Vendida\,Periodo}{Precio\times Cantidad\,Vendida\,Periodo}\times100\label{eq:Margen Comercial}
 \end{equation}
 
 \end_inset
@@ -666,7 +666,7 @@ El indicador mide la rentabilidad obtenida por la empresa basada en el margen
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-CR=\left(\left(Precio-Costo\right)*Cantidad\,Vendida\,Periodo\right)*RS\label{eq:Coeficiente Rentabilidad}
+CR=\left(\left(Precio-Costo\right)\times Cantidad\,Vendida\,Periodo\right)\times RS\label{eq:Coeficiente Rentabilidad}
 \end{equation}
 
 \end_inset

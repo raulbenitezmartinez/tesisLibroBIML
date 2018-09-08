@@ -900,7 +900,7 @@ e a dicho último valor.
 
 \begin_inset Formula 
 \begin{equation}
-Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)
+Pronóstico=\alpha\,\times\,\left(último\;valor\right)+\left(1\text{-}\alpha\right)\times\left(último\;pronóstico\right)
 \end{equation}
 
 \end_inset
@@ -969,7 +969,7 @@ El método de suavizamiento exponencial con tendencia: El inconveniente del
 \size small
 \begin_inset Formula 
 \begin{equation}
-Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\left(último\;pronóstico\right)+tendencia\;estimada
+Pronóstico=\alpha\times\left(último\;valor\right)+\left(1\text{-}\alpha\right)\times\left(último\;pronóstico\right)+tendencia\;estimada
 \end{equation}
 
 \end_inset
@@ -985,7 +985,7 @@ Pronóstico=\alpha*\left(último\;valor\right)+\left(1\text{-}\alpha\right)*\lef
 donde:
 \begin_inset Formula 
 \begin{equation}
-tendencia\;estimada=\beta*\left(tendencia\;actual\right)*\left(1\text{-}\beta\right)*\left(tendencia\,estimada\;anterior\right)
+tendencia\;estimada=\beta\times\left(tendencia\;actual\right)\times\left(1\text{-}\beta\right)\times\left(tendencia\,estimada\;anterior\right)
 \end{equation}
 
 \end_inset
@@ -994,8 +994,8 @@ tendencia\;estimada=\beta*\left(tendencia\;actual\right)*\left(1\text{-}\beta\ri
 \begin_inset Formula 
 \begin{equation}
 \begin{array}{c}
-tendencia\;actual\:=\:\alpha*\left(último\;valor-penúltimo\;valor\right)\,+\\
-\qquad\qquad\qquad\qquad\qquad\qquad\qquad\left(1\text{-}\alpha\right)*\left(último\;pronóstico-penúltimo\;pronóstico\right)
+tendencia\;actual\:=\:\alpha\times\left(último\;valor-penúltimo\;valor\right)\,+\\
+\qquad\qquad\qquad\qquad\qquad\qquad\qquad\left(1\text{-}\alpha\right)\times\left(último\;pronóstico-penúltimo\;pronóstico\right)
 \end{array}
 \end{equation}
 

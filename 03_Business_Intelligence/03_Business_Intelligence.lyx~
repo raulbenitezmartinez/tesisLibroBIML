@@ -120,7 +120,14 @@ Business Intelligence no se trata ni de un producto ni de un sistema, es
  y predictivas de las operaciones, son procesos que se extienden en el tiempo,
  capaces de manejar grandes volúmenes de datos que ayudan a identificar,
  crear y desarrollar nuevas estrategias de negocios para mejorar la competitivid
-ad.
+ad 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -140,13 +147,6 @@ key "Moss2003"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CJ20"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BICCI07"
 
 \end_inset
 
@@ -1149,7 +1149,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename figuras/OLAP.png
-	scale 80
+	scale 85
 
 \end_inset
 

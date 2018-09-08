@@ -3302,7 +3302,7 @@ o.
 \begin_layout Itemize
 
 \size large
-Hold-out validation - Porcentaje de retención
+Hold-out validation - Validación por retención
 \end_layout
 
 \begin_deeper
@@ -3429,7 +3429,7 @@ Exactitud: ¿con qué frecuencia es correcto el clasificador?.
 
 \size large
 \color blue
-\begin_inset Formula $Exactitud=\frac{TP+TN}{TP+TN+FP+FN}$
+\begin_inset Formula $Precisión=\frac{TP+TN}{TP+TN+FP+FN}$
 \end_inset
 
 
@@ -3454,7 +3454,7 @@ preciso
 
 \size large
 \color blue
-\begin_inset Formula $Precisión=\frac{TP}{TP+FP}$
+\begin_inset Formula $Exactitud=\frac{TP}{TP+FP}$
 \end_inset
 
 

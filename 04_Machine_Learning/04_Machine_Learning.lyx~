@@ -622,7 +622,13 @@ e on T, as measured by P, improves with experience E
  al aprendizaje en los humanos, por ejemplo cuando una criatura comienza
  a hablar a través de la experiencia de pronunciar las palabras y de su
  interacción con otras personas, entonces sucede que su capacidad de hablar
- se va perfeccionando o mejorando.
+ se va perfeccionando o mejorando 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -831,6 +837,9 @@ ejemplos
 \end_inset
 
  .
+\series bold
+\color blue
+[REF]
 \end_layout
 
 \begin_layout Standard
@@ -892,7 +901,13 @@ description "Support Vector Machines"
 
 ), Back Propagation Neural Network, etc.
  El problema de estudio de la tesis utiliza algoritmos de aprendizaje supervisad
-o, donde el experto en compras da la respuesta correcta a cada ejemplo.
+o, donde el experto en compras da la respuesta correcta a cada ejemplo 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -941,7 +956,13 @@ description "Principal Component Analysis"
 
 \end_inset
 
-), Hierarchical Clustering, etc.
+), Hierarchical Clustering, etc 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1050,8 +1071,13 @@ reference "fig:Algoritmos-de-machine"
 
 \end_inset
 
- lo propuesto por el Dr.
- Jason:
+ lo propuesto por Brownlee 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -1080,8 +1106,13 @@ name "fig:Algoritmos-de-machine"
 
 \end_inset
 
-Agrupación de algoritmos según el Dr.
- Jason.
+Agrupación de algoritmos según Jason Brownlee 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \end_inset
@@ -1132,7 +1163,14 @@ Regression Algorithms
  Se pueden utilizar el término regresión para referirse a la clase de problema
  y también a la clase de algoritmo.
  Para ser más exactos, la regresión es realmente un proceso.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1153,7 +1191,14 @@ Instance-Based Learning
  de aprendizaje basado en memoria.
  El enfoque se pone en la representación de las instancias almacenadas y
  las medidas de similaridad utilizadas entre instancias.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1171,7 +1216,13 @@ Regularization
  más simples que también son mejores de generalizar.
  Son populares, potentes y en general simples modificaciones de otros métodos.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado
- y no supervisado.
+ y no supervisado 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1191,7 +1242,14 @@ Decision Tree
 ción y regresión.
  Los árboles de decisión son a menudo rápidos y precisos y un gran favorito
  en aprendizaje automático.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1205,7 +1263,14 @@ Bayesian
 \shape default
 ) son los que aplican explícitamente el teorema de Bayes para problemas
  tales como la clasificación y la regresión.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1224,7 +1289,14 @@ Clustering
  Todos los métodos atañen a la utilización de las estructuras inherentes
  en los datos, para organizar dichos datos de la mejor manera posible en
  grupos de máxima uniformidad.
- Estos algoritmos se implementan en problemas de aprendizaje no supervisado.
+ Estos algoritmos se implementan en problemas de aprendizaje no supervisado
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1241,7 +1313,14 @@ Rule System
  Estas reglas pueden descubrir asociaciones importantes y comercialmente
  útiles, en grandes conjuntos de datos multidimensionales que pueden ser
  explotados por una organización.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1262,7 +1341,13 @@ s para todo tipo de problemas.
  Se ha separado el aprendizaje profundo de las redes neuronales debido a
  su enorme crecimiento y popularidad.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado,
- no supervisado y por refuerzo.
+ no supervisado y por refuerzo 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1280,7 +1365,13 @@ Deep Learning
  muchos métodos se refieren a problemas de aprendizaje semi-supervisados
  donde grandes conjuntos de datos contienen muy pocos datos etiquetados.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado
- y no supervisado.
+ y no supervisado 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1300,7 +1391,14 @@ Dimensionality Reduction
  datos que luego se pueden utilizar en un método de aprendizaje supervisado.
  Muchos de estos métodos pueden ser adaptados para su uso en clasificación
  y regresión.
- Estos algoritmos se implementan en problemas de aprendizaje no supervisado.
+ Estos algoritmos se implementan en problemas de aprendizaje no supervisado
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1319,7 +1417,13 @@ Ensemble
  formas en que hay que combinarlos.
  Esta es una clase de técnica muy poderosa y como tal es muy popular.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado
- y no supervisado.
+ y no supervisado 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1329,7 +1433,13 @@ Algoritmos no lineales
 \begin_layout Standard
 Uno de los mas importante es Support Vector Machines.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado
- y no supervisado.
+ y no supervisado 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Section
@@ -1338,7 +1448,13 @@ Algoritmos de aprendizaje por refuerzo
 
 \begin_layout Standard
 Se puede complementar el listado propuesto por el Dr.
- Jason con algunos de los algoritmos de aprendizaje por refuerzo.
+ Jason con algunos de los algoritmos de aprendizaje por refuerzo 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1346,7 +1462,13 @@ Programación dinámica
 \end_layout
 
 \begin_layout Standard
-Estos son los principales algoritmos: 
+Estos son los principales algoritmos 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1382,7 +1504,13 @@ Método de Monte Carlo
 \end_layout
 
 \begin_layout Standard
-Tiene como principales algoritmos:
+Tiene como principales algoritmos 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1398,7 +1526,13 @@ Aprendizaje por Diferencias Temporales
 \end_layout
 
 \begin_layout Standard
-Sus principales algoritmos son:
+Sus principales algoritmos son 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+:
 \end_layout
 
 \begin_layout Itemize
@@ -1443,7 +1577,13 @@ En su forma más simple se reduce a la siguiente cuestión: dado un patrón
 \begin_inset Formula $y\in\left\{ \pm1\right\} $
 \end_inset
 
- 
+.
+\end_layout
+
+\begin_layout Standard
+La clasificación binaria es probablemente el problema más estudiado en el
+ aprendizaje automático y ha dado lugar a una gran cantidad de desarrollos
+ algorítmicos y teóricos importantes durante el siglo pasado 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IntroML2008"
@@ -1451,12 +1591,6 @@ key "IntroML2008"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-La clasificación binaria es probablemente el problema más estudiado en el
- aprendizaje automático y ha dado lugar a una gran cantidad de desarrollos
- algorítmicos y teóricos importantes durante el siglo pasado.
 \end_layout
 
 \begin_layout Standard
@@ -1477,14 +1611,7 @@ Es la extensión lógica de la clasificación binaria.
 \begin_inset Formula $y\in\left\{ 1,2,3..,N\right\} $
 \end_inset
 
- puede asumir un rango de valores diferentes 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "IntroML2008"
-
-\end_inset
-
-.
+ puede asumir un rango de valores diferentes.
  El problema de estudio en cuestión utiliza clasificación multiclase, donde
  
 \begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
@@ -1493,8 +1620,14 @@ key "IntroML2008"
 .
  Por ejemplo, es posible que se desee clasificar un documento de acuerdo
  con el idioma en el que fue escrito (inglés, francés, alemán, español,
- hindú, japonés, chino, ...).
- 
+ hindú, japonés, chino, ...) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IntroML2008"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1572,7 +1705,13 @@ Algoritmos de clasificación multiclase
 Constituye el conjunto de algoritmos de machine learning que soportan problemas
  de clasificación multiclase.
  Cada algoritmo se construye con su Función Objetivo (f), Variables de entrada
- (X), Variable de salida (Y), donde Y = f(X).
+ (X), Variable de salida (Y), donde Y = f(X) 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1587,7 +1726,7 @@ Para medir el rendimiento de un clasificador sobre nuevos datos, necesitamos
 \end_layout
 
 \begin_layout Subsection
-Regression
+Regresión
 \end_layout
 
 \begin_layout Standard
@@ -1604,7 +1743,13 @@ Es otra aplicación prototípica.
  Por ejemplo, al estimar los valores de stock, nuestra pérdida para una
  opción de venta será decididamente unilateral.
  Por otro lado, a un deportista aficionado solo le importaría que nuestra
- estimación de la frecuencia cardíaca coincida con la media real.
+ estimación de la frecuencia cardíaca coincida con la media real 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Section
@@ -3546,7 +3691,13 @@ Técnicas de evaluación para aprendizaje supervisado
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
  Entre las técnicas de evaluación para problemas de aprendizaje supervisado
- se destacan:
+ se destacan 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+:
 \end_layout
 
 \begin_layout Itemize
@@ -3589,7 +3740,13 @@ Divide el conjunto de datos en dos conjuntos: un conjunto de entrenamiento
 to, puede contribuir a una evaluación imparcial de qué tan bien se desempeña
  un modelo en datos nunca antes vistos.
  Esto protege contra el sobreajuste y permite evaluar cómo el modelo funcionaría
- con los nuevos datos a medida que surgen.
+ con los nuevos datos a medida que surgen 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -3624,7 +3781,13 @@ Luego se tienen diez modelos diferentes, cada uno ha sido entrenado y probado
  exactitud de predicción.
  Al final, se combinan estos modelos al promediar sus pesos para estimar
  un modelo predictivo final.
- La validación cruzada es otro antídoto contra el sobreajuste.
+ La validación cruzada es otro antídoto contra el sobreajuste 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
@@ -3652,7 +3815,10 @@ name "fig:Esq-general-de-Cross"
 
 \end_inset
 
-Esquema general de iteraciones para 10-fold Cross-Validation
+Esquema general de iteraciones para 10-fold Cross-Validation 
+\series bold
+\color blue
+[REF]
 \end_layout
 
 \end_inset
@@ -3764,7 +3930,7 @@ te la etiqueta (fraude/no fraude) para noventa de ellas, entonces el porcentaje
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Porcentaje\,de\,acierto=\frac{Número\,de\,predicciones\,correctas}{Número\,total\,de\,predicciones\,realizadas}x100
+Porcentaje\,de\,acierto=\frac{Número\,de\,predicciones\,correctas}{Número\,total\,de\,predicciones\,realizadas}\times100
 \end{equation}
 
 \end_inset
@@ -3959,11 +4125,17 @@ La matriz de confusión brinda una imagen más completa de cómo está funcionan
  Es importante identificar si FP o FN es más relevante reducir, para luego
  elegir la métrica con la variable relevante (FP o FN en la ecuación).
  Entre las métricas calculadas a partir de una matriz de confusión se encuentran
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
 :
 \end_layout
 
 \begin_layout Subsubsection
-Exactitud (accuracy)
+Precisión (accuracy)
 \end_layout
 
 \begin_layout Standard
@@ -3973,7 +4145,7 @@ En general, ¿con qué frecuencia es correcto el clasificador?.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Exactitud=\frac{TP+TN}{TP+TN+FP+FN}
+Precisión=\frac{TP+TN}{TP+TN+FP+FN}
 \end{equation}
 
 \end_inset
@@ -3990,7 +4162,7 @@ La generalización de la fórmula para clasificación multiclase es la siguiente
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Exactitud=\frac{1}{n}\sum_{i=1}^{N}f_{ii}
+Precisión=\frac{1}{n}\sum_{i=1}^{N}f_{ii}
 \end{equation}
 
 \end_inset
@@ -3999,7 +4171,7 @@ Exactitud=\frac{1}{n}\sum_{i=1}^{N}f_{ii}
 \end_layout
 
 \begin_layout Subsubsection
-Precisión (precision)
+Exactitud (precision)
 \end_layout
 
 \begin_layout Standard
@@ -4009,7 +4181,7 @@ Cuando se predice un valor positivo, ¿con qué frecuencia es correcta la
 \begin_inset Quotes eld
 \end_inset
 
-preciso
+exacto
 \begin_inset Quotes erd
 \end_inset
 
@@ -4019,7 +4191,7 @@ preciso
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Precisión=\frac{TP}{TP+FP}
+Exactitud=\frac{TP}{TP+FP}
 \end{equation}
 
 \end_inset
@@ -4036,7 +4208,7 @@ La generalización de la fórmula para clasificación multiclase es la siguiente
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Precisión_{i}=\frac{f_{ii}}{\sum_{j=1}^{N}f_{ji}}
+Exactitud_{i}=\frac{f_{ii}}{\sum_{j=1}^{N}f_{ji}}
 \]
 
 \end_inset
@@ -4141,7 +4313,7 @@ La Medida F es una medida de la exactitud de una prueba.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Medida\:F_{1}=\frac{2*Sensibilidad*Precision}{\left(Sensibilidad+Precision\right)}
+Medida\:F_{1}=\frac{2\times Sensibilidad\times Precision}{\left(Sensibilidad+Precision\right)}
 \end{equation}
 
 \end_inset
@@ -4156,7 +4328,7 @@ La generalización de la fórmula para clasificación multiclase es la siguiente
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Medida\:F_{1}(i)=\frac{2*Sensibilidad_{i}*Precision_{i}}{\left(Sensibilidad_{i}+Precision_{i}\right)}
+Medida\:F_{1}(i)=\frac{2\times Sensibilidad_{i}\times Precision_{i}}{\left(Sensibilidad_{i}+Precision_{i}\right)}
 \end{equation}
 
 \end_inset
@@ -4218,7 +4390,7 @@ Donde:
 \size small
 es el acuerdo relativo observado entre examinadores
 \size default
- o el número de instancias que fueron clasifiadas correctamente sobre el
+ o el número de instancias que fueron clasificadas correctamente sobre el
  total de instancias, 
 \begin_inset Formula $Pr\left(e\right)$
 \end_inset
@@ -4255,7 +4427,7 @@ Pr(a)=\frac{1}{n}\sum_{i=1}^{N}f_{ii}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Pr(e)=\sum_{k=1}^{N}\left[\frac{1}{n^{2}}\left(\sum_{i=1}^{N}f_{ik}*\sum_{j=1}^{N}f_{kj}\right)\right]
+Pr(e)=\sum_{k=1}^{N}\left[\frac{1}{n^{2}}\left(\sum_{i=1}^{N}f_{ik}\times\sum_{j=1}^{N}f_{kj}\right)\right]
 \end{equation}
 
 \end_inset

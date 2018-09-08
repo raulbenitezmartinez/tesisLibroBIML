@@ -164,7 +164,21 @@ description "Machine Learning"
 
 \end_inset
 
-).
+) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CJ20"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IntroML2008"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -189,18 +203,18 @@ Key Performance Indicators
 \begin_inset Quotes erd
 \end_inset
 
-) 
+), de los productos en base a datos históricos obtenidos de las bases de
+ datos transaccionales.
+ Luego, cada serie de KPI obtenidos pasan por un proceso de etiquetado,
+ donde el experto en compras analiza y determina qué nivel de compra conviene
+ para cada serie de KPI, para el proceso de aprendizaje 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMR13"
 
 \end_inset
 
-, de los productos en base a datos históricos obtenidos de las bases de
- datos transaccionales.
- Luego, cada serie de KPI obtenidos pasan por un proceso de etiquetado,
- donde el experto en compras analiza y determina qué nivel de compra conviene
- para cada serie de KPI, para el proceso de aprendizaje.
+.
 \end_layout
 
 \begin_layout Standard
@@ -341,8 +355,8 @@ MARKETPLUS S.A
 \begin_inset Quotes erd
 \end_inset
 
- opera un stock con períodos de reposición regulares y se analizan los productos
- no estacionales.
+ opera un stock con períodos de reposición regulares y no se analizan los
+ productos estacionales.
 \end_layout
 
 \begin_layout Standard
@@ -378,8 +392,8 @@ El objetivo general y aporte principal es:
 \end_layout
 
 \begin_layout Itemize
-Desarrollar una nueva técnica de pronóstico de la demanda para la toma de
- decisión en la reposición de stock integrando herramientas y conceptos
+Desarrollar una nueva herramienta de pronóstico de la demanda para la toma
+ de decisión en la reposición de stock integrando herramientas y conceptos
  de Business Intelligence y Machine Learning.
 \end_layout
 
