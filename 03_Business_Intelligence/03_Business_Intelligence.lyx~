@@ -154,8 +154,8 @@ key "CJ20"
 \end_layout
 
 \begin_layout Standard
-El primero que acuñó el término fue Howard Dresner en 1989, quién fue consultor
- de Gartner Group.
+El primero en proporcionar un término fue Howard Dresner en 1989, quién
+ fue consultor de Gartner Group.
  Dresner utilizó el término para describir un conjunto de conceptos y métodos
  que mejoran la toma de decisiones, partiendo de la información disponible
  acerca de los hechos.
@@ -1054,13 +1054,6 @@ key "Wrembel2006"
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BICCI07"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "CJ20"
 
 \end_inset
 

@@ -3963,7 +3963,11 @@ reference "fig:matriz-confusion"
 \end_inset
 
  que clasifica las predicciones en una de cuatro clasificaciones: verdadero
- positivo (VP
+ positivo (
+\shape italic
+VP
+\shape default
+
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "VP"
@@ -3971,7 +3975,11 @@ description "Verdadero Positivo"
 
 \end_inset
 
-), verdadero negativo (VN
+), verdadero negativo (
+\shape italic
+VN
+\shape default
+
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "VN"
@@ -4857,7 +4865,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Curvas de aprendizaje.v3.png
-	scale 60
+	scale 50
 
 \end_inset
 

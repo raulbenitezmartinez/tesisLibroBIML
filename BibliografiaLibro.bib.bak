@@ -23,7 +23,7 @@
 }
 
 @Article{EH05,
-  author = {Wayne W. Eckerson and Cindi Howson},
+  author = {Wayne Eckerson and Cindi Howson},
   title  = {Enterprise Business Intelligence: Strategies and Technologies for Deploying BI on an Enterprise Scale TDWI Report Series},
   year   = {2005},
 }
@@ -39,7 +39,7 @@
   title     = {Introduction to Machine Learning},
   publisher = {The Press Syndicate of The University of Cambridge},
   year      = {2008},
-  author    = {Alex Smola and S.V.N. Vishwanathan},
+  author    = {Alex Smola and SVN Vishwanathan},
 }
 
 @Misc{Jean2016,
@@ -54,7 +54,7 @@
   title     = {Data Mining - Practical Machine Learning Tools and Techniques - Third Edition},
   publisher = {Copyright © 2017 Elsevier Inc. All rights reserved},
   year      = {2011},
-  author    = {Ian H. Witten and Eibe Frank and Mark A. Hall},
+  author    = {Eibe Frank and Mark Hall and Ian Witten},
   edition   = {Tercera},
 }
 
@@ -87,8 +87,10 @@
   title     = {Building the datawarehouse},
   publisher = {QED Press},
   year      = {1992},
-  author    = {W.H. Inmon},
+  author    = {William H. Inmon},
   editor    = {Robert Elliott},
+  edition   = {3ra.},
+  isbn      = {0-471-08130-2},
 }
 
 @Book{KIM92,
@@ -102,28 +104,30 @@
   title     = {Building the datawarehouse},
   publisher = {Willey},
   year      = {1996},
-  author    = {W.H. Inmon},
+  author    = {William H. Inmon},
 }
 
 @Book{CJ20,
   title     = {Introducción al Business Intelligence},
   publisher = {Editorial UOC},
   year      = {2010},
-  author    = {Josep Curto, Jordi Conesa},
+  author    = {Josep Curto and Jordi Conesa},
 }
 
 @Book{ADMINCA,
   title     = {Administración de compras y abastecimientos},
-  publisher = {McGRAW-HILL / INTERAMERICANA EDITORES, S.A. DE C.V},
+  publisher = {McGRAW-HILL / INTERAMERICANA EDITORES, S.A.},
   year      = {2012},
-  author    = {P. Fraser Johnson and Michiel R. Leenders and Anna E. Flynn},
+  author    = {Fraser Johnson and Michiel Leenders and Anna Flynn},
+  edition   = {14},
+  isbn      = {978-607-15-0758-7},
 }
 
 @Book{DM2016,
   title   = {Data Mining - Practical Machine Learning Tools and Techniques - Fourth Edition},
   year    = {2016},
-  author  = {Ian H. Witten and Eibe Frank and Mark A. Hall and Christopher J. Pal},
-  edition = {Cuarta},
+  author  = {Eibe Frank and Mark Hall and Ian Witten and Christopher Pal},
+  edition = {4ta},
 }
 
 @Book{GPO2011,
@@ -136,7 +140,7 @@
   title     = {Métodos cuantitativos para los negocios},
   publisher = {© D.R. 2011 por Cengage Learning Editores, S.A. de C.V., una compañía de Cengage Learning, Inc},
   year      = {2011},
-  author    = {David R. Anderson and Dennis J. Sweeney and Thomas A. Williams and Jeffrey D. Camm and Kipp Martin},
+  author    = {David Anderson and Dennis Sweeney and Thomas Williams and Jeffrey Camm and Kipp Martin},
   edition   = {11},
 }
 
@@ -150,20 +154,20 @@
 @Book{MCA2008,
   title   = {Métodos cuantitativos para administración},
   year    = {2008},
-  author  = {Frederick S. Hillier and Mark S. Hillier},
+  author  = {Frederick Hillier and Mark Hillier},
   editor  = {Copyright © MMVIII by The McGraw-Hill Companies, Inc.},
   edition = {Tercera},
 }
 
-@inproceedings{John1995,
-    address = {San Mateo},
-    author = {George H. John and Pat Langley},
-    booktitle = {Eleventh Conference on Uncertainty in Artificial Intelligence},
-    pages = {338-345},
-    publisher = {Morgan Kaufmann},
-    title = {Estimating Continuous Distributions in Bayesian Classifiers},
-    year = {1995}
- }
+@InProceedings{John1995,
+  author    = {George John and Pat Langley},
+  title     = {Estimating Continuous Distributions in Bayesian Classifiers},
+  booktitle = {Eleventh Conference on Uncertainty in Artificial Intelligence},
+  year      = {1995},
+  pages     = {338-345},
+  address   = {San Mateo},
+  publisher = {Morgan Kaufmann},
+}
  
 @inproceedings{Mccallum1998,
     author = {Andrew Mccallum and Kamal Nigam},
@@ -171,16 +175,15 @@
     title = {A Comparison of Event Models for Naive Bayes Text Classification},
     year = {1998}
 }
- 
 
-@article{leCessie1992,
-    author = {le Cessie, S. and van Houwelingen, J.C.},
-    journal = {Applied Statistics},
-    number = {1},
-    pages = {191-201},
-    title = {Ridge Estimators in Logistic Regression},
-    volume = {41},
-    year = {1992}
+@Article{leCessie1992,
+  author  = {le Cessie, Saskia and van Houwelingen, Hans},
+  title   = {Ridge Estimators in Logistic Regression},
+  journal = {Applied Statistics},
+  year    = {1992},
+  volume  = {41},
+  number  = {1},
+  pages   = {191-201},
 }
  
 
@@ -204,7 +207,7 @@
 }
 
 @InCollection{Platt1998,
-  author    = {J. Platt},
+  author    = {John Platt},
   title     = {Fast Training of Support Vector Machines using Sequential Minimal Optimization},
   booktitle = {Advances in Kernel Methods - Support Vector Learning},
   publisher = {MIT Press},
@@ -215,7 +218,7 @@
 }
 
 @Article{Keerthi2001,
-  author  = {S.S. Keerthi and S.K. Shevade and C. Bhattacharyya and K.R.K. Murthy},
+  author  = {Sathiya Keerthi and Shirish Shevade and Chiranjib Bhattacharyya and KRK Murthy},
   title   = {Improvements to Platt's SMO Algorithm for SVM Classifier Design},
   journal = {Neural Computation},
   year    = {2001},
@@ -235,22 +238,22 @@
   publisher = {MIT Press},
   file      = {2class.ps:http\://www-stat.stanford.edu/\\~hastie/Papers/2class.ps:PostScript},
 }
- 
-@article{Aha1991,
-    author = {D. Aha and D. Kibler},
-    journal = {Machine Learning},
-    pages = {37-66},
-    title = {Instance-based learning algorithms},
-    volume = {6},
-    year = {1991}
+
+@Article{Aha1991,
+  author  = {David Aha and Denis Kibler and Marc Albert},
+  title   = {Instance-based learning algorithms},
+  journal = {Machine Learning},
+  year    = {1991},
+  volume  = {6},
+  pages   = {37-66},
 }
- 
-@inproceedings{Cleary1995,
-    author = {John G. Cleary and Leonard E. Trigg},
-    booktitle = {12th International Conference on Machine Learning},
-    pages = {108-114},
-    title = {K*: An Instance-based Learner Using an Entropic Distance Measure},
-    year = {1995}
+
+@InProceedings{Cleary1995,
+  author    = {John Cleary and Leonard Trigg},
+  title     = {K*: An Instance-based Learner Using an Entropic Distance Measure},
+  booktitle = {12th International Conference on Machine Learning},
+  year      = {1995},
+  pages     = {108-114},
 }
 
 @inproceedings{Frank2003,
@@ -261,23 +264,22 @@
     title = {Locally Weighted Naive Bayes},
     year = {2003}
 }
- 
-@article{Atkeson1996,
-    author = {C. Atkeson and A. Moore and S. Schaal},
-    journal = {AI Review},
-    title = {Locally weighted learning},
-    year = {1996}
+
+@Article{Atkeson1996,
+  author  = {Christopher Granger Atkeson and Andrew Moore and Stefan Schaal},
+  title   = {Locally weighted learning},
+  journal = {AI Review},
+  year    = {1996},
 }
 
-
-@inproceedings{Freund1996,
-    address = {San Francisco},
-    author = {Yoav Freund and Robert E. Schapire},
-    booktitle = {Thirteenth International Conference on Machine Learning},
-    pages = {148-156},
-    publisher = {Morgan Kaufmann},
-    title = {Experiments with a new boosting algorithm},
-    year = {1996}
+@InProceedings{Freund1996,
+  author    = {Yoav Freund and Robert Schapire},
+  title     = {Experiments with a new boosting algorithm},
+  booktitle = {Thirteenth International Conference on Machine Learning},
+  year      = {1996},
+  pages     = {148-156},
+  address   = {San Francisco},
+  publisher = {Morgan Kaufmann},
 }
  
 @article{Breiman1996,
@@ -289,27 +291,27 @@
     volume = {24},
     year = {1996}
 }
- 
-@article{Frank1998,
-    author = {E. Frank and Y. Wang and S. Inglis and G. Holmes and I.H. Witten},
-    journal = {Machine Learning},
-    number = {1},
-    pages = {63-76},
-    title = {Using model trees for classification},
-    volume = {32},
-    year = {1998}
+
+@Article{Frank1998,
+  author  = {Eibe Frank and Yong Wang and Stuart Inglis and Geoffrey Holmes and Ian Witten},
+  title   = {Using model trees for classification},
+  journal = {Machine Learning},
+  year    = {1998},
+  volume  = {32},
+  number  = {1},
+  pages   = {63-76},
 }
- 
-@phdthesis{Kohavi1995,
-    address = {Department of Computer Science, Stanford University},
-    author = {R. Kohavi},
-    school = {Stanford University},
-    title = {Wrappers for Performance Enhancement and Oblivious Decision Graphs},
-    year = {1995}
+
+@PhdThesis{Kohavi1995,
+  author  = {Ron Kohavi},
+  title   = {Wrappers for Performance Enhancement and Oblivious Decision Graphs},
+  school  = {Stanford University},
+  year    = {1995},
+  address = {Department of Computer Science, Stanford University},
 }
 
 @TechReport{Friedman1998,
-  author  = {J. Friedman and T. Hastie and R. Tibshirani},
+  author  = {Jerone Friedman and Trevor Hastie and Robert Tibshirani},
   title   = {Additive Logistic Regression: a Statistical View of Boosting},
   year    = {1998},
   address = {Stanford University},
@@ -327,32 +329,32 @@
     ISSN = {0162-8828},
     URL = {http://citeseer.ist.psu.edu/ho98random.html}
 }
- 
-@article{Wolpert1992,
-    author = {David H. Wolpert},
-    journal = {Neural Networks},
-    pages = {241-259},
-    publisher = {Pergamon Press},
-    title = {Stacked generalization},
-    volume = {5},
-    year = {1992}
+
+@Article{Wolpert1992,
+  author    = {David Wolpert},
+  title     = {Stacked generalization},
+  journal   = {Neural Networks},
+  year      = {1992},
+  volume    = {5},
+  pages     = {241-259},
+  publisher = {Pergamon Press},
 }
- 
-@book{Kuncheva2004,
-    author = {Ludmila I. Kuncheva},
-    publisher = {John Wiley and Sons, Inc.},
-    title = {Combining Pattern Classifiers: Methods and Algorithms},
-    year = {2004}
+
+@Book{Kuncheva2004,
+  title     = {Combining Pattern Classifiers: Methods and Algorithms},
+  publisher = {John Wiley and Sons, Inc.},
+  year      = {2004},
+  author    = {Ludmila Kuncheva},
 }
- 
-@article{Kittler1998,
-    author = {J. Kittler and M. Hatef and Robert P.W. Duin and J. Matas},
-    journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
-    number = {3},
-    pages = {226-239},
-    title = {On combining classifiers},
-    volume = {20},
-    year = {1998}
+
+@Article{Kittler1998,
+  author  = {Josef Kittler and Mohamad Hatef and Robert PW Duin and Jiri Matas},
+  title   = {On combining classifiers},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year    = {1998},
+  volume  = {20},
+  number  = {3},
+  pages   = {226-239},
 }
 
 @InProceedings{Kohavi1995a,
@@ -363,27 +365,27 @@
   pages     = {174-189},
   publisher = {Springer},
 }
- 
-@inproceedings{Cohen1995,
-    author = {William W. Cohen},
-    booktitle = {Twelfth International Conference on Machine Learning},
-    pages = {115-123},
-    publisher = {Morgan Kaufmann},
-    title = {Fast Effective Rule Induction},
-    year = {1995}
+
+@InProceedings{Cohen1995,
+  author    = {William Cohen},
+  title     = {Fast Effective Rule Induction},
+  booktitle = {Twelfth International Conference on Machine Learning},
+  year      = {1995},
+  pages     = {115-123},
+  publisher = {Morgan Kaufmann},
 }
- 
-@article{Holte1993,
-    author = {R.C. Holte},
-    journal = {Machine Learning},
-    pages = {63-91},
-    title = {Very simple classification rules perform well on most commonly used datasets},
-    volume = {11},
-    year = {1993}
+
+@Article{Holte1993,
+  author  = {Robert Holte},
+  title   = {Very simple classification rules perform well on most commonly used datasets},
+  journal = {Machine Learning},
+  year    = {1993},
+  volume  = {11},
+  pages   = {63-91},
 }
 
 @InProceedings{Frank1998a,
-  author    = {Eibe Frank and Ian H. Witten},
+  author    = {Eibe Frank and Ian Witten},
   title     = {Generating Accurate Rule Sets Without Global Optimization},
   booktitle = {Fifteenth International Conference on Machine Learning},
   year      = {1998},
@@ -422,7 +424,7 @@
 
 @Manual{WekaMan3-8-0,
   title  = {WEKA Manual for Version 3-8-0},
-  author = {Remco R. Bouckaert and Eibe Frank and Mark Hall and Richard Kirkby and Peter Reutemann and Alex Seewald and David Scuse},
+  author = {Remco Bouckaert and Eibe Frank and Mark Hall and Richard Kirkby and Peter Reutemann and Alex Seewald and David Scuse},
   month  = apr,
   year   = {2016},
 }
@@ -438,9 +440,9 @@
   title     = {Business Intelligence Roadmap: The Complete Project Lifecycle for Decision-support Applications},
   publisher = {Addison-Wesley},
   year      = {2003},
-  author    = {Moss, L.T. and Atre, S.},
+  author    = {Moss, Larissa and Atre, Shaku},
   series    = {Addison-Wesley information technology series},
-  isbn      = {9780201784206},
+  isbn      = {0201784203},
   lccn      = {2002026196},
   url       = {https://books.google.com.py/books?id=HSeE7rOXKsUC},
 }
@@ -449,7 +451,7 @@
   title     = {Data Warehouses and OLAP: Concepts, Architectures and Solutions: Concepts, Architectures and Solutions},
   publisher = {IRM Press},
   year      = {2006},
-  author    = {Wrembel, R.},
+  author    = {Wrembel, Robert},
   series    = {Gale virtual reference library},
   isbn      = {9781599043661},
   lccn      = {2006027721},
@@ -460,7 +462,7 @@
   title     = {Financial Business Intelligence: Trends, Technology, Software Selection, and Implementation},
   publisher = {Wiley},
   year      = {2002},
-  author    = {Rasmussen, N.H. and Goldy, P.S. and Solli, P.O.},
+  author    = {Rasmussen, Nils and Goldy, Paul and Solli, Per},
   isbn      = {9780471267850},
   url       = {https://books.google.com.py/books?id=wYjUsO-i4DUC},
 }
@@ -478,13 +480,13 @@
   title     = {Procesamiento de bases de datos: fundamentos, dise{\~n}o e implementaci{\'o}n},
   publisher = {Pearson Educaci{\'o}n},
   year      = {2003},
-  author    = {Kroenke, D.M. and Hern{\'a}ndez, A.E.G.},
+  author    = {Kroenke, David. and Hern{\'a}ndez, Ana},
   isbn      = {9789702603252},
   url       = {https://books.google.com.py/books?id=7ORUWItwcNEC},
 }
 
 @Article{doi:10.1080/01944360508976688,
-  author    = {Bent Flyvbjerg and Mette K. Skamris Holm and Søren L. Buhl},
+  author    = {Bent Flyvbjerg and Mette Skamris Holm and Søren Buhl},
   title     = {How (In)accurate Are Demand Forecasts in Public Works Projects?: The Case of Transportation},
   journal   = {Journal of the American Planning Association},
   year      = {2005},
@@ -504,7 +506,7 @@
   title     = {Planeaci{\'o}n y control de la producci{\'o}n},
   publisher = {McGraw-Hill},
   year      = {1998},
-  author    = {Sipper, D. and Bulfin, R.L. and Osuna, M.G.},
+  author    = {Sipper, Daniel and Bulfin, Roberto},
   isbn      = {9789701019443},
   url       = {https://books.google.com.py/books?id=HfdlPAAACAAJ},
 }
@@ -543,13 +545,13 @@
   title     = {Perceptrons: An Introduction to Computational Geometry, Expanded Edition},
   publisher = {The MIT Press},
   year      = {1987},
-  author    = {Marvin Minsky and Seymour A. Papert},
+  author    = {Marvin Minsky and Seymour Papert},
 }
 
 @Article{FrameMinsky1974,
   author  = {Marvin Minsky},
   title   = {A Framework for Representing Knowledge},
-  journal = {MIT-AI Laboratory Memo 306},
+  journal = {MIT- AI Laboratory Memo 306},
   year    = {1974},
 }
 
@@ -557,7 +559,7 @@
   title     = {Administraci{\'o}n de la producci{\'o}n y las operaciones: conceptos, modelos y funcionamiento},
   publisher = {Prentice Hall},
   year      = {1991},
-  author    = {Adam, E.E. and Ebert, R.J.},
+  author    = {Adam, Everett and Ebert, Ronald},
   isbn      = {9789688802212},
   url       = {https://books.google.com.py/books?id=FI1wYyoz8-oC},
 }
@@ -566,7 +568,7 @@
   title     = {Gesti{\'o}n de pedidos y stock},
   publisher = {Paraninfo},
   year      = {2015},
-  author    = {DE DIEGO MORILLO, A.},
+  author    = {De Diego Morillo, Amelia.},
   isbn      = {9788428397742},
   url       = {https://books.google.com.py/books?id=KjsjCAAAQBAJ},
 }
@@ -575,7 +577,8 @@
   title     = {Introducci{\'o}n a la gesti{\'o}n de stocks: El proceso de control, valoraci{\'o}n y gesti{\'o}n de stocks},
   publisher = {Ideaspropias Editorial},
   year      = {2010},
-  author    = {', M.M.P.A.I.B.B. and Ana, M.M.P.},
+  author    = {Mónica Míguez Pérez and Ana Isabel Bastos Boubeta},
+  edition   = {2da.},
   isbn      = {9788498392708},
   url       = {https://books.google.com.py/books?id=V5pSNK\_oyT4C},
 }
@@ -584,7 +587,7 @@
   title     = {Reinforcement Learning: An Introduction},
   publisher = {A Bradford Book. MIT Press, Cambridge, Massachusetts.},
   year      = {1998},
-  author    = {Richard S. Sutton and Andrew G. Barto},
+  author    = {Richard Sutton and Andrew Barto},
 }
 
 @Article{Sevgi2017,
@@ -604,7 +607,7 @@
   title     = {Planificaci{\'o}n y control de la producci{\'o}n},
   publisher = {Pearson Educaci{\'o}n},
   year      = {2006},
-  author    = {Chapman, S.N.},
+  author    = {Chapman, Stephen},
   series    = {Pearson educaci{\'o}n},
   isbn      = {9789702607717},
   url       = {https://books.google.com.py/books?id=ceHEMOttnh4C},
@@ -632,7 +635,7 @@
 }
 
 @Article{Box1973,
-  author    = {G. E. P. Box and G. M. Jenkins},
+  author    = {George Box and Gwilym Jenkins},
   title     = {Some Comments on a Paper by Chatfield and Prothero and on A Review by Kendall},
   journal   = {Journal of the Royal Statistical Society. Series A (General)},
   year      = {1973},
@@ -672,7 +675,7 @@
 }
 
 @Article{LakshmiAnusha2014,
-  author   = {Lakshmi Anusha, S. and Alok, Swati and Shaik, Ashiff},
+  author   = {Lakshmi Anusha and Alok, Swati and Shaik, Ashiff},
   title    = {Demand Forecasting for the Indian Pharmaceutical Retail: A Case Study.},
   journal  = {Journal of Supply Chain Management Systems},
   year     = {2014},
@@ -701,7 +704,7 @@
   title     = {Data Mining: Concepts and Techniques},
   publisher = {Elsevier Science},
   year      = {2011},
-  author    = {Han, J. and Pei, J. and Kamber, M.},
+  author    = {Han, Jiawei and Pei, Jian and Kamber, Micheline.},
   series    = {The Morgan Kaufmann Series in Data Management Systems},
   isbn      = {9780123814807},
   lccn      = {2011010635},
@@ -729,7 +732,7 @@
   title     = {Machine Learning},
   publisher = {McGraw-Hill},
   year      = {1997},
-  author    = {Mitchell, T.M.},
+  author    = {Mitchell, Tom},
   series    = {McGraw-Hill International Editions},
   isbn      = {9780071154673},
   lccn      = {97007692},
@@ -792,14 +795,14 @@
 }
 
 @Article{HybridSoft2014,
-  author  = {Yuehjen E. Shao and and Chi-Jie Lu and Chia-Ding Hou},
+  author  = {Yuehjen Shao and and Chi-Jie Lu and Chia-Ding Hou},
   title   = {Hybrid Soft Computing Schemes for the Prediction of Import Demand of Crude Oil in Taiwan},
   journal = {Mathematical Problems in Engineering},
   year    = {2014},
 }
 
 @InProceedings{Mantovani2016,
-  author    = {R. G. Mantovani and T. Horváth and R. Cerri and J. Vanschoren and A. C. P. L. F. d. Carvalho},
+  author    = {Rafael Gomes Mantovani and Tomas Horvath and Ricardo Cerri and Joaquin Vanschoren and André Carlos Ponce de Leon Ferreira de Carvalho},
   title     = {Hyper-Parameter Tuning of a Decision Tree Induction Algorithm},
   booktitle = {2016 5th Brazilian Conference on Intelligent Systems (BRACIS)},
   year      = {2016},
@@ -822,6 +825,9 @@
   title   = {A Coefficient of Agreement for Nominal Scales},
   journal = {Educational and Psychological Measurement},
   year    = {1960},
+}
+
+@Book{,
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
