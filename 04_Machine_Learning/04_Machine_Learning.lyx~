@@ -3963,51 +3963,43 @@ reference "fig:matriz-confusion"
 \end_inset
 
  que clasifica las predicciones en una de cuatro clasificaciones: verdadero
- positivo (
-\shape italic
-True Positive - TP
-\shape default
-
+ positivo (VP
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "TP"
-description "True Positive"
+symbol "VP"
+description "Verdadero Positivo"
 
 \end_inset
 
-), verdadero negativo (
-\shape italic
-True Negative - TN
-\shape default
-
+), verdadero negativo (VN
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
-symbol "TN"
-description "True Negative"
+symbol "VN"
+description "Verdadero Negativo"
 
 \end_inset
 
 ), falso positivo (
 \shape italic
-False Positive - FP
+FP
 \shape default
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "FP"
-description "False Positive"
+description "Falso Positivo"
 
 \end_inset
 
 ) y falso negativo (
 \shape italic
-False Negative - FN
+FN
 \shape default
 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "FN"
-description "False Negative"
+description "Falso Negativo"
 
 \end_inset
 
@@ -4145,7 +4137,7 @@ En general, ¿con qué frecuencia es correcto el clasificador?.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Precisión=\frac{TP+TN}{TP+TN+FP+FN}
+Precisión=\frac{VP+VN}{VP+VN+FP+FN}
 \end{equation}
 
 \end_inset
@@ -4191,7 +4183,7 @@ exacto
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Exactitud=\frac{TP}{TP+FP}
+Exactitud=\frac{VP}{VP+FP}
 \end{equation}
 
 \end_inset
@@ -4238,7 +4230,7 @@ sensible
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Sensibilidad=\frac{TP}{TP+FN}
+Sensibilidad=\frac{VP}{VP+FN}
 \end{equation}
 
 \end_inset
@@ -4292,7 +4284,7 @@ selectivo
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-Especificidad=\frac{TN}{TN+FP}
+Especificidad=\frac{VN}{VN+FP}
 \end{equation}
 
 \end_inset
@@ -4487,6 +4479,9 @@ Bias
 Variance
 \shape default
 )
+\series bold
+\color blue
+ [REF].
 \end_layout
 
 \begin_layout Subsection
@@ -4648,7 +4643,14 @@ Complejidad del modelo y curvas de aprendizaje
 \end_layout
 
 \begin_layout Standard
-La capacidad de generalización está determinada principalmente por dos factores:
+La capacidad de generalización está determinada principalmente por dos factores
+ 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+:
 \end_layout
 
 \begin_layout Itemize
