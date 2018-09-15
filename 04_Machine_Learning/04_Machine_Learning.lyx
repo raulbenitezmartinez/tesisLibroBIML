@@ -609,9 +609,9 @@ Otro investigador, Tom Mitchell propuso en 1998 la siguiente definición:
 \begin_inset Quotes eld
 \end_inset
 
-Well posed Learning Problem: A computer program is said to learn from experience
- E with respect to some task T and some performance measure P, if its performanc
-e on T, as measured by P, improves with experience E
+A computer program is said to learn from experience E with respect to some
+ class of tasks T and performance measure P, if its performance at tasks
+ in T, as measured by P, improves with experience E
 \begin_inset Quotes erd
 \end_inset
 
@@ -623,11 +623,12 @@ e on T, as measured by P, improves with experience E
  a hablar a través de la experiencia de pronunciar las palabras y de su
  interacción con otras personas, entonces sucede que su capacidad de hablar
  se va perfeccionando o mejorando 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mitchell1997"
+
+\end_inset
+
 .
 \end_layout
 
@@ -1135,7 +1136,7 @@ reference "fig:Algoritmos-de-machine"
 
 \end_inset
 
- mostró un método útil de agrupación, que no es perfecto y ni exhaustivo
+ muestra un método útil de agrupación, que no es perfecto y ni exhaustivo
  en los grupos y algoritmos.
  Hay algoritmos que pueden encajar en varias categorías como Learning Vector
  Quantization que es a la vez un método inspirado en una red neuronal y
@@ -1156,21 +1157,23 @@ Los Algoritmos de Regresión (
 \shape italic
 Regression Algorithms
 \shape default
-) modelan la relación que existe entre variables, se mejora iterativamente
- utilizando una medida de error en las predicciones hechas por el modelo.
- Los métodos de regresión son herramientas de las estadísticas que se han
- adoptado en el aprendizaje de la máquina.
- Se pueden utilizar el término regresión para referirse a la clase de problema
- y también a la clase de algoritmo.
- Para ser más exactos, la regresión es realmente un proceso.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado
- 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+) reciben como datos de entrada un conjunto de datos llamados instancias
+ o ejemplos.
+ Cada instancia puede verse como un registro de base de datos, donde uno
+ de los campos es la variable dependiente y las demás variables independientes.
+ Estos algoritmos buscan la función que defina lo más adecuadamente la relación
+ existente entre la variable dependiente y las variables independientes.
+ Si la variable dependiente es un valor discreto, entonces se trata de un
+ problema de clasificación, si es un valor continuo se trata de un problema
+ de regresión 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ikonomovska2012"
+
+\end_inset
+
 .
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1182,23 +1185,22 @@ El modelo de aprendizaje Basado en Instancia (
 \shape italic
 Instance-Based Learning
 \shape default
-) es un problema de decisión con instancias o ejemplos de datos de entrenamiento
- que se consideran importantes o requeridos para el modelo.
- Estos métodos típicamente construyen una base de datos con ejemplos y los
- compara con los nuevos datos utilizando una medida de similaridad para
- así encontrar la mejor coincidencia y hacer la predicción.
- Por esta razón, los métodos basados en la instancia también se llaman métodos
- de aprendizaje basado en memoria.
- El enfoque se pone en la representación de las instancias almacenadas y
- las medidas de similaridad utilizadas entre instancias.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado
- 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+) se basa en un conjunto de instancias que pertenecen a la descripción del
+ concepto y que son almacenadas y actualizadas constantemente.
+ A la descripción de concepto se suman dos funciones principales: la función
+ de similitud y la función de clasificación.
+ Por cada instancia de entrenamiento la función de similitud calcula la
+ similitud que tiene con las instancias de la descripción del concepto.
+ La función de clasificación realiza la predicción basada en la función
+ de similitud y en ciertas propiedades de la descripción del concepto 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aha1991"
+
+\end_inset
+
 .
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1210,46 +1212,61 @@ Los Algoritmos de Regularización (
 \shape italic
 Regularization
 \shape default
-), comprenden una extensión hecha a otros métodos (típicamente a los métodos
- de regresión).
- Penaliza los modelos basándose en sus complejidades, favoreciendo modelos
- más simples que también son mejores de generalizar.
- Son populares, potentes y en general simples modificaciones de otros métodos.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado
- y no supervisado 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+) ayudan a evitar modelos sobreajustados agregando penalizaciones a los
+ parámetros.
+ Entre los métodos más destacados se encuentran: regularización L1 (regularizaci
+ón LASSO
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LASSO"
+description "Least Absolute Shrinkage and Selection Operator"
+
+\end_inset
+
+), regularización L2 (regularización de Tíjonov) y una versión combinada
+ de ambos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Demir-Kavuk2011"
+
+\end_inset
+
 .
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ y no supervisado.
 \end_layout
 
 \begin_layout Subsection
-Algoritmos de árboles de decisión
+Algoritmos de árbol de decisiones
 \end_layout
 
 \begin_layout Standard
-Los métodos de Árboles de Decisión (
+Los métodos de Árbol de Decisiones (
 \shape italic
 Decision Tree
 \shape default
-) construyen un modelo de decisiones hechas en base a los valores de atributos
- en los datos.
- Las decisiones se bifurcan en la estructura del árbol hasta que se tome
- una decisión de predicción para un registro dado.
- Los árboles de decisión son entrenados en los datos para problemas de clasifica
-ción y regresión.
- Los árboles de decisión son a menudo rápidos y precisos y un gran favorito
- en aprendizaje automático.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado
+) permiten 
+\shape italic
+
+\begin_inset Quotes eld
+\end_inset
+
+Aproximar funciones objetivo de valores discretos, en el que la función
+ aprendida se representa mediante un árbol de decisiones
+\begin_inset Quotes erd
+\end_inset
+
+
+\shape default
  
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mitchell1997"
+
+\end_inset
+
 .
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1261,16 +1278,17 @@ Los métodos Bayesianos (
 \shape italic
 Bayesian
 \shape default
-) son los que aplican explícitamente el teorema de Bayes para problemas
- tales como la clasificación y la regresión.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado
- 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+) modelan el aprendizaje en base al teorema de Bayes.
+ Se considera una técnica indicada a problemas donde es obligatorio tener
+ en cuenta la incertidumbre 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Barber2012"
+
+\end_inset
+
 .
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1278,25 +1296,21 @@ Algoritmos de agrupación
 \end_layout
 
 \begin_layout Standard
-La Agrupación (
+Los métodos de Agrupación (
 \shape italic
 Clustering
 \shape default
-) así como también la regresión describen la clase de problema y la clase
- de método.
- Los métodos de agrupación suelen estar organizados según el enfoque del
- modelado, tales como los basados en centroides y los jerárquicos.
- Todos los métodos atañen a la utilización de las estructuras inherentes
- en los datos, para organizar dichos datos de la mejor manera posible en
- grupos de máxima uniformidad.
- Estos algoritmos se implementan en problemas de aprendizaje no supervisado
- 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+) son técnicas que persiguen el objetivo de formar subconjuntos homogéneos
+ a partir de un conjunto principal de datos y en base a determinadas característ
+icas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jain1999"
+
+\end_inset
+
 .
+ Estos algoritmos se implementan en problemas de aprendizaje no supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1308,19 +1322,8 @@ Los métodos de aprendizaje de Reglas de Asociación (
 \shape italic
 Rule System
 \shape default
-) extraen reglas que mejor explican las relaciones observadas entre variables
- en los datos.
- Estas reglas pueden descubrir asociaciones importantes y comercialmente
- útiles, en grandes conjuntos de datos multidimensionales que pueden ser
- explotados por una organización.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado
- 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
-.
+) .
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
 \end_layout
 
 \begin_layout Subsection
