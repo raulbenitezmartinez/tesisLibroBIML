@@ -132,10 +132,9 @@ key "BICCI07"
 \end_layout
 
 \begin_layout Standard
-La era actual de las tecnologías de la información ha llevado a la necesidad
- de tener mejores, rápidos y eficientes métodos para extraer los datos de
- una organización, transformarlo en información y distribuirlo a las cadenas
- de mando.
+La era actual de la creciente información genera la exigencia de tener métodos
+ rápidos y eficientes para obtener los datos de una organización, convertirlo
+ en información y distribuirlo a los gerentes y directivos.
  Business Intelligence responde a dicha necesidad 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -154,8 +153,8 @@ key "CJ20"
 \end_layout
 
 \begin_layout Standard
-El primero en proporcionar un término fue Howard Dresner en 1989, quién
- fue consultor de Gartner Group.
+El primero en adoptar el término fue Howard Dresner en 1989, quién fue consultor
+ de Gartner Group.
  Dresner utilizó el término para describir un conjunto de conceptos y métodos
  que mejoran la toma de decisiones, partiendo de la información disponible
  acerca de los hechos.
@@ -376,8 +375,7 @@ Las fuentes de información representan el origen de los datos con las cuales
 \end_layout
 
 \begin_layout Itemize
-Sistemas operacionales o transaccionales, que incluyen aplicaciones desarrollada
-s a medida, ERP
+Sistemas transaccionales, aplicaciones a medida, ERP
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ERP"
@@ -413,8 +411,8 @@ Sistemas de información departamentales: previsiones, presupuestos, hojas
 Fuentes de información externa, en algunos casos comprada a terceros.
  Las fuentes de información externas podrían ser importantes para enriquecer
  la información acerca de los clientes.
- En algunos casos es interesante incorporar información referente, por ejemplo,
- a población, número de habitantes, etc.
+ Ej.: Base de datos de contribuyentes con RUC, base de datos del registro
+ civil de las personas, etc.
 \end_layout
 
 \begin_layout Standard
@@ -504,9 +502,8 @@ key "KIM92"
 \end_inset
 
 .
- Es utilizado para extraer los datos de los sistemas de origen, transformarlos
- en función a los requerimientos del negocio y cargar los datos en el entorno
- de destino.
+ Es utilizado para extraer los datos del origen, transformarlos de acuerdo
+ a la necesidad o requerimientos y cargar los datos al datawarehouse.
  
 \end_layout
 
@@ -531,8 +528,8 @@ Extracción
 La extracción es el primer paso en el proceso de obtención de los datos,
  recupera los datos físicamente de las distintas fuentes de información.
  En este punto se dispone de los datos en bruto.
- El principal objetivo es extraer aquellos datos de los sistemas transaccionales
- que son necesarios y prepararlos para el resto de los subprocesos de ETL.
+ El objetivo primordial es obtener los datos de las fuentes transaccionales
+ necesarias y ajustarlos para los demás subprocesos de ETL.
  Para ello se deben determinar las mejores fuentes de información, las de
  mejor calidad.
  Para tal finalidad, se debe analizar las fuentes disponibles y escoger
@@ -546,17 +543,16 @@ Limpieza
 \end_layout
 
 \begin_layout Standard
-Este proceso recupera los datos en bruto y comprueba su calidad, elimina
- los duplicados y, cuando es posible, corrige los valores erróneos y completa
- los valores vacíos, es decir se transforman los datos -siempre que sea
- posible- para reducir los errores de carga.
- En este momento se disponen de datos limpios y de alta calidad.
+Este proceso obtiene los datos originales y verifica la calidad de los datos,
+ elimina datos repetidos, corrige los datos incorrectos y completa los valores
+ vacíos, es decir se transforman los datos -siempre que sea posible- para
+ reducir los errores de carga.
+ En este momento se cuentan con datos sin errores y confiables.
 \end_layout
 
 \begin_layout Standard
-Los sistemas transaccionales contienen datos que no han sido depurados y
- que deben ser limpiados.
- Algunas causas que provocan que los datos estén “sucios” son:
+Las fuentes transaccionales poseen datos que deben ser depurados y limpiados.
+ Ciertos motivos que ocasionan que los datos estén “sucios” son:
 \end_layout
 
 \begin_layout Itemize
@@ -564,15 +560,11 @@ Valores por defecto.
 \end_layout
 
 \begin_layout Itemize
-Ausencia de valor.
+Campos vacíos.
 \end_layout
 
 \begin_layout Itemize
-Campos que tienen distintas utilidades.
-\end_layout
-
-\begin_layout Itemize
-Valores contradictorios.
+Campos con distintos usos.
 \end_layout
 
 \begin_layout Itemize
@@ -603,10 +595,10 @@ Depurar los valores
 \series default
  (parsing)
 \emph default
-: localiza e identifica los elementos individuales de información en las
- fuentes de datos.
- Por ejemplo: separa el nombre completo en: nombre, primer apellido, segundo
- apellido; o la dirección en: calle, número, etc.
+: busca e identifica los datos individuales de información de las fuentes
+ origen.
+ Ej.: separa el nombre completo en: nombre, primer apellido, segundo apellido;
+ o la dirección en: calle, número, etc.
 \end_layout
 
 \begin_layout Itemize
@@ -617,9 +609,9 @@ Corregir
 \series default
  (correcting)
 \emph default
-: corrige los valores individuales de los atributos usando algoritmos de
- corrección y fuentes de datos externas.
- Por ejemplo: comprueba la dirección y su código postal correspondiente.
+: modifica los valores de los campos utilizando algoritmos de corrección
+ y orígenes externos de datos.
+ Ej.: verifica que el código postal se corresponda con la dirección.
 \end_layout
 
 \begin_layout Itemize
@@ -630,11 +622,11 @@ Estandarizar
 \series default
  (standardizing)
 \emph default
-: aplica rutinas de conversión para transformar valores en formatos definidos
- y consistentes.
- Por ejemplo: trato de Sra.
- o Sr.
- cambiar a sus correspondientes nombres completos.
+: aplica estrategias para la transformación de los valores en formatos consisten
+tes.
+ Ej.: cambiar los términos Sr.
+ o Sra.
+ por sus correspondientes nombres completos.
 \end_layout
 
 \begin_layout Itemize
@@ -645,9 +637,9 @@ Relacionar
 \series default
  (matching)
 \emph default
-: busca y relaciona los valores de registros, corrigiéndolos y estandarizándolos
- para eliminar duplicados.
- Por ejemplo: identificando nombres y direcciones similares.
+: busca eliminar duplicados relacionando los valores de registros, mediante
+ la corrección y la estandarización.
+ Ej.: identificación de nombres, apellidos o direcciones semejantes.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -657,11 +649,10 @@ Transformación
 \end_layout
 
 \begin_layout Standard
-La transformación de los datos se realiza partiendo de los datos una vez
- limpios, se transforman los datos de acuerdo a las reglas y necesidades
- del negocio.
- El resultado de este proceso es la obtención de datos limpios, consistentes,
- sumarizados y útiles.
+La transformación inicia una vez que los datos se encuentren limpios, los
+ datos se transforman según la necesidades y las reglas del negocio.
+ Como resultado se obtienen datos limpios, sólidos, fiables, sumarizados
+ y útiles.
 \end_layout
 
 \begin_layout Standard
@@ -681,8 +672,9 @@ Valores derivados y agregados.
 \end_layout
 
 \begin_layout Standard
-Los agregados como las sumas de las ventas normalmente se precalculan y
- se almacenan para conseguir mayores rendimientos.
+Los agregados como sumas de las ventas generalmente se realizan mediante
+ un cálculo previo y luego son almacenados para conseguir rendimientos más
+ óptimos.
  En este proceso también se ajusta el nivel de granularidad o detalle, por
  ejemplo: se puede tener detalles a nivel de lineas de factura en los datos
  extraídos, pero en el datawarehouse lo que se almacena son las ventas semanales
@@ -698,10 +690,9 @@ Integración
 \end_layout
 
 \begin_layout Standard
-Este proceso valida que los datos que cargamos en el datawarehouse son consisten
-tes con las definiciones y formatos del datawarehouse; los integra en los
- distintos modelos de las distintas áreas de negocio que hemos definido
- en el mismo.
+La integración valida que los datos cargados en el datawarehouse sean consistent
+es con las definiciones y formatos especificados; los integra en los distintos
+ modelos de las distintas áreas de negocio.
  Estos procesos pueden ser complejos.
 \end_layout
 
@@ -712,9 +703,9 @@ Actualización
 \end_layout
 
 \begin_layout Standard
-Este proceso es el que nos permite añadir los nuevos datos al datawarehouse,
- determina la periodicidad con el que haremos nuevas cargas de datos al
- datawarehouse.
+Este proceso es el que permite agregar los nuevos datos al datawarehouse,
+ determina la frecuencia con el que se realizarán nuevas cargas de datos
+ al datawarehouse.
 \end_layout
 
 \begin_layout Subsection
@@ -738,8 +729,8 @@ almacén de datos
 \begin_inset Quotes erd
 \end_inset
 
- son colecciones de datos acerca de los procesos de negocios de una organización
-, proporciona una visión global, común e integrada de los datos.
+ son conjuntos de datos acerca de las operaciones de una organización, brindan
+ una visión total, común e integrada de los datos.
  Hoy en día se piensa que son las principales tecnologías que apoyan el
  entorno heterogéneo de toma de decisiones, el datawarehouse tiene las siguiente
 s propiedades: no volátil, coherente, fiable y con información histórica
@@ -789,19 +780,19 @@ key "INMON92"
 \begin_layout Itemize
 Orientado a un área: cada parte del datawarehouse está construida para resolver
  un problema de negocio.
- Por ejemplo: entender los hábitos de compra de clientes, analizar la calidad
- de los productos, analizar la productividad de una línea de fabricación.
+ Ej.: entender los hábitos de compra de clientes, analizar la calidad de
+ los productos, analizar la productividad de una línea de fabricación.
 \end_layout
 
 \begin_layout Itemize
-Integrado: la información debe ser transformada en medidas comunes, códigos
- comunes y formatos comunes para ser útil.
- Por ejemplo: la moneda en que están expresadas los importes es común.
+Integrado: la información debe ser transformada en medidas, códigos y formatos
+ comunes para que sea de utilidad.
+ Ej.: la moneda en que están expresadas los importes es común.
 \end_layout
 
 \begin_layout Itemize
 Indexado en el tiempo: se mantiene la información histórica.
- Ejemplo: analizar la evolución de las ventas en los periodos deseados.
+ Ej.: analizar la evolución de las ventas en los periodos deseados.
 \end_layout
 
 \begin_layout Itemize
@@ -841,8 +832,8 @@ ing.
 \end_layout
 
 \begin_layout Standard
-Se debe tener en cuenta que existen otros elementos en el contexto de un
- datawarehouse 
+Se debe recalcar que existen otros varios elementos relacionados a un datawareho
+use 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CJ20"
@@ -853,16 +844,16 @@ key "CJ20"
 \end_layout
 
 \begin_layout Itemize
-Datawarehousing: es el proceso de extraer y filtrar datos de las operaciones,
- procedentes de los distintos sistemas de información operacionales y sistemas
- externos, para transformarlos, integrarlos y almacenarlos en un almacén
- de datos, con el fin de acceder a ellos para dar soporte al proceso de
+Datawarehousing: consiste en extraer y filtrar los datos de las operaciones
+ transaccionales provenientes de las distintas fuentes de información o
+ sistemas externos para transformar, integrar y almacenar en el almacén
+ de datos, con el objetivo de acceder a ellos para brindar soporte en la
  toma de decisiones.
 \end_layout
 
 \begin_layout Itemize
-Data Mart: es un subconjunto de datos del datawarehouse cuyo objetivo es
- responder a un determinado análisis.
+Data Mart: representa un conjunto parcial de datos del datawarehouse que
+ permite el análisis de un determinado proceso.
 \end_layout
 
 \begin_layout Itemize
@@ -874,19 +865,19 @@ description "Operational Data Store"
 
 \end_inset
 
-): es un tipo de almacén de datos que proporciona sólo los últimos valores
- de los datos y no su historial.
+): es un repositorio de datos temporal que contiene solamente los últimos
+ valores de los datos extraídos.
 \end_layout
 
 \begin_layout Itemize
-Staging Área: es el sistema que permanece entre las fuentes de datos y el
- datawarehouse con el objetivo de:
+Staging Área: es un sistema intermedio existente entre las fuentes de origen
+ de los datos y el datawarehouse con el objetivo de:
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Facilitar la extracción de datos desde fuentes de origen con una heterogeneidad
- y complejidad grande.
+Agilizar la extracción de los datos de las fuentes de origen heterogéneas
+ y complejas.
 \end_layout
 
 \begin_layout Itemize
@@ -894,26 +885,26 @@ Mejorar la calidad de los datos.
 \end_layout
 
 \begin_layout Itemize
-Ser usado como caché de datos operacionales con el que posteriormente se
- realiza el proceso de datawarehousing.
+Ser utilizado como caché de datos con el que luego se realiza el proceso
+ de datawarehousing.
 \end_layout
 
 \begin_layout Itemize
-Uso de la misma para acceder en detalle a información no contenida en el
- datawarehouse.
+Ser utilizada para el acceso a información más detallada no contenida en
+ el datawarehouse.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Procesos ETL: tecnología de integración de datos basada en la consolidación
- de datos que se usa tradicionalmente para alimentar el datawarehouse, data
- mart, staging área y ODS.
+Procesos ETL: es la herramienta de integración de datos que consolida los
+ datos de las distintas fuentes de origen, para luego almacenarlos en el
+ datawarehouse, data mart, staging área y ODS.
 \end_layout
 
 \begin_layout Itemize
-Metadatos: datos estructurados y codificados que describen características
- de instancias; aportan informaciones para ayudar a identificar, descubrir,
- valorar y administrar las instancias descritas.
+Metadatos: es la representación estructurada de los datos que detallan caracterí
+sticas de las instancias aportando informaciones para identificar y administrar
+ dichas instancias.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -921,8 +912,7 @@ Elementos de un datawarehouse
 \end_layout
 
 \begin_layout Standard
-El diseño de una base de datos operacional con una estructura relacional
- sigue las 
+Una base de datos con una estructura relacional se rige por las 
 \begin_inset Quotes eld
 \end_inset
 
@@ -938,20 +928,19 @@ key "Kroenke2003"
 \end_inset
 
 .
- Un datawarehouse no debe seguir ese patrón de diseño.
- La idea principal es que en el datawarehouse la información esté almacenada
- con una estructura desnormalizada, para optimizar las consultas.
- Para ello se debe identificar en la organización los procesos de negocios,
- las vistas para el proceso de negocio y las medidas cuantificables asociadas
- a los mismos.
- Los elementos de un datawarehouse son 
+ Un datawarehouse debe dejar de lado dicho patrón de diseño.
+ La idea principal es que los datos almacenados en el datawarehouse estén
+ desnormalizadas, con el fin de agilizar las consultas.
+ Para ello se debe identificar los procesos, las vistas y las medidas cuantifica
+bles del negocio que están relacionados.
+ Según 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "CJ20"
 
 \end_inset
 
-:
+ los elementos de un datawarehouse son:
 \end_layout
 
 \begin_layout Itemize
@@ -959,10 +948,9 @@ key "CJ20"
 \series bold
 Tabla de hecho
 \series default
-: es la representación en el datawarehouse de los procesos de negocios de
- la organización.
- A nivel de diseño es una tabla que permite guardar dos tipos de atributos
- diferenciados: 
+: es la representación de un proceso de negocio en el datawarehouse.
+ En el diseño se representa como una tabla que permite guardar dos tipos
+ de atributos diferenciados: 
 \end_layout
 
 \begin_deeper
@@ -980,8 +968,7 @@ Claves foráneas hacia registros de una tabla de dimensión.
 \series bold
 Dimensión
 \series default
-: es la representación en el datawarehouse de una vista para un cierto proceso
- de negocio.
+: se corresponde con una vista del proceso de negocio en el datawarehouse.
 \end_layout
 
 \begin_layout Itemize
@@ -989,8 +976,8 @@ Dimensión
 \series bold
 Métrica
 \series default
-: son los indicadores de negocio de un proceso de negocio.
- Aquellos conceptos cuantificables que permiten medir el proceso de negocio.
+: son los indicadores de un proceso de negocio que permiten medir o cuantificar
+ un proceso.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1002,11 +989,12 @@ Tipos de esquemas para estructurar los datos en un datawarehouse
 \series bold
 Esquema en estrella:
 \series default
- consiste en estructurar la información en procesos, vistas y métricas recordand
-o a una estrella.
- A nivel de diseño, consiste en una tabla de hechos en el centro para el
- hecho objeto de análisis, y una o varias tablas de dimensión por cada punto
- de vista del análisis que participan en la descripción de ese hecho.
+ consiste en que la información sea estructurada en procesos, vistas y métricas
+ semejante a una estrella.
+ En el diseño, se tiene una tabla de hechos que se encuentra en el centro
+ y es el objeto de análisis, y rodeada por una o varias tablas dimensionales
+ que representan cada una de las vistas que interactúan en la descripción
+ del hecho.
 \end_layout
 
 \begin_layout Itemize
@@ -1014,10 +1002,10 @@ o a una estrella.
 \series bold
 Esquema en copo de nieve:
 \series default
- es un esquema de representación derivado del esquema en estrella, en el
- que las tablas de dimensión se normalizan en múltiples tablas.
- Por esta razón la tabla de hechos deja de ser la única tabla del esquema
- que se relaciona con otras tablas.
+ es un esquema derivado del esquema estrella, en el que las tablas de dimensión
+ son normalizadas en múltiples tablas.
+ Por este motivo la tabla de hechos ya no es la única tabla en relacionarse
+ con otras tablas.
 \end_layout
 
 \begin_layout Subsection
@@ -1025,7 +1013,7 @@ OLAP
 \end_layout
 
 \begin_layout Standard
-Existen múltiples tecnologías que permiten analizar las información almacenada
+Existen múltiples tecnologías que permiten analizar la información almacenada
  en un datawarehouse, uno de los más importantes es OLAP
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1247,8 +1235,8 @@ key "EH05"
 \shape italic
 Generadores de informes
 \shape default
-: Utilizadas por desarrolladores profesionales para crear informes estándar
- para grupos, departamentos o la organización.
+: La utilizan generalmente los desarrolladores expertos para la creación
+ de informes estándar para departamentos o grupos de una organización.
 \end_layout
 
 \begin_layout Itemize
@@ -1256,8 +1244,8 @@ Generadores de informes
 \shape italic
 Herramientas de usuario final de consultas e informes
 \shape default
-: Empleadas por usuarios finales para crear informes para ellos mismos o
- para otros; no requieren programación.
+: Utilizada por los propios usuarios finales que crean sus propios reportes
+ y donde no se requiere experiencia en programación.
 \end_layout
 
 \begin_layout Itemize
@@ -1265,8 +1253,8 @@ Herramientas de usuario final de consultas e informes
 \shape italic
 Herramientas OLAP
 \shape default
-: Permiten a los usuarios finales tratar la información de forma multidimensiona
-l para explorarla desde distintas perspectivas y periodos de tiempo.
+: Permiten un análisis multidimensional de la información desde distintas
+ perspectivas y periodos de tiempo.
 \end_layout
 
 \begin_layout Itemize
@@ -1274,9 +1262,9 @@ l para explorarla desde distintas perspectivas y periodos de tiempo.
 \shape italic
 Herramientas de Dashboard y Scorecard
 \shape default
-: Permiten a los usuarios finales ver información crítica para el rendimiento
- con un simple vistazo utilizando iconos gráficos y con la posibilidad de
- analizar información detallada e informes.
+: Permite visualizar la información crítica sobre el rendimiento con un
+ vistazo general mediante gráficos y con opción de visualizar información
+ detallada para un mejor análisis.
 \end_layout
 
 \begin_layout Itemize
@@ -1284,11 +1272,10 @@ Herramientas de Dashboard y Scorecard
 \shape italic
 Herramientas de planificación, modelización y consolidación
 \shape default
-: Permite a los analistas y a los usuarios finales crear planes de negocio
- y simulaciones con la información de Business Intelligence.
- Pueden ser para elaborar la planificación, los presupuestos, las previsiones.
- Estas herramientas proveen a los dashboards y scorecards con los objetivos
- y umbrales de las métricas.
+: Posibilita a los usuarios generar planes y simulaciones con la información
+ de BI.
+ Pueden ser utilizada para elaborar planes, presupuestos, etc.
+ Proveen a los dashboards y scorecards las métricas con los umbrales y objetivos.
 \end_layout
 
 \begin_layout Itemize
@@ -1296,12 +1283,9 @@ Herramientas de planificación, modelización y consolidación
 \shape italic
 Herramientas datamining
 \shape default
-: Permiten a estadísticos o analistas de negocio crear modelos estadísticos
- de las actividades de los negocios.
- Datamining es el proceso para descubrir e interpretar patrones desconocidos
- en la información mediante los cuales resolver problemas de negocios.
- Los usos más habituales del datamining son: segmentación, venta cruzada,
- sendas de consumo, clasificación, previsiones, optimizaciones, etc.
+: Utilizado por los analistas para crear modelos estadísticos de las actividades.
+ Consiste en un proceso para descubrir patrones desconocidos contenidos
+ en la información con los cuales es posible resolver problemas del negocio.
 \end_layout
 
 \begin_layout Section
@@ -1321,7 +1305,7 @@ Los KPI o Indicadores Clave de Rendimiento se tratan de indicadores que
  Otro elemento importante de los KPI es que pueden no ser exclusivamente
  del tipo financiero, pueden medir otros valores como por ejemplo: calidad
  del servicio.
- Por último los KPI son un elemento importarte en la estrategia de negocios
+ Por último los KPI son un elemento importante en la estrategia de negocios
  por su capacidad de comunicar resultados a las personas que forman parte
  del proyecto.
  
