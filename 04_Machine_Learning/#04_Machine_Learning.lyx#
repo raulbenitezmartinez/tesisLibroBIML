@@ -1181,7 +1181,7 @@ Algoritmos basados en instancia
 \end_layout
 
 \begin_layout Standard
-El modelo de aprendizaje Basados en Instancia (
+El modelo de aprendizaje Basado en Instancia (
 \shape italic
 Instance-Based Learning
 \shape default
@@ -1443,43 +1443,32 @@ Los métodos combinados (
 \shape italic
 Ensemble
 \shape default
-) se basan en la idea de que varios clasificadores participen en el proceso
- de predicción sobre nuevos datos 
+) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sewell2007"
 
 \end_inset
 
-.
+ se basan en la idea de que varios clasificadores .
  Estos algoritmos se implementan en problemas de aprendizaje supervisado
  y no supervisado.
 \end_layout
 
 \begin_layout Subsection
-Algoritmos máquinas de soporte vectorial
+Algoritmos no lineales
 \end_layout
 
 \begin_layout Standard
-Las máquinas de vectores de soporte (Support Vector Machines o SVM
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "SVM"
-description "Support Vector Machines"
-
-\end_inset
-
-) son una serie de potentes algoritmos que resuelven problemas de regresión
- y clasificación, se basan en la construcción de hiperplanos n-dimensionales
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Wang2005"
-
-\end_inset
-
+Uno de los mas importante es Support Vector Machines.
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado
+ y no supervisado 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
 .
- Estos algoritmos se implementan en problemas de aprendizaje supervisado.
 \end_layout
 
 \begin_layout Section
@@ -1488,7 +1477,13 @@ Algoritmos de aprendizaje por refuerzo
 
 \begin_layout Standard
 Se puede complementar el listado propuesto por el Dr.
- Jason con algunos de los algoritmos de aprendizaje por refuerzo.
+ Jason con algunos de los algoritmos de aprendizaje por refuerzo 
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
@@ -1529,6 +1524,10 @@ description "Generalized Policy Iteration"
 Asynchronous DP.
 \end_layout
 
+\begin_layout Itemize
+Bootstrapping.
+\end_layout
+
 \begin_layout Subsection
 Método de Monte Carlo
 \end_layout
@@ -1557,12 +1556,11 @@ Aprendizaje por Diferencias Temporales
 
 \begin_layout Standard
 Sus principales algoritmos son 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "RLIntroduccion1998"
-
-\end_inset
-
+\series bold
+\color blue
+[REF]
+\series default
+\color inherit
 :
 \end_layout
 
