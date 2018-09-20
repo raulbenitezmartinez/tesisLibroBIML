@@ -197,7 +197,7 @@ ETL
 \series bold
 FN
 \series default
- False Negative 
+ Falsos Negativos 
 \end_layout
 
 \begin_layout Labeling
@@ -206,7 +206,7 @@ FN
 \series bold
 FP
 \series default
- False Positive 
+ Falsos Positivos
 \end_layout
 
 \begin_layout Labeling
@@ -288,6 +288,15 @@ IVA
 KPI
 \series default
  Key Performance Indicators 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+LASSO
+\series default
+ Least Absolute Shrinkage and Selection Operator
 \end_layout
 
 \begin_layout Labeling
@@ -492,18 +501,18 @@ TD
 \labelwidthstring 00.00.0000
 
 \series bold
-TN
+VN
 \series default
- True Negative 
+ Verdaderos Negativos 
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
 
 \series bold
-TP
+VP
 \series default
- True Positive 
+ Verdaderos Positivos 
 \end_layout
 
 \begin_layout Labeling

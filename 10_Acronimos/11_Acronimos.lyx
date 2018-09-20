@@ -213,15 +213,6 @@ FP
 \labelwidthstring 00.00.0000
 
 \series bold
-GPI
-\series default
- Generalized Policy Iteration 
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\series bold
 GPS
 \series default
  General Problem Solver 

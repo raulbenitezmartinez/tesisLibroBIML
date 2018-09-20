@@ -190,6 +190,13 @@ ACM A.M.
 \begin_inset Quotes erd
 \end_inset
 
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AMTuring"
+
+\end_inset
+
  por sus notables aportes en los inicios de IA.
  McCarthy acuño el término Artificial Intelligence en el taller 
 \begin_inset Quotes eld
@@ -427,8 +434,8 @@ Reconocimiento automático de ciertas áreas en el mundo realizado por satélite
 \end_layout
 
 \begin_layout Standard
-Para recalcar el veloz crecimiento de los datos en el mundo, en un estudio
- publicado por la International Data Corporation (IDC
+Para dimensionar el gran crecimiento de los datos digitales en el mundo,
+ en un estudio publicado por la International Data Corporation (IDC
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "IDC"
@@ -436,7 +443,7 @@ description "International Data Corporation"
 
 \end_inset
 
-) y patrocinado por DELL EMC que se denomina: 
+) y patrocinado por Dell EMC que se denomina: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -452,8 +459,9 @@ key "DUGrow2012"
 
 \end_inset
 
- se analiza qué tan rápido crecen los datos cada año, una medida que incluyen
- todos los datos digitales creados, replicados y consumidos en un solo año.
+ se analizó qué tan rápido crecerían los datos cada año.
+ La medida incluyeron todos los datos digitales creados, replicados o consumidos
+ en un solo año.
  En la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -503,11 +511,9 @@ Proyección de crecimiento de datos del 2005 al 2020.
 \end_layout
 
 \begin_layout Standard
-El universo digital analizado está compuesto por imágenes y vídeos en teléfonos
- móviles cargados en YouTube, películas digitales, datos bancarios en cajeros
- automáticos, imágenes de seguridad en aeropuertos y en eventos importantes
- como los Juegos Olímpicos, colisiones subatómicas registradas por el Gran
- Colisionador de Hadrones en el CERN
+Los datos incluían: videos de YouTube, películas, datos bancarios, imágenes
+ de cámaras de seguridad en aeropuertos, datos de las colisiones subatómicas
+ del Gran Colisionador de Hadrones en el CERN
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "CERN"
@@ -515,13 +521,12 @@ description "Conseil Europeen pour la Recherche Nucleaire"
 
 \end_inset
 
-, llamadas de voz a través de líneas telefónicas digitales y los mensajes
- de texto.
- Las mediciones indican que en el 2005 existían 130 exabytes en datos digitales,
- en el 2010 llegó a 1200 exabytes, en el 2015 a unos 7900 exabytes y para
- el 2020 se pronostica que llegará a los 40000 exabytes.
- IDC estima que para 2020, hasta el 33% del universo digital contendrá informaci
-ón que podría ser valiosa si se analiza.
+, llamadas telefónicas, mensajes de texto, etc.
+ Los resultados indicaron que en el 2005 existían 130 exabytes en datos
+ digitales, en el 2010 llegó a 1200 exabytes, en el 2015 a unos 7900 exabytes
+ y para el 2020 se pronostica que llegará a los 40000 exabytes.
+ IDC estima que para el 2020 hasta el 33% de los datos digitales contendrán
+ información valiosa.
 \end_layout
 
 \begin_layout Section
@@ -529,8 +534,8 @@ Definición
 \end_layout
 
 \begin_layout Standard
-Arthur Samuel acuñó el término Machine Learning en 1959 mientras trabajaba
- para IBM
+El término Machine Learning fue propuesto por Arthur Samuel en el año 1959
+ mientras trabajaba para IBM
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "IBM"
@@ -586,7 +591,7 @@ Machine Learning es un campo de estudio que da a las computadoras la capacidad
 
 \begin_layout Standard
 Samuel desarrolló en el año 1952 un programa que aprendió a jugar Damas,
- hasta llegar a una categoría equivalente al amateur.
+ hasta llegar a una categoría amateur.
  Este pionero ya demostraba que los programas a través del aprendizaje pueden
  efectuar tareas de toma de decisiones sin ser programadas explícitamente
  dichas decisiones.
@@ -693,7 +698,7 @@ problemas para los cuales fueron hechos
 \begin_layout Standard
 Estructuralmente un agente = arquitectura + programa.
  Los sensores y actuadores forman parte de la arquitectura, la arquitectura
- es el medio físico que podría ser una PC
+ es el medio físico que puede ser una PC
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PC"
@@ -701,9 +706,9 @@ description "Personal Computer"
 
 \end_inset
 
- común o un sofisticado robot con brazos mecánicos, cámaras, sensores, etc.
- El objetivo principal de IA es construir el programa del agente, que es
- donde se implementa la función del agente.
+ o un robot con sensores, etc.
+ El objetivo principal de la IA es construir el programa del agente, que
+ es donde se implementa la función del agente.
  Para que el agente sea considerado un agente que aprende, el programa debe
  contener el 
 \begin_inset Quotes eld
@@ -775,11 +780,10 @@ Formas de Aprendizaje
 
 \begin_layout Standard
 Los algoritmos de aprendizaje automático se pueden agrupar según la forma
- en que se realiza el aprendizaje, conforme a la información que poseen
+ en que se realiza el aprendizaje, de acuerdo a la información que poseen
  o que pueden llegar a poseer.
- Uno de los componentes más importantes al momento de diagnosticar la naturaleza
- del problema de aprendizaje es el tipo de retroalimentación disponible
- para el aprendizaje.
+ Para entender la naturaleza del problema es vital conocer el tipo de retroalime
+ntación que se dispone para el aprendizaje.
  Hay tres tipos distintos de aprendizaje: supervisado, no supervisado y
  por refuerzo 
 \begin_inset CommandInset citation
@@ -878,6 +882,13 @@ ejemplos
 \begin_inset Formula $(Y)$
 \end_inset
 
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cord2008"
+
+\end_inset
+
 .
 \end_layout
 
@@ -886,7 +897,14 @@ Problemas del tipo clasificación o regresión se resuelven típicamente con
  aprendizaje supervisado.
  Un problema de clasificación es cuando la variable de salida es una categoría
  y un problema de regresión es cuando la variable de salida es un valor
- real.
+ real 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cord2008"
+
+\end_inset
+
+.
  Como ejemplo de aplicaciones que implementan esta técnica están los vehículos
  autoconducidos, que deben aprender a diferenciar una calle de la que no
  es (salida booleana: es calle o no es calle?), también debe aprender a
@@ -902,7 +920,7 @@ description "Support Vector Machines"
 
 ), Back Propagation Neural Network, etc.
  El problema de estudio de la tesis utiliza algoritmos de aprendizaje supervisad
-o, donde el experto en compras da la respuesta correcta a cada ejemplo 
+ 
 \series bold
 \color blue
 [REF]
@@ -1054,8 +1072,9 @@ Algoritmos de aprendizaje supervisado y no supervisado
 \end_layout
 
 \begin_layout Standard
-El PhD Jason Brownlee es un especialista en aprendizaje automático, desarrollado
-r, escritor y empresario.
+El Dr.
+ Jason Brownlee es un especialista en aprendizaje automático, desarrollador,
+ escritor y empresario.
  Ha trabajado en sistemas de aprendizaje automático para la defensa, startups
  y pronósticos meteorológicos.
  Tiene una comunidad en https://machinelearningmastery.com/, la cual empezó
@@ -1181,7 +1200,7 @@ Algoritmos basados en instancia
 \end_layout
 
 \begin_layout Standard
-El modelo de aprendizaje Basado en Instancia (
+El modelo de aprendizaje Basados en Instancia (
 \shape italic
 Instance-Based Learning
 \shape default
@@ -1443,32 +1462,43 @@ Los métodos combinados (
 \shape italic
 Ensemble
 \shape default
-) 
+) se basan en la idea de que varios clasificadores participen en el proceso
+ de predicción sobre nuevos datos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sewell2007"
 
 \end_inset
 
- se basan en la idea de que varios clasificadores .
+.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado
  y no supervisado.
 \end_layout
 
 \begin_layout Subsection
-Algoritmos no lineales
+Algoritmos máquinas de soporte vectorial
 \end_layout
 
 \begin_layout Standard
-Uno de los mas importante es Support Vector Machines.
- Estos algoritmos se implementan en problemas de aprendizaje supervisado
- y no supervisado 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+Las máquinas de vectores de soporte (Support Vector Machines o SVM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SVM"
+description "Support Vector Machines"
+
+\end_inset
+
+) son una serie de potentes algoritmos que resuelven problemas de regresión
+ y clasificación, se basan en la construcción de hiperplanos n-dimensionales
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wang2005"
+
+\end_inset
+
 .
+ Estos algoritmos se implementan en problemas de aprendizaje supervisado.
 \end_layout
 
 \begin_layout Section
@@ -1477,13 +1507,7 @@ Algoritmos de aprendizaje por refuerzo
 
 \begin_layout Standard
 Se puede complementar el listado propuesto por el Dr.
- Jason con algunos de los algoritmos de aprendizaje por refuerzo 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
-.
+ Jason con algunos de los algoritmos de aprendizaje por refuerzo.
 \end_layout
 
 \begin_layout Subsection
@@ -1492,11 +1516,12 @@ Programación dinámica
 
 \begin_layout Standard
 Estos son los principales algoritmos 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Busoniu2010"
+
+\end_inset
+
 :
 \end_layout
 
@@ -1509,23 +1534,7 @@ Programación dinámica con Value Iteration.
 \end_layout
 
 \begin_layout Itemize
-Programación dinámica con Generalized Policy Iteration (GPI
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "GPI"
-description "Generalized Policy Iteration"
-
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Itemize
-Asynchronous DP.
-\end_layout
-
-\begin_layout Itemize
-Bootstrapping.
+Programación dinámica con Policy search
 \end_layout
 
 \begin_layout Subsection
@@ -1534,11 +1543,12 @@ Método de Monte Carlo
 
 \begin_layout Standard
 Tiene como principales algoritmos 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hausknecht2016"
+
+\end_inset
+
 :
 \end_layout
 
@@ -1556,11 +1566,12 @@ Aprendizaje por Diferencias Temporales
 
 \begin_layout Standard
 Sus principales algoritmos son 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RLIntroduccion1998"
+
+\end_inset
+
 :
 \end_layout
 
