@@ -191,7 +191,7 @@ tos y efectuar los cambios
 \end_layout
 
 \begin_layout Standard
-The Datawarehouse Institute propone una definición mas formal 
+The Datawarehouse Institute propone una definición más formal 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "EH05"
@@ -676,7 +676,7 @@ Los agregados como sumas de las ventas generalmente se realizan mediante
  un cálculo previo y luego son almacenados para conseguir rendimientos más
  óptimos.
  En este proceso también se ajusta el nivel de granularidad o detalle, por
- ejemplo: se puede tener detalles a nivel de lineas de factura en los datos
+ ejemplo: se puede tener detalles a nivel de líneas de factura en los datos
  extraídos, pero en el datawarehouse lo que se almacena son las ventas semanales
  o mensuales.
  La diferencia del nivel de detalle en el análisis es lo que se denomina

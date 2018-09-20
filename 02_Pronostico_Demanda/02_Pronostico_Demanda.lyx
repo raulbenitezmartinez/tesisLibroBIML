@@ -143,7 +143,7 @@ key "Adam1991"
 \end_layout
 
 \begin_layout Standard
-A continuación se explicará el proceso de 
+A continuación se explica el proceso de 
 \emph on
 Administración de Compras
 \emph default
@@ -196,9 +196,9 @@ key "MTPD20017"
 \end_layout
 
 \begin_layout Standard
-El stock o existencia de una empresa es el conjunto de materiales y artículos
- que se almacenan, tanto aquellos que son necesarios para el proceso productivo
- como los destinados a la venta 
+El stock de una empresa son los materiales y artículos almacenados, tanto
+ los que son utilizados para la producción como aquellos destinados para
+ la venta al consumidor final 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DEDIEGOMORILLO2015"
@@ -278,11 +278,11 @@ En el punto 5, en el detalle de la orden se ven reflejadas las estimaciones
 \end_layout
 
 \begin_layout Standard
-Del por qué la importancia de estimar de forma correcta esta cantidad o
- volumen, los expertos en negocios explican que los productos parados en
- stock mientras no se venden es capital inmovilizado, que generan sobrecostos
- por mantenimiento, seguros, personal encargado, fecha de vencimiento de
- los productos, etc 
+Del porqué la importancia de estimar de forma correcta esta cantidad o volumen,
+ los expertos en negocios explican que los productos parados en stock mientras
+ no se venden es capital inmovilizado, que generan sobrecostos por mantenimiento
+, seguros, personal encargado, fecha de vencimiento de los productos, etc
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MTPD20017"
@@ -308,8 +308,8 @@ ce y Machine Learning para el siguiente periodo.
 \end_layout
 
 \begin_layout Standard
-Una administración efectiva de las compras y del suministro contribuye de
- manera significativa al éxito organizacional.
+Una buena gestión de las compras contribuye significativamente al éxito
+ de una organización.
  La función del suministro evoluciona a medida que la tecnología y el ambiente
  competitivo mundial requieren enfoques innovadores 
 \begin_inset CommandInset citation
@@ -424,7 +424,7 @@ Encuesta en el mercado de consumo: Se encuesta a los clientes acerca de
 
 \begin_layout Itemize
 Método Delphi: Se basa en identificar un panel de expertos que pueden ser
- gerentes, empleados comunes, o expertos del sector.
+ gerentes, empleados, o competentes en el área.
  Se tiene un cuestionario donde cada uno de ellos lo completa de forma aislada.
  Se integran todas las respuestas, luego cada experto tiene acceso al set
  de respuestas y puede ajustar su respuesta conforme le parezca conveniente.
@@ -497,8 +497,8 @@ Pronósticos de series de tiempo
 \end_layout
 
 \begin_layout Standard
-Una serie de tiempo es un conjunto de observaciones de la variable a pronosticar
-, medidas en puntos o períodos sucesivos del tiempo pasado 
+Una serie de tiempo consiste es un serie de registros observados de la variable
+ a pronosticar, tomados en períodos progresivos del tiempo pasado 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCA2008"
@@ -516,7 +516,7 @@ key "MCA2008"
 El objetivo del método es obtener una buena predicción del valor futuro
  de la variable a pronosticar, enmarcado en la serie de tiempo.
  Para lograr el objetivo, el método debe descubrir el patrón dentro de la
- serie y luego ser capaz de extrapolarlo hacia el futuro 
+ serie y luego ser capaz de proyectarlo hacia el futuro 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "MCN2011"
@@ -535,7 +535,7 @@ Si bien el volumen de ventas es un buen indicador de la historia de la demanda,
  producto, la incidencia del marketing u otros.
  De igual modo se pueden descubrir tendencias, estacionalidad, ciclos, etc.,
  en la historia de la demanda para luego extrapolarlo a un tiempo futuro.
- También hay que destacar que el intervalo del muestreo tiene mucha influencia
+ También hay que destacar que el intervalo de muestreo tiene mucha influencia
  en el pronóstico y por ende en los resultados obtenidos 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -620,7 +620,7 @@ Se analizan estos cuatro componentes:
 \shape italic
 Componente de tendencia
 \shape default
-: Los valores de la serie de tiempo pueden ir cambiando gradualmente, tendiendo
+: Los valores de la serie de tiempo pueden ir cambiando continuamente, tendiendo
  hacia valores que incrementan o que disminuyen.
  Cuando estos incrementos o disminuciones se dan por periodos de tiempo
  prolongados se dice que la serie tiene un componente de tendencia.
@@ -707,9 +707,9 @@ key "MCN2011"
 Componente cíclico
 \shape default
 : es habitual que los puntos de la serie de tiempo se encuentren por encima
- o por debajo de la linea de tendencia.
+ o por debajo de la línea de tendencia.
  Cuando el patrón de puntos está de forma alterna por encima y por debajo
- de la linea de tendencia durante períodos mayor a un año, entonces estamos
+ de la línea de tendencia durante períodos mayor a un año, entonces estamos
  ante presencia del componente cíclico de la serie de tiempo.
  Esto se observa en la figura 
 \begin_inset CommandInset ref
@@ -769,7 +769,7 @@ key "MCN2011"
 \shape italic
 Componente estacional
 \shape default
-: Cuando el patrón de puntos está por encima o por debajo de la linea de
+: Cuando el patrón de puntos está por encima o por debajo de la línea de
  tendencia durante períodos alternos menores o igual a un año, entonces
  estamos ante presencia del componente estacional de la serie de tiempo.
  Las altas cantidades de ventas de abrigos durante el otoño e invierno son
@@ -954,10 +954,10 @@ El método de suavizamiento exponencial con tendencia: El inconveniente del
  método de pronóstico por suavizamiento exponencial sin tendencia es que
  justamente se retrasa respecto de la tendencia ya que no lo toma en cuenta.
  Al considerar la tendencia se obtienen pronósticos más precisos.
- Se calcula la pendiente actual de la linea de tendencia para luego ajustar
+ Se calcula la pendiente actual de la línea de tendencia para luego ajustar
  el nuevo pronóstico a la pendiente obtenida.
  Los valores más recientes de la serie de tiempo se utilizan para obtener
- la linea de tendencia actual y pueden tener dirección ascendente, descendente
+ la línea de tendencia actual y pueden tener dirección ascendente, descendente
  u horizontal.
 \end_layout
 
@@ -1139,7 +1139,7 @@ Una de las técnicas para resolver problemas de pronósticos causales es la
 regresión lineal
 \emph default
 .
- El objetivo de este método es encontrar la linea recta que más se aproxime
+ El objetivo de este método es encontrar la línea recta que más se aproxime
  a la relación entre la variable dependiente y la/s variable/s independiente/s.
  Cuando hay una sola variable independiente la forma de la ecuación es la
  de la recta:
@@ -1439,7 +1439,7 @@ Los resultados muestran excelentes resultados en las predicciones.
  El modelo ha mostrado un aumento alrededor del 7.25 % en la llegada de turistas
  respecto al año anterior.
  Por otro lado, el aumento calculado de las pernoctaciones es de alrededor
- del 8.42 % mas que el año anterior.
+ del 8.42 % más que el año anterior.
  Al término del año 2011, con datos reales de llegadas de turistas hubo
  un crecimiento del 8.74% mientras que para las pernoctaciones de turistas
  hubo un crecimiento del 10.16% respecto al año anterior, esto demuestra

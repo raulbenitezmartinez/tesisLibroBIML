@@ -2191,7 +2191,7 @@ carga
 \shape default
  de los datos al datawarehouse.
  Para construir el datawarehouse el trabajo clave consistió en definir las
- tablas de hechos que sirven de base para el calculo de los KPI junto con
+ tablas de hechos que sirven de base para el cálculo de los KPI junto con
  sus principales dimensiones utilizando el esquema estrella.
 \end_layout
 
