@@ -191,7 +191,7 @@ tos y efectuar los cambios
 \end_layout
 
 \begin_layout Standard
-The Datawarehouse Institute propone una definición mas formal 
+The Datawarehouse Institute propone una definición más formal 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "EH05"
@@ -1274,7 +1274,6 @@ Herramientas de planificación, modelización y consolidación
 \shape default
 : Posibilita a los usuarios generar planes y simulaciones con la información
  de BI.
- Pueden ser utilizada para elaborar planes, presupuestos, etc.
  Proveen a los dashboards y scorecards las métricas con los umbrales y objetivos.
 \end_layout
 

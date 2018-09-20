@@ -86,7 +86,7 @@ Conclusiones Generales
 \begin_layout Standard
 Este trabajo se enfocó en proponer una nueva técnica de pronóstico de la
  demanda de productos, para reposición de stock en empresas retail.
- En el capitulo 2 se mencionó que la gestión de compras es uno los ejes
+ En el capítulo 2 se mencionó que la gestión de compras es uno los ejes
  centrales en la actividad empresarial y la decisión del volumen de compras
  para cada producto es un desafío que enfrentan las empresas al momento
  de reponer el stock.
@@ -94,7 +94,11 @@ Este trabajo se enfocó en proponer una nueva técnica de pronóstico de la
  demanda empleadas en la actualidad y el creciente incremento del uso de
  tecnologías de Business Intelligence en las organizaciones, se encontró
  la oportunidad de desarrollar una nueva técnica de pronóstico.
- En esta nueva técnica se utilizan los Indicadores Claves de Rendimiento
+ 
+\end_layout
+
+\begin_layout Standard
+En esta nueva técnica se utilizan los Indicadores Claves de Rendimiento
  y apoyados en la experiencia de un experto en compras (gerente o encargado
  de compras) se realiza la experimentación utilizando algoritmos de clasificació
 n de Machine Learning.
@@ -107,12 +111,16 @@ De acuerdo a los resultados experimentales se obtuvieron altas tasas de
  Es importante considerar que para una implementación real es primordial
  tener en cuenta los siguientes aspectos: el etiquetado multiclase puede
  ser reemplazado por valores continuos; el experto en compras debe realizar
- o guiar todo el proceso de etiquetado ya sea con valores continuos o discretos;
- para periodos de análisis cortos se obtuvieron buenos resultados, pero
- también podrían considerarse periodos de tiempo mas extensos; el conjunto
- de KPI seleccionados fueron en base a las limitaciones de la base de datos,
- es importante incluir otros KPI que consideren más aspectos como costos
- de inventario, marketing, clientes y otros.
+ o guiar todo el proceso de etiquetado ya sea con valores continuos o discretos.
+ 
+\end_layout
+
+\begin_layout Standard
+Para periodos de análisis cortos se obtuvieron buenos resultados, pero también
+ podrían considerarse periodos de tiempo mas extensos; el conjunto de KPI
+ seleccionados fueron en base a las limitaciones de la base de datos, es
+ importante incluir otros KPI que consideren más aspectos como costos de
+ inventario, marketing, clientes y otros.
 \end_layout
 
 \begin_layout Standard

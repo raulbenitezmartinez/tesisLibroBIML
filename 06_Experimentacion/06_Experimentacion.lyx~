@@ -422,7 +422,7 @@ En este apartado se contrastan los resultados obtenidos mediante una comparació
  entre el porcentaje de acierto de la línea base ZeroR, el porcentaje de
  acierto del mejor algoritmo alcanzado en la validación y el porcentaje
  de acierto en el testeo del mismo algoritmo.
- Como se mencionó la linea base es el clasificador ZeroR, el cual es el
+ Como se mencionó la línea base es el clasificador ZeroR, el cual es el
  criterio mínimo de aceptación de un clasificador.
  Los puntos de la línea de entrenamiento son los porcentajes de acierto
  de los clasificadores seleccionados durante la validación, según el algoritmo
@@ -462,7 +462,7 @@ reference "fig:6.4"
  los gráficos contienen las líneas comparativas para periodos semanales
  y quincenales respectivamente.
  De acuerdo a las experimentaciones el porcentaje de acierto en el entrenamiento
- es siempre mayor o igual a la linea base, en concordancia con el algoritmo
+ es siempre mayor o igual a la línea base, en concordancia con el algoritmo
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -497,7 +497,7 @@ Nada
 
 .
  De los resultados se puede deducir que hay aprendizaje, ya que los porcentajes
- de acierto alcanzados en el testeo se encuentran por encima de la linea
+ de acierto alcanzados en el testeo se encuentran por encima de la línea
  base en la mayoría de los casos.
 \end_layout
 
@@ -787,7 +787,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/recuento_cross_mensual.png
-	scale 65
+	scale 69
 
 \end_inset
 
@@ -841,7 +841,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename Recursos/aciertos_cross.png
-	scale 65
+	scale 70
 
 \end_inset
 
