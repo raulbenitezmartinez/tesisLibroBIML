@@ -255,7 +255,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{section}{Abrastract}
+addcontentsline{toc}{section}{Abstract}
 \end_layout
 
 \end_inset

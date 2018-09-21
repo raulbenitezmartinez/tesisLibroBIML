@@ -101,8 +101,12 @@ key "Chapman2006"
 \end_inset
 
 .
- La elaboración de pronósticos de demanda precisos es uno de los retos important
-es en empresas del tipo retail, determinar qué sucederá en el futuro con
+ 
+\end_layout
+
+\begin_layout Standard
+La elaboración de pronósticos de demanda precisos es uno de los retos importante
+s en empresas del tipo retail, determinar qué sucederá en el futuro con
  el fin de tomar decisiones adecuadas es un problema que se presenta con
  frecuencia 
 \begin_inset CommandInset citation
@@ -1439,7 +1443,7 @@ Los resultados muestran excelentes resultados en las predicciones.
  El modelo ha mostrado un aumento alrededor del 7.25 % en la llegada de turistas
  respecto al año anterior.
  Por otro lado, el aumento calculado de las pernoctaciones es de alrededor
- del 8.42 % mas que el año anterior.
+ del 8.42 % más que el año anterior.
  Al término del año 2011, con datos reales de llegadas de turistas hubo
  un crecimiento del 8.74% mientras que para las pernoctaciones de turistas
  hubo un crecimiento del 10.16% respecto al año anterior, esto demuestra

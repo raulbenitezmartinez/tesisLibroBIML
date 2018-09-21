@@ -101,8 +101,12 @@ key "Chapman2006"
 \end_inset
 
 .
- La elaboración de pronósticos de demanda precisos es uno de los retos important
-es en empresas del tipo retail, determinar qué sucederá en el futuro con
+ 
+\end_layout
+
+\begin_layout Standard
+La elaboración de pronósticos de demanda precisos es uno de los retos importante
+s en empresas del tipo retail, determinar qué sucederá en el futuro con
  el fin de tomar decisiones adecuadas es un problema que se presenta con
  frecuencia 
 \begin_inset CommandInset citation
@@ -458,7 +462,11 @@ key "MCA2008"
 \end_inset
 
 .
- En general, para modelar cuantitativamente se debe disponer de información
+ 
+\end_layout
+
+\begin_layout Standard
+En general, para modelar cuantitativamente se debe disponer de información
  sobre la variable a pronosticar, la información se debe cuantificar y el
  patrón histórico de cierto modo debe repetirse en el futuro 
 \begin_inset CommandInset citation
