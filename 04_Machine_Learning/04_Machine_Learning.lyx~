@@ -841,10 +841,7 @@ ejemplos
 \begin_inset Formula $f$
 \end_inset
 
- .
-\series bold
-\color blue
-[REF]
+.
 \end_layout
 
 \begin_layout Standard
@@ -1592,75 +1589,66 @@ R-Learning for Undiscounted Continual Tasks.
 \end_layout
 
 \begin_layout Section
-Problemas de clasificación y regresión
+Problemas de clasificación
 \end_layout
 
 \begin_layout Subsection
-Clasificación
-\end_layout
-
-\begin_layout Subsubsection
 Clasificación binaria
 \end_layout
 
 \begin_layout Standard
-En su forma más simple se reduce a la siguiente cuestión: dado un patrón
- 
+La formulación se resume en, dado una variable de entrada 
 \begin_inset Formula $x$
 \end_inset
 
- extraído de un dominio 
+ perteneciete al dominio 
 \begin_inset Formula $X$
 \end_inset
 
-, estimar qué valor asumirá una variable aleatoria binaria asociada 
-\begin_inset Formula $y\in\left\{ \pm1\right\} $
+, se debe estimar el valor de la variable aleatoria binaria de salida 
+\begin_inset Formula $y\in\left\{ 0,1\right\} $
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-La clasificación binaria es probablemente el problema más estudiado en el
- aprendizaje automático y ha dado lugar a una gran cantidad de desarrollos
- algorítmicos y teóricos importantes durante el siglo pasado 
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "IntroML2008"
+key "Koyejo2014"
 
 \end_inset
 
 .
+ Entre aplicaciones comunes que implementan clasificación binaria están:
+ deteminar si un correo electrónico es spam o no, detección de fraude, diagóstic
+o médico, etc.
+ 
 \end_layout
 
-\begin_layout Standard
-Por ejemplo, si se muestran imágenes de manzanas y naranjas, podemos indicar
- si el objeto en cuestión es una manzana o una naranja.
- Igualmente, si se quiere predecir si un propietario de vivienda podría
- incumplir su préstamo dado sus datos de ingresos y su historial de crédito,
- o si un correo electrónico determinado es spam o no.
-\end_layout
-
-\begin_layout Subsubsection
+\begin_layout Subsection
 Clasificación multiclase
 \end_layout
 
 \begin_layout Standard
-Es la extensión lógica de la clasificación binaria.
- La principal diferencia es que ahora 
+A diferencia de la clasificación binaria la variable de salida puede tomar
+ muchos valores, 
 \begin_inset Formula $y\in\left\{ 1,2,3..,N\right\} $
 \end_inset
 
- puede asumir un rango de valores diferentes.
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aly2005"
+
+\end_inset
+
+.
  El problema de estudio en cuestión utiliza clasificación multiclase, donde
  
 \begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
 \end_inset
 
 .
- Por ejemplo, es posible que se desee clasificar un documento de acuerdo
- con el idioma en el que fue escrito (inglés, francés, alemán, español,
- hindú, japonés, chino, ...) 
+ Un típico problema es el de detección automática del idioma de una documento
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IntroML2008"
@@ -1668,29 +1656,16 @@ key "IntroML2008"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-La principal diferencia es que el costo del error puede depender en gran
- medida del tipo de error que se comete.
- Por ejemplo, en el problema de evaluar el riesgo de cáncer, hace una diferencia
- significativa si clasificamos erróneamente una etapa temprana del cáncer
- como saludable (en cuyo caso es probable que el paciente muera) o una etapa
- avanzada de cáncer (en cuyo caso es probable que el paciente sufra molestias
- por un tratamiento excesivamente agresivo).
-\end_layout
-
-\begin_layout Standard
-Para desarrollar un modelo o esquema de Machine Learning para resolver problemas
- de clasificación multiclase, es necesario conocer los componentes esenciales
- que la forman 
+ Para desarrollar un modelo o esquema de Machine Learning para resolver
+ problemas de clasificación multiclase, es necesario conocer los componentes
+ esenciales que la forman 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
 
 \end_inset
 
-.
+:
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1746,11 +1721,12 @@ Constituye el conjunto de algoritmos de machine learning que soportan problemas
  de clasificación multiclase.
  Cada algoritmo se construye con su Función Objetivo (f), Variables de entrada
  (X), Variable de salida (Y), donde Y = f(X) 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jin2012"
+
+\end_inset
+
 .
 \end_layout
 
@@ -1763,33 +1739,6 @@ Para medir el rendimiento de un clasificador sobre nuevos datos, necesitamos
  evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
  papel en la formación del clasificador.
  Este conjunto de datos independiente se denomina conjunto de prueba.
-\end_layout
-
-\begin_layout Subsection
-Regresión
-\end_layout
-
-\begin_layout Standard
-Es otra aplicación prototípica.
- Aquí el objetivo es estimar una variable de valor real y ∈ R dado un patrón
- x.
- Por ejemplo, se podría querer estimar el valor de un stock al día siguiente,
- el rendimiento de un fabuloso semiconductor dado el proceso actual, el
- contenido de hierro de las mediciones de espectroscopia de masas dadas
- por el mineral o la frecuencia cardíaca de un atleta, dada la información
- del acelerómetro.
- Una de las cuestiones clave en las que los problemas de regresión difieren
- entre sí es la elección de una pérdida.
- Por ejemplo, al estimar los valores de stock, nuestra pérdida para una
- opción de venta será decididamente unilateral.
- Por otro lado, a un deportista aficionado solo le importaría que nuestra
- estimación de la frecuencia cardíaca coincida con la media real 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
-.
 \end_layout
 
 \begin_layout Section

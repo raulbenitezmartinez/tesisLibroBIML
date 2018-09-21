@@ -841,10 +841,7 @@ ejemplos
 \begin_inset Formula $f$
 \end_inset
 
- .
-\series bold
-\color blue
-[REF]
+.
 \end_layout
 
 \begin_layout Standard
@@ -900,7 +897,7 @@ Problemas del tipo clasificación o regresión se resuelven típicamente con
  real 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Cord2008"
+key "James2014"
 
 \end_inset
 
@@ -909,8 +906,8 @@ key "Cord2008"
  autoconducidos, que deben aprender a diferenciar una calle de la que no
  es (salida booleana: es calle o no es calle?), también debe aprender a
  frenar (salida booleana: frenar o no frenar?), etc.
- Entre los algoritmos que implementan aprendizaje supervisado están: Logistic
- Regression, Linear Regression, Support Vector Machines (SVM
+ Entre los algoritmos que implementan aprendizaje supervisado están: Linear
+ Regression, Decision Trees, Support Vector Machines (SVM
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "SVM"
@@ -918,15 +915,15 @@ description "Support Vector Machines"
 
 \end_inset
 
-), Back Propagation Neural Network, etc.
- El problema de estudio de la tesis utiliza algoritmos de aprendizaje supervisad
- 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+), Bayesian Networks, etc 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kotsiantis2007"
+
+\end_inset
+
 .
+ El problema de estudio de la tesis utiliza algoritmos de aprendizaje supervisad.
 \end_layout
 
 \begin_layout Subsection
@@ -952,14 +949,13 @@ Unsupervised Learning
  Los algoritmos buscan estructuras presentes y como resultado pueden extraer
  reglas generales, o reducir sistemáticamente la redundancia, u organizar
  los datos por similitud.
- Los problemas de agrupamiento (clustering) y asociación (association) se
- resuelven típicamente con algoritmos de aprendizaje no supervisados.
- 
+ Los problemas de agrupación (clustering) y asociación (association) se
+ resuelven normalmente con algoritmos de aprendizaje no supervisados.
 \end_layout
 
 \begin_layout Standard
 En empresas retail buscan descubrir grupos de clientes que tienen el mismo
- comportamiento en las compras (los que toman vino por ejemplo), lo que
+ comportamiento en las compras (los que toman cerveza por ejemplo), lo que
  representa una situación de agrupación inherente en los datos.
  Cuando buscan descubrir reglas que se deduzcan del conjunto de datos (por
  ejemplo, los que toman vino compran agua tónica o mineral), se tiene una
@@ -975,12 +971,13 @@ description "Principal Component Analysis"
 
 \end_inset
 
-), Hierarchical Clustering, etc 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+), reducción de la dimensionalidad, etc 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kotsiantis2007"
+
+\end_inset
+
 .
 \end_layout
 
@@ -1360,7 +1357,7 @@ key "Berka2018"
 \end_inset
 
 .
- Estos algoritmos se implementan en problemas de aprendizaje supervisado.
+ Estos algoritmos se implementan en problemas de aprendizaje no supervisado.
 \end_layout
 
 \begin_layout Subsection
@@ -1604,29 +1601,25 @@ Clasificación binaria
 \end_layout
 
 \begin_layout Standard
-En su forma más simple se reduce a la siguiente cuestión: dado un patrón
- 
+La formulación se resume en, dado una variable de entrada 
 \begin_inset Formula $x$
 \end_inset
 
- extraído de un dominio 
+ perteneciete al dominio 
 \begin_inset Formula $X$
 \end_inset
 
-, estimar qué valor asumirá una variable aleatoria binaria asociada 
-\begin_inset Formula $y\in\left\{ \pm1\right\} $
+, se debe estimar el valor de la variable aleatoria binaria asociada 
+\begin_inset Formula $y\in\left\{ 0,1\right\} $
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-La clasificación binaria es probablemente el problema más estudiado en el
- aprendizaje automático y ha dado lugar a una gran cantidad de desarrollos
+ La clasificación binaria es probablemente el problema más estudiado en
+ el aprendizaje automático y ha dado lugar a una gran cantidad de desarrollos
  algorítmicos y teóricos importantes durante el siglo pasado 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "IntroML2008"
+key "Koyejo2014"
 
 \end_inset
 
@@ -1646,21 +1639,27 @@ Clasificación multiclase
 \end_layout
 
 \begin_layout Standard
-Es la extensión lógica de la clasificación binaria.
- La principal diferencia es que ahora 
+A diferencia de la clasificación binaria la variable de salida puede tomar
+ muchos valores, 
 \begin_inset Formula $y\in\left\{ 1,2,3..,N\right\} $
 \end_inset
 
- puede asumir un rango de valores diferentes.
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aly2005"
+
+\end_inset
+
+.
  El problema de estudio en cuestión utiliza clasificación multiclase, donde
  
 \begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
 \end_inset
 
 .
- Por ejemplo, es posible que se desee clasificar un documento de acuerdo
- con el idioma en el que fue escrito (inglés, francés, alemán, español,
- hindú, japonés, chino, ...) 
+ Un típico problema es el de detección automática del idioma de una documento
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IntroML2008"
@@ -1668,29 +1667,16 @@ key "IntroML2008"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-La principal diferencia es que el costo del error puede depender en gran
- medida del tipo de error que se comete.
- Por ejemplo, en el problema de evaluar el riesgo de cáncer, hace una diferencia
- significativa si clasificamos erróneamente una etapa temprana del cáncer
- como saludable (en cuyo caso es probable que el paciente muera) o una etapa
- avanzada de cáncer (en cuyo caso es probable que el paciente sufra molestias
- por un tratamiento excesivamente agresivo).
-\end_layout
-
-\begin_layout Standard
-Para desarrollar un modelo o esquema de Machine Learning para resolver problemas
- de clasificación multiclase, es necesario conocer los componentes esenciales
- que la forman 
+ Para desarrollar un modelo o esquema de Machine Learning para resolver
+ problemas de clasificación multiclase, es necesario conocer los componentes
+ esenciales que la forman 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
 
 \end_inset
 
-.
+:
 \end_layout
 
 \begin_layout Subsubsection*
