@@ -1089,11 +1089,12 @@ reference "fig:Algoritmos-de-machine"
 \end_inset
 
  lo propuesto por Brownlee 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "masteryJB"
+
+\end_inset
+
 .
 \end_layout
 
@@ -1124,11 +1125,12 @@ name "fig:Algoritmos-de-machine"
 \end_inset
 
 Agrupación de algoritmos según Jason Brownlee 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "masteryJB2013"
+
+\end_inset
+
 .
 \end_layout
 
@@ -3680,13 +3682,7 @@ Técnicas de evaluación para aprendizaje supervisado
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
  Entre las técnicas de evaluación para problemas de aprendizaje supervisado
- se destacan 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
-:
+ se destacan:
 \end_layout
 
 \begin_layout Itemize
@@ -4425,11 +4421,9 @@ Pr(e)=\sum_{k=1}^{N}\left[\frac{1}{n^{2}}\left(\sum_{i=1}^{N}f_{ik}\times\sum_{j
 \end_layout
 
 \begin_layout Standard
-<<<<<<< HEAD
-Otra forma común de interpretar los resultado es la siguiente:
-=======
-Otra forma de interpretar los resultado es el siguiente:
->>>>>>> 8d6137441254a668250b8eba23d17e92f6a26da4
+<<<<<<< HEADOtra forma común de interpretar los resultado es la siguiente:======
+=Otra forma de interpretar los resultado es el siguiente:>>>>>>> 8d6137441254a66
+8250b8eba23d17e92f6a26da4
 \end_layout
 
 \begin_layout Itemize
@@ -4479,10 +4473,13 @@ Bias
 \shape italic
 Variance
 \shape default
-)
+) 
 \series bold
 \color blue
- [REF].
+[REF]
+\series default
+\color inherit
+.
 \end_layout
 
 \begin_layout Subsection
