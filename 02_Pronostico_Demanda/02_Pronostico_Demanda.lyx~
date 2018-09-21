@@ -101,8 +101,12 @@ key "Chapman2006"
 \end_inset
 
 .
- La elaboración de pronósticos de demanda precisos es uno de los retos important
-es en empresas del tipo retail, determinar qué sucederá en el futuro con
+ 
+\end_layout
+
+\begin_layout Standard
+La elaboración de pronósticos de demanda precisos es uno de los retos importante
+s en empresas del tipo retail, determinar qué sucederá en el futuro con
  el fin de tomar decisiones adecuadas es un problema que se presenta con
  frecuencia 
 \begin_inset CommandInset citation
@@ -129,16 +133,12 @@ Administración de Compras
 , hay un componente vital dentro de este proceso que es la estimación de
  la cantidad o volumen de productos a adquirir para reponer el stock.
  Es ahí donde entra en juego el pronóstico de la demanda 
-\series bold
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Adam1991"
 
 \end_inset
 
-
-\series default
 .
 \end_layout
 
@@ -458,7 +458,11 @@ key "MCA2008"
 \end_inset
 
 .
- En general, para modelar cuantitativamente se debe disponer de información
+ 
+\end_layout
+
+\begin_layout Standard
+En general, para modelar cuantitativamente se debe disponer de información
  sobre la variable a pronosticar, la información se debe cuantificar y el
  patrón histórico de cierto modo debe repetirse en el futuro 
 \begin_inset CommandInset citation
@@ -615,7 +619,6 @@ Se analizan estos cuatro componentes:
 
 \begin_layout Enumerate
 \noindent
-\align left
 
 \shape italic
 Componente de tendencia
@@ -949,7 +952,6 @@ Para series de tiempo estables es recomendable valores de
 \begin_layout Itemize
 \paragraph_spacing single
 \noindent
-\align left
 El método de suavizamiento exponencial con tendencia: El inconveniente del
  método de pronóstico por suavizamiento exponencial sin tendencia es que
  justamente se retrasa respecto de la tendencia ya que no lo toma en cuenta.
@@ -1439,7 +1441,7 @@ Los resultados muestran excelentes resultados en las predicciones.
  El modelo ha mostrado un aumento alrededor del 7.25 % en la llegada de turistas
  respecto al año anterior.
  Por otro lado, el aumento calculado de las pernoctaciones es de alrededor
- del 8.42 % mas que el año anterior.
+ del 8.42 % más que el año anterior.
  Al término del año 2011, con datos reales de llegadas de turistas hubo
  un crecimiento del 8.74% mientras que para las pernoctaciones de turistas
  hubo un crecimiento del 10.16% respecto al año anterior, esto demuestra

@@ -116,7 +116,7 @@
 
 @Book{ADMINCA,
   title     = {Administración de compras y abastecimientos},
-  publisher = {McGRAW-HILL / INTERAMERICANA EDITORES, S.A.},
+  publisher = {McGraw-Hill / Interamericana Editores, S.A.},
   year      = {2012},
   author    = {Fraser Johnson and Michiel Leenders and Anna Flynn},
   edition   = {14},
@@ -967,9 +967,9 @@ learning methods.
 }
 
 @Misc{AMTuring,
-  author = {A.M. TURING AWARD},
-  title  = {ALPHABETICAL LISTING OF A.M. TURING AWARD WINNERS},
-  url    = {https://amturing.acm.org/alphabetical.cfm},
+  author       = {A.M. TURING AWARD},
+  title        = {ALPHABETICAL LISTING OF A.M. TURING AWARD WINNERS},
+  howpublished = {https://amturing.acm.org/alphabetical.cfm},
 }
 
 @Book{Cord2008,
