@@ -826,9 +826,6 @@
   year    = {1960},
 }
 
-@Book{,
-}
-
 @Book{Ikonomovska2012,
   title     = {Algorithms for Learning Regression Trees and Ensembles on Evolving Data Streams: Doctoral Dissertation},
   publisher = {E. Ikonomovska},
@@ -923,20 +920,106 @@
 }
 
 @InProceedings{Sewell2007,
-  author        = {Sewell, Martin},
-  title         = {Ensemble Methods},
-  year          = {2007},
-  __markedentry = {[Tecnologia:]},
+  author = {Sewell, Martin},
+  title  = {Ensemble Methods},
+  year   = {2007},
 }
 
 @Book{Wang2005,
-  title         = {Support Vector Machines: Theory and Applications (Studies in Fuzziness and Soft Computing)},
-  publisher     = {Springer-Verlag},
-  year          = {2005},
-  author        = {Wang, Lipo},
+  title     = {Support Vector Machines: Theory and Applications (Studies in Fuzziness and Soft Computing)},
+  publisher = {Springer-Verlag},
+  year      = {2005},
+  author    = {Wang, Lipo},
+  address   = {Berlin, Heidelberg},
+  isbn      = {3540243887},
+}
+
+@InProceedings{Hausknecht2016,
+  author    = {Hausknecht, Matthew and Stone, Peter},
+  title     = {On-Policy vs. Off-Policy Updates for Deep Reinforcement Learning},
+  booktitle = {Deep Reinforcement Learning: Frontiers and Challenges, IJCAI Workshop},
+  year      = {2016},
+  month     = {July},
+  abstract  = {
+Temporal-difference-based deep-reinforcement learning methods have
+typically been driven by off-policy, bootstrap Q-Learning updates. In
+this paper, we investigate the effects of using on-policy, Monte Carlo
+updates. Our empirical results show that for the DDPG algorithm in a
+continuous action space, mixing on-policy and off-policy update
+targets exhibits superior performance and stability compared to using
+exclusively one or the other. The same technique applied to DQN in a
+discrete action space drastically slows down learning. Our findings
+raise questions about the nature of on-policy and off-policy bootstrap
+and Monte Carlo updates and their relationship to deep reinforcement
+learning methods.
+  },
+  location  = {New York},
+}
+
+@Book{Busoniu2010,
+  title     = {Reinforcement Learning and Dynamic Programming Using Function Approximators},
+  publisher = {CRC Press, Inc.},
+  year      = {2010},
+  author    = {Busoniu, Lucian and Babuska, Robert and Schutter, Bart De and Ernst, Damien},
+  address   = {Boca Raton, FL, USA},
+  edition   = {1st},
+  isbn      = {1439821089, 9781439821084},
+}
+
+@Misc{AMTuring,
+  author = {A.M. TURING AWARD},
+  title  = {ALPHABETICAL LISTING OF A.M. TURING AWARD WINNERS},
+  url    = {https://amturing.acm.org/alphabetical.cfm},
+}
+
+@Book{Cord2008,
+  title     = {Machine Learning Techniques for Multimedia: Case Studies on Organization and Retrieval (Cognitive Technologies)},
+  publisher = {Springer-Verlag TELOS},
+  year      = {2008},
+  author    = {Cord, Matthieu and Cunningham, Pdraig and Cord, Matthieu and Cunningham, Pdraig},
+  address   = {Santa Clara, CA, USA},
+  edition   = {1},
+  isbn      = {354075170X, 9783540751700},
+}
+
+@Book{James2014,
+  title     = {An Introduction to Statistical Learning: With Applications in R},
+  publisher = {Springer Publishing Company, Incorporated},
+  year      = {2014},
+  author    = {James, Gareth and Witten, Daniela and Hastie, Trevor and Tibshirani, Robert},
+  isbn      = {1461471370, 9781461471370},
+}
+
+@InProceedings{Kotsiantis2007,
+  author        = {Kotsiantis, Sotiris},
+  title         = {Supervised Machine Learning: A Review of Classification Techniques},
+  booktitle     = {Proceedings of the 2007 Conference on Emerging Artificial Intelligence Applications in Computer Engineering: Real Word AI Systems with Applications in eHealth, HCI, Information Retrieval and Pervasive Technologies},
+  year          = {2007},
+  pages         = {3--24},
+  address       = {Amsterdam, The Netherlands, The Netherlands},
+  publisher     = {IOS Press},
+  __markedentry = {[Tecnologia:]},
+  acmid         = {1566773},
+  isbn          = {978-1-58603-780-2},
+  keywords      = {Classifiers, Data Mining, Intelligent Data Analysis, Learning Algorithms},
+  numpages      = {22},
+  url           = {http://dl.acm.org/citation.cfm?id=1566770.1566773},
+}
+
+@InBook{Ghahramani2004,
+  pages         = {72--112},
+  title         = {Unsupervised Learning},
+  publisher     = {Springer Berlin Heidelberg},
+  year          = {2004},
+  author        = {Ghahramani, Zoubin},
+  editor        = {Bousquet, Olivier and von Luxburg, Ulrike and R{\"a}tsch, Gunnar},
   address       = {Berlin, Heidelberg},
-  isbn          = {3540243887},
+  isbn          = {978-3-540-28650-9},
   __markedentry = {[Tecnologia:6]},
+  abstract      = {We give a tutorial and overview of the field of unsupervised learning from the perspective of statistical modeling. Unsupervised learning can be motivated from information theoretic and Bayesian principles. We briefly review basic models in unsupervised learning, including factor analysis, PCA, mixtures of Gaussians, ICA, hidden Markov models, state-space models, and many variants and extensions. We derive the EM algorithm and give an overview of fundamental concepts in graphical models, and inference algorithms on graphs. This is followed by a quick tour of approximate Bayesian inference, including Markov chain Monte Carlo (MCMC), Laplace approximation, BIC, variational approximations, and expectation propagation (EP). The aim of this chapter is to provide a high-level view of the field. Along the way, many state-of-the-art ideas and future directions are also reviewed.},
+  booktitle     = {Advanced Lectures on Machine Learning: ML Summer Schools 2003, Canberra, Australia, February 2 - 14, 2003, T{\"u}bingen, Germany, August 4 - 16, 2003, Revised Lectures},
+  doi           = {10.1007/978-3-540-28650-9_5},
+  url           = {https://doi.org/10.1007/978-3-540-28650-9_5},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
