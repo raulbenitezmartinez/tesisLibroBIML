@@ -237,7 +237,7 @@ El estudio debe proceder sobre la base de la conjetura de que cada aspecto
 \end_layout
 
 \begin_layout Standard
-Entre los aportes mas destacados de McCarthy se pueden mencionar la definición
+Entre los aportes más destacados de McCarthy se pueden mencionar la definición
  del lenguaje de alto nivel Lisp, la creación del tiempo compartido y el
  artículo 
 \begin_inset Quotes eld
@@ -414,7 +414,7 @@ Kinect para Xbox 360: técnicas de reconocimiento de voz y reconocimiento
 \end_layout
 
 \begin_layout Itemize
-Voice reconigtion.
+Voice recognition.
 \end_layout
 
 \begin_layout Itemize
@@ -841,10 +841,7 @@ ejemplos
 \begin_inset Formula $f$
 \end_inset
 
- .
-\series bold
-\color blue
-[REF]
+.
 \end_layout
 
 \begin_layout Standard
@@ -1425,7 +1422,7 @@ key "LeQuoc2015"
 \end_inset
 
  son algoritmos que utilizan redes neuronales como arquitectura y que además
- son capaces de aprender automáticamente las caracteristicas.
+ son capaces de aprender automáticamente las características.
  Estos algoritmos se implementan en problemas de aprendizaje supervisado
  y no supervisado.
 \end_layout
@@ -4476,7 +4473,7 @@ Pr(e)=\sum_{k=1}^{N}\left[\frac{1}{n^{2}}\left(\sum_{i=1}^{N}f_{ik}\times\sum_{j
 \end_layout
 
 \begin_layout Standard
-Otra forma de interpretar los resultado se el siguiente:
+Otra forma de interpretar los resultado es el siguiente:
 \end_layout
 
 \begin_layout Itemize
@@ -4998,7 +4995,7 @@ key "Mouatadid2016"
 
 \end_inset
 
- los autores abordan cómmo pronosticar la demanda de agua urbana en la ciudad
+ los autores abordan cómo pronosticar la demanda de agua urbana en la ciudad
  de Montreal (Canadá) en plazos de 1 y 3 días.
  Para llegar a la solución propuesta se compararon cuatro modelos de pronóstico:
  Artificial Neural Network (ANN), Support Vector Regression (SVR) y Extreme

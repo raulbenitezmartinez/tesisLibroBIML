@@ -133,16 +133,12 @@ Administración de Compras
 , hay un componente vital dentro de este proceso que es la estimación de
  la cantidad o volumen de productos a adquirir para reponer el stock.
  Es ahí donde entra en juego el pronóstico de la demanda 
-\series bold
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Adam1991"
 
 \end_inset
 
-
-\series default
 .
 \end_layout
 
@@ -623,7 +619,6 @@ Se analizan estos cuatro componentes:
 
 \begin_layout Enumerate
 \noindent
-\align left
 
 \shape italic
 Componente de tendencia
@@ -820,8 +815,12 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Itemize
-El método de pronóstico del último valor: Este método utiliza solamente
- el último valor de la serie de tiempo como pronóstico del valor futuro.
+
+\series bold
+El método de pronóstico del último valor
+\series default
+: Este método utiliza solamente el último valor de la serie de tiempo como
+ pronóstico del valor futuro.
  También es conocido como método ingenuo, porque sin mucho análisis aparentement
 e resulta ingenuo elegir un solo valor de toda la serie.
  Pero en ocasiones sí es una buena aproximación, como por ejemplo cuando
@@ -842,9 +841,12 @@ Pronóstico=último\;valor
 \end_layout
 
 \begin_layout Itemize
-El método de pronóstico por promedios: En este caso se utilizan todos los
- valores de la serie y luego se promedia para obtener el valor de pronóstico
- de la serie.
+
+\series bold
+El método de pronóstico por promedios
+\series default
+: En este caso se utilizan todos los valores de la serie y luego se promedia
+ para obtener el valor de pronóstico de la serie.
  Recomendable para series de tiempo estables, razón por la cual todos los
  valores tienen el mismo peso y son considerados relevantes.
 \shape italic
@@ -861,8 +863,11 @@ Pronóstico=promedio\;de\;todos\;los\;valores\;hasta\;la\;fecha
 \end_layout
 
 \begin_layout Itemize
-El método de pronóstico de promedio móvil: Consiste en considerar solamente
- los últimos 
+
+\series bold
+El método de pronóstico de promedio móvil
+\series default
+: Consiste en considerar solamente los últimos 
 \begin_inset Formula $n$
 \end_inset
 
@@ -896,8 +901,11 @@ donde:
 \end_layout
 
 \begin_layout Itemize
-El método de pronóstico por suavizamiento exponencial: Con este método se
- asignan pesos diferentes a los valores de la serie.
+
+\series bold
+El método de pronóstico por suavizamiento exponencial
+\series default
+: Con este método se asignan pesos diferentes a los valores de la serie.
  El último período es el de mayor peso y así paulatinamente se van asignando
  pesos cada vez menores a los valores más antiguos de la serie.
  Este resultado se puede obtener de forma simple y sintética mediante una
@@ -957,10 +965,13 @@ Para series de tiempo estables es recomendable valores de
 \begin_layout Itemize
 \paragraph_spacing single
 \noindent
-\align left
-El método de suavizamiento exponencial con tendencia: El inconveniente del
- método de pronóstico por suavizamiento exponencial sin tendencia es que
- justamente se retrasa respecto de la tendencia ya que no lo toma en cuenta.
+
+\series bold
+El método de suavizamiento exponencial con tendencia
+\series default
+: El inconveniente del método de pronóstico por suavizamiento exponencial
+ sin tendencia es que justamente se retrasa respecto de la tendencia ya
+ que no lo toma en cuenta.
  Al considerar la tendencia se obtienen pronósticos más precisos.
  Se calcula la pendiente actual de la línea de tendencia para luego ajustar
  el nuevo pronóstico a la pendiente obtenida.
@@ -1032,7 +1043,11 @@ con
 \end_layout
 
 \begin_layout Itemize
-Auto Regressive Integrated Moving Average (ARIMA
+
+\series bold
+Auto Regressive Integrated Moving Average
+\series default
+ (ARIMA
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "ARIMA"

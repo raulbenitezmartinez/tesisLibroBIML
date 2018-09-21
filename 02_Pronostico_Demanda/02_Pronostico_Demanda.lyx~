@@ -133,16 +133,12 @@ Administración de Compras
 , hay un componente vital dentro de este proceso que es la estimación de
  la cantidad o volumen de productos a adquirir para reponer el stock.
  Es ahí donde entra en juego el pronóstico de la demanda 
-\series bold
-
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Adam1991"
 
 \end_inset
 
-
-\series default
 .
 \end_layout
 
@@ -462,7 +458,11 @@ key "MCA2008"
 \end_inset
 
 .
- En general, para modelar cuantitativamente se debe disponer de información
+ 
+\end_layout
+
+\begin_layout Standard
+En general, para modelar cuantitativamente se debe disponer de información
  sobre la variable a pronosticar, la información se debe cuantificar y el
  patrón histórico de cierto modo debe repetirse en el futuro 
 \begin_inset CommandInset citation
@@ -619,7 +619,6 @@ Se analizan estos cuatro componentes:
 
 \begin_layout Enumerate
 \noindent
-\align left
 
 \shape italic
 Componente de tendencia
@@ -953,7 +952,6 @@ Para series de tiempo estables es recomendable valores de
 \begin_layout Itemize
 \paragraph_spacing single
 \noindent
-\align left
 El método de suavizamiento exponencial con tendencia: El inconveniente del
  método de pronóstico por suavizamiento exponencial sin tendencia es que
  justamente se retrasa respecto de la tendencia ya que no lo toma en cuenta.
