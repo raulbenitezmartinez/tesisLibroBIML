@@ -1096,4 +1096,23 @@ learning methods.
   url    = {https://machinelearningmastery.com/},
 }
 
+@Book{MasterMLA2016,
+  title  = {Master Machine Learning Algorithms},
+  year   = {2016},
+  author = {Brownlee, Jason},
+}
+
+@Article{Rasch2018,
+  author = {Raschka, Sebastian},
+  title  = {Model Evaluation, Model Selection, and Algorithm Selection in Machine Learning},
+  year   = {2018},
+}
+
+@Book{EMLzheng2015,
+  title     = {Evaluating Machine Learning Models},
+  publisher = {O’Reilly Media, Inc},
+  year      = {2015},
+  author    = {Zheng, Alice},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
