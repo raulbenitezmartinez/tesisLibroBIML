@@ -1130,7 +1130,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/MachineLearningAlgorithms.png
-	scale 50
+	scale 70
 	rotateAngle 90
 
 \end_inset
