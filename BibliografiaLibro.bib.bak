@@ -138,7 +138,7 @@
 
 @Book{MCN2011,
   title     = {Métodos cuantitativos para los negocios},
-  publisher = {© D.R. 2011 por Cengage Learning Editores, S.A. de C.V., una compañía de Cengage Learning, Inc},
+  publisher = {© D.R. 2011 por Cengage Learning Editores, S.A.},
   year      = {2011},
   author    = {David Anderson and Dennis Sweeney and Thomas Williams and Jeffrey Camm and Kipp Martin},
   edition   = {11},
@@ -431,7 +431,7 @@
 
 @Book{IAEModerno2,
   title     = {Inteligencia Artificial. Un Enfoque Moderno. Segunda Edición},
-  publisher = {PEARSON EDUCACIÓN, S.A.},
+  publisher = {Pearson Educación, S.A.},
   year      = {2004},
   author    = {Stuart Russell and Peter Norvig},
 }
@@ -529,7 +529,7 @@
 
 @Article{DUGrow2012,
   author  = {John Gantz and David Reinsel},
-  title   = {THE DIGITAL UNIVERSE IN 2020: Big Data , Bigger Digital Shadows, and Biggest Grow th in the Far East},
+  title   = {The digital universe in 2020: Big Data , Bigger Digital Shadows, and Biggest Grow th in the Far East},
   journal = {IDC iView},
   year    = {2012},
 }
@@ -592,7 +592,7 @@
 
 @Article{Sevgi2017,
   author   = {Sevgi, Ergun and Suleyman, Sahin},
-  title    = {LITERATURE SURVEY ABAUT DEMAND FORECASTING IN INDUSTRY.},
+  title    = {Literature survey about demand forecasting in industry.},
   journal  = {Ulakbilge: Sosyal Bilimler Dergisi, Vol 5, Iss 10, Pp 469-487 (2017)},
   year     = {2017},
   number   = {10},
@@ -690,7 +690,7 @@
 
 @Article{Patak2015,
   author   = {Patak, Michal and Branska, Lenka and Pecinova, Zuzana},
-  title    = {DEMAND FORECASTING IN RETAIL GROCERY STORES IN THE CZECH REPUBLIC.},
+  title    = {Demand forecasting in retail grocery stores in the Czech Republic.},
   journal  = {International Multidisciplinary Scientific Conference on Social Sciences \& Arts SGEM},
   year     = {2015},
   pages    = {693},
@@ -756,7 +756,7 @@
 
 @Article{Castro2016,
   author       = {Juan Castro},
-  title        = {APLICACION DE BUSINESS INTELLIGENCE BASADO EN UN MODELO DE PRONOSTICO DE SERIES DE TIEMPO PARA MEJORAR EL VOLUMEN DE VENTAS DE LA EMPRESA FSRL DE LIMA | Castro | Revista de Investigacion Business Intelligence},
+  title        = {Aplicación de Business Intelligence basado en un modelo de pronóstico de series de tiempo para mejorar el volumen de ventas de la empresa FSRL de Lima | Castro | Revista de Investigacion Business Intelligence},
   year         = {2016},
   howpublished = {\url{http://revistascientificas.upeu.edu.pe/index.php/ri_bi/article/view/490}},
 }
@@ -828,7 +828,7 @@
 
 @Book{Ikonomovska2012,
   title     = {Algorithms for Learning Regression Trees and Ensembles on Evolving Data Streams: Doctoral Dissertation},
-  publisher = {E. Ikonomovska},
+  publisher = {Elena Ikonomovska},
   year      = {2012},
   author    = {Ikonomovska, Elena},
   url       = {https://books.google.com.py/books?id=pqPNlAEACAAJ},
@@ -967,8 +967,8 @@ learning methods.
 }
 
 @Misc{AMTuring,
-  author       = {A.M. TURING AWARD},
-  title        = {ALPHABETICAL LISTING OF A.M. TURING AWARD WINNERS},
+  author       = {A.M. Turing Award},
+  title        = {Alphabetical Listing of A.M. Turing Award Winners},
   howpublished = {https://amturing.acm.org/alphabetical.cfm},
 }
 
