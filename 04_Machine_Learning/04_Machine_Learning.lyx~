@@ -3689,15 +3689,7 @@ Técnicas de evaluación para aprendizaje supervisado
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
  Entre las técnicas de evaluación para problemas de aprendizaje supervisado
- se destacan:
-\end_layout
-
-\begin_layout Itemize
-Hold-out validation, 
-\end_layout
-
-\begin_layout Itemize
-K-fold cross-validation
+ se destacan: hold-out validation y k-fold cross-validation
 \end_layout
 
 \begin_layout Subsection
@@ -3707,35 +3699,25 @@ Método de retención
 \begin_layout Standard
 La técnica de Retención (
 \shape italic
-Holdout method
+Hold-out method
 \shape default
-) divide el conjunto de datos en dos partes, de modo que el modelo pueda
- ser entrenado y probado sobre diferentes datos.
- Presenta una mejor estimación del rendimiento fuera de la muestra, pero
- sigue siendo una estimación de 
-\begin_inset Quotes eld
-\end_inset
-
-alta varianza
-\begin_inset Quotes erd
-\end_inset
-
-.
- Útil debido a su velocidad, simplicidad y flexibilidad.
-\end_layout
-
-\begin_layout Standard
-Divide el conjunto de datos en dos conjuntos: un conjunto de entrenamiento
- (generalmente el 70% del conjunto de datos completo) del que aprende el
- modelo y un conjunto de prueba (el otro 30%).
- Debido a que el conjunto de prueba se retiene del modelo durante el entrenamien
-to, puede contribuir a una evaluación imparcial de qué tan bien se desempeña
- un modelo en datos nunca antes vistos.
- Esto protege contra el sobreajuste y permite evaluar cómo el modelo funcionaría
- con los nuevos datos a medida que surgen 
+) divide el conjunto de datos en dos subconjuntos disjuntos: uno para el
+ entrenamiento (generalmente el 70%) del que aprende el modelo y otro para
+ la prueba (el otro 30%) donde se evalúa el modelo.
+ Esta técnica puede ayudar a evitar el sobreajuste ya que el conjunto de
+ prueba es un conjunto que no desempaña ninguna función en el entrenamiento,
+ contribuyendo así a una evaluación objetiva de cómo se comportaría el modelo
+ sobre nuevos datos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Rasch2018"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Refaeilzadeh2009"
 
 \end_inset
 
@@ -3775,11 +3757,12 @@ Luego se tienen diez modelos diferentes, cada uno ha sido entrenado y probado
  Al final, se combinan estos modelos al promediar sus pesos para estimar
  un modelo predictivo final.
  La validación cruzada es otro antídoto contra el sobreajuste 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Refaeilzadeh2009"
+
+\end_inset
+
 .
 \end_layout
 
@@ -3793,7 +3776,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename recursos/Esquema K-fold Cross Validation.png
+	filename recursos/Esquema K-fold Cross Validation 2.png
 	scale 50
 
 \end_inset
@@ -3808,10 +3791,14 @@ name "fig:Esq-general-de-Cross"
 
 \end_inset
 
-Esquema general de iteraciones para 10-fold Cross-Validation 
-\series bold
-\color blue
-[REF]
+Esquema general de iteraciones para 3-fold Cross-Validation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Refaeilzadeh2009"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4121,7 +4108,7 @@ La matriz de confusión brinda una imagen más completa de cómo está funcionan
  
 \begin_inset CommandInset citation
 LatexCommand cite
-key "CKappa1960"
+key "EMLzheng2015"
 
 \end_inset
 
@@ -4430,33 +4417,31 @@ Pr(e)=\sum_{k=1}^{N}\left[\frac{1}{n^{2}}\left(\sum_{i=1}^{N}f_{ik}\times\sum_{j
 \end_layout
 
 \begin_layout Standard
-<<<<<<< HEADOtra forma común de interpretar los resultado es la siguiente:======
-=Otra forma de interpretar los resultado es el siguiente:>>>>>>> 8d6137441254a66
-8250b8eba23d17e92f6a26da4
+Otra forma común de interpretar los resultado es la siguiente:
 \end_layout
 
 \begin_layout Itemize
-< 0 Acuerdo deficiente 
+< 0: Acuerdo deficiente 
 \end_layout
 
 \begin_layout Itemize
-0.01 - 0.20 Acuerdo leve
+0.01 - 0.20: Acuerdo leve
 \end_layout
 
 \begin_layout Itemize
-0.21 - 0.40 Acuerdo justo 
+0.21 - 0.40: Acuerdo justo 
 \end_layout
 
 \begin_layout Itemize
-0.41 - 0.60 Acuerdo moderado 
+0.41 - 0.60: Acuerdo moderado 
 \end_layout
 
 \begin_layout Itemize
-0.61 - 0.80 Acuerdo sustancial 
+0.61 - 0.80: Acuerdo sustancial 
 \end_layout
 
 \begin_layout Itemize
-0.81 - 1.00 Acuerdo casi perfecto
+0.81 - 1.00: Acuerdo casi perfecto
 \end_layout
 
 \begin_layout Section
