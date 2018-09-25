@@ -3689,15 +3689,7 @@ Técnicas de evaluación para aprendizaje supervisado
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
  Entre las técnicas de evaluación para problemas de aprendizaje supervisado
- se destacan:
-\end_layout
-
-\begin_layout Itemize
-Hold-out validation, 
-\end_layout
-
-\begin_layout Itemize
-K-fold cross-validation
+ se destacan: hold-out validation y k-fold cross-validation
 \end_layout
 
 \begin_layout Subsection
@@ -3707,18 +3699,15 @@ Método de retención
 \begin_layout Standard
 La técnica de Retención (
 \shape italic
-Holdout method
+Hold-out method
 \shape default
-) divide el conjunto de datos en dos partes, de modo que el modelo pueda
- ser entrenado y probado sobre diferentes datos.
- Divide el conjunto de datos en dos subconjuntos disjuntos: un conjunto
- de entrenamiento (generalmente el 70%) del que aprende el modelo y un conjunto
- de prueba (el otro 30%).
- Debido a que el conjunto de prueba se retiene del modelo durante el entrenamien
-to, puede contribuir a una evaluación imparcial de qué tan bien se desempeña
- un modelo en datos nunca antes vistos.
- Esto protege contra el sobreajuste y permite evaluar cómo el modelo funcionaría
- con los nuevos datos a medida que surgen 
+) divide el conjunto de datos en dos subconjuntos disjuntos: uno para el
+ entrenamiento (generalmente el 70%) del que aprende el modelo y otro para
+ la prueba (el otro 30%) donde se evalúa el modelo.
+ Esta técnica puede ayudar a evitar el sobreajuste ya que el conjunto de
+ prueba es un conjunto que no desempaña ninguna función en el entrenamiento,
+ contribuyendo así a una evaluación objetiva de cómo se comportaría el modelo
+ sobre nuevos datos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Rasch2018"
@@ -3728,7 +3717,7 @@ key "Rasch2018"
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Refaeilzadeh2009"
+key "Liu2009"
 
 \end_inset
 
@@ -3749,32 +3738,29 @@ reference "fig:Esq-general-de-Cross"
 
 \end_inset
 
- se muestra un ejemplo de una validación cruzada de 10 iteraciones donde
- se divide el conjunto de datos en diez particiones de igual tamaño.
- Luego se entrena el modelo en nueve de esas diez particiones y se prueba
+ se muestra un ejemplo de una validación cruzada de 3 iteraciones donde
+ se divide el conjunto de datos en tres particiones de igual tamaño.
+ Luego se entrena el modelo en dos de esas tres particiones y se prueba
  el modelo en la partición restante.
  Luego, se repite el proceso, seleccionando una partición diferente para
  que sea el grupo de prueba y entrenando un nuevo modelo en el conjunto
- restante de nueve particiones.
- El proceso se repite ocho veces más, para un total de diez rondas de validación
- cruzada, una por cada pasada.
- 
-\end_layout
-
-\begin_layout Standard
-Luego se tienen diez modelos diferentes, cada uno ha sido entrenado y probado
- en un subconjunto diferente de datos y cada uno tiene su propio peso y
- exactitud de predicción.
- Al final, se combinan estos modelos al promediar sus pesos para estimar
- un modelo predictivo final.
- La validación cruzada es otro antídoto contra el sobreajuste 
+ restante de dos particiones.
+ El proceso se repite una vez más, para un total de tres rondas de validación
+ cruzada, una por cada pasada 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Refaeilzadeh2009"
+key "Liu2009"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Finalmente se tienen tres modelos diferentes, cada uno entrenado y testeado
+ en subconjuntos de datos diferentes, se combinan estos modelos promediando
+ sus pesos y estimando un modelo predictivo resultante.
+ La validación cruzada también ayuda a evitar el sobreajuste.
 \end_layout
 
 \begin_layout Standard
@@ -3787,7 +3773,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename recursos/Esquema K-fold Cross Validation.png
+	filename recursos/Esquema K-fold Cross Validation 2.png
 	scale 50
 
 \end_inset
@@ -3802,10 +3788,14 @@ name "fig:Esq-general-de-Cross"
 
 \end_inset
 
-Esquema general de iteraciones para 10-fold Cross-Validation 
-\series bold
-\color blue
-[REF]
+Esquema general de iteraciones para 3-fold Cross-Validation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Liu2009"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3819,13 +3809,12 @@ Esquema general de iteraciones para 10-fold Cross-Validation
 \end_layout
 
 \begin_layout Standard
-La técnica estándar para predecir la tasa de error es Stratified k-fold
- Cross-Validation, donde la estratificación se refiere al proceso de reorganizar
- los datos de tal manera a asegurar que cada partición sea una buena representac
-ión del conjunto.
- Comúnmente se acepta que 10 es el número de particiones con el que se obtiene
- la mejor estimación de error, idea basada en diversas pruebas sobre conjuntos
- de datos diferentes y para distintas técnicas de aprendizaje 
+La técnica comúnmente utilizada es Stratified k-fold Cross-Validation, una
+ pequeña variante donde la estratificación se refiere al proceso de reorganizar
+ los datos de manera a que cada partición sea una representación del conjunto.
+ Se acepta que 10 es el número de particiones con el que se obtiene una
+ buena estimación de error, idea sustentada en diversas pruebas sobre diferentes
+ conjuntos de datos y técnicas de aprendizaje 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
@@ -3842,8 +3831,8 @@ Métricas de desempeño para problemas de clasificación
 \begin_layout Standard
 Las métricas de clasificación son las medidas contra las cuales se evalúan
  los modelos de clasificación.
- Para los problemas de clasificación, es natural medir el rendimiento de
- un clasificador en términos de la tasa de error (
+ Para problemas de clasificación es común medir el rendimiento de un clasificado
+r en términos de la tasa de error (
 \shape italic
 error rate
 \shape default
@@ -3855,18 +3844,18 @@ sucess rate
  El clasificador predice la clase de cada instancia: si es correcta se cuenta
  como un éxito, sino se cuenta como un error.
  La tasa de error es sólo la proporción de errores cometidos sobre un conjunto
- de instancias, y mide el rendimiento general del clasificador.
+ de instancias y mide el rendimiento general del clasificador.
  Por supuesto, lo que interesa es el probable desempeño futuro en nuevos
  datos, no el rendimiento sobre datos pasados.
 \end_layout
 
 \begin_layout Standard
 Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
- evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
- papel en la formación del clasificador.
+ evaluar su tasa de error en un conjunto de datos que no tuvo ninguna labor
+ en la formación del clasificador.
  Este conjunto de datos independiente se denomina conjunto de prueba.
- En tales situaciones se suele hablar de tres conjuntos de datos, los datos
- de entrenamiento, los datos de validación y los datos de prueba 
+ Se suele hablar de tres conjuntos de datos: datos de entrenamiento, datos
+ de validación y datos de prueba 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
@@ -3882,8 +3871,8 @@ key "DM2011"
 \begin_layout Standard
 Los datos de validación se utilizan para optimizar los parámetros de los
  clasificadores, o para seleccionar uno determinado.
- A continuación, los datos de prueba se utilizan para calcular la tasa de
- error del método final optimizado.
+ Luego, los datos de prueba se utilizan para calcular la tasa de error del
+ método final optimizado.
  Cada uno de los tres conjuntos debe ser independiente: El conjunto de validació
 n debe ser diferente del conjunto de entrenamiento para obtener un buen
  desempeño en la etapa de optimización o selección y el conjunto de prueba
@@ -3932,11 +3921,11 @@ Matriz de confusión
 \begin_layout Standard
 El porcentaje de acierto es la métrica de clasificación más fácil, simple
  y entendible que se puede utilizar.
- Pero no dice sobre la distribución subyacente de los valores de respuesta,
- ni dice qué "tipos" de errores está cometiendo el clasificador.
- No distingue entre falsos positivos, transacciones incorrectamente clasificadas
- como fraude y falsos negativos, transacciones incorrectamente clasificadas
- como no fraudulentas.
+ Pero la desventaja es que no muestra la distribución de los valores de
+ respuesta.
+ No hay distinción entre falsos positivos, transacciones incorrectamente
+ clasificadas como fraude y falsos negativos, transacciones incorrectamente
+ clasificadas como no fraudulentas.
  Es por eso que se necesita la matriz de confusión.
 \end_layout
 
@@ -3999,13 +3988,13 @@ description "Falso Negativo"
 \end_inset
 
 ).
- En problemas de clasificación para aplicaciones reales normalmente los
- errores cuestan diferentes cantidades.
  
 \end_layout
 
 \begin_layout Standard
-Por ejemplo en bancos y financieras el costo de prestar a una persona que
+En problemas de clasificación de implementaciones reales los errores tienen
+ diferentes costos.
+ Por ejemplo en bancos y financieras el costo de prestar a una persona que
  no paga sus deudas es mayor que el costo de rechazar un préstamo a una
  persona que es pagadora.
  Los Verdaderos Positivos y Verdaderos Negativos son clasificaciones correctas.
@@ -4104,13 +4093,13 @@ Matriz de confusión para clasificación multiclase.
 \end_layout
 
 \begin_layout Standard
-La matriz de confusión brinda una imagen más completa de cómo está funcionando
+La matriz de confusión ofrece una visión más completa de cómo está funcionando
  el clasificador.
- También permite calcular varias métricas de clasificación y estas métricas
- pueden guiar la selección del modelo.
- La elección de la métrica depende del objetivo de su negocio.
- Es importante identificar si FP o FN es más relevante reducir, para luego
- elegir la métrica con la variable relevante (FP o FN en la ecuación).
+ También permite calcular varias métricas de clasificación que pueden orientar
+ la elección del modelo.
+ La selección de la métrica depende en gran medida del objetivo de la aplicación.
+ Se debe identificar si FP o FN es más crucial reducir y luego elegir la
+ métrica (FP o FN en la ecuación).
  Entre las métricas calculadas a partir de una matriz de confusión se encuentran
  
 \begin_inset CommandInset citation
@@ -4424,33 +4413,31 @@ Pr(e)=\sum_{k=1}^{N}\left[\frac{1}{n^{2}}\left(\sum_{i=1}^{N}f_{ik}\times\sum_{j
 \end_layout
 
 \begin_layout Standard
-<<<<<<< HEADOtra forma común de interpretar los resultado es la siguiente:======
-=Otra forma de interpretar los resultado es el siguiente:>>>>>>> 8d6137441254a66
-8250b8eba23d17e92f6a26da4
+Otra forma común de interpretar los resultado es la siguiente:
 \end_layout
 
 \begin_layout Itemize
-< 0 Acuerdo deficiente 
+< 0: Acuerdo deficiente 
 \end_layout
 
 \begin_layout Itemize
-0.01 - 0.20 Acuerdo leve
+0.01 - 0.20: Acuerdo leve
 \end_layout
 
 \begin_layout Itemize
-0.21 - 0.40 Acuerdo justo 
+0.21 - 0.40: Acuerdo justo 
 \end_layout
 
 \begin_layout Itemize
-0.41 - 0.60 Acuerdo moderado 
+0.41 - 0.60: Acuerdo moderado 
 \end_layout
 
 \begin_layout Itemize
-0.61 - 0.80 Acuerdo sustancial 
+0.61 - 0.80: Acuerdo sustancial 
 \end_layout
 
 \begin_layout Itemize
-0.81 - 1.00 Acuerdo casi perfecto
+0.81 - 1.00: Acuerdo casi perfecto
 \end_layout
 
 \begin_layout Section
@@ -4651,15 +4638,8 @@ La capacidad de generalización está determinada principalmente por dos factore
 [REF]
 \series default
 \color inherit
-:
-\end_layout
-
-\begin_layout Itemize
-La complejidad del modelo (model complexity).
-\end_layout
-
-\begin_layout Itemize
-El tamaño del conjunto de entrenamiento (learning curves).
+: la complejidad del modelo (model complexity) y el tamaño del conjunto
+ de entrenamiento (learning curves).
 \end_layout
 
 \begin_layout Standard

@@ -1069,15 +1069,28 @@ Algoritmos de aprendizaje supervisado y no supervisado
 \end_layout
 
 \begin_layout Standard
-El Dr.
- Jason Brownlee es un especialista en aprendizaje automático, desarrollador,
- escritor y empresario.
+El P.h.D Jason Brownlee es un especialista en aprendizaje automático, desarrollado
+r, escritor y empresario.
  Ha trabajado en sistemas de aprendizaje automático para la defensa, startups
  y pronósticos meteorológicos.
- Tiene una comunidad en https://machinelearningmastery.com/, la cual empezó
- porque le apasiona ayudar a los desarrolladores profesionales a comenzar
- y aplicar con confianza Machine Learning que les permita resolver problemas
- complejos.
+ Tiene una comunidad 
+\begin_inset Quotes eld
+\end_inset
+
+Machine Learning Mastery
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "masteryJB"
+
+\end_inset
+
+, la cual empezó porque le apasiona ayudar a los desarrolladores profesionales
+ a comenzar y aplicar con confianza Machine Learning que les permita resolver
+ problemas complejos.
  Los algoritmos de aprendizaje automático se pueden agrupar según la similaridad
  en términos de su forma o función, como por ejemplo los métodos basados
  en árboles y los métodos inspirados en redes neuronales.
@@ -1162,15 +1175,7 @@ reference "fig:Algoritmos-de-machine"
 \end_inset
 
  muestra un método útil de agrupación, que no es perfecto y ni exhaustivo
- en los grupos y algoritmos.
- Hay algoritmos que pueden encajar en varias categorías como Learning Vector
- Quantization que es a la vez un método inspirado en una red neuronal y
- un método basado en instancia.
- También hay categorías que tienen el mismo nombre que describen el problema
- y la clase de algoritmo como Regression y Clustering.
- Se podría manejar estos casos listando los algoritmos dos veces o insertando
- en el grupo al que subjetivamente se ajusta mejor.
- Se utiliza este último enfoque de no duplicar algoritmos.
+ en los grupos y algoritmos propuesto por el .
 \end_layout
 
 \begin_layout Subsection
@@ -3717,7 +3722,7 @@ key "Rasch2018"
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Refaeilzadeh2009"
+key "Liu2009"
 
 \end_inset
 
@@ -3738,32 +3743,29 @@ reference "fig:Esq-general-de-Cross"
 
 \end_inset
 
- se muestra un ejemplo de una validación cruzada de 10 iteraciones donde
- se divide el conjunto de datos en diez particiones de igual tamaño.
- Luego se entrena el modelo en nueve de esas diez particiones y se prueba
+ se muestra un ejemplo de una validación cruzada de 3 iteraciones donde
+ se divide el conjunto de datos en tres particiones de igual tamaño.
+ Luego se entrena el modelo en dos de esas tres particiones y se prueba
  el modelo en la partición restante.
  Luego, se repite el proceso, seleccionando una partición diferente para
  que sea el grupo de prueba y entrenando un nuevo modelo en el conjunto
- restante de nueve particiones.
- El proceso se repite ocho veces más, para un total de diez rondas de validación
- cruzada, una por cada pasada.
- 
-\end_layout
-
-\begin_layout Standard
-Luego se tienen diez modelos diferentes, cada uno ha sido entrenado y probado
- en un subconjunto diferente de datos y cada uno tiene su propio peso y
- exactitud de predicción.
- Al final, se combinan estos modelos al promediar sus pesos para estimar
- un modelo predictivo final.
- La validación cruzada es otro antídoto contra el sobreajuste 
+ restante de dos particiones.
+ El proceso se repite una vez más, para un total de tres rondas de validación
+ cruzada, una por cada pasada 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Refaeilzadeh2009"
+key "Liu2009"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Finalmente se tienen tres modelos diferentes, cada uno entrenado y testeado
+ en subconjuntos de datos diferentes, se combinan estos modelos promediando
+ sus pesos y estimando un modelo predictivo resultante.
+ La validación cruzada también ayuda a evitar el sobreajuste.
 \end_layout
 
 \begin_layout Standard
@@ -3794,7 +3796,7 @@ name "fig:Esq-general-de-Cross"
 Esquema general de iteraciones para 3-fold Cross-Validation 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Refaeilzadeh2009"
+key "Liu2009"
 
 \end_inset
 
@@ -3812,13 +3814,12 @@ key "Refaeilzadeh2009"
 \end_layout
 
 \begin_layout Standard
-La técnica estándar para predecir la tasa de error es Stratified k-fold
- Cross-Validation, donde la estratificación se refiere al proceso de reorganizar
- los datos de tal manera a asegurar que cada partición sea una buena representac
-ión del conjunto.
- Comúnmente se acepta que 10 es el número de particiones con el que se obtiene
- la mejor estimación de error, idea basada en diversas pruebas sobre conjuntos
- de datos diferentes y para distintas técnicas de aprendizaje 
+La técnica comúnmente utilizada es Stratified k-fold Cross-Validation, una
+ pequeña variante donde la estratificación se refiere al proceso de reorganizar
+ los datos de manera a que cada partición sea una representación del conjunto.
+ Se acepta que 10 es el número de particiones con el que se obtiene una
+ buena estimación de error, idea sustentada en diversas pruebas sobre diferentes
+ conjuntos de datos y técnicas de aprendizaje 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
@@ -3835,8 +3836,8 @@ Métricas de desempeño para problemas de clasificación
 \begin_layout Standard
 Las métricas de clasificación son las medidas contra las cuales se evalúan
  los modelos de clasificación.
- Para los problemas de clasificación, es natural medir el rendimiento de
- un clasificador en términos de la tasa de error (
+ Para problemas de clasificación es común medir el rendimiento de un clasificado
+r en términos de la tasa de error (
 \shape italic
 error rate
 \shape default
@@ -3848,18 +3849,18 @@ sucess rate
  El clasificador predice la clase de cada instancia: si es correcta se cuenta
  como un éxito, sino se cuenta como un error.
  La tasa de error es sólo la proporción de errores cometidos sobre un conjunto
- de instancias, y mide el rendimiento general del clasificador.
+ de instancias y mide el rendimiento general del clasificador.
  Por supuesto, lo que interesa es el probable desempeño futuro en nuevos
  datos, no el rendimiento sobre datos pasados.
 \end_layout
 
 \begin_layout Standard
 Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
- evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
- papel en la formación del clasificador.
+ evaluar su tasa de error en un conjunto de datos que no tuvo ninguna labor
+ en la formación del clasificador.
  Este conjunto de datos independiente se denomina conjunto de prueba.
- En tales situaciones se suele hablar de tres conjuntos de datos, los datos
- de entrenamiento, los datos de validación y los datos de prueba 
+ Se suele hablar de tres conjuntos de datos: datos de entrenamiento, datos
+ de validación y datos de prueba 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
@@ -3875,8 +3876,8 @@ key "DM2011"
 \begin_layout Standard
 Los datos de validación se utilizan para optimizar los parámetros de los
  clasificadores, o para seleccionar uno determinado.
- A continuación, los datos de prueba se utilizan para calcular la tasa de
- error del método final optimizado.
+ Luego, los datos de prueba se utilizan para calcular la tasa de error del
+ método final optimizado.
  Cada uno de los tres conjuntos debe ser independiente: El conjunto de validació
 n debe ser diferente del conjunto de entrenamiento para obtener un buen
  desempeño en la etapa de optimización o selección y el conjunto de prueba
@@ -3925,11 +3926,11 @@ Matriz de confusión
 \begin_layout Standard
 El porcentaje de acierto es la métrica de clasificación más fácil, simple
  y entendible que se puede utilizar.
- Pero no dice sobre la distribución subyacente de los valores de respuesta,
- ni dice qué "tipos" de errores está cometiendo el clasificador.
- No distingue entre falsos positivos, transacciones incorrectamente clasificadas
- como fraude y falsos negativos, transacciones incorrectamente clasificadas
- como no fraudulentas.
+ Pero la desventaja es que no muestra la distribución de los valores de
+ respuesta.
+ No hay distinción entre falsos positivos, transacciones incorrectamente
+ clasificadas como fraude y falsos negativos, transacciones incorrectamente
+ clasificadas como no fraudulentas.
  Es por eso que se necesita la matriz de confusión.
 \end_layout
 
@@ -3992,13 +3993,13 @@ description "Falso Negativo"
 \end_inset
 
 ).
- En problemas de clasificación para aplicaciones reales normalmente los
- errores cuestan diferentes cantidades.
  
 \end_layout
 
 \begin_layout Standard
-Por ejemplo en bancos y financieras el costo de prestar a una persona que
+En problemas de clasificación de implementaciones reales los errores tienen
+ diferentes costos.
+ Por ejemplo en bancos y financieras el costo de prestar a una persona que
  no paga sus deudas es mayor que el costo de rechazar un préstamo a una
  persona que es pagadora.
  Los Verdaderos Positivos y Verdaderos Negativos son clasificaciones correctas.
@@ -4097,13 +4098,13 @@ Matriz de confusión para clasificación multiclase.
 \end_layout
 
 \begin_layout Standard
-La matriz de confusión brinda una imagen más completa de cómo está funcionando
+La matriz de confusión ofrece una visión más completa de cómo está funcionando
  el clasificador.
- También permite calcular varias métricas de clasificación y estas métricas
- pueden guiar la selección del modelo.
- La elección de la métrica depende del objetivo de su negocio.
- Es importante identificar si FP o FN es más relevante reducir, para luego
- elegir la métrica con la variable relevante (FP o FN en la ecuación).
+ También permite calcular varias métricas de clasificación que pueden orientar
+ la elección del modelo.
+ La selección de la métrica depende en gran medida del objetivo de la aplicación.
+ Se debe identificar si FP o FN es más crucial reducir y luego elegir la
+ métrica (FP o FN en la ecuación).
  Entre las métricas calculadas a partir de una matriz de confusión se encuentran
  
 \begin_inset CommandInset citation
@@ -4120,7 +4121,7 @@ Precisión (accuracy)
 \end_layout
 
 \begin_layout Standard
-En general, ¿con qué frecuencia es correcto el clasificador?.
+Una medida general de la tasa de acierto del clasificador.
 \end_layout
 
 \begin_layout Standard
@@ -4156,17 +4157,8 @@ Exactitud (precision)
 \end_layout
 
 \begin_layout Standard
-Cuando se predice un valor positivo, ¿con qué frecuencia es correcta la
- predicción?.
- ¿Cuán 
-\begin_inset Quotes eld
-\end_inset
-
-exacto
-\begin_inset Quotes erd
-\end_inset
-
- es el clasificador al predecir instancias positivas?.
+Una medida de la tasa de acierto cuando la predicción es un valor positivo.
+ ¿Cuán exacto es para predecir instancias positivas?.
 \end_layout
 
 \begin_layout Standard
@@ -4202,18 +4194,9 @@ Sensibilidad (sensitivity)
 \end_layout
 
 \begin_layout Standard
-Cuando el valor real es positivo, ¿con qué frecuencia es correcta la predicción?.
- Algo que queremos maximizar.
- ¿Qué tan 
-\begin_inset Quotes eld
-\end_inset
-
-sensible
-\begin_inset Quotes erd
-\end_inset
-
- es el clasificador para detectar instancias positivas?.
- También conocido como True Positive Rate o Recall.
+Una medida de la tasa de acierto cuando el valor real es positivo.
+ ¿Cuán sensible es para detectar instancias positivas?.
+ También es conocido como True Positive Rate o Recall.
 \end_layout
 
 \begin_layout Standard
@@ -4249,25 +4232,8 @@ Especificidad (specificity)
 \end_layout
 
 \begin_layout Standard
-Cuando el valor real es negativo, ¿con qué frecuencia es correcta la predicción?.
- Algo que queremos maximizar.
- ¿Qué tan 
-\begin_inset Quotes eld
-\end_inset
-
-específico
-\begin_inset Quotes erd
-\end_inset
-
- (o 
-\begin_inset Quotes eld
-\end_inset
-
-selectivo
-\begin_inset Quotes erd
-\end_inset
-
-) es el clasificador en predecir las instancias negativas?
+Una medida de la tasa de acierto cuando el valor real es negativo.
+ ¿Cuán específico es para detectar instancias negativas?.
 \end_layout
 
 \begin_layout Standard
@@ -4282,13 +4248,12 @@ Especificidad=\frac{VN}{VN+FP}
 \end_layout
 
 \begin_layout Subsubsection
-Medida F (f-measure)
+Medida F1 (f1-measure)
 \end_layout
 
 \begin_layout Standard
-La Medida F es una medida de la exactitud de una prueba.
- La Medida F puede interpretarse como un promedio ponderado de la precisión
- y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
+La Medida F1 es un promedio ponderado de la precisión y sensibilidad, donde
+ alcanza su mejor valor en 1 y el peor en 0.
 \end_layout
 
 \begin_layout Standard
@@ -4324,11 +4289,11 @@ Estadística kappa (kappa Statistic)
 \end_layout
 
 \begin_layout Standard
-En la predicción multiclase, cada elemento de la matriz de confusión muestra
- el número de ejemplos de prueba para los que la clase real es la fila y
- la clase prevista es la columna.
- Son buenos resultados los grandes números en la diagonal principal e idealmente
- cero fuera de la diagonal principal.
+En la clasificación multiclase cada elemento de la matriz de confusión muestra
+ el número de ejemplos de prueba y donde la clase real es la fila y la clase
+ predicha es la columna.
+ El mejor resultado se logra cuando todos los números están en la diagonal
+ principal y cero fuera de ella.
  El coeficiente kappa de Cohen (
 \begin_inset Formula $\kappa$
 \end_inset
@@ -4340,11 +4305,10 @@ key "CKappa1960"
 
 \end_inset
 
- es una estadística que mide el acuerdo entre evaluadores para los ítems
- cualitativos (categóricos).
+ es una estadística que mide el acuerdo entre examinadores sobre ítems cualitati
+vos.
  Si los examinadores están completamente de acuerdo Kappa es igual a 1.
- Si no hay total acuerdo entre los observadores (aparte de lo que se esperaría
- por casualidad), entonces Kappa tiene un valor
+ Si no hay total acuerdo entre los observadores Kappa tiene un valor
 \begin_inset Formula $<1$
 \end_inset
 
@@ -4367,12 +4331,8 @@ Donde:
 \begin_inset Formula $Pr\left(a\right)$
 \end_inset
 
-
-\size small
-es el acuerdo relativo observado entre examinadores
-\size default
- o el número de instancias que fueron clasificadas correctamente sobre el
- total de instancias, 
+es el acuerdo relativo observado entre examinadores o el número de instancias
+ que fueron clasificadas correctamente sobre el total de instancias, 
 \begin_inset Formula $Pr\left(e\right)$
 \end_inset
 
@@ -4449,12 +4409,7 @@ Componentes de los errores de predicción: Ruido, Sesgo y Varianza
 \end_layout
 
 \begin_layout Standard
-Es importante evaluar el rendimiento de un modelo de aprendizaje de la mejor
- manera posible.
- Una de las razones es para determinar si usar o no el modelo para la predicción
- de valores futuros, otra de las razones es que la evaluación es una componente
- integral de muchos métodos de aprendizaje.
- Los errores de predicción en los modelos de aprendizaje automático tienen
+Los errores de predicción en los modelos de aprendizaje automático tienen
  tres componentes: Ruido (
 \shape italic
 Noise
@@ -4468,11 +4423,12 @@ Bias
 Variance
 \shape default
 ) 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Luykx2009"
+
+\end_inset
+
 .
 \end_layout
 
@@ -4481,7 +4437,7 @@ Ruido
 \end_layout
 
 \begin_layout Standard
-El ruido es un error aleatorio de varianza de la variable que está siendo
+El ruido es considerado un error aleatorio de la variable que está siendo
  medida 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4489,21 +4445,15 @@ key "Han2011"
 
 \end_inset
 
-, representa el componente 
-\begin_inset Quotes eld
-\end_inset
-
-irreducible
-\begin_inset Quotes erd
-\end_inset
-
- de error de generalización en una función, este término está fuera del
- control incluso aún conociendo la verdadera función de predicción.
- El ruido es una distorsión de los datos originales, está presente en casi
- cualquier problema del mundo real, sin embargo no siempre son conocidas.
- Como ejemplo de ruido en los datos para un sistema de monitoreo ambiental
- puede darse por mal funcionamientos, calibraciones defectuosas en sensores
- de medición, problemas de la red que transporta los datos 
+ y representa el componente fuera de control del error de generalización
+ en una función.
+ Como se trata de una alteración de los datos originales no puede ser reducido.
+ Por ejemplo, en el problema de estudio se encontraron malas entradas de
+ datos donde en algunos casos el valor del costo de un producto era mayor
+ al precio de venta.
+ Otro ejemplo, en un sistema de monitoreo ambiental puede haber ruido provenient
+e del mal funcionamiento o calibraciones defectuosas en los sensores de
+ medición 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Kalapanidas2003"
@@ -4518,12 +4468,10 @@ Sesgo
 \end_layout
 
 \begin_layout Standard
-La precisión observada de la hipótesis aprendida a través de los ejemplos
- de entrenamiento es a menudo una mala estimación de su exactitud sobre
- futuros ejemplos.
- Debido a que la hipótesis aprendida se derivó de estos ejemplos, típicamente
- proporcionarán una estimación optimista sesgada de la precisión de la hipótesis
- sobre ejemplos futuros, esto se conoce como sesgo en la estimación 
+La precisión de la hipótesis aprendida a través del entrenamiento es una
+ mala estimación del rendimiento sobre futuros ejemplos, ya que la hipótesis
+ se derivó de estos ejemplos y proporcionará una estimación optimista sesgada
+ lo que se conoce como sesgo en la estimación 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Mitchell1997"
@@ -4579,11 +4527,7 @@ Varianza
 \end_layout
 
 \begin_layout Standard
-Si la precisión de la hipótesis se mide en un conjunto imparcial de ejemplos
- de prueba independientes de los ejemplos de entrenamiento, la precisión
- medida puede variar de la precisión real, dependiendo de la configuración
- del conjunto particular de ejemplos de prueba.
- Cuanto menor es el conjunto de ejemplos de prueba, mayor es la varianza
+Cuanto menor es el conjunto de ejemplos de prueba, mayor es la varianza
  esperada 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4635,22 +4579,22 @@ Complejidad del modelo y curvas de aprendizaje
 \end_layout
 
 \begin_layout Standard
-La capacidad de generalización está determinada principalmente por dos factores
- 
-\series bold
-\color blue
-[REF]
-\series default
-\color inherit
-:
-\end_layout
+La capacidad de generalización está determinada principalmente por dos factores:
+ la complejidad del modelo (model complexity) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Friedman2001"
 
-\begin_layout Itemize
-La complejidad del modelo (model complexity).
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-El tamaño del conjunto de entrenamiento (learning curves).
+ y el tamaño del conjunto de entrenamiento (learning curves) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CCZubek2016"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
