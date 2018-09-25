@@ -1116,7 +1116,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/MachineLearningAlgorithms.png
-	scale 50
+	scale 75
 	rotateAngle 90
 
 \end_inset
@@ -3717,7 +3717,7 @@ key "Rasch2018"
 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Refaeilzadeh2009"
+key "Liu2009"
 
 \end_inset
 
@@ -3759,7 +3759,7 @@ Luego se tienen diez modelos diferentes, cada uno ha sido entrenado y probado
  La validación cruzada es otro antídoto contra el sobreajuste 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Refaeilzadeh2009"
+key "Liu2009"
 
 \end_inset
 
@@ -3794,7 +3794,7 @@ name "fig:Esq-general-de-Cross"
 Esquema general de iteraciones para 3-fold Cross-Validation 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Refaeilzadeh2009"
+key "Liu2009"
 
 \end_inset
 
