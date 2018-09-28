@@ -587,7 +587,7 @@ reference "fig:6.5"
 
  muestra las comparativas para periodos mensuales.
  Al igual que los periodos semanales y quincenales el porcentaje de acierto
- en el entrenamiento es siempre mayor o igual a la linea base.
+ en el entrenamiento es siempre mayor o igual a la línea base.
  En el testeo por tratarse de un conjunto de datos separado del conjunto
  de entrenamiento los porcentajes de aciertos varían.
  Se tiene un caso atípico donde el porcentaje de acierto fue menor al de

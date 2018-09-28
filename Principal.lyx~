@@ -128,6 +128,16 @@
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand input
+filename "Titulo_v2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
 filename "Preliminares/dedicatorias.lyx"
 
 \end_inset
@@ -255,7 +265,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{section}{Abrastract}
+addcontentsline{toc}{section}{Abstract}
 \end_layout
 
 \end_inset

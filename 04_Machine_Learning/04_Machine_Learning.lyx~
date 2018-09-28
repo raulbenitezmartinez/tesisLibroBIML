@@ -1061,7 +1061,14 @@ AlphaGo
 \begin_inset Quotes erd
 \end_inset
 
- https://www.netflix.com/title/80190844.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "RLIntroduccion1998"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -1069,8 +1076,9 @@ Algoritmos de aprendizaje supervisado y no supervisado
 \end_layout
 
 \begin_layout Standard
-El P.h.D Jason Brownlee es un especialista en aprendizaje automático, desarrollado
-r, escritor y empresario.
+El Ph.D.
+ Jason Brownlee es un especialista en aprendizaje automático, desarrollador,
+ escritor y empresario.
  Ha trabajado en sistemas de aprendizaje automático para la defensa, startups
  y pronósticos meteorológicos.
  Tiene una comunidad 
@@ -1129,7 +1137,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/MachineLearningAlgorithms.png
-	scale 75
+	scale 70
 	rotateAngle 90
 
 \end_inset
@@ -1175,7 +1183,7 @@ reference "fig:Algoritmos-de-machine"
 \end_inset
 
  muestra un método útil de agrupación, que no es perfecto y ni exhaustivo
- en los grupos y algoritmos propuesto por el .
+ en los grupos y algoritmos propuesto por Brownlee.
 \end_layout
 
 \begin_layout Subsection
@@ -3779,7 +3787,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename recursos/Esquema K-fold Cross Validation 2.png
-	scale 50
+	scale 75
 
 \end_inset
 
